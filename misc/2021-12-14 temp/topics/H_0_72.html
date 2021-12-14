@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_72 <kbd>H_0_72</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udviklede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>siden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>trådte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2005</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>daværende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>måtte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2011</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>haft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>senere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>deltog</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2010</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>da</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afsluttede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>oplevede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>holdt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>begyndelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>slog</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stolt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1970</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vundet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>heldige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>startede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ødelagt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gallup</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>modtagelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>visit</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hvorfra</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>held</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vendepunkt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>økologisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1990</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mistede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skabte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bortset</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2009</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>erobre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fortsatte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2012</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1990'erne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>handlede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkurrencer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>halvt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fokuserede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overraskelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sommer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>parret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>adskillelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2004</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>smed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anerkendt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>løb</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>siddet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uafbrudt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>producerede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fyre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemførte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>californien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>succesrige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mike</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>midten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>døbt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>søgte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>90.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rykkede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hjort</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1991</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anskaffe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sluppet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>logo</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forårsagede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>marc</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lejligheder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>troet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ligget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>seattle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>chancer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tegnede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beskedent</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>em</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undtagelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>derovre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sprang</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dorthe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gigantisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sekretær</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>comeback</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grundlagde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>3d-printede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ekstraordinær</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overtog</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>midlertidig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bid</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>navnene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>startskuddet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eksploderede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lind</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1998</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afslutningen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sejlede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bestseller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aggressivt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>brændende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>østrig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lånt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>matador</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mangeårig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hælder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>brik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tiltrak</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>foden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ryk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spænd</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>22-årige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>knibe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>steroider</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ark</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_72 DESC LIMIT 50</pre>
+      <article>
+        <h4>Genial lærer er tilbage: Sådan bliver du god til at gange på få minutter</h4>
+        <div>
+          Har du altid haft svært ved at regne gange-stykker ud? Så er der håb, hvis du vil bruge fem et halvt minut af dit liv med den pædagogiske lærer David Lamhauge.David Lamhauge blev et viralt hit, da Lokalavisen.dk for en uge siden bragte lærerens video om, hvordan man dividerer. David har udviklet en ny metode - en algoritme - som har hjulpet mange til at forstå, hvordan divisionsopgaver skal løses.Viral video: Sådan lærer du at dividereNu kan du altså også lære at gange med Lamhauge. Oven i købet med tocifrede tal. Se videoen under artiklen.
+        </div>
+        <footer>
+          <em>Lokalavisen.dk (Politikens Lokalaviser)</em>
+          &nbsp;·&nbsp; 2015-05-30
+          &nbsp;·&nbsp; e50e23f8
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.971</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.633</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.68</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Når mennesket går på autopilot</h4>
+        <div>
+          Med udviklingen i kunstig intelligens har vi mulighed for at overlade arbejdet til maskinerne. Til gengæld er vi på røven, når de fejler»Vi har mistet kontrollen med flyet. Jeg forstår det ikke! Vi har prøvet alt!«Air France 447 var på vej fra Rio de Janeiro i Brasilien til Paris, da det dykkede hastigt mod havoverfladen.Det var andenpiloten David Roberts, der havde kontrollen   eller rettere havde mistet kontrollen   med flyet, da kaptajnen vendte tilbage til cockpittet fra sin pause. Få minutter senere blev den sidste lydbid lagret i flyets sorte boks.Da boksen senere blev trukket op fra dybet, emmede den af resigneret frustration. »Men hvad sker der?«sagde kaptajnen kort inden Airbus-flyet ramte Atlanterhavets overflade og sendte samtlige 228 passagerer til bunds.Den tragiske erkendelse, man to år senere i 2011 kunne udlede fra den sorte boks med flydata og piloternes interne kommunikation, var, at det ikke var afgørende fejl i flyet, der forårsagede styrtet.Flyets vinger var ganske vist overisede. Det satte flyets autopilot ud af funktion, og dermed var kontrollen over flyet overladt til piloterne. Men i sidste ende var det deres håndtering af flyet, der sendte det på katastrofekurs.De fejlfortolkede flyets advarselslamper og gjorde det modsatte af, hvad de var trænet til, da flyet tabte fart og dalede mod jorden.Alt for sent opdagede de deres fejl.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-11-17
+          &nbsp;·&nbsp; e5fc9c34
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.974</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.97</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.679</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Grosen Friis bliver medejer af Onlinepartners</h4>
+        <div>
+          NY MEDEJER Grosen Friis er blandt frontløberne herhjemme inden for analysebaseret søgemaskineoptimering ( SEO) af virksomheders hjemmesider, så flest mulige potentielle kunder finder dem med fx Google.Hans erfaring kommer nu Kolding bureauet OnlinePartners til gode, da han er blevet medejer af virksomheden.For godt et halvt år siden blev han ansat som seniorkonsulent hos Kolding-firmaet OnlinePartners, der er blandt Danmarks største specialiserede SEO-bureauer, med henblik på senere at indtræde som partner.Allerede nu er det planlagte medejerskab blevet en realitet - til stifter og direktør Rune Hansens store tilfredshed.&quot; Grosen e r blandt de teknisk dygtigste SEO-folk i Danmark, ikke mindst inden for international søgemaskineoptimering, og hans aktive medejerskab bliver derfor en kæmpe gevinst for både kunder og kolleger&quot;, siger direktøren, der især har store forventninger til Grosen Friis i en udbygget ekspert-og mentorrolle.Således har Friis - ud over direkte ansvar for en række af OnlinePartners' kunder - også fået til opgave at oprette et såkaldt SEO-laboratorium, hvorfra han løbende udgiver blogindlæg og videoklip om sine omfattende eksperimenter med søgemaskiners algoritmer.FAKTASuccesfyldt firmaOnlinePartners er blandt Danmarks største SEO-bureauer. Virksomheden specialiserer sig i at omsætte søgepotentiale til branding og omsætning for ambitiøse virksomheder og webshops, primært via Google. Kolding-bureauet, der blev stiftet i 2010, voksede hurtigt ud af de daværende rammer. I 2012 skabte OnlinePartners fire nye arbejdspladser og fik igen brug for yderligere kvadratmeter. www.onlinepartners. dk.
+        </div>
+        <footer>
+          <em>Lokal-Bladet Budstikken Kolding</em>
+          &nbsp;·&nbsp; 2013-04-03
+          &nbsp;·&nbsp; e3bbc8ec
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.976</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.643</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Grosen Friis medejer af Onlinepartners</h4>
+        <div>
+          MEDEJER Grosen Friis er blandt frontløberne herhjemme inden for analysebaseret søgemaskineoptimering ( SEO) af virksomheders hjemmesider, så flest mulige potentielle kunder finder dem med fx Google.Kombineret med universel teknisk ekspertise og mangeårig kommerciel SEO-erfaring indsamlet hos virksomheder som SPAMfighter og Eshoes har det skaffet esbjergenseren anerkendelse som en af Danmarks førende kapaciteter i branchen.For godt et halvt år siden blev Grosen Friis ansat som seniorkonsulent hos Kolding-firmaet OnlinePartners, der er blandt Danmarks største specialiserede SEO-bureauer, med henblik på senere at indtræde som partner. Allerede nu er det planlagte medejerskab blevet en realitet - til stifter og direktør Rune Hansens store tilfredshed.&quot; Grosen e r blandt de teknisk dygtigste SEO-folk i Danmark, ikke mindst inden for international søgemaskineoptimering, og hans aktive medejerskab bliver derfor en kæmpe gevinst for både kunder og kolleger&quot;, siger direktøren, der især har store forventninger til Grosen Friis i en udbygget ekspert-og mentorrolle. Således har Friis - ud over direkte ansvar for en række af Online-Partners' kunder - også fået til opgave at oprette et såkaldt SEO-laboratorium, hvorfra han løbende udgiver blogindlæg og videoklip om sine omfattende eksperimenter med søgemaskiners algoritmer.FAKTASuccesfyldt firmaOnlinePartners er blandt Danmarks største SEO-bureauer.Virksomheden specialiserer sig i at omsætte søgepotentiale til branding og omsætning for ambitiøse virksomheder og webshops, primært via Google. Kolding-bureauet, der blev stiftet i 2010, voksede hurtigt ud af de daværende rammer. I 2012 skabte Online-Partners fire nye arbejdspladser og fik igen brug for yderligere kvadratmeter.www.onlinepartners.dk.
+        </div>
+        <footer>
+          <em>ErhvervsAvisen Syd- og Sønderjylland</em>
+          &nbsp;·&nbsp; 2013-04-16
+          &nbsp;·&nbsp; e3c0271f
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.676</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.598</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Først blev din gad­get smart - nu er den in­tel­li­gent</h4>
+        <div>
+          Hvor klog er din smartphone egentlig? Smarte enheder har været en del af vores liv i godt ti år, men har faktisk været relativt dumme. På den netop afsluttede elektronikmesse, CES, viste verdens største tech-producenter, at din elektronik nu for alvor kan tænke selvDet er godt ti år siden, at internettet for alvor rykkede fra computerskærmen og ind i alt i vores hjem og ned i vores lommer. Mobiltelefonen fik apps og blev en smartphone, fjernsynet fik internet...
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2021-01-25
+          &nbsp;·&nbsp; e81896e2
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.594</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.637</kbd>
+            <kbd data-tooltip="Internet revolution">L80_NETREV&nbsp;0.528</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kæmper om titlen som bedste praktikplads</h4>
+        <div>
+          AARHUS N: Sommerfuglene flagrer nervøst rundt i Mike Hjort Christensens mave. Vi er tilbage i september sidste år, og den datamatikerstuderende har kun været i praktik i otte uger ved itvirksomheden EG i Aarhus Nord, men nu skal han præsentere, hvad han har fundet ud af for sine 17 nye kolleger og to chefer. De har sat ham på en spændende opgave: Find ud af hvad teknologien &quot; machine learning&quot; er, hvad det kan, og om EG kan bruge det. Den 25-årige datamatiker-studerende tager en dyb indånding og begynder.-Og efterhånden som Mike præsenterer video, tal og endda en prototype på, hvordan vi kan bruge det, kan man bare se, hvordan nogle af de gamle rotter i teamet taber underkæben.Det var meget imponerende, at han havde nået så meget på så kort tid, siger Allan Bech, der er senior manager ved EG og hovedansvarlig for EG Business Care-afdelingen, hvor Mike Hjort Christensen var i praktik.-Men jeg fik jo også optimale rammer til at kunne arbejde med det, hvor jeg kunne undersøge og eksperimentere, samtidig med at jeg kunne søge hjælp, så snart jeg var i tvivl. Så det har været et virkelig godt praktikophold, fortæller Mike Hjort Christensen.Netop derfor indstillede han også praktikopholdet ved EG i Aarhus Nord til prisen som Årets Dania-praktik, der er praktik-konkurrence ved Erhvervsakademi Dania. Ud af 95 indstillinger er han og EG nu kommet i finalen. Vinderen af Årets Dania-praktik 2017 findes ved et stort event 4. maj på Danias campus i Randers.Historien har også en god slutning, da Mike Hjort Christensen efter endt praktik og hovedopgave er blevet ansat som junior systems consultant hos EG. pcb.
+        </div>
+        <footer>
+          <em>Århus Onsdag Nord</em>
+          &nbsp;·&nbsp; 2017-05-03
+          &nbsp;·&nbsp; e63c40cc
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.981</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.51</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Viborg-fyr måske landets bedste praktikant</h4>
+        <div>
+          Der er opstået en fejl: Beskeden er sendt. * ) skal udfyldes.Som datamatiker-studerende ville Mike Hjort Christensen fra Viborg gerne prøve kræfter med praktik i en større virksomhed. Det blev til 10 uger ved it-virksomheden EG, og forløbet var så godt, at de nu sammen er i finalen om at blive landets bedstViborg: Sommerfuglene flyver nervøst rundt i Mike Hjort Christensens mave. Vi er tilbage i september, og han har kun været i praktik i otte uger ved it-virksomheden EG, men nu skal han præsentere, hvad han har fundet ud af for sine 17 nye kolleger og to chefer.De har sat ham på en spændende opgave: Find ud af, hvad teknologien machine learning er, hvad den kan, og om EG kan bruge den. Den 25-årige datamatiker-studerende fra Viborg tager en dyb indånding og begynder. Og efterhånden som Mike præsenterer video, tal og endda en prototype på, hvordan det kan bruges, kan man se, hvordan nogle af de gamle rotter i teamet taber underkæben.- Det var meget imponerende, at han havde nået så meget på så kort tid, siger Allan Bech, der er senior manager ved EG og hovedansvarlig for EG Business Care-afdelingen, hvor Mike Hjort Christensen var i praktik.- Men jeg fik jo også optimale rammer til at kunne arbejde med det, hvor jeg kunne undersøge og eksperimentere, samtidig med at jeg kunne søge hjælp, så snart jeg var i tvivl. Så det har været et virkelig godt praktikophold, fortæller Mike Hjort Christensen, der bor i Viborg.Netop derfor indstillede han også praktikopholdet ved EG til prisen som Årets Dania-praktik, der er praktik-konkurrence ved Erhvervsakademi Dania, og han hylder det gode praktikophold. Ud af 95 indstillinger er Mike og EG nu kommet i finalen.- Det er ret vildt at være kommet hertil, men jeg mener også, at EG fortjener det skulderklap, som prisen er. Jeg havde samtidig mulighed for at komme med mine egne holdninger og på den måde være med til at få indflydelse på teamets fremtidige processer, fortæller Mike Hjort Christensen.Mange af Mikes studiekammerater fra Erhvervsakademi Dania valgte at finde praktik ved en mindre virksomhed. Men han valgte helt bevidst de små fra - og EG til.- Mange havde en fordom om, at man ved de store it-virksomheder ikke havde mulighed for at komme med egne input, og det ville jeg gerne teste af. Og det passede jo slet ikke. Jeg har fået lov til at have enormt stor indflydelse, selvom jeg bare var praktikant, og det var virkelig fedt, siger Mike Hjort Christensen.Det er da også en benovet Bo Olesen, der tager imod diplomet som finalist. Han har været praktikansvarlig og er daglig leder af den del af Business Care på seks mand, hvor Mike har været.- Vi har fået priser som eksempelvis årets businesspartner, men det her føles anderledes. Det er Mike, vores Mike, der har nomineret os, smiler Bo Olesen og klapper Mikes skulder.Da praktikken udløber, spørger Bo Olesen Mike, om han ikke vil blive. Først er det lidt jokende, men efterhånden som sidste eksamensdato rykker tættere på, bliver tonen mere alvorlig. I januar kommer Mike til samtale ved Bo Olesen og Allan Bech, og de tilbyder ham job.- Du sagde ja med det samme, men vi bad dig om at tænke dig om alligevel og så vende tilbage, siger Bo Olesen og kigger på Mike, der smilende svarer:- Og det gjorde jeg slet ikke. For jeg vidste, at jeg gerne ville arbejde her, så jeg koncentrerede mig bare om det mundtlige forsvar af min hovedopgave, og så vendte jeg tilbage efter et par dage og sagde ja igen, griner Mike, der i dag er ansat som Junior Systems Consultant og fortsat har Bo og Allan som chefer.Vinderen af Årets Dania-praktik 2017 findes ved et stort event den 4. maj på Danias campus i Randers.
+        </div>
+        <footer>
+          <em>Viborg-folkeblad.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-04-22
+          &nbsp;·&nbsp; e639038b
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.837</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.656</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nekrolog: Paul Allen var med til at gøre den personlige computer til hver mands eje - det begyndte med hjemmebag og Bill Gates</h4>
+        <div>
+          Microsoft-grundlæggeren Paul G. Allen var med til at revolutionere verden ved at udvikle personlige computere, og siden brugte han sin enorme formue på at gøre Seattle til et kulturelt centrum.Hans familie oplyser, at Allen mandag døde i Seattle i en alder af 65 år af den lymfekræft, som for nylig var vendt tilbage, efter at Allen havde holdt den i skak i flere år.Allen forlod Microsoft allerede i begyndelsen af 1980'erne, efter at han for første gang fik konstateret kræft. Siden brugte han store dele af sin kolossale formue på velgørenhed og på at give et Seattles kulturelle liv et kraftigt løft og opkøbte blandt andet NFL-holdet Seattle Seahawks for at sikre sig, at hans hjembys footballhold forblev i byen.Han var sammen med den anden grundlægger af Microsoft, Bill Gates, drivkraften bag den siden så succesrige it-virksomhed i de første syv år. I den periode udviklede brugen af personlige computere sig fra at være en hobby for it-nørder til en teknologi, som både forretninger og forbrugere gjorde brug af i stor stil.'Mikro-computere'Da Microsoft blev grundlagt i 1975, blev dens maskiner kaldt for mikro-computere, så man kunne skelne dem fra datidens kæmpestore og meget klodsede computere. Det var Allen, der fandt på det meget passende navn Micro-Soft til et firma, som netop fremstillede software til de små computere, som vi siden begyndte at kalde for en pc eller en personlig computer.Microsofts første produkt var en meget komprimeret udgave af programmeringssproget Basic, som blev tilpasset de små og mindre kraftige computere. Men det egentlige gennembrud kom, da Microsoft tilbød computergiganten IBM levere at software og styresystemer, så IBM kunne komme ind på markedet for personlige computere. Bill Gates og Paul Allen lovede at levere denne software i 1980.De lovede dog dermed noget uden at have produktet. Men Allen var i stand til at fikse problemet og købte en foreløbig udgave af et styresystem hos en programmør i Seattle. Sammen med Gates fik de lempet kodesproget til, så det kunne anvendes som styresystem i IBM's første bud på en pc i 1981.Programmet, som hed Microsoft Disk Operating System, eller blot MS-DOS, blev skelsættende. Siden kom så Microsofts kæmpestore succes med Windows, som kunne styres med en mus og benyttede ikoner på skærmen, så man i stedet for at skrive sine kommandoer blot skulle pege og klikke på dem. Også den såkaldte Office-pakke med skriveprogrammer, regneark og mange andre programmer blev en stor succes.»På sin helt egen rolige, vedholdende måde lykkedes det ham (Allen, red.) at skabe helt magiske produkter, enestående oplevelser og nye institutioner, og på den måde har han forandret vores verden« , lyder det i en udtalelse fra Satya Nadella, den nuværende topchef i Microsoft.Hjemmebag finansierede computerbrugAllens partnerskab med Bill Gates begyndte allerede i teenageårene, da de gik på samme skole, Lakeside School i Seattle. Her begyndte de at interessere sig for computerteknologi, og på skolen arbejdede de på en terminal, som var forbundet via et såkaldt timeshare-system til en computer langt væk. De skulle betale for den tid, de var tilsluttet, og pengene fik de i første omgang fra salg af hjemmebag på skolen.Allen scorede topkarakter ved adgangsprøven til universitetet og begyndte at studere på Washington State University. Men han droppede ud efter et par år for at arbejde som programmør for Honeywell i Boston, hvor Bill Gates faktisk befandt sig i nærheden, da han studerede på Harvard University.Da Allen så en prototype på en mikrocomputer blive præsenteret i et fagblad, overtalte han Gates til at forlade studierne og i stedet flytte til Albuquerque i New Mexico, hvor startupvirksomheden MITS havde fremstillet det, der siden er blevet kaldt for verdens første personlige computer. Computeren manglede dog software, men så dukkede Allen og Gates op og lovede, at den skulle de nok levere. Deres første bud på den slags kaldte de Microsoft Basic.Sådan så de første 11 ansatte på Microsoft ud. Paul Allen er på forreste række længst til højre. Bill Gates er længst til venstre.Begge var de ferme til at programmere, men Gates var den dynamiske, risikovillige og mere opfarende forretningsmand, hvorimod den mere sindige Allen spillede rollen som fredsmægler og den venlige forhandler.Få år senere flyttede Microsoft fra New Mexico til en af Seattles forstæder. Selv om Allen trådte tilbage fra sit daglige virke hos Microsoft allerede først i firserne, blandt andet fordi forholdet til Bill Gates udviklede sig skævt, blev han siddende i firmaets bestyrelse helt frem til år 2000.Egenkapital på 168 milliarder kronerEfterhånden som Microsoft var blevet det dominerende selskab inden for software, blev Allen ualmindelig velstående, ligesom Bill Gates, der tegnede firmaets profil udadtil. Ifølge Bloombergs liste over milliardærer havde Allen en egenkapital på hele 168 milliarder kroner.Allen investerede mange penge og var samtidig en rundhåndet velgører. Han donerede over 13 milliarder kroner til almennyttige virksomhed inden for udvikling af naturvidenskab, teknologi, uddannelse, miljø og kunst. I henholdsvis 2003 og 2014 grundlagde han også to forskningscentre, Allen Institute for Brain Science og Allen Institute for Artificial Intelligence.Tilbage i 1990'erne opkøbte han et stort landområde i Seattle-bydelen South Lake Union med henblik på at skabe en lokal udgave af Central Park i New York. Befolkningen nedstemte dog hans forslag, så projektet blev skrinlagt. I stedet brugte han de opkøbte grunde og udviklede via sit nye selskab, Vulcan Inc., området South Lake Union, så det blandt andet blev hjemsted for Amazon. Også Google og andre it-virksomheder har nu åbnet afdelinger i bydelen.Allen brugte også sin formue på at opkøbe basketballholdet Portland Trail Blazers i 1988, og i 1996 købte han rettighederne til sin hjembys footballhold, Seattle Seahawks. Det skete, efter at holdets daværende ejer, Ken Behring, havde haft planer om at flytte det til Los Angeles, fordi han ikke kunne skaffe offentlige midler til at bygge et nyt stadion i Seattle. Allen blev opfordret til at gå ind i sagen og overtog endeligt Seattle Seahawks i 1997 efter at have betalt Ken Behring 1,25 milliarder kroner for holdet.Annoncørbetalt indhold fra Tirol»Den slags rygter turde jeg ikke tro på« Læs mereHerefter ville han bygge en ny hjemmebane til det midt i Seattle, og i 2002 rykkede holdet ind på stadionet CenturyLink Field, som Allen havde brugt flere hundrede millioner dollars på at modernisere. Skønt han sjældent udtalte sig til medierne, kunne man ofte se ham til Seattle Seahawks kampe, og til tider var det ham, der før kickoff hejste fanen med 12-tallet, sådan som klubtraditionen foreskriver det. I Allens tid i spidsen for Seattle Seahaws nåede holdet, der aldrig før havde været i finalen, hele tre gange i Super Bowl, og vandt også trofæet i 2014.Et af hans selskaber ejede også en andel i fodboldholdet Seattle Sounders, et af de mest succesrige foretagender i Major League Soccer, som blev amerikansk mester i 2016.Det vides endnu ikke, hvad der kommer til at ske med Allens forskellige hold efter hans død, og detaljerne om hans bo er ikke offentligt tilgængelige.Paul Gardner Allen blev født i Seattle 21. januar 1953. Han var søn af Kenneth og Edna Allen, som var henholdsvis bibliotekar og skolelærer.Da Microsoft for tre år siden kunne fejre 40-års jubilæum, lagde Allen en lille bid af den første kode i selskabets allerførste softwareprodukt, ud på Twitter. Øverst stod der 'Copyright 1975 by Bill Gates and Paul Allen'.I samme anledning udtalte han: »Det er underligt at se på nogle små stykker kode, som man var med til at skrive for 40 år siden, og så tænke: 'De dér, de blev begyndelsen til alt det, Microsoft er i dag.« Du lytter til PolitikenTag Politikens nyhedspodcast i øreneLæs mere og lyt med herOg han lød oprigtigt overrasket, da han sagde det.Oversættelse: Jacob Giese
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2018-10-16
+          &nbsp;·&nbsp; e6f008b4
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.575</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.655</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Prisvinder er ny adjunkt</h4>
+        <div>
+          Thomas Dueholm Hansen, 31 år, er ansat som adjunkt i forskningsgruppen »Algoritmer og Datastrukturer« på Institut for Datalogi, Aarhus Universitet.Thomas Dueholm Hansen færdiggjorde i 2012 sin ph. d. på Institut for Datalogi på Aarhus Universitet, hvor han forskede i spilteori og løsning af optimeringsproblemer - et forskningsprojekt, som han undervejs fik et af Googles europæiske ph. d.-stipendier for. Han modtog også en ' Best Paper Award' ved STOC 2011 konferencen i San Jose, Californien for at vise, at et klassisk algoritmisk problem inden for lineær programmering ikke kan løses på den måde, som forskere siden 1970' erne har antaget.Han vandt desuden Aarhus Universitets Forskningsfonds ph. d.-pris i 2013 for sin afhandling.Efterfølgende modtog han en to-årig bevilling til at fortsætte sin forskning som postdoc på Tel Aviv Universitet, Israel, og på Stanford University i Palo Alto, Californien, før han i december 2014 vendte ' hjem' til Institut for Datalogi på Aarhus Universitet. Her modtog han en to-årig postdoc-bevilling.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende</em>
+          &nbsp;·&nbsp; 2016-05-24
+          &nbsp;·&nbsp; e5b8f66d
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.973</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.861</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.522</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.552</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kvinder i data science og sære ting machine learning gjorde i 2018</h4>
+        <div>
+          Ikke alle konkurrencer på Kaggle handler om at levere den mest fintunede XGBoost-model. Da konkurrence-sitet for data-professionelle i slutningen af 2018 lagde sin omfattende brugerundersøgelse ud, var udfordringen ikke at lave kompliceret machine learning, men at finde den mest interessante og meningsfulde historie, som dataen kunne fortælle. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-01-11
+          &nbsp;·&nbsp; e70ac596
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.745</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.665</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.672</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nedturen fortsætter for IBM</h4>
+        <div>
+          Engang var IBM kæmpen i den danske it-branche og ikke til at komme udenom.Men siden finanskrisen er IBM Danmark skrumpet år for år, og tendensen fortsætter i det netop udsendte regnskab for 2015.Omsætningen på 5,53 mia. kr. er 2,9 pct. lavere end i 2014, men dykket i omsætning var dog mindre end året før, hvor det var faldet med 9 pct.Også driftsoverskuddet er faldet, fra 273 mio. kr. i 2014 til 226 mio. kr. sidste år, mens bundlinjen lider under afskrivninger på datacentre og opkøb af virksomheder, ifølge ledelsesberetningen.Det blev til et samlet minus på 154 mio.kr. før skat. Dermed har IBM haft underskud alle år siden 2008, bortset fra et lille overskud i 2012. Samlet er det blevet til et tab på 1,2 mia. kr. på otte år.IBM Danmark vil ikke udtale sig om regnskabet, men har sendt en kort skriftlig melding fra den danske direktør, Henrik Bodskov.»IBM Danmark har i realiteten stabiliseret omsætningen, da toplinjen afspejler, at vi i 2014 frasolgte aktiviteter som X-server-forretningen til Lenovo,« skriver han og tilføjer, at IBM's forretning bliver fokuseret og skåret til.11 pct. færre ansatte Det sker som en del af en større transformation af IBM, hvor den klassiske itdrift og salg af hardware fylder mindre end før, mens firmaet satser på at genvinde det tabte med f. eks. løsninger, der bygger på kunstig intelligens.Omstillingen i IBM's forretning fører løbende til færre ansatte i Danmark, og det gennemsnitlige antal medarbejdere faldt da også i 2015 med 11 pct. til 2.286 hoveder. Siden da har IBM haft en større fyringsrunde i Danmark, da 160 stillinger blev nedlagt i slutningen af marts.Regnskabet byder ikke på nogen konkrete meldinger om forventningen til regnskabsåret 2016, og da Jyllands-Posten i november 2015 interviewede Henrik Bodskov, var det også kun betragtninger på langt sigt og vage meldinger om økonomien, han kunne tilbyde som nyslået direktør.»Om fem år vil vi have meget mere forretning og vækst omkring cognitive computing (løsninger med kunstig intelligens, red.), og det vil være fuldstændig inkorporeret i hele vores forretning,« sagde Henrik Bodskov dengang.jesper.kildebogaard@finans.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-06-02
+          &nbsp;·&nbsp; e5bccf4f
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.987</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.515</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.764</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FYLDER ÅR - NAVNENYT</h4>
+        <div>
+          75 Laurids Hedaa, direktør og professor emeritus ved Copenhagen Business School, fylder lørdag 75 år. Han er tidligere leder af Center for Applied Management Studies (CAMS), center for anvendt ledelsesforskning ved CBS, som han stod i spidsen for at etablere. Her var han foregangsmand for at sætte ledelse på dagsordenen, især dansk ejerledelse. Før da var han lektor ved Institut for Ledelse, Politik og Filosofi ved CBS og siden program director for Danmarks første MBA-program, som han var initiativtager til. I 1991 blev han lektor ved Institut for Ledelse, Politik og Filosofi og Institut for Markedsføring og fra 2011 professor. Tidligere var Laurids Hedaa bl.a. direktør i Dansk Institut for Personalerådgivning (nu Center for Ledelse) og koncerndirektør i Kongskilde Koncernselskab (nu Kongskilde Industries).70 Henrik Thorup, statsrevisor og regionsrådsmedlem, fylder lørdag 70 år. Han var elev i det daværende forsikringsselskab Baltica og blev uddannet assurandør fra Forsikringsakademiet i 1980 suppleret med en række merkonom-, salgs- og lederkurser. Efter ansættelser i AI-Forsikring (nu Vogel Assurance) og Post Danmark drev han 1996-2003 konsulentvirksomheden Danwrite. Han blev i 1996 formand for Dansk Folkeparti i Gentofte-Hellerup, blev i 2002 valgt til det daværende Københavns Amtsråd og viceamtsborgmester og har siden 2006 været medlem af regionsrådet i Region Hovedstaden. Han har været statsrevisor siden 1998 og er siden 2006 næstformand for Statsrevisorerne. Henrik Thorup beklæder desuden en række tillids- og bestyrelsesposter og blev i 2008 ridder af Dannebrog.50 Ida Bratting Kongsted, adm. direktør i HR-virksomheden AS3 Executive, fylder lørdag 50 år. Hun er uddannet HD fra CBS suppleret med ledelseskurser ved Insead i Frankrig og Wharton School, University of Pennsylvania i USA og har bl.a. arbejdet som HR-direktør for konsulentkoncernen F.E. Bording og for det tidligere FLSmidth-selskab FLS Miljø. Siden 2002 har hun hos AS3 Executive stået i spidsen for at udbygge forretningen inden for executive outplacement. Ida Bratting Kongsted er medlem af og formand for bestyrelsen for VL-gruppe 16 under Dansk Selskab for Virksomhedsledelse.John Buur Christiansen, adm. direktør i spildevandsvirksomheden Biofos, fylder lørdag 50 år. Han er officer fra Hærens Officersskole, kom i 1997 til Forsvarskommandoen og forlod forsvaret i 2006 med rang af oberstløjtnant. Siden har han arbejdet i kommunale forsyningsselskaber, først i I/S Amagerforbrænding, dernæst som direktør for Faxe Forsyning, hvor han fik ansvar for at etablere den nye forsyning. I 2013 blev han sat i spidsen for fusionen af Lynettefællesskabet og Spildevandscenter Avedøre til Biofos, Danmarks største spildevandsvirksomhed.Jane Skouv Lapain, filialdirektør i Arbejdernes Landsbank, fylder lørdag 50 år. Hun blev i 2009 ansat som souschef i Arbejdernes Landsbank i Gladsaxe og blev to år senere filialdirektør i Køge. Tidligere har Jane Skouv Lapain bl.a. arbejdet i Alm. Brand Bank og i Diba Bank.Jes Johansen, forretnings- og økonomidirektør i servicevirksomheden Røsva Skadeservice / Dansk Fugtteknik, fylder lørdag 50 år. Han er uddannet cand.merc. i finansiering og regnskab fra Copenhagen Business School og har været ansat som økonomidirektør i virksomheden siden 2009. Tidligere har han bl.a. arbejdet i det daværende teleselskab Mobilix, hvor han var med til at opbygge det franskejede teleselskab i Danmark og til at udvikle selskabet under navnet Orange. Inden Jes Johansen kom til Røsva, arbejdede han som finansdirektør hos it-virksomheden Medianet International i USA og Rumænien.Susanna Enemark, partner og chefoptiker, fylder søndag 50 år. Hun blev autoriseret optiker i 2002 og i 2004 medejer af optikerkæden Louis Nielsen i Skanderborg.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-05-26
+          &nbsp;·&nbsp; e5ba6c57
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.628</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.818</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Grosen Friis bliver medejer af Onlinepartners</h4>
+        <div>
+          I kraft af sin tekniske ekspertise og mangeårige erfaring er Grosen Friis bredt anerkendt som en af Danmarks førende kapaciteter inden for søgemaskineoptimering. Nu er esbjergenseren blevet medejer af Kolding-bureauet OnlinePartners.Grosen Friis er blandt frontløberne herhjemme inden for analysebaseret søgemaskineoptimering (SEO) af virksomheders hjemmesider, så flest mulige potentielle kunder finder dem med fx Google. Kombineret med universel teknisk ekspertise og mangeårig kommerciel SEO-erfaring indsamlet hos virksomheder som SPAMfighter og Eshoes har det skaffet esbjergenseren anerkendelse som en af Danmarks førende kapaciteter i branchen. For godt et halvt år siden blev Grosen Friis ansat som seniorkonsulent hos Kolding-firmaet OnlinePartners, der er blandt Danmarks største specialiserede SEO-bureauer, med henblik på senere at indtræde som partner. Allerede nu er det planlagte medejerskab blevet en realitet - til stifter og direktør Rune Hansens store tilfredshed.&quot;Grosen er blandt de teknisk dygtigste SEO-folk i Danmark, ikke mindst inden for international søgemaskineoptimering, og hans aktive medejerskab bliver derfor en kæmpe gevinst for både kunder og kolleger&quot;, siger direktøren, der især har store forventninger til Grosen Friis i en udbygget ekspert- og mentorrolle. Således har Friis - ud over direkte ansvar for en række af OnlinePartners? kunder - også fået til opgave at oprette et såkaldt SEO-laboratorium, hvorfra han løbende udgiver blogindlæg og videoklip om sine omfattende eksperimenter med søgemaskiners algoritmer.Succesfyldt firmaOnlinePartners er blandt Danmarks største SEO-bureauer. Virksomheden specialiserer sig i at omsætte søgepotentiale til branding og omsætning for ambitiøse virksomheder og webshops, primært via Google. Kolding-bureauet, der blev stiftet i 2010, voksede hurtigt ud af de daværende rammer. I 2012 skabte OnlinePartners fire nye arbejdspladser og fik igen brug for yderligere kvadratmeter. www.onlinepartners.dkGrosen Friis tv., som er blandt frontløberne herhjemme inden for analysebaseret søgemaskineoptimering (SEO) af virksomheders hjemmesider, er netop blevet medejer af OnlinePartners. Her ses han med bureauets stifter og direktør, Rune Hansen..
+        </div>
+        <footer>
+          <em>Lokalavisen.dk (Politikens Lokalaviser)</em>
+          &nbsp;·&nbsp; 2013-03-27
+          &nbsp;·&nbsp; e3b95434
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.904</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.662</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>CP Robotics skal til at bygge salg</h4>
+        <div>
+          Efter et år i Forskerparkens robot-kuvøse skal ny direktør opbygge forhandlernetEn algoritme, der i bund og grund består af 2000 linjer med et patenteret stykke kode, er ved at være klar til at blive sendt på markedet. Softwaren tilhører startup-virksomheden CP Robotics, der nu har lagt den hårde del af udviklingsarbejdet bag sig, og det grundlæggende salgsarbejde er lagt i hænderne på virksomhedens nye direktør Sabina Kethelz. Hun afløser Jimmy Alison Jørgensen, der stoppede ved årsskiftet.Født på SDUHidtil har Sabina Kethelz haft ansvaret for forretningsudvikling, og da markedsføringen fremover er virksomhedens vigtigste prioritet, var hun med sine egne ord det oplagte valg til posten.- Da jeg både har haft kontakt til potentielle kunder og investorer, så var det naturligt, at det blev et kendt ansigt udadtil, som tog over, siger den 30-årige direktør, der har været ansat i virksomheden siden sidste sommer.Hun er uddannet cand.mag. i virksomhedskommunikation og har tidligere arbejdet som forretningsudvikler for Blue Ocean Robotics. Siden har Sabina Kethelz været omkring MHI Vestas Offshore Wind, hvor hun var en del af salgsteamet.- Så egentlig er der ikke noget i min uddannelse, der rimer på teknik. Men jeg har tidligere arbejdet med markedsudvikling, og så har jeg altid haft en købmand i maven, siger direktøren, der nu er i fuld gang med at opbygge et forhandlernet.Kerneteknologien er en algoritme, der gør det muligt for robotter selv at planlægge en arbejdsbane - for eksempel ud fra en 3D-scanning. Brugerne kan være små og mellemstore industrivirksomheder, der arbejder med slibning, polering og fræsning.Her er der ofte tale om fysisk krævende arbejde, som ifølge Sabina Kethelz er oplagt at automatisere. I første omgang går opgaven ud på at finde de rigtige integratorer. Det er branchens betegnelse for de virksomheder, der udvikler og sælger robotløsninger til industrien. Målet er, at algoritmen bliver en del af den pakke, som integratorerne har med til deres kunder.- Og potentialet er enormt. Det her kan trække produktionen af alt det procesarbejde, som vi i dag har outsourcet til østen, hjem igen, siger Sabina Kethelz.Journalist, HD(A). Er skrivende på erhvervsredaktionen. Uddannet fra SDU i 2005 med praktik på Dagbladet Børsen. Har tidligere været på lokalredaktionen i Kerteminde, hvor ogs...Sabina Kethelz er ny direktør for CP Robotics. Hun afløser Jimmy Alison Jørgensen, der har siddet på posten, siden firmaet blev stiftet tilbage i 2015. Foto: Nils Svalebøg.Sabina Kethelz er ny direktør for CP Robotics. Hun afløser Jimmy Alison Jørgensen, der har siddet på posten, siden firmaet blev stiftet tilbage i 2015. Foto: Nils Svalebøg.Sabina Kethelz er ny direktør for CP Robotics. Hun afløser Jimmy Alison Jørgensen, der har siddet på posten, siden firmaet blev stiftet tilbage i 2015. Foto: Nils Svalebøg.Sabina Kethelz er ny direktør for CP Robotics. Hun afløser Jimmy Alison Jørgensen, der har siddet på posten, siden firmaet blev stiftet tilbage i 2015. Foto: Nils Svalebøg.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2017-01-21
+          &nbsp;·&nbsp; e613f2f0
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.523</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pokerrobotter kan snart slå topproer</h4>
+        <div>
+          Selv verdens bedste spillere får det svært mod pokerrobotter, hvis de fortsætter deres nuværende udvikling, spår amerikanske forskereInden for et år eller to vil selv verdens allerbedste og teoretisk bedst funderede pokerspillere få svært ved at slå de bedste pokerrobotter, som da vil være udstyret tilstrækkelig kunstig intelligens, skriverPokerstategy.com.Det er Noam Brown, ph.D.-studerende, og leder af et hold fra Carnegie Mellon University i Pittsburgh, som leverer spådommen efter deres pokerrobot 'Baby Tartanian 8' toppede en konkurrence mod 11 universiteter.Dens forgænger, også kendt som Claudico, fik store stryg for et år siden, da den spillede 80.000 hænder mod fire topproer.Se også: Pokerproer knuste supercomputerForskerne er overbeviste om, at forbedringer af algoritmerne vil gøre computeren i stand til at slå mennesker.Samme udvikling har man set inden for både backgammon og skak.Se også: Pokergigant til angreb: Bevis du ikke er en robotGennem årene har der været spillet en del udfordringer mellem pokerproer og forskernes robotter. Her er det Phil Laak, som i 2005 give en robot stryg. (Foto: AP).Gennem årene har der været spillet en del udfordringer mellem pokerproer og forskernes robotter. Her er det Phil Laak, som i 2005 give en robot stryg. (Foto: AP).
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2016-03-05
+          &nbsp;·&nbsp; e599d03e
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.622</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Anm: SCIENCE FICTION: Vrøvl i maskinen</h4>
+        <div>
+          Will Caster (Johnny Depp) er forskeren, der arbejder med kunstig intelligens, og da han dør, genopstår han som ren bevidsthed i form af en talende computer med superkræfter.Snart vil filmen være en kærlighedshistorie om forholdet mellem ' maskinen' og Will Casters efterladte, grådlabile kone, Evelyn (Rebecca Hall), og senere en økologisk fortælling om at redde vores forurenede planet.Instruktøren formår aldrig at få os til at hoppe på limpinden grundet et rodet manuskript og en række skuespillere, der blot kører den af på rutinen. jø.hq@eb.dk 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2014-10-17
+          &nbsp;·&nbsp; e4a0c7b4
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.95</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.932</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.531</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EN DÅRLIG DAG FOR...</h4>
+        <div>
+          Sergej Lavrov. Er Ruslands udenrigsminister »en bedrøvet lille hest«? Og kunne man lige så godt kalde Rusland for Mordor, ligesom det golde land, der beherskes af mørkets fyrste Sauron, i Tolkiens roman ' Ringenes herre'? Det måtte man tro, indtil Google fik rettet en fejl i sit automatiske oversættelsesprogram fra ukrainsk til russisk.Ifølge Google var der tale om en fejl i de algoritmer, der oversætter ord, og som også nåede frem til at oversætte russere med ' besættere'.Ja så.michael.jarlner@pol.dk Fejl og Fakta: 09.01.2016’En dårlig dag for ...’ her på siden i går handlede om Ruslands udenrigsminister, men flere læsere hæftede sig ved det ledsagende billede og meddelte, at det kom som en overraskelse for dem, at Sergej Lavrov og nationalbankdirektør Lars Rohde åbenbart er enæggede tvillinger.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2016-01-08
+          &nbsp;·&nbsp; e5714e30
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.599</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>RPA-kaos i Udlændingestyrelsen: »Vi har taget en alt for stor mundfuld fra start af«</h4>
+        <div>
+          »Vi sigtede efter at have to robotter ved udgangen af 2017. Vi har nul nu og måske en i januar 2019.« Sådan lød status fra kontorchef Jørgen Kamp Knudsen fra Udlændingestyrelsen, da han for nylig holdt oplæg om styrelsens erfaringer med softwarerobotter til Konferencen AI &amp; Robotics Public. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/digitech</em>
+          &nbsp;·&nbsp; 2018-12-12
+          &nbsp;·&nbsp; e7021c02
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.535</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.627</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.501</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.522</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pia K's ægtemand scorer toppost - se lønnen</h4>
+        <div>
+          Statsrevisorerne har valgt Dansk Folkepartis Henrik Thorup - som er gift med DF's stifter Pia Kjærsgaard - som deres formand.Henrik Thorup har længst anciennitet som statsrevisor. Siden 1988 har han været statsrevisor og næstformand siden 2006.Pia Kjærsgaards mand får dog ikke mere i lønposen, fordi han nu skal være formand for statsrevisorerne..Dermed må han tage til takke med sin hidtige løn på 330.000 årligt. Henrik Thorup har også en række andre lønnede politiske ben.Da Ekstra Bladet for et par år siden gennemgik hans løn kom det frem, at hans indtægt rundede en million kroner.Henrik Thorup blev i 1980 uddannet som assurandør fra Forsikringshøjskolen.1993-96 var han salgschef i Post Danmark efter en årrække i AI-Forsikring og Baltica.Statsrevisorerne er valgt for fire år. De mødes en gang om måneden. De kan bede Rigsrevisionen undersøge et område. Statsrevisorerne udtaler kritik af ministerier og styrelser efter Rigsrevisionens beretninger (undersøgelser).Statsrevisorerne anvender en karakterskala for deres kritik, som angiver hvor alvorlig kritikken er.De Radikales Klaus Frandsen er valgt som næstformand.Klaus Frandsen har været statsrevisor siden 2011 og har næstlængst anciennitet.Klaus Frandsen blev i 1985 bachelor i erhvervsøkonomi fra Odense Universitet. Siden læste han finansiering ved Handelshøjskolen i København.Fra 2005 har han været direktør for forretningsudvikling i PBS og administrerende direktør i datterselskabet Nets, der udvikling løsninger for dankort og betalingskort.Klaus Frandsen var 2009-15 landsformand for Det Radikale Venstre.Derudover består Statsrevisorerne af Socialdemokratiets gruppeformand, Henrik Sass Larsen, Venstres politiske ordfører, Britt Bager, Liberal Alliances Villum Christensen og Enhedslistens Frank Aaen.
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2018-10-10
+          &nbsp;·&nbsp; e6ee3ca8
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.501</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>I løbet af 100 år bliver smilet bare bredere og bredere</h4>
+        <div>
+          Det er ikke kun hårstilen, der ændrer sig, hvis man ser på amerikanske highschool-billeder gennem årene.Måske er det blevet sjovere og sjovere at gå i highschool i USA de seneste 100 år. I hvert fald er de unge menneskers smil kun blevet bredere.En undersøgelse af over 37.000 skolebilleder fra amerikanske highschool-årbøger fra 1905 til 2010 har vist, at eleverne i årene efter årtusindskiftet har større tendens til at trække på smilebåndet end deres jævnaldrende i begyndelsen af 1900-tallet.Læbernes kurve blev studeretDe mange tusind portrætfotos er blevet analyseret på Berkeley-universitetet i Californien ved hjælp af en algoritme, der har undersøgt læbernes kurve på de portrætterede. Og tendensen er klar: Som årene skrider frem, smiler eleverne mere.Ifølge Shiry Ginosar, en af hovedforfatterne bag det omfattende billedstudie, var fotografi stadig en luksus i begyndelsen af 1900-tallet, hvor moden dikterede, at munden skulle se så lille ud som muligt.Men som fotografiet blev mere udbredt, og kamerafabrikanten Kodak solgte fotografiapparater med en opfordring til at fange livets lykkelige øjeblikke, blev smilet efterhånden den foretrukne grimasse på fotografier, siger Ginosar til The MIT Technology Review.Ifølge forskerne er det også værd at nævne, at tandhygiejnen og adgangen til tandlægehjælp forbedredes væsentligt op gennem det 20. århundrede, og at det er sandsynligt, at man får lettere til smil, når man har hvide, velplejede bisser.Foto: Shiry Sara GinosarFoto: Shiry Sara Ginosar.Foto: Shiry Sara Ginosar.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2015-12-29
+          &nbsp;·&nbsp; e56e6b95
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.599</kbd>
+            <kbd data-tooltip="Year">L80_YEAR&nbsp;0.503</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.716</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bøl­ge af æn­dre­de han­del­san­be­fa­lin­ger ram­mer dan­ske to­pak­tier: Her er ana­ly­ti­ker­nes nye vur­de­rin­ger af af­kast­po­ten­ti­a­let</h4>
+        <div>
+          En stribe aktieanalytikere har onsdag morgen kigget flere af de danske eliteaktier i C25-indekset i kortene og kommet med nye vurderinger af aktiernes afkastpotentiale. Ritzau Finans har indsamlet overblikket over de nye anbefalinger og kursmål - her kommer et overblik:A.P. Møller-Mærsk: Finanshus skruer ned for anbefaling og kursmålSEB har sænket sin anbefaling af A.P. Møller-Mærsk-aktien til ''hold'' fra tidligere ''køb'', fremgår det af Bloomberg News.Kursmålet er dog samtidig blevet skruet op med 14 pct. til 16.000 kr. fra tidligere 14.000 kr. og indikerer dermed et potentiale på 7 pct. sammenholdt med lukkekursen tirsdag i 14.895 kr.Mærsk-aktien er det seneste år oppe med 136 pct. Siden årsskiftet er aktien steget ca. 12 pct.DSV Panalpina: Carnegie sænker anbefaling, men tror på mere afkast Investeringsbanken Carnegie har nærstuderet DSV Panalpina-aktien og har valgt at sænke sin anbefaling til ''hold'' fra ''køb''. Ikke desto mindre ser investeringsbanken et større afkastpotentiale for aktien over de næste 12 måneder, da kursmålet er skruet op fra 1350 kr. til 1395 kr., fremgår det af PLX AI. DSV-aktien endte tirsdag uændret i 1302,50 kr. Aktien lukkede fredag i rekord i 1310 kr.Rockwool: Analytiker ellevild - tror på 50 pct afkastpotentialeKursmålet for aktien i Rockwool er tirsdag blevet sat op med 22 pct. til 3960 kr. fra førhen 3240 kr. af finanshuset On Field Investment Research, fremgår det af Bloomberg.Anbefalingen af aktien fastholdes på ''outperform'' af analytiker Xintong Ouyang. Det nye kursmål indikerer da også et potentiale på næsten 50 pct. i forhold til lukkekursen tirsdag i 2701 kr.On Field Investment Research har haft en positiv anbefaling af aktien i Rockwool siden oktober 2020, da kursen på aktien lå i 2816 kr.Rockwool-aktien er steget ca. 93 pct. det seneste år og er oppe med ca. 17 pct. siden årsskiftet.Spar Nord: Kursmål løftet efter opjusteringKursmålet for aktien i Spar Nord er tirsdag blevet løftet med 6 pct. til 67 kr. fra førhen 63 kr. af finanshuset ABG Sundal Collier, fremgår det af Bloomberg.Anbefalingen af aktien gentages på ''hold'' af analytiker Mads Thinggaard. Det nye kursmål indikerer et potentiale på knap 7 pct. i forhold til lukkekursen tirsdag i 62,90 kr.ABG Sundal Collier har haft en neutral anbefaling af aktien i Spar Nord siden oktober 2020, da kursen på aktien lå i 53,00 kr.Spar Nord var tirsdag ude med en opjustering af forventningerne til 2021 og fulgte dermed i hælene på en række andre banker. Aktien faldt dog 1,1 pct. i gårsdagens handel.GN Store Nord: Finanshus ser øget afkastpotentialeKursmålet for aktien i GN er tirsdag blevet løftet med godt 6 pct. til 606 kr. fra førhen 570 kr. af finanshuset ABG Sundal Collier, fremgår det af Bloomberg News.Anbefalingen af aktien fastholdes på ''køb'' af analytiker Jannick Denholt. Det nye kursmål indikerer da også et potentiale på 14 pct. i forhold til lukkekursen tirsdag i 531,40 kr.ABG Sundal Collier har haft en købsanbefaling af aktien i GN siden oktober 2019, da kursen på aktien lå i 275 kr.Mærsk Drilling: Løftet kursmål, men fortsat negativt afkastpotentialeKursmålet for aktien i Maersk Drilling er tirsdag blevet sat op med knap 24 pct. til 235 kr. fra førhen 190 kr. af finanshuset SEB Bank.Det fremgår af data fra Bloomberg News.Anbefalingen af aktien fastholdes på ''sælg'' af analytiker Kim Andre Uggedal. Det nye kursmål indikerer da også et negativt potentiale på 7 pct. i forhold til lukkekursen tirsdag i 254 kr.SEB Bank har haft en salgsanbefaling af aktien i Maersk Drilling siden november sidste år, da kursen på aktien lå i 178 kr.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2021-04-21
+          &nbsp;·&nbsp; e83ac1f5
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.981</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.521</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.941</kbd>
+            <kbd data-tooltip="Million DKK &amp; private sector">L80_DKKPRV&nbsp;0.503</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt job: Thomas Dueholm Hansen</h4>
+        <div>
+          Prisvinder er ny adjunkt.JOBNYTThomas Dueholm Hansen, 31 år, er ansat som adjunkt i forskningsgruppen »Algoritmer og Datastrukturer«på Institut for Datalogi, Aarhus Universitet.Thomas Dueholm Hansen færdiggjorde i 2012 sin ph.d. på Institut for Datalogi på Aarhus Universitet, hvor han forskede i spilteori og løsning af optimeringsproblemer   et forskningsprojekt, som han undervejs fik et af Googles europæiske ph.d.-stipendier for. Han modtog også en -Best Paper Award- ved STOC 2011 konferencen i San Jose, Californien for at vise, at et klassisk algoritmisk problem inden for lineær programmering ikke kan løses på den måde, som forskere siden 1970-erne har antaget.Han vandt desuden Aarhus Universitets Forskningsfonds ph.d.-pris i 2013 for sin afhandling.Efterfølgende modtog han en to-årig bevilling til at fortsætte sin forskning som postdoc på Tel Aviv Universitet, Israel, og på Stanford University i Palo Alto, Californien, før han i december 2014 vendte -hjem- til Institut for Datalogi på Aarhus Universitet. Her modtog han en to-årig postdoc-bevilling.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2016-05-24
+          &nbsp;·&nbsp; e5b90c46
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.971</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.856</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.538</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mødtes i Odense: Lægeduo har arbejdet sammen på 4598 kilometers afstand i fem år</h4>
+        <div>
+          De mødtes for fem år siden, skabte fælles selskab to år senere og har nu udviklet software, der skal gøre det muligt at gruppeteste for corona. Men en norsk og en iransk læge har i fem år kun set hinanden på Skype.For fem år siden mødtes en norsk og iransk læge tilfældigt ved en lægelig konference i Odense. Farzin Kamari skulle tale om sit forskningsarbejde med at poole analyser og gruppeteste patienter ved eksempelvis klamydia, mens norske Eivind Segtnan holdt oplæg om sit arbejde med at bruge kunstig intelligens ved hjerneforskning.Efterfølgende blev en gåtur til en bar i centrum af byen og indgående snak om algoritmer og data starten på et tæt venskab og samarbejde.- Vi har været tætte venner i mange år nu, men vi har ikke set hinanden siden dengang for fem år siden, siger 37-årige Eivind Segtnan.Vi har været tætte venner i mange år nu, men vi har ikke set hinanden siden dengang for fem år siden.Eivind SegtnanSammen med sin 11 år yngre lægekollega fra Tabriz i Iran står han bag en softwareløsning, som skal gøre det lettere og effektivt at gruppere testpersoner, når man skal analysere resultater i arbejdet med at opspore corona i Danmark og resten af Europa.Mødet i Odense blev starten på et tæt samarbejde og venskab, og da covid-19-pandemien ramte i starten af 2020, så de to læger hurtigt muligheden for at arbejde sammen om en løsning til bedre og hurtigere testning.- Vi var i gang med en lignende testløsning til bedre at forstå, hvordan hjernen fungerer, men vi besluttede at forsøge at bruge vores viden om kunstig intelligens og pooling af test i arbejdet med covid-19, siger Eivind Segtnan.Næsten symbolsk foregår samarbejdet mellem de to med mere end rigelig afstand, da de to ikke har set hinanden siden mødet for fem år siden.- Vi skriver sammen og sender voice-beskeder frem og tilbage konstant, siger Eivind Segtnan.Det kan dog snart ændre sig, da 26-årige Farzin Kamari er tæt på at flytte til Tyskland, hvor han har fået kontrakt på et universitetshospital i Tübingen nær Stuttgart.- Jeg mangler bare at få mit visa på plads, og det er helt fantastisk, for så kommer vi meget tættere på hinanden. Indenfor køreafstand, siger Kamari, der bor med sin hustru i Iran.De to venner har en drøm om at bo side om side, men i første omgang kan de altså reducere afstanden fra 4598 kilometer til 1013 kilometer tysk motorvej over de næste tre år, hvor Kamari skal arbejde på det moderne tyske hospital.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2021-04-09
+          &nbsp;·&nbsp; e834daef
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.96</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.626</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Belgier vandt satirepris</h4>
+        <div>
+          Tegninger: 1.200 tegninger fra satiretegnere fra hele verden deltog i årets konkurrence Viborg Cartoon Award, der af arrangørerne betegnes som det officielle VM i satiretegninger.60 finalister var blevet udvalgt af en international jury, inden de tre vindere blev kåret og bl. a. fejret af Viborgs borgmester, Ulrik Wilbek (V).Ligesom i 2017 blev det en belgier, der løb med førstepladsen, da juryen pegede på tegner Constantin Sunnerberg, 48 år. Ligesom de øvrige tegnere har han taget udgangspunt i årets tema, kunstig intelligens.Andenplads gik til fransk-iranske Shahrokh Heidari, 40 år, mens den 47-årige brasilianske tegner Claudio Antonio Gomes blev nummer tre. JP.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-10-16
+          &nbsp;·&nbsp; e6efcbaf
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.547</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.961</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.853</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.563</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ØJEBLIK: Sig appelsiiiin - gennem mere end 100 år</h4>
+        <div>
+          Foto. Måske er det blevet sjovere og sjovere at gå i highschool i USA de seneste 100 år. I hvert fald er de unge menneskers smil kun blevet bredere.En undersøgelse af over 37.000 skolebilleder fra amerikanske highschool-årbøger fra 1905 til 2010 har vist, at eleverne i årene efter årtusindskiftet har større tendens til at trække på smilebåndet end deres jævnaldrende i begyndelsen af 1900-tallet. De mange tusind portrætfotos er blevet analyseret på Berkeley-universitetet i Californien ved hjælp af en algoritme, der har undersøgt læbernes kurve på de portrætterede. Og tendensen er klar: Som årene skrider frem, smiler eleverne mere. Ifølge Shiry Ginosar, en af hovedforfatterne bag det omfattende billedstudie, var fotografistadig en luksus i begyndelsen af 1900-tallet, hvor moden dikterede, at munden skulle se så lille ud som muligt. Men som fotografiet blev mere udbredt, og kamerafabrikanten Kodak solgte fotografiapparater med en opfordring til at fange livets lykkelige øjeblikke, blev smilet efterhånden den foretrukne grimasse på fotografier, siger Ginosar til The MIT Technology Review.Ifølge forskerne er det også værd at nævne, at tandhygiejnen og adgangen til tandlægehjælp forbedredes væsentligt op gennem det 20. århundrede, og at det er sandsynligt, at man får lettere til smil, når man har hvide, velplejede bisser.laura.byager@pol.dk 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2015-12-29
+          &nbsp;·&nbsp; e56e1baf
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.593</kbd>
+            <kbd data-tooltip="Year">L80_YEAR&nbsp;0.559</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.734</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens i Hollywood: Kampen mellem mennesker og maskiner</h4>
+        <div>
+          Falske Maria i -Metropolis- (Fritz Lang, 1927)Falske Maria, en af filmhistoriens første robotter, der tager skikkelse af et menneske, er omdrejningspunktet i et humanistisk opgør med fascisme og en advarsel mod et industrialiseret, klassedelt samfund, hvor magthaverne groft udnytter arbejderne.Tyske Fritz Langs mesterværk er en banebrydende science fiction-film, der om noget demonstrerer, hvad genren kan bruges til. Og endelig er den begyndelsen på det had-kærlighedsforhold til moderne teknologi, som filminstruktører siden da har haft på vegne af alle os andre.I langt de fleste af de film, som handler om robotter/androider og kunstig intelligens ligger der nemlig både en fascination af teknologiens uendelige muligheder   ikke mindst for at gøre tilværelsen lettere   og en frygt for, at den tager magten fra os.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-03-09
+          &nbsp;·&nbsp; e6265b29
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.875</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.89</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NYT JOB</h4>
+        <div>
+          Arthur Zimek er udnævnt til professor ved Institut for Matematik og Datalogi på SDU, hvor han også er leder af sektionen Data Science and Statistics.Hans forskningsområnyt de er datavidenskab (dataanalyse, data mining, machine learning og kunstig intelligens).Zimek kom til Danmark i 2016, og før da var han ansat på universiteterne Ludwig-Maximilians-University, München, Technical University, Østrig, og University of Alberta, Canada.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2019-11-09
+          &nbsp;·&nbsp; e76e65b4
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.965</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.522</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Beregningerne begyndte på DTU</h4>
+        <div>
+          HØRSHOLM: Enfor blev grundlagt i 2006 og udspringer af DTU, der siden 1990' erne havde et samarbejde med energiselskabet Elsam, der senere fusionerede med Dong og nu er blevet til Ørsted. Da der kom mere vind i den samlede energiforsyning i begyndelsen af 00' erne, kunne Dong ikke forlade sig på et samarbejde med et universitet, fordi det var nødvendigt at kunne stille anderledes kontante krav til leverandøren af energi-prognoser, end man kan til et universitet.Derfor grundlagde Torben S. Nielsen og Henrik Aa.Nielsen i 2006 Enfor i samarbejde med professor Henrik Madsen fra DTU Compute.I 2016 købte administrerende direktør Mikkel Westenholz sig ind i firmaet. Han har tidligere arbejdet med elhandel i Ørsted. Professor Henrik Madsen sidder også med i ejerkredsen.Den vigtigste opgave er at forudse, hvordan energiproduktionen bliver den kommende dag, men Enfor laver også forudsigelser på timebases i løbet af dagen, som energiforsyningsselskaberne bruger som grundlag for at handle med strøm og hele tiden sikre, at der er den rette mængde til forbrugerne.I Tyskland laver Enfor forudsigelser ned til et kvarter frem i tiden.Beregningsmodellen er udviklet på Danmarks Tekniske Universitet i 1990' erne og 00' erne og består af avanceret matematik, som bruger historiske vejrdata og vejrudsigter fra hele verden til at beregne energiproduktionen.Systemerne er lavet, så de hele tiden bliver bedre og opdaterer sig selv. Det man også kalder kunstig intelligens eller machine learning.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2020-09-28
+          &nbsp;·&nbsp; e7e94186
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.918</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.694</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lemvigh-Müller vinder pris for brug af kunstig intelligens</h4>
+        <div>
+          Den har banket stormestre i skak. Den bliver brugt i forbindelse med kræftdiagnosticering. Og nu er den rykket ind i grossistbranchen. Lemvigh-Müller har for et lille års tid siden taget IBM's kunstige intelligens 'Watson Explorer' i brug som en digital salgsassistent. Det går så godt, at grossisten vandt sølv i kategorien 'AI og Analytics' til Danish Digital Award 2019, der løb af stablen 9. maj.»Vi satser på kunstig intelligens, som vi ser som en nøgle dels til bedre kundeoplevelser, dels til øget konkurrenceevne. Vi er selvfølgelig enormt glade for og stolte over at have vundet sølv lige præcis i kategorien 'AI og Analytics', for det fortæller, at vi er helt på rette spor,« siger økonomidirektør Tony Christensen, der har haft ansvaret for implementeringen af Watson i Lemvigh-Müller i pressemeddelelsen.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-05-14
+          &nbsp;·&nbsp; e732a368
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.843</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.664</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Søgemaskinernes betvinger</h4>
+        <div>
+          Søgemaskineoptimering (SEO) af hjemmesider dvs. at få siderne højt op i hierarkiet i forbindelse med søgning på f.eks. Google er en kunst, som har stor betydning i forbindelse med elektronisk handel. Kunsten mestres af nogle få. En af dem er esbjergenseren Grosen Friis (tv), som igennem årene har slået sit navn fast som algoritmernes mester, der forstår af betvinge søgemaskinernes hierarki og få kunderne i top af søgningerne med sine analysemetoder.Dermed er han blevet en frontløber på denne bane.Gode lærestederKunsten har han lært i virksomheder som Spamfighter og Eshoes, og han har siden praktiseret den i både selvstændig virksomhed og som ansat.For godt et halvt år siden blev Grosen Friis ansat som seniorkonsulent i Kolding-firmaet Onlinepartners, der er blandt Danmarks største specialiserede SEO-bureauer med henblik på senere at indtræde som partner.Partnerskabet er nu blevet en realitet, og Grosen Friis er således allerede nu indtrådt i Kolding-bureauet, der blev stiftet i 2010. Virksomheden specialiserer sig i at omsætte søgepotentiale til branding og omsætning for virksomheder og webshops, primært via Google.&quot;Grosen Friis er særdeles løsningsorienteret og udfører selv meget komplekse opgaver med uhyggelig effektivitet. Vores hold af specialister i searchmarketing spænder over et meget bredt fagligt spekter, og Grosen Friis' aktive medejerskab er den brik, der fuldender os som 360 graders SEO-bureau,&quot; lyder velkomsten fra bureauets stifter Rune Hansen (th), der især har store forventninger til Grosen Friis i en udbygget ekspert- og mentorrolle.Nyt laboratoriumGrosen Friis har således - ud over direkte ansvar for en række af Onlinepartners' kunder - også fået til opgave at oprette et såkaldt SEO-laboratorium, hvorfra han løbende udgiver blogindlæg og videoklip om sine omfattende eksperimenter med søgemaskiners algoritmer.For den nye partner er modellen for medejerskab af Onlinepartners ideel, da den kombinerer den selvstændiges frie liv med den ansattes muligheder for at holde det faglige fokus skarpt.&quot;På den ene side vil jeg gerne have foden under eget bord, men på den anden side brænder jeg for at skabe direkte værdi for kunderne, ikke for at lede og administrere. Derfor er jeg meget glad for den aktuelle model,&quot; siger Grosen Friis, der nu ifølge ham selv er blevet medejer med fortsat fokus på at gøre det, han er bedst til.I den nye funktion som partner bibeholder han da også stillingen som seniorkonsulent.Billedtekst AVISEN Af Erik Svarre.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2013-04-01
+          &nbsp;·&nbsp; e3ba967b
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.732</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.628</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOLK</h4>
+        <div>
+          Kunstigt intelligente IIHerhjemme har tv-satirikeren Jonatan Spang forsøgt at få en IBM-udviklet robot ved navn Dorthe til at skrive vittigheder til programmet Tæt på sandheden. Kunstigt intelligente Dorthe misforstod dog opgaven og leverede i stedet en tvivlsom personanalyse.Kunstigt intelligente IIIDet gik bedre for en gruppe programmører og forfattere, der samarbejdede med et kunstigt intelligent program om at skrive et nyt eventyr baseret på Grimms eventyr.Prinsessen og ræven er titlen på algoritmerne og redaktørernes fælles værk.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2018-11-16
+          &nbsp;·&nbsp; e6fa1f70
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.972</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.51</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kan Facebook fikses?</h4>
+        <div>
+          Hvert år deler Facebooks stifter Mark Zuckerberg sit nytårsforsæt. Og næsten hvert år har det handlet om hans personlige udvikling: Vær taknemlig, vær åben, lær et sprog. Men årets nytårsforsæt er overraskende omfangsrigt og rummer en bemærkelsesværdig oplysning: Facebook er gået i stykkerMark Zuckerbergs nytårsforsæt plejer at imponere. De er mere ambitiøse end vægttab og vinterbad, og modsat de nytårsforsæt, vi andre forpligter os på, er Zuckerberg lykkedes med sine. Indtil nu.Facebookchefens første offentlige nytårsforsæt var at gå med slips hver dag i 2009. Facebook var allerede dengang en ombejlet størrelse, men det var ikke desto mindre en succes uden en forretningsmodel. Derfor slipset som en daglig påmindelse om, at det mest presserende var at få styr på forretningen.Han fandt sin forretningsmodel: datadreven annoncering. Den var så succesfuld, at den lagde navn til en ny økonomisk model: overvågningskapitalisme.Efter 2009 fulgte bemærkelsesværdige, men dog også mindre forsæt, som tegnede billedet af en let excentrisk og målrettet ung mand:- 2010: Lær mandarin- 2011: Kun spise kød jeg selv har dræbt- 2012: Skriv kode hver dag- 2013: Mød en ny person hver dag- 2014: Skriv et takkebrev hver dag- 2015: Læs en bog hver anden uge- 2016: Kod en AI-assistent- 2017: Besøg alle delstater
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2018-01-11
+          &nbsp;·&nbsp; e693059c
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.568</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Deep blue</h4>
+        <div>
+          22.03 Da skakcomputeren Deep Blue i 1997 slog den russiske stormester Garry Kasparov, var det intet mindre end en sensation. I dag ved at computeren ikke var klogere end Kasparov, den var bare bedre til regne. Men forskningen i kunstig intelligens stræber stadig efter at efterligne den menneskelige hjerne give robotter situationsfornemmelse og evner til at tænke selv. Hør lektor Thomas Bolander fra DTU Informatik i &quot; Danskernes Akademi&quot;. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2011-04-08
+          &nbsp;·&nbsp; e29d9e27
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.527</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens</h4>
+        <div>
+          P1 22.03 Da skakcomputeren Deep Blue i 1997 slog den russiske stormester Garry Kasparov, var det intet mindre end en sensation. I dag ved vi, at computeren ikke var klogere end Kasparov, den var bare bedre til at regne. Men forskningen i kunstig intelligens stræber stadig efter at efterligne den menneskelige hjerne og give robotter situationsfornemmelse og evner til at tænke selv. &quot; Danskernes Akademi på P1&quot; om kunstig intelligens. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2011-08-05
+          &nbsp;·&nbsp; e2ced065
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.932</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Watson taler syv sprog og øver sig lige nu på koreansk</h4>
+        <div>
+          IBM's supercomputer har vundet Jeopardy, taler syv sprog og tager nu de første skridt i sin karriere som kræftlæge.En robotfinger klikker energisk på den blå podieknap. »Ja, Watson«, lyder det fra quizværten, før en mekanisk stemme i klassisk Jeopardy-facon svarer med spørgsmålet: »Hvad er narkolepsi?«. Det lignede et hvilken som helst andet Jeopardy-studie, med podier, kategoritavle og quizdeltagere, da IBM's supercomputer Watson i 2011 dystede og vandt mod USA's stærkeste Jeopardydeltagere, Brad Runner og Ken Jennings, der i deres Jeopardy-karriere til sammen har vundet en præmiesum på over 33 millioner kroner.Scenen var imidlertid ikke en kulisse i Los Angeles, men et IBM-forskningslaboratorium i en snefyldt skov i Westchester County i delstaten New York, hvor den internationale it-virksomhed for åben skærm udfordrede grænserne mellem menneske og maskine.Sejren var en ren robotrevolution, der sikrede Watson en plads i rækken af computere, der gennem tiden har revolutioneret den kunstige intelligens.Men selvom IBM's computer Deep Blue i en historisk kamp i 1997 satte den russiske skatverdensmester Garri Kasparov skakmat, så åbnede Watsons møde med mennesket for helt nye teknologiske højder.Hurtigere end de flesteHvor skak kræver en matematisk og logisk registrering af information, så er Jeopardy et nemlig et langt mere kompliceret virvar er sarkasme, talemåder og metaforer. En sproglig forståelse, som et menneskebarn forstår, men som computere har voldsomt svært ved.Og Watsons evnen til at læse mellem, på og uden for linjerne sker hurtigere, end hos de fleste. Den læser flere millioner sider i minuttet om alt, hvad man fodrer den, og kan hurtigt og ubesværet finde sammenhænge umiddelbart tilfældelige komponenter som mælk, neurobaner og din mormors kolonihavehus.Og det har gjort Watson eftertragtet på hospitalerne, hvor de nu ser mulighederne i, at lade teknologien kværne viden, så lægerne kan bruge tiden med deres patienter.Således startede Watson i begyndelsen af året sin karriere som kræftlæge, da han på blot ti minutter fandt frem til en diagnose på en sjælden form for leukæmi hos en patient i Japan. Og senest for nylig blev han ansat på hospitalet AZ Damiaan i Belgien, hvor han tager imod besøgende og patienter i en robotkrop.Selvom Watson benytter samme kunstige intelligens, som for fem år siden, så er den blevet både klogere, lettere og mere selvkørende. Da Jeopardy i 2011 rendte af stablen var Watsons skærmhoved gennem kabler og ledninger forbundet til en computer på størrelse med otte køleskabe.Siden da er han flyttet i skyen som software, taler syv sprog og øver sig i øjeblikket på koreansk.astrid.rasmussen@pol.dk Sejren var en ren robotrevolution, der sikrede Watson en plads i rækken af computere, der gennem tiden har revolutioneret den kunstige intelligens.Fakta: BLÅ BOG DR. WATSONVandt i 2011 quizprogrammet Jeopardy.Diagnosticerede i 2016 en sjælden kræftform.Bliver solgt i dele til forskellige virksomheder.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2016-09-21
+          &nbsp;·&nbsp; e5e44aba
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.903</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.63</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Elever regnede den ud: Blev nummer 2 i matematik-dyst</h4>
+        <div>
+          8. klasser klarede sig godt på Matematikkens Dag 8. klasserne på Herstedvester Skole klarede sig godt, da de deltog sammen med 400 andre klasser landet rundt i Matematikkens dag.Årets tema var programmering, alle elever kodede, så håret strittede til alle sider.Eleverne fordybede sig i matematikken. De programmerede og tænkte i algoritmer og systemer. Eleverne udarbejdede i fællesskab programmer, som de på kreativ vis gjorde stadig smartere og smidigere.Specielt to elever, Oliver Dahl Ransby og Zacharias Jacobsen fra 8.x., var gode til kodning, da de vandt en 2. plads i aldersgruppen 7.-9. klassetrin.Det flotte resultat kom hjem med en en animation om den rette linies ligning.due
+        </div>
+        <footer>
+          <em>Albertslund.lokalavisen.dk</em>
+          &nbsp;·&nbsp; 2017-12-20
+          &nbsp;·&nbsp; e68d4dcd
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.94</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.578</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.649</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lokal tandlæge vinder DM i bridge: Det var tæt på at gå helt galt</h4>
+        <div>
+          NÆSTVED: Det kræver tid, og selvom det har trukket tænder ud, så har Jan Nicolajsen holdt sin passion til kortspillet ved lige. Men det har været op og ned med aktivitetsniveauet gennem årene, og som selvstændig tandlæge og familiefar har det i perioder knebet med at mødes med bridge-drengene.En tur til hovedstaden for at spille kort tager aftenen og noget af natten med.Jan Nicolajsen er blandt de godt 100.000 der spiller bridge i Danmark. Interessen begyndte som barn. I skolebussen var der god tid til en gang jydewhist, og da der på hjemmefronten faldt spillere fra, fik knægten en plads ved bordet.Studerende til EM Bridgespillet tog for alvor fart i gymnasietiden, og der gik kun et par år før Jan Nicolajsen og en kammerat vandt amtsmesterskaberne.Senere kaldte juniorlandsholdet, og da den unge Jan Nikolajsen kom på tandlægehøjskole blev han udtaget til EF-mesterskaberne i Birmingham, England. Det var datidens EM.-Min lærer truede mig med, at jeg skulle gå et halvt år om, hvis jeg tog med. Det gik anderledes, da det viste sig, at min lærers kone spillede bridge, siger Jan Nicolajsen.Han griner, og har ikke så meget at klage over. I soldatertiden var Forsvaret gode til at give fri, når der var turneringer og mesterskaber.Danmarks bedste Siden begyndelsen af 1990' erne har tandlægen spillet bridge i første division.Som enhver anden sport kræver det træning sammen med resten af holdet, og selvom det har knebet med at være lige så vedholdende som de spillere, der kæmper med algoritmer og sandsynlighedsberegning på et næsten autistisk plan, har Jan Nicolajsen klaret sig godt.Han deltog i DM for seniorer og vandt over det hold, der er kendt for at have slået verdensmestrene fra Kina.DM-vinderholdet består af Klaus Adamsen, Nykøbing Sj., Dennis Kock Palmund, Karlsunde, kaptajn for det danske bridgelandshold Peter Magnussen, Nordsjælland, John Henriksen fra Nordsjælland samt makkerparret Søren Christiansen og Jan Sejr Nicolajsen.Virtuel dyst Det er et hold af erfarne spillere, og mesterskabet foregik virtuelt. Det betød, at spillerne sad hjemme i stuerne, og de cirka 1.000 følgere, der så finalen, kunne også se spillerne live.-Vi vandt marginalt, og det var tæt på at gå helt galt, da en af vores spillere mistede internetforbindelsen.Men det gik, og nu skal han have en ny computer.Jan Sejr Nicolajsen forklarer, at mesterskabet foregik over to weekender med i alt 20 kampe, Bridge er et selskabsspil, der er 100 år gammelt. Det er nok bedst kendt som et turneringsspil, hvor lovene er fastsat af World Bridge Federation.Kabalen skal gå op Jan Nicolajsen har altid holdt fast i, at selskabet og samværet har været vigtigt.Derfor blev han ved hjælp af gruppepres lokket til at spille med via computer til DM: -Det var sjovt og spændende at være med, og jeg må indrømme, at jeg vil spille mere online fremover. Det giver nye muligheder og kræver ikke så meget tid. Det er lettere at få kabalen til at gå op, når man kan sætte sig på kontoret og spille et par timer.Der fulgte både pengepræmie, blomster og medaljer med til Danmarksmesterskabet.Men det er æren, der er altafgørende. Sådan er det, og sådan bliver det ved med at være i bridge. De bedste spillere lever af kortspillet, mens tandlægen ved havnen fortsat vil hygge sig med at være blandt de bedste, når det gælder.Vi vandt marginalt, og det var tæt på at gå helt galt, da en af vores spillere mistede internetforbindelsen.Men det gik, og nu skal han have en ny computer.Jan Sejr Nicolajsen Tandlæge.
+        </div>
+        <footer>
+          <em>Sjællandske Næstved</em>
+          &nbsp;·&nbsp; 2021-04-19
+          &nbsp;·&nbsp; e839b198
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.926</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.736</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.708</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DF's Henrik Thorup er Statsrevisorernes nye formand</h4>
+        <div>
+          Statsrevisorerne har valgt Dansk Folkepartis Henrik Thorup som deres formand og De Radikales Klaus Frandsen som næstformand.Det oplyser Statsrevisorerne på deres hjemmeside.Henrik Thorup har længst anciennitet som statsrevisor. Siden 1988 har han været statsrevisor og næstformand siden 2006.Klaus Frandsen har været statsrevisor siden 2011 og har næstlængst anciennitet.Derudover består Statsrevisorerne af Socialdemokratiets gruppeformand, Henrik Sass Larsen, Venstres politiske ordfører, Britt Bager, Liberal Alliances Villum Christensen og Enhedslistens Frank Aaen.Statsrevisorerne er valgt for fire år. De mødes en gang om måneden. De kan bede Rigsrevisionen undersøge et område. Statsrevisorerne udtaler kritik af ministerier og styrelser efter Rigsrevisionens beretninger (undersøgelser).Statsrevisorerne anvender en karakterskala for deres kritik, som angiver hvor alvorlig kritikken er.Henrik Thorup blev i 1980 uddannet som assurandør fra Forsikringshøjskolen.1993-96 var han salgschef i Post Danmark efter en årrække i AI-Forsikring og Baltica.Klaus Frandsen blev i 1985 bachelor i erhvervsøkonomi fra Odense Universitet. Siden læste han finansiering ved Handelshøjskolen i København.Fra 2005 har han været direktør for forretningsudvikling i PBS og administrerende direktør i datterselskabet Nets, der udvikling løsninger for dankort og betalingskort.Klaus Frandsen var 2009-15 landsformand for Det Radikale Venstre.Få dagens vigtigste nyheder fra fyens.dk direkte i din indbakke. Det er gratis, og du kan afmelde dig til hver en tid. Tilmeld Ved tilmelding accepteres automatisk vores betingelser Luk betingelser
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2018-10-10
+          &nbsp;·&nbsp; e6ee3ee5
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.565</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.709</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.538</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk iværksætterfirma ansætter TV2-formand som ny topchef</h4>
+        <div>
+          Airhelp har ansat TV2-formand Jimmy Maymann som ny direktør. Han erstatter stifteren af selskabet. Tirsdag kan det danske iværksætterfirma Airhelp løfte sløret for tilgangen af en prominent, ny topchef. Ifølge Berlingske vil selskabet, der leverer services til flypassagerer, præsentere Jimmy Maymann som ny administrerende direktør. - Jeg er lige så begejstret, som da jeg startede mit første selskab i 1995. - Jeg har været med som investor, siden der ikke var nogen forretning, og hvis ikke jeg havde det, så havde jeg heller ikke sagt ja til jobbet. - Men jeg har set udviklingen og kan se mulighederne, siger Jimmy Maymann til Berlingske. Jimmy Maymann er blandt andet kendt for at være bestyrelsesformand i TV2. Det seneste år har han også været bestyrelsesformand hos Airhelp. Men nu kommer han tættere på den daglige drift i sin rolle af direktør. På direktørposten afløser han Henrik Zillmer, som også er stifter af Airhelp. Han overtager i stedet Jimmy Maymanns formandspost. Airhelp har ved hjælp af kunstig intelligens opbygget en forretning, der hjælper med at hente erstatninger hjem til flypassagerer, som har været ude for forsinkelser eller aflysninger. Ifølge Berlingske har Airhelp mere end 750 ansatte fordelt på 35 lande. Firmaet blev etableret i 2013. Ud over sine forskellige bestyrelsesposter har Jimmy Maymann gennem årene selv prøvet kræfter med tilværelsen som både iværksætter og direktør. I 2011 solgte han eksempelvis videoplatformen GoViral til den amerikanske medievirksomhed AOL. Dengang fulgte Jimmy Maymann med til AOL, hvor han i flere år havde en ledende stilling i selskabet. Højdepunktet nåede han i årene 2012-2015, hvor han var administrerende direktør for onlinemediet Huffington Post, som AOL overtog i 2011. Efter flere år i udlandet er han nu vendt hjem til Danmark med sin familie. /ritzau/
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2019-10-21
+          &nbsp;·&nbsp; e767fb4b
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.905</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.599</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.615</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA Google-søgninger</h4>
+        <div>
+          Fra 21. april 2015 ændrer Google sine algoritmer. Når man derefter bruger en mobil enhed til sine søgninger, vil siden give fortrinsret til søgeresultater, hvor hjemmesiderne er optimeret til at gøre sig godt på en smartphone. Det betyder, at virksomheder, hvis hjemmesider ikke er optimeret til små skærme, vil ryge nedad på listen over søgeresultater.For en måned siden gjorde Google det muligt også at få søgeresultater fra de apps, man måtte have installeret på f.eks. en smartphone. Det kræver dog, at den enkelte app er indrettet til det.Blandt danskernes milliarder af søgninger i 2014 var Iphone 6 det mest populære søgeord. Kilde: Google
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-03-27
+          &nbsp;·&nbsp; e4eff6cb
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.961</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.669</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk program efter prøver matematisk bevis på rekord tid</h4>
+        <div>
+          IT-SIKKERHED Professor Peter Schneider-Kamp fra Institut for Matematik og Datalogi på Syddansk Universitet har sammen med en gruppe kolleger fra SDU og Lissabon udviklet et program, som kan teste endog meget krævende algoritmer på kort tid og med mindst mulig indblanding fra mennesker.Udgangspunktet er et stykke fransk kode, som hedder Coq, og som mekanisk tjekker matematiske påstande igennem bid for bid ved at finde logiske formler, der passer til hver bid i stedet for at gå hele algoritmen igennem i ét hug.Forskergruppen, som ud over Peter Schneider-Kamp består af Luís Cruz-Filipe fra SDU samt Joao Marquez-Silva fra universitetet i Lissabon, har allerede fået beviset for, at det virker på selv store opgaver. Programmet er nemlig blevet brugt til at tjekke løsningen til et legendarisk matematisk problem fra 1980' erne, som amerikanske forskere fra Texas fandt en løsning på i sommer. j mst LÆS MERE PÅ ing.dk/ 188211.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2016-11-18
+          &nbsp;·&nbsp; e5fcdbcb
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.983</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.727</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.709</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>LLOYD COLE: Mester i melankoli</h4>
+        <div>
+          60 I MORGEN. Jeg fik et mindre chok, da han pludselig postede noget på Facebook, som venligtsindede algoritmer bar i min retning for et par år siden: »Karriemæssigt (det vil sige: familieting undtaget), har jeg ikke været så glad, siden ' Rattlesnakes' gik ind på plads nummer 13 - eller var det 14? - i 1984. Denne plade har krævet meget af mig. Jeg er glad for, at den ser ud til at klare, hvad jeg håbede«, skrev Lloyd Cole.»Mein Gott, eksisterer han virkelig endnu?«, tænkte jeg og mindedes de gyldne tider i firserne med gruppen The Commotions og den intellektuelle sanger og sangskriver, der skrev så blændende popmelodier og var så ferm til at proppe dem til med litterære henvisninger som på albummet ' Rattlesnakes'. Begge dele fortsatte i begyndelsen af halvfemserne, da Lloyd Cole gik solo og flyttede sin bogsamling, begavelse og tristesse til New York for at fortsætte perlerækken af eminente melodier som ' No Blue Skies' (1990). Uden sammenligning den sang, der har reddet mig gennem flest kærlighedssorger siden.Desværre begyndte jeg også at tabe interessen for den amerikanske Lloyd Cole da. Heldigvis gjorde opslaget på Facebook mig nysgerrig, og jeg begyndte at lytte til albummet fra 2019: ' Guesswork'.Selv om Lloyd Cole indleder sangen ' Night Sweats' med den sikkert sandfærdige selverkendelse: »I'm a complicated motherfucker«, lykkes det i sange som den fremragende ' Violins' at bygge bro mellem firsernes tænksomme, unge mand hjemme i England og den midaldrende, elektroniske nørd i USA.Resten af albummet holder ikke det niveau, men det er værd at opsøge Lloyd Cole på den amerikanske odyssé, der privat har ført ham til Easthampton, Massachusetts, hvor han lever med sin amerikanske kone og et par børn, kun afbrudt af soloturneer, der efter sigende ofte byder på lige så meget historiefortælling og standup-komik som musik. Lyder underholdende, måske kigger han en dag tilbage over Atlanten med det.Hvis hans hang til golf da tillader det.Begge Lloyd Coles forældre arbejdede som golf-stewards, og sønnen er fremragende i den disciplin og er placeret på en 11.-plads på Top-100-listen over de bedste golfere blandt musikere i selskab med for eksempel Alice Cooper.Desværre nok en bedre placering, end Lloyd Cole nogensinde opnår på en musikalsk hitliste.ERIK JENSEN.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2021-01-30
+          &nbsp;·&nbsp; e81a771c
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.653</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.52</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.626</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Virtuel valuta-boble vokser og vokser</h4>
+        <div>
+          En ny økonomisk boble truer, men denne gang er Wall Street fuldstændig uden skyld. Den virtuelle valuta Bitcoin, udviklet og lanceret af en japaner i 2009, er steget og steget i pris de seneste par dage, især ansporet af bankkrisen på Cypern.Det skriver Financial Times.Flere eksperter forudser dog, at boblen snart vil briste.&quot;Det svarer til at handle med tulipaner, bare i moderne udgave. Det er sjældent, at vi ser en boble som denne udvikle sig ryk for ryk, men det kan ændre sig for øjnene af os hvert øjeblik det skal være,&quot; udtaler Art Cashin, børsmægler hos UBS, til Financial Times.Valutaen blev opfundet for fire år siden af en ukendt datalog fra Japan med en begrænset mængde valuta, der vokser gradvist langsommere ud fra en forudbestemt algoritme.Siden da er valutaen steget voldsomt i værdi, især i løbet af den seneste uge, som følge af bankpanik på Cypern, hvor fortalere for Bitcoin foreslog valutaen som et alternativ til mainstream valutaer.Den 1. april havde en Bitcoin en værdi af 100 dollar, mens den tidligt onsdag morgen var steget til 147 dollar per styk.Et lille antal online-virksomheder accepterer Bitcoins som betalingsmiddel, men langt størstedelen af grundlaget for stigningen i den virtuelle valuta ser ud til at komme fra omtale på sociale medier som Twitter./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2013-04-04
+          &nbsp;·&nbsp; e3bba21f
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.966</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.765</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Henry Kissinger: Det haster med at tage magten over den kunstige intelligens</h4>
+        <div>
+          For tre år siden deltog jeg i en konference om transatlantiske spørgsmål. Da vi kom til emnet 'kunstig intelligens', var jeg tæt på at udvandre - for emnet falder uden for det jeg normalt interesserer mig for. Den indbudte talers indledning fik mig dog til blive siddende. Han beskrev funktionerne i et computerprogram, der snart ville udfordre verdens bedste spillere af det klassiske brætspil Go. Jeg var forbløffet over at høre, at en computer så suverænt kunne beherske Go, som er langt mere kompleks end skak.I Go skiftes to spillere til at opstille deres brikker - af dem har de 180 eller 181, afhængigt af hvilken farve hver især vælger - på et i begyndelsen helt tomt bræt. Sejren tilfalder den spiller, der har truffet de klogeste strategiske valg, det vil sige indsnævret modstanderens rum ved selv at have fået kontrol over størst muligt territorium.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2018-09-21
+          &nbsp;·&nbsp; e6e84d65
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.956</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.964</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.579</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Muskelbundtet, der trodser al modstand og altid vender tilbage selv efter hårde sexanklager</h4>
+        <div>
+          Hans far var glødende og aktiv nazist.I sin ungdom kommunikerede han oftest via sit markante kropssprog   og han råbte meget højt...Så højt, at man hørte ham i USA.Dette også i Hollywood i det solbeskinnede Californien, hvor han siden et pænt stykke hen ad vejen fulgte i Ronald Reagans fodspor.Det er i årenes løb lykkedes ham at afværge adskillige forsøg på karaktermord.Til næste sommer fylder han, der i 25 år var gift ind i en af USA's mest magtfulde familier, 70 år, han er god for et sted mellem 400 og 800 millioner dollar, han har for længst opnået legendestatus og har   trods ikke så få odds imod sig   formået at skabe stor respekt omkring sin person.The Human Oak.Arnie.The Guvernator.Kært barn har mange navne...Selvom han ikke ligefrem regnes blandt Hollywoods største skuespillere, så har han stort set fra dag et i sin snart lange Hollywood-karriere haft status som en af filmbyens absolut største actionhelte   om ikke den største.Hans navn er Arnold Alois Schwarzenegger.Lad os indlede denne fortælling om the king of bodybuilding, The Terminator og den tidligere republikanske guvernør i Californien med udgangspunkt i nutiden   i ugerne op til valget af hans partifælle Donald Trump som USA's kommende præsident.I et tweet den 8. oktober 2016 meddelte Schwarzenegger, at han, for første gang siden han blev amerikansk statsborger i 1983, ikke ville stemme på en republikansk præsidentkandidat. Inden da havde han ved flere lejligheder lagt kraftig afstand til Donald Trump.I en udtalelse, som han publicerede på Twitter, skrev han også, at han ville minde alle amerikanere om, at det »ikke blot er acceptabelt, men en pligt, at man sætter sit land over partiet«.Og det var så i øvrigt ikke første gang, at hans adskillelse mellem sit privatliv og sit helt klare partipolitiske tilhørsforhold har vakt opmærksomhed.Det gjorde det således også, da han i 1986 blev en del af den stærkt demokratiske Kennedy-klan.Det skete, da han giftede sig med Maria Shriver, der som datter af Sargent Shriver og Eunice Kennedy Shriver var niece til John, Robert og Edward Kennedy.Både hans afstandstagen fra partifællen Donald Trump og hans familiære relation til den demokratiske Kennedy-klan er blandt adskillige udtryk for, at Schwarzenegger ikke blot gør, hvad man forventer af ham.Siden sin ofte barske opvækst i Østrig har han fulgt sit eget hoved   gået sine helt egne veje   og det gør han stadig i en alder af næsten 70 år.Arnold Schwarzenegger og hans 25 år lange ægteskab med   og den dramatiske skilsmisse fra   Maria Shriver kan du læse mere om i afsnittet &quot;Schwarzenegger og kvinderne&quot; længere nede i denne fortælling.Arnold Schwarzenegger kom til verden onsdag den 30. juli 1947 i Linakstrasse nummer 9 i den lille maleriske landsby Thal, der ligger uden for Graz i Østrig. Et hus, som han mange år senere fik indrettet som Arnold Schwarzenegger Museum.Hans far   Gustav Schwarzenegger   var politichef. I 1938 meldte han sig ind i nazipartiet og gjorde frem til 1943, hvor han blev hjemsendt på grund af sygdom, tjeneste i den tyske hær som hauptfeldwebel.I 1945 blev han som 38-årig gift med den 15 år yngre Aurealia, og sammen fik de to sønner.Da Schwarzenegger mange år senere kastede sig ud i kampen om at vinde guvernørposten i Californien, blev han   ud over en lang række anklager for sexchikane og overgreb   gang på gang konfronteret med sin fars nazistiske baggrund.I 2003 bad han Simon Wiesenthal Center undersøge hans fars nazistiske fortid, og ifølge blandt andre Los Angeles Times og San Francisco Cronicle konkluderede centret, at Gustav Schwarzenegger ikke havde gjort sig skyldig i nogen forbrydelser mod menneskeheden.Næppe var dette dog fastslået, før der begyndte at svirre aldrig dokumenterede rygter om, at Arnold Schwarzenegger havde betalt Simon Wiesenthal Center for at skjule farens gerninger under Anden Verdenskrig.Schwarzenegger voksede op i et stærkt katolsk   ikke specielt velstående   hjem. Han blev meget restriktivt opdraget og oplevede, at faren i den grad favoriserede broren Meinhard, der blev dræbt i en trafikulykke i maj 1971.Hård korporlig afstraffelse var ikke et ukendt begreb, og allerede som barn og teenager lagde Arnold afstand til både faren og broren. Så meget, at det formentlig var grunden til, at han hverken deltog i sin fars eller sin brors begravelse mange år senere.I et interview til magasinet Fortune i 2003 sagde han direkte, at han som barn havde været udsat for børnemishandling.»Jeg blev trukket i håret. Jeg blev slået med bælter. Det samme skete for børnene ved siden af. Og ved siden af dem. Det var sådan, det var. Mange børn blev ødelagt af deres forældre. Sådan var den tysk-østrigske mentalitet.«Senere i samme interview siger han, at det hele handlede om at knække viljestyrke.»Vi måtte ikke være individualister. Det handlede om ensretning. Jeg var en af dem, der ikke lod sig ensrette, og derfor kunne jeg ikke knækkes. Jeg blev en oprører.Hver eneste gang jeg blev slået, eller når der var en, der sagde, at det eller det kunne jeg ikke, så sagde jeg til mig selv, at det ikke ville vare ved. Snart ville jeg være væk. Jeg ville være rig. Jeg ville være noget.«Og sådan blev det:Han kom væk og blev til noget.Selvom det ikke var den boglige side af skolegangen, der optog ham mest, så klarede han sig nogenlunde.Men allerede i 13-14-årsalderen fik han en glødende passion, som kom til at fylde alt i hans liv:Bodybuilding.Han trænede som en gal og begyndte allerede som ung at vinde diverse konkurrencer. Som 18-årig aftjente han sin værnepligt, og i løbet af det år vandt han blandt andet Junior Mr. Europe-titlen.Han gik målrettet efter Mr. Universe-titlen, som han opfattede som sin billet til det forjættede USA, og da han i London var blevet nummer to i denne konkurrence, slog han sig ned i den britiske hovedstad, hvor han fik effektiv coaching af en række kendte trænere.Han nåede sit mål om at blive Mr. Universe i 1967, da han som den yngste nogensinde vandt den eftertragtede titel i en alder af 20 år.I 1968 flyttede han til USA, og her lykkedes det ham efter intensiv træning to år senere at vinde den eftertragtede Mr. Olympia-titel.Han vandt den ene titel efter den anden og blev på kort tid superstjerne inden for bodybuilding. Som bodybuilder gik han under tilnavnet The Human Oak (Den menneskelige eg).I dag regnes han for den væsentligste og mest indflydelsesrige bodybuilder i alle tider.En af de sidste gange, han konkurrerede i bodybuilding, var i 1980, da han efter nogle års pause gjorde et kort comeback og blandt andet deltog i årets Mr. Olympia-konkurrence.Ligesom snart sagt alt andet, Schwarzenegger har været involveret i, har der også været flere kontroverser omkring hans brug af steroider.I slutningen af 1970'erne, da brugen af steroider var helt legal, stod han frem og fortalte, hvordan han brugte medikamentet til at opbygge sin krop.I 1980 udtalte den tyske læge Willi Heepe, at hans brug af steroider senere ville give ham alvorlige hjerteproblemer og føre til en tidlig død. Den udtalelse fik Schwarzenegger til at sagsøge ham. Han vandt sagen og kunne indkassere 10.000 dollar i erstatning.Det hele gentog sig i 1999, da avisen The Boston Globe gentog teorien om, at Schwarzenegger på grund af brugen af steroider havde kurs mod en sikker og tidlig død. Men denne sag endte i et udenomsretsligt forlig.Læs mere om The Human Oak og hans mange bedrifter her.Længe inden ankomsten til USA havde Arnold Schwarzenegger været fascineret af filmen og livet i Hollywood, og en af hans grunde til at slå sig ned i Californien var et brændende ønske om at gøre karriere som filmstjerne.Sin første chance fik han i 1970, da han blev tilbudt en rolle i filmen &quot;Hercules in New York&quot;.Han blev krediteret som Arnold Strong, og hans tyske accent var så voldsom, at man efter optagelserne lagde en anden skuespillers stemme hen over Schwarzeneggers replikker.Det slap man for i hans næste film   &quot;The Long Goodbye&quot;   i hvilken han spillede en lejemorder, der fiffigt nok var stum.Schwarzenegger fik rettet op på sin heftige tyske accent og udviste så sikkert et håndelag for filmskuespilleriet, at han for sin rolle i &quot;Stay Hungry&quot; i 1976 modtog en Golden Globe for bedste nye stjerne. Året efter vendte han for en kort bemærkning tilbage til sin gamle metier som bodybuilder med dokumentaren &quot;Pumping Iron&quot;, der blandt andet blev vist på filmfestivalen i Berlin.Og så kom det.Hans massive gennembrud som filmstjerne.Det skete i 1982 med den &quot;Conan the Barbarian&quot;, som to år senere blev fortsat med &quot;Conan the Destroyer&quot;. I 1984 indspillede han lidt i samme actionprægede stil også filmen &quot;Red Sonja&quot;.Samme år som den anden og sidste Conan-film havde premiere, lavede han den første film i den serie, der mere end nogen anden uløseligt hænger sammen med hans navn og image som en af Hollywoods største actionstjerner:&quot;The Terminator&quot;.Der er foreløbigt lavet fem film i &quot;Terminator&quot;-serien. Den første i 1984 og den foreløbigt sidste i 2015. Alle med Arnold Schwarzenegger i hovedrollen som nådesløs dræberrobot.Her er trailerne til de fem film:Den første &quot;Terminator&quot;-film havde premiere i 1984 og var udviklet og instrueret afJames Cameron.Det overordnede tema i &quot;Terminator&quot;-filmene er en hastigt svindende menneskeraces kamp mod kunstig intelligens   i filmene repræsenteret af Skynet   og i den forbindelse spiller menneskelige robotter en central rolle. Og det er i rollen som iskold dræberrobot, at Arnold Schwarzenegger har markeret sig som en af filmhistoriens største actionhelte.En af filmens mest kendte replikker er Schwarzeneggers:I'll be backOg det gjorde han. Vendte tilbage. Indtil videre er der lavet fem &quot;Terminator&quot;-film.Også den næste film i Terminator-serien blev instrueret af James Cameron, og den femte film i serien   &quot;Terminator Genisys&quot;   havde premiere i 2015.Den første film vakte stor opsigt og fik en stormende modtagelse af både publikum og anmeldere, men begge grupper stod efterhånden mere eller mindre af.Ud over filmenes actionfyldte handlinger var også hele Schwarzeneggers attitude og tilgang til rollen noget af det, der fangede og fastholdt et trofast publikum.Bag rollens barske facade lykkedes det ofte Schwarzenegger at tilføje den et stænk af humor. Et twist, der i øvrigt kendetegner de fleste af hans filmroller.I dag er &quot;Terminator I&quot; med optagelse i Smithsonians arkiver blevet ophøjet til amerikansk kulturarv.&quot;Terminator&quot;-filmene har med alle disse effekter og installationer ikke just været billige at producere. Det samlede produktionsbudget ligger i nærheden af, hvad der svarer til 4,5 milliarder kroner. Men de omkostninger blev så rigeligt tjent hjem, idet de fem film på verdensplan har indtjent intet mindre end knap 13 milliarder kroner.Dertil kommer en lang række sideprodukter som f.eks. tv-serier, tegneserier, bøger og ikke mindst enorme mængder af merchandise.Filmene har vundet adskillige priser. &quot;Terminator 2   Judgement Day&quot; var således nomineret til seks Oscars og vandt fire af slagsen.Dog var det de to første &quot;Terminator&quot;-film instrueret af Cameron, der klarede sig bedst. Både i forhold til den generelle modtagelse og indtjening.Sådan et guldæg er svært at slippe, og der tales stadig om en fortsættelse af &quot;Terminator Genisys&quot;.Allerede i 2013 meddelte produktionsselskabet, at filmen ville blive den første af tre, og det angav maj 2017 og juni 2018 som premieretidspunkter for de efterfølgende to film. Det var vigtigt for selskabet   Skydance Production   at få filmene ud inden 2019, da James Cameron i det år genvinder alle rettigheder til &quot;Terminator&quot;-konceptet.Men i 2015 meddelte Skydance Production, at projektet var sat på standby på grund af skuffende indtjening på den første film i trilogien. En beslutning, der tilsyneladende senere samme år blev omgjort, men der er stadig intet konkret om de to sidste film i serien.Selv har Arnold Schwarzenegger flere gange fastholdt, at der virkelig kommer en sjette &quot;Terminator&quot;-film, men han har ikke oplyst konkrete detaljer om projektet.Men uanset om der kommer endnu en film i serien eller ej, vil det for altid være &quot;Terminator&quot;-filmene, der først og fremmest forbindes med Schwarzenegger og hans status som en af filmhistoriens mest markante actionhelte.På trods af dette har han indspillet en lang række andre film. Dette med skiftende succes, men til dato har Schwarzenegger medvirket i over 30 film.Han har i flere perioder holdt kortere eller længere pauser fra filmindspilningerne. Dette på grund af blandt andet rygproblemer og så   naturligvis   i de år, hvor han som guvernør i Californien erstattede Hollywoods filmverden med den politiske arena.Vi vender straks tilbage til hans politiske karriere, der sluttede i januar 2011, men hvad angår karrieren som filmstjerne, er den nu 69-årige Schwarzenegger efter eget udsagn slet, slet ikke færdig endnu.Han har siden afslutningen på sin politiske karriere medvirket i flere film   blandt andre &quot;The Expendables II&quot; (2012), &quot;The Last Stand&quot; (2013), &quot;The Expendables III&quot; (2014), &quot;Sabotage&quot; (2014) og &quot;Terminator Genisys&quot; (2015).Han har ved adskillige lejligheder meddelt, at han har flere filmplaner, og at han konstant har nye roller under overvejelse.Se her en liste over samtlige Schwarzenegger-filmArnold Schwarzenegger ankom som tidligere nævnt til USA i 1968.Den 17. september 1983 blev han amerikansk statsborger og fik dermed stemmeret i USA.Men allerede længe inden da havde han udvist glødende interesse for politik og havde været engageret i diverse politiske sammenhænge. I modsætning til flertallet af sine skuespillerkollegaer i Hollywood var Schwarzenegger fra dag et en svoren republikaner.Første gang han i den brede offentlighed optrådte som republikaner, var da han i 1988 aktivt deltog i George W. Bush'præsidentkampagne. Senere   fra 1990 til 1993   var han formand for George W. Bush' Council for Physical Fitness and Sports. Siden var han Røde Kors-ambassadør, og i slutningen af 1990'erne modnedes tanken om en decideret politisk karriere.Den dengang politisk uerfarne Schwarzenegger meddelte den 6. august 2003 i Jay Lenos talkshow, at han stillede op som guvernørkandidat i Californien, hvor der var udskrevet valg i utide.Det vakte stor opsigt   både i USA og resten af verden   at han meldte sig som kandidat, og med reference til &quot;The Terminator&quot; fik han hurtigt tilnavnet The Guvernator.Ved valget i oktober samme år vandt Schwarzenegger valget og tiltrådte som guvernør.I sin første periode kom han flere gange i heftig modvind på grund af sine ofte ganske rabiate synspunkter, men han opnåede stor sympati, da det blev meddelt, at han sagde nej til guvernørgagen på 175.000 dollar om året. Dette med den begrundelse, at han allerede tjente styrtende via sin filmkarriere og de forretninger, han var involveret i.I sin første periode var han ofte i modvind på grund af sine ofte meget højreorienterede standpunkter, men i takt med at han fik mere politisk rutine, nærmede han sig i manges øjne midten i det politiske spekter   ja, der var dem, der mente, at han i virkeligheden fremstod som demokrat og ikke republikaner.Dette fik yderligere næring, da han som nærmeste rådgiver ansatte Susan Kennedy, der var erklæret demokrat, men trods sit efternavn har hun ingen familiær knytning til Kennedy-klanen.Han første periode var selvsagt kort, men da han stillede op til det regulære guvernørvalg i 2006, vandt han en meget overbevisende sejr. I løbet af hans anden og sidste periode som guvernør gik der rygter om, at han ville stille op til senatet, men det afviste han dog selv blankt.At stile efter Det Hvide Hus   ligesom skuespillerkollegaen Ronald Reagan gjorde med held   var ikke umiddelbart muligt for Schwarzenegger, idet han som bekendt ikke er født i USA. Noget tyder dog på, at Schwarzenegger flere gange undersøgte muligheden for at ændre denne bestemmelse, men han gjorde aldrig et konkret forsøg.Schwarzeneggers tid som guvernør var bestemt ikke uproblematisk, og han var ofte i modvind.I december 2003 havde han opbakning fra 89 pct. af statens befolkning   da han forlod guvernørkontoret, var støtten faldet ganske markant og var nede på blot 23 pct.Han var ofte på tværs af flertallet   også i forhold til f.eks. homoseksuelle ægteskaber, som han var indædt modstander af.Blandt de mærkesager, han vandt megen anerkendelse for, var hans stædige kamp for et bedre miljø   og det er et arbejde, som han på flere planer fortsat er involveret i. Både på nationalt og internationalt plan.Han var som sagt i sine år som guvernør ofte i strid modvind, og det vakte meget stor opsigt og forargelse, da han på sin sidste dag som guvernør reducerede Estaban Nunez'morddom fra 16 til 7 år. Nunez, der var søn af en af Schwarzeneggers politikerkolleger og gode venner, var dømt for at have stukket en medstuderende ihjel. Drabsmanden blev i foråret 2016 løsladt efter at have afsonet mindre end seks år af sin straf.I hele sin tid som guvernør var Schwarzenegger forfulgt af både rygter og direkte anklager for diverse former for sexchikane, men herom lidt senere i denne artikel, der først skal handle om Schwarzeneggers generelle forhold til det modsatte køn.Der er skrevet et meget stort antal bøger om Arnold Schwarzenegger og hans karriere som bodybuilder og actionhelt.Se Amazons liste over nogle af demBiografi engelsk.jpgSelv udgav han i 2012 biografien &quot;Total Recall   my unbeliveable true lifestory&quot;. Bogens titel refererer til titlen på filmen &quot;Total Recall&quot; som han i 1990 indspillede sammen med blandt andre Sharon Stone.Bogen udkom siden på dansk med titlen&quot;Mit Utrolige Liv&quot; på forlaget Turbulenz.Ud over at beskæftige sig med sin alsidige karriere vier han i bogen et kapitel til den affære, der kostede ham ægteskabet på Maria Schriver.Arnold Schwarzeneggers officielle websiteArnold Schwarzenegger har igennem hele livet tydeligvis haft ualmindelig svært ved at holde sig til en enkelt kvinde ad gangen, og dette har spoleret ikke så få af de forhold, som han har været involveret i.Året efter at Arnold Schwarzenegger i 1968 ankom til USA, indledte han et forhold til engelsklæreren Barbara Outland, som han levede sammen med indtil 1974.Under hele deres samliv dyrkede han skiftende forhold til andre kvinder, og det samme var tilfældet i hans forhold til frisøren Sue Moray, som han mødte i sommeren 1977. Kort tid efter mødte han journalisten Maria Shriver, og i et års tid dyrkede han et forhold til begge kvinder, indtil Sue Moray fik nok og smed ham ud.Maria Shriver var   som nævnt   niece til de tre Kennedy-brødre, og Schwarzenegger giftede sig med hende i Kennedy-klanens hovedsæde i Hyanis Port i april 1986.Parret, der fik fire børn sammen, var gift i 25 år, men også i den periode involverede Schwarzenegger sig i flere affærer med andre kvinder.Et af disse forhold plejede Schwarzenegger helt tilbage i starten af sit ægteskab med Maria Shriver. Kvinden var ansat som husassistent i parrets hjem, og forholdet fik følger:Kvinden fødte en søn, og dette blev holdt skjult indtil 2011, da sandheden gik op for Maria Shriver, som herefter forlod Schwarzenegger.Sagen blev heftigt omtalt i medierne, og i den forbindelse stod i øvrigt også danske Brigitte Nielsen, der en overgang var gift med Sylvester Stallone, frem og fortalte, at hun havde haft en hed affære med Schwarzenegger, mens han var gift med Shriver.Ud over dette har en lang række kvinder beskyldt Schwarzenegger for sexchikane   og disse anklager blev i massivt omfang fremsat under Schwarzeneggers første periode som guvernør i Californien og tog til i styrke, da han søgte genvalg.Adskillige kvinder   i følge CBS drejede det sig om i alt 15 kvinder   stod frem, og flere sagsøgte Schwarzenegger for sexchikane, men han blev aldrig dømt.I de senere år har Arnold Schwarzenegger dannet par med den 28 år yngre terapeut Heather Milligan.Lige siden sin ungdom i Østrig har Arnold Schwarzenegger haft en udsædvanlig tæft for at gøre en god forretning, og dette har fulgt ham hele livet.Allerede inden han indledte sin Hollywood-karriere var han som 30-årig millionær, og hans formue er bestemt ikke blevet mindre med årene. Allerede for 10 år siden estimeredes hans formue til at ligge på et sted mellem 400 og 800 millioner dollar.Ud over sine tårnhøje Hollywood-honorarer har Schwarzenegger skabt sin formue via en lang række lukrative insvesteringer.Blandt andet i restaurationsbranchen, og han var en af grundlæggerne af kæden Planet Hollywood sammen med blandt andre Demi Moore, Bruce Willis og Sylvester Stallone. Han trak sig dog ud i 2000, da han mente, at kæden ikke indfriede hans økonomiske forventninger.Ud over restaurationsbranchen har Schwarzenegger investeret heftigt på ejendomsmarkedet, og at det går strygende, kan blandt andet ses af, at han i allerede i 1997 investerede ikke mindre end, hvad der svarer til knap 270 millioner kroner i en privatjet.Så det er ikke just for pengenes skyld, at han stadig har planer om flere film.Den 2. januar overtager Arnold Schwarzenegger værtskabet i det populære amerikanske realityshow &quot;The Celebrity Apprentice&quot; efter Donald Trump, der fratrådte, da han indledte sin valgkamp som republikanernes præsidentkandidat.I forbindelse med Schwarzeneggers overtagelse af showet er det omdøbt til &quot;The New Celebrity Apprentice&quot;.Uanset hvad fremtiden vil vise, så har årene vist, at man roligt kan fæstne lid til Arnold Schwarzeneggers mest berømte filmreplik:I manges øjne er og bliver Arnold Schwarzenegger &quot;The Terminator&quot;. Pr-foto fra &quot;Terminator&quot;..I manges øjne er og bliver Arnold Schwarzenegger &quot;The Terminator&quot;. Pr-foto fra &quot;Terminator&quot;..
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-12-17
+          &nbsp;·&nbsp; e60832ef
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.634</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.628</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kræftramt kvinde hjælper fraskilte med kærligheden</h4>
+        <div>
+          Hun siger selv, at hun altid har haft et nørdet gen. Hun har kastet sig ud i diverse on-lineprojekter. Og kan ikke leve uden en computer.Da hun for seks år siden flyttede til Malta med sin svenske mand, skulle internetforbindelsen udnyttes maksimalt. Og da hun samtidig fik konstateret skjoldbugcancer valgte hun at lancere et site for skilte forældre med børn under betegnelsen Nextlove. dk De dage, hvor sygdommen så tvinger mig til at være i min seng, kan jeg passe virksomheden alligevel og hjælpe de mange, som har svært ved at finde kærligheden igen efter en skilsmisse med børn. Heldigvis er min cancer ikke aggressiv, fortæller idekvinden bag den nye side Line Peteri.NextLove. dk er blevet Danmarks første mødested for fraskilte og aleneforældre.- Jeg gik og tænkte på, hvor hullet var på nettet. Hvad manglede der. Ud fra on-line undersøgelser kunne jeg se, at der manglede noget for de folk, som var blevet skilt og var alene med børn. Det skulle ændres. Det var jeg fast besluttet på. Og igen har jeg været med til noget lige fra opstarten. Det passer til mit temperament, siger Line Peteri.Efter skolegangen på Bramdrup Skole ved Kolding, blev Line uddannet tøjdesigner i Herning. Ved computerens indførelse, skiftede hun langsomt branche. Hun var med til at starte en auktion på Jubii.dk op og dengang var hun kun i starten af 20' erne. Siden var hun med til at profilere magasinet Gear og sideløbende var hun anmelder på TV2, Femina og Inn.Hun har altid haft fokus på det livsstilssmæssige. Et besøg på Roskilde Festivalen for otte år siden, ændrede endnu engang hendes liv. Her lærte hun sin svenske mand at kende, og da han nødigt ville bo i Danmark og hun ligeså nødigt i Sverige, flyttede parret til Malta, hvor de siden har boet. Og to børn er kommet til.De fleste, som er blevet skilt eller er alene med børn, har fundet det rigtig svært at date eller blot at møde andre ligesindede. Det kan være svært at fastholde vennekredsen efter en skilsmisse, hvis man havde mange fælles venner.Der kan være mange grunde til, at man har brug for at tale eller mødes med andre ligesindede. fortsætter Line Peteri.
+        </div>
+        <footer>
+          <em>JydskeVestkysten</em>
+          &nbsp;·&nbsp; 2014-10-10
+          &nbsp;·&nbsp; e49ddc11
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.972</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.747</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.684</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske netbankbrugere frastjålet 2,1 millioner kroner på 6 måneder</h4>
+        <div>
+          I løbet af første halvår 2013 fik it-kriminelle et mindre udbytte af netbankindbrud end samme periode sidste år. I alt blev der stjålet 2,1 millioner kroner fra bankerne på seks måneder.Af Jesper Kildebogaard Tirsdag, 13. august 2013 - 14:51Mens 2012 var et rigtig godt år for netbank-tyvene i Danmark, tegner 2013 til at blive lidt mindre lukrativt for hackerne. Det viser den seneste opgørelse over netbankkriminalitet, skriver nyhedsbrevet Finans fra Finansforbundet.I løbet af første halvår af 2013 var der 87 indbrudsforsøg i danske netbanker. Det førte til tab for bankerne i 38 tilfælde, som tilsammen løb op i 2.081.422 kroner.Til sammenligning var der sidste år i samme periode 95 indbrudsforsøg og et tab på 2,7 millioner kroner. Antallet af netbank-indbrud med tab var i hele 2012 på 56, mens de samlede tab for hele året var 6,3 millioner kroner. Det tyder på, at hackerne i 2013 havde en højere succesrate pr. indbrudsforsøg, men gennemsnitligt måtte nøjes med et mindre udbytte pr. gang.Mængden af netbankindbrud i Danmark mener Finansrådet generelt ligger lavt, sammenlignet med resten af Europa. Men de første to år efter NemID blev udbredt var historisk gode for bankerne, med tab på kun 433.043 og 159.668 kroner i 2010 og 2011. Andre faktorer end NemID har dog også spillet ind, da NemID først rigtigt blev udbredt i løbet af efteråret 2010.Tidligere var tabene fra netbank-indbrud lidt højere end i dag, med 6,6 millioner kroner i 2008 og 6,8 millioner kroner i 2009. Udover login-beskyttelse med NemID, som it-kriminelle har lært at snyde sig uden om med et man-in-the-middle-angreb, arbejder bankerne meget med sikkerhed på de indre linjer.For eksempel ved at spore mistænksom adfærd og måske ringe til en kunde for at bekræfte, at man faktisk ønsker at overføre et stort beløb. Præcist hvordan disse algoritmer og procedurer fungerer, er dog en velbevaret hemmelighed.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2013-08-13
+          &nbsp;·&nbsp; e3ea8bbb
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.804</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.636</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.712</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Devoteam ansætter ny lead data scientist</h4>
+        <div>
+          Det oplyser DevoTeam i en mail til redaktionen.Forinden grundlagde og drev han Data Science hos det sundhedstekniske selskab, Mentegram, i USA.Hos Devoteam bliver Igor en del af teamet Devoteam Discovery, hvor han skal arbejde med dataanalyse- og udvikling, machine learning-modeller, AI og data engineering.Igor har en Ph.D i Human Development and Family Science fra The University of Texas at Austin. Hans akademiske forskning fokuserede på effektiviteten og virkningen af uddannelsessystemer og ungdomsstøtteprogrammer.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-02-19
+          &nbsp;·&nbsp; e7162694
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.875</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.548</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.537</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NAVNE</h4>
+        <div>
+          Henrik Burkal, 55 år, er ansat som markeds-og salgschef hos entreprenørvirksomheden Premium Syscon. Senest har han i 2017-2020 været markeds-og salgschef hos Bygcom. Han startede karrieren som projekterende hos et arkitektfirma i 1986, men skiftede tre år senere til en stilling som montagechef hos forhandleren af sikkerhedssystemer Gunnebo Protection.Siden da har han haft forskellige ledende stillinger i byggeriet som oftest med fokus på markedet ved salg, rådgivning, udvikling og markedsføring. Bl. a. var han 2011-2013 kundechef hos MT Højgaard, 2013-2014 salgschef hos LM Byg og 2015-2017 markeds-og kundechef hos NCC. I den nye stilling får Henrik Burkal ansvar for at opbygge, videreudvikle og drive salget i Danmark med fokus på både bygherrer, entreprenører, investorer, udviklere, arkitekter og ingeniører.Dennis Storm er tiltrådt som associeret partner hos AI Arkitekter &amp; Ingeniører.Han har forinden fungeret som afdelingsleder for AI's afdeling i Odense. Han har en baggrund som bygningskonstruktør og har gennem sin karriere arbejdet med alle byggeriets mange processer og fungeret som projektleder for en lang række tværfaglige samarbejder. Desuden har han gennem årene været en stærk fortaler for den grønne omstilling og initiativtager til flere bæredygtige tiltag i samspil med lokale erhvervsdrivende. Med udnævnelsen af Dennis Storm til associeret partner består AI's partnergruppe af fem partnere og en associeret partner.Torben Andersen er valgt ind som formand hos den internationale hjælpeorganisation Mission Øst. Til daglig er han økonomirådgiver og forretningsudvikler.De kompetencer sætter han i spil med sin nye post som formand. Han er uddannet civilingeniør og har arbejdet hos TDC-koncernen i 25 år. For ti år siden startede han sit eget firma, Cilwic Management, som hjalp med forretningsudvikling for mindre virksomheder. For fem år siden startede han en franchise i virksomheden Realråd, der hjælper private med at optimere deres realkreditlån.Som forretningsudvikler ved Torben Andersen, hvad der skal til, for at forandringen bliver positiv og til gavn for Mission Østs over 300 medarbejdere og de over 250.000 nødlidende i otte lande, som har brug for hjælp.Michael Nyboe er ansat som projektudviklingsdirektør hos PFA Audley Opco, hvor han målrettet skal arbejde med at få søsat de første konkrete projekter. Han kommer fra en stilling som projektudviklingsdirektør hos den rådgivende ingeniørvirksomhed Kuben Management. Han har hele sin karriere arbejdet med byggeri og arealudvikling. Om sin nye rolle påpeger Michael Nyboe, at det er et ønskejob at skulle være med til at udvikle fremtidens servicerede seniorboliger.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2020-08-04
+          &nbsp;·&nbsp; e7d26335
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.581</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.526</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>I kampen mod misinformation har techgiganterne sat deres lid til algoritmer...</h4>
+        <div>
+          I sidste uge fandt YouTubes nye værktøj til at faktatjekke nyheder en sammenhæng mellem kollapset af det brændende spir i Paris og kollapset af de brændende tvillingetårne i New York. YouTube kom fejlagtigt til at markere branden i Notre Dame som muligvis forbundet til terrorangrebet den 11. september 2001.Under de livestreamede nyheder tilføjede YouTube en faktaboks med links til tredjepartskilder såsom Encyclopedia Britannica og Wikipedia. Faktaboksen beskrev terrorangrebet i New York, hvor mange tusinde mennesker mistede livet.Techbranchen har generelt en indgroet optimisme over for algoritmer, som altid prioriteres højt i forsøget på at bekæmpe misinformation. Med de svimlende mængder indhold ses de automatiske algoritmer som den hurtigste og mest effektive løsning til at opdage og bekæmpe problematisk indhold.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2019-04-26
+          &nbsp;·&nbsp; e72cfa05
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.814</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.7</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.51</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

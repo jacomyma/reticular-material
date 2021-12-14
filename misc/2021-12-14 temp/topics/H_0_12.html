@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_12 <kbd>H_0_12</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tredjedel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>halvdelen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>flere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>viser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dermed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>positive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemsnit</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>understreger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>større</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vurderer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>signal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>peger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vurderes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>antal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilsvarende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>yderligere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undersøgelser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>havne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stigende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemsnitlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ændringer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>parterne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samtidigt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>markant</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>primære</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forventede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udbrede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>positivt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sigt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betydeligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>høj</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>færre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>traditionelle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkluderer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undersøgelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>generelt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>svinger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>faktor</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>understøttes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>relativt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ændring</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lav</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>øger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dels</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skaffer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>analyse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gevinst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>støtten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>væsentlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>medlemmerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>antallet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>øgede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>reelle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tyder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskelle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fordelingen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>analysen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>foreløbige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udbredt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årsag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>markedsfører</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>40.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>foretaget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indikator</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>trenden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>geografisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>platform</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>negativt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udbredelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undersøgelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skrues</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>andelen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pga.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ansætter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uvildige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udveksle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overordnet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>medført</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eksponering</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indikation</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemsnitligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aktive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>7.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forøget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overblikket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>væsentligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>massiv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forklaringerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forstærket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>månedlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tendensen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>segmenter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indgik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>glidende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>covid-19</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>25.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omegnen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>signifikant</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>optages</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årsagerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fravalgt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemføres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>procentpoint</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skaffe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beregnede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anslår</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>krævet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lydt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fingerpeg</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kombinationen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indikatorer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>karsten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vurderingen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>toårige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>derover</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spået</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>og/</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hyppigere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>internetbaserede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rift</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indhentet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>regning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rode</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dybdegående</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hidtidige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>iværksat</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>retvisende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>computerstyrede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fortrinsvis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>berørte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nyskabelser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>henvist</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilbageholdende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fyringer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indfries</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>17.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>270.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>230.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>korn</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bevågenhed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>130.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_12 DESC LIMIT 50</pre>
+      <article>
+        <h4>Debat: Glem ikke borgerne i den digitale eufori</h4>
+        <div>
+          Kommunerne er begejstrede for softwarerobotter, chatbots, machine learning og andre nye teknologier, viser en ny en undersøgelse foretaget af KMD Analyse. Der ligger mange positive perspektiver i kommunernes teknologiflirt. Bl. a.kan softwarerobotter og chatbots understøtte administration og service i en situation, hvor et stigende antal borgere med servicebehov presser kommunernes ressourcer.På trods af de positive digitaliseringstakter tænder undersøgelsen desværre også en advarselslampe.Kun 11 pct. af de adspurgte kommunale beslutningstagerne vurderer, at deres kommune i høj eller meget høj grad inddrager borgerne gennem workshops, fokusgrupper eller spørgeskemaer for at forstå, hvordan ny digital teknologi bedst kan anvendes.Omvendt er det tilsvarende tal for kommunens egne medarbejdere 72 pct. Jeg forstår godt, at man orienterer sig mod kollegerne, når man drøfter nye teknologier, men det bekymrer mig alligevel, at springet er så stort i forhold til borgerne.Vi skal have borgerne involveret mere i designet og udviklingen af den digitale kommune. Ved i højere grad at inddrage borgerne kan man også få et mere nuanceret billede af deres behov på tværs af geografiske skel.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-09-28
+          &nbsp;·&nbsp; e6ea262f
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.642</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.814</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.531</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Otte facts om Googles søgemaskine</h4>
+        <div>
+          1 Google lancerede sin søgemaskine 27. september 1998 -altså for 20 år siden.2 Hver måned gennemføres der i omegnen af 100 milliarder søgninger på Google.com.3 Mere end halvdelen af alle søgninger sker fra mobiltelefoner og tablets.4 I 2020 forventes over halvdelen af søgningerne i USA at være talesøgninger.5 Sidste år blev der foretaget cirka 2400 forbedringer af den algoritme, der får søgemaskinen til at fungere.6 &quot; At google&quot; blev et dansk verbum i 2002.7 Googles søgemaskine er tilgængelig på over 150 sprog.8 Den gennemsnitlige responstid på Google er et kvart sekund. Et gennemsnitligt blink med øjnene er en tiendedel af et sekund.KILDE: GOOGLE.
+        </div>
+        <footer>
+          <em>Avisen Danmark (eftermiddag)</em>
+          &nbsp;·&nbsp; 2018-09-28
+          &nbsp;·&nbsp; e6ea6804
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.959</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.967</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.505</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Glem ikke borgerne i den digitale eufori</h4>
+        <div>
+          Der ligger mange positive perspektiver i kommunernes teknologiflirt. Bl.a. kan softwarerobotter og chatbots understøtte administration og service i en situation, hvor et stigende antal borgere med servicebehov presser kommunernes ressourcer.På trods af de positive digitaliseringstakter tænder undersøgelsen desværre også en advarselslampe. Kun 11 pct. af de adspurgte kommunale beslutningstagerne vurderer, at deres kommune i høj eller meget høj grad inddrager borgerne gennem workshops, fokusgrupper eller spørgeskemaer for at forstå, hvordan ny digital teknologi bedst kan anvendes. Omvendt er det tilsvarende tal for kommunens egne medarbejdere 72 pct. Jeg forstår godt, at man orienterer sig mod kollegerne, når man drøfter nye teknologier, men det bekymrer mig alligevel, at springet er så stort i forhold til borgerne.Vi skal have borgerne involveret mere i designet og udviklingen af den digitale kommune. Ved i højere grad at inddrage borgerne kan man også få et mere nuanceret billede af deres behov på tværs af geografiske skel. Dermed kan man udvikle mere fintmaskede og fleksible løsninger, som peger ind i fremtiden.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2018-09-28
+          &nbsp;·&nbsp; e6ea571b
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.719</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.982</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.704</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>An­tal­let af cor­o­naind­lag­te er tredoblet si­den 1. de­cem­ber</h4>
+        <div>
+          Der er fundet yderligere 1834 coronatilfælde det seneste døgn. Andelen af smittede blandt de testede stiger.Der er det seneste døgn registreret 1834 nye coronatilfælde, oplyser Statens Serum Institut. Det er sket på baggrund af 52.699 prøver. Antallet af prøver ligger væsentligt under niveauet op til jul.Den samlede andel af positive prøver er 3,48, hvilket er en noget højere positivprocent end de seneste dage.Derudover er der registreret 729 coronatilfælde blandt 20.785 lyntest foretaget af fire private udbydere på statens regning. De tæller ikke med i opgørelsen fra seruminstituttet.Antallet af indlagte stiger med 50 til til 776. Det er det hidtil højeste niveau under pandemien og tre gange så mange som 1. december. Da var der 254 coronaindlagte landet over. Flere end halvdelen af alle de indlagte - 423 - befinder sig på hospitaler i hovedstadsområdet. Det fremgår af Region Hovedstadens hjemmeside.Der er også registreret yderligere 19 coronarelaterede dødsfald. I alt er 1153 personer med påvist covid-19 afgået ved døden.Med lørdagens tal når det samlede antal coronatilfælde indtil nu op på 151.167 personer.Af dem har 108.659 personer overstået infektionen. Det tal skal dog tages med et gran salt, da det baserer sig på en algoritme.Samlet set er 3.895.326 personer - altså knap 3,9 millioner - blevet testet for coronavirus./Ritzau/
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2020-12-26
+          &nbsp;·&nbsp; e80ce633
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.881</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.671</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.841</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.665</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Otte facts om Googles søgemaskine</h4>
+        <div>
+          3 Mere end halvdelen af alle søgninger sker fra mobiltelefoner og tablets.4 I 2020 forventes over halvdelen af søgningerne i USA at være talesøgninger.5 Sidste år blev der foretaget cirka 2400 forbedringer af den algoritme, der får søgemaskinen til at fungere.6 &quot;At google&quot; blev et dansk verbum i 2002.7 Googles søgemaskine er tilgængelig på over 150 sprog.8 Den gennemsnitlige responstid på Google er et kvart sekund. Et gennemsnitligt blink med øjnene er en tiendedel af et sekund.Kilde: GoogleGoogle-topchef: Youtube er ikke beregnet til børn
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2018-09-27
+          &nbsp;·&nbsp; e6ea307a
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.915</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.553</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.674</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sportsvogne bedre end lidenskabelige kys</h4>
+        <div>
+          KØREGLÆDE En ny undersøgelse fra Ford viser, at daglige ture i en sportsvogn øger dit velvære og tilfredsstiller dine følelser mere end et lidenskabeligt kys eller en tur på dansegulvet. Sammen med neurologer og designere vækkede Ford undersøgelsen til livs med en Ford Performance Buzz Car - en skræddersyet Ford Focus RS der med bærbart måleudstyr, kunstig intelligensteknologi og mere end 200.000 LED-lys kan skabe spektakulære animationer. Animationerne på bilens yderside viser førerens følelser i realtid. Deltagerne i undersøgelsen, der sad bag rattet på en Ford Focus RS, Focus ST eller Mustang oplevede i gennemsnit 2,1 &quot; Buzz Moments&quot; ved en normal køretur. Køreturen blev kun overgået af de sporadiske rutsjebaneture, hvor deltagerne oplevede 3 &quot; Buzz Moments&quot;. 
+        </div>
+        <footer>
+          <em>Ugeavisen Esbjerg</em>
+          &nbsp;·&nbsp; 2018-02-21
+          &nbsp;·&nbsp; e6a0d868
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.911</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.729</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.516</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Udfordringer</h4>
+        <div>
+          Kommuner og andre offentlige arbejdspladser ansætter i stigende grad akademikere i traditionelle kontorstillinger, som HK'ere snildt kan varetage.Det dilemma vil HK Hovedstaden gerne gøre kommunerne og de øvrige offentlige arbejdspladser opmærksomme på. Ikke mindst også, at akademikerne, økonomer og humanister, eksempelvis, efter nogle år bliver dyrere lønmæssigt.Formand for HK Hovedstaden, Christian Grønnemark peger også på en anden udfordring for HK'erne.Nemlig at Big Data og kunstig intelligens kommer til at overtage flere af de mere rutineprægede opgaver ved skrivebordet og på computeren.Han påpeger, at det ikke betyder, at der bliver brug for færre kontoransatte. Der bliver bare brug for flere kontoransatte med lidt andre kompetencer, siger han.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2019-11-12
+          &nbsp;·&nbsp; e76f28b0
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.558</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.773</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.535</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.664</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Banker har i stigende grad informeret myndigheder om hvidvaskmistanke</h4>
+        <div>
+            Ban­ker Der er sket en markant stigning i bankernes underretning af myndighederne om mistænkelig transaktioner, der kunne se ud som hvidvask. Det skriver Finans I årets først ni måneder er der kommet næsten lige så mange underretninger som i hele 2019, viser nye tal fra Hvidvasksekretariatet under Anklagemyndigheden, som også viser, at flere sager er blevet sendt videre til efterforskning hos politiet eller andre myndigheder. &quot;Vi har vedtaget en strategi her i Hvidvasksekretariatet om, at vi skulle være langt mere datadrevne og bruge algoritmer og flere tekniske muligheder for at behandle underretningerne. Det har betydet, at vi videresender markant flere, nemlig 32 pct.,&quot; siger Jørgen Andersen, der er leder af Hvidvasksekretariatet under SØIK, også kaldet bagmandspolitiet, til Finans.
+        </div>
+        <footer>
+          <em>Borsenpro.dk/finans</em>
+          &nbsp;·&nbsp; 2020-10-27
+          &nbsp;·&nbsp; e7f583df
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.934</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.522</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.609</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>GOOGLE-ALGORITME SLÅR LÆGER I DIAGNOSTIK AF BRYSTKRÆFT</h4>
+        <div>
+          DEEP LEARNING-ALGORITMER er nu så gode, at de giver radiologer på hospitalerne baghjul. Det viser et studie foretaget af eksperter fra Google Health og Imperial College i London, der har trænet en algoritme til kunstig intelligens (AI) på 91.000 mammografier, altså røntgenbilleder taget i jagten på brystkræft.Gennem studier af mammografierne og input om, hvilke kvinder der udviklede brystkræft efter to til tre år, var AI'en i stand til at stille bedre diagnoser end seks konkurrerende radiologer af kød og blod.Den havde 5,7 pct. færre falsk positive end lægerne for mammografier foretaget i USA og 1,2 pct. færre for mammografier foretaget i Storbritannien. Samtidig reducerede den antallet af falske negative resultater med henholdsvis 9,4 og 2,7 pct.Radiologer verden over har mammografier som en af deres helt store arbejdsopgaver.Alene i Region Hovedstaden foretages årligt 80.000 mammografiscreeninger på kvinder i alderen 50 til 69 år, der rutinemæssigt får foretaget undersøgelser som led i det nationale screeningprogram for brystkræft.Tanken er ikke at erstatte radiologer, men at mindske arbejdspresset på radiologerne ved at lade en radiolog og en AI arbejde sammen.thd. &amp;gt, ing.dk/ 231229
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2020-01-10
+          &nbsp;·&nbsp; e788879a
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.654</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danmark har registreret 60.000 coronatilfælde siden februar</h4>
+        <div>
+          Der er fundet yderligere 1037 nye coronatilfælde det seneste døgn. Antallet af indlagte falder til 236.Der er det seneste døgn registreret 1037 nye coronatilfælde.Det oplyser Statens Serum Institut.Antallet af indlagte falder med tre personer. Der er i alt 236 coronapatienter indlagt på danske sygehuse.Der er yderligere ét coronarelateret dødsfald, og det bringer det samlede antal personer, der er døde med covid-19, op på 756.Det seneste døgn er der kommet svar på 71.073 prøver, hvoraf 1037 altså er positive.Det svarer til, at 1,4 procent af testene har været positive med covid-19.Den såkaldte positivprocent har de seneste dage stabiliseret sig på dette niveau.Eksperter har udlagt det som et positivt tegn på, at epidemien er aftagende.Da det såkaldte kontakttal blev offentliggjort tirsdag, var det også faldet til 0,9.Det betyder, at ti coronasmittede giver smitten videre til ni andre.Det er et andet tegn på, at epidemien er på retur.I fredagens opgørelse kan man også se, at Danmark nu har registreret 60.000 coronatilfælde.Det er sket, siden den første dansker blev konstateret smittet med covid-19 27. februar.Af de 60.000 har 45.705 personer overstået infektionen. Tallet er dog baseret på en algoritme. Dermed er der en vis usikkerhed behæftet med det./Ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2020-11-13
+          &nbsp;·&nbsp; e7fcdc8d
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.896</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.608</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.762</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.673</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Glem ikke borgerne i den digitale eufori</h4>
+        <div>
+          Der ligger mange positive perspektiver i kommunernes teknologiflirt. Bl.a. kan softwarerobotter og chatbots understøtte administration og service i en situation, hvor et stigende antal borgere med servicebehov presser kommunernes ressourcer.På trods af de positive digitaliseringstakter tænder undersøgelsen desværre også en advarselslampe. Kun 11 pct. af de adspurgte kommunale beslutningstagerne vurderer, at deres kommune i høj eller meget høj grad inddrager borgerne gennem workshops, fokusgrupper eller spørgeskemaer for at forstå, hvordan ny digital teknologi bedst kan anvendes. Omvendt er det tilsvarende tal for kommunens egne medarbejdere 72 pct. Jeg forstår godt, at man orienterer sig mod kollegerne, når man drøfter nye teknologier, men det bekymrer mig alligevel, at springet er så stort i forhold til borgerne.Vi skal have borgerne involveret mere i designet og udviklingen af den digitale kommune. Ved i højere grad at inddrage borgerne kan man også få et mere nuanceret billede af deres behov på tværs af geografiske skel. Dermed kan man udvikle mere fintmaskede og fleksible løsninger, som peger ind i fremtiden.Vil du have meninger direkte i din indbakke? Tilmeld dig gratis og få de seneste indlæg fra Jyllands-Postens debatsektion én gang i døgnet - klik her, sæt flueben og indtast din mailadresse. Følg også JP Debat på Twitter
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-09-28
+          &nbsp;·&nbsp; e6ea57a3
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.792</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.851</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.56</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dagens smittetal: Antallet af indlagte tager et stort hop</h4>
+        <div>
+          Der er fundet yderligere 1834 coronatilfælde det seneste døgn. Andelen af smittede blandt de testede stiger.CoronavirusCoronavirus har spredt sig fra Kina til resten af verden, heriblandt Danmark.Politiken opdaterer løbende et overblik over antal indlagte og døde i Danmark - og resten af verden. Her kan du også se, hvornår du skal ringe til lægen.En hjemmeside samler al information fra myndighederne. Den finder du herDer er det seneste døgn registreret 1834 nye coronatilfælde, oplyser Statens Serum Institut.Det er sket på baggrund af 52.699 prøver. Antallet af prøver ligger væsentligt under niveauet op til jul.Den samlede andel af positive prøver er 3,48, hvilket er en noget højere positivprocent end de seneste dage.Derudover er der registreret 729 coronatilfælde blandt 20.785 lyntest foretaget af fire private udbydere på statens regning.De tæller ikke med i opgørelsen fra seruminstituttet.Over halvdelen af indlagte er i hovedstadenAntallet af indlagte stiger med 50 til til 776. Det er det hidtil højeste niveau under pandemien og tre gange så mange som 1. december.Da var der 254 coronaindlagte landet over.Flere end halvdelen af alle de indlagte - 423 - befinder sig på hospitaler i hovedstadsområdet.Det fremgår af Region Hovedstadens hjemmeside.Der er også registreret yderligere 19 coronarelaterede dødsfald. I alt er 1153 personer med påvist covid-19 afgået ved døden.Med lørdagens tal når det samlede antal coronatilfælde indtil nu op på 151.167 personer.Af dem har 108.659 personer overstået infektionen. Det tal skal dog tages med et gran salt, da det baserer sig på en algoritme.Samlet set er 3.895.326 personer - altså knap 3,9 millioner - blevet testet for coronavirus.Ritzau
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2020-12-26
+          &nbsp;·&nbsp; e80ce5ba
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.918</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.596</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.709</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Drone fjernaflæser hjerterytme</h4>
+        <div>
+          TRÅDLØS Forskere ved University of South Australia har udviklet en drone, der ved hjælp af billedbehandlingssystemer og skræddersyede algoritmer kan aflæse menneskers livstegn på afstand, mens de bevæger sig.Dronen registrerer bevægelser i ansigt og hals og leverer på den baggrund nøjagtige data om hjerterytme og vejrtrækning, skriver BBC.I det foreløbige testforløb har dronen præsteret analyser på tre meters afstand, men målet er at foretage fjernaflæsninger på større afstande og dermed dække et større område, forklarer projektleder Javaan Chahl. j taa.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2017-10-13
+          &nbsp;·&nbsp; e6751440
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.952</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.949</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.598</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kun fem procent af de danske virksomheder bruger machine learning kunstig intelligens</h4>
+        <div>
+          Ny undersøgelse viser, at machine-learning og kunstig intelligens kun bruges af fem procent af danske virksomheder.Fakta om undersøgelsenDanmarks statistik har adspurgt 3926 virksomheder med mindst ti ansatte om deres brug af it i perioden februar-juli 2016. Undersøgelsen er harmoniseret med EU, så resultaterne kan sammenlignes på tværs af Europa.Metoden til udtagning af stikprøven er stratificeret tilfældig udvælgelse efter branche og virksomhedsstørrelse. Resultaterne opregnes derefter til den fulde population.Eurostat vurderer, at kvaliteten af resultaterne generelt er pålidelige, men ligesom andre stikprøvebaserede undersøgelser kan der opstå bias i forbindelse med udtagning og opregning, der giver en vis usikkerhed.Machine-learning og andre former for kunstig intelligens er en af de mest hypede teknologier i verden ifølge Gartner.Det betyder dog ikke nødvendigvis at den finder anvendelse. Kun fem procent af danske virksomheder gør brug af teknologierne, viser en undersøgelse fra Danmarks Statistik.Det er især informations- og kommunikationsbranchen, der har omfavnet AI-teknologien, og det er generelt kun store og mellemstore virksomheder med 50-250+ ansatte, der anvender AI og machine-learning.Det er meget mere udbredt at bruge internetforbundne sensorer hos de danske virksomheder, hvor 31 procent af de danske virksomheder benytter teknologien.Også cloud-teknologi finder meget mere anvendelse i riget, da 42 procent af de danske virksomheder er gået i skyen.Photo: Danmarks StatistikDanmark fører, bare ikke med avanceret teknologiDanmark indtager førstepladsen på EU-plan, når det kommer til digitalisering. Således har 42 procent af virksomhederne i Danmark en meget høj eller høj digitaliseringsgrad, som er baseret på 12 indikatorer for digitalisering, hvilket er det højeste i EU.Når det kommer til anvendelse af avanceret teknologi som cloud computing og big-data analyse, falder Danmark dog bag lande som Finland og Sverige. Der er dog ikke EU-harmoniserede tal for anvendelsen af machine-learning og AI.Endeligt outsources it-funktioner i Danmark generelt til eksterne leverandører, hvilket muligvis kan skyldes, at 61 procent af virksomhederne generelt oplevede vanskeligheder ved at rekruttere it-specialister i 2016.Photo: Danmarks Statistik
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-01-25
+          &nbsp;·&nbsp; e6978b98
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.631</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.683</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.634</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Sådan finder danskerne deres nyheder</h4>
+        <div>
+          KøbenhavnKun en tredjedel af danskerne er klar over, at nyhedsudvalget i deres &quot;news feed&quot; på Facebook foretages af computerstyrede algoritmer.Det viser en stor undersøgelse af danskernes brug af nyhedsmedier i 2018 foretaget af forskere fra Roskilde Universitet.Her er et overblik over udviklingen i danskernes nyhedsforbrug:* Fra 2016 til 2018 er der sket et fald fra 56 procent til 46 procent i andelen af danskere, der kan svare ja til at have læst nyheder på sociale medier inden for den seneste uge.* Sociale medier er dog stadig den type nyhedsmedie, som flest i aldersgruppen 18 til 24 år bruger.* TV-nyheder er stadig det mest udbredte nyhedsmedie blandt de ældste danskere.* Smartphonen er den mest anvendte platform til at få nyheder. 67 procent har brugt en smartphone til nyheder inden for den seneste uge, mens 56 procent har brugt en computer.* Danskernes brug af samtlige nyhedsmedietyper i 2018 er markant faldende. Faldet for sociale medier er på 10 procentpoint, mens det for øvrige medietyper ligger på 3 til 8 procentpoint. Faldet betyder ikke nødvendigvis, at danskerne bruger mindre tid på nyheder, men måske, at de bruger færre typer nyhedsmedie.* Når danskerne vil have nyheder, finder 63 procent af dem frem til nyhederne ved at gå direkte til et nyhedsbrand, de kender. 40 procent følger en vej styret af algoritmer igennem for eksempel sociale medier eller søgemaskiner.* Langt de fleste danske mediebrands nyder en relativt høj grad af tillid fra brugerne. Størst tillid er der til public service-medier.* 36 procent af danskerne er bekymrede for &quot;fake news&quot; i form af opdigtede historier. Det er væsentligt færre end i lande som Spanien (69 procent) og USA (64 procent). Når danskerne møder &quot;fake news&quot;, er det hovedsageligt i form af dårlig journalistik og ikke som opdigtede historier, lyder svaret.* Danskerne ved generelt lidt om, hvordan nyheder bliver til og udvælges på sociale medier, viser analysen.Kilde: &quot;Danskernes Brug af Nyhedsmedier 2018&quot; - den danske del af den internationale rapport &quot;Reuters Digital News Report&quot;. Stikprøve med 2025 svar./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-07-14
+          &nbsp;·&nbsp; e6d31b9a
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.983</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.839</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.669</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook laver psykologiske eksperimenter med brugerne</h4>
+        <div>
+          Flere hundrede tusinde Facebook-brugere har været testpersoner uden at vide det.Facebook har dine følelser i sin hule hånd.Det er måske sat på spidsen, men ikke desto mindre peger resultatet af en undersøgelse af knap 700.000 Facebook-brugere på, at vores humør bliver påvirket af det indhold, som andre personer deler med os på Facebook.Med andre ord, så påvirker glade budskaber os til selv at sprede glæden, mens negative omgivelser fremprovokerer sure opstød.LÆS OGSÅ Sådan bestemmer Facebook, hvad du skal seFacebook manipulerer indholdetResultatet af eksperimentet. Venstre side viser, at brugerne deler flere positivt ord, når negativt indhold bliver filtreret fra nyhedsstrømmen. Højre side viser, at der bliver brugt delt flere negative (og færre positive) ord, når nyhedsstrømmen er mere negativ.Undersøgelsen er allerede blevet kritiseret i amerikanske medier , fordi forsøgspersonerne deltog i eksperimentet uden at være klar over det.Forsøget gik ud på, at Facebook manipulerede brugernes nyhedsstrøm, så nogle testpersoner oplevede mere negativt indhold, mens andre blev mødt af indlæg med flere positive ord.Konsekvensen var, at det påvirkede humøret så mærkbart hos forsøgspersonerne, at det kunne ses i det indhold, som de delte bagefter.Undersøgelsen viser også, at vi således ikke kun bliver påvirket af direkte kommunikation. Selv når vi indirekte oplever negativt eller positivt indhold, påvirker det vores måde at agere på.LÆS OGSÅ Sådan lokkes du til at købe mereFrit valg under presSom Facebook-bruger accepterer man de vilkår , at Facebook kan bruge ens information til blandt andet forskning. Men som i tilfældet med det seneste eksperiment, så får man ikke noget at vide om det.&quot;Sådan noget bør man ikke gøre, uden at brugerne er informeret om det,&quot; siger Forbrugerrådet Tænks seniorjurist, Anette Høyrup.&quot;Det frie valg er under pres, fordi det hele bliver styret af maskiner fra et lokale. Det er vigtigt at være bevidst om det, så man ved, at det man ser, kan være styret af andre end vennerne. Man er en del af et større puslespil,&quot; siger hun.At Facebook sorterer i nyhedsstrømmen er som sådan ikke en nyhed. Virksomheden sorterer allerede heftigt i, hvad man ser, og da den sidste år ændrede på den algoritme, der står for at filtrere indholdet, gav det ramaskrig verden over.LÆS OGSÅ Facebook ødelægger julen for detailhandlenManipulation eller videnskab? Hvad mener du om, at Facebook laver psykologiske eksperimenter med dets brugere?689.003 personer har uden at vide det været en del af et større psykologisk eksperiment hos Facebook. Foto: Dominic Lipinski.689.003 personer har uden at vide det været en del af et større psykologisk eksperiment hos Facebook. Foto: Dominic Lipinski.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2014-06-29
+          &nbsp;·&nbsp; e477e1eb
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.875</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.828</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.668</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.646</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny Harvard-forskning: Øget luftforurening forbundet med flere corona-dødsfald</h4>
+        <div>
+          Undersøgelse bekræfter fund fra tidligere undersøgelser. Blot en smule mere luftforurening er forbundet med en markant stigning i antallet af corona-dødsfald.Det viser en ny undersøgelse fra Harvard University, der er publiceret i det fagfællebedømte videnskabelige tidsskrift Science AdvancesUndersøgelsen viser, at en stigning på blot 1 (my)g/m3 i luftforureningen over længere tid er forbundet med en markant stigning i antallet af dødsfald på 11 procent.Resultaterne bekræfter dermed tidligere undersøgelser, som også har fundet sammenhænge mellem luftforurening og covid-19-dødelighed.Harvard-forskerne har fundet en sammenhæng, men har ligesom tidligere undersøgelser ikke kunnet bevise, at luftforureningen rent faktisk er skyld i flere døde, hvilket dog heller ikke var formålet.Skal hurtigst muligt undersøges nærmereForskerne undersøgte luftforureningen i mere end 3000 amerikanske amter dækkende for 98 procent af den amerikanske befolkning, som de koblede sammen med i alt 116.747 corona-dødsfald frem til 18. juni 2020.I USA findes mere end 4000 målestationer til at observere luftforurening fordelt i landet, men de er ofte placeres i byområder og de større byer, så data fra disse dækker ikke hele landet. Derfor anvendte Harvard-forskerne kunstig intelligens i samspil med satellitdata over luftforurening.Forskerne medtog i deres undersøgelse 20 andre faktorer såsom lokale corona-restriktioner, befolkningstæthed og andet, men uden at have informationer om individer såsom alder eller hvorvidt en person ryger eller ej. Det gør det vanskeligere at sige, præcis hvor stor en rolle luftforurening spiller i dødsfaldene.»Vi kan ikke etablere en årsagssammenhæng på individniveau. Det, som vi kan sige, er, at hvis du har levet i et amt med høj luftforurening i lang tid, så har du i gennemsnit en højere risiko for at dø af covid-19,«  siger Francesca Dominici til sundhedsmediet StatIfølge Mark Miller, der forsker i sundhedseffekterne ved luftforurening på Edinburgh University i Skotland, og som ikke har været en del af Harvard-studiet, så er det slående, at blot små forskelle i luftforureningsniveau er forbundet med væsentligt højere dødsfald.»Mens den her undersøgelse blev lavet i USA, så er der ingen grund til at tro, at det samme ikke gør sig gældende i Storbritannien eller ethvert andet sted i verden. Samlet set fremhæver de her resultater en forbindelse, der hurtigst muligt skal undersøges nærmere,«  siger han til The GuardianLuftforurening kan være skyld i 15 procent af dødsfaldFlere tidligere undersøgelser har vist en sammenhæng mellem luftforurening og øget risiko for at dø af corona. En af dem publiceret i Cardiovascular Research 26. oktober, som Harvard-forsker Francesca Dominici stod i spidsen for, konkluderede, at 15 procent af corona-dødsfaldene på verdensplan skyldes skader på hjerte og lunger forårsaget af forurenet luft.De 15 procent svarer til omkring 184.000 af de nuværende 1.225.913 corona-dødsfaldene på verdensplan ud fra tal fra Johns Hopkins University of Medicine.I denne undersøgelse estimerede forskerne, at 27 procent af coronadødsfaldene i Kina kan tilskrives luftforurening, mens det samme gør sig gældende for 26 procent af dødsfaldene i Tyskland og 18 procent i USA.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-11-13
+          &nbsp;·&nbsp; e7fcc380
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.506</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens</h4>
+        <div>
+          De egentlig ansvarlige for tabet af 80 milliarder kroner i Skat er ifølge chefredaktør for Weekendavisen Martin Krasnik bl. a.Lars Løkke og Kristian Jensen. Det delte han i en uge, hvor en ny analyse fra McKinsey viser, at automatisering og kunstig intelligens er i stand til at erstatte 40 procent af danskernes arbejdstimer. &amp;gt,&amp;gt, Se flere på ing.dk/ satire.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2017-05-05
+          &nbsp;·&nbsp; e63dc7c3
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.764</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.782</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.559</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.515</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Antallet af coronaindlagte er tredoblet siden 1. december</h4>
+        <div>
+          Der er fundet yderligere 1834 coronatilfælde det seneste døgn. Andelen af smittede blandt de testede stiger. 26 dec. 2020 kl. 14:05Del med andre:Der er det seneste døgn registreret 1834 nye coronatilfælde, oplyser Statens Serum Institut.Det er sket på baggrund af 52.699 prøver. Antallet af prøver ligger væsentligt under niveauet op til jul.Den samlede andel af positive prøver er 3,48, hvilket er en noget højere positivprocent end de seneste dage.Lørdagens tal er behæftet med en større usikkerhed, end de plejer på grund af julehelligdagene. Det siger professor ved Klinisk Institut på Aarhus Universitet Eskild Petersen.- Det er meget usikre tal. Det bliver først, når vi kommer hen til hverdagene mellem jul og nytår, at vi ved, hvad der er foregået over julen, siger han.Derudover er der registreret 729 coronatilfælde blandt 20.785 lyntest foretaget af fire private udbydere på statens regning.De tæller ikke med i opgørelsen fra seruminstituttet.Antallet af indlagte stiger med 50 til 776. Det er det hidtil højeste niveau under pandemien og tre gange så mange som 1. december.Da var der 254 coronaindlagte landet over.Det høje indlæggelsestal skal ses i lyset af sidste uges smittetal, forklarer Eskild Petersen.- Det overrasker sådan set ikke. Fra du bliver syg, til du bliver indlagt, går der omkring en uges tid. Derfor vil antallet af indlæggelser i dag reflektere antallet af smittede for en uge siden, siger han.Lørdag for en uge siden blev 3285 konstateret smittet med corona.Flere end halvdelen af alle de indlagte - 423 - befinder sig på hospitaler i hovedstadsområdet.Det fremgår af Region Hovedstadens hjemmeside.Der er også registreret yderligere 19 coronarelaterede dødsfald. I alt er 1153 personer med påvist covid-19 afgået ved døden.Med lørdagens tal når det samlede antal coronatilfælde indtil nu op på 151.167 personer.Af dem har 108.659 personer overstået infektionen. Det tal skal dog tages med et gran salt, da det baserer sig på en algoritme.Samlet set er 3.895.326 personer - altså knap 3,9 millioner - blevet testet for coronavirus./Ritzau/
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2020-12-26
+          &nbsp;·&nbsp; e80ce5a8
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.656</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.666</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.755</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.663</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danmark har registreret 60.000 coronatilfælde siden februar</h4>
+        <div>
+          Der er fundet yderligere 1037 nye coronatilfælde det seneste døgn. Antallet af indlagte falder til 236.CoronavirusCoronavirus har spredt sig fra Kina til resten af verden, heriblandt Danmark.Politiken opdaterer løbende et overblik over antal indlagte og døde i Danmark - og resten af verden. Her kan du også se, hvornår du skal ringe til lægen.En hjemmeside samler al information fra myndighederne. Den finder du herDer er det seneste døgn registreret 1037 nye coronatilfælde. Det oplyser Statens Serum Institut.Antallet af indlagte falder med tre personer. Der er i alt 236 coronapatienter indlagt på danske sygehuse.Der er yderligere ét coronarelateret dødsfald, og det bringer det samlede antal personer, der er døde med covid-19, op på 756. Det seneste døgn er der kommet svar på 71.073 prøver, hvoraf 1037 altså er positive. Det svarer til, at 1,4 procent af testene har været positive med covid-19.Stabil positivprocentDen såkaldte positivprocent har de seneste dage stabiliseret sig på dette niveau. Eksperter har udlagt det som et positivt tegn på, at epidemien er aftagende.Da det såkaldte kontakttal blev offentliggjort tirsdag, var det også faldet til 0,9. Det betyder, at ti coronasmittede giver smitten videre til ni andre.Det er et andet tegn på, at epidemien er på retur.I fredagens opgørelse kan man også se, at Danmark nu har registreret 60.000 coronatilfælde.Det er sket, siden den første dansker blev konstateret smittet med covid-19 27. februar.Af de 60.000 har 45.705 personer overstået infektionen. Tallet er dog baseret på en algoritme. Dermed er der en vis usikkerhed behæftet med det.ritzau
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2020-11-13
+          &nbsp;·&nbsp; e7fce0b7
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.927</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.537</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.646</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.67</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ikke alle efteruddannelser pynter på lønsedlen</h4>
+        <div>
+          Flere AMU-kurser har tjent sig selv hjem efter tre år, mens andre ikke har nogen effekt, viser ny analyse.Det pynter på lønsedlen, beskæftigelsen og jobmobiliteten, når medarbejdere deltager i diplomkurser, akademikurser og nogle typer AMU-kurser. Men ikke alle kurser giver den ønskede effekt.Det viser en effektanalyse, som Det Nationale Institut for Kommuners og Regioners Analyse og Forskning, KORA, har lavet for Undervisningsministeriet.- Med analysen kan vi komme nærmere, hvilke voksen- og efteruddannelsesindsatser det offentlige har en særlig forpligtelse til at løfte, siger undervisningsminister Merete Riisager (LA) i en pressemeddelelse.- Det kan være i forhold til den enkeltes løn, jobmobilitet eller noget helt tredje. Vi har brug for et solidt grundlag, når trepartsforhandlingerne om kort tid går i gang.Analysen er den største, der hidtil er lavet af efteruddannelsesindsatsen både i dansk og international sammenhæng.Specifikt for AMU-kurser viser analysen, at selv om kurserne er kortvarige, er de generelt en god forretning for samfundet. Nogle kurser har tjent sig selv hjem allerede efter tre til fire år.Men der er store forskelle på de forskellige typer kurser. Især branchespecifikke og tværgående AMU-kurser trækker effekterne i positiv retning.Derimod påvirker hverken certifikatkurser eller grundlæggende AMU-kurser løn og beskæftigelse.Vi kommer til at mangle faglært arbejdskraft under &quot;den fjerde industrielle revolution&quot;, hvor digitalisering, robotter og kunstig intelligens vil gøre sit indtog, påpeger Kora-professor Nicolai Kristensen, der står bag rapporten.- Det er en udvikling, der forventes at ramme bredt på arbejdsmarkedet. Men dog især blandt kortuddannede og ufaglærte. I det lys er det virkelig interessant og vigtigt at se på effekterne af AMU-kurserne.Analysen viser også, at ufaglærte får mere ud af kurserne end faglærte, både hvad angår løn og beskæftigelse. Og kurser, der foregår på virksomheder, har større effekter end kurser på eksempelvis AMU-centre.Op til trepartsforhandlingerne har LO lavet sin egen undersøgelse:- Man øger beskæftigelsen varigt med 17.000, og man løfter bnp med 0,6 procent, hvis man sørger for, at der er endnu flere, der kommer på AMU-kurser, siger LO-formand Lizette Risgaard.- Vi går til trepart med ønsket om at få skabt et sammenhængende og moderne efteruddannelsessystem, som er let at gå til, og hvor folk hurtigt kan finde ud af, hvad der kan hjælpe dem./Ritzau/
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-06-13
+          &nbsp;·&nbsp; e64b4673
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.715</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.69</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Otte ud af ti anser klimaforandringer for katastrofal risiko</h4>
+        <div>
+          84 procent af folk anser nu klimaforandringer for en global katastrofal risiko, viser ny, stor undersøgelse.Godt otte ud af ti er klar til at ændre deres levestandard, hvis det forhindrer fremtidige klimakatastrofer.Det viser en ny undersøgelse om globale trusler blandt 8000 mennesker i USA, Kina, Indien Storbritannien, Australien, Brasilien, Sydafrika og Tyskland.84 procent af folk anser nu klimaforandringer for en &quot;global katastrofal risiko&quot;.Dermed ligger frygten for klimaforandringer lige under frygten for omfattende miljøbeskadigelse og politisk motiveret vold, der eskalerer til krig.Det fremgår af rapporten Global Catastrophic Risks 2017, der offentliggøres af the Global Challenges Foundation onsdag.Svarene indikerer, at mange mennesker nu ser klimaforandringer som en større trussel end andre traditionelle bekymringer som epidemier, befolkningsvækst, brug af masseødelæggelsesvåben og stigningen i kunstig intelligens./ritzau/reuters
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-05-24
+          &nbsp;·&nbsp; e644893c
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.884</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.546</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dagens smittetal: Antallet af indlagte tager et stort hop</h4>
+        <div>
+          Der er fundet yderligere 1834 coronatilfælde det seneste døgn. Andelen af smittede blandt de testede stiger.CoronavirusCoronavirus har spredt sig fra Kina til resten af verden, heriblandt Danmark.Politiken opdaterer løbende et overblik over antal indlagte og døde i Danmark - og resten af verden. Her kan du også se, hvornår du skal ringe til lægen.En hjemmeside samler al information fra myndighederne. Den finder du herDer er det seneste døgn registreret 1834 nye coronatilfælde, oplyser Statens Serum Institut.Det er sket på baggrund af 52.699 prøver. Antallet af prøver ligger væsentligt under niveauet op til jul.Den samlede andel af positive prøver er 3,48, hvilket er en noget højere positivprocent end de seneste dage.Derudover er der registreret 729 coronatilfælde blandt 20.785 lyntest foretaget af fire private udbydere på statens regning.De tæller ikke med i opgørelsen fra seruminstituttet.Over halvdelen af indlagte er i hovedstadenAntallet af indlagte stiger med 50 til til 776. Det er det hidtil højeste niveau under pandemien og tre gange så mange som 1. december.Da var der 254 coronaindlagte landet over.Flere end halvdelen af alle de indlagte - 423 - befinder sig på hospitaler i hovedstadsområdet.Det fremgår af Region Hovedstadens hjemmeside.Der er også registreret yderligere 19 coronarelaterede dødsfald. I alt er 1153 personer med påvist covid-19 afgået ved døden.Med lørdagens tal når det samlede antal coronatilfælde indtil nu op på 151.167 personer.Af dem har 108.659 personer overstået infektionen. Det tal skal dog tages med et gran salt, da det baserer sig på en algoritme.Samlet set er 3.895.326 personer - altså knap 3,9 millioner - blevet testet for coronavirus.RitzauSom abonnent kan du frit dele artikler med familie og venner - det kræver kun, at de logger ind eller opretter en profil.Bemærk: Modtagere kan se, at det er dig (Content Editering), der har givet dem adgang til artiklen.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2020-12-26
+          &nbsp;·&nbsp; e80ce8d4
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.914</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.597</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Meget få kunder lægger tusinder af bud på Lauritz.com</h4>
+        <div>
+          En analyse foretaget af Berlingske viser, at få kundenumre byder voldsomt på online auktionshuset Lauritz.com.København. Når almindelige mennesker byder på Lauritz.com er de oppe imod en gruppe af få kunder, der byder på varer i en voldsom grad.Det skriver Berlingske, der har lavet en større analyse af handlen hos auktionsvirksomheden.Ifølge Berlingske har Lauritz.coms 10 mest aktive kunder deltaget i omkring 10 procent af alle auktioner på hjemmesiden, svarende til 370.000, siden 2003.Den mest aktive kunde har deltaget i over 80.000 auktioner og lagt over 800.000 bud.Samtidig viser analysen, at nogle af de mest aktive kunder kun vinder varen meget sjældent.At der kommer mange bud kan ifølge Troels Bjerre Lund, adjunkt i teoretisk datalogi ved IT Universitetet, som Berlingske har talt med, hæve prisen på varerne.- Alene det, at man ser mange bud på den vare, man byder på, gør, at man tror, varen er mere værd, end man troede, da man startede, siger han.Lauritz.com fortæller til Berlingske, at der er tale om kunder, der er kendt i koncernen.- Det er også forklaringen på, at disse kunder ikke via vores algoritmer og alarmlister er blevet lukket, siger direktør i Lauritz.com Mette Rode Sundstrøm og fortsætter:- Det er kunder, der har budt på et stort antal varer med mange bud. Disse kunder udviser ikke en typisk kundeadfærd, men heller ikke en forkert kundeadfærd. Lauritz.com har en række superkunder, der byder meget og også vinder mange auktioner. Det er vi glade for.Lauritz.com har ikke ønsket at fortælle Berlingske, hvem kunderne bag de aktive kundenumre er./Ritzau/Lauritz.com og stifter Bengt Sundstrøm har en række &quot;superkunder&quot;. Free/Lauritz.com.Lauritz.com og stifter Bengt Sundstrøm har en række &quot;superkunder&quot;. Free/Lauritz.com.
+        </div>
+        <footer>
+          <em>Amtsavisen.dk (Randers Amtsavis)</em>
+          &nbsp;·&nbsp; 2016-09-09
+          &nbsp;·&nbsp; e5e025bc
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.984</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.514</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.541</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Borgmesterens kæreste er et hit</h4>
+        <div>
+          fredericia - Hvor gammel er Jane Findahl egentlig og hvem er Jacob Bjerregaard kæreste med?Det er spørgsmål, som optager de lokale internetbrugere, viser en uvidenskabelig undersøgelse, som Fredericia Dagblad har foretaget via Googles autocomplete-funktion.Googles autocomplete-funktion er en hjælpefunktion, der selv foreslår emner, allerede mens brugeren er i gang med at taste sine søgeord. Emnerne bliver foreslået ud fra en avanceret og til dels hemmelig algoritme, der bl.a. tager udgangspunkt i, hvad andre har søgt på tidligere, lige som det spiller en rolle, hvor du rent geografisk foretager søgningen fra.Dagbladets undersøgelse viser, at de lokale internetbrugere er interesserede i at vide alderen på SF's byrådsmedlem Jane Findahl, hvem kommende borgmester Jacob Bjerregaards kæreste er samt, hvad Thomas Banke-sagen egentlig gik ud på.Du kan læse mere i fredagens avis.(Genrefoto).Hvor gammel er Jane Findahl? Det vil Googles brugere gerne vide..Hvem er den kommende borgmester kæreste med? Det spørgsmål er der tilsyneladende mange, som søger svar på, viser Dagbladets lille undersøgelse..Når der søges på tidligere borgmester Thomas Banke, er det først og fremmest sagen, der kostede Venstre-politikeren borgmesterkæden, som Googles brugere søger information om..(Genrefoto).(Genrefoto).Hvor gammel er Jane Findahl? Det vil Googles brugere gerne vide..Hvem er den kommende borgmester kæreste med? Det spørgsmål er der tilsyneladende mange, som søger svar på, viser Dagbladets lille undersøgelse..Når der søges på tidligere borgmester Thomas Banke, er det først og fremmest sagen, der kostede Venstre-politikeren borgmesterkæden, som Googles brugere søger information om..(Genrefoto).
+        </div>
+        <footer>
+          <em>Frdb.dk (Fredericia Dagblad)</em>
+          &nbsp;·&nbsp; 2013-12-27
+          &nbsp;·&nbsp; e42eae2b
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.624</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.657</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Børsrobotter bag hver tredje aktiehandel</h4>
+        <div>
+          Robotbørsmæglere styrer en stadig større del af de handler, der foretages på fondsbørsen i København. På bare to år er andelen af automatiserede handler, som foretages af computere, firedoblet.I sommeren 2009 var det under 10 pct. af handlerne med danske aktier, som blev foretaget ved hjælp af såkaldt forprogrammeret algoritmehandel, i dag er tallet steget til næsten 33 pct., og det ventes at stige yderligere. Dermed stiger risikoen for, at det danske børsmarked kan blive ramt af pludselige og store kursudsving i fremtiden.Risikoen for at handlerne går i selvsving ved, at den ene forudprogrammerede handel udløser den anden, er så åbenbar, at fondsbørsen har indført et system, der bremser handlerne, hvis handelsmønsteret ser mistænkeligt ud. Alarmen går i gennemsnit fem gange om dagen.&quot;Det kan være meget godt med den automatiserede handel, da der kan komme større likviditet i markedet, men det, som nogen frygter, er, at den likviditet forsvinder meget hurtigt, så der kommer større usikkerhed,&quot; siger Søren Hvidkjær, der er professor i finansiering ved CBS.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2011-07-12
+          &nbsp;·&nbsp; e2c7c465
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.599</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.561</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.611</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.691</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Medie: Ti kunder står bag millioner af bud på Lauritz.com</h4>
+        <div>
+          Almindelige brugere af auktionshuset Lauritz.com er oppe mod ekstremt aktive brugere. En omfattende datanalyse viser at en kunde har budt på 80.000 varer på 13 år.Det skriver Berlingske Business fredag.Er du bruger af netauktionssiden Lauritz.com, og handler du som mange andre, deltager du i omkring tre auktioner i alt. Og deltager du i tre auktioner, så ender du en fjerdedel af gangene med at få den vare, du byder på.Men et lille antal kunder på Lauritz.com har en helt anden adfærd.10 brugere sidder på 10 pct. af handlenDe ti mest aktive kunder på Lauritz.com deltager i cirka ti procent af alle auktioner på auktionssiden, hvilket svarer til cirka 370.000 auktioner. Ser man på den mest aktive kunde, har vedkommende deltaget i over 80.000 auktioner og budt over 800.000 gange siden 2003, hvilket gennemsnitligt svarer til 17 auktioner om dagen.Business har spurgt adm. direktør i Lauritz.com, Mette Rode Sundstrøm, der har undersøgt hvem kunderne er.Flere bud højere priserHun forklarer, at de ti ekstremt aktive kunder er kunder, som Lauritz.com »kender indgående både centralt og decentralt i koncernen«. Kunderne har, skriver Mette Rode Sundstrøm, løbende kontakt med auktionshusets filialer og finansafdelingen på hovedkontoret.»Det er også forklaringen på, at disse kunder ikke via vores algoritmer og alarmlister er blevet lukket,«siger Mette Rode Sundstrøm med henvisning til, at hun er klar til at udelukke kunder, som måtte handler»i ond tro«på Lauritz.com.Ifølge Troels Bjerre Lund, adjunkt i teoretisk datalogi på IT Universitetet, er der en klar sammenhæng mellem omfanget af bud og prisen. Jo flere bud, des højere er prisen, kunden kommer til at betale.Det er kun tre måneder siden at Lauritz.com med hiv og sving blev noteret på børsen i Stockholm.Mette Rode Sundstrøm - adm. direktør Lauritz.com Foto: Scanpix.Mette Rode Sundstrøm - adm. direktør Lauritz.com Foto: Scanpix.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-09-09
+          &nbsp;·&nbsp; e5e0206a
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.991</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.572</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook justerer for at bremse klik-lokkemad og fake news</h4>
+        <div>
+          Det amerikanske medie Facebook vil begrænse udbredelsen af delinger fra en lille gruppe meget aktive brugere.Facebook ændrer igen algoritmen bag det sociale medies nyhedsrulle, så enkelte personer, der står bag et højt antal delinger af lokkende historier og falsk information, ikke kommer så bredt ud.Det amerikanske medie, som har to milliarder brugere, har i flere år forsøgt at begrænse historier og opslag, som det store flertal ikke ønsker.Bestræbelserne tog fart, da en sværm af falske nyheder blev spredt under præsidentvalgkampen i USA sidste år.De seneste ændringer kommer til at begrænse opslag fra &quot;en lille gruppe&quot; mennesker. Disse personer har ifølge Facebook stået bag et stort antal daglige opslag af lav kvalitet.Kun 0,1 procent af de brugere, som deler flere end 50 oplæg dagligt, bliver berørt af ændringen.Ændringen retter sig alene mod deling af links. Det vil sige, at deres foto og andre opslag ikke begrænses, meddeler mediet.- Vores undersøgelse viser, at der på Facebook er en lille gruppe mennesker, som af rutine deler store mængder hver dag. Derved spammer de folks nyhedsruller, siger Adam Mosseri, som er vicechef for nyhedsrullen.Algoritmen bestemmer, hvordan historier fra venner og annoncører udvælges til brugernes forsider.Den bestemmer også, i hvilken rækkefølge historier optræder.I august foretog Facebook en anden ændring. Den skulle begrænse udbredelsen af historier med lokkende overskrifter./ritzau/reuters
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-06-30
+          &nbsp;·&nbsp; e651bb94
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.987</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.987</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.723</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Børsdebutanten Agillic viser lovende resultater med kunstig intelligens</h4>
+        <div>
+          Foto: Sofia BuskKunderne køber mere, når tilbuddet er styret af kunstig intelligens.Det viser resultaterne fra et pilotprojekt, som det danske techselskab Agillic har foretaget i samarbejde med sin kunde Vita, der er Norges svar på Matas.&quot;Det, vi kan se med dette...Kun tilgængelig for Premium-kunder
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-05-25
+          &nbsp;·&nbsp; e6c396d6
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.632</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.781</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Prisen for overholdelse af AI-regulering estimeres til knap en femtedel af alle AI-investeringsomkostninger</h4>
+        <div>
+          En undersøgelse foretaget for EU-kommissionen estimerer, at prisen for overholdelsen af AI-regulering svarer til 17 procent af de samlede AI-investeringsomkostninger.EU-kommissionen publiserede undersøgelsen, der er udformet af Center for europæiske politikundersøgelser (CEPS), ICF International Inc. og Wavestone, den 21. april 2021.Undersøgelsen, der blev offentliggjort samme dag som kommissionens forslag til en AI-forordning, giver et omfattende overblik over eksisterende materiale og potentielle vurderinger af risici og skader, som AI kan udgøre for sikkerheden samt fundamentale rettigheder, mens den også undersøger nye, nationale erfaringer med udvikling af strategier og lovgivningsmæssige rammer inden for området med særlig vægt på risikostyring.Undersøgelsen giver også en detaljeret analyse af resultaterne fra den offentlige høring om kommissionens hvidbog om kunstig intelligens.Og blandt undersøgelsens resultater er blandt andet et estimat over, hvor meget de samlede årlige overholdelsesomkostninger for et gennemsnitligt AI-produkt - i forhold til træningsdata, registrering, levering af information, tilsyn, nøjagtighed og robusthed - i gennemsnit vil beløbe sig til, cirka 30.000 euro, svarende til cirka 17 procent af de samlede AI-investeringsomkostninger.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2021-05-03
+          &nbsp;·&nbsp; e83f64c3
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.583</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.602</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Disse to aktier har netop vist stærke købssignaler - og disse aktier skal du holde dig fra</h4>
+        <div>
+          Aktierne har tidligere vist salgssignaler, men efter den seneste melding fra Dansk Finansservices' Signalliste, der er baseret på en matematisk algoritme og teknisk analyse, er de to nye købssignaler i Coloplast og Lundbeck stærke.AdChoicesADVERTISINGMen selvom styrken er solid, er købssignalerne ifølge Jesper Lund kun gældende på kort sigt, hvilket han definerer som under to måneder.To andre aktier er ifølge Jesper Lunds Signalliste stadig inde i en god optrend, og det gælder DSV og GN Store Nord, mens der ikke skal særligt meget mere medvind til, før også FLSmidth og Chr. Hansen går i køb.Stærke negative signalerSignallisten viser i alt 15 salgssignaler, og det negative signal er i den seneste opdatering af listen taget til i aktierne A.P. Møller-Mærsk, Jyske Bank, NKT og Vestas.Ligesom salgssignalet i øvrigt er ganske stærkt i aktierne Danske Bank og Nordea.Det danske C25-indeks har i 2018 haft et svagt år med et tab på 2,9 pct., og ifølge Jesper Lund skal kortsigtede investorer være påpasselige for ifølge hans analyser, kan C25-indekset kortvarigt falde hele 20 pct. henover en periode på 15-60 kalenderdage.Men på længere sigt vurderer Jesper Lund, at C25 kan lukke med et plus på 15-20 pct. 31. december 2018.Dansk Finansservice har siden 2003 offentliggjort Signallisten, som Dansk Aktionærforening har valgt at bringe på månedsbasis siden 2008, Signallisten bygger dels på en matematisk algoritme, udviklet af Dansk Finansservice, og dels på teknisk analyse.Analysen og købs- og salgssignalerne skal ifølge Dansk Aktionærforening ikke opfattes som anbefalinger.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-06-09
+          &nbsp;·&nbsp; e6c886d0
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.979</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.58</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.662</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Investorer: Topchefer bør fokusere på klima og ulighed</h4>
+        <div>
+          I undersøgelsen svarer 55 pct. af de adspurgte investorer, at CEO-aktivisme ofte eller meget ofte har haft betydning for investeringsbeslutninger over de sidste to år. 35 pct. mener, at det lejlighedsvist har haft betydning.&quot;Det langsigtede og bæredygtige perspektiv fylder mere hos de institutionelle investorer. Ifølge undersøgelsen mener hele 83 pct., at virksomheders holdninger og handlinger i forhold til globale udfordringer bliver en vigtigere faktor for investeringer over de kommende fem år,&quot; udtaler Torben Bender, adm. direktør i EY i Danmark i en pressemeddelelse om undersøgelsen.Undersøgelsen tager udgangspunkt i interview med 200 adm. direktører og 100 bestyrelsesmedlemmer fra Forbes 2000 og Forbes Largest Private Companies samt 100 institutionelle investorer fra globale virksomheder, der forvalter mindst 100 mia. dollar.Kun snak?Flere investorer mener desuden, at det er på tide at fokusere på de langsigtede vækst fremfor at prioritere virksomhedens performance på den korte bane.60 pct. af de adspurgte investorer støtter langsigtede investeringer, der adresserer globale udfordringer, selv hvis det betyder, at kortsigtet performance mindskes.Flere investorer mener dog heller ikke, at der er en risiko ved, at virksomhederne bliver mere aktive, når det kommer til at forhindre klimaforandringer og andre udfordringer.Spurgt til, hvorvidt der er flere muligheder eller risici ved at blive mere aktiv, svarer 42 pct., at de ser flere muligheder, mens 30 pct. ser lige mange muligheder og ricisi, og 27 pct. svarer, at de ser mest risiko.Både investorer, topchefer og bestyrelsesmedlemmer er dog enige om, at verdens største virksomheder bør være engageret i høj eller meget høj grad i at adressere de største globale udfordringer.54 pct. af investorerne svarer, at de store virksomheder bør være involveret i at løse de globale udfordringer.
+        </div>
+        <footer>
+          <em>Borsenpro.dk/finans</em>
+          &nbsp;·&nbsp; 2019-09-06
+          &nbsp;·&nbsp; e75512ec
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.969</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.674</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.582</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Aarhus Kommune gør sig klar til intelligente lyskryds</h4>
+        <div>
+          Udskiftningen udstyrer lysreguleringerne med en kunstig intelligens, der måler trafikken i realtid og vælger program ud fra trafiktætheden. Det vil give flere og bedre muligheder for at styre trafikken og få trafikanterne hurtigere frem, fremgår det af pressemeddelelsen.Aarhus Kommune har i lige nu 232 lyskryds, og målet er på sigt og opgradere alle lyskryds til intelligente lyskryds. I 2023 forventes en tredjedel af lyskrydsene at være koblet op på den nye teknologi.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/wastetech</em>
+          &nbsp;·&nbsp; 2020-11-23
+          &nbsp;·&nbsp; e800b103
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.966</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.653</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.697</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>SPOT KURSTABERE MED DEATH CROSS</h4>
+        <div>
+          Teknisk analyse handler basalt set om at identificere potentielle risici og muligheder ved hjælp af taldata. På aktiemarkederne sker det blandt andet ved at studere historiske kursbevægelser for at fastlægge en akties nuværende trend og time de mest optimale tidspunkter for køb og salg. En af de mest anvendte og alarmerende advarselslamper er her det såkaldt death cross, der indikerer, at en aktie er på vej ned i en længerevarende bølgedal.Death Cross er et udtryk for, at aktiekursens 50 dages glidende gennemsnit er lavere end dens 200 dages gennemsnit i en nedadgående bevægelse. Når dette sker, vil der ifølge teorien ske en trendvending i kursen mod en negativ nedadgående retning.Dette kan du så vælge at tolke som et salgssignal. Teknisk analyse har i de seneste år fået en stigende anvendelse, og det kan være et godt supplementsværktøj til fundamentalanalysen.Mens fundamentalanalysen beskæftiger sig med at analysere nøgletal og grundlæggende faktorer i et givent selskab — for på den måde at værdiansætte dets markedsværdi — har teknisk analyse en mere alternativ tilgang. Her er udgangspunktet at analysere en akties historiske kursudvikling med henblik på at afdække et fremtidigt kursmønster.Investorer, der hælder mest til teorierne i den teknisk analyse, er af den opfattelse, at der forekommer kursbevægelser, som ikke behøver at have en sammenhæng med specifikke fundamentale forhold. De mener, at markedet har sit eget liv som følge af forskelligartede forventninger hos investorerne.GLUNZ &amp; JENSENS NEDTURI foråret 2014 krydsede Glunz &amp; Jensen aktiens 50 dages glidende gennemsnit med aktiens 200 dages glidende gennemsnit. Det skete i en nedadgående retning og indvarslede en længerevarende nedtur for den danske processorvirksomhed.TRIN 3 TIL AT FORSTÅ DEATH CROSSForstå robotternes rolle Handlen med aktier på de internationale børser sker i stigende grad ved hjælp af robotter baseret på komplekse algoritmer.1 Tjek datamønstrene Mange af disse robotter er programmeret til at sælge ud af en aktie, når de registrerer specifikke datamønstre.2 Følg salgssignalet Death cross er i dag et af de mere udbredte salgssignaler blandt aktie markedernes handelsrobotter.
+        </div>
+        <footer>
+          <em>Penge og Privatøkonomi</em>
+          &nbsp;·&nbsp; 2015-09-24
+          &nbsp;·&nbsp; e53b093f
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.534</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.534</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.662</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En robot, der kan betjene mit job? Glem det</h4>
+        <div>
+          Værftsarbejdere, syersker og typografer. Historien er rig på eksempler, når det kommer til erhverv og arbejdsmetoder, som har måttet bukke under for maskinerne og tidligere tiders teknologiske landvindinger.Alligevel finder kun 18 pct. af danskerne det sandsynligt, at de på et tidspunkt vil miste deres job som følge af robotter, kunstig intelligens eller anden ny teknologi. Det viser en undersøgelse foretaget i august 2016 af den danske analysevirksomhed Dare2.I undersøgelsen har man også snakket med amerikanere og briter. Og her er skepsissen større. I begge lande frygter omkring 30 pct. at blive overflødiggjort af ny teknologi.»Tallene viser, at der er langt fra danskernes opfattelse til den sandsynlige fremtid. Mange jobs vil blive erstattet af robotter og systemer, der baserer sig på kunstig intelligens - og det vil ske meget hurtigere, end vi forestiller os,« udtalte Kris Østergaard, der er medstifter af Dare2, til DR i forbindelse med undersøgelsen.Et studie fra tænketanken Cevea estimerer da også, at næsten et ud af tre danske job står til at blive automatiseret i løbet af de kommende 10-20 år.Men hvem ved, måske det bare er medierne, der maler fanden på væggen i deres iver efter at tiltrække læsere. Det er i hvert fald en udbredt holdning blandt danskerne, viser en meningsmåling foretaget i januar 2017 af Gallup for Magisterbladet.Her svarer seks ud af ti danskere, at medierne skaber unødig frygt for, at robotter vil skabe arbejdsløshed.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-04-07
+          &nbsp;·&nbsp; e633c101
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.517</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.527</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.677</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ph.d.-forsvar: Når behandlingen klares fra hjemmet</h4>
+        <div>
+          Liv Marit Valen Schougaard forsvarer torsdag 4. juni kl. 14 sin ph.d.-afhandling på Aarhus Universitet. Forsvaret holdes online, og et link til begivenheden udleveres, hvis man sender en mail til livschou@rm.dk Patientrapporterede oplysninger (PRO) i klinisk praksis vinder indpas i det danske sundhedsvæsen. PRO-baserede ambulante opfølgningsforløb skaber fleksibilitet, da patienten indrapporterer helbredsoplysninger hjemmefra i stedet for ved fastlagte hospitalsbesøg. Dermed undgår patienterne besøg i perioder, hvor de har det godt, og der frigøres ressourcer til patienter med akutte og komplekse problemer. I dette ph.d.-projekt er undersøgt flere aspekter ved PRO-baseret opfølgning. Herunder karakteristika ved patienter, der visiteres til PRO-baseret opfølgning, funktionen af en algoritme, der hjælper klinikerne med at vurdere, om patienten har behov for kontakt, samt effekten af en ny PRO-baseret opfølgningsmodel, hvor patienten selv beslutter, hvornår de udfylder spørgeskemaet. Resultatet viser, at ressourcestærke patienter i højere grad visiteres sammenlignet med patienter med færre ressourcer. Flere faktorer spiller ind, bl.a. patienternes uddannelses- og indkomstniveau, om de bor alene, modtager overførselsindkomst eller har psykiske diagnoser. Endvidere viser spørgeskemaet og den tilhørende algoritme god præcision. Resultatet viser også, at der ikke var forskel i ressourceforbrug, behandlingskvalitet, sygdomsrelateret egenomsorg eller tilfredshed mellem den nye PRO-baserede opfølgningsmodel og det traditionelle PRO-baserede opfølgningsforløb.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2020-06-03
+          &nbsp;·&nbsp; e7bc3bce
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.969</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.803</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.623</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>HÅNDVÆRKERGUIDEN -Find din lokale håndværker her AMU-kurser øger løn og beskæftigelse</h4>
+        <div>
+          AMU-KURSER: Højere løn og større grad af beskæftigelse er nogle af gevinsterne for beskæftigede, når de har deltaget i AMU-kurser. Og på trods af, at AMU-kurserne er kortvarige, er de generelt en god forretning for samfundet.Nogle kurser har tjent sig selv hjem allerede tre til fire år efter kursusstart. Det viser en omfattende analyse af det offentligt medfinansierede voksen-, efter-og videreuddannelsessystem (VEU), som KORA har foretaget.Selvom AMU-kurser samlet set giver positivt afkast, så er der dog store forskelle afhængigt af, hvilken type AMU-kursus der er tale om. Især branchespecifikke og tværgående AMU-kurser trækker effekterne i positiv retning, både når det gælder løn, beskæftigelse og samfundsøkonomisk gevinst.Derimod påvirker hverken certifikatkurser eller grundlæggende AMU-kurser løn og beskæftigelse.Ufaglærte vinder mestAnalysen viser også, at ufaglærte får mere ud af kurserne end faglærte, både hvad angår løn og beskæftigelse. Og kurser, der foregår på virksomheder, har større effekter end kurser på institutioner som for eksempel AMUcentre.-Flere fremskrivninger viser, at vi i fremtiden kommer til at mangle faglært arbejdskraft.Samtidig står vi over for det, man kalder den fjerde industrielle revolution, hvor digitalisering, robotteknologi og kunstig intelligens vil udfordre arbejdsmarkedet verden over. Det er en udvikling, der forventes at ramme bredt på arbejdsmarkedet, men dog især blandt kortuddannede og ufaglærte.I det lys er det virkelig interessant og vigtigt at se på effekterne af AMU-kurserne, siger KORA-professor Nicolai Kristensen, der står bag rapporten.Rapporten er den hidtil mest omfattende af sin art, også i et internationalt perspektiv.Forskerne har foretaget detaljerede beregninger af effekterne af VEU på en række relevante udfaldsmål som løn, beskæftigelse, mobilitet, sygefravær og uddannelse for både ledige og beskæftigede.Effekterne er målt over en periode på tre et halvt år.
+        </div>
+        <footer>
+          <em>Midtjysk Ugeavis</em>
+          &nbsp;·&nbsp; 2017-06-20
+          &nbsp;·&nbsp; e64e0088
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.681</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.528</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.608</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.669</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Verdens største religiøse monument var langt mere befolket end hidtil antaget</h4>
+        <div>
+          Da tempelbyen Angkor Wat i Cambodja var på sit højeste, boede der 900.000 indbyggere, vurderer forskere efter 30 års undersøgelser.Nye beregninger viser, at den cambodjanske tempelby Angkor Wat var væsentlig mere befolket end først antaget.Ved at bruge algoritmer og en LiDAR-måler, en skanner, der kan bruges til samle store mængder af afstandsmålinger med høj præcision, har arkæologer beregnet, at da tempelbyen var på sit højeste, var der op til 900.000 indbyggere - over tre gange så mange, som der i dag bor i Aarhus by.»Det betyder, at befolkningen i Angkor er nogenlunde sammenlignelig med de næsten 1 million mennesker, der boede i det gamle Rom, da de var flest« , skriver arkæolog Sarah Klassen, som var med til at lave beregningerne, i en artikel i The Conversation.Det nye estimat er baseret på 30 års arkæologiske data fra udgravninger på jorden ved Angkor Wat, som ofte bliver omtalt som verdens største religiøse monument.Ifølge undersøgelsen, der er foretaget af University of British Columbia, Canada og i sidste uge blev publiceret i Science Advances, var det i det 13. århundrede, at befolkningstallet i Angkor-regionen lå mellem 700.000 til 900.000.Det sammenlignes i undersøgelsen med den anslåede befolkning i nutidens Boston på 692.600.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2021-05-12
+          &nbsp;·&nbsp; e8435363
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.969</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.576</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.707</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Her er 8 interessante facts om it-udviklere</h4>
+        <div>
+          Der er mange selvlærte it-udviklere, og de danske er især gode til at drikke kaffe sammenlignet med udviklere fra resten af verden, viser en omfattende undersøgelse fra Stack Overflow.Af Elías Christian Lundström Fredag, 17. april 2015 - 13:15It-udviklere er i høj grad en gør-det-selv type, viser en undersøgelse fra udvikler-debatsiden Stack Overflow. Den omfattende undersøgelse er baseret på svar fra 26.086 it-udviklere fra hele verden og afslører nogle interessante betragtninger om faggruppen. Blandt andet at uddannelse langt fra er den eneste indgang til professionen.42 pct. af de adspurgte svarede således, at de primært var selvlærte og blandt systemudviklerne, er det mere end halvdelen (52 pct.), som har været sin egen læremester.En tredjedel af it-udviklerne har desuden aldrig taget et eneste it-relateret kursus på universitetet.Glæden ved koden skinner også igennem, når man ser på hvor meget tid, udviklerne bruger på open source og side-projekter udover arbejdet. Den gennemsnitlige udvikler bruger således mere end syv timer om ugen på at kode ved siden af arbejdet, og en tiendedel bruger mere end 20 timer.Kilde: Stack Overflow.Der er 278 it-udviklere fra Danmark, som har deltaget i undersøgelsen, og de gør sig især bemærket på kaffeforbruget. De danske udviklere tager således sjettepladsen for størst koffeinindtag med et gennemsnitligt forbrug på 2,7 kopper om dagen. Førstepladsen går til Norge med over tre daglige kopper.Vi skal her fra redaktionen bemærke, at vi nok lægger os i den høje ende af gennemsnittet.Her er de mest hadede programmeringssprog og platformeUndersøgelsen løfter også sløret for de programmeringssprog og platforme, som it-udviklere henholdsvis elsker og hader mest at arbejde med.Platformene Salesforce og Wordpress og programmeringssproget Visual Basic tager således prisen for det, som udviklere frygter mest, mens der er mest kærlighed til overs for henholdsvis Swift, C++11 og Rust.Kilde: Stack Overflow.Men skal man vælge efter pengepungen, så er det nogle andre programmeringssprog, man skal specialisere sig i.I Vesteuropa er der således mest i løn til de udviklere, der koder i Ruby, C# eller til Node.js.Hvis man skal gå all-in på pengene, så har undersøgelsen også et par interessante resultater.Det kan således allerbedst betale sig at bosætte sig i Ukraine og specialisere sig i Node.js ifølge undersøgelsen.Her rangerer udviklerne nemlig højest på det såkaldte »Bic Mac-indeks«, der afgør hvor mange burgere, man kan købe for den gennemsnitlige løn - dvs. den relative købekraft i landet. Samtidig er Node.js den platform, som man tjener suverænt mest på at programmere til i Østeuropa.Men penge er som sagt ikke det hele, og noget tyder på, at danske udviklere ikke har grund til at beklage sig. De kommer på en samlet femteplads over det sted, hvor udviklerne er mest tilfredse med jobbet, og hvor flest elsker deres arbejde.De mest tilfredse udviklere er ikke overraskende dem højest oppe i hierarkiet, nemlig dem i ledende roller som eksempelvis teknisk direktør. Herefter kommer machine learning-udviklere og mobiludviklere til iOS.For flere interessante facts, læs hele Stack Overflows undersøgelse . Undersøgelsen er foretaget blandt Stack Overflows egne brugere, hvilket naturligvis kan påvirke resultaterne, især fordi det er sværere for ikke-engelsktalende udviklere at være med.Kilde: Stack Overflow.Læs ogsåTjener du det rigtige? International undersøgelse afdækker it-branchens lønningerDanmark har ikke brug for flere programmørerBesøg: I strømpesokker hos Googles danske udviklerafdeling
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-04-17
+          &nbsp;·&nbsp; e4f604e4
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.585</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.672</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Big data og robotter er blevet del af erhvervslivet (v.2)</h4>
+        <div>
+          KøbenhavnDe danske virksomheder bruger i høj grad avanceret teknologi som satellitnavigation og robotter. Det viser nye tal fra Danmarks Statistik.Tallene viser, at mere end hver anden danske virksomhed, 54 procent, bruger de nye teknologier.- Den mest udbredte teknologi er internetforbundne sensorer, som anvendes af hver tredje virksomhed. - Teknologien bruges for eksempel i vareproduktionen eller til overvågning. 16 procent af virksomhederne bruger satellitbaserede tjenester, som omfatter brugen af signaler fra satellitter, eksempelvis.- Big data analyseres i 14 procent af virksomhederne, og 10 procent anvender service- eller industrirobotter, skriver Danmarks Statistik om sin undersøgelse.Tallene er del af rapporten &quot;It-anvendelse i virksomheder&quot;, hvor Danmarks Statistik i foråret har spurt omkring 4000 selskaber, hvordan de bruger teknologi.Undersøgelsen viser markante forskelle på, hvilke selskaber der bruger de nye teknologier. De største bruger dem klart mest, ikke mindst når det kommer til robotter.- Der er stor forskel på anvendelsen af robotter mellem små og store virksomheder inden for industri.- Mens der er industrirobotter i 30 procent af alle virksomheder i denne branche, så er andelen 22 procent blandt små virksomheder med 10-49 ansatte og hele 65 procent blandt de største virksomheder med mindst 250 ansatte, skriver Danmarks Statistik.Set over en bred kam bruger 87 procent af store virksomheder de nye teknologier, mens tallet for små virksomheder er på 50 procent.- 3D-print og kunstig intelligens er de mindst udbredte af de teknologier, der indgik i undersøgelsen. De anvendes kun af hver tyvende virksomhed, noterer Danmarks Statistik sig i undersøgelsen./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-09-03
+          &nbsp;·&nbsp; e6e1b11c
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.783</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.866</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.535</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.571</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Teknisk analyse: Stor dansk dominans fortsætter i Nordisk top ti</h4>
+        <div>
+          Ved ugens udgang er der seks nye aktier i den nordiske top ti, som består af syv danske, to svenske og en finsk aktie. Ingen norske aktier er med denne gang.Vi har rangeret de nordiske aktier ud fra vores tekniske analyser på mellemlangt sigt, 1-6 måneder. Analyserne er lavet med Investtechs matematiske algoritmer, som blandt andet identificerer aktiens trend, støtte og modstand, formationer og volumenudvikling. Kun aktier med en omsætning på over 1 mio. euro i gennemsnit pr. dag i sidste måned er med.Analyserne er lavet ud fra lukkekurser torsdag 19. maj.1. Swedish Match (SWMA.ST) Lukkekurs torsdag: 272,3 svenske kr.Swedish Match ligger i en opadgående trend hvilket indikerer en fortsat positiv udvikling indenfor denne.Gav også købssignal fra en rektangelformation ved bruddet op gennem modstanden ved 265 svenske kr. Videre opgang til 276 svenske kr. eller mere er signaleret. Glidende gennemsnit-indikatoren har også udløst købssignal.Dette signalerer isoleret set videre opgang, men trægheden i indikatoren gør at man ofte går glip af en stor del af opsiden.Aktien har støtte ved ca. 262 svenske kroner og modstand ved ca. 282 svenske kroner. RSI-kurven viser en stigende trend, hvilket understøtter det positive trendbillede. Aktien anses samlet set som teknisk positiv på mellemlangt sigt.2. Lundbergföretagen B (LUNDB.ST) Lukkekurs torsdag: 448,5 svenske kr.Lundbergföretagen B ligger i en opadgående trend hvilket indikerer en fortsat positiv udvikling inden or denne. Gav også købssignal fra en omvendt-hoved-og-skuldre-formation ved bruddet op gennem modstanden ved 440.Videre opgang til 484 svenske kroner eller mere er signaleret. Aktien har brudt op igennem modstanden ved ca. 437 svenske kroner. Videre opgang er dermed signaleret, og der er nu støtte ved 437 svenske kroner ved reaktioner tilbage.RSI divergerer negativt mod kursen, hvilket indikerer fare for en reaktion nedad. Aktien anses samlet set som teknisk positiv på mellemlangt sigt.3. Uponor (UNR1V.HEX) Lukkekurs torsdag: 13,91euroUponor ligger i en stigende trend hvilket er en indikation om videre opgang indenfor denne. Ved reaktioner tilbage er der støtte ved bunden i trendkanalen.Aktien gav købssignal fra en omvendt-hoved-og-skuldre-formation ved bruddet op gennem modstanden ved 13,00 euro. Videre opgang til 18,14 euro eller mere er signaleret. Aktien har marginalt brudt op igennem modstanden ved ca. 13,80 euro. Etableret brud vil indikere videre opgang.Positiv volumenbalance, dvs. høj omsætning på dage med opgang og lav omsætning på dage med nedgang, styrker aktien på kort sigt. RSI divergerer negativt mod kursen, hvilket indikerer fare for en reaktion nedad. Aktien anses samlet set som teknisk positiv på mellemlangt sigt.4. TDC A/S (TDC.CO) Lukkekurs torsdag: 33,79 kr.TDC er faldet tilbage mod bunden i en stigende trendkanal. Videre opgang indikeres og dagens kursniveau kan være en god indgangskurs.Aktien er brudt op igennem modstanden ved ca. 33,00 kroner og videre opgang er dermed signaleret.Positiv volumenbalance indikerer styrke på kort sigt. Aktien anses samlet set teknisk positiv på mellemlang sigt.5. Rockwool International B (ROCKB.CO) Lukkekurs torsdag: 1222 kr.Rockwool er brudt op gennem den stigende trend. Dette signalerer endnu hurtigere stigningstakt. Gav også købssignal fra en rektangelformation ved bruddet op gennem modstanden ved 1075 kr. Videre opgang til 1342 kr. eller mere er signaleret.Aktien har støtte ved ca. 1080 kroner. Volumenbalancen er positiv og styrker aktien på kort sigt.RSI er overkøbt. Dette viser, at momentumet i Aktien er stærkt, og at kursen godt kan stige videre på kort sigt. Vi bør se en nedgang i RSI-kurven før dette bruges som et salgssignal.Aktien anses samlet set teknisk positiv på mellemlang sigt.6. Genmab (GEN.CO) Lukkekurs torsdag: 1067 kr.Genmab ligger i en stigende trend og videre opgang indenfor denne indikeres. Aktien gav købssignal fra en omvendt-hoved-og-skuldre-formation ved bruddet op gennem modstanden ved 850 kr. Videre opgang til 1150 kr. eller mere er signaleret.Aktien har støtte ved ca. 950 kroner. Volumenbalancen er positiv og styrker aktien på kort sigt. RSI er overkøbt. Dette viser, at momentumet i aktien er stærkt, og at kursen godt kan stige videre på kort sigt. Vi bør se en nedgang i RSI-kurven før dette bruges som et salgssignal.Aktien anses samlet set som teknisk positiv på mellemlangt sigt.7. SimCorp (SIM.CO) Lukkekurs torsdag: 335,9 kr.SimCorp ligger i en stigende trend hvilket er en indikation om videre opgang indenfor denne. Ved reaktioner tilbage er der støtte ved bunden i trendkanalen. Har også brudt igennem et modstandsniveau og udløst købssignal fra langsigtet trading range.Aktien har støtte ved ca. 310 kroner og modstand ved ca. 393 kroner. Volumenbalancen er positiv og styrker aktien på kort sigt. RSI er overkøbt. Dette viser, at momentumet i Aktien er stærkt, og at kursen godt kan stige videre på kort sigt.Vi bør se en nedgang i RSI-kurven før dette kan anses at svække aktien. Aktien anses samlet set teknisk positiv på mellemlang sigt.8. DSV (DSV.CO) Lukkekurs torsdag: 294,9 kr.DSV ligger i en stigende trend og videre opgang indenfor denne indikeres. Aktien har brudt op igennem modstanden ved ca. 285 kroner. Videre opgang er dermed signaleret, og der er nu støtte ved 285 kroner ved reaktioner tilbage.Aktien anses samlet set teknisk positiv på mellemlang sigt.9. ALK-Abello B (ALKB.CO) Lukkekurs torsdag 1228 kr.ALK-Abello B er brudt op gennem den stigende trend. Dette signalerer endnu hurtigere stigningstakt. Aktien har støtte ved ca. 960 kroner. Volumentoppe korresponderer godt med kurstoppe, og volumbunde korresponderer godt med kursbunde.Volumenbalancen er også positiv, hvilket styrker trendbilledet. RSI er overkøbt. Dette viser, at momentumet i Aktien er stærkt, og at kursen godt kan stige videre på kort sigt. Vi bør se en nedgang i RSI-kurven før dette kan anses at svække aktien.Aktien anses samlet set teknisk positiv på mellemlang sigt.10. H. Lundbeck (LUN.CO) Lukkekurs torsdag 245,3 kr.H. Lundbeck viser en stærk udvikling i en stigende trendkanal. Fortsat positiv udvikling indikeres, og der ligger støtte nedad ved bunden i kanalen. Aktien har støtte ved ca. 213 kroner.Positiv volumenbalance indikerer styrke på kort sigt. Aktien anses samlet set teknisk positiv på mellemlang sigt.Om teknisk analyse:Teknisk analyse er studiet af udbud og efterspørgsel og investorenes opførsel på markedet. Ved at benytte tid, pris og volume forsøger man at forudsige den videre kursudvikling.Teorien er, at al relevant information, som markedsaktørerne samlet besidder, ofte er repræsenteret i aktiekursen, og at markedet gentager sig selv på en sådan måde, at det kan sige noget om den kommende udvikling. Gennem forskellige bevægelsesmønstre kan udviklingen analyseres og tolkes enten via visuelle metoder eller via matematiske og statistiske modeller.H. Lundbeck er på top ti-listen over de bedste nordiske aktier ud fra en teknisk analyse fra det norske Investtech. Foto: Scanpix.H. Lundbeck er på top ti-listen over de bedste nordiske aktier ud fra en teknisk analyse fra det norske Investtech. Foto: Scanpix.
+        </div>
+        <footer>
+          <em>Investor.Børsen.dk</em>
+          &nbsp;·&nbsp; 2016-05-21
+          &nbsp;·&nbsp; e5b82ff6
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.803</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.632</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.783</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mystisk adfærd: Få kunder lægger tusinder af bud på Lauritz.com</h4>
+        <div>
+          En analyse foretaget af Berlingske viser, at ganske få kundenumre byder voldsomt på online-auktionshuset Lauritz.com. Det kan hæve priserne kunstigt.Når almindelige mennesker byder på Lauritz.com er de oppe imod en gruppe af få kunder, der byder på varer i en voldsom grad.Det skriver Berlingske, der har lavet en større analyse af handlen hos auktionsvirksomheden.Ifølge Berlingske har Lauritz.coms 10 mest aktive kunder deltaget i omkring 10 procent af alle auktioner på hjemmesiden, svarende til 370.000, siden 2003.Den mest aktive kunde har deltaget i over 80.000 auktioner og lagt over 800.000 bud.Samtidig viser analysen, at nogle af de mest aktive kunder kun vinder varen meget sjældent.At der kommer mange bud kan ifølge Troels Bjerre Lund, adjunkt i teoretisk datalogi ved IT Universitetet, som Berlingske har talt med, hæve prisen på varerne.- Alene det, at man ser mange bud på den vare, man byder på, gør, at man tror, varen er mere værd, end man troede, da man startede, siger han.Lauritz.com fortæller til Berlingske, at der er tale om kunder, der er kendt i koncernen.- Det er også forklaringen på, at disse kunder ikke via vores algoritmer og alarmlister er blevet lukket, siger direktør i Lauritz.com Mette Rode Sundstrøm og fortsætter:- Det er kunder, der har budt på et stort antal varer med mange bud. Disse kunder udviser ikke en typisk kundeadfærd, men heller ikke en forkert kundeadfærd. Lauritz.com har en række superkunder, der byder meget og også vinder mange auktioner. Det er vi glade for.Lauritz.com har ikke ønsket at fortælle Berlingske, hvem kunderne bag de aktive kundenumre er.Lauritz.com og stifter Bengt Sundstrøm har en række &quot;superkunder&quot;. Foto: Free/Lauritz.com.Lauritz.com og stifter Bengt Sundstrøm har en række &quot;superkunder&quot;. Foto: Free/Lauritz.com.Lauritz.com og stifter Bengt Sundstrøm har en række &quot;superkunder&quot;. Foto: Free/Lauritz.com.Lauritz.com og stifter Bengt Sundstrøm har en række &quot;superkunder&quot;. Foto: Free/Lauritz.com.
+        </div>
+        <footer>
+          <em>Mitfyn.dk</em>
+          &nbsp;·&nbsp; 2016-09-09
+          &nbsp;·&nbsp; e5e026b6
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.983</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.55</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI er fremtiden i olie- gasindustrien</h4>
+        <div>
+          Det skriver PwC i en pressemeddelelse sendt til redaktionen.Der er stor værdi at hente for virksomhederne i olie- og gasindustrien ved at sætte digitalisering på dagsordenen. Teknologiske tiltag kan skabe innovation og effektivisering i en sådan grad, at de digitale frontløbere vil opnå en markant konkurrencemæssig fordel på markedet:»Digitale strategier og digital innovation har potentiale til at øge effektiviteten markant i industrien, herunder brug af droner, robotteknologi, kunstig intelligens (AI) og virtual reality til at gøre boring- og undersøgelsesprojekter mere effektive og mindske lønomkostninger ved at gå over til mere automatiserede processer,« siger Claus Dalager, partner i PwC i pressemeddelelsen.PwC's undersøgelse viser desuden, at adgangen til medarbejdere med tilstrækkelige digitale kompetencer - fra dataanalytikere til software ingeniører - udgør den næststørste trussel for virksomhedernes vækst, som toplederne i branchen bekymrer sig om:»Mangel på talenter med de rette kompetencer, der kan hjælpe med at gennemføre en kreativ digitaliseringsstrategi, optræder som nummer to på listen over topledernes bekymringer omkring virksomhedens vækst og dermed lige efter prisudsving i råvarer. Manglen på analytiske kompetencer er ifølge undersøgelsen den primære årsag til, at den data, som virksomhederne indhenter og modtager om forretningsrisici, økonomiske prognoser og kundepræferencer ikke er tilstrækkelige til formålet,« forklarer Claus Dalager.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-06-17
+          &nbsp;·&nbsp; e73d3ba1
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.81</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.855</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.647</kbd>
+            <kbd data-tooltip="Business &amp; innovation">L80_BUSINN&nbsp;0.621</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Twitter tjener mere trods farvel fra millioner af brugere (v.2)</h4>
+        <div>
+          San FranciscoSelv om Twitter har tabt seks millioner brugere det seneste år, er det sociale medie blevet bedre til at tjene penge.Det viser det amerikanske selskabs regnskab for første kvartal, der er offentliggjort tirsdag.Her er antallet af aktive brugere på 330 millioner sammenlignet med 336 millioner for et år siden.Alligevel er omsætningen steget 18 procent til 787 milliarder dollar.Twitter får langt størstedelen af sine indtægter fra annoncører, der betaler for at reklamere.Det sociale medie nævner blandt andet, at der har været en stærk vækst på videoreklamer i første kvartal.Twitter henter mere end halvdelen af omsætningen i USA. Japan er det næststørste marked.  Selv om Twitter overordnet set har mistet brugere, fremhæver selskabet, at der er sket en stigning i antallet af brugere, som er aktive på daglig basis. Det tal lyder på 134 millioner. Det er steget otte millioner det seneste år. Selskabet fortæller i regnskabet, at det i fremtiden dropper at fortælle om det samlede antal brugere.Der er mest forretning i de mest aktive brugere. Det er her, Twitter vil satse mest, lyder det. Den stigende omsætning i første kvartal har hjulpet Twitter til at øge overskuddet. Det er vokset 25 procent til 94 millioner dollar.Det har også trukket op, at Twitters udgifter er dykket. Et andet område, der har fanget Twitters opmærksomhed, er muligheden for at lægge platform til livesendinger. Twitter peger i en pressemeddelelse selv på, at basketball-ligaen NBA har sagt ja til at livestreame sidste halvdel af 20 forskellige NBA-kampe med fokus på en specifik spiller. Hvilken spiller, der skal følges, afgøres ved en afstemning på Twitter.En lignende aftale er lavet med baseballigaen Major League Baseball.Derudover glæder Twitter sig over, at det med en række nye initiativer har fjernet 2,5 gange flere opslag for overtrædelser af reglerne på Twitter.Ligesom Facebook bruger Twitter kunstig intelligens til at forsøge at fjerne materiale, før det når andre brugere./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-04-23
+          &nbsp;·&nbsp; e72bc240
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.993</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.622</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.529</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Machine Learning</h4>
+        <div>
+          Synspunkt: Virksomheder, der har succes med kunstig intelligens, går all-in Bent Dalager,Nordic Head of NewTechKPMG Danmark,1. okt 10:30 Ny undersøgelse af praktisk implementering af teknologier som maskinlæring og kunstig intelligens viser, at forsigtige små-projekter ikke er nok. De virksomheder, der har succes med kunstig intelligens, går all-in.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-10-01
+          &nbsp;·&nbsp; e75f3c2f
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.802</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.716</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.574</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Ivan Brandslund tiltræder et professorat ved Syddansk Universitet i kunstig intelligens og robotisering. Ivan Brandslund får som sin primære arbejdsopgave at udvikle og gennemføre Digitaliseringsstyrelsens Nationale Signatur Projekt om kunstig intelligens til brug i diagnostik af akut indlagte patienter.Det er planen, at projektet skal gennemføres på Sygehus Lillebælt Vejle og Kolding Sygehuse.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-01-13
+          &nbsp;·&nbsp; e78953f5
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.95</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>KMD og TDC indtager bundfelt i målt tilfredshed med outsourcing-leverandører</h4>
+        <div>
+          Kunder i Norden oplever helt overordnet, at nogle af de lokale eller nordiske it-selskaber performer gennemsnitligt eller under gennemsnit.Danske kunder har givet KMD den næstdårligste placering i en undersøgelse af tilfredsheden med outsourcing-leverandørerne. Kun indiske Wipro har fået en ringere resultat.Illustration: PA ConsultingDet viser en survey foretaget af PA Consulting i samarbejde med Whitelane Research, der har evalueret mere en 1.000 unikke outsourcing-kontrakter samt modtaget uddybende svar fra flere end 330 respondenter i hele Norden.TDC indtager den fjerde dårligste plads blandt danske kunder.Blandt nordiske kunder ligger KMD nr. 5 og TDC nr. 8 - set fra bunden.Illustration: PA ConsultingIfølge Henrik Ringgaard, der er sourcingsekspert hos PA Consulting, oplever kunderne helt overordnet, at nogle af de lokale eller nordiske selskaber performer gennemsnitligt eller under gennemsnit.»Det er normalt sådan, at de lokale leverandører plejer at klare sig godt i deres respektive lande, så det er lidt overraskende at se resultaterne fra Danmark,« lyder det fra ham.Han tilføjer, at den relativt ringe kundeoplevelse kan skyldes, at visse leverandører slider med at holde omkostningsniveauet på linje med konkurrenternes, men også at kvalitet og proaktivitet i leverancerne er udfordret.»Derudover oplever de danske leverandører på linje med de øvrige leverandører, at kunderne ikke er tilfredse med innovationsevnen,« lyder det fra ham.Midterplacering til NNIT og ATEABlandt andre nordiske leverandører ligger NNIT og Atea ligger midt i feltet med en tilfredshed på linje ift. gennemsnittet, mens Evry ligger lidt over.I nuancerne er det værd at bemærke at NNIT holder sin tilfredshedsscore fra 2017 i et marked hvor tilfredsheden gennemsnitligt er faldet 2 procentpoint, men både TDC, KMD og Atea går tilbage ligesom resten af markedet, lyder det fra Henrik Ringgaard.Hvad den konkrete årsag til KMDs lave placering blandt 32 undersøgte firmaer fremgår ikke.I sidste års undersøgelse lå KMD på den 6. dårligste plads blandt nordiske kunder, og som i år på en 2. blandt danske.Forud for sidste års undersøgelse fra PA Consulting lå et år 2016 og starten af 2017, hvor KMD var ramt af massiv modvind. I marts 2017 blev selskabet frataget den fjerde store kontrakt i 2017, da pensionskæmpen ATP valgte at fyre KMD og genudbyde et pensionssystem.Selv om vi har bragt historier om fejl i KMD-systemer, der betød fejlregistreringer for sygedagpengemodtagere, men herefter har der været langt mere stille om det store it-selskab.I juli sidste år kunne vi fortælle, at KMD vandt et statsligt udbud af det fællesoffentlige budgetsystem, fordi selskabet lå i top i alle tre underkriterier, nemlig pris, kvalitet og leveringssikkerhed, hvorfor man løb med ordren på 120 mio. kroner.Fra Christoffer Hellmann, der er kommunikationschef hos KMD, lyder det, at det selvfølgelig aldrig er en fornøjelse at ligge i den lave ende i en sådan spørgeskemaundersøgelse.»Vi hæfter os dog ved, at antallet af respondenter, der har vurderet KMD, er forholdsvis begrænset samt det forhold, at kontrakterne alt andet lige må være noget uens givet de mange forskellige typer af leverandører på listen,« siger han.KMDs egne interne kundemålinger viser ifølge ham en stigende tilfredshed, og det er generelt ikke selskabets opfattelse, at KMD har en udfordring med lav kundetilfredshed inden for it-outsourcing.Tata Group vinderIndiske TCS vinder PA Consultings undersøgelse på kundetilfredshed fjerde år i træk, men generelt er de indiske firmaer ikke længere dominerende på markedet, lyder det fra konsulenthuset.»Det er interessant, at forskellen på de indiske leverandører og de øvrige leverandører er jævnet ud. Det skyldes nok, at priserne ikke længere er så langt fra hinanden - og så er det andre parametre, man vælger leverandør ud fra« siger Henrik Ringgaard Pedersen, PA Consulting Group ifølge en meddelelse.Hvor tilfredsheden med outsourcingleverandørerne er relativt svingende, er der generelt høj tilfredshed at spore med de store cloud-leverandører.»Kunderne er generelt set tilfredse eller meget tilfredse på trods af deres meget regide licens, vilkårs og afregningsmodeller - men de leverer det aftalte, hvilket kunderne reagerer positivt på også selvom graden er lock-in opleves højere her,« lyder det fra Henrik Ringgaard til Version2.Der skydes dog også lidt den anden vej.Leverandørerne er ikke imponerede over kundernes tilegnelse af robotter og særligt AI. Her mener 63 procent af service providers, at kunderne agerer for svagt:»Det skyldes formentlig forretningspotentialet, men også muligheden for at kunne levere bedre og hurtigere, samt holde sig relevant ift. de trends som fylder meget i branchen.« De primære barrierer for at gå i gang eller videre med disse teknologier, er ifølge kunderne deres egen modenhed og forståelse af teknologierne samt den oplevede modenhed af disse.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-05-08
+          &nbsp;·&nbsp; e6be1da4
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.779</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.665</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.561</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske hjemmesider står til Google-smæk</h4>
+        <div>
+          En teknisk ændring fra Google kan ramme halvdelen af de 243 mest besøgte hjemmesider i Danmark, viser analyse. 13. marts 2015 kl. 08:25Hvis en virksomhed ikke har mobiloptimeret sin hjemmeside, kan det snart blive svært at komme til tops i søgeresultaterne på Google.Det står klart, efter søgegiganten har offentliggjort en ny ændring til sin søgealgoritme.Ændringen, som træder i kraft 21. april, betyder, at mobilvenlige hjemmesider fremover i langt højere grad bliver favoriseret i mobile søgeresultater frem for ikke-mobilvenlige hjemmesider.Ifølge onlinebureauet Novicell, der hjælper en række af landets største virksomheder med at optimere deres forretning online, er det ikke uvæsentlige ændringer, der er på vej fra Google.- Normalt sker selv større ændringer i Googles algoritmer uden forvarsel og er noget, virksomhederne må forholde sig til, når ændringerne er trådt i kraft.- I dette tilfælde har Google helt ekstraordinært valgt at melde ændringerne ud på forhånd, og alene det giver os et fingerpeg om, at det er en gennemgribende ændring, siger Per Kirchner, administrerende direktør i Novicell.Novicell har siden Googles udmelding i sidste uge gennemgået 5300 danske hjemmesider, og resultatet bør fremkalde panderynker hos landets it-chefer.Mere end halvdelen - svarende til 53 procent - af de testede hjemmesider lever ikke op til Googles nye krav og står dermed til at miste fodfæste i Googles søgeresultater.Alene blandt de 243 mest besøgte hjemmesider i Danmark er 49 procent endnu ikke klar til Googles nye algoritme.- Det betyder, at virksomhederne får en dårligere placering i Googles søgeresultater.- Og i en verden, hvor forskellen på at ligge nummer ét og nummer to kan betyde millioner af kroner i omsætning, så bør virksomhederne trække i arbejdstøjet med det samme, siger Per Kirchner.Blandt nogle af de hjemmesider, som endnu ikke lever op til Googles nye algoritme, er, ifølge Novicell, dmi.dk, netdoktor.dk, edc.dk, udeoghjemme.dk, tv2lorry.dk og iform.dk./ritzau/
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2015-03-13
+          &nbsp;·&nbsp; e4e8bfbf
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Er folk naive i forhold til hvad machine-learning betyder for deres job?</h4>
+        <div>
+          Algoritmer og AI kommer til at koste jobs, men hvilke og hvor mange? Rapporter stikker i øst og vest.Næsten tre af fire adspurgte amerikanere svarer, at de tror at machine learning og AI kommer til at koste jobs. Det viser en rundspørge foretaget af Gallup, skriver TheVerge.Men det bekymrer ikke de adspurgte.For kun 23 procent af den samme gruppe er -bekymrede- eller -meget bekymrede- for, at det er netop deres jobs, der står for skud, når automatiseringen af endnu flere jobs sætter ind, skriver TheVerge.Blandt de 23 procent er det især dem, der har en kortere uddannelse, der frygter, at deres job overtages af automatisering.Undersøgelsen falder i slipstrømmen af en række andre undersøgelser fra blandt andre Quartz ogPew Research Center der ligeledes tyder på, at folk i høj grad forventer, at automatiseringen vil koste flere jobs i fremtiden.Også i disse undersøgelser mener langt de fleste, at automatiseringen vil gå ud over jobs. Og også her mener langt færre, at den vil ramme deres egne fag.Ingen ved, hvad der skerUmiddelbart fortæller det om en ignorance og en kortsynethed hos de adspurgte, men rundspørgerne afspejler også en udtalt tvivl hos eksperterne på området, skriver det amerikanske techmedie.Der har været skiftende resultater i de videnskabelige rapporter, der har forsøgt at finde ud af, præcis hvad algoritme-automatiseringen kommer til at betyde for fremtidens jobmarked.Nogle undersøgelser peger på, at man på globalt plan mister i omegnen af 1 milliard arbejdspladser, når algoritmerne og AI for alvor gør sit indtog omkring 2022. I andre undersøgelser er det 800 millioner i 2030. Og i andre undersøgelser igen vil den nye tendens skabe nye jobs. Også flere, end den udfaser.Metoderne og definitionerne i studierne varierer også. Hvornår er AI kunstig intelligens og hvornår det blot en algoritme? Og hvornår er et job i teorien ødelagt af denne fremstormende teknologi? uNdersøgelserne er ikke enige.Noget er anderledes nuHistorisk set er vi som mennesker dygtig til at skabe nye professioner, når gamle ødelægges. Denne gang er det dog anderledes, påpeger flere AI-eksperter ifølge TheVerge. For maskinerne er kvalitativt klogere end de nogensinde har været og de historiske eksempler er ikke helt sammenlignelige med den bølge, vi står over for.Med disse meget forskellige synspunkter er det forståeligt, at amerikanerne tænker, at det er et problem men ikke nødvendigvis deres eget. Mange er villige til at italesætte det som et problem, men kan ikke se på en computer og tænke, den kan gøre mit arbejde for mig endnu, skriver TheVerge.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-03-09
+          &nbsp;·&nbsp; e6a888f1
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.948</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.52</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.694</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Kunstig intelligens er stadig mere ven end fjende</h4>
+        <div>
+          I takt med at teknologien viser lovende fremgang, er der en del spændstige bud på, hvordan og hvor meget kunstig intelligens vil forandre verden. En ny rapport fra Stanford University konkluderer dog, at den hverken vil udrydde eller overflødiggøre menneskeheden - inden for de næste ti år i hvert fald.
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-09-01
+          &nbsp;·&nbsp; e5dd4bb4
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.945</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.768</kbd>
+            <kbd data-tooltip="Year">L80_YEAR&nbsp;0.523</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

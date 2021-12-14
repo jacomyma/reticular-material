@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_2 <kbd>H_0_2</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>af</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>inklusive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ses</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grundlaget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omfattende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hidtil</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>således</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årsager</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremstilling</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>enorme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>life</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>led</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betydning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bestående</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undersøger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anerkendte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbundet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opererer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>farlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>computerprogrammer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>3.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_2 DESC LIMIT 50</pre>
+      <article>
+        <h4>Google-topchef advarer mod AI-lovgivning</h4>
+        <div>
+           Sundar Pichais udtalelser skal ifølge Insider ses i lyset af Googles egen forretning, der i flere henseender hviler på brugen af AI. Opfordringen fra Google-topchefen bliver bakket op af eksperter indenfor området, som dog også påpeger nødvendighed af en bred lovgivning i forbindelse med eksempelvis ansigtsgenkendelse. Redaktionen
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-09-23
+          &nbsp;·&nbsp; e75b47af
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.782</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vardekort med verdenskunst</h4>
+        <div>
+          Her står de: Poul Erik Bech har givet 18 nye kunstværker til Varde by. Det tager godt en time at gå ruten. Her kan du se placeringen, navn og titel på kunstneren.Læs mere om den store kunstgave på næste side.1. SEABRIDGES I &amp; II, 2018 af Jörg Plickat Cortenstål 2. PATTEDYR, 2019 af Mia Edelgart Bemalet fiberbeton 3. UDEN TITEL, 2001 af Jun-Ichi Inoue Sort granit (På hjørnet af Posthusvej og Torvegade) 4. VINDROSEN, 2020 af Jens Ingvard Hansen Rustfrit stål 5. WHISTLEBLOWER, 2011 af Jesper Neergaard Finsk Kuru granit 6. VÆKSTEN, 2008 af Per Sommer Rustfrit stål 7. OMEGA, 2018 af Per Sommer Rustfrit stål 8. UDEN TITEL, 2014 af Carsten Fun Jensen Bronze / cortenstål 9. SLÆDEN, 1986 af Harvey Martin Cortenstål 10. UDEN TITEL, 1997 af Børge Jørgensen Rustfrit stål 11. LIVET, 1994 af Børge Jørgensen Rustfrit stål 12. ULVETIDER, 2020 af Steen Bendt Langvad Cortenstål I VARDE GARTEN 13. STARSTRUCK, 2020 af Vivi Linnemann Acrylglas 14. KRIGENS SKYGGE, 2015 af Helle Rask Crawford Bronze 15. KVINDETORSO, 1989 af Keld Moseholm Bronze 16. DREAM, 2019 af Viktor Grachev Carrara marmor 17. BALLOON RABBIT, 2019 af JeffKoons Porcelæn 18. ARTIFICIAL INTELLIGENCE, 2019 af Peter Schudde Aluminium og cortenstål (Æblehaven).
+        </div>
+        <footer>
+          <em>Ugeavisen Varde</em>
+          &nbsp;·&nbsp; 2020-09-02
+          &nbsp;·&nbsp; e7de43e0
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.757</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.946</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amerikanske DataRobot opkøber analytics-platformen Cursor</h4>
+        <div>
+          Det skriver VentureBeat.Cursor, der er grundlagt af i 2017 af tidligere ansatte fra LinkedIn, Salesforce og Pandora, havde allerede indsamlet to millioner dollars i indledende investeringer. Nu bliver teknologien en del af DataRobots service.DataRobot blev grundlagt i 2013. Servicen udgør et kartotek af trænede machine learning-algoritmer.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-02-28
+          &nbsp;·&nbsp; e719307f
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.665</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.604</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Startup rejser 70 millioner til at lave AI-vidoer</h4>
+        <div>
+          Startupvirksomheden Synthesia har gennem kapitalfonden FirstMark capital sikret en investering på 70 millioner kroner til at sætte skub på videoer produceret ved hjælp af kunstig intelligens. Det skriverComputerworld.Ved hjælp af teknologien arbejder Synthesia med at skabe videoindhold uden brug af hverken skuespillere eller kameraer.»Vi har stadig kun ridset overfladen af videoøkonomien. Om 10 år tror vi, at de fleste af vores digitale oplevelser vil blive drevet af video i en eller anden måde eller form. Men for virkelig at realisere video-first internet har vi brug for en mere skalerbar og tilgængelig måde at lave video på,« fortæller Victor Riparbelli, en af grundlæggernde af Synthesia.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2021-04-21
+          &nbsp;·&nbsp; e83b43ef
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.664</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.626</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nilfisk indgår samarbejde med udvikler af kunstig intelligens</h4>
+        <div>
+          Partnerskabet er et led i udbygningen af Nilfisks førerposition indenfor det voksende marked for rengøringsrobotter, fortæller den danske virksomhed i en meddelelse mandag eftermiddag.&quot;Rengøringsrobotter målrettet professionelle kunder udgør en stigende del af forretningen hos Nilfisk. Om 3-5 år forventer selskabet, at området vil udgøre 10 pct. af omsætningen, og ambitionerne for det voksende marked har allerede medført omfattende transformationer af forretningen.&quot;&quot;Igennem de senere år har Nilfisk derfor investeret signifikant i udvikling af både robotteknologi og digitale løsninger. Som led heri har Nilfisk indgået partnerskaber med højtspecialiserede tech-virksomheder, der komplementerer selskabets kerneforretning, professionel rengøring,&quot; fremgår det af meddelelsen.Brain Corp er specialiseret i at udvikle avancerede operativsystemer til blandt andet rengøringsrobotter.Operativsystemerne, der går under betegnelsen BrainOS, bruger kunstig intelligens til blandt andet at optimere robotternes lokalitetsbevidsthed, opsamling og brug af data og kan skaleres og tilpasses på tværs af miljøer og rengøringsløsninger.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-03-25
+          &nbsp;·&nbsp; e7214e8e
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.95</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.977</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.553</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>UGENS 10 BØGER</h4>
+        <div>
+          Denne uges bogliste er fundet inde på goodreads.com i afdelingen kaldet ' Listopia'. Denne hjemmeside er ejet af det ultimativt fæle kapitalistkonglomerat amazon. com, hvis pisk verden formentlig kun knap har følt snerten af. Hjemmesidens millioner af brugere må (lidt endnu) formodes at være organiske entiteter (flertallet mennesker af USA-eller Vesteuropa-slagsen) frem for kunstige intelligenser, så det kan stadig være interessant at se, hvad de mon hitter på, selv hvis man indkalkulerer en gebommerlig overvægt af forfattere af den anglofone, penisbærende type. Jeg har så valgt 10 ud af de 50 øverste på listen over bøger, der opfattes som ' foruroligende'.1 William Golding Fluernes herre (oversat af Werner Pedersen og Jørgen Årup Hansen) 2 George Orwell 1984 ((oversat af Paul Monrad)) 3 ladimir Nabokov Lolita (oversat af Claus Bech) 4 Diverse forfattere Bibelen (på dansk ved diverse oversættere) 5 Cormac McCarthy Vejen (oversat af Jan Hansen) 6 Margaret Atwood Tjenerindens fortælling (oversat af Lisbeth Møller-Madsen) 7 George Orwell Kammerat Napoleon 8 Aldous Huxley Fagre nye verden (oversat af Harriet Oppenhejm og Henning Kehler) 9 Cormac McCarthy Blodets meridian eller Aftenrøden i Vesten (oversat af Jan Hansen) 10 Donatien Alphonse François de Sade: 120 dage i Sodoma (oversat af Morten Kielland og René Rasmussen).
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2019-02-15
+          &nbsp;·&nbsp; e714f29d
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.563</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook afdækker let din personlighed</h4>
+        <div>
+          PROFILERING. Din seksuelle orientering, politiske holdning og din intelligens kan udlæses af de ting, du giver dit ' like' til på Facebook. Det viser en undersøgelse foretaget af forskere ved Cambridge University, som ved hjælp af en beregningsmodel baseret på algoritmer kunne tegne ret præcise personprofiler, skriver BBC. Data fra 58.000 frivillige, som var brugere af Facebook, blev analyseret og sammenholdt med personprofiler af dem. I 88 procent af tilfældene kunne kønnet og den seksuelle orientering forudsiges. Om brugeren var kristen eller muslim kunne forudsiges i 82 procent af tilfældene. Og om vedkommende var i et fast forhold eller brugte forbudte stimulanser kunne forudsiges i 7 af 10 tilfælde.morten.g.andersen@pol.dk 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2013-03-17
+          &nbsp;·&nbsp; e3b55632
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.612</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Kristian Kidholm er ansat som innovationsprofessor ved Klinisk Institut på Syddansk Universitet med tilknytning til Center for Innovativ Medicinsk Teknologi, CIMT på Odense Universitetshospital.Hans forskning har pt. fokus på effekterne af Region Syddanmarks kommende EPJ-system, metoder til bedre implementering af digitale teknologier i kliniske afdelinger og retningslinjer for vurdering af værdien af kunstig intelligens i sundhedsvæsenet.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-11-24
+          &nbsp;·&nbsp; e77576c6
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Machine Learning kan bruges til at bygge... Machine Learning</h4>
+        <div>
+          Automatiseret afprøvning af 'best fit'-algoritmer kan accelerere udviklingen af Machine Learning og Artificial Intelligence, så AI hurtigere kan udvikles til operationel AI. Et af de konkrete resultater er et teknologisk spring fra Natural Language Processing til Natural Language Understanding, skriver Thomas Herlin fra CGI.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-12-11
+          &nbsp;·&nbsp; e701c30f
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.953</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.937</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ITU-lektor vinder pris for arbejde med kunstig liv</h4>
+        <div>
+          Lektor ved IT-Universitetet, Sebastian Risi, har vundet prisen &quot;Distinguished Young Investigator Award,&quot; for sit arbejde inden for feltet artificial life, der bruger simulationer og AI til at efterligne biologiske systemerDen gives af The International Society for Artificial Life(ISAL) til »et individ, der er tidligt i sin karriere, men som allerede har gjort vigtige bidrag til feltet artificial life,« skriver ISAL om prisen på sin hjemmeside.»Sebastian Risi modtager prisen som en anerkendelse af sine mange publikationer om artificial intellegence og artificial Life. Flere af disse artikler har tidligere vundet de såkaldte &quot;best paper awards,« skriver ITU på sin hjemmeside.ISAL har sit eget tidsskrift, publiceret af MIT-Press, om artificial life. Feltet omfatter også kunstig intelligens, men anvendt til at konstruere eller efterligne biologiske systemer som f.eks. evolution.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-08-08
+          &nbsp;·&nbsp; e6da1271
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.651</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.656</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ph.d.-forsvar: Kan man se originalen bagved?</h4>
+        <div>
+          Helene Matilde Svane forsvarer onsdag 30. oktober kl. 14.15 sin ph.d.-afhandling på Aarhus Universitet, 1531-219, auditorium D4, Ny Munkegade 116, Aarhus C. Afhandlingen omhandler forskellige aspekter af rekonstruktion af et objekt fra dets digitale gråskala-billede. Man forestiller sig, at man fremstiller et digitalt billede af et sort objekt på en hvid baggrund ved at placere et gitter oven på objektet og derefter farve hvert gitterfelt i en grå nuance, der svarer til den brøkdel af den firkant, der er dækket af objektet. På denne måde får man et digitalt billede i gråskala af objektet, der består af pixels med forskellige gråtoner. Spørgsmålet er nu, hvor meget man kan udlede om det originale objekt, hvis man kun kender det digitale billede af det, især når det digitale billede har en dårlig opløsning. I afhandlingen foreslås algoritmer til rekonstruktion af en bestemt klasse af objekter ved hjælp af deres digitale billeder. Ph.d.-graden blev afsluttet ved Center for Stokastisk Geometri og Bioimaging (CSGB), Institut for Matematik, Videnskab og Teknologi, Aarhus Universitet.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2019-10-29
+          &nbsp;·&nbsp; e76a8f2e
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.95</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.648</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Innovativ brug af (big) data i danske SMV'er</h4>
+        <div>
+          BodyMød danske virksomheder, der det seneste år har ændret mindset og forretning gennem brug af big data, kunstig intelligens, maskinlæring og deep learning.27 danske SMV'er fra mere end 10 forskellige brancher har fået hjælp til at indføre brug af nye teknologier til datadreven forretning, med midler fra projektet Innovativ Brug af Big Data.Du kan møde en række af dem og få deres spritnye erfaringer. Du kan også møde Alexandra Instituttet, som stiller skarpt på, hvordan virksomheder generelt kan gøre brug af disse nye teknologier - og Thomas Moeslund fra Aalborg Universitet, som giver dig et fremadskuende oplæg om kunstig intelligens.Arrangementet afholdes af InfinIT. Projektet Innovativ Brug af Big Data er finansieret af Den Europæiske Fond for Regionaludvikling og Region Midtjylland.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-10-30
+          &nbsp;·&nbsp; e76b0427
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.668</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.536</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.546</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>1.000 forskere efterlyser forbud mod intelligente dræberrobotter</h4>
+        <div>
+          1.000 forskere i kunstig intelligens har skrevet under på et åbent brev, der råder FN til at forbyde brug og udvikling af autonome våbensystemer. Udvikling af våben, der kan fungere uden menneskelig indblanding, kan sammenlignes med opfindelsen af atomvåben, mener underskriverne, som blandt andet tæller Stephen Hawking, Elon Musk og Googles researchchef Peter Norvig. Forskerne frygter, at autonome våben i sidste ende vil kunne bruges af terrorister eller af diktatorer til at undertrykke befolkningen.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2015-07-29
+          &nbsp;·&nbsp; e5243077
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.965</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.618</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.53</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ANBEFALINGER: KRITIKERNE ANBEFALER BØGER SOM JULEGAVER</h4>
+        <div>
+          NIELS BARFOEDDEN AKTUELLE'Grov Konfækt' af Henrik Horstbøll, Ulrik Langen og Frederik StjernfeltEt forskningsmæssigt mesterværk om det vilde eksperiment med trykkefriheden herhjemme i 1770-73.DEN KLASSISKE'Syv år for Lea' af Sonja HaubergEn stor klog, realistisk-psykologisk roman om afretningen af en ung pige, Ruth, der omplantes fra den frie barndom på landet til købstadens stramme latinskole. Læs den ved siden af Hans Scherfig og Tove Ditlevsen.MARIE LOUISE KJØLBYEDEN AKTUELLE'Tritonus. En skærgårdsfortælling' af Kjell Westö (oversat af Jesper Klint Kistorp)Den finlandssvenske vinder af Nordisk Råds pris har skrevet et stort dobbelt mandeportræt i ord og toner. Romanen står som et fyrtårn af aktualitet, humor og ømhed.DEN KLASSISKE'Let gang på jorden og Letsindighedens gave' af Agnes HenningsenAgnes Henningsen fik - med sit eget udtryk - talent, da hun blev alene med fire små børn. Pia Juul, der døde i 2020, alt for tidligt, nåede i sit smukke efterord at hylde inspirationskilden og skrivebomben Agnes.STEEN NEPPER LARSENDEN AKTUELLE'Protestkritik. Hvordan kan man tænke protesten i skyggen af '68?' af Anton Bech JørgensenEt samtidsanalytisk-dialektisk over-flødighedshorn af et kvalitetsskrift.Hvorfor protestere, og hvordan kvalificere protester gennem kritik? Et andet universitet er umuligt, lad os skabe det (tekst # 10).DEN KLASSISKE'Den Himmel zum Sprechen bringen' af Peter SloterdijkHar vi glemt at lytte til himlen? Sloterdijks nye epos former sig som et teopoetisk forsvarsskrift. Værket er irriterende, usammenhængende, uombaggåeligt og vildt tankeinciterende.KAMILLA LÖFSTRÖMDEN AKTUELLE'Lille Nø og Mindste Mo' af Hanne Kvist og Maria LundénTrue love til billedbogen som tradition og især fornyelse. Med stoflighed og lune fortælles en historie om elefantungen Lille Nøs irriterende mellemstørrelse.For lille til at bestemme selv og for stor til at lege med Mindste Mo.DEN KLASSISKE'Ud af mørke og tavshed' Plinius den yngres breve. Bog I-IX (oversat af Inger Nord)En bunke næsten 2000 år gamle breve skrevet fra et ganske privilegeret sted i Rom og som oversætteren har kategoriseret og støvet af, så en nutidslæser kan bruge dem som et opslagsværk over visdom og drømme.GEORG METZDEN AKTUELLE'Statsministeren' af Tim KnudsenDe første tre bind af i alt fem om danske statsministre 1849 til nutiden. Solid og underholdende fremstilling i forsvarlig historiefaglig ramme.DEN KLASSISKE'Pesten' af Albert Camus(oversat af Hans Peter Lund)Det siger sig selv, at nobelpristagerens hovedværk har bud til os i disse tider.En stærk kunstnerisk episk analyse af genkendelige reaktioner på en lunefuld usynlig trussel.MATHILDE MOESTRUPDEN AKTUELLE'De uadskillelige' af Simone de Beauvoir (oversat af Birte Dahlgreen og Lilian Munk Rösing)Enhver bør unde sig selv at læse Beauvoirs dybfølte, koncise kortroman om kærlighedsforholdet til en barndomsveninde, udgivet og strålende oversat i år, 66 år efter den blev skrevet og vejet for let af sin samtid.DEN KLASSISKE'2666' af Roberto Bolaño(oversat af Iben Hasselbalch)Et af vor tids vigtigste værker - og måske også det længste. Udnyt coronatiden til endelig at få læst denne lidt over 1000 sider lange gentænkning af kriminalromanen og bearbejdning af Mexicos grusomme kvindemord.TUE ANDERSEN NEXØDEN AKTUELLE'Hedeselskabet' af Malte TellerupEn smuk roman om at ville leve med landskabet og ikke i en stadig kamp mod det, og også om det kollektives flygtighed. På en gang udramatisk og utroligt samtidig, virkelig en bog til sin tid.DEN KLASSISKE'Vreden skriver digtet' af JuvenalHarald Voetmanns oversættelse af Juvenals to første satirer fastholder klassikerens fremmedhed og oversætter samtidig med en frisk og direkte virtuositet. Det antikke Rom vrænges glasklart frem for læserens øjne.ERIK SKYUM-NIELSENDEN AKTUELLE'Valseværk' af Tóroddur PoulsenFærøske Tóroddur Poulsens første samling skrevet (direkte) på dansk ligner et hovedværk. Samtlige digte sidder lige i skabet, og stemningsmæssigt når vi hele kompasset rundt.DEN KLASSISKE'Udsat på hjertets bjerge' af Rainer Maria Rilke (oversat af Thorkild Bjørnvig)Teksterne fra Tide-bogen, Billedernes bog, Nye digte, Rekviemerne, Duinoelegierne, Sonetterne til Orfeus og hans Sene digte, mesterligt fordansket af Thorkild Bjørnvig.BODIL SKOVGAARD-NIELSENDEN AKTUELLE'Min far&amp;Kvinden' af Annie Ernaux (oversat af Hans Peter Lund)To korte romaner om at miste - ikke blot de to forældre, hvis død titlerne henviser til, men al den historie, de har gennemlevet. Annie Ernaux skriver elegisk om klasseforskelle og levemåder.DEN KLASSISKE'En god mand er svær at finde' af Flannery O'Connor (oversat af Karina Windfeld-Hansen)At læse Flannery O'Connors southern gothic-noveller er en ond oplevelse - på den gode måde. Hun fremmaner en verden af udskud og selvretfærdige prædikanter, hvor noget slår klik og volden bryder ud.PETER NIELSENDEN AKTUELLE'Er mor død' af Vigdis Hjorth (oversat af Karen Fastrup)Stilistisk overlegen og hjerteskærende beretning om vanskelig mor/ datter-relation. Man troede ikke, Vigdis Hjorth kunne overgå sig selv efter Arv og miljø, men den nye er endnu bedre.DEN KLASSISKE'Goethes valgslægtskaber' af Walter Benjamin (oversat af Lars Christiansen)Der findes ikke et stykke mere eksemplarisk litterær kritik end Benjamins læsning af Goethes klassiske ægteskabs-og partnerbytteroman. Det er kritik på højde med det litterære værk.LONE NIKOLAJSENDEN AKTUELLE'Thread Ripper' af Amalie SmithAmalie Smiths greb om hybridformen, hvor essayistik om vævekunst, mytologi, computerteknologi, kunstig intelligens vikler sig sammen med personlige optegnelser og fabulering, bliver mere og mere suverænt og fængende.DEN KLASSISKE'Et åbent øjeblik. Da mine mødre gjorde noget nyt' af Pernille IpsenHistoriker Pernille Ipsens bog om de syv kvinder, hun har kaldt for mor, og deres møde med hinanden i Rødstrømpebevægelsen er præget af varme og selvrefleksion og relevant for alle, der har prøvet at være en del af et fællesskab.ANITA BRASK RASMUSSENDEN AKTUELLE'Fangeskibet' af Erik BarfoedEt klassisk eventyr i moderne tempo om vennerne Tom og Horatio, der stjæler brød i det sulthærgede London efter Napoleonskrigene og ender på et fangeskib. Så sanseligt skrevet, at man mærker vinden i håret og lugten af tjære.DEN KLASSISKE'Skammerens Datter' af Lene KaaberbølHistorien om Dina med det invaliderende skammerblik fejrer 20-års jubilæum i år og føles mere aktuel end nogensinde med sin blotlæggelse af skammens civiliserende egenskaber.KAREN SYBERGDEN AKTUELLE'Vinterbier' af Norbert Scheuer (oversat af Jacob Jonia)Tiden er Anden Verdenskrig, bierne lever deres velordnede liv midt i verdens kaos. Jødiske flygtninge smugles i sikkerhed i biavler Egidius' bistader, krig og kaos, forgængelighed og bestandighed spejler hinanden. En vildt spændende og dybsindig roman om krig, naturen og menneskers skæbne.DEN KLASSISKE'Kør din plov over de dødes knogler' af Olga Tokarczuk (oversat af Hanne Lone Tønnesen)En sprudlende krimi, der kombinerer spænding med refleksion over universelle temaer.THOMAS THURAHDEN AKTUELLE'W' af Steve Sem-Sandberg(oversat af Birgitte Steffen Nielsen)Sem-Sandberg har gendigtet historien om den ulykkelige drabsmand og soldat Woyzeck. Romanen er et mørkt og dystert kosmos og en kunstnerisk stor bog om mennesket, krigen, kærligheden, døden og det alt sammen.DEN KLASSISKE'Molloy' af Samuel Beckett(oversat af Karsten Sand Iversen)Karsten Sand Iversens nyoversættelse af Samuel Becketts superklassiker om verdens alting og ingenting og biernes dans minder os om, hvor god Beckett er, og hvor skidesjov han også er.KRISTIN VEGODEN AKTUELLE'Så meget havde jeg' af Trude Marstein (oversat af Sara Koch)Stor roman om hverdagen og kærligheden.Vi følger Monika og hendes søstre igennem 40 år, fra 1970' erne og frem. Marstein skriver fantastiske personportrætter og skildrer rammende livets mange valg og fravalg.DEN KLASSISKE'The Easter Parade' af Richard Yates (oversat af Ida Jessen)Moderne klassiker, som passer perfekt i forlængelse af Marstein. Vi følger de to Grimes-søstre fra 1930' erne og frem til 70' erne. Tragisk og smuk roman om generationskløfter og kvindeliv fortalt i et stærkt sprog.TONNY VORMDEN AKTUELLE'Kaptajnen og Ann Barbara'af Ida JessenEpisk roman fra 1750' ernes vindsvøbte jyske hede, hvor kampen mellem godt og ondt og mod rå naturkræfter udspiller sig som et dæmpet dansk westerndrama. Raffineret, velskrevet og stilsikkert.DEN KLASSISKE'Jeg kan huske' af Joe Brainard(oversat af Pejk Malinovski)Kultklassiker fra 1970, der kom på dansk dette efterår og består af korte passager, der starter med »Jeg kan huske« og skildrer det amerikanske landskab, som den homoseksuelle kunstner Brainard voksede op i.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2020-12-04
+          &nbsp;·&nbsp; e804c21b
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.994</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.814</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.523</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Modellering i materiale- og procesteknologi - termomekanik</h4>
+        <div>
+          Kursusnr. 88518 - Modellering i materiale- og procesteknologi - termomekanikPris: Kr. 4.200,- Varighed: 102 dag(e) Type: KursusFå tilsendt alle informationer om kurset, herunder kursus sted, udbyder mm. på emailForelæsninger:Analytiske og numeriske metoder til simulering af termiske materialeprocesser herunder svejsning, overfladehærdning og fremstilling af kompositmaterialer. Grundlæggende termomekanik. Termisk tøjning. Termisk spænding. Interne og eksterne indspændinger. Termoelasticitet. Numeriske og analytiske løsninger. Termiske spændinger i overflader - anvendelser på overfladehærdning og støbning. Termomekanik ved hærdning af kompositlaminater. Termiske og kemiske tøjninger i klassisk laminat teori. Termo-elasto-plasticitet. Return mapping algoritmen. Termomekanisk analyse i svejsning. Satoh testen. Transiente og residuale spændinger.Computer øvelser:Opstilling og programmering af algoritmer samt anvendelse af FE-programpakker til termomekanisk simulering af svejsning, overfladehærdning og hærdning af kompositter.Programmeringssprog: MatlabMetode: Forelæsninger og øvelserFå tilsendt alle informationer om kurset, herunder kursus sted, udbyder mm. på email
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2015-11-09
+          &nbsp;·&nbsp; e54e04e2
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.644</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.801</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tror på omni-superviseret læring</h4>
+        <div>
+          Semi-superviseret læring er et af de områder af machine learning, der har fået megen opmærksomhed de senere år. Konceptuelt er semi-superviseret læring en variation af superviseret læring, der kombinerer datasæt med mærkede og umærkede data til træning. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-10-02
+          &nbsp;·&nbsp; e6eb6422
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.9</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.924</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.588</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Det betaler sig at satse på kunstig intelligens</h4>
+        <div>
+          Rapport sætter tal på virksomheders brug af kunstig intelligens og ser på, hvordan forskellige brancher får nytte af teknologien.McKinsey har undersøgt virksomheders brug af kunstig intelligens og publiceret resultaterne i rapporten &quot;Global AI survey: AI proves its worth, but few scale impact&quot;.Rapporten peger på, at kunstig intelligens er værdiskabende for virksomhederne, og at der er flere, der er begyndt at gøre brug af teknologiens fordele.I 2019 rapporterede 58 % af respondenterne, at de bruger kunstig intelligens i minimum en del af forretningen, hvor det kun var 47 % i 2018.Hele 63 % af respondenterne har øget indtægter ved hjælp af kunstig intelligens. Det er dog særligt de firmaer, der benytter sig af kunstig intelligens i større skala, der får mest ud af teknologien. Blandt de såkaldte high performers er sandsynligheden omtrent tre gange større for, at indtægterne er steget med mere end 10 %, end for resten af respondenterne.Teknologien på tværs af industrierUndersøgelsen viser, hvordan forskellige industrier gør brug af kunstig intelligens. Eksempelvis gør respondenterne med en fysisk produktion særligt brug af fysiske robotter, hvor telecom-firmaer i højere grad gør brug af teknologien i form af virtuelle agenter.Blandt de firmaer, der har implementeret kunstig intelligens i større skala, bruger 80 % teknologien til marketing og salg, hvor det kun er 25 % af de firmaer, der også benytter kunstig intelligens, men i mindre skala.Der er generelt en større forventning til, at kunstig intelligens kommer til at forårsage færre ansatte end flere ansatte i virksomhederne. Trods det er forventningen, har det indtil videre ikke vist sig at være sådan. For mere end en tredjedel af de adspurgte har implementering af kunstig intelligens ikke påvirket antallet af ansatte mere end 3 %, og af dem har de fleste været forøgelser i antal af ansatte.Det er dog ikke sikkert, at billedet fremover kommer til at se sådan ud. Særligt indenfor HR, produktion, supply chain management og service er forventningen, at antallet af ansatte falder, hvor det forventes at stige indenfor blandt andet produktudvikling, marketing og salg.At arbejdsstyrken forventes at blive sammensæt anderledes peger desuden på endnu et vigtigt punkt i rapporten: Brugen af kunstig intelligens skaber et behov for at omskole og videreuddanne en stor del af arbejdsstyrken. Hele 83 % af respondenterne forventer at efteruddanne en del af deres ansatte indenfor de næste tre år som resultat af implementeringen af kunstig intelligens.Risici ved kunstig intelligensTrods alle tidens diskussioner om risici ved kunstig intelligens, er det under halvdelen af undersøgelsens respondenter, der forholder sig til teknologiens risikoforhold, og endnu færre, der aktivt forsøger at beskytte sig mod dem.Eksempelvis angiver 39 % af respondenterne, at &quot;explainability&quot; (det vil sige evnen til at forklare de resultater, kunstig intelligens kommer frem til) er et opmærksomhedspunkt i deres virksomhed - alligevel er det kun 21 % af respondenterne, der aktivt forsøger at imødekomme de risici, der kan opstå.Respondenterne anser desuden særligt to risici som væsentlige at forholde sig til: Cybersikkerhed og regulatory compliance.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-12-04
+          &nbsp;·&nbsp; e7793f9c
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.699</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.844</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.628</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Peter Engbergs truende usikkerhed</h4>
+        <div>
+          Der er en risiko for, at de nye ejendomsvurderinger bliver en maskine til udskrivning af nye skatterArkivfoto: Chr. Liliendahl/ScanpixEjendomsvurderinger kan ikke bare baseres på algoritmer. Usikkerheden må klart fremEn ekspertgruppe ledet af den tidligere direktør i Nykredit, Peter Engberg, er i gang med...Læs resten af artiklenFår du avisen?
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2014-06-12
+          &nbsp;·&nbsp; e4719549
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.557</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.562</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forskere identificerer kaskelothvaler med kunstig intelligens</h4>
+        <div>
+          Hvalforskere har i samarbejde med it-virksomheden Capgemini taget et nyt AI-redskab i brug til at identificere kaskelothvaler og følge hvalbestanden rundt om på kloden. Det skriver Capgemini i en pressemeddelelse.Løsningen er udviklet af Capgemini i forbindelse med selskabets årlige, interne Data Science Challenge. Redskabet består af machine learning og AI, og forskere kan nu benytte det til at analysere og identificere hvalerne ud fra tusindvis af billeder med 97,5 procent præcision.Redskabet sparer således forskerne for mange arbejdstimer, som hidtil er gået med at matche hvalfotos, der ofte er taget af turister rundt om i verden, med det store bagkatalog af hvalbilleder, som i forvejen findes.Selskabet har udgivet en video, der forklarer mere om projektet
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-12-15
+          &nbsp;·&nbsp; e8095ff8
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.891</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.835</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.664</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Handelsrobotter dominerer Moskvabørsen</h4>
+        <div>
+          InvestorAktiehandlere i USA med speciale i algoritmer og højfrekvent handel er for alvor på vej ind på det russiske børsmarked.BCS Financial Group, en af Ruslands største aktiemæglere, har købt en New York-baseret afdeling af den russiske Alfa Bank og regner...Denne artikel er kun tilgængelig for abonnenterAlgoritmehandlere udgør mere end halvdelen af aktiehandlen på børsen i Moskva..Algoritmehandlere udgør mere end halvdelen af aktiehandlen på børsen i Moskva..
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2015-12-04
+          &nbsp;·&nbsp; e558bc9e
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.958</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.674</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.626</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Prisen for overholdelse af AI-regulering estimeres til knap en femtedel af alle AI-investeringsomkostninger</h4>
+        <div>
+          En undersøgelse foretaget for EU-kommissionen estimerer, at prisen for overholdelsen af AI-regulering svarer til 17 procent af de samlede AI-investeringsomkostninger.EU-kommissionen publiserede undersøgelsen, der er udformet af Center for europæiske politikundersøgelser (CEPS), ICF International Inc. og Wavestone, den 21. april 2021.Undersøgelsen, der blev offentliggjort samme dag som kommissionens forslag til en AI-forordning, giver et omfattende overblik over eksisterende materiale og potentielle vurderinger af risici og skader, som AI kan udgøre for sikkerheden samt fundamentale rettigheder, mens den også undersøger nye, nationale erfaringer med udvikling af strategier og lovgivningsmæssige rammer inden for området med særlig vægt på risikostyring.Undersøgelsen giver også en detaljeret analyse af resultaterne fra den offentlige høring om kommissionens hvidbog om kunstig intelligens.Og blandt undersøgelsens resultater er blandt andet et estimat over, hvor meget de samlede årlige overholdelsesomkostninger for et gennemsnitligt AI-produkt - i forhold til træningsdata, registrering, levering af information, tilsyn, nøjagtighed og robusthed - i gennemsnit vil beløbe sig til, cirka 30.000 euro, svarende til cirka 17 procent af de samlede AI-investeringsomkostninger.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2021-05-03
+          &nbsp;·&nbsp; e83f64c3
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.583</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.602</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: Note</h4>
+        <div>
+          99% Facebook bryster sig af, at hele 99 pct. af den terrorpropaganda, som mediegiganten stopper, slettes af ny kunstig intelligens.Men Facebook vil ikke fortælle, hvor stort terrorproblemet faktisk er på det sociale medie, da Politiken endelig får mulighed for at interviewe det amerikanske milliardselskabs ledelse.Side 6-8.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2017-12-02
+          &nbsp;·&nbsp; e686f3be
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.87</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.58</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.623</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EU om fremtiden for GDPR: Nødvendigt at regulere brugen af kunstig intelligens</h4>
+        <div>
+          EU-Kommissionen har udgivet en rapport om første år af GDPR.I en pressemeddelelse skriver Kommissionen at alle medlemslande undtagen tre - Grækenland, Portugal og Slovenien - har implementeret forordningen i deres nationale lovgivninger.Kommissionen skriver også, at de fortsat vil hole øje med, at medlemslandene implementerer GDPR-reglerne grundigt, og ikke bare »forgylder« de nuværende regler.Relateret jobannonce: CMS Solution ArchitectNødvendigt at regulere brugen af kunstig intelligensRapporten indeholder også flere afsnit om GDPR's rolle i fremtiden. Blandt andet fremhæver Kommissionen nødvendigheden af at regulere brugen af kunstig intelligens, inklusive retten til ikke at blive sagsbehandlet udelukkende af automatiserede systemer.Kommissionen nævner også selvkørende biler, smarte el-net og politiarbejde som områder hvor regulering af data i GDPR-regi bliver vigtigt i fremtiden.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-07-25
+          &nbsp;·&nbsp; e747b0ee
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.642</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.838</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.635</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.54</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Den miljøvenlige Bentley på turné</h4>
+        <div>
+          Konceptbilen Bentley EXP 100 GT markerer mærkets 100-års jubilæum ved både at se frem og tilbage i tiden. En 100 pct. eldrevet drivline med selvkørende funktion styret af kunstig intelligens skal pege mod fremtidens bæredygtige luksusbil, mens valget af underleverandører og materialer er en hyldest til britisk industrihistorie.Træindlægget i kabinen er fremstillet af dele fra en 5000 år gammel egestamme, der blev fundet på bunden af en flod i det sydlige England i 2012. Træet har stået i en urskov og er bevaret, og Bentley har integeret det i genbrugt kobber for at bevare dets udtryk. Tekstilerne på stolene er fremstillet af et biprodukt fra vinproduktion, mens uldtæpperne er vævet af en engelsk virksomhed grundlagt i 1790. Lakken er fremstillet af økologiske skaller fra ris.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2019-11-08
+          &nbsp;·&nbsp; e76e0f3f
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.703</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En gruppe af prominente entreprenører inden for AI har skrevet et åben brev, hvori der kraftigt advares mod brugen af autonome våben</h4>
+        <div>
+          Af Henrik Vinther 21. aug 2017 kl. 07:21 &quot;Vi har ikke lang tid til at handle. Når denne Pandoras æske er åbnet, vil den blive svær at lukke igen.&quot; Elon Musk har, sammen med en gruppe af specialister fra 26 lande inklusiv medstifteren af Google DeepMind, skrevet et åbent brev til FN, hvori de på det kraftigste advarer mod udviklingen og brugen af autonom krigsførsel....
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-08-21
+          &nbsp;·&nbsp; e6614162
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.696</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PH. D.-FORSVAR</h4>
+        <div>
+          Claus Ballegård Nielsen, cand.polyt., ph. d.-studerende ved Institut for Ingeniørvidenskab, Fakultetet for Science and Technology, Aarhus Universitet, forsvarer mandag den 30. juni sin ph. d.-afhandling med titlen: &quot;Strengthening Collaboration, Integration, and Modelling in System of Systems Engineering&quot;.Kravene til den funktionalitet og mængde af informationer, som computerbaserede systemer forventes at kunne levere til deres brugere, medfører en konstant forøgelse i dataudvekslingen mellem forskellige computer systemer. De enkelte systemer bliver mere og mere afhængige af tjenester, som leveres af andre systemer, hvilket skaber et øget behov for samarbejde og interaktion mellem en stor mængde af systemer.Dette har skabt en ny type af systemer, som i sig selv består af systemer, et såkaldt System af Systemer. Denne nye type af meget komplekse systemer giver ingeniører store udfordringer med systemudviklingen pga. integrationen mellem systemer, som ikke er designet til at arbejde sammen og pga. systemernes forskellige ejere, som har modstridende interesser.I løbet af sit ph. d.-studium har Claus Ballegaard Nielsen forsket i, hvordan computermodeller kan anvendes til at afhjælpe de integrations-og samarbejdsudfordringer, som ingeniører konfronteres med under udviklingen af System af Systemer.Hovedresultatet af studiet er en samling af metoder, der bidrager til en mere detaljeret forståelse af udvikling af System af Systemer, samt en række software-værktøjer, der muliggøre kollaborativ udvikling og analyse af System af Systemer computer modeller.Forsvaret er offentligt og finder sted i bygning 5125, lokale 430, Institut for Ingeniørvidenskab, Aarhus Universitet, kl. 13.Esben Borch Dalgaard, cand.scient., ph. d.-studerende ved Institut for Geoscience, Science and Technology, Aarhus Universitet, forsvarer mandag den 30. juni sin ph. d.-afhandling med titlen: &quot;Development of Efficient Noise Cancellation Techniques for SNMR Data&quot;.I løbet af sit ph. d.-studium har Esben Borch Dalgaard forsket i magnetisk resonans sondering (MRS).MRS er en geofysisk metode, der ved hjælp af protoners spin i Jordens magnetfelt måler mængden af vand i undergrunden. MRS måler ikke kun mængden af vand, men man får også et mål af porestørrelserne i de jordlag, som vandet befinder sig i.MRS kan bl. a. benyttes til kortlægning af vandressourcer med henblik på deres beskyttelse og udvinding.Esben Borch Dalgaard har undersøgt og udviklet metoder til støjfiltrering af MRSdata og til optimering af måleprocedurer. Dette er udført ved udvikling af et instrument, der er i stand til at differentiere de elektromagnetiske støjkilder, der påvirker MRS, samt ved udvikling af effektive algoritmer og workflow til støj-filtrering.Med de opnåede forskningsresultater er det blevet muligt at lave dataindsamlingen hurtigere samt at samle data ind i områder med høj støj tæt ved bebyggelser og el-ledninger, hvor det hidtil ikke har været muligt.Forsvaret er offentligt og finder sted i Auditoriet, bygning 1671, lokale 137, Institut for Geoscience, Aarhus Universitet, kl. 13.Bo Thomsen, ph. d.-studerende ved Institut for Kemi, Science and Technology, Aarhus Universitet, forsvarer tirsdag den 1.juli sin ph. d.- afhandlingmed titlen: &quot;Developments and Generalizations in Molecular Vibrational Structure Theory&quot;.I løbet af sit ph. d.-studium har Bo Thomsen forsket i effektive og generelle metoder til at beskrive molekylære potential energi-flader. Denne beskrivelse er vigtig for at generere nøjagtige resultater til brug i samarbejdet mellem kemisk eksperiment og teori.Bo Thomsen har under sine studier udviklet og benyttet metoder til at generere teoretiske vibrationelle infrarøde spektre og undersøgt effekten af koordinatvalg i beskrivelsen af den molekylære potential energi-flade i vibrational coupled cluster-beregninger.Forsvaret er offentligt og finder sted kl. 13 i auditorium 1, Institut for Kemi, Aarhus Universitet.
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2014-06-29
+          &nbsp;·&nbsp; e477c8bf
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.955</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.548</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.582</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>IBM og Fujifilm 62-dobler kapaciteten på magnetbånd</h4>
+        <div>
+          Mens Sony for nylig afslørede en kraftig forbedring af påføringen af det magnetiske lag, så har IBM især forbedret præcisionen af skrivehovedet.Af Jesper Stein Sandal Torsdag, 22. maj 2014 - 11:55Storage-producenten EMC forsøgte i 2011 at erklære bånd for død med denne rekordstore kugle af 5.000 kilometer magnetbåndFremtiden for magnetbånd ser lidt mere lovende ud, selvom konkurrenterne med harddiske og SSD-drev har forsøgt at erklære den i it-sammenhænge urgamle teknologi for død ved flere lejligheder.Læs også: EMC: Død over båndsalatenNu har IBM i samarbejde med Fujifilm opnået ikke mindre end en 62-dobling af kapaciteten på magnetbånd. Det oplyser IBM i en pressemeddelelse . Det sker kort efter, at Sony kunne afsløre en 74-dobling af selskabets magnetbåndteknologi.Læs også: Sony 74-dobler lagerkapaciteten på magnetbåndSonys forbedring lå hovedsageligt i metoden til at påføre de magnetiske partikler i en ensartet film. IBM's forbedringer ligger hovedsageligt i at gøre bevægelserne og positioneringen af læsehovedet så præcist, at det kan arbejde med endnu finere partikler end hidtil.Fujifilm har dermed kunnet bruge langt mindre korn af bariumferrit, end de korn som benyttes til magnetbånd i dag.Samtidig har IBM også forbedret de algoritmer, som skal behandle signalet fra læsehovedet for at få en præcis aflæsning af data.Samlet set vil kombinationen af IBM og Fujifilms forbedringer ifølge IBM betyde, at en standard LTO6-kassette til en båndrobot vil kunne rumme 154 terabyte data.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2014-05-22
+          &nbsp;·&nbsp; e469ef19
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.65</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.544</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.653</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nilfisk indgår partnerskab med amerikansk AI-virksomhed</h4>
+        <div>
+          Det oplyser Nilfisk i en pressemeddelelse sendt til redaktionen.Rengøringsrobotter målrettet professionelle kunder udgør en stigende del af forretningen hos Nilfisk. Om 3-5 år forventer selskabet, at området vil udgøre 10% af omsætningen, og ambitionerne for det voksende marked har allerede medført omfattende transformationer af forretningen.Hans Henrik Lund, administrerende direktør i Nilfisk, siger i pressemeddelelsen:»Det kræver en omfattende transformation af vores branche - og af Nilfisk - at gå fra udvikling af analoge maskiner til at levere højteknologiske løsninger med avanceret sensor-teknologi, AI og digitale services. Det kræver, at vi opruster vores egne kompetencer, hvilket vi har gjort igennem de seneste år. Men det kræver i lige så høj grad, at vi henter innovation udefra, og samarbejder med partnere der komplementerer os - og omvendt. Det er sådan vi vinder det teknologikapløb, vi konkurrerer i.« 
+        </div>
+        <footer>
+          <em>Pro.ing.dk/industrytech</em>
+          &nbsp;·&nbsp; 2019-03-28
+          &nbsp;·&nbsp; e7225bf7
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.698</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.756</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.579</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amerikansk webshop taber kampen mod patenttrold</h4>
+        <div>
+          TQP development er skoleeksemplet på en patenttrold. Nu har de vundet endnu en retssag.Af Adam FriboDen amerikanske webshop Newegg er blevet kendt for at tage kampen op imod taktiske patentindkøbere - også kendt som patenttrolde. Men efter en retssag med virksomheden TQP om brug af en bestemt algoritme til SSL/TLS, endte Newegg som taberen og blev dømt til at betale 12,6 millioner kroner i erstatning. Det skriver ArsTechnica .Sagsøgeren TQP development ejes af patenteksperten Erich Spangenberg, og virksomhedens ene patent dækker brugen af SSL/TLS sammen med RC4-algoritmen. Et udbred sikkerhedssystem blandt netbutikker.TQP lever højt på at sagsøge virksomheder for uretmæssig brug af patentet, hvorefter virksomhederne indgår forlig for at få sagen ud af verden og har indtil videre indkasseret forlig til en værdi af 248 millioner kroner fra 139 forskellige virksomheder.Det værdifulde patent løber fem år endnu, og virksomheden søger at få det maksimale ud af det. Således har de sager på vej mod Google, LinkedIn og Sony i 2014.Neweggs advokat udtaler, at virksomheden har til hensigt at appellere dommen.Via: Ars Technica
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2013-11-26
+          &nbsp;·&nbsp; e41bf59e
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.979</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ph.d.-forsvar: Med kunstig intelligens ud i naturen</h4>
+        <div>
+          PH.D.-FORSVAR: Oskar Liset Pryds Hansen forsvarer tirsdag 30. juni kl. 15 sin ph.d.-afhandling på Aarhus Universitet. Forsvaret er offentligt og holdes online. For at modtage et link til begivenheden skal man sende en mail til dp@bios.au.dk. Deep learning, kendt som kunstig intelligens, er potentielt et fremragende værktøj til at trække økologiske data og biodiversitetsdata ud af informationstunge kilder som billeder. Oskar Liset Pryds Hansen har forsket i metoder til at trække økologiske data ud af billeder sammen med et interdisciplinært hold. Sammen med et hold af biologer har han implementeret rewilding-strategien og overvågningsprogrammet i Rewilding Mols. Forskningsresultaterne viser, at deep learning kan klassificere billeder af insekter på artsniveau, og at individer af leddyr kan opdages på kamerafældebilleder. Baseret på indsamlinger af leddyr har han analyseret, om antallet af leddyr ændrer sig med den lokale tæthed af store planteædere. I sin ph.d.-afhandling giver han også en evaluering af udviklingen i rewilding-projektet Rewilding Mols. Ph.d.-studiet blev gennemført ved Center for Biodiversitetsdynamik i en verden under Forandring (Biochange), Faculty of Natural Sciences, Aarhus Universitet og Naturhistorisk Museum Aarhus.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2020-06-29
+          &nbsp;·&nbsp; e7c5cd75
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.982</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.638</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny professor skal evaluere medicinsk teknologi</h4>
+        <div>
+          En utraditionel forsker har fået en utraditionel stilling: Kristian Kidholm er per 1.november udnævnt til ny innovationsprofessor på Klinisk Institut, Syddansk Universitet (SDU) med tilknytning til Center for Innovativ Medicinsk Teknologi, CIMT på Odense Universitetshospital (OUH).Kidholm er ph. d. i sundhedsøkonomi og har de seneste 15 år arbejdet med medicinsk teknologivurdering på OUH. Siden 2010 har hans fokus især været på evaluering af og forskning i digitale sundhedsteknologier, og hans forskning har således været en del af grundlaget for den omfattende brug af blandt andet telemedicin, hjemmemonitorering og videosamtaler, som OUH i dag tilbyder patienterne.Kristian Kidholms ph. d.- afhandlingblev i sin tid gennemført i samarbejde med UlykkesAnalyseGruppen ved OUH, og han har efterfølgende deltaget i sundhedsøkonomiske analyser af brug af telemedicin i behandlingen af blandt andet diabetiske fodsår, for tidligt fødte børn, KOL og hjertesygdomme.Hans forskning har i øjeblikket fokus på effekterne af Region Syddanmarks kommende brug af elektroniske patientjournaler, metoder til bedre implementering af digitale teknologier i kliniske afdelinger og retningslinjer for vurdering af værdien af kunstig intelligens i sundhedsvæsenet.Som sundhedsøkonom har han både interesse for de økonomiske omkostninger og gevinster ved ny teknologi, men også mulige effekter på uligheden i sundheden i befolkningen.Eftersom Danmark er et foregangsland med digitale sundhedsteknologier har Kristian Kidholm også et betydeligt internationalt samarbejde.I august var han således leder af et ph. d.-kursus med fokus på forskningsmetoder inden for udvikling og evaluering af telemedicin i samarbejde med forskere fra universiteterne i Berkeley og Sacramento samt Harvard Medical School.Han underviser desuden i digitale sundhedsteknologier og medicinsk teknologivurdering på medicinstudiet samt på en række andre kandidatuddannelser og speciallægeuddannelser på SDU.BLÅ BOG KRISTIAN KIDHOLM52 år og bor i Ringe.Giftmed Pia Langhoff, som er afdelingsleder på SDU.De har tre børn, Maiken, Astrid og Asger.Som gammel vandpolospiller er Kristian Kidholm glad for en svømmetur i Midtfyns Fritidscenter om morgenen før arbejde og for at løbe i de midtfynske bakker -med 80' er-disco i sine airpods.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2019-11-09
+          &nbsp;·&nbsp; e76e65af
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.844</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.527</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.572</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Zuckerberg er ikke til bongopatter</h4>
+        <div>
+          Facebooks censur griber om sig. Alt fra nøgne mennesker til mishagsytringer om det moderne Tyrkiets grundlægger bortcensureres. Det er bekymrende i en verden, hvor stadig flere bruger Facebook som deres primære nyhedskildeHvad har 70-er-kunstnerkollektivet Røde Mors logo og 70-ernes ikoniske billede af en lille, løbende og napalmforbrændt vietnamesisk pige med hinanden at gøre?Svaret er, at de begge blev bortcensureret fra Facebook. Ikke af en emsig redaktør, men af en computer. Af en såkaldt algoritme.En algoritme er ifølge Politikens betydningsordbog en matematisk »sæt af anvisninger, der gør én i stand til at dele en kompliceret opgave op i en række simplere opgaver«. Eller, som Wikipedia beskriver det:»en opskrift på at løse et problem af en bestemt type, som leverer en løsning uanset den konkrete problemsituations udseende«.Ud over den algoritmiske Berlinmur anvender Facebook tilsyneladende også hundreder af underbetalte -censorer- fra tredjeverdenslande til at holde øje med og fjerne uønsket indhold.Facebook fjerner f.eks. uønskede billeder af dele af kvindekroppen. Pigen i Vietnam-billedet er et nøgent barn. Det tillades ikke, punktum.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-09-14
+          &nbsp;·&nbsp; e5e1bac6
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.537</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.572</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.678</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kendt mobilfirma bløder millioner: Google og Skat kan koste det livet</h4>
+        <div>
+          TIP OS: Kender du mere til sagen? Del din viden i en mail tilHalvdelen af de 300 ansatte er fyret, og chefen for det hele overvejer nu at sende nogle af de mange millioner, han har trukket ud af firmaet, tilbage.Sådan er situationen i mobilfirmaet Mytrendyphone, der, fordi Google hele tiden ændrer sin algoritme:- Vi har ligget nr. 1., når folk søger på mobilcovers, siger Silvan Popovic, der har stiftet firmaet, som han også ejer via et britisk selskab.- Men når Google ændrer sin algoritme, taber vi nogle placeringer. Det betyder, at vi mister 20-30 procent af trafikken hver gang.Og nedturen er gået stærkt. En gennemgang, Ekstra Bladet har lavet af firmaets regnskaber, afslører nemlig, at Mytrendyphone indtil nu har været en guldrandet forretning for Silvan Popovic.Han har således trukket 24,2 millioner kroner ud af firmaet de seneste fem år. Senest med syv millioner sidste år.Truet af stor momssagNogle af de millioner kan han nu blive tvunget til at sende tilbage til firmaet eller lade det gå konkurs. Ifølge det seneste regnskab lurer en større momssag også i horisonten:'Der er økonomisk usikkerhed forbundet med udfaldet af en gennemgang af selskabets udenlandske momsforhold.''Såfremt udfaldet går selskabet imod, kan dette have en væsentlig betydning for selskabets økonomisk stilling og fremtid. Hvorved selskabet ikke vil være i stand til at indfri deres forpligtelser.'TIP OS: Kender du mere til sagen? Del din viden i en mail til
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2018-08-06
+          &nbsp;·&nbsp; e6d93e3b
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.977</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.502</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.622</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Coca-Cola fjerner kampagne</h4>
+        <div>
+          Coca-Colas Twitter-kampagne #MakeItHappy, som blev lanceret under Super Bowl og anvendte en automatisk algoritme til at vende negative tweets til billeder af glade ting, blev kapret af Gawker. Coca-Cola er blevet tvunget til at fjerne reklamekampagnen, efter at store bidder af indledningen til Hitlers Meins Kampf blev tweetet ved hjælp af en såkaldt bot, som er et computerprogram, der automatisk udfører en funktion.Det skriver The Guardian.&quot;Målet med Coca-Colas kampagne var at tackle den omsiggribende negativitet, som forurener de sociale medier og kommentartråde på tværs af internettet. (...) Opbygningen af en bot, som forsøger at sprede had gennem #MakeItHappy-budskabet, er et perfekt eksempel på den omfattende online negativitet, som Coca-Cola netop ønskede at adressere i kampagnen, siger Coca-Cola i en pressemeddelelse.Ritzau FinansArkivfoto: Scanpix.Arkivfoto: Scanpix.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-02-09
+          &nbsp;·&nbsp; e4d029d5
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.696</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.52</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.618</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lingvistisk går forud for machine learning hos tekstanalyse-specialist</h4>
+        <div>
+          For tiden kan man få indtryk af, at maskinlæring er svaret på det meste. Det kan utvivlsomt bruges til meget, men samtidig er maskinlæring ofte afhængig af store datamængder. Det har man ikke altid, for eksempel når målet er at hente viden ud af ustrukturerede data, for eksempel dokumentsamlinger i relativt små virksomheder.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-11-20
+          &nbsp;·&nbsp; e6faf228
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.819</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.792</kbd>
+            <kbd data-tooltip="New technologies">L80_NEWTEC&nbsp;0.593</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.746</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Norges BankID benytter -dødt- kryperingsbibliotek</h4>
+        <div>
+          Norges digitale signatur BankID anvender dele af open source biblioteket -crypto.js-, der ikke har været opdateret i mere end to år. Firmaet bag BankID fastholder, at brugen af biblioteket endnu ikke giver anledning til sikkerhedsbekymringer. Af Martin Bernth Tirsdag, 7. juli 2015 - 12:49Den norske fælles digitale signatur BankID trækker på et open source krypteringsbibliotek, som ikke længere bliver vedligeholdt aktivt. Der er dog intet, der giver anledning til sikkerhedsbekymringer på den baggrund, lyder det fra firmaet bag.Det skriver Digi.noKrypteringsbiblioteket -crypto.js- er en samling af standard-krypteringsalgoritmer, der kan bruges i JavaScript, som både BankID og NemID er skrevet i. Det er denne samling, der ifølge Digi.no ikke er blevet opdateret siden starten af 2013, men det ændrer ikke på sikkerheden i BankID, lyder det fra firmaet bag.Det har nemlig sikret sig, at det kun gør brug af tredjepartskode, som lever op til visse standarder og har således kun taget de algoritmer i biblioteket i brug, som vurderes sikre, mens de dele af crypto.js, der anses for utilstrækkelige (som angiveligt den tilfældige nummergenerering, red. ), er blevet erstattet af egen kode.Men ifølge BankID-s såkaldte -risk assessment--procedure skal brugen af tredjepartssoftware kvalificeres ud fra i hvor høj grad det vedligeholde af betroede personer eller institutioner. Det lader altså ikke til at gælde længere, og derfor vil BankID nu revurdere den fortsatte brug af crypto.js.Via: Digi.no
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-07-07
+          &nbsp;·&nbsp; e51d3318
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.949</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.578</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.723</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI har fået en vigtig rolle i Googles søgealgoritmer</h4>
+        <div>
+          Det er med god grund, at Alphabets chefer for nylig fortalte, hvordan de vil prioritere en større del af overskuddet på udviklingen af kunstig intelligens.Google er en af de største sponsorerer af forskning i kunstig intelligens, som de selv kan bruge til bl.a. talegenkendelse og oversættelse. Nu løfter Google sløret for et system, som ved hjælp af kunstig intelligens bedre kan forstå dine søgeforespørgsler. Det går under navnet RankBrain.Greg Corrado forsker i kunstig intelligens for Google og kunne forleden fortælle om en del af deres præstationer til Bloomberg .Systemet håndterer de søgeforespørgsler, som er nye og overraskende. RankBrain formår at genkende de nye ord og gætte på andre relevante ord og sammenhænge, som kan bruges til at filtrere søgeresultater.Over de seneste måneder har RankBrain varetaget en betydelig del af de mange millioner af søgninger i sekundet som foretages på Googles hjemmeside.RankBrain er kun et værktøj ud af hundreder af processor, der indgår i Googles søgealgoritmer. Men på kort tid er AI værktøjet blevet det tredje vigtigste i algoritmen ifølge Corrado.Som en test havde Google sammenlignet den kunstige intelligens med evnerne hos Googles menneskelige søge-softwareudviklere. Imens at udviklerne gættede rigtigt på, hvilke resultater der bør prioriteres 70 pct. af tiden lå RankBrain på 80 pct.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-10-28
+          &nbsp;·&nbsp; e548e4cc
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.677</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.644</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PH. D.-FORSVAR</h4>
+        <div>
+          Jochen Maurer, cand. scient., ph. d.-studerende ved Kemisk Institut, Faculty of Science and Technology, Aarhus Universitet, forsvarer fredag den 24. februar sin ph. d.-afhandling med titlen: &quot;Tomographic Reconstruction of 3-dimensional Photoelectron Momentum Distributions using Aligned Molecules&quot;.Inden for lægevidenskab er tomografien veletableret metode til at rekonstruere tredimensionelle billeder af indre dele af menneskekroppen.I røntgen computed tomography (CTscanning) roteres patienten om en akse, og todimensionelle projektioner af absorptionen af røntgenstråling optages for et diskret sæt af projektionsvinkler. Den fulde tredimensionelle fordeling af absorptionskoeffi-cienten rekonstrueres af en algoritme for at generere billederne, og i løbet af sit ph. d.-projekt har Jochen Maurer tilpasset denne tomografiske metode til fordelinger af fotoelektroner fra alignede og tilfældigt orienterede molekyler i gasfasen.Netop denne metode giver indsigt i elektronfordelingen i polarisationsplanen, hvilket er en svært tilgængelig synsretning med traditionel velocity map imaging. Ved denne synsretning målte Jochen Maurer kontraintuitive forskydninger fra de forventede 90 grader for vinklen mellem det øjeblikkelige elektriske felt og den mest sandsynlige udsendelsesretning for elektroner.Det er første gang, at disse vinkelforskydninger måles for komplekse molekyler.Forsvaret er offentligt og finder sted i bygning 1514, auditorium 1, Kemisk Institut, Aarhus Universitet.
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2012-02-23
+          &nbsp;·&nbsp; e31cd6fa
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.981</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.762</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.578</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fokus på 19 særlige sundhedsindsatser</h4>
+        <div>
+          SUNDHED: Regionsrådet har udpeget 19 indsatser og temaer på sundhedsområdet, som skal følges særligt tæt i 2018. De 19 indsatsområder er patientinddragelse, samarbejde med frivillige, Patient Rapporterede Oplysninger (PRO), patientrettigheder, hygiejne-målrettede indsatser til nedbringelse af infektioner på sygehusene, arbejdet med forbedring af den kliniske kvalitet via Regionernes Kliniske Kvalitets Program (RKKP) og lærings-og kvalitetsteam, reduceret brug af tvang, patientansvarlig læge, rekruttering af praktiserende læger, implementering af PLO-overenskomst på kronikerområdet, ny sundhedsaftale og opfølgning på rammepapir, forskningsstrategi, implementeringsplan for innovationsstrategien, digitalisering, kunstig intelligens, internet of things, personlig medicin m. v. m, fire nye demensudrednings-og behandlingsenheder, ny model for styring og finansiering af sundhedsvæsenet, den syddanske, forbedringsmodel, rekruttering og god ledelse. 
+        </div>
+        <footer>
+          <em>Ugeavisen Esbjerg</em>
+          &nbsp;·&nbsp; 2018-01-03
+          &nbsp;·&nbsp; e69042eb
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.607</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.525</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Så udbredt er ny teknologi i Danmark</h4>
+        <div>
+          København*Over halvdelen af danske virksomheder bruger avanceret teknologi såsom internetforbundne sensorer, satellittjenester og robotter. *Mest udbredt er det inden for handels- og transportsektoren, hvor 22 procent af virksomhederne har taget moderne teknologi - primært sensorer og satellittjenester - til sig.*Robotter er mest udbredt i de store industrivirksomheder med mindst 250 medarbejdere. 65 procent af disse har implementeret moderne maskiner.*Nutidens måske mest kontroversielle teknologi, kunstig intelligens, anvendes endnu kun af omkring 5 procent af alle danske virksomheder.Kilde: Danmarks Statistik. /ritzau/Denne nyhed må publiceres digitalt bag paywall fra d. 21/09/2018 13:30Denne nyhed publiceres ikke på NET-tjenesten
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-09-21
+          &nbsp;·&nbsp; e6e82e2c
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.559</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.673</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Video: Sådan kan man lave billedgenkendelse hos Baidu - uden kode</h4>
+        <div>
+          Nu er bølgen også nået til maskinlæring.Den kinesiske søgemaskinegigant Baidu har sendt sit bud på gaden under navnet EZDL (&quot;nem deep learning.&quot;) Det skriver ADTMag.EZDL anvender en fire-trins proces til projektudvikling og implementering af brugerdefinerede maskinlærings-modeller: Opret en model, upload og opmærk billeder eller andre ting, træn og test modellen og implementer resultatet med et cloud-API eller et offline udviklingsværktøj (SDK).Ifølge Baidu er værktøjet målrettet mod små og mellemstore virksomheder.»Selvom du ikke har haft nogen erfaring med programmering, kan du hurtigt bygge modeller på denne platform uden barrierer,« siger Yongkang Xie, som er teknologichef for Baidu EZDL.»EZDL kan hjælpe virksomheder med begrænset AI-ekspertise og it-ressourcer til hurtigt og effektivt at gennemføre træning med deep learning og implementering, selv med kun en lille mængde data.« Baidu fremhæver tre slags brugsscenarier:En model til automatisk klassificering af billeder med brugerdefinerede klasse til opgaver som: Klassificering af billeder af boliger, genkendelse af kinesisk urtemedicin, vilde fugle og frøer, samt industriel kvalitetskontrol i forbindelse med identifikation af defekte produkter.En model til automatisk detektering af objekter i billeder og optælling af antal objekter efter klasse, til opgaver som eksempelvis optælling af celler inden for medicin.En klassifikationsmodel til at genkende forskellige typer lydtyper eller detektere klasser af begivenheder, beregnet til opgaver som sikkerhedsovervågning og videnskabelig forskning.EZDL er en del af dets kunstig intelligensprojekt, der går under navnet Baidu Brain.På videoen herunder kan man se anvendelsen af EZDL.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-09-20
+          &nbsp;·&nbsp; e6e7d057
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.833</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.851</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.614</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Otte ud af ti anser klimaforandringer for katastrofal risiko</h4>
+        <div>
+          84 procent af folk anser nu klimaforandringer for en global katastrofal risiko, viser ny, stor undersøgelse.Godt otte ud af ti er klar til at ændre deres levestandard, hvis det forhindrer fremtidige klimakatastrofer.Det viser en ny undersøgelse om globale trusler blandt 8000 mennesker i USA, Kina, Indien Storbritannien, Australien, Brasilien, Sydafrika og Tyskland.84 procent af folk anser nu klimaforandringer for en &quot;global katastrofal risiko&quot;.Dermed ligger frygten for klimaforandringer lige under frygten for omfattende miljøbeskadigelse og politisk motiveret vold, der eskalerer til krig.Det fremgår af rapporten Global Catastrophic Risks 2017, der offentliggøres af the Global Challenges Foundation onsdag.Svarene indikerer, at mange mennesker nu ser klimaforandringer som en større trussel end andre traditionelle bekymringer som epidemier, befolkningsvækst, brug af masseødelæggelsesvåben og stigningen i kunstig intelligens./ritzau/reuters
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-05-24
+          &nbsp;·&nbsp; e644893c
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.884</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.546</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan løser kvantecomputere lineære ligninger</h4>
+        <div>
+          To kvante-gates løser to ligninger med to ubekendte. Forskerne forventer, at princippet kan udvides til simple løsningsmetoder for meget mere komplicerede ligningssystemer.Kvantecomputere vil være almindelige computere langt overlegne til at løse systemer af lineære ligninger, som optræder i alle mulige sammenhænge inden for ingeniørvidenskab og fysik.Med en algoritme til klassiske computere øges antallet af trin i takt med antallet af ligninger. I en kvantecomputer øges antallet af trin 'kun' logaritmisk med antallet af trin.Seth Lloyd fra Massachusetts Institute of Technology i USA beskrev allerede en sådan kvantealgoritme i en artikel i 2009.Nu har Stefanie Barz fra Universität Wien i Østrig virkeliggjort Seths algoritme på en kvantecomputer til løsning af to ligninger med to ubekendte med hjælp af to fotoner med sammenfiltrede ('entanglede') kvantetilstande.Ligningssystemet er for simpelt til at have en praktisk relevans, men det er en nyttig eftervisning af, at algoritmen virker i praksis.Seth Lloyd siger til New Scientist:»Det er meget flot, at de har været i stand til at implementere det.«To controlled NOT-gatesKvantecomputeren er opbygget med to separate controlled NOT-gates ( CNOT )En CNOT har to input-kvantebits (qubits) og to output-kvantebits. Den skifter tilstanden af den anden kvantebit, hvis, og kun hvis, den første qubit er 1.Et lineært ligningssystem svarer til at finde en vektor x , givet et matrix A og en vektor b , således at:Ax = bDet er implementeret i det viste diagram, hvor man styrer b med hjælp af input til CNOT1 og matrix A af de indgående elementer mærket LU (local unitary operations). Derudover indeholder opstillingen diverse spejle, beamsplittere samt halvbølge- og kvartbølgeplader til at styre lyset rundt.Med den viste opstilling skal kvantetilstanden af fotonen i output 2 i CNOT2 være '1' (det vil være en bekræftelse på, at algoritmen er korrekt), og kvantetilstanden af fotonen i output 1 vil da være den ønskede løsning x .De to CNOT-gates er forbundet med fiberoptiske forbindelser.Stefanie Barz har implementeret algoritmen for tre forskellige værdier af matrix A . For hver af disse for to forskellige værdier af vektoren b og eftervist, at systemet giver det rigtige resultat i alle seks tilfælde.I konklusionen skriver Stefanie Barz, at fremtidige teknologisk fremskridt vil gøre det muligt at bruge flere end to CNOT-gates, så algoritmen kan udvides til større ligningssystemer. Hun skriver også, at det forhåbentligvis kan bane vejen for implementering af andre vigtige algoritmer, heriblandt nogle til løsning af ikke-lineære differentialligninger.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2013-03-06
+          &nbsp;·&nbsp; e3b0aaae
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.936</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.64</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>RETTELSER</h4>
+        <div>
+          Penge &amp; Privatøkonomi skrev i februar, at Nyboligs app Boligværdi vurderer værdien af din bolig ved hjælp af en algoritme. Nybolig oplyser i den forbindelse, at vurderingerne foretages af kædens ejendomsmæglere. I vores marts-nummer blev St. Tropez omtalt som et alpeskisportssted. Der skulle selvfølgelig have stået St. Moritz, som i øvrigt ligger i Schweiz og ikke i Frankrig. 
+        </div>
+        <footer>
+          <em>Penge og Privatøkonomi</em>
+          &nbsp;·&nbsp; 2016-03-22
+          &nbsp;·&nbsp; e5b1ef60
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.877</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.596</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.507</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Kristian Kidholm innovationsprofessor på SDU og OUH</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra Syddansk UniversitetDer er tale om en utraditionel stilling til en utraditionel forsker på et hospital. Kristian Kidholm er nemlig ph.d. i sundhedsøkonomi og har de sidste 15 år arbejdet med medicinsk teknologivurdering på OUH. Siden 2010 har hans fokus især været på evaluering af og forskning i digitale sundhedsteknologier, og hans forskning har således været en del af grundlaget for den omfattende brug af telemedicin, hjemmemonitorering, videosamtaler mv., som OUH i dag tilbyder patienterne, og som har bragt OUH i den internationale elite indenfor brugen af innovative digitale teknologier.Kristian Kidholms ph.d.-afhandling blev i sin tid gennemført i samarbejde med UlykkesAnalyseGruppen ved OUH, og han har efterfølgende deltaget i sundhedsøkonomiske analyser af telemedicinske interventioner i behandlingen af diabetiske fodsår, for tidligt fødte børn, KOL, hjertesygdom mv.  Hans forskning har i øjeblikket fokus på effekterne af Region Syddanmarks kommende EPJ-system, metoder til bedre implementering af digitale teknologier i kliniske afdelinger og retningslinjer for vurdering af værdien af kunstig intelligens i sundhedsvæsenet. Som sundhedsøkonom har han både interesse for de økonomiske omkostninger og gevinster ved ny teknologi, men også mulige effekter på uligheden i sundheden i befolkningen.Eftersom Danmark er et foregangsland med digitale sundhedsteknologier har Kristian Kidholm også et betydeligt internationalt samarbejde. I august måned var han således leder af et ph.d.-kursus med fokus på forskningsmetoder indenfor udvikling og evaluering af telemedicin i samarbejde med forskere fra UC Berkeley, UC Sacramento og Harvard Medical School.  Han underviser desuden i digitale sundhedsteknologier og medicinsk teknologivurdering på medicinstudiet samt på en række andre kandidatuddannelser og speciallægeuddannelser på SDU.  Kristian Kidholm er også leder af en af de fem profiler for kandidatstudiet i medicin på SDU, som har fokus på innovation og klinisk ledelse.Kristian Kidholm bor i Ringe på Midtfyn og er gift med Pia Langhoff, som er afdelingsleder på SDU. De har tre børn, Maiken, Astid og Asger. Som gammel vandpolospiller er Kristian Kidholm glad for en svømmetur i Midtfyns Fritidscenter om morgenen før arbejde og for at løbe i de midtfynske bakker - med 80'er-disco i sine airpods.Kontakt:Privatadresse: Vestervang 6, 5750 Ringe
+Mail: kristian.kidholm@rsyd.dk
+Fødselsdato: 9. oktober 1967Læs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/kristian-kidholm-innovationsprofessor-pa-sdu-og-ouh?releaseId=13582624
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-11-06
+          &nbsp;·&nbsp; e76d64b6
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.614</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.579</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Europæisk bilproduktion overlever næppe de næste 10 år</h4>
+        <div>
+          I 2030 vil mindre end 5 pct.af den globale bilproduktion foregå i Europa. Det vurderer et overvældende flertal af branchens ledere, viser KMPG's årlige rapport om bilindustrien. Det vil i så fald være en drastisk tilbagegang fra i dag, hvor omkring 15 pct. af verdens bilproduktion foregår i Europa.Et så markant fald i antallet af biler, der ruller ud fra de europæiske fabrikshaller, vil betyde en væsentlig reduktion af behovet for arbejdskraft i Europa. Ifølge den Europæiske Automobilproducentforening (ACEA) beskæftiger branchen i dag 13,3 mio. medarbejdere, hvilket svarer til 6,1 pct. af den samlede europæiske arbejdsstyrke.Tyskland rammes hårdtSærligt den direkte produktion vil lide under den forventende udflytning, og det vil i særdeleshed ramme lande som Tyskland hårdt, hvor ca. 800.000 personer i dag er beskæftiget i den direkte produktion, mens der i Danmark er beskæftiget lidt over 1.000 med autoproduktion.Interessant er det også, at EU-Kommissionen forudser en vækst i branchen - men at hele 80 pct. af væksten hos de europæiske bilproducenter kommer til at ske i lande uden for EU.Udfordringen er så massiv, at der er behov for at omstrukturere hele grundlaget for autobranchens forretningsmodel.Nogle vil være i stand til at automatisere deres produktion på baggrund af Industri 4.0 i så høj grad, at de kan fortsætte med at producere biler på europæisk grund. Industri 4.0 dækker over en gennemdigitalisering af samtlige produktionsprocesser ved hjælp af bl. a. cloudløsninger, Internet of Things og industrirobotter, der benytter kunstig intelligens.En mere ligetil forretningsmodel kan bestå af genbrug af biler og reservedele i stor skala, mens andre producenter vil dække markedet som underleverandører for whitelabel-produktion af biler på kontrakt for andre bilmærker.Derudover er der nogle nye muligheder i de kommende år for de europæiske bilproducenter i at arbejde med kundeoplevelsen, hvor delebilskoncepter, abonnementsordninger og sammensmeltning af offentlig og privat mobilitet er i spil.Hele 77 pct. af autobranchens ledere forudser også, at den teknologiske udvikling vil være under markant påvirkning af ekstern regulering.Det vil sige, at friheden til at innovere og præsentere nye kreative løsninger bremses eller ledes i bestemte retninger af massiv lovgivning. Det ses eksempelvis på global skala, hvor lande, der er rige på bestemte råstoffer fra politisk hold, dirigerer deres autoindustri i retninger, hvor der gøres brug af disse råstoffer.I Kina, der har en stor produktion af el, fokuseres der således på elbiler, mens USA, der har store reserver af gas og olie, understøtter udviklingen af forbrændingsmotorer.Vi mener, at der er behov for en klar, ensartet og målrettet politik på EU-plan, der udstikker retningslinjer for, hvor branchen skal bevæge sig hen, og under hvilke rammer det kan foregå.finans@finans.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-02-08
+          &nbsp;·&nbsp; e712a510
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.838</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.934</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Otte facts om Googles søgemaskine</h4>
+        <div>
+          1 Google lancerede sin søgemaskine 27. september 1998 -altså for 20 år siden.2 Hver måned gennemføres der i omegnen af 100 milliarder søgninger på Google.com.3 Mere end halvdelen af alle søgninger sker fra mobiltelefoner og tablets.4 I 2020 forventes over halvdelen af søgningerne i USA at være talesøgninger.5 Sidste år blev der foretaget cirka 2400 forbedringer af den algoritme, der får søgemaskinen til at fungere.6 &quot; At google&quot; blev et dansk verbum i 2002.7 Googles søgemaskine er tilgængelig på over 150 sprog.8 Den gennemsnitlige responstid på Google er et kvart sekund. Et gennemsnitligt blink med øjnene er en tiendedel af et sekund.KILDE: GOOGLE.
+        </div>
+        <footer>
+          <em>Avisen Danmark (eftermiddag)</em>
+          &nbsp;·&nbsp; 2018-09-28
+          &nbsp;·&nbsp; e6ea6804
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.959</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.967</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.505</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tekstiler med &quot;ansigtsprint- skjuler dig for kameraerne&quot;</h4>
+        <div>
+          Med Hyperface vil kunstnere skabe et tekstiltryk, der kan snyde algoritmer til at se et utal af ansigter og dermed holde bæreren af stoffet uidentificeret. Foto: Adam HarveyVed at bære stof med et mønster af, hvad computeralgoritmer anser for ansigter i massevis, kan bæreren slippe udenom ansigtsgenkendelse.Af Liv Bjerg LillevangMed projektet Hyperface vil kunstneren Adam Harvey tage kampen op mod Facebook og reklamevirksomheders algoritmer til ansigtsgenkendelse og dermed sikre privatliv på internettet.Hyperface er et stoftryk, der i en computeralgoritmes optik bliver et virvar af øjne, næser og munde. Med nøje udvalgte sammensætninger af pixels i forskellige størrelser, skal stoffet således snyde algoritmen til at se ansigter overalt på billedet, hvor tekstilet er synligt.På den måde er det Adam Harveys ønske, at bærere af Hyperface-tekstiler kan sikre sig anonymitet på internetbilleder. Det skriver The Guardian, til hvem privacy-kunsteren fortæller, at klædet skal »overlæsse en algoritme med det, den søger, ved at mætte et område med ansigter og dermed aflede computeralgoritmens blik«.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-01-04
+          &nbsp;·&nbsp; e60db403
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.72</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.531</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Estland: Kunstig intelligens kan defineres som individder eget af andre</h4>
+        <div>
+          Af Rebekka Falsing 11. okt 2017 kl. 07:54 I Estland arbjeder finansminsiteriet på en plan, som skal definere, hvordan kunstig intelligens, AI, står lovmæssigt. Indtil videre er et af forslagene, at robotterne kan få en status som ligger mellem et individ, og et objekt som ejes af andre. Robotterne vil i denne sammenhæng blive kaldt for 'robot-agenter'....
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-10-11
+          &nbsp;·&nbsp; e6742423
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.948</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.565</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.661</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google Cloud lægger over to millioner kroner i Python-udvikling</h4>
+        <div>
+          Kørselsmiljø, værktøjer og sikkerheden i pakkesystemet får en kontant saltvandsindsprøjtning fra it-kæmpen.Google Cloud har doneret 350.000 USD, svarende til 2,16 millioner kroner, til Python Software Foundation, som står bag sproget af samme navn. Det skriver InfoworldMålet for donationen er støtte udviklingen af CPython, som er det officielle kørselsmiljø, samt forbedring af sprogets grundlæggende værktøjer og styrke sikkerheden af Pythons Pypi-pakkesystem.Google benytter blandt andet Python og dets pakkesystem i forbindelse med firmaets Tensorflow-produkt til kunstig intelligens. I en meddelelse skriver Google Cloud, at Python er af »kritisk vigtighed«  for firmaet og dets kunder.Udover kunstig intelligens er Python også et populært afviklingsmiljø for mange af firmaets tjenester, såsom Google App Engine og Google Cloud Functions.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2021-02-18
+          &nbsp;·&nbsp; e821bd91
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.972</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.631</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.567</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

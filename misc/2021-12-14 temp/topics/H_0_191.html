@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_191 <kbd>H_0_191</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kunstig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kunstige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>robotternes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>menneskelig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overtage</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>maskinerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligente</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>perspektiverne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kofod-petersen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>x.ai</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ki</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligenser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bolander</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligensers</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ufejlbarlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hannibal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>signaturprojekter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>chatbot</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pepper</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>it-branchens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>maskinernes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>jeopardy</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligenssystemer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>efterligne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ønskelige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>efterligner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overhaler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>johanna</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligens'</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningsprogram</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>navntoft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>selvlærende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>russell</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kridtet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>terminator-filmene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>verdenskendt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligenskunstig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mejer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grundfosprisen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>maktabi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>scenario</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fordomsfuld</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tay</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>chatrobotter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligens-systemer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>computersystemet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>her.hør</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>maskiners</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>jia</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undervandsrobotter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>schmidhuber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>oceanerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>robotstøvsugeren</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>flösser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overmenneskelig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nikola</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>danaylov</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremtidsudsigterne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dao</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>magenta</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eck</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>minka</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_191 DESC LIMIT 50</pre>
+      <article>
+        <h4>Bliv klogere på kunstig intelligens</h4>
+        <div>
+          FOREDRAG Forskeren Thomas Bolander gæster Viby Bibliotek for at fortælle om kunstig intelligens. Det sker torsdag 23. oktober klokken 16.30-18.30. Foredraget vil belyse den kunstige intelligens' historie, herunder forskellige tiders opfattelser af hvad kunstig intelligens egentlig er eller bør være. Tilmelding på bibliotekets hjemmeside. 
+        </div>
+        <footer>
+          <em>Lokalavisen Aarhus Syd</em>
+          &nbsp;·&nbsp; 2014-10-21
+          &nbsp;·&nbsp; e4a20eda
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Buzz i Praksis - webinar om kunstig Intelligens</h4>
+        <div>
+          Anders Kofod-Petersen giver en introduktion til værktøjskassen for kunstig intelligens. Hvordan kan vi kategorisere forskellige typer af kunstig intelligens, og hvad er forskellen på machine learning, deep learning og reinforcement learning?Brugen af kunstig intelligens handler om at vælge de rigtige værktøjer. Anders introducerer og spejler de forskellige værktøjer til relevante cases.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-06-16
+          &nbsp;·&nbsp; e7c0ed03
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.63</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forstå kunstig intelligens</h4>
+        <div>
+          DR 2 23.00 Mange frygter, at kunstig intelligens vil løbe løbsk. At robotter vil overtage vores job og betyde enden for menneskeheden. &quot; Skal vi frygte kunstig intelligens?&quot; undersøger, hvordan kunstig intelligens vil transformere vores verden og nogle af de måder, den allerede har, samt de farer, der er ved kunstig intelligens. Fra frygten for arbejdsløshed, ulighed og til rivalisering mellem USA og Kina. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-11-29
+          &nbsp;·&nbsp; e7773e93
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.761</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.548</kbd>
+            <kbd data-tooltip="AI">L80_AI&nbsp;0.547</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.52</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Fire hurtige om kunstig intelligens</h4>
+        <div>
+          Palo Alto* Kunstig intelligens er programmerede maskiner. De efterligner et eller flere aspekter af den menneskelige intelligens, herunder abstrakt tænkning, analyse, løsning af problemer.* Den har hverken bevidsthed, længsler eller ønsker.* Der findes mange forskningsområder inden for kunstig intelligens.* Eksempler på kunstig intelligens er selvkørende biler, oversættelsesprogrammer og skakcomputere.Kilder: Den Store Danske og Ingeniøren./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-08-03
+          &nbsp;·&nbsp; e65b5ab5
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.952</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.529</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens: Det er ikke i morgen - det er lige nu, fra du slår øjnene på</h4>
+        <div>
+          Kunstig intelligens vil forandre verden. Kunstig intelligens er en trussel. Kunstig intelligens redder liv. Kunstig intelligens - eller AI - bliver diskuteret i stor stil i disse år og herhjemme har regeringen meldt ud, at Danmark skal være blandt verdens førende lande i brugen af kunstig intelligens inden 2025.Men hvad betyder begrebet helt præcist? Hvis jeg siger kunstig intelligens, hvad er så det første, der falder dig ind? En snedig robot? En selvkørende bil? Eller måden, Netflix præsenterer dig for en ny serie på?Ph.d. i kunstig intelligens Thomas Terney har besluttet sig for at forklare kunstig intelligens for alle i bogen Kampen om fremtiden, for, som han siger:»Vores forestillinger og hang til at kigge ud i fremtiden stiller sig i vejen for at forstå, hvad kunstig intelligens egentlig er, og hvilke muligheder teknologien åbner for allerede nu.« 
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2019-02-08
+          &nbsp;·&nbsp; e7131240
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.914</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.744</kbd>
+            <kbd data-tooltip="AI">L80_AI&nbsp;0.521</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Machine Learning</h4>
+        <div>
+          Synspunkt: Virksomheder, der har succes med kunstig intelligens, går all-in Bent Dalager,Nordic Head of NewTechKPMG Danmark,1. okt 10:30 Ny undersøgelse af praktisk implementering af teknologier som maskinlæring og kunstig intelligens viser, at forsigtige små-projekter ikke er nok. De virksomheder, der har succes med kunstig intelligens, går all-in.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-10-01
+          &nbsp;·&nbsp; e75f3c2f
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.802</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.716</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.574</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Den kunstige intelligens</h4>
+        <div>
+          DR 2 21.10 Ben Goertzel har viet sit liv at udvikle kunstig intelligens. Men hvordan programmerer man egentlig kunstig intelligens? Den engelske dokumentar &quot; Jagten på kunstig intelligens&quot; følger Goertzel og hans teams arbejde fra deres base i Hongkong, hvor kæmper med tekniske, etiske og personlige udfordringer samt en stram deadline udstukket af den amerikanske regering. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-04-28
+          &nbsp;·&nbsp; e63b2e02
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.813</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.524</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Regeringen har fire fokuspunkter for kunstig intelligens</h4>
+        <div>
+          KøbenhavnDer er afsat 60 millioner kroner til de nye initiativer i regeringens strategi for kunstig intelligens.Her er regeringens sigtelinjer for den danske udvikling og anvendelse af kunstig intelligens:1. Danmark skal have et fælles etisk grundlag for kunstig intelligens med mennesket i centrum.- Virksomheder og offentlige myndigheder skal have et stærkt fokus på dataetik. Det skal omfatte ansvarlighed, sikkerhed og gennemsigtighed i brugen af kunstig intelligens. 2. Danske forskere skal forske i og udvikle kunstig intelligens.- Forskere i Danmark skal forske i kunstig intelligens - både grundforskning og mere anvendelsesorienteret forskning. Det skal bane vejen for, at der udvikles brugbare teknologiske løsninger til den enkelte, virksomhederne og den offentlige sektor.3. Danske virksomheder skal opnå vækst ved at udvikle og anvende kunstig intelligens.- Det er ambitionen, at danske virksomheder udnytter strategiens fokus på ansvarlig anvendelse af kunstig intelligens i deres forretningsmodel, så det kan blive et konkurrenceparameter, såvel nationalt som internationalt. 4. Den offentlige sektor skal anvende kunstig intelligens til at tilbyde service i verdensklasse.- Kunstig intelligens skal anvendes til at forbedre den offentlige service med udgangspunkt i borgernes behov.Kilder: National strategi for kunstig intelligens. /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-03-14
+          &nbsp;·&nbsp; e71dc14f
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.573</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.966</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.819</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.546</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens på bibliotek</h4>
+        <div>
+          SØNDERBORG: Kunstig intelligens kan ændre vores fremtid.Men skal vi være bange for teknologien eller vil den hjælpe os? På Biblioteket Sønderborg kan man torsdag d. 7. marts kl. 14 høre Thomas Bolander fortælle om kunstig intelligens.Thomas Bolander vil fortælle om den teknologiske udvikling, der er i fuld gang.Selvkørende biler og højt specialiserede robotter er ikke længere kun noget, vi ser i science fiction-film.Thomas Bolander er lektor ved DTU Compute. Hans forskning er centreret om kunstig intelligens med særligt fokus på social intelligens./ EXP.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Sønderborg</em>
+          &nbsp;·&nbsp; 2019-03-06
+          &nbsp;·&nbsp; e71aec30
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.984</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.688</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hvornår er kunstig intelligens forklaret tilstrækkeligt?</h4>
+        <div>
+          Vi anvender kunstig intelligens på stadig flere områder, og beslutninger baseret på kunstig intelligens kommer tættere på at påvirke vores privatliv. I den forbindelse er der dukket mange begreber op, som explainable (forklarlig) kunstig intelligens, interpretable (fortolkbar) maskinlæring, transparent kunstig intelligens og intelligible (forståelig) kunstig intelligens. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-09
+          &nbsp;·&nbsp; e7be44e9
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.835</kbd>
+            <kbd data-tooltip="AI">L80_AI&nbsp;0.512</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hvis kunstig intelligens skal give mening i fremtiden, er det afgørende, at den får sociale evner</h4>
+        <div>
+          Vi kommer til at interagere mere med kunstig intelligens i fremtiden - både i vores hjem, på arbejdspladserne og på hospitalerne. Og det stiller høje krav til robotternes situationsfornemmelse og sociale intelligens, skriver DTU-professor Thomas Bolander i dette uddrag fra hans nye bog 'Hvordan ser fremtiden ud med kunstig intelligens?'Der er ingen tvivl om, at kunstig intelligens kommer til at spille en større og større rolle i fremtiden. Kunstig intelligens kommer ikke længere blot til at styre lagerrobotter eller planlægge ruter. Den flytter også ind på hospitalerne og i vores hjem.Og jo mere og tættere robotter omgås mennesker, des højere krav stilles der til dem og deres sociale evner. Men hvordan giver man egentlig kunstig intelligens sociale evner? Bør robotter overhovedet have dem? Og hvad betyder det for fremtiden for kunstig intelligens og vores interaktion med disse systemer?Det er nogle af de spørgsmål, Thomas Bolander, ph.d. og professor i logik og kunstig intelligens på DTU, stiller i sin nye bog Hvordan ser fremtiden ud med kunstig intelligens? Følgende er et uddrag fra bogen.Vores abonnenter kalder os kritisk, seriøs og troværdig.Prøv en måned gratis.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2019-11-05
+          &nbsp;·&nbsp; e76cfabe
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.966</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.82</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hvornår er kunstig intelligens bedst?</h4>
+        <div>
+          Thomas Bolander fra DTU Compute giver 13. marts på Allerød Bibliotek et bud på fremtidenKunstig intelligens er i rivende udvikling og er på vej til at indtage alle elektroniske apparater omkring os, samt danne grundlag for fremtidens fører løse biler, hospitalsrobotter osv. Men hvad er kunstig intelligens overhovedet og hvordan adskiller det sig fra traditionel programmering af computere - og fra menneskelig intelligens?Det kan man høre mere om ved foredraget 'Kunstig intelligens - hvor længe er mennesket klogest'tirsdag 13. marts kl. 19 på Allerød Bibliotek med Thomas Bolander, ph.d., lektor ved DTU Compute og forsker i logik og kunstig intelligens.Er jobbet i fareSkal vi frygte, at kunstig intelligens og robotter overtager vores job - eller måske endda verdensherredømmet?Foredraget vil belyse den kunstige intelligens' historie, give indblik i ligheder og forskelle mellem menneskelig og kunstig intelligens, samt komme med et bud på fremtidsperspektiverne.Thomas Bolanders forskning fokuserer primært på brugen af logik til modellering af menneskelig planlægning, ræsonering og problemløsning.Af særlig interesse er modellering af sociale fænomener og social intelligens med henblik på at kunne lave computersystemer som kan agere intelligent i forhold til mennesker og andre computersystemer.I 2006 modtag han prisen som årets underviser på DTU.Arrangør er LOF Øresund i samarbejde med Allerød Bibliotek og Kulturhus. Pris 175 kroner.jesl
+        </div>
+        <footer>
+          <em>Nytomnordsjælland.dk</em>
+          &nbsp;·&nbsp; 2018-02-23
+          &nbsp;·&nbsp; e6a1bafb
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.982</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.574</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.514</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hvor længe er mennesket klogest? Foredrag om kunstig intelligens</h4>
+        <div>
+          ALLERØD: Kunstig intelligens er i rivende udvikling og er på vej til at indtage alle elektroniske apparater omkring os, samt danne grundlag for fremtidens førerløse biler og hospitalsrobotter.Men hvad er kunstig intelligens overhovedet, og hvordan adskiller det sig fra traditionel programmering af computere? Og fra menneskelig intelligens? Det fortæller Thomas Bolander, der er ph. d og lektor ved DTU Compute, om ved et foredrag på Allerød Bibliotek.Foredraget giver den kunstige intelligens' historie, giver indblik i ligheder og forskelle mellem menneskelig og kunstig intelligens og kommer desuden med et bud på fremtidsperspektiverne.Thomas Bolander forsker i logik og kunstig intelligens.Hans forskning fokuserer primært på brugen af logik til modellering af menneskelig planlægning og problemløsning. Af særlig interesse er modellering af sociale fænomener og social intelligens med henblik på at kunne lave computersystemer, som kan agere intelligent i forhold til mennesker og andre computersystemer.Foredraget arrangeres i samarbejde med LOF Øresund og finder sted på Allerød Bibliotek tirsdag den 13.marts klokken 19. Der er stadig ledige billetter til arrangementet, som det koster 175 kroner at deltage i.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2018-03-05
+          &nbsp;·&nbsp; e6a67551
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.965</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.622</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Foredrag om perspektiverne i kunstig intelligens</h4>
+        <div>
+          SØNDERBORG: IDA Sønderjylland/ Ingeniørforeningen er tirsdag 4. september arrangør af et foredrag om kunstig intelligens. Det foregår klokken 16 til 18 i Alsion.Tilmeldingsfrist er torsdag 30. august. Der er 80 ledige pladser.Foredraget diskuterer perspektiverne i kunstig intelligens for videnskaben, samfundet og industrien. Perspektiverne bliver illustreret gennem et bredt spektrum af de nyeste anvendelser og landvindinger på området.Foredraget er på engelsk./ EXP.
+        </div>
+        <footer>
+          <em>Ugeavisen Sønderborg</em>
+          &nbsp;·&nbsp; 2018-07-24
+          &nbsp;·&nbsp; e6d51d55
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.8</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.584</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.514</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan udnytter du kunstig intelligens i din forretning</h4>
+        <div>
+          Body På kurset i kunstig intelligens kan du sætte dig ind i begreber som machine learning og robotics, lære om byggeklodserne og se mulighederne, så du som leder kan være med til at sætte en retning for din virksomheds fremtid.På kurset vil der bl.a. blive gennemgået:1. Lederens rolle som digital agendasætter2. Forståelse af kunstig intelligens gennem en introduktion til teknologien3. Identifikation af anvendelsesmuligheder for kunstig intelligens både internt og i forhold til nye produkter og services4. Planlægning og eksekvering af projekter med kunstig intelligens5. Etiske overvejelser ved intelligente produkter og servicesDet todages kursus henvender sig til dig, som interesserer dig for kunstig intelligens og digitalisering ud fra en forretningsmæssig tilgang. Det er IDA, der står bag arrangementet.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-04-15
+          &nbsp;·&nbsp; e7aa39cc
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.913</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.802</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.532</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.61</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Googles søgemaskine skal udvikles af kunstig intelligens</h4>
+        <div>
+          Google har allieret sig med eksperter i kunstig intelligens, der har arbejdet på at udvikle Googles søgemaskines algoritmer. Det teknologiske fremskridt markerer en ny æra i Googles historie, hvor kunstig intelligens på sigt kan erstatte menneskelig intelligens.Det skriver Financial Times.- Min Star Trek-drømme-computer er ved at blive en realitet, og den er bedre, end hvad jeg nogensinde har forestillet mig, siger Googles tidligere ingeniør, Amit Singhal, til Financial Times.John Giannandrea overtog onsdag Amit Singhals post som ledende teknologisk ingeniør i Google og skal stå for udviklingen af kunstig intelligens, der skal sætte skub i søgemaskinens teknologiske udvikling.Kunstig intelligens er ikke et ukendt område i Google. John Giannandrea har tidligere arbejdet på Googles såkaldte Rankbrain projekt, hvor maskiner har formået at forbedre søgningers ranking uden menneskelig intervention./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2016-02-04
+          &nbsp;·&nbsp; e58a5706
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.796</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.544</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens vil påvirke alle industrier i Danmark</h4>
+        <div>
+          Kunstig intelligens kan gøre Danmark op til 35 milliarder kroner rigere hvert år samt forbedre velfærden med 9 milliarder kroner årligt. Udviklingen vil dog også føre til en mangel på mellem 20.000 og 80.000 medarbejdere med stærke analytiske færdigheder i 2030, viser ny rapport fra Innovationsfonden og McKinsey &amp; Co.Potentiale for alle industrierDa kunstig intelligens er en general-purpose teknologi, har den potentiale til at påvirke alle industrier i Danmark - fra kræftbehandling til klimateknologi. Trods kunstig intelligens som koncept ikke er en nyhed, giver bedre algoritmer, øget adgang til data og billigere databehandling nye muligheder for implementering af kunstig intelligens i virksomheder. Særligt indenfor områderne tekst, billede og tale går udviklingen hurtigt.Implementering af kunstig intelligens i DanmarkDanmark har en høj grad af digitalisering, veluddannet arbejdskraft og står stærkt forskningsmæssigt indenfor dele af teknologien bag kunstig intelligens. Alligevel har kun 20 % af større danske virksomheder og 5 % af danske SMV'er kunstig intelligens som en del af deres forretningsstrategi. I Danmark består udfordringerne blandt andet i manglende investeringer, mangel på et dansk økosystem for udvikling af kunstig intelligens samt tiltagende mangel på arbejdskraft med de specifikke analytiske evner, det kræver at arbejde med kunstig intelligens.Særligt de danske SMV'er er bagefter i forhold til at gøre brug af kunstig intelligens. For SMV'erne ligger barriererne særligt i manglende finansiering, mangel på tilgængelig data og mangel på medarbejdere med kompetencer på området.Også for de større danske virksomheder består udfordringerne i mangel på medarbejdere med specifikke kompetencer på området. Derudover er manglende strategi samt manglende ejerskab og engagement hos ledere også barrierer for implementering af kunstig intelligens i de større danske virksomheder.Seks muligheder for DanmarkRapporten fremhæver seks muligheder, som Danmark med fordel kan benytte sig af for at etablere sig som foregangsland indenfor kunstig intelligens:Uddan og tiltræk førende kræfter indenfor kunstig intelligens for at imødekomme den voksende mangel på kvalificeret arbejdskraft, og opkvalificer den bredere befolkning som forberedelse på en verden med større brug af kunstig intelligens.Konsolider data i det private og offentlige og opfordr virksomhederne til at samarbejde om data for at skabe en konkurrencemæssig fordel for Danmark.Styrk dansk forskning og sørg for at koble ny forskning med erhvervslivet.Støt de danske SMV'er ved at give dem adgang til relevant talent, der kan hjælpe dem med at implementere kunstig intelligens.Byg en eller to centre for kunstig intelligens omkring de største danske byer, og arbejd for flere private og offentlige investeringer i kunstig intelligens.Frem internationalt samarbejde og gør det muligt for Danmark at fokusere på sine styrker.Læs mere i rapporten om kunstig intelligens' sociale og økonomiske implikationer for Danmark her.Læsetid: 1,5-2 timer.Læs også » Ny viden om kunstig intelligens: Behov for systematisk hjælp til mindre virksomheder« og»
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-09-25
+          &nbsp;·&nbsp; e75c69ba
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.516</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.985</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.784</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Søgemaskine skal udvikles af kunstig intelligens</h4>
+        <div>
+          Google har allieret sig med eksperter i kunstig intelligens, der har arbejdet på at udvikle Googles søgemaskines algoritmer. Det teknologiske fremskridt markerer en ny æra i Googles historie, hvor kunstig intelligens på sigt kan erstatte menneskelig intelligens. Det skriver Financial Times.- Min Star Trek-drømmecomputer er ved at blive en realitet, og den er bedre, end hvad jeg nogensinde har forestillet mig, siger Googles tidligere ingeniør, Amit Singhal, til Financial Times.RBFINANS.
+        </div>
+        <footer>
+          <em>JydskeVestkysten</em>
+          &nbsp;·&nbsp; 2016-02-05
+          &nbsp;·&nbsp; e58ac367
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.814</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.602</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.538</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dødsknap giver håb</h4>
+        <div>
+          Kunstig intelligens kan som nævnt være en trusel for menneskeheden.Computere ude af kontrol vil blive i stand til at opbygge mekanismer, så vi ikke kan slukke for dem igen.Men måske har Google en løsning, der kan redde menneskeheden.Ifølge Computerworld. dk er Google, med hænderne særdeles dybt begravet i udviklingen af kunstig intelligens, nu vil bygge en dødsknap til at standse den kunstige intelligens, hvis den cykler ud af kontrol.Googles arbejde på stopknappen foregår i samarbejde med Oxford Universitet, og de to parter opsummerer problemstillingen på følgende måde: &quot; Det er usandsynligt, at kunstig intelligens i et så komplekst miljø som den virkelige verden altid vil opføre sig optimalt. Hvis den kunstige intelligens opererer i et realtidsmiljø med menneskelig overvågning, vil det fra tid til anden kunne blive nødvendigt for den menneskelige observatør at trykke på en stor, rød knap for at forhindre den kunstige intelligens i foretage en eller flere skadelige handlinger&quot;.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2016-06-28
+          &nbsp;·&nbsp; e5c6ec05
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.941</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.568</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens</h4>
+        <div>
+          Kunstig intelligens, machine learning og algoritmer er nemlig i fuld gang med at forandre måden, vi arbejder og driver virksomhed på. Der er mange teknologiske, forretningsmæssige, strategiske, ledelsesmæssige og organisatoriske overvejelser, der er helt nødvendige, hvis man skal have succes med kunstig intelligens.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-06-28
+          &nbsp;·&nbsp; e7410cdb
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.942</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.548</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.596</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ansvarlig brug af kunstig intelligens er afgørende for kundernes opbakning</h4>
+        <div>
+          PFA har udviklet et rammeværk, som sikrer systematisk tilsyn af modeller, der anvender kunstig intelligens (AI). Motivationen bag dette tiltag er at sikre moralsk og etisk forsvarlighed i anvendelsen af modeller ved at sætte højere krav til kunstig intelligens end de krav, der er specificeret i GDPR-lovgivningen.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-08-08
+          &nbsp;·&nbsp; e74b7965
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.935</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.503</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Intelligente maskiner vinder frem</h4>
+        <div>
+          KøbenhavnMicrosoft vil råbe danske politikere op. Selskabet efterlyser regulerings af kunstig intelligens. Dansk Industri bakker selskabet op, og ønsker en dialog og oplysning om fænomenet. Kunstig intelligens bliver mere og mere fremtræden som teknologi.Her kan du blive klogere på, hvad kunstig intelligens er: * Kunstig intelligens er maskiner, der er i stand til at tænke selv, træffe beslutninger og udfører opgaver på egen hånd.* Når Netflix kommer med filmforslag til dig baseret på, hvad du ellers har set, er det kunstig intelligens. * Ansigtsgenkendelse, der bruges til overvågning eller som kode til din smartphone, er også en form for kunstig intelligens.* Udvikling af algoritmer i en maskine, der kan analysere data, som gør maskinen &quot;klogere&quot; er kunstig intelligens. * Robotter, der selv kan tænke, er kunstig intelligens. Rigshospitalet har haft robotten Watson, der skulle anbefale behandlingsformer til patienter, der var ramt af forskellige typer af kræft.* Biler, der selv kan parkere eller sågar er selvkørende, er kunstig intelligens. Google har blandt andet været i færd med at udvikle selvkørende biler.* Der er også udviklet droner, der på egen hånd kan flyve efter et mål og udføre en mission.* Der er udviklet maskiner, der kan konkurrere mod mennesker eller andre maskiner i eksempelvis brætspilKilder: www.ingeniøren.dk www.microsoft.dk www.waymo.com www.rigshospitalet.dk www.etiskraad.dk www.faktalink.dk/ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-08-18
+          &nbsp;·&nbsp; e6dcfdb8
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.866</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.5</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.556</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Overhaler den kunstige intelligens os?</h4>
+        <div>
+          HØJBJERG: AI-forskeren (Artificial Intelligence) Thomas Bolander gæster torsdag Viby Bibliotek, hvor han fortæller om kunstig intelligens.Foredraget vil belyse den kunstige intelligens' historie.Der vil blive givet eksempler på historiens største bedrifter og landvindinger indenfor området skakverdensmestre, førerløse biler, hospitalsrobotter, intelligente personlige assistenter på smartphones og meget mere.Tilmelding er nødvendig på bibliotekets hjemmeside.ROBOTTER OG PERSONLIGE ASSISTENTER Højbjerg Bibliotek, Oddervej 74, Højbjerg. 23. oktober kl. 16.30-18.30. Gratis.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende</em>
+          &nbsp;·&nbsp; 2014-10-23
+          &nbsp;·&nbsp; e4a32db2
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.964</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.505</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bliv klogere på AI</h4>
+        <div>
+          Ord: Torsdag bliver der talt om kunstig intelligens på Dokk1 under overskriften &quot;AI -fra hype til hverdag&quot;.Her kan man møde nogle af landets mest inspirerende folk på området, der vil fortælle om kunstig intelligens nutid og fremtid. Blandt andre Jacob Friis Sherso, modtager af Forskningsformidlingsprisen 2017, Peter Svarre, digital ekspert og forfatter, Stephen Alstrup, professor i kunstig intelligens samt mange flere. Der er gratis adgang til arrangementet, men tilmelding er påkrævet. -wang.
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2019-05-07
+          &nbsp;·&nbsp; e72ffe38
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.938</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.531</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Ivan Brandslund tiltræder et professorat ved Syddansk Universitet i kunstig intelligens og robotisering. Ivan Brandslund får som sin primære arbejdsopgave at udvikle og gennemføre Digitaliseringsstyrelsens Nationale Signatur Projekt om kunstig intelligens til brug i diagnostik af akut indlagte patienter.Det er planen, at projektet skal gennemføres på Sygehus Lillebælt Vejle og Kolding Sygehuse.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-01-13
+          &nbsp;·&nbsp; e78953f5
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.95</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En teaterundersøgelse</h4>
+        <div>
+          Aarhus Teater kalder det for en teaterundersøgelse.Stykket &quot; Lav Sol&quot; er en undersøgelse af forholdet mellem det moderne menneske og kunstig intelligens.Alt imens den kunstige intelligens bliver klogere og klogere og hele tiden rykker tættere på, tager stykket et poetisk greb på de teknologiske forandringer, der med sin stadigt accelererende kraft har skubbet til vores etiske kodeks. Stykket er en performance om, hvad der sker, når mennesker bruger kunstig intelligens til at lege Gud, og når mennesker bruger kunstig intelligens til at blive en maskine.Aarhus Teater Studio d. 4. - 30. maj. Pris: 95 kr.www.aarhusteater.dk.
+        </div>
+        <footer>
+          <em>Kultur Aarhus</em>
+          &nbsp;·&nbsp; 2018-05-10
+          &nbsp;·&nbsp; e6bfccab
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.916</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.745</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Kunstig intelligens er menneskets forstand i en maskine</h4>
+        <div>
+          EU foreslår en strategi for kunstig intelligens, der skal udbrede brugen af teknologien endnu mere i Europa. 19 feb. 2020 kl. 13:30Del med andre: EU-Kommissionen ved, at kunstig intelligens kommer til at spille en endnu større rolle i fremtiden. I en præsentation onsdag understreger den danske EU-kommissær Margrethe Vestager, at der er mange uudnyttede områder, hvor den kunstige intelligens kan bruges i fremtiden. Det kan være til at udvikle nye lægemidler, revolutionere transport og forbedre sundhedsplejen. Kunstig intelligens er en computer eller software, der er blevet gjort i stand til at gøre ting, som kun den menneskelige intelligens hidtil har kunnet. Computeren kan træffe beslutninger selvstændigt eller udføre opgaver på egen hånd. Det gør den ud fra nogle systemer og regler, som den følger. Flere forskere har skelnet mellem to forskellige typer af kunstig intelligens. Stærk og svag kunstig intelligens. Den svage kunstige intelligens er systemer, der kun kan efterligne visse træk ved den menneskelige intelligens, og som oftest kun løser én opgave. Mens den stærke kunstige intelligens har samme karakter og dybde som mennesket. Men dens potentiale er endnu ikke blevet udnyttet, mener forskere. Allerede i dag møder vi kunstig intelligens i mange former: * Smartphone-assistenterne Siri eller Alexa, som kan svare på spørgsmål eller skrive beskeder. * Spamfiltre på e-mail. * Sang- eller filmanbefalinger fra for eksempel Spotify og Netflix. * Værktøjer til at overvåge farligt indhold og falske nyheder på sociale medier. * &quot;Samtale-bots&quot; til at chatte med brugere på hjemmesider. * Teknologi til ansigtsgenkendelse. * Diagnosticering af sygdomme ved at overskue store datasæt. Kilder: EU-Kommissionen, Etisk Råd. /ritzau/
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2020-02-19
+          &nbsp;·&nbsp; e795c51c
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.629</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.556</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Kunstig intelligens er baseret på matematik</h4>
+        <div>
+          KøbenhavnRegeringen præsenterer torsdag en national strategi for kunstig intelligens.Her kan du læse, hvad kunstig intelligens er: * Kunstig intelligens er systemer baseret på algoritmer - det vil sige matematiske formler - der ved at analysere og finde mønstre i data kan identificere den mest hensigtsmæssige løsning. * Langt de fleste systemer varetager specifikke opgaver på afgrænsede områder til for eksempel kontrol, forudsigelse og vejledning. Teknologien kan udformes til at tilpasse sin adfærd ved at observere, hvordan omgivelserne påvirkes af tidligere handlinger.* Kunstig intelligens anvendes på en række områder. Det i søgemaskiner, til tale- og billedgenkendelse eller til at understøtte droner og selvkørende biler. Kunstig intelligens kan være afgørende for at øge produktivitetsvækst og hæve levestandarden i de kommende år. Kilder: OECD og EU-Kommissionen, 2018. /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-03-14
+          &nbsp;·&nbsp; e71dc0a2
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.766</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.547</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Video: Thomas Bolander og Maja Horst diskuterer teknologi og innovation</h4>
+        <div>
+          Den syvende samtale i Informations Moderne Idéer Digital Festival handler om teknologi og innovation. Thomas Bolander, professor i kunstig intelligens, og Maja Horst, professor i ansvarlig teknologi, diskuterer teknologioptimisme, innovation og nye muligheder.Vært for samtalen er Informations journalist Mathias Sonne.Thomas Bolander er forfatter til bogen Hvordan ser fremtiden ud med kunstig intelligens?, der er en del af vidensserien MODERNE IDEER. Han er phd. og professor i logik og kunstig intelligens på DTU Compute, hvor han forsker i sociale aspekter af kunstig intelligens. Han er medlem af SIRI-kommissionen, som undersøger kunstig intelligens' indvirkning på det danske samfund.Maja Horst er forfatter til bogen Hvad vil vi med universiteterne? der ligeledes er en del af vidensserien MODERNE IDEER. Hun er professor i ansvarlig teknologi på DTU. Hun er medlem af Danmarks Forsknings- og Innovationspolitiske Råd og har udgivet bøger og artikler om forholdet mellem videnskab, teknologi og samfund.I samtalen taler de to forskere blandt andet om kunstig intelligens, tech-giganter og de etiske faldgruber ved den teknologiske udvikling.Se eller gense samtalen her.Alle bøger i MODERNE IDEER-serien kan købes her
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2021-01-20
+          &nbsp;·&nbsp; e816e127
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.913</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.59</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: EU vil gøre Europa bedre til kunstig intelligens</h4>
+        <div>
+          BruxellesEU-Kommissionen har fredag præsenteret sin plan for, hvordan Europa skal være verdens bedste region til at udvikle kunstig intelligens.Kunstig intelligens refererer til systemer, der viser intelligent opførsel. Det er eksempelvis ved, at de analyser deres miljø, så de kan udføre forskellige opgaver med en vis selvstændighed.Det er især inden for sundheds- og transportsektoren, at kunstig intelligens spås en stor fremtid.Planen, der foruden EU-landene involverer Norge og Schweiz, fokuserer på fire områder.Her kan du læse mere om, hvordan planen skal lykkes:* Investeringerne i kunstig intelligens skal være mere koordinerede og højere. Derfor sigter EU efter investeringer fra offentlige og private for mindst 20 milliarder inden udgangen af 2020. Det høje niveau af investeringer skal fortsætte i de følgende år.* Nationale strategier for investeringer i og implementering af kunstig intelligens skal være på plads i midten af 2019.* Der skal være bedre samarbejde mellem industri og den akademiske verden. Dermed kan man i fællesskab udføre bedre forskning og mere innovation.* Kommissionen vil støtte nyopstartede virksomheder, der beskæftiger sig med kunstig intelligens.* Europæiske centre for kunstig intelligens bliver udviklet og forbundet. Testmiljøerne skal være i verdensklasse.* Kommissionen vil i fællesskab med medlemslandene gøre det muligt nemt at dele data på tværs af grænser, samtidig med at det lever op til EU's databeskyttelsesregler. Dataset er vigtige for at udvikle kunstig intelligens.* Sammen med medlemslandene vil kommissionen støtte uddannelsesprogrammer, som kan udvikle talenter inden for kunstig intelligens.* En gruppe af eksperter fra universiteter, virksomheder og civilsamfundet vil udarbejde etiske retningslinjer for brugen af kunstig intelligens. Tillid er vigtigt for at sikre accept af kunstig intelligens, lyder det. Et udkast til retningslinjerne vil ligge klar i marts 2019. Kilde: EU-Kommissionen./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-12-07
+          &nbsp;·&nbsp; e700c669
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.536</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.992</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.776</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.587</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: 5 problemer der skal løses, hvis kunstig intelligens skal være sikker</h4>
+        <div>
+          Vi skal sikre os, at robotter med kunstig intelligens ikke tramper os ned i jagten på at opnå sit mål, at den ikke hacker sit eget belønningssystem, og at den fungerer i situationer, den ikke har trænet. Det er blandt de fem udfordringer Google har opstillet for den videre udvikling af kunstig intelligens.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-06-23
+          &nbsp;·&nbsp; e5c5ad50
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.91</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.707</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>-Snart har vi hardware, som er hurtigere end vores hjerne-</h4>
+        <div>
+          Vi står foran en revolution inden for kunstig intelligens, mener den schweiziske professor Jürgen Schmidhuber, som står bag den teknologi, der i dag bruges af blandt andre Google og Apple. Information talte med Schmidhuber, da han for nylig besøgte DanmarkE t godt stykke inde i interviewet kommer Jürgen Schmidhuber i tanke om et forskningsprojekt fra 1960-erne. En gruppe forskere gik i gang med at udvikle en kunstig intelligens på niveau med en menneskelig.»De sagde: Første år vil vi opfinde talegenkendelse,«siger Schmidhuber. Han har svært ved at skjule et grin.»Andet år opfinder vi objektgenkendelse med kamera, og tredje år sætter vi to teknologier sammen og installerer dem i en robot.«Schmidhuber kigger op. »De var så optimistiske.«Så tager han sin smartphone på bordet.»De troede, de kunne gøre det med computere, der er en milliard gange langsommere end den her.«Den schweiziske professor mener, at man dengang »fuldstændig undervurderede«, hvor svært det er at skabe kunstig intelligens. Men i dag står vi ifølge Jürgen Schmidhuber foran en revolution inden for kunstig intelligens:»Kunstig intelligens kommer til at påvirke alle dele af tilværelsen   og det vil ændre vores liv fundamentalt,«siger han.Jürgen Schmidhuber er professor ved Institut for Datalogi ved Lugano Universitet og forskningsleder ved IDSIA   Dalle Molle Institute for Artificial Intelligence Research. Han har fulgt og stået for en del af udviklingen inden for kunstig intelligens i mere end 25 år.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-11-17
+          &nbsp;·&nbsp; e5fcc13e
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.986</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.803</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.604</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Podcast: En computer kan spille skak som et menneske. Men kan den opføre sig som et?</h4>
+        <div>
+          Der er store forventninger til kunstig intelligens i fremtiden. Professor Thomas Bolander om, hvorvidt og hvordan de kan indfriesMed udviklingen af kunstig intelligens har computere i dag overtaget en række af de funktioner, som mennesker tidligere tog sig af. De står for lagerarbejdet hos Amazon, og holder øje med, hvad du lægger ud på Instagram og Facebook. Men de er også i stigende grad flyttet ind på hospitaler og advokatkontorer, de bevæger sig rundt i trafikken og er så småt begyndt at flytte ind i vores private hjem. Her skal de kunne omgås og forholde sig til mennesker - de skal kort sagt have situationsfornemmelse.Det stiller særlige krav til deres sociale intelligens.Professor i logik og kunstig intelligens ved DTU Thomas Bolander forklarer i denne podcast, hvad der skal til for at give fremtidens systemer med kunstig intelligens sociale evner, så de kan indgå i et samspil med mennesker.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2020-07-28
+          &nbsp;·&nbsp; e7d03452
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.78</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.667</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nordiske virksomheder kan udnytte kunstig intelligens bedre</h4>
+        <div>
+          Analysen bag rapporten tager udgangspunkt i allerede kendte teknologier og analyserer 400 use cases i 19 sektorer. Alle sektorer og alle niveauer i virksomhederne kan få gavn af kunstig intelligens, lyder konklusionen.Stort potentiale for nordiske virksomhederMange nordiske virksomheder har endnu ikke opdaget det fulde potentiale i kunstig intelligens, men byggestenene er på plads.Det får du i rapporten* En gennemgang af potentialet i kunstig intelligens illustreret med række casehistorier. Blandt andet dykker rapporten ned i, hvilke teknologier der ligger bag det hypede begreb, og ser også på, hvad de forskellige teknologier kan lige nu.* En nærmere analyse af de økonomiske potentiale i forskellige sektorer samt en analyse af firstmover-effekterne.* Et indblik i nordiske virksomheders prioriteringer i forhold til kunstig intelligens - inklusive et indblik i barrierne.* Et bud på seks vigtige byggesten for at forløse potentialet i kunstig intelligens.* Ti konkret råd til, hvordan man kan accelerere sit arbejde med kunstig intelligens.Læs rapporten her.Læsetid: 60 minutter
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-09-04
+          &nbsp;·&nbsp; e754584f
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.893</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.802</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.592</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.61</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>TechBlast</h4>
+        <div>
+          Body På TechBlast kan du opleve banebrydende teknologier indenfor kunstig intelligens, big data og augmented reality. Eksempelvis interviewer Nikolaj Sonne fra So Ein Ding Sophia the Robot, der er verdens første robot med statsborgerskab, og Teslasuit - et virtual reality suit med haptisk feedback - bliver demonstreret.Arrangementet henvender sig til erhvervsledere med interesse for kunstig intelligens.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-03-13
+          &nbsp;·&nbsp; e79eccd4
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.544</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens skal tracke affald i Australien</h4>
+        <div>
+          Australien vil bruge kunstig intelligens til at tracke affaldsstrømme, så de kan minimere landets plastikforurening. Kunstig intelligens skal bruges til at løse udfordringer som plastikforurening i Australien, efter landets videnskabelige agentur CSIRO er indgået et partnerskab med Microsoft. Det skriver Zdnet Det estimeres, at omkring 12 millioner ton plastik finder vej til floder og have hvert år, og her skal kunstig intelligens og 'machine learning' hjælpe med at analysere data fra strand- og havundersøgelser samt video af floder til at finde og følge affaldsstrømme. Med kunstig intelligens kan myndighederne også estimere, hvor affaldet vil ende, og så kan de bruge værktøjet til bedre at vurdere de tiltag, som overvejes i forbindelse med at minimere risikoen for at affaldet ender i vandet i første omgang. Udfordringer med illegalt fiskeri skal også takles med kunstig intelligens, og så skal teknologien bruges til at booste landbruget i Australien.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-06-16
+          &nbsp;·&nbsp; e7c0ed73
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.98</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.596</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.609</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens</h4>
+        <div>
+          P1 22.03 Da skakcomputeren Deep Blue i 1997 slog den russiske stormester Garry Kasparov, var det intet mindre end en sensation. I dag ved vi, at computeren ikke var klogere end Kasparov, den var bare bedre til at regne. Men forskningen i kunstig intelligens stræber stadig efter at efterligne den menneskelige hjerne og give robotter situationsfornemmelse og evner til at tænke selv. &quot; Danskernes Akademi på P1&quot; om kunstig intelligens. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2011-08-05
+          &nbsp;·&nbsp; e2ced065
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.932</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vestager: Brug af kunstig intelligens kræver borgernes tillid</h4>
+        <div>
+          Det kræver borgernes tillid at udrulle en omfattende brug af kunstig intelligens i Europa, siger Vestager. EU vil være med til at fremme udviklingen af kunstig intelligens og bruge teknologien meget mere. Men det kræver, at de europæiske borgere har tillid til teknologien, for at den kan udrulles endnu mere i EU, siger Margrethe Vestager, næstformand i EU-Kommissionen, i en præsentation onsdag. - Kunstig intelligensteknologi skal være noget, man kan stole på. Vi kan ikke noget med den kunstige intelligens, hvis vi ikke stoler på den og føler, at den hjælper os i vores daglige liv. - Derfor skal det være baseret på tillid, hvis det skal lykkes, siger hun. Borgerne skal også sikres, ved at kunstig intelligensteknologi overholder og respekterer EU's regler og værdier. - De kunstig intelligenssystemer med højrisiko - for eksempel selvkørende biler - skal være godkendt, testet og kontrolleret, ligesom biler, kosmetik og legetøj bliver i dag, siger Margrethe Vestager. Kunstig intelligens er menneskets forstand i en maskine EU-Kommissionen ved, at kunstig intelligens kommer til at spille en endnu større rolle i fremtiden. I en præsentation onsdag understreger den danske EU-kommissær Margrethe Vestager, at der er mange uudnyttede områder, hvor den kunstige intelligens kan bruges i fremtiden. Det kan være til at udvikle nye lægemidler, revolutionere transport og forbedre sundhedsplejen. Kunstig intelligens er en computer eller software, der er blevet gjort i stand til at gøre ting, som kun den menneskelige intelligens hidtil har kunnet. Computeren kan træffe beslutninger selvstændigt eller udføre opgaver på egen hånd. Det gør den ud fra nogle systemer og regler, som den følger. Flere forskere har skelnet mellem to forskellige typer af kunstig intelligens. Stærk og svag kunstig intelligens. Den svage kunstige intelligens er systemer, der kun kan efterligne visse træk ved den menneskelige intelligens, og som oftest kun løser én opgave. Mens den stærke kunstige intelligens har samme karakter og dybde som mennesket. Men dens potentiale er endnu ikke blevet udnyttet, mener forskere. Allerede i dag møder vi kunstig intelligens i mange former: Smartphone-assistenterne Siri eller Alexa, som kan svare på spørgsmål eller skrive beskeder. Spamfiltre på e-mail. Sang- eller filmanbefalinger fra for eksempel Spotify og Netflix. Værktøjer til at overvåge farligt indhold og falske nyheder på sociale medier. &quot;Samtale-bots&quot; til at chatte med brugere på hjemmesider. Teknologi til ansigtsgenkendelse. Diagnosticering af sygdomme ved at overskue store datasæt. Kilder: EU-Kommissionen, Etisk Råd. Kunstig intelligens er en computer eller software, der er er i stand til at gøre ting, som kun den menneskelige intelligens hidtil har kunnet. Det er for eksempel iPhone-assistenten &quot;Siri&quot;, som kan svare på spørgsmål. Det kan også bruges til ansigtsgenkendelse eller til at læse og forstå mønstre i data, som blandt andet kan bruges til at diagnosticere sygdomme. /ritzau/ Ansv. Chefredaktør Jacob Nybroe
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2020-02-19
+          &nbsp;·&nbsp; e795c52d
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.644</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.579</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Ny blogger på ing.dk: Kunstig intelligens er ikke kommet for at spise os</h4>
+        <div>
+          Vi har fået en ny blog om kunstig intelligens. Og bloggens faste skribent hilser den velkommen. Vi har fat i noget nyt, som hverken Stephen Hawking eller Elon Musk har forstand på, fastslår han. Læs - og diskuter - med fra i dag.Af RedaktionenI denne uge starter en ny blog på ing.dk.'Den levende maskine'bliver skrevet af professor i kunstig intelligens Anders Kofod-Petersen, som er vicedirektør på Alexandra Instituttet.Han vil skrive om machine learning og alle former for kunstig intelligens.I sit første blogindlæg skriver han blandt andet:'Jeg er dybt fascineret af denne kombination mellem klassiske naturvidenskabelige undersøgelser af intelligens og teknisk konstruktion af intelligente systemer   og det er det, denne blog kommer til at handle om.Samtidig er jeg tekno-positiv. Jeg har ingen tro på, at skummel kunstig intelligens kommer for at spise os, noget, en del af nutidens luditter har argumenteret for for nylig   heriblandt fremtrædende forretnings- og videnskabsmænd som Tesla-milliardæren Elon Musk (der har startet en fond, som skal bekæmpe -truslen- fra kunstig intelligens) og den teoretiske fysiker Stephen Hawking (der har udtalt, at udviklingen af fuld kunstig intelligens kan betyde enden på menneskeheden).Jeg vil vove at påstå, at de simpelthen ikke ved nok om feltet. Af samme årsag afholder jeg mig også fra at udtale mig om privat rumfart og sorte huller.'
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2016-04-04
+          &nbsp;·&nbsp; e5a4faa6
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.986</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.827</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tech: Kan vi skabe en global etik for kunstig intelligens?</h4>
+        <div>
+          U ddannelses- og forskningsminister Tommy Ahlers (V) udtalte for nylig, at det er vigtigt at præge udviklingen af kunstig intelligens, så den er i overensstemmelse med danske værdier. Hvad det betyder, og hvordan man fører det ud i livet, er et mere åbent spørgsmål.Skal dansk kunstig intelligens rumme Alternativets klimamål, Nye Borgerliges holdninger til muslimer eller repræsentere mainstream Højskoledanmark? Og hvordan udtrykker man det matematisk i en algoritme?Den irske forsker i kunstig intelligens Nell Watson påpeger, at vi ikke programmerer maskiner til at genkende kattefotos eller at spille Go.Henrik FøhnsHenrik Føhns er tidligere vært på DR's populære P1-radioprogram 'Harddisken'. Han redigerer i dag Ingeniørforeningens podcast 'Techtopia' og skriver jævnligt klummer om teknologiske forandringer her i avisen.Vi skal i fællesskab definere, hvad vi taler om, når vi taler om kunstig intelligensVi bruger neurale netværk, der efterligner menneskehjernens visuelle cortex, så de selv kan lære at løse opgaven.De laver mønstergenkendelse og er kendt fra fotosøgning eller fra firmaet Deep Mind, der har brugt et neuralt deep learning -netværk til at skabe en maskine, som slog verdensmesteren i brætspillet Go til lirekassemand.Derfor forestiller Nell Watson sig, at vi introducerer den kunstige intelligens til nogle grundprincipper i form af basale høflige omgangsformer, ligesom vi opdrager børn til ikke at pille næse ved middagsbordet.Over tid vil maskinen af sig selv lære at begå sig i overensstemmelse med menneskelig moral.Vil vi blive slået ihjel?Nell Watson var i København hos Ingeniørforeningen IDA i forrige uge og blev få dage efter fulgt af den canadiske teknologikritiker Nikola Danaylov, som med sin teori om AI-isme er væsentligt mere dyster.Han mener nemlig, at hvis kunstig intelligens efterligner menneskeracens behandling af laverestående væsener, så er vi på dybt vand. Vi vil simpelthen blive slået ihjel.Man kan også spørge, hvilke moralsæt vi skal bruge til at træne kunstig intelligens med, hvis det skal fungere globalt? Hvordan kombinerer vi Højskoledanmark, Saudi-Arabien, Kina og Trumps USA? Kan man skabe en global etik for kunstig intelligens, eller kommer vi til at se kunstig intelligens med forskellige grundholdninger?Klogere end osNell Watson tror ikke på en universel etik for kunstig intelligens, blandt andet fordi forskellige værdier skyldes forskellige livsvilkår, som ikke kan standardiseres som patenter eller matematiske regler. Hun håber i stedet på et sæt basale grundregler, som fungerer inden for en zone af tolerance, der er acceptabel for alle.Nikola Danaylov leder til gengæld efter en ny stor historie om det at være menneske. En historie, der kan definere samlivet med en eksistens, som er klogere end os selv.I dag løser maskinlæring relativt basale opgaver, så det kan være svært at skimte en fremtid, hvor vi overhales af kunstig intelligens. Man taler generelt om smal kunstig intelligens og generel kunstig intelligens.Den sidste er klogere end os, men vi ved stadig ikke, hvordan man bygger den. Smal kunstig intelligens løser kun én opgave som for eksempel at spille skak, køre bil eller spille Go, men skakcomputeren kan ikke køre bil eller vice versa.Nell Watson taler dog også om metalæring, hvor en samling af smalle intelligenser i et netværk kan løse mere forskelligartede opgaver. Hun mener derfor, at vi godt kan opleve mere generel kunstig intelligens i en nær fremtid.Ånden ude af flaskenUanset om man erklærer sig enig med Watson og Danaylov, så er ånden ude af flasken. I næste uge barsler Foreningen af Nordiske Ingeniører og ITU med en række anbefalinger til både ingeniører, virksomheder og politikere om kunstig intelligens og etik - et første skridt, som kan kickstarte en større folkelig bevidsthed om kunstig intelligens, der for eksempel kan formidles i skoler, gymnasier og højskoler.Vi skal i fællesskab definere, hvad vi taler om, når vi taler om kunstig intelligens. Måske tror vi, at teknologien kan mere, end den faktisk kan, og derfor kan vi måske stadig nå at definere opgaverne for kunstig intelligens som algoritmer, der kun løser opgaver, som ikke kan bringe den i konflikt med mennesker.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2018-11-10
+          &nbsp;·&nbsp; e6f7dffa
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.948</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.765</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.552</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apple køber kunstig intelligens for 1,3 mia kr</h4>
+        <div>
+          Foto: ScanpixITFor at få en fod inden for også det marked, har teknologigiganten Apple købt den amerikanske iværksættervirksomhed Turi, som arbejder med udvikling af kunstig intelligens.Nyehdsbureauet Bloomberg, som citerer unavngivne kilder tæt på handlen, skriver...Apples topchef har endnu ikke kommenteret opkøbet af kunstig intelligens-firmaet Turi..Apples topchef har endnu ikke kommenteret opkøbet af kunstig intelligens-firmaet Turi..
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2016-08-07
+          &nbsp;·&nbsp; e5d422a2
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.551</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Foredrag. Filosofi om kunstig intelligens</h4>
+        <div>
+          SUNDBYØSTER: Kunstig intelligens er blevet kaldt det bedste og det værste, der potentielt kan ske for menneskeheden, og de omvæltninger, teknologien vil medfører, er så omsiggribende, at det er blevet sammenlignet med overgangen fra landbrug til industrisamfund.Foredraget » Kunstig Intelligens -et kig ind i fremtiden « med filosof Henrik Schøneberg ser på, hvorfor kunstig intelligens tegner til at få så stor indvirkning på både vores nære og fjerne fremtid, Det foregår torsdag 11. oktober Kl. 19 i Bibliotekshuset, Rodosvej. Gratis adgang, tilmelding til pescha@kff. kk.dk / jape.
+        </div>
+        <footer>
+          <em>Amager Bladet</em>
+          &nbsp;·&nbsp; 2018-10-09
+          &nbsp;·&nbsp; e6eda4f0
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.957</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.611</kbd>
+            <kbd data-tooltip="AI">L80_AI&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robotterne kommer - men ikke foreløbig</h4>
+        <div>
+          Det kommer til at vare længere, end vi tror, inden kunstig intelligens kan udføre alle de samme opgaver, som vi mennesker kan.Hvis der er noget, der kan få de store tegnebøger frem i Silicon Valley, så er det virksomheder, der beskæftiger sig med kunstig intelligens (KI eller AI på engelsk). Senest købte Uber firmaet Geometric Intelligence for en ukendt pris, og de 15 ansatte er blevet sluset ind i Ubers nye afdeling med det prangende navn Uber-s A.I. Labs, skriver New York Times.Ingen tvivl om, at taxitjenesten tager kunstig intelligens alvorligt på samme måde som teknologi-giganterne Google, Apple,...
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2016-12-12
+          &nbsp;·&nbsp; e6063f27
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.602</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens og brug af den</h4>
+        <div>
+          FREDERIKSSUND: Administrerende direktør Jacob Knobel kommer til Frederikssund for at fortælle om kunstig intelligens onsdag den 19. februar klokken 19.30 i Kulturhuset Elværket.Jacob Knobel er kender og praktiker indenfor området.Han er uddannet i matematik og forstår matematikken bag kunstig intelligens, men han vil ikke mindst fremføre argumenter for, at kunstig intelligens ikke nødvendigvis passer ind alle steder i vores samfund.Særligt vil han fokusere på kommercielle, tekniske og etiske problemer, som er opstået henover de sidste år i Danmark i forbindelse med samarbejder med private og udenlandske foretagender.Herudover vil han gennemgå gode eksempler på, hvordan kunstig intelligens forankres i et selskab fra et teknisk og et ledelsesmæssigt perspektiv.Jacob Knobel har vundet en stribe iværksætter-priser.Desuden blander han sig jævnligt i samfundsdebatten.Han underviser på universiteter og rådgiver om kunstig intelligens.Arrangør er Folkeuniversitetet i Frederikssund, og det koster 80 kroner i entré.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2020-02-13
+          &nbsp;·&nbsp; e7939763
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.78</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Børn lærer om kunstig intelligens</h4>
+        <div>
+          TAASTRUP: Børn skal lære om kunstig intelligens. Det mener Erik David Johnson, forsker i kunstig intelligens, foredragsholder og IT-rådgiver. Han besøgte derfor for nyligt Taastrup Realskole, hvor et hold børn i alderen syv til 12 år var i gang med at lære at programmere Micro: Bits -små computerenheder til undervisningsbrug.-Børn skal lære om IT, fordi det er en life-skill, det er simpelthen nødvendigt at lære for at kunne leve i fremtidens samfund.Kunstig intelligens kommer til at fylde rigtigt meget, og børnene kommer til at bruge det i hverdagen, arbejde med det og diskutere det, derfor er det vigtigt, at børnene lærer om det allerede nu, forklarer Erik David Johnson.Han havde derfor takket ja til at holde et foredrag for de teknologi-interesserede børn på programmeringsholdet.Kender det alleredeDe fleste på holdet har allerede stiftet bekendtskab med kunstig intelligens -blandt andet fordi smartphones og nutidens computere er fyldt med kunstigt intelligente apps -ligesom deres legetøj også indeholder det: -Jeg har en Cozmo derhjemme, som jeg kan lære alt muligt, fortalte en af drengene i klassen. En Cozmo er en lille robot, som lærer af barnet, når de leger sammen. Eleverne har derfor allerede en del erfaring med kunstig intelligens, og de har da også en god idé om, hvad kunstig intelligens er, da Erik David Johnson spørger: -Noget, der selv kan lære og huske, hvad der er sket, svarer en, mens en anden siger, at det er computerkode.-Kunstig Intelligens er matematik.Det er svær og avanceret matematik, så hvis I vil være gode til at programmere kunstig intelligens, så skal i blive virkeligt gode til matematik, forklarede Erik David Johnson.Selv om foredraget foregik sidst på eftermiddagen -og emnet for mange vil være lidt langhåret -var børnene aktive og opmærksomme. Måske fordi eleverne skulle lære den kunstige intelligens at spille spillet Super Mario.Overmenneskelig Mario -Vi træner den kunstige intelligens til at spille. Vi har en kunstig intelligens-kode, som kan lære af sine erfaringer. Hvis man gør det rigtigt, kan den på 2-3 minutter lære at spille spillet, siger Erik David Johnson.Han viser en video med den kunstige intelligens, der spiller Super Mario efter at have » øvet sig « i 30 til 60 minutter. På den tid kan den kunstige intelligens øve sig cirka 20.000 gange og på den måde blive overmenneskelig god -Mario hopper gennem banen på en måde, som de ingen eller meget få mennesker vil kunne.Erik David Johnson ønsker både at børnene og alle andre får en bedre forståelse af, hvad man kan med kunstig intelligens, og ikke mindst, hvad den kunstige intelligens ikke kan: -Mange film og serier viser en kunstig intelligens, som kan udslette alle mennesker.Det er helt urealistisk og på et niveau, som det ikke engang er sikkert er teknisk muligt, at vi kan udvikle kunstig intelligens til. Det er vigtigt, at vi ser på teknologien, og at vi skal se os for i forhold til, hvad vi bruger den til. Men jeg koncentrerer mig om at fortælle om nutidens kunstige intelligens, og hvad vi kan bruge den til, siger Erik David Johnson.Han fortæller børnene om, hvordan teknologien virker, og hvordan den kan hjælpe i hverdagen, blandt andet ved at bruge den i selvkørende biler.
+        </div>
+        <footer>
+          <em>Lokalavisen Taastrup</em>
+          &nbsp;·&nbsp; 2019-06-04
+          &nbsp;·&nbsp; e7395015
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.996</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.861</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.649</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Kunstig intelligens er baseret på matematik</h4>
+        <div>
+          Her kan du læse, hvad kunstig intelligens er:* Kunstig intelligens er systemer baseret på algoritmer - det vil sige matematiske formler - der ved at analysere og finde mønstre i data kan identificere den mest hensigtsmæssige løsning.* Langt de fleste systemer varetager specifikke opgaver på afgrænsede områder til for eksempel kontrol, forudsigelse og vejledning. Teknologien kan udformes til at tilpasse sin adfærd ved at observere, hvordan omgivelserne påvirkes af tidligere handlinger.* Kunstig intelligens anvendes på en række områder. Det i søgemaskiner, til tale- og billedgenkendelse eller til at understøtte droner og selvkørende biler.Kunstig intelligens kan være afgørende for at øge produktivitetsvækst og hæve levestandarden i de kommende år.Kilder: OECD og EU-Kommissionen, 2018./Ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2019-03-14
+          &nbsp;·&nbsp; e71dc085
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.787</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Byen Rundt</h4>
+        <div>
+          KUNSTIG INTELLIGENS Jeg synes, at kunstig intelligens er utrolig spændende og jeg er spændt på, hvad det næste nye er. Det kan jeg bliver klogere på 14.august klokken 18.30 på Tir Na Nog, hvor Nikolaj Lindholm fra tech-firmaet Zliid vil fortælle hvordan verden bliver bedre, nemmere eller sjovere med ny teknologi. Først er der en kort præsentation af kunstig intelligens, så alle er med på, hvad det er. Derefter er der to oplæg om, hvordan den gør en forskel i dag. De første 100 får en drink på billetten.
+        </div>
+        <footer>
+          <em>Århus Onsdag</em>
+          &nbsp;·&nbsp; 2019-08-13
+          &nbsp;·&nbsp; e74cafc1
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.919</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.632</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.649</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vil bygge kunstig butler</h4>
+        <div>
+          Facebook-stifter Mark Zuckerberg vil i det nye år bygge en butler eller en personlig assistent med kunstig intelligens, der skal assistere ham i arbejdet.Zuckerberg, der har svoret, at han vil give sig selv en stor personlig udfordring hvert år, henviser til en butler med kunstig intelligens i Marvel-tegneserierne og i de film, som er skabt ud fra dem.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2016-01-05
+          &nbsp;·&nbsp; e56ffdd6
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.588</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.678</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.585</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>WHISKY OG MASKINLÆRING</h4>
+        <div>
+          Whisky brygget med kunstig intelligens? Der er ikke mange grænser for, hvor ny teknologi kan bruges, og nu kan det måske også snart smages.Det svenske whisky-destilleri Mackmyra går sammen med Microsoft og den finske konsulentvirksomhed Fourkind om at skabe verdens første whisky-opskrift sat sammen med kunstig intelligens. Bag opskriften ligger maskinlæring, og den kommer på markedet til efteråret. Det skriver onlinemediet Popular Mechanics.
+        </div>
+        <footer>
+          <em>Tech Management</em>
+          &nbsp;·&nbsp; 2019-05-28
+          &nbsp;·&nbsp; e75ce2d2
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.811</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.662</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Another Life (Amnesia Scanner)</h4>
+        <div>
+          Elektronisk »Flader af støj bliver hårdhændet æltet ind i poppede motiver på den finske duo Amnesia Scanners debutalbum. Resultatet er brutalt og fræsende i sit udtryk, men letafkodeligt i sit melodiske indhold. Det er punk i det 21.århundrede - fremstillet med kunstig intelligens og udbrændte lydmaskiner.« Nikola Nedeljkovic Gøttsche, mandag d. 17/ 9.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2018-09-21
+          &nbsp;·&nbsp; e6e7f1df
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.64</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.667</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.571</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

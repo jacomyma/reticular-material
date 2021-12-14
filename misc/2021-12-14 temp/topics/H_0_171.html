@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_171 <kbd>H_0_171</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afp</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>11</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>torsdag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aften</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>søndag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>februar</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pressemøde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fiat</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mandag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>12-14</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>marts</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tirsdag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>onsdag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>byret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hverdage</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hovedstad</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>østlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>15.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>energiminister</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>meldinger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>19.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>godmorgen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kristeligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ventes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>foredragsrække</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>løftede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>brett</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>banden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nyhedsbureauet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>algeriet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>marokko</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>/ritzau</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grønlandske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skyldig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>drabene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fukushima</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kronprinsesse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>klimaminister</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>låst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vester</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rønde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>33-årig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tv2.dk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>euvsdisinfo</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>østre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>net-tjenesten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>auktion</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>frifundet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>topnyheder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tirsdagens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afsiger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>thorbjørn</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forsideravisen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>e-avisen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ledereberlingske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bonede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>https://trends.google.dk/trends</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>deviralenyheder.dk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fravælges</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ritzau.https://deviralenyheder.dk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>twitterhttps://twitter.com/</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>byger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>postyr</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>signe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opgørelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>coronarelaterede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indledes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>khan</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sonne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kvarters</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>østersøen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>litauen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mattias</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>behersket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>helikopterpilot</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ukrainsk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>porosjenko</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>exp</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kay</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hotellet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dpa</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>brostrøm</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nadija</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>catalonien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>genoptaget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bevilge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>11:00</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sensommeren</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>meldingerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anklagemyndigheden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>26-årig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pilgrimme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>statskasse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bt.dk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>canard</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kones</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forsvarsrådet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hilton</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lopez</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>luthers</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rasch</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>middagstid</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hesselet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ambassaden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hotelkæde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nilsson</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grillet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>yakuzaen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_171 DESC LIMIT 50</pre>
+      <article>
+        <h4>Naturvidenskab i Kulturhuset</h4>
+        <div>
+          SKANDERBORG: I februar og marts kan man opleve fire naturvidenskabelige foredrag i Kulturhuset, der alle er en del af Aarhus Universitet foredragsserie om naturvidenskab, der har udviklet sig til en sand publikumssucces i Søauditorierne i Universitetsparken.I Skanderborg vises foredragene transmitteret i Sløngelsalen 9. og 23. februar samt 1. og 15. marts. Alle gange kl.19. For at sikre sig en plads er det nødvendigt at bestille billet på Kulturhusets hjemmeside.Der er gratis adgang.Tirsdag 9. februar holder professor i astrofysik Hans Kjeldsen foredraget »På rumkrydstogt ud i Solsystemet«. Tirsdag 23. februar fortæller professor i datalogi Lars Arge om »Big data og effektive algoritmer« -algoritmer, som for eksempel kan udnytte data til, at forudsige hvor der er fare for oversvømmelse ved skybrud.Tirsdag 1. marts holder professor i neurovidenskab Leif Østergaard foredraget »Hvordan fungerer hjernen?«. Tirsdag 15. marts er det foredraget »Hvordan is og vand dannede Danmark« ved professor i geofysik David Lundbek Egholm og lektor i geologi Nicolaj Krog Larsen.boll-/ pcb.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende</em>
+          &nbsp;·&nbsp; 2016-02-08
+          &nbsp;·&nbsp; e58dbe3b
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.615</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.661</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.52</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ukraine aftaler fangebytte med Rusland</h4>
+        <div>
+          UKRAINE -Rusland og Ukraine har aftalt en fangeudveksling, der ifølge Ukraines præsident, Petro Porosjenko, betyder, at en ukrainsk helikopterpilot, som for nylig blev idømt 22 års fængsel i Rusland, kan løslades.Nadija Savtjenko udveksles, hvis aftalen holder, for de russiske soldater Jevgenij Jerofejev og Aleksander Aleksandrov.De to blev mandag idømt 14 års fængsel i Ukraine.Meldingen fra Porosjenko faldt i forbindelse med et pressemøde med den danske statsminister, Lars Løkke Rasmussen, som i øjeblikket besøger Kijev.Porosjenko sagde ifølge det russiske nyhedsbureau Tass, at parterne har aftalt en &quot; algoritme&quot;, der kan føre til Savtjenkos løsladelse.. / RITZAU/.
+        </div>
+        <footer>
+          <em>Vejle Amts Folkeblad</em>
+          &nbsp;·&nbsp; 2016-04-20
+          &nbsp;·&nbsp; e5ab9a3d
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.96</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.64</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.505</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NYHEDSOVERBLIK: Ukraine aftaler fangebytte med Rusland under Løkke-besøg</h4>
+        <div>
+          Ukraine: Rusland og Ukraine har aftalt en fangeudveksling, der ifølge Ukraines præsident betyder, at en ukrainsk helikopterpilot, som for nylig blev idømt 22 års fængsel i Rusland, kan løslades.Nadija Savtjenko udveksles, hvis aftalen holder, for de russiske soldater Jevgenij Jerofejev og Aleksander Aleksandrov. De to blev mandag idømt 14 års fængsel i Ukraine.Meldingen fra Petro Porosjenko falder i forbindelse med et pressemøde med den danske statsminister, Lars Løkke Rasmussen, som i øjeblikket besøger Kijev.Porosjenko siger ifølge det russiske nyhedsbureau Tass, at parterne har aftalt en »algoritme«, der kan føre til pilotens løsladelse.Præsidenten uddyber ikke alle betingelser i aftalen, men han fortæller, at mandagens dom til de to russere åbner mulighed for, at man kan udveksle.Mandag talte Porosjenko og Ruslands præsident, Vladimir Putin, i telefon, hvor de drøftede udveksling af krigsfanger. Også nyhedsbureauet AP rapporterer, at Nadija Savtjenko ifølge Porosjenko vil blive løsladt.Den ukrainske helikopterpilot blev for knap en måned siden idømt 22 års fængsel i Rusland, efter at hun er blevet kendt skyldig i drab på to russiske journalister. Piloten er dømt for drabene efter at have ledet et morterangreb i den omstridte østlige del af Ukraine. Savtjenko blev efterfølgende fanget af russiske separatister og smuglet ind i Rusland, hvor hun blev stillet for en domstol./Ritzau/
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-04-20
+          &nbsp;·&nbsp; e5ab4bc7
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.97</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.671</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.553</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ukraine aftaler fangebytte med Rusland under Løkke-besøg</h4>
+        <div>
+          Ukraines præsident siger på pressemøde med Lars Løkke Rasmussen, at ukrainsk pilot snart kan være på fri fod.Kijev: Rusland og Ukraine har aftalt en fangeudveksling, der ifølge Ukraines præsident betyder, at en ukrainsk helikopterpilot, som for nylig blev idømt 22 års fængsel i Rusland, kan løslades.Nadija Savtjenko udveksles, hvis aftalen holder, for de russiske soldater Jevgenij Jerofejev og Aleksander Aleksandrov. De to blev mandag idømt 14 års fængsel i Ukraine.Meldingen fra Petro Porosjenko falder i forbindelse med et pressemøde med den danske statsminister, Lars Løkke Rasmussen (V), som i øjeblikket besøger Kijev.Porosjenko siger ifølge det russiske nyhedsbureau Tass, at parterne har aftalt en &quot;algoritme&quot;, der kan føre til hendes løsladelse.Præsidenten uddyber ikke alle betingelser i aftalen, men han fortæller, at mandagens dom til de to russere åbner mulighed for, at man kan udveksle.Mandag talte Porosjenko og Ruslands præsident, Vladimir Putin, i telefon, hvor de drøftede udveksling af krigsfanger.Også nyhedsbureauet AP rapporterer, at Nadija Savtjenko ifølge Porosjenko vil blive løsladt.Den ukrainske helikopterpilot blev for knap en måned siden idømt 22 års fængsel i Rusland, efter at hun er blevet kendt skyldig i drab på to russiske journalister.Piloten er dømt for drabene, efter at have ledet et morterangreb i den omstridte, østlige del af Ukraine.Savtjenko blev efterfølgende fanget af russiske separatister og smuglet ind i Rusland, hvor hun blev stillet for en domstol.I hele perioden har hun været meget aktiv i sin argumentation for, at retssagen er politisk og ikke retfærdig.Under domsafsigelsen måtte domstolen i Rusland ifølge nyhedsbureauet dpa holde pause, da Savtjenko brød ud i ukrainske slagsange.Nadija Savtjenko har under russisk fangenskab gennemført flere sultestrejker./Ritzau/
+        </div>
+        <footer>
+          <em>Viborg-folkeblad.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-04-19
+          &nbsp;·&nbsp; e5ab089c
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.974</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.525</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.537</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rusland lover fanget ukrainsk pilot fri under Løkke-besøg</h4>
+        <div>
+          Ukraines præsident siger på pressemøde med Lars Løkke Rasmussen, at ukrainsk pilot snart kan være på fri fod.Rusland og Ukraine har indgået en aftale, der ifølge Ukraines præsident betyder, at en ukrainsk helikopterpilot, som for nylig blev idømt 22 års fængsel i Rusland, kan blive løsladt.Meldingen fra Petro Porosjenko falder i forbindelse med et pressemøde med den danske statsminister, Lars Løkke Rasmussen (V), som i øjeblikket besøger Kijev.Porosjenko siger ifølge det russiske nyhedsbureau Tass, at parterne har aftalt en &quot;algoritme&quot;, der kan føre til hendes løsladelse. Det uddybes ikke, hvilke trin og modkrav, der ligger i denne algoritme.Meldingen kommer i forlængelse af en telefonsamtale mellem Porosjenko og Ruslands præsident, Vladimir Putin, mandag.Også nyhedsbureauet AP rapporterer, at Nadija Savtjenko ifølge Porosjenko vil blive løsladt.Den ukrainske helikopterpilot blev for knap en måned siden idømt 22 års fængsel i Rusland, efter at hun er blevet kendt skyldig i drab på to russiske journalister.Piloten er dømt for drabene, efter at have ledet et morterangreb i den omstridte, østlige del af Ukraine.Savtjenko blev efterfølgende fanget af russiske separatister og smuglet ind i Rusland, hvor hun blev stillet for en domstol.I hele perioden har hun været meget aktiv i sin argumentation for, at retssagen er politisk og ikke retfærdig.Under domsafsigelsen måtte domstolen i Rusland ifølge nyhedsbureauet dpa holde pause, da Savtjenko brød ud i ukrainske slagsange.Nadija Savtjenko har under russisk fangenskab gennemført flere sultestrejker.19. april 2016 Kl. 14:04 Fjern fra mine gemte.19. april 2016 Kl. 14:04 Fjern fra mine gemte.
+        </div>
+        <footer>
+          <em>Mitfyn.dk</em>
+          &nbsp;·&nbsp; 2016-04-19
+          &nbsp;·&nbsp; e5ab05d3
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.972</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.627</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.551</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DET SKER I HØRSHOLM OG FREDENSBORG</h4>
+        <div>
+          MUSIKHR. Skægs Bogstavkoncert.Lørdag 19/ 11 kl. 15. Trommen, Bibliotekstorvet 1.JAZZ-AFTEN MED CLARA BRYLD.Tirsdag 15/ 11 kl. 20. Den københavnske sangerinde og sangskriver Clara Bryld udgav i december 2010 sin debutplade, fyldt med stemningsfyldte, legende og eksperimenterende melodier, der bevæger sig i grænselandet mellem jazz, pop og singersongwriting. Krogerup Højskole, Krogerupvej 13.EN MUSIKALSK REJSE ! Torsdag 17/ 11 kl. 13.15-15. Kvartetten &quot; Sammensurium&quot; spiller og synger musik fra Rusland i øst til Sydamerika i vest. Mergeltoften Pleje-og Aktivitetscenter, Mergeltoften 8.MIG OG LARSEN -PÅ EGEDAL.Søndag 20/ 11 kl. 14-16.Visesangeren, troubadouren Tom Frederiksen synger alle de Kim Larsen-sange, man kender og kan nynne med på.Han debuterede med &quot; Synger/ Sangskriver&quot; og blev nomineret til Danish Music Awards Folk 2008. Egedal Medborgerhus, Egedalsvej 2, Egedal.ADVENTSKONCERT MED KAMMERKORET CAMERATA. Søndag 20/ 11 kl. 20. Blandet program med kirkelig musik samt populær julemusik. Egedal Kirke, Egedalsvej 3.TEATERMUSICALEN SUGAR. Tirsdag 15/ 11 kl. 19.30. Trommen, Bibliotekstorvet 1.CARSTEN BANG. Onsdag 16/ 11 kl. 19.30. Plukker kameler.Trommen, Bibliotekstorvet 1.NOEL COWARD ´ S &quot; SIDSTE AKT&quot;.Søndag 13/ 11 til tirsdag 22/ 11 søndage kl. 15 hverdage kl. 20.Selv de mindste begivenheder bliver til sindsoprivende dramaer på &quot; Kulissen&quot; -et hjem for pensionerede skuespillerinder.Jalousi og galskab blusser op til et festfyrværkeri af giftigheder, da eks-primadonnaen Lotta Henderson flytter ind.Nivå Amatør Teater, Teaterhuset, Kalvehaven 6.SKUMRINGSTID I NORDEN.Humor i Norden. Livet er ikke det værste man har!. Onsdag 16/ 11 kl. 19. Teatret OPtimis opfører en humoristisk og glædespredende kabarat, hvor man lærer Benny Andersen som person og hans uimodståelige viser bedre at kende. Billetter kan købes på Fredensborg Bibliotekerne. Nivå Bibliotek, Nivå Center 30.UDSTILLINGER HØRSHOLM BIBLIOTEK: AKTIV KUNST UDSTILLER. Tirsdag 1/ 11 til tirsdag 29/ 11 kl. 10-14, kl. 11-18. Aktiv Kunsts medlemmer udstiller i kulturhusets foyer. Hørsholm Bibliotek, Bibliotekstorvet 1.BILLEDVÆVNINGER OG SKULPTURER.Lørdag 5/ 11 til søndag 11/ 12 Fr.-sø./ hlg. kl. 12-17.Farverige billedtæpper inspireret af afrikansk, italiensk, grønlandsk og dansk natur og nordisk mytologi af Britta Bertelsen. Modellerede menneskefremstillinger i bronze, ofte med kvindekroppen som basis og med mytologiske motiver af Jens-Peter Kellermann.Arrangeret af Hørsholm Kunstforening. Fuglsanghus, Gl.Hovedgade 2.SUSANNE AAMUND. Søndag 13/ 11 til fredag 18/ 11 kl. 12-18.Fantastiske verden. Galleri X, Pennehave 15.TINE HELLESHØJ. Fredag 18/ 11 kl. 17. FREDAGS PREVUE DJ Andreas ( Young blood sound) spiller og Claudia gir vokal -mens vi skummer og kigger på malerier. Galleri X, Pennehave 15.TINE HELLESHØJ. Fredag 18/ 11 til fredag 2/ 12 kl. 17. &quot; Variusly Shaded&quot; DJ -Vokal og malerier PREVUE fredag kl. 17.00. Galleri X, Pennehave 15.KUNSTGRUPPEN SAFRAN UDSTILLER. Tirsdag 1/ 11 til onsdag 30/ 11 Se åbningstider.Gruppens ni udstillere har gennem flere år beskæftiget sig med maleri, blandformer eller skulptur fortrinsvis inden for den figurative eller naturalistiske genre. Fredensborg Bibliotek, Jernbanegade 3, 1. sal.FARVER -FARVER -FARVER.Tirsdag 1/ 11 til fredag 30/ 12 i bankens åbningstid. Mette Søborg Mathiasen udstiller malerier i olie og akryl. Nordea, Humlebæk, Humlebæk Center 9.SYSSERS CORNER. Alsidig kunstudstilling. Lørdag 5/ 11 til lørdag 19/ 11 Se åbningstider.Kunstneren Jytte Mørch fra Humlebæk udstiller malerier, skulpturer og fotokunst.Fernisering den 5. november kl. 11-13. Humlebæk Bibliotek, Humlebæk Center 40.KUNSTUDSTILLING VED LONE WILHJELM. Fredag 18/ 11 til torsdag 15/ 12 I bibliotekets åbningstid. Autodidakt billedkunstner Lone Wilhjelms skønne malerier spænder fra abstrakt til malerier i lyse farver. Nivå Bibliotek, Nivå Center 30.AI WEIWEI. Fredag 18/ 11 til søndag 12/ 2. Louisiana Contemporary. Louisiana Museum of Modern Art, Gl.Strandvej 13.FILM NOGET I LUFTEN. Tirsdag 15/ 11-16/ 11 kl. 18.45.17/ 11 -19/ 11 kl.18. 20/ 11 kl. 19. 20-21/ 11 kl. 18.Dansk julekomedie af Michael Asmussen. Pernille ( Line Kruse) har altid haft en helt særlig evne -en mærkelig fornemmelse af, at noget vil ske. Hun starter med hjælp fra sin veninde Sidsel ( Linda P) som clairvoyant.Humle Bio, Ny Strandvej 100.EFTERSKÆLV. Tirsdag 15/ 11-16/ 11 kl. 20.45. Kinesisk drama af Xiaogang Feng. Efter Tangshan-jordskælvet i 1976 står en ung mor over for et ubærligt valg. Hendes tvillinger er begravet under murbrokkerne, og at grave den ene fri vil resultere i yderligere kollaps af vragdele på den anden. Humle Bio, Ny Strandvej 100.TINTIN: ENHJØRNINGENS HEMMELIGHED.Onsdag 16/ 11 kl.10, 19/ 11 kl. 13.30. 3 D: 17/ 11 kl. 10, 19/ 11 kl. 15.45, 20/ 11 kl.17. Amerikansk animationsfilm.Med udgangspunkt i Hergés universelt uforgængelige og elskede figurer, introduceres vi den umætteligt nysgerrige og frygtløse unge journalist, Tintin ( Jamie Bell) og hans til døden loyale følgesvend, hunden Terry.Humle Bio, Ny Strandvej 100.NICEVILLE. Torsdag 17/ 11-19/ 11 kl. 20. 20/ 11 kl. 21. 21-22/ 11 kl. 20. Amerikansk drama af Tate Taylor. USA. 60ernes Mississippi. Den nye racelov er netop blevet indført.Adskillelsen mellem hvide og sorte er pludselig ikke længere lovlig. Humle Bio, Ny Strandvej 100.SAMME DAG NÆSTE ÅR. Fredag 18/ 11 kl. 16. Amerikansk romantisk drama af Lone Scherfig.Efter at have tilbragt en nat sammen efter eksamensfesten på universitetet den 15. juli 1988, udvikler Emma og Dexter -trods deres åbenlyse forskelle -et tæt venskab. Humle Bio, Ny Strandvej 100.FAR TIL FIRE -TILBAGE TIL NATUREN.Lørdag 19/ 11 kl. 11.45.Dansk familiefilm af Claus Bjerre. Hvad er forskellen egentlig på en elg og en bjørn? Fars evner ud i friluftslivet sættes på prøve, da familien rejser på weekend i Sverige. Humle Bio, Ny Strandvej 100.PETER PLYS -NYE EVENTYR I HUNDREDEMETERSKOVEN -DANSK TALE. Søndag 20/ 11 kl. 12. Amerikansk tegne-film fra Disney. Walt Disney Animation Studios vender tilbage til Hundredmeterskoven med PETER PLYS, der er det første Peter Plys biografeventyr i mere end 35 år. Humle Bio, Ny Strandvej 100.TOSCA -THE ROYAL OPERA HOUSE -COVENT GARDEN.Søndag 20/ 11 kl. 14. Powerful music, a gripping story and a tragic end: Puccini's everpopular Tosca performed at the Royal Opera House with a fabulous cast. Among the star singers in this revival are Angela Gheorghiu, Jonas Kaufmann and Bryn Terfel. Humle Bio, Ny Strandvej 100.BØRN HØRSHOLM BIBLIOTEK: &quot; SIKKE EN VEJR&quot;, TEATER FOR DE 1 ½ -3 ÅRIGE. Fredag 18/ 11 kl. 15.30.En komisk og poetisk forestilling for de mindste. Line Svendsen tager børnene med på en fantastisk rejse gennem de fire årstider. Varighed ca. 40 min. Billetter sælges fra d. 12.november,. Hørsholm Bibliotek, Bibliotekstorvet 1.BLIXEN I BØRNEHØJDE. Tirsdag 22/ 11 kl. 14. Tag børnene med på Karen Blixen Museet og lad dem møde den berømte forfatterinde på en anderledes måde.Der vil blive vist billeder og fortalt historier fra Karens barndom og tid i Afrika og så skal der leges ' safarileg' i stuerne som i gamle dage. Karen Blixen Museet, Rungsted Strandvej 111.EVENTYRTIME. Mægtige maskiner.Tirsdag 15/ 11 kl. 10-11. Hør børnebibliotekaren fortælle en historie om mægtige maskiner og se nogle små film med forskellige køretøjer. Gratis billetter kan afhentes på Fredensborg Bibliotekerne. Humlebæk Bibliotek, Humlebæk Center 40.MIN MORMORS GEBIS. For børn 3-6 år. Lørdag 19/ 11 kl. 11-11.35.Team Teatret optræder med en musikalsk og skør forestilling.En gul bus og to skæve eksistenser samt alle de skøre påfund fra Jakob Martin Strids finurlige bog &quot; Min mormors gebis&quot;, Gratis billetter kan afhentes på Fredensborg Bibliotekerne. Nivå Bibliotek, Nivå Center 30.MOTION/ SPORT RUNGSTED HEGN OG FOLEHAVEN MED DANSK VANDRELAUG. Lørdag 19/ 11 kl. 10.30. Prøv een af motionsruterne i hegnet, den fører os igennem. Folehaven. Stien er visse steder ret så kuperet. Fra: Rungsted St ( vest) kl 10.30. Slut: Samme sted. Ledere: Minna 4914 4140 Medbring mad og drikke. Arrangeret af Dansk Vandrelaug Nordsjælland.Rungsted Kyst Station, Vestre Stationsvej 7.ØVRIGT HØRSHOLM BIBLIOTEK: 140 ÅRS FØDSELSDAG. Tirsdag 1/ 11 til tirsdag 29/ 11 kl. 11-18, kl.10-14. Hørsholm Bibliotek viser i november måned en udstilling om bibliotekets historie i Hørsholm og Rungsted i et samarbejde med Hørsholm Egns Museum. Lørdag d. 19.november serverer vi fødseldagslagkage mv. i børnebiblioteket.Hørsholm Bibliotek, Bibliotekstorvet 1.DEMENS CAFÉ. Tirsdag 15/ 11 kl. 13. Så mødes pårørende til demente igen til samvær i Mosaikken. Arrangeret af Frivilligcenter &amp; Selvhjælp Hørsholm. Mosaikken, Ådalsparkvej 63 ( overfor Genbrugsbutikken).DIASFOREDRAG: MIT LIV SOM BILLEDVÆVER. Onsdag 16/ 11 kl. 19. Britta Bertelsen fortæller om sit ophold og arbejde med billedvævning i 14 år i fem afrikanske lande, om værker fra et længere ophold i Grønland og om et projekt i Randers med kvindelige flygtninge og indvandrere, hvounder billedvævning anvendtes. Arrangeret af Hørsholm Kunstforening.Fuglsanghus, Gl. Hovedgade 2.READING KAREN BLIXEN -FOREDRAG MED FAY WELDON.Fredag 18/ 11 kl. 19.30. Den verdensberømte britiske forfatter og feminist gæster Karen Blixens hus for at tale om sit forhold til Blixens bøger som læser og forfatter. Karen Blixen Museet, Rungsted Strandvej 111.DIGITALE SELVBETJENINGSMULIGHEDER I HØRSHOLM KOMMUNE. Mandag 21/ 11 kl.10-12. Få mere at vide om hvordan du bruge de mange digitale selvbetjeningsmuligheder i din kommune. Arr. i et samarbejde med Borgerservice. Hørsholm Bibliotek, Bibliotekstorvet 1.FOREDRAG. Tirsdag 15/ 11 kl.14.30. Sussi og Rene Melnik kommer og fortæller om Deres fantastiske rejse gennem Afrika, i Humlebæk Ældreklub.Humlebæk Dagcenter, Ida Tesdorfsvej 2.LEGO MINDSTORM. Tirsdag 15/ 11 og 22/ 11 kl. 17-20. Lær at bygge, konstruere og programmere din egen robot!.Ungecenter, Møllevej 9 S.BO LIDEGAARDS DANMARK.Tirsdag 15/ 11 kl. 19.30.Dagbladet Politikens chefredaktør, historiker Bo Lidegaard er gæst i Louisiana Live hos Marie Tetzlaff til bl. a. en samtale med udgangspunkt i Bo Lidegaards anmelderroste bog &quot; En fortælling om Danmark i det 20. århundrede&quot;. Louisiana Museum of Modern Art, Gl.Strandvej 13.BØRNENES MADDAG -LASAGNE. Tirsdag 15/ 11 til torsdag 17/ 11 kl. 15.30. Aarstiderne, Krogerup Avlsgaard, Krogerupvej 3.MUSICAL TUR TIL HELIKON. Onsdag 16/ 11 kl. 18.30. Fredensborg Husholdningsforening inviterer til Musicalen &quot; SAGNPRINS AMLET&quot;. Bus plus drink i pausen.Fredensborg Station, Stationsvej 2.HUMLEBÆK PENSIONISTFORENING.Torsdag 17/ 11 kl. 14-ca. 16.45.Bent Skov Larsen fortæller om strandvejen fra Espergærde til Mikkelborg. Sted: Hejrevangens Selskabslokaler. Arrangeret af Humlebæk Pensionistforening.Hejrevangen, Oscar Brunsvej 11.BANKOSPIL. Torsdag 17/ 11 kl.19.30. Kroforeningen afholder sit årlige bankospil på Karlebo kro. Arrangeret af Kroforeningen i Karlebo. Karlebo Kro, Karlebovej 10.BILLEDSPROGET I MODERNE SALMER. Torsdag 17/ 11 kl. 19.30. Foredrag og debat med præst og salmedigter Lisbeth Smedegaard Andersen.Sognegården, Rantzausvej 2.LAN PARTY. Fredag 18/ 11 kl.17.30. Vi spiller computer hele natten. Tilmelding nødvendigt.Arrangeret af Ungfredensborg.Ungecenter, Møllevej 9 S.ITALIENSK SPROGWEEKEND MED FOREDRAG OM VENETO OG 2 X ITALIENSK BUFFET.Fredag 18/ 11 til søndag 20/ 11 kl. 17. Fredensborg Bibliotek, Jernbanegade 3, 1. sal.GIRLS ONLY. Mandag 21/ 11 kl. 16-20. UC Lounge kun for piger 13-18 år. I dag: Design din egen taske. Arrangeret af Ungfredensborg. Ungecenter, Møllevej 9 S.JULEMARKED I AKTIVITETEN PÅ EGELUNDEN. Tirsdag 22/ 11 kl.13.30-16. Vi holder JULEMARKED den 22 nov. i aktiviteten Her kan købes søde sjove nisser, adventskranse, lækker marmelade og andre juleting. Alt overskud går til underholdning til vores brugere. Vi har åbent fra kl. 13.30 -16.00. Egelunden Pleje-og Aktivitetscenter, Egedalsvænge 17.ER DU MON SÆRLIGT SENSITIV?.Tirsdag 22/ 11 kl. 19-21.15 -20% af alle mennesker er særligt sensitive, så du kender nok mindst en. Arrangeret af Frivilligcenter Fredensborg.Humlebæk Dagcenter, Ida Tesdorfsvej 2.FRECO -ET KOOPERATIV. Tirsdag 22/ 11 kl. 19.30. Bibliotekar og arkivar Peter Heiberg vil fortælle om Fredensborg Cooperationen ( FRECO), som var et banebrydende forsøg på at knække arbejdsløshedens svøbe i 1930' erne.Arrangeret af Fredensborg -Humlebæk lokalhistoriske forening.Dagcentret Lindehuset, Jernbanegade 28B.LITTERATUR-AFTEN MED JOSEFINE KLOUGART. Tirsdag 22/ 11 kl. 20. Denne aften står i litteraturens tegn, når den anmelderroste forfatter Josefine Klougart gæster Krogerup, hvor hun vil fortælle om sit forfatterskab.Krogerup Højskole, Krogerupvej 13.BØRNENES MADDAG -PASTA BOLOGNESE. Tirsdag 22/ 11 til torsdag 24/ 11 kl. 15.30.Aarstiderne, Krogerup Avlsgaard, Krogerupvej 3.
+        </div>
+        <footer>
+          <em>Ugebladet Hørsholm</em>
+          &nbsp;·&nbsp; 2011-11-15
+          &nbsp;·&nbsp; e2f73b47
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.75</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.906</kbd>
+            <kbd data-tooltip="Dates &amp; times">L80_DATETM&nbsp;0.74</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ukraine aftaler fangebytte med Rusland under Løkke-besøg</h4>
+        <div>
+          Ukraines præsident siger på pressemøde med Lars Løkke Rasmussen, at ukrainsk pilot snart kan være på fri fod.Rusland og Ukraine har aftalt en fangeudveksling, der ifølge Ukraines præsident betyder, at en ukrainsk helikopterpilot, som for nylig blev idømt 22 års fængsel i Rusland, kan løslades.Nadija Savtjenko udveksles, hvis aftalen holder, for de russiske soldater Jevgenij Jerofejev og Aleksander Aleksandrov. De to blev mandag idømt 14 års fængsel i Ukraine.Meldingen fra Petro Porosjenko falder i forbindelse med et pressemøde med den danske statsminister, Lars Løkke Rasmussen (V), som i øjeblikket besøger Kijev.Porosjenko siger ifølge det russiske nyhedsbureau Tass, at parterne har aftalt en &quot;algoritme&quot;, der kan føre til hendes løsladelse.ADVERTISING inRead invented by TeadsPræsidenten uddyber ikke alle betingelser i aftalen, men han fortæller, at mandagens dom til de to russere åbner mulighed for, at man kan udveksle.Mandag talte Porosjenko og Ruslands præsident, Vladimir Putin, i telefon, hvor de drøftede udveksling af krigsfanger.Også nyhedsbureauet AP rapporterer, at Nadija Savtjenko ifølge Porosjenko vil blive løsladt.Ukrainsk helikopterpilot dømt 22 års fængsel i RuslandDen ukrainske helikopterpilot blev for knap en måned siden idømt 22 års fængsel i Rusland, efter at hun er blevet kendt skyldig i drab på to russiske journalister.Piloten er dømt for drabene, efter at have ledet et morterangreb i den omstridte, østlige del af Ukraine.Savtjenko blev efterfølgende fanget af russiske separatister og smuglet ind i Rusland, hvor hun blev stillet for en domstol.I hele perioden har hun været meget aktiv i sin argumentation for, at retssagen er politisk og ikke retfærdig.Sigtet for drab: Ukraine kræver kvindelig militærpilot frigivetUnder domsafsigelsen måtte domstolen i Rusland ifølge nyhedsbureauet dpa holde pause, da Savtjenko brød ud i ukrainske slagsange.Nadija Savtjenko har under russisk fangenskab gennemført flere sultestrejker.Nadesjda Savtjenko kan blive løsladt efter en aftale mellem Ukraine og Rusland. Foto: AP.Nadesjda Savtjenko kan blive løsladt efter en aftale mellem Ukraine og Rusland. Foto: AP.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-04-19
+          &nbsp;·&nbsp; e5ab3378
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.803</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.561</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fransk andeavis afslører russisk støtte til Marine Le Pen | Udland | Fyens.dk</h4>
+        <div>
+          En franske efterretningstjeneste siger til Le Canard enchainé, at Rusland støtter Marine Le Pen i valget.Frankrigs præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg.Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev avisen onsdag ifølge Politico.Rusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé, som betyder Den lænkede And.Når forsvarsrådet er samlet deltager præsidenten, premierministeren og fem andre ministre.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot;fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé.Præsidentvalget afvikles over to runder. Første runde 23. april, og anden runde er 7. maj.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev Le Canard enchainé onsdag. Efterretningskilder siger til avisen, at Rusland blander sig i Frankrigs præsidentvalg. Russerne støtter Marine Le Pen, siger kilderne..- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev Le Canard enchainé onsdag. Efterretningskilder siger til avisen, at Rusland blander sig i Frankrigs præsidentvalg. Russerne støtter Marine Le Pen, siger kilderne..- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev Le Canard enchainé onsdag. Efterretningskilder siger til avisen, at Rusland blander sig i Frankrigs præsidentvalg. Russerne støtter Marine Le Pen, siger kilderne..- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev Le Canard enchainé onsdag. Efterretningskilder siger til avisen, at Rusland blander sig i Frankrigs præsidentvalg. Russerne støtter Marine Le Pen, siger kilderne..
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2017-02-09
+          &nbsp;·&nbsp; e61b595f
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.912</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.7</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.912</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rusland lover fanget ukrainsk pilot fri under Løkke-besøg</h4>
+        <div>
+          Ukraines præsident siger på pressemøde med Lars Løkke Rasmussen, at ukrainsk pilot snart kan være på fri fod.Rusland og Ukraine har indgået en aftale, der ifølge Ukraines præsident betyder, at en ukrainsk helikopterpilot, som for nylig blev idømt 22 års fængsel i Rusland, kan blive løsladt.Meldingen fra Petro Porosjenko falder i forbindelse med et pressemøde med den danske statsminister, Lars Løkke Rasmussen (V), som i øjeblikket besøger Kijev.Porosjenko siger ifølge det russiske nyhedsbureau Tass, at parterne har aftalt en &quot;algoritme&quot;, der kan føre til hendes løsladelse. Det uddybes ikke, hvilke trin og modkrav, der ligger i denne algoritme.Meldingen kommer i forlængelse af en telefonsamtale mellem Porosjenko og Ruslands præsident, Vladimir Putin, mandag.ADVERTISING inRead invented by TeadsUkrainsk helikopterpilot dømt 22 års fængsel i RuslandOgså nyhedsbureauet AP rapporterer, at Nadija Savtjenko ifølge Porosjenko vil blive løsladt.Den ukrainske helikopterpilot blev for knap en måned siden idømt 22 års fængsel i Rusland, efter at hun er blevet kendt skyldig i drab på to russiske journalister.Piloten er dømt for drabene, efter at have ledet et morterangreb i den omstridte, østlige del af Ukraine.Savtjenko blev efterfølgende fanget af russiske separatister og smuglet ind i Rusland, hvor hun blev stillet for en domstol.Sigtet for drab: Ukraine kræver kvindelig militærpilot frigivetI hele perioden har hun været meget aktiv i sin argumentation for, at retssagen er politisk og ikke retfærdig.Under domsafsigelsen måtte domstolen i Rusland ifølge nyhedsbureauet dpa holde pause, da Savtjenko brød ud i ukrainske slagsange.Nadija Savtjenko har under russisk fangenskab gennemført flere sultestrejker.Nadesjda Savtjenko kan blive løsladt efter en aftale mellem Ukraine og Rusland. Foto: AP.Nadesjda Savtjenko kan blive løsladt efter en aftale mellem Ukraine og Rusland. Foto: AP.
+        </div>
+        <footer>
+          <em>JP.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2016-04-19
+          &nbsp;·&nbsp; e5ab06c3
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.834</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.516</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fransk andeavis afslører russisk støtte til Marine Le Pen</h4>
+        <div>
+          En franske efterretningstjeneste siger til Le Canard enchainé, at Rusland støtter Marine Le Pen i valget.Frankrigs præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg.Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev avisen onsdag ifølge Politico.Rusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé, som betyder Den lænkede And.Når forsvarsrådet er samlet deltager præsidenten, premierministeren og fem andre ministre.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot;fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé.Præsidentvalget afvikles over to runder. Første runde 23. april, og anden runde er 7. maj.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev Le Canard enchainé onsdag. Efterretningskilder siger til avisen, at Rusland blander sig i Frankrigs præsidentvalg. Russerne støtter Marine Le Pen, siger kilderne..- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev Le Canard enchainé onsdag. Efterretningskilder siger til avisen, at Rusland blander sig i Frankrigs præsidentvalg. Russerne støtter Marine Le Pen, siger kilderne..
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2017-02-09
+          &nbsp;·&nbsp; e61c30cf
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.891</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.673</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.849</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rumkrydstogt i solsystemet fra Aarhus</h4>
+        <div>
+          GRENAA: Aarhus Universitet holder igen foredrag som livestreames, så man har glæde af dem i en række byer over hele landet. I Grenaa er det gymnasiet, som lægger lokaler til. Det første af sæsonens foredrag byder på en eksotisk rejse ud over det sædvanlige, når astrofysiker Hans Kjeldsen onsdag byder på rumkrydstogt ud i solsystemet.»Vi begynder turen med at besøge overfladerne på Venus og Mars hvor vi skal besøge lavasletter, store isgletsjere og enorme kløfter,« fortæller Hans Kjeldsen.Besøger planeter»Vi fortsætter ud i Solsystemet og ser på Jupiter og dens måner med kæmpevulkaner og dybe have under tykke iskapper.Ved Saturn ser vi på dens enorme ringsystem og besøger dens måne Titans kolde overflade inden vi bevæger os ud i det frosne, ydre Solsystem hvor vi skal se på ismåner, dværgplaneten Pluto og kometerne.« Grenaa Gymnasium vil være vært for streamingen af i alt seks foredrag om naturvidenskabelige emner i løbet af foråret, alle på Grenaa Gymnasium: Onsdag 10. februar 2016: På rumkrydstogt i Solsystemet.Onsdag 24. februar 2016: Big Data og effektive algoritmer.Onsdag 2. marts 2016: Hvordan fungerer hjernen? Tirsdag 8. 3 marts 2016: Ig Nobel Prize: first laugh, then think.Torsdag 17. marts 2016: Hvordan is og vand dannede Danmark.Onsdag 20. marts 2016: Using light to illuminate brain function.pcb.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende</em>
+          &nbsp;·&nbsp; 2016-02-10
+          &nbsp;·&nbsp; e58ec080
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.748</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.816</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.58</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.537</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau-dokumentation</h4>
+        <div>
+          Danske Spil meddeler søndag den 15. marts 2015, at resultatet for Måljagt 5 for Spilleuge 11 - kampdag 15. marser således ud:Esbjerg-FC København 0-1Manchester U-Tottenham 3-0Brøndby-OB 2-0Vinderodds er 1.575,87.Følg Børsen eller Del artikelSeneste nyheder16. mar. Benhårdt marked for kranskibe til vindkraft16. mar. Politiet kræver 3,5 års fængsel til storsvindler16. mar. Trailerfabrik scorer stort overskud efter &quot;ordentligt rap over nallerne&quot;16. mar. Mølleleverandør genstarter sin danske produktion16. mar. Miljøministeren kritiseres for at bremse grøn vækst16. mar. Tusindvis af nye private job16. mar. Kinesisk vækstdyk stækker danske selskaber16. mar. Kæmpefond: GN Store Nord er lille og vaks16. mar. Kunstig intelligens sikrer afkastet16. mar. Rabataktier sikrer 25-årig en stabil opturSeneste nyheder
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-03-15
+          &nbsp;·&nbsp; e4e97572
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.898</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.661</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rumtur: Premiere gik over al forventning</h4>
+        <div>
+          Omkring 50 var mødt op for at høre det nyeste om vores solsystem og se flotte fotos, da Hinnerup Bibliotek for første gang live-streamede fra Aarhus Universitet. Efter turen i rummet var der tid til spørgsmål. To drenge fra Hinnerup kom igennem som de første til auditoriet med et superrelevant spørgsmål om planeternes kerner.Næste gang er tirsdag den 23. februar, hvor vi skal høre et spændende foredrag om Big Data. Det foredrag kan du læse mere om nedenfor.http://scitech.au.dk/formidling-og-museer/til-offentligheden/offentlige-foredrag-i-naturvidenskab/foredragsbank/big-data-og-effektive-algoritmer/. Omkring 50 mødte frem torsdag aften i Hinnerup til en tur ud i rummet.. Omkring 50 mødte frem torsdag aften i Hinnerup til en tur ud i rummet..
+        </div>
+        <footer>
+          <em>Favrskov.lokalavisen.dk</em>
+          &nbsp;·&nbsp; 2016-02-13
+          &nbsp;·&nbsp; e59135e8
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.847</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fire foredrag i Skjoldelev</h4>
+        <div>
+          SKJOLDELEV: Skjoldelev Forsamlingshus får et livligt forår, når fire offentlige foredrag fra Aarhus Universitets Science and Technology streames til forsamlingshuset.Onsdag 10. februar handler det om et rumkrydstogt ud i solsystemet med professor i astrofysik Hans Kjeldsen. Ved hjælp af et væld af betagende billeder fra NASA og ESAs rummissioner kommer man en tur rundt i hele solsystemet.Onsdag 24. februar fortæller professor i datalogi Lars Arge om de stigende mængder af detaljerede data, der er fulgt i kølvandet på en stadig mere digitaliseret verden. Foredraget hedder »Big Data og effektive algoritmer«. Mandag 29. februar, der er skuddag, vil professor i neurovidenskab, Leif Østergaard, føre deltagerne nærmere hjernens mysterier.Foredraget tirsdag 15. marts handler om, hvordan is og vand dannede Danmark, og professor i geofysik David Lundbek Egholm fortæller om, hvorfor det danske landskab ser ud som det gør.Foredragene starter kl. 18.45, det er gratis at deltage, men tilmelding er nødvendig.
+        </div>
+        <footer>
+          <em>Randers Amtsavis</em>
+          &nbsp;·&nbsp; 2016-02-05
+          &nbsp;·&nbsp; e58ab56a
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.69</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.607</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.518</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nygadehuset tilbyder også i marts en række arrangementer og tilbud til hele familien</h4>
+        <div>
+          Nygadehuset lægger op til en travl forårsmåned med friske nyheder, sprøde rytmer og strålende arrangementer for alle. Aabenraa: Minidokumentarfestivalen Dox:Direkte den 23. og 25. marts er et af Nygadehusets store arrangementer i en travl forårsmåned. Med visninger af premiereaktuelle dokumentarfilm og live-transmitterede samtaler med filmskabere, forfattere og eksperter. Bl.a. vil man kunne deltage i et direkte Skype-interview fra Rusland med den verdenskendte whistleblower og aktivist Edward Snowden og viden- og tech-korrespondent i DR Henrik Moltke efter visningen af den ultimative film om kunstig intelligens, &quot;iHuman&quot;. Eller se et passioneret portræt af kvinden bag &quot;The Handmaid's Tale&quot;, den 80-årige forfatter og politiske ildsjæl Margaret Atwood, efterfulgt af en live debat med forfattere og filmkritikere Bo Green Jensen. Man kan også blive udfordre på hjertet og hjernen til de aktuelle livestreamede foredrag fra Aarhus Universitet, der byder på emner som virusser den 3. marts, fremtidens natur den 10. marts og dybhavet den 31. marts. Masser af musik Men allerede den lørdag den 7. marts er der keramikkursus i Nygadehusets kreative værksted. Onsdag den 11. marts er der gjort klart med lærreder og uskadelig fingermaling - så babyerne kan komme i gang med deres første kunstværker og den 22. marts inviteres alle børn og deres voksne indenfor til hygge i NygadeHusets kreative værksteder, hvor der er både glaskunst, keramik og æskedesign på programmet. Hvis man hellere vil synge foråret ind, er der hver torsdag &quot;Lyd &amp; Lækkerier&quot; med fællessang og gode kager og hvor Shanty Koret kigger forbi den 19. marts. NygadeHusets koncertprogram har fem koncerter på programmet, der spænder fra nordic folk band Afenginn den 5. marts til det pladeaktuelle indie band Verdens Sidste Idé den 19. marts og den poetiske og vedkommende trio Dissing &amp; Las den 26. marts.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-03-02
+          &nbsp;·&nbsp; e79a2df9
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.554</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.632</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.564</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kloge foredrag live fra Aarhus</h4>
+        <div>
+          HADERSLEV: VUC Syd i Haderslev tilbyder i februar og marts fire offentlige foredrag i samarbejde med Aarhus Universitet. Foredragene streames live fra Aarhus Universitet til storskærmen på VUC Syd i Haderslev.Det første foredrag finder sted torsdag den 11. februar klokken 18.45-21 og hedder &quot; På rumkrydstogt ud i solsystemet&quot;.Foredraget vil være illustreret med billeder fra NASA og ESA's rummissioner.Efter rumrejsen handler det om &quot; Big data og effektive algoritmer&quot;. Det er den 23.februar kl. 18.45-21.00. Så hedder foredraget &quot; Hvordan fungerer hjernen?&quot; -det får vi at vide 1. marts kl.18.45-21.00. Sidste foredrag fra Aarhus hedder &quot; Hvordan is og vand dannede Danmark&quot;.Det er den 17. marts kl. 18.45-21.00.Foredragene er gratis, og alle er velkomne.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Aabenraa</em>
+          &nbsp;·&nbsp; 2016-02-05
+          &nbsp;·&nbsp; e58ac03f
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.864</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.826</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Investor live: Markedets øjne rettet mod Fed og renten</h4>
+        <div>
+          Resultatet af rentemødet i den amerikanske centralbank, Federal Reserve, onsdag aften er det helt store fokuspunkt på finansmarkederne onsdag, herunder på obligationsmarkedet, som herhjemme ventes at åbne tæt på uændret og kan blive præget af afventende investorer forud for rentebeslutningen og det efterfølgende pressemøde.Saudi-Arabien vil på et pressemøde onsdag fremlægge beviser for, at Iran var involveret i to angreb mod olieanlæg lørdag, som midlertidigt har forstyrret den saudiske produktion af olie.Det var uenighed om, hvorvidt Sydbank skulle fortsætte på egen hånd eller indgå i en sammenlægning med en anden større bank, som splittede bestyrelsen i Sydbank, og som tirsdag betød, at formanden og næstformanden sammen med to andre medlemmer valgte...Morgenbriefing: Carlsberg undlod at advare myndigheder i bestikkelsessag, kunstig intelligens kan give stort løft til dansk økonomiHer kan du se en oversigt over aktiemarkederne, når Københavns Fondsbørs er åben.Du kan vælge tidsperiode øverst til højre.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-09-18
+          &nbsp;·&nbsp; e7590669
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.814</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.562</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DET SKER I HØRSHOLM OG FREDENSBORG</h4>
+        <div>
+          MUSIKFOYERKONCERT MUSIKSKOLENS ELEVER.Torsdag 1. december kl. 17. Strygerorkestre og kor fra Musikskolen. Arr. t af Hørsholm Kirke. Trommen, Bibliotekstorvet 1.BIG FAT SNAKE. Fredag 2. december kl. 22.Trommen, Bibliotekstorvet 1.DE NI LÆSNINGER. Lørdag 3. december kl.15. Kokkedal kirkes pigekor og Kokkedal Kammerkor under ledelse af Lisbet Juul.Desuden medvirker Pastor Kirsten Weile og læsere. Kokkedal Kirke, Højmose Vænge 2.FREDERIK KONRADSEN I MIDTPUNKT. Lørdag 3. december kl. 16-18. Frederik Konradsen, kendt fra DR programmet X-Factor, spiller glade julesange i Hørsholm Midtpunkt.SINNE EEG M. Big Band. Lørdag 3. december kl. 20. Trommen, Bibliotekstorvet 1.SANGKVINTET 2 + 3. Tirsdag 6. december kl.19.30. Med Ditte Højgaard Andersen, Signe Asmussen, Andrea Pellegrini, Bo Kristian Jensen og Morten Ernst Lassen. Arrangeret af Hørsholm Musikforening. Hørsholm Kirke, Kirke Allé 1.MUSIKLAUGETS KONCERT. Fredag 2.december kl. 19.30. Tre af Nivå Musiklaugs bands. Blues, Rock og Cajun i Teaterhuset, Kalvehaven 6, Nivå.JULEJAZZ. Kjeld Flemmings Kvartet + gæstesolist spiller julejazz på Egedal. Lørdag 3.december kl. 19. Egedal Medborgerhus, Egedalsvej 2, Kokkedal.UDSTILLINGER TINE HELLESHØJ. Fredag 18. november til fredag 2. december Ma., ti. &amp; to. kl. 12-18, fr.kl. 12-19, lø. kl. 11-14. &quot; Variusly Shaded&quot; DJ -Vokal og malerier. Galleri X, Pennehave 15.MALERIER AF LONE WILHJELM. Fredag 18.november til torsdag 15. december Nivå Bibliotek, Nivå Center 30.AI WEIWEI. Fredag 18. november til søndag 12. februar. Louisiana Contemporary.Louisiana Museum of Modern Art, Gl.Strandvej 13.MALERIER AF BITTEN LUND. Torsdag 24.november til søndag 18. december kl. 12-17.Ninas Natur Cafe, Kirkeltevej 101, Kirkelte.KUNSTHÅNDVÆRK I NIVÅ. Lørdag 3. december til søndag 4. december kl. 12-17 i Fælleshuset. Lena Bidstrup, Eva Castberg og Susanne Sechers årlige åbent hus arrangement.Åtoften, Nivå.FILM ID: A. Dansk action-triller af Christian E.Christiansen. Tirsdag 29. november kl.18.30. Onsdag 30. november kl. 18.30.Torsdag 1 december kl. 20.45. Fredag 2.december kl. 20.45. Lørdag 3. december kl. 18. Søndag 4. december kl. 18. Mandag 5. december kl. 20.45. Tirsdag 6. december kl. 20.45. Humle Bio, Ny Strandvej 100, Humlebæk.NICEVILLE. Amerikansk drama af Tate Taylor, USA. Tirsdag 29. november kl. 20.30.Onsdag 30. november kl. 10 &amp; kl. 20.30.Søndag 4. december kl. 15. Humle Bio.ATTENBERG. Græsk komedie. Torsdag 1.december kl. 17.15. Fredag 2. december kl. 17.15. Lørdag 3. december kl. 16.Mandag 5. december kl. 17.15. Tirsdag 6.december kl. 17.15. Humle Bio.HYSTERIA. Am. komedie af Tanya Wexler.Torsdag 1. december kl. 19. Fredag 2.december kl. 19. Lørdag 3. december kl. 20.Søndag 4. december kl. 20. Mandag 5. december kl. 19. Tirsdag 6. december kl. 19. Humle Bio.TINTIN: ENHJØRNINGENS HEMMELIGHED -DANSK TALE -3D. Lørdag 3. december kl. 14.Søndag 4. december kl. 13. Humle Bio.BØRN JULEEVENTYR I MIDTPUNKT. Lørdag 3.december kl. 12 og 13. Skuespiller Christina Falkberg fortæller dejlige juleeventyr om nisser der driller, sneklædte bakker og pyntede juletræer. Centertorvet. Hørsholm Midtpunkt.MOTION/ SPORT JULETRÆSFEST. Onsdag 30. november kl.18.30. Hørsholm Folkedansere holder juletræsfest med dans. Usserød Skole, Gl. Byvej 10.LILLE VINTERTUR: KOKKEDAL SLOT OG MIKKELBORG. Lørdag 3. december kl. 14.Med Dansk Vandrelaug går vi de cirka 7 km. Turleder: Minna 4914 4140. Mødested Kokkedal Station.ØVRIGT KONSERVATIV JULEBANKO PÅ SELMERSBO.Tirsdag 29. november kl. 1800. Alle er velkomne.Tilmelding og yderligere information hos Per Balser telf.: 29413099 eller email balser@mail. dk.DEMENS CAFÉ. Tirsdag 29. november kl. 19-21. Kom og mød andre pårørende til demente. Frivilligcenter &amp; Selvhjælp Hørsholm. Mosaikken, Ådalsparkvej 63.STATEN DET ER MIG -ENEVÆLDENS HISTORIE.Onsdag 30. november kl. 19. Museumsinspektør Søren Mentz fortæller. Arrangeret af Foreningen Norden i Rudersdal. Sted: Hørsholm Bibliotek, Bibliotekstorvet 1.DIASFOREDRAG AF JENS-PETER KELLERMANN.Onsdag 30. november kl. 19. Arr. af Hørsholm Kunstforening, i Fuglsanghus, Gl. Hovedgade 2.JULEMARKED. Søndag 4. december kl. 11.30-14.Rungsted Sogns Menighedsplejes årlige julemarked i Rungsted Sognehus. Rungsted Præstegård, Bolbrovej 10 B.NISSEJAGT I JULESKOVEN. Søndag 4. december kl. 13-15. Glem juletravlheden og tag med museet på nissejagt. Dansk Jagt-og Skovbrugsmuseum, Folehavevej 15-17.HVEM ER DE NYE BØRNETYPER? Hvordan sikre deres trivsel og udvikling?. Tirsdag 6. december Rådhuskantinen kl. 19-21. Der vil være tid til råd og debat. Arrangeret af Frivilligcenter &amp; Selvhjælp Hørsholm. Hørsholm Rådhus, Ådalsparkvej 2.FIRENZES JULEFORTÆLLINGER. Lørdag 3. december kl. 15-17. Foredrag om Portinari-alteret, Uffizierne, Firenze, ved museumsinspektør Birgitte Folsach. Nivaagaards Malerisamling, Gammel Strandvej 2.LEGO MINDSTORM. Tirsdag 29. november kl.17-20. Lær at bygge, konstruere og programmere din egen robot!. Ungecenter, Møllevej 9 S.KUNST OG ISKRYSTALLER. Tirsdag 29. november kl. 19.30. Louisiana Live -møde med kunstnerne Tal R. og Erik Steffensen samt forskeren, geolog Minik Rosing om det kunstneriske blik på videnskaben.Vært: Synne Rifbjerg. Louisiana Museum of Modern Art, Gl. Strandvej 13.LIGEVÆGTSFORSTYRRELSER. Om Paul Klees sene værk. Onsdag 30. november kl. 20. Louisiana Museum of Modern Art, Gl. Strandvej 13.JULETRÆSFÆLDNING OG HESTEVOGN. Lørdag 3.december og Søndag 4. december kl. 12-15. Anne P. kører med sine dejlige heste i pendulfart over til juletræerne i Store Dyrehave. Ninas Natur Cafe, Kirkeltevej 101, Kirkelte.ADVENTS-FAMILIEGUDSTJENESTE. Søndag 4. december kl. 14. Ved Kirsten Johansen.Minikonfirmanderne opfører deres traditionsrige Luciaoptog. Nivaa Kirke, Nivå Kirkevej 2.GIRLS ONLY. Mandag 5. december kl. 16-20. UC Lounge kun for piger 13-18 år. Idag: Lær at julebage.Arrangeret af Ungfredensborg. Ungecenter, Møllevej 9 S.VIBSKOVS VERDEN. Tirsdag 6 december kl. 19.30.Multikunstneren, modedesigneren og musikeren Henrik Vibskov er Louisiana Live-gæst hos Synne Rifbjerg. Louisiana Museum of Modern Art, Gl.Strandvej 13.
+        </div>
+        <footer>
+          <em>Ugebladet Hørsholm</em>
+          &nbsp;·&nbsp; 2011-11-29
+          &nbsp;·&nbsp; e2fcfe1b
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.672</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.975</kbd>
+            <kbd data-tooltip="Dates &amp; times">L80_DATETM&nbsp;0.817</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mistanken om russisk støtte til Marine Le Pen stiger</h4>
+        <div>
+          En franske efterretningstjeneste siger til Le Canard enchainé, at Rusland støtter Marine Le Pen i valget.Frankrigs præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg.Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev avisen onsdag ifølge Politico.Rusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé, som betyder Den lænkede And.Når forsvarsrådet er samlet deltager præsidenten, premierministeren og fem andre ministre.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot;fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé.Præsidentvalget afvikles over to runder. Første runde 23. april, og anden runde er 7. maj.Den højrenationale kandidat Marine Le Pen fra Front National får angiveligt støtte fra Rusland. Foto: Lionel Cironneau/AP.Den højrenationale kandidat Marine Le Pen fra Front National får angiveligt støtte fra Rusland. Foto: Lionel Cironneau/AP.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-02-09
+          &nbsp;·&nbsp; e61c3690
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.855</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.583</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.827</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tag på safari i Solsystemet, forstå big data og bliv klog på hjernen</h4>
+        <div>
+          Kulturhuset har fire live-transmitterede naturvidenskabelige foredrag fra Aarhus Universitet på programmet i foråretI februar og marts har du mulighed i Kulturhuset Skanderborg at opleve fire naturvidenskabelige foredrag fra Aarhus Universitet publikumssucces: 'Offentlige foredrag i Naturvidenskab, der hver gang har haft trukket over 2.000 interesserede publikummer.Tirsdag 9. februar handler det om Solsystemet. Professor i astrofysik Hans Kjeldsen holder foredraget 'På rumkrydstogt ud i Solsystemet', hvor han tager publikum med på et rumkrydstogt til en række fascinerende og smukke naturscenerier i Solsystemet.Tirsdag 23. februar fortæller professor i datalogi Lars Arge om begrebet Big data og om effektive algoritmer. Han fortæller om de enorme mængder digitale data der i dag indsamles   kaldet Big Data - og forklarer om de smarte algoritmer, som for eksempel kan udnytte Big Data til at forudsige, hvor der er fare for oversvømmelse i forbindelse med skybrud.Tirsdag 1. marts er hjernen i fokus, når professor i neurovidenskab, Leif Østergaard, fortæller om hjernen og hvordan den fungerer. Udgangspunktet er de seneste ti års gennembrud i forståelsen af hjernen, takket være blandt andet teoretisk fysik og avanceret skanner-teknologi.Tirsdag 15. marts handler det om, hvordan is og vand formede det danske landskab. Professor i geofysik David Lundbek Egholm og lektor i geologi Nicolaj Krog Larsen fortæller om istidernes nedbrydning af bjergkæder, og hvorfor det danske landskab ser ud, som det gør i dag.Foredragene vises i Sløngelsalen og begynder klokken 19.00. Der er gratis entré, men det er nødvendigt at bestille billet på Kulturhusets hjemmeside.Hjernen er i fokus tirsdag 1. marts. Her fortæller professor i neurovidenskab, Leif Østergaard, om de seneste 10 års forskningsmæssige landvindinger i forståelsen af hjernen..Hjernen er i fokus tirsdag 1. marts. Her fortæller professor i neurovidenskab, Leif Østergaard, om de seneste 10 års forskningsmæssige landvindinger i forståelsen af hjernen..
+        </div>
+        <footer>
+          <em>Skanderborg.Lokalavisen.dk</em>
+          &nbsp;·&nbsp; 2016-01-29
+          &nbsp;·&nbsp; e587ca2e
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.611</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.596</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mistanken om russisk støtte til Marine Le Pen stiger</h4>
+        <div>
+          En franske efterretningstjeneste siger til Le Canard enchainé, at Rusland støtter Marine Le Pen i valget.Frankrigs præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg.Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev avisen onsdag ifølge Politico.ADVERTISINGRusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé, som betyder Den lænkede And.Når forsvarsrådet er samlet deltager præsidenten, premierministeren og fem andre ministre.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot;fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé.Præsidentvalget afvikles over to runder. Første runde 23. april, og anden runde er 7. maj.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2017-02-09
+          &nbsp;·&nbsp; e61b5b8b
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.857</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.631</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.785</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.511</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lynopdatering af PHP retter fejlramt udgave</h4>
+        <div>
+          PHP 5.3.8 er frigivet, efter udviklerne tirsdag frarådede 5.3.7-opdateringen.Af Christian Loiborg Onsdag, 24. august 2011 - 14:26Tirsdag skrev Version2 om en advarsel fra den officielle PHP-webside , php.net, om ikke at opdatere til PHP 5.3.7, og at fejlen forventedes at blive rettet i løbet af et par dage. Dagen efter, onsdag, er PHP 5.3.7 så klar.Opdateringen retter krypteringen af MD5-algoritmen, og kan hentes på PHP.net.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-08-24
+          &nbsp;·&nbsp; e2d633c0
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.876</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.837</kbd>
+            <kbd data-tooltip="Dates &amp; times">L80_DATETM&nbsp;0.534</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.682</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amerikanske aktier: It-sektoren fortsatte op efter Netflix-succes</h4>
+        <div>
+          Der er udsigt til uændret til svag positiv åbning på det amerikanske aktiemarked onsdag. Futures peger en lille spids op før åbningen.De amerikanske it-aktier ser ud til at tage førertrøjen også onsdag. Futures på Nasdaq-indekset stiger med 0,2 pct.S&amp;P 500-indekset sluttede tirsdag med en lille gevinst på under 0,1 pct. til 2460,61, mens det tunge Dow Jones-indeks lukkede med et fald på 0,3 pct. til 21.574,73. Nasdaq-indekset fortsatte til gengæld rækken af stigninger for ottende dag i træk med et plus på 0,5 pct. til indeksrekorden 6344,31.IBM leverede regnskab efter børstid tirsdag og faldt knap 3 pct. i eftermarkedet. IBM viste vækst i cloud computing og kunstig intelligens, men var ikke i stand til at udligne omkostningerne i skiftet fra traditionelle pc-produkter. I formarkedet onsdag fastholder IBM faldet fra tirsdagens eftermarked og falder med knap 3 pct.Morgan Stanley har leveret regnskab onsdag inden børstid, og investorerne kunne lide hvad de så. Aktien sendes i formarkedet op med 2,9 pct.Efter børstid onsdag er der regnskaber fra blandt andet American Express og Alcoa./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2017-07-19
+          &nbsp;·&nbsp; e657074d
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.982</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny algoritme sender Fingerprint-aktien op</h4>
+        <div>
+          Svenske Fingerprint Cards bliver torsdag belønnet på børsen i Stockholm, efter at selskabet onsdag aften meddelte, at en ny og forbedret algoritme til smartphones er på trapperne.Aktien stiger torsdag formiddag 4,6 pct. til 505 svenske kr.Med udviklingen af algoritmen er Fingerprint ét skridt nærmere at være selvforsynende, hvilket selskabets adm direktør, Jörgen Lantto, sætter stor pris på.&quot;Den forbedrede algoritme, der skærer tredjeparten fra, gør det muligt for os at forbedre vores integrerede systemudbud til smartphones,&quot; sagde Jörgen Lantto i forbindelse med en pressemeddelelse onsdag aften.Som selskabet tidligere har annonceret, vil der samtidig blive introduceret en ny teknologi, der kan opdage såkaldte spoofs, som også kaldes &quot;falske fingre&quot;, der sammen med den nye algoritme kan optimere sikkerheden ved identitetsverifikation i smartphones./ritzau/FINANSFoto: Scanpix.Foto: Scanpix.
+        </div>
+        <footer>
+          <em>Investor.Børsen.dk</em>
+          &nbsp;·&nbsp; 2016-04-07
+          &nbsp;·&nbsp; e5a65752
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.96</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Foredrag om perspektiverne i kunstig intelligens</h4>
+        <div>
+          SØNDERBORG: IDA Sønderjylland/ Ingeniørforeningen er tirsdag 4. september arrangør af et foredrag om kunstig intelligens. Det foregår klokken 16 til 18 i Alsion.Tilmeldingsfrist er torsdag 30. august. Der er 80 ledige pladser.Foredraget diskuterer perspektiverne i kunstig intelligens for videnskaben, samfundet og industrien. Perspektiverne bliver illustreret gennem et bredt spektrum af de nyeste anvendelser og landvindinger på området.Foredraget er på engelsk./ EXP.
+        </div>
+        <footer>
+          <em>Ugeavisen Sønderborg</em>
+          &nbsp;·&nbsp; 2018-07-24
+          &nbsp;·&nbsp; e6d51d55
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.8</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.584</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.514</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DET SKER</h4>
+        <div>
+          MUSIKJAZZ JAM. Fredag 30/ 10 kl. 16.Den sidste fredag i måneden afholder Ambassaden Jazz Jam i vores hyggelige cafe. Start kl. 16 og der er gratis entré.Ambassaden, Rosensgade 11.RMB TURNÉSHOW 2015. Fredag 30/ 10 kl. 20. Over 20 studerende fra RMB uddannelsen slutter traditionen tro to intense uger af med et brag af et koncertshow i Rytmisk Sal.I midten af det hele står en ønskebrønd. Arrangeret af Det Jyske Musikkonservatorium.Musikhuset Aarhus, Thomas Jensens Allé 2.THOMAS HELMIG. Fredag 30/ 10 kl. 20. THOMAS HELMIG.MUTTERS ALENE PÅ TURNÉ. &quot; De nye sange har jeg siddet derhjemme og skrevet, bare mig og min guitar og jeg synes faktisk at de lyder færdige sådan.Hermans, Tivoli Friheden, Skovbrynet 5.PAAL NILSSEN-LOVE LARGE UNIt. Fredag 30/ 10 kl. 20.Norske Paal Nilssen-Love Large Unit er et kraftfuldt jazz-ensemble med fokus på interaktion, fri improvisation, lyde, dynamik og masser af energi. Atlas og VoxHall, Vester Allé 15.SALSA MED LATIMBA PÅ KUPE.Fredag 30/ 10 kl. 20. Så sker det igen! LaTimba er igen tilbage med en weekend event, hvor du er garanteret en salsa aften, der rykker for vildt!. Kupé, Toldbodgade 6.PETER VISKINDE -AKUSTISK KONCERT. Fredag 30/ 10 kl. 20.Denne aften rummer Viskinde ´ s sange fra før og nu, og de intime rammer gir ´ en sjælden mulighed for både publikum og artist, til at komme tæt på sangene og historierne bag. Danmarks Japanske Have Park13, Randersvej 395, Trige.DISSING OG LAS SPILLER BOB DYLAN. Fredag 30/ 10 kl. 20. Hør Dissing &amp; Las med fuldt band til Stakladen. De holder fri fra egne sange denne aften for at spille to hele sæt af Bob Dylans musik.Arrangeret af Studenterhus Aarhus. Stakladen, Nordre Ringgade 3.TRIO JAZZ AT AMBASSADEN.Fredag 30/ 10 kl. 20.30. The german piano player Antje Rößeler and the danish drummer Daniel Sommer met during their studies in Helsinki. Ambassaden, Rosensgade 11.BARBARA MOLEKO. Fredag 30/ 10 kl. 21. Dørene åbner kl.20: 00. Gyldigt ledsagerkort skal medbringes på aftenen. Train, Toldbodgade 6.INFERNAL INKL. menu. Fredag 30/ 10 kl. 21. Infernal_ Akustisk koncert. Montra Hotel Sabro Kro, Viborgvej 780.POUL HALBERG &amp; FRIENDS -EN FORRYGENDE FESTLIG AFTEN MED MAGI I LUFTEN. Fredag 30/ 10 kl. 21. Repertoiret er håndplukket blandt de bedste sange fra de sidste 35 år, fra bl. a. Halberg Larsen, Ray Dee Ohh og Halbergs egne soloalbums. Arrangeret af Gl. Egå Jazzklub. Gl. Egå Forsamlingshus, Egå Mosevej 6, Gl. Egå.FROKOSTJAZZ I ÅRHUS JAZZKLUB M. River Jazz and Blues Band. Lørdag 31/ 10 kl. 13.Torben Lassen: trompet, mundharpe, vokal Karen Sørensen: klaver Allan Bjerregaard: trombone, vokal Filt Kristensen: tenorsax, klarinet Jørgen Nielsen: bas Nikolai Seidelin Banke: trommer. Arrangeret af Aarhus Jazzklub. Hos Anders, Telefontorvet, Frederiksgade 25.FÆLLESSANG MED SANGKRAFT AARHUS. Lørdag 31/ 10 kl. 14.Sang er en fundamental måde at udtrykke sig på. At synge de samme ord til den samme melodi styrker fællesskab og samvær -og så er det sundt. Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.KONCERT. Lørdag 31/ 10 kl. 16-17.Den Danske Klavertrio Lars Bjørnkjær, violin Toke Møldrup, cello Katrine Gislinge, klaver.Ellevang Kirke, Jellebakken 42.0TUBAAFTEN. Lørdag 31/ 10 kl. 19.30. Det Jyske Musikkonservatorium, Skovgaardsgade 2 C.MELLEMBLOND. Lørdag 31/ 10 kl.20. Poetisk, vedkommende og knivskarp. Mellemblonds tredje plade ' FRA ET STED' udkom den 20. april 2015. Det er et modent og lyrisk, dansk rock-album Mellemblond udgiver. Radar, Skovgaardsgade 3.THOMAS HELMIG. Lørdag 31/ 10 kl. 20. &quot; De nye sange har jeg siddet derhjemme og skrevet, bare mig og min guitar og jeg synes faktisk at de lyder færdige sådan. Så jeg begyndte at spille nogle af alle de gamle sange som jeg har skrevet på samme måde. Hermans, Tivoli Friheden, Skovbrynet 5.MIKAEL SIMPSON. Lørdag 31/ 10 kl. 21. Dørene åbner kl.20: 00. Gyldigt ledsagerkort skal medbringes på aftenen. Train, Toldbodgade 6.NATASJA MEMORIAL 2015.Lørdag 31/ 10 kl. 23.59. Et er Youngblood Sound en stor ære, at kunne præsentere Natasja Memorial tilbage i den grå hal på Christiania, i år som noget helt nyt, på Train i Århus. Dørene åbner kl. 23: 59Gyldigt ledsagerkort skal medbringes på aftenen.Train, Toldbodgade 6.THOMAS HELMIG. Søndag 1/ 11 kl. 19. &quot; De nye sange har jeg siddet derhjemme og skrevet, bare mig og min guitar og jeg synes faktisk at de lyder færdige sådan. Så jeg begyndte at spille nogle af alle de gamle sange som jeg har skrevet på samme måde. Hermans, Tivoli Friheden, Skovbrynet 5.DORIC STRING QUARTET.Søndag 1/ 11 kl. 19.30. Den førende britiske strygekvartet blandt den nye generation som får glødende respons fra publikum og kritikere over hele kloden. De spiller kvartetter af Haydn (opus 64 nr. 4), Bartok (nr. 4) og Schumann (nr.1, opus 41). Arrangeret af Århus Musikforening. Musikhuset Aarhus, Thomas Jensens Allé 2.150 JUBILÆUMSKONCERT FOR CARL NIELSEN. Søndag 1/ 11 kl.19.30-21. Koncert i Todbjerg kirke søndag d. 1. november 2015 kl. 19.30 Vi 150-års jubilaren Carl Nielsen, hans Blæserkvintet op. 43 opføres af Quintetto Ragazze og pianisten Elisabeth Guang, spille Carl Nielsens seks &quot; Humoreske-Bagateller&quot;, op.Todbjerg Kirke, Bøggildsvej 18, Todbjerg.GARBAGE (us). Søndag 1/ 11 kl. 20. Dørene åbner kl. 19: 00.Gyldigt ledsagerkort skal medbringes på aftenen. Train, Toldbodgade 6.AFLYST! Caro Emerald. Søndag 1/ 11 kl. 20. Hun er blevet kaldt en hollandsk stjerne fra Hollywoods guldalder og et humørbarometerets modstykke til Amy Winehouse. Musikhuset Aarhus, Thomas Jensens Allé 2.ELVIS PERKINS. Tirsdag 3/ 11 kl.19. Amerikanske Elvis Perkins er en ypperlig sanger/ sangskriver, der genremæssigt beskæftiger sig med genrer som folk, americana og indierock og tekstmæssigt skriver stærke og ofte personlige sange. Atlas og VoxHall, Vester Allé 15.KVINDEEFTERÅRET: KVINDER KOMPONERER FOR ORGLET.Tirsdag 3/ 11 kl. 19-20. Langenæs Kirke, Kirkedammen 2.KORKONCERT I ELLEVANG KIRKE. Tirsdag 3/ 11 kl. 19.30.Koret Maestra fra Aarhus Musikskole og Klarup Pigekor giver koncert i Ellevang Kirke, Aarhus. Det er kormusik på højt niveau, og publikum kan forvente en stor klanglig oplevelse.Arrangeret af Aarhus Musikskole. Ellevang Kirke, Jellebakken 42.DEBUTKONCERT -EMIL GRYESTEN, KLAVER. Tirsdag 3/ 11 kl. 19.30. Program: Schubert: Sonate i c-mol, D. 958 Ravel: Pavane pour une infante défunte Rodion Shchedrin: Basso Ostinato Chopin: 24 Præludier, op. 28. Arrangeret af Det Jyske Musikkonservatorium.Musikhuset Aarhus, Thomas Jensens Allé 2.SANGSOIRÉ. Tirsdag 3/ 11 kl. 19.30. Arrangeret af Det Jyske Musikkonservatorium.Musikhuset Aarhus, Thomas Jensens Allé 2.KONCERT MED PETRI/ HANNIBAL DUO. Tirsdag 3/ 11 kl. 19.30.Kom og del en dejlig musikalsk oplevelse en efterårsaften med de to stjerner, Michala Petri og Lars Hannibal. Egå Kirke og Sognegård, Egå Mosevej 7.SUSANNE SUNDFØR. Tirsdag 3/ 11 kl. 20. Singlen &quot; Fade Away&quot; er en 80' er popsang med Susanne's fantastiske stemme i centrum. Videoen er linstrueret af den svenske instruktør Lærke Herthoni. Atlas og VoxHall, Vester Allé 15.TEATERURPREMIERE: M. I. S. natten lang. Torsdag 29/ 10 til tirsdag 3/ 11 HVERDAGE KL. 20 / LØRDAG KL. 17. En slapstick danseforestilling, der sparker nosserne i flyvehøjde og knalder hovederne sammen i jagten på den forbandede selvforståelse.Arrangeret af Don* Gnu. Bora Bora, Valdemarsgade 1.SKAKTENS SKYGGER. Fredag 30/ 10 kl. 19. Skaktens Skygger.I det tomme mørke findes kun de dæmoner, du selv tager med.Skaktens Skygger foregår i en dystopisk verden, hvor industrialiseringen er løbet løbsk, og blevet altdominerende.Rosenteatret, Teatertorvet.AFDELINGEN FOR MINDRE PLANTER.Fredag 30/ 10 kl. 19.30. En komedie om at luge ud, så noget nyt kan spire. Moderne dramatik.Varighed: 90 min uden pause. Teatret Svalegangen, Rosenkrantzgade 21.BRIAN MØRK, ELIAS EHLERS OG STAFF. Fredag 30/ 10 kl. 20. Det bliver klogt, virkelig morsom og også dybt når Brian Mørk, Elias Ehlers og Staff tager imod og præsenterer et virkelig bredt og gennemsjovt stand-up show på Århus ´ bedste comedy scene.Arrangør: FBI. Musikhuset Aarhus, Thomas Jensens Allé 2.TEATERTRUPPEN STORMEN -DIPLOMATI. Mandag 2/ 11 til søndag 8/ 11 kl. 19.30.Teatertruppen Stormen opfører stykket Diplomati spiller 2. til 8.november på hverdage kl 19.30.Lørdag og søndag kl 16.00 i Vogn 2 på Godsbanen. Billetter bestilles på tlf: 40911055 eller købes i døren. Arrangeret af Teatertruppen Stormen.Godsbanen, Skovgaardsgade 3.DET SPIRER I SKUFFEN. Tirsdag 3/ 11 kl. 19-21. Går du og gemmer på nogle interessante tekster, som du gerne vil dele i et intimt miljø? Så kom forbi Ambassaden den første tirsdag i hver måned klokken 19 og mød andre ligesindede. Ambassaden, Rosensgade 11.&quot; ENSOMHED, LIDELSE OG LÆNGSEL&quot; -NY SÆRUDSTILLING AF KUNSTNEREN ØSSUR JOHANNESEN. Fredag 28/ 8 til søndag 29/ 11 kl. 10-16, weekend og helligdage kl. 12-16. Fra d. 28. august 2015 kan publikum opleve en udstilling af den anerkendte færøske kunstner Øssur Johannesen (f. 1970) på Museum Ovartaci. Johannesen er blandt andet kendt for sin yderst ekspressive stil såvel i sine grafiske værker som i malerierne.Museum Ovartaci, Århus Universitetshospital, Risskov, Skovagervej 2.SKOVAGERVEJ 2.KUNSTUDSTILLING. Torsdag 15/ 10 til fredag 18/ 12 kl.09-15.30. Mandag til fredag udstiller Benedikte Boesen akrylmalerier. Ældre Sagen, Århus Midt, Vester Alle 8.KVINDER ER DEN HALVE VERDEN -KUNSTDSTILLING MED YUKARI OCHIAI. Fredag 23/ 10 til onsdag 30/ 12 Tirs-lør. 10-17, ons. 10-20, søn. 10-16, man: LUKKET. Yukari Ochiais billedhistorier handler om aktuelle sociale forhold.&quot; Jeg harmes over pengemagten som ødelægger Moder Jord, vores natur og klima blot for profit. Jævne folks liv, kvinder og børn er altid de første ofre for udbytningen.&quot; -Yukari Ochiai.Kvindemuseet i Danmark, Domkirkepladsen 5.ALLETIDERSKUNST 2015.Torsdag 29/ 10 til søndag 1/ 11 kl. 17. 45 stande med 48 kunstnere udstiller deres værker på årets alletiders kunstudstilling i Ridehuset i Århus. Se www.alletiderskunst. dk. Billede: Pia Haslund. Arrangeret af Lions Club Aarhus Sct. Clemens.Ridehuset, Vester Allé 1.ALLETIDERSKUNST I ÅRHUS RIDEHUS. Torsdag 29/ 10 til søndag 1/ 11 kl. 17. Maiken Hejnfelt -atelier1. dk udstiller sammen med 49 andre kunstnere i Århus Ridehus på AlletidersKunst.Arrangeret af Lions Club Aarhus Sct. Clemens. Kulturhus Århus, Officersbygningen, Vester Allé 3.MÅNEDENS KUNSTNER PÅ GALLERI UDSIGTEN. Lørdag 31/ 10 til søndag 1/ 11 lør kl. 13-17 og søn kl. 10-17. Tine Kaag Raun fra Aarhus er månedens kunstner på galleriet. Tines tegninger med pen og flydende tusch kan ses på galleriet fra den 10. oktober til den 8. november. Galleri &quot; Udsigten&quot;, Bakkevej 2, Lading.KAARE NORGE (MALERI). Lørdag 31/ 10 til søndag 22/ 11 kl.12-17.30. Kunstner Kaare Norge udstiller malerier. Fernisering lørdag den 31. oktober 2015 kl. 12-14. Kaare Norge giver på ferniseringsdagen en koncert på klassisk guitar. Jarsbo Contemporary Art, M. P. Bruuns Gade 43.KUNSTHÅNDVÆRKERMARKED I RISSKOV/ EGÅ. Søndag 1/ 11 kl. 09.30-15.30. Særligt udvalgte kunsthåndværkere udstiller høj kvalitet indenfor mange forskellige områder: Smykker, Keramik, Træ, Raku, Knive, Strik, Accessories, Malerier, Sæbe, Tasker, pileflet, Akvarel, Skulptur Unikt tøj m. m.Fit&amp;Sund, Ådalsvej 27.ÅBENT HUS I KUNSTGRUPPEN CARBASUS' VÆRKSTED. Søndag 1/ 11 kl. 11 til 16. Kom og se hvordan 12 kunstnere inspirerer hinanden.Købmandsgården i Nr.Galten, Erslevvej 30, Nr. Galten.WALK IN TEATERSPARRING.Mandag 2/ 11 kl. 16-17.30. Få hjælp til dit projekt. Kom forbi til en uforpligtende samtale med en af vores scenekunstkuratorer.Ambassaden, Rosensgade 11.FOTOUDSTILLING. Mandag 2/ 11 til onsdag 30/ 12 kl. 10. Henning Caspersen er pensioneret skolelærer, og bruger nu en del af sin tid på at fotografere. Henning bor i Ulstrup, og han finder sine motiver på ture i smukke og dramatiske landskaber. Sløjfen, Evald Tangs Allé 45.BØRNMORGENSANG. Mandag 26/ 10 til fredag 30/ 10 kl. 09.45. Vi synger hele året rundt hver morgen kl. 9.45 på Ugelbølle Friskole, alle voksne og alle børn. I Spil Danskugen uge vil vi så selvfølgelig udelukkende synge danske sange. Kom gerne og syng med!. Ugelbølle Friskole, Langkær 2.I DET BLÅ BJERG. Fredag 30/ 10 kl. 09.30 &amp; 11. Udtryksfuldt og spændende dukkespil for de 4-10 årige. Et eventyr om mod, handlekraft og kammeratskab.Spændende så hårene rejser sig på armene, sjove detaljer og som i et rigtigt eventyr en god morale og en lykkelig slutning.Arrangeret af Syddjurs Egnsteater. Rønde Gymnasium, Kr. Herskindsvej 6.HALFDANS HOVED. Søndag 1/ 11 kl. 14. I 2015 ville Halfdan Rasmussen være fyldt 100 år, og det skal da fejres! I anledningen af Halfdan Rasmussens 100 års fødselsdag udgiver Kaya Brüel og Ole Kibsgaard i foråret 2015 Halfdans Hoved -en ny CD med de største af Halfdans hits.Musikhuset Aarhus, Thomas Jensens Allé 2.I DET BLÅ BJERG. Onsdag 4/ 11 kl. 09.30 &amp; 11. Udtryksfuldt og spændende dukkespil for de 4-10 årige. Et eventyr om mod, handlekraft og kammeratskab.Spændende så hårene rejser sig på armene, sjove detaljer og som i et rigtigt eventyr en god morale og en lykkelig slutning.Arrangeret af Syddjurs Egnsteater. Brugerhuset Solgården, Mosevej 9.EMIL, PIPPI, KARLSSON &amp; CO. Onsdag 4/ 11 kl. 17. DR Big Bandet i Astrid Lindgrens verden. DR Big Bandet byder på et musikalsk genhør med den kendte og elskede musik fra Astrid Lindgrens verden.Musikhuset Aarhus, Thomas Jensens Allé 2.FILMWORKSHOP FOR BØRN OG FAMILIER. Onsdag 4/ 11 kl. 17.Filmselvskab afholder workshop i samarbejde med filminstruktører og spiludviklere for børn og familier. Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.MOTION/ SPORTAARHUS MAMBO KLUB. Fredag 30/ 10 kl. 21-02. Kom og vær med når AARHUS MAMBO KLUB inviterer alle til at prøve kræfter med MAMBOEN på Folkestedet kl. 21.00-02.00 -pris kr. 60,-.Folkestedet, Carl Blochs Gade 28.MOTIONSTUR MED ÅRHUS FODSLAW. Lørdag 31/ 10 kl.13. 2 timers motionstur i natur og byområder i et frisk tempo.Arrangeret af Aarhus Fodslaw. Parkeringsplads ved Busstoppested, Klokkeskovvej 15.D KJELLERUP. Lørdag 31/ 10 kl. 14. Lyseng Idrætspark, Lysengvej 1.FODBOLDKAMP HERRE-DS PUL-JE 3 -LYSTRUP IF MOD AARHUS FREMAD. Lørdag 31/ 10 kl. 14.30.NES Park, Vestre Strandalle 170.FODBOLDKAMP HERRE-DS PUL-JE 3 -LYSTRUP IF MOD AARHUS FREMAD. Lørdag 31/ 10 kl. 14.30.Lystrup Idrætsanlæg, Lystrup Centervej 102.FODBOLDKAMP 1. division kvinder (Pulje 2) -Vejlby mod Team Viborg. Lørdag 31/ 10 kl. 15.Vejlby Stadion, Vejlby Centervej 53.MASSAGE FOR BEGYNDERE -WEEKEND. Lørdag 31/ 10 til søndag 1/ 11 2 kursusdage kl. 09-16.Underviser: Lone Jespersen.Massage giver energifornyelse og er med til at minimere myoser og spændinger i musklerne.Denne weekend vil du komme til at bruge de mest grundlæggende massage-tag til at afspænde muskulaturen og bearbejde muskler og myoser. AOF Aarhus.AFTENSKOLE, SØREN FRICHS VEJ 36 B, 1. sal.FITNESSMESSE AARHUS 2015.Lørdag 31/ 10 til søndag 1/ 11 kl.10-17 begge dage. Er du interesseret i fitness, træning, sund kost og velvære? Så kom til Aarhus til efteråret og deltag i Jyllands største fitnessmesse, hvor du finder de nyeste trends indenfor træning og kost blandt de 30 udstillere. Vi har noget for alle!. DGI-huset, Værkmestergade 17.FODBOLDKAMP 3F LIGAEN KVINDER -SKOVBAKKEN MOD ASA, AARHUS. Søndag 1/ 11 kl. 13. Vejlby Stadion, Vejlby Centervej 53.FODBOLDKAMP ALKA SUPERLIGAEN -AGF MOD SØNDERJYSKE. Mandag 2/ 11 kl.19. Ceres Arena, Stadion Alle 70.TANGO. Tirsdag 3/ 11 kl. 19.30.Foreningen &quot; Kom og dans&quot; fra Laurbjerg giver undervisning i den særlige &quot; Kom og dans -tango&quot; udviklet af Johan Fasting, og efterfølgende er der fri dans. For både nybeyndere og øvede. Du behøver ikke selv at medbringe en dansepartner. Hadsten Bibliotek, Sløjfen, Evald Tangs Allé 45.MORGENYOGA PÅ KVINDEMUSEET. Onsdag 4/ 11 kl. 7.50-9. MORGENKARMA I LATINERKVARTERET Den 1. onsdag i hver måned i hele vinterhalvåret har vi morgenyoga i den gamle byrådssal på Kvindemuseet. Vi starter d. 2 september, prisen for deltagelse er 30 kr. Kvindemuseet i Danmark, Domkirkepladsen 5.ØVRIGTPÅ OPDAGELSE MED SPIRE IB I VÆKSTHUSENE. Mandag 26/ 10 til mandag 30/ 11 kl. 9-16/ 10-17.Spire Ib vil guide dig og din familie rundt mellem Væksthusenes mange grønne planter og hjælpe jer med at få øje på de største blade, de mindste, de sjoveste og de flotteste. ´. Væksthusene i Botanisk Have, Peter Holms Vej.YOGA &amp; MINDFULNESS FOR BEGYNDERE. Onsdag 28/ 10 til onsdag 25/ 11 kl. 9.15 ons.Mindful Yoga er en blid yogastil som er tilegnet alle, der ønsker at lære stillingerne grundigt, og samtidig praktisere dem mindful.Mind and Motion &amp; Mindful Yoga v/ Nina Pfeiffer, Ryesgade 31. 3 sal.SKAK! Spil, hygge og træning.Fredag 30/ 10 kl. 10-12. Kom og spil skak på Dokk1 -både for begyndere og øvede. Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.INTERNATIONAL AFTEN. Fredag 30/ 10 kl. 18-22. Gellerup Kirke, Gudrunsvej 88.HALLOWEEN PARTY I BADEANSTALTEN SPANIEN FOR 4., 5. og 6. klasser. Fredag 30/ 10 kl. 19.30-22.30. Når mørket har lagt sig over Badeanstalten Spanien, byder vi alle nattens væsener velkommen til fest i den hjemsøgte svømmehal.Forbered dig på en (u) hyggelig aften og vær klar til at svømme med de skræmmende monstre.Badeanstalten Spanien, Spanien 1.TIPS OG TRICKS TIL FLETNINGER.Lørdag 31/ 10 kl. 10.30. Frisør Joan viser nogle af de mange måder håret kan flettes på.Hadsten Bibliotek, Sløjfen, Evald Tangs Allé 45.SKAB FORANDRING -UDNYT DIN HISTORIE OG HJERNE. Søndag 1/ 11 kl. 14-16. FOREDRAG MED COACH SIMON BENDFELDT. Der er en tæt forbindelse mellem den måde vi forholder os til os selv, den måde vores hjerne reagerer på og de muligheder vi ser i livet. Handi-Ka, Engtoften 7 A.RO &amp; ORD. Mandag 2/ 11 kl.11.30-12. Start ugen med ro og ord, når mindfulness-instruktør Anne Marie Beck guider dig gennem en halv times meditation, som sluttes af med dagens digt to-go. Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.MANDAGSKLUBBEN: HOSPITALSKLOVNEN FORTÆLLER.Mandag 2/ 11 kl. 14-16.Langenæs Kirke, Kirkedammen 2.MANDAGSTRÆF. Mandag 2/ 11 kl. 14-16. Marianne Ninna Philipsen fortæller om &quot; Dronning Caroline Mathilde&quot;.Sindssygdom, magt, intriger, lidenskab og død er nogle af de elementer, der beregner dronning Caroline Mathildes korte tid på den danske trone. Lykken varede kort. Beder Sognegård, Kirkebakken 58.ANNE-CATHERINE RIEBNITZSKY PÅ DOKK1. Mandag 2/ 11 kl. 19-21. Anne-Cathrine Riebnitzsky fortæller om sit arbejde og om sine oplevelser med afghanske kvinder. Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.OFFENTLIGE FOREDRAG I NATURVIDENSKAB: BIG DATA OG EFFEKTIVE ALGORITMER.Mandag 2/ 11 kl. 19-21. Mød i disse foredrag, som holdes i Aarhus Universitets Søauditorier, forskere der fortæller om de nyeste opdagelser og løfter fliget for de forskningsmetoder de benytter.Foredragene er blevet så populære at hvert af dem ofte samler over tusinde tilhørere.Søauditorierne, Aarhus Universitet, Bygning 1250-1253, Vennelyst Boulevard 8.16: 9 FOREDRAG OM WES ANDERSON. Tirsdag 3/ 11 kl.17. Ved filmskribent og lektor ved Medievidenskab, Aarhus Universitet Jakob Isak Nielsen.Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.HVAD ER ET VÆREDYGTIGT MENNESKE. Tirsdag 3/ 11 kl. 17.SCENE: STIKLINGEN. (Unum. pl.).Dørene åbner kl. 16.30. Foredrag kl. 17-19. Pris: 50 kr. inkl. billetgebyr -Inkl. en kop kaffe og småkage serveret i pausen.Aarhus Teater, Teatergaden 1.OFFENTLIGE FOREDRAG I NATURVIDENSKAB: BIG DATA OG EFFEKTIVE ALGORITMER. Tirsdag 3/ 11 kl. 19-21. Mød i disse foredrag, som holdes i Aarhus Universitets Søauditorier, forskere der fortæller om de nyeste opdagelser og løfter fliget for de forskningsmetoder de benytter. Foredragene er blevet så populære at hvert af dem ofte samler over tusinde tilhørere.Søauditorierne, Aarhus Universitet, Bygning 1250-1253, Vennelyst Boulevard 8.PALÆSTINA-ARRANGEMENT MED YMCA/ YWCA FRA ØSTJERUSALEM JAI. Tirsdag 3/ 11 kl.19-21. Ibrahim Hannouneh fra JAI -Joint Advocacy YWCA/ YMCA Øst-Jerusalem. Gellerup Kirke, Gudrunsvej 88.SYSSELTINGET. Tirsdag 3/ 11 kl.19-22. Sysseltinget mødes for at producere julepynt i papir, stof, strik og meget andet og vores produktion sælges fra Sysseltingets stand på den årlige basar sidst i november.Fredenskirken, Rosenvangs Allé 51.VIRKSOMHEDSBESØG HOS BKI KAFFE, HØJBJERG -KØR SELV TUR. Onsdag 4/ 11 kl. 14.30-16.Vi besøger BKI's kafferisteri i Højbjerg (i produktionstiden).Der bliver fortalt om BKI's produkter og virksomhed. BKI er vært ved en kop kaffe/ te samt småkager. Tilmeldingsfrist 26.oktober 2015 Max 30 deltagere.Arrangeret af Linå og Omegns Husholdningsforening. BKI Kaffe, Søren Nymarks Vej 7.MAKER-ONSDAG. Onsdag 4/ 11 kl. 15. Vi dimser med 3D-print, bygger og programmerer med Arduino, og andet grej vi kan få fingre i. Prøv dig selv af på nye teknologier og arbejdsmetoder.Dokk1/ Aarhus Hovedbibliotek, Hack Kampmanns Plads 2.OG HØR OM VORES SPÆNDENDE REJSEOPLEVELSER I FILIPPINERNE OG OM DE MANGE MULIGHEDER DETTE SMUKKE Ø-RIGE BYDER PÅ. Jysk Rejsebureau, Skt. Olufs Gade 2.ISRAEL OG DET JØDISKE FOLKS HISTORIE. Onsdag 4/ 11 kl. 1Offentlige foredrag i Naturvidenskab: Big Data og effektive algoritmer. Onsdag 4/ 11 kl. 19-21. Mød i disse foredrag, som holdes i Aarhus Universitets Søauditorier, forskere der fortæller om de nyeste opdagelser og løfter fliget for de forskningsmetoder de benytter. Foredragene er blevet så populære at hvert af dem ofte samler over tusinde tilhørere.Søauditorierne, Aarhus Universitet, Bygning 1250-1253, Vennelyst Boulevard 8.
+        </div>
+        <footer>
+          <em>Lokalavisen Aarhus Weekend</em>
+          &nbsp;·&nbsp; 2015-10-29
+          &nbsp;·&nbsp; e5496404
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.853</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.884</kbd>
+            <kbd data-tooltip="Dates &amp; times">L80_DATETM&nbsp;0.587</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Valuta: Newzealandsk dollar bølgede frem og tilbage efter rentemøde</h4>
+        <div>
+          Valutaen blev ellers kortvarigt svækket efter centralbankens rentemøde, der blev afsluttet natten til onsdag dansk tid, og her kan et forkert tweet på det sociale medie Twitter have spillet en rolle, skriver Bloomberg News.I hvert fald udsendte et finansielt dataselskab et tweet, om at centralbanken havde sænket renten, på trods af at den faktisk fastholdt den, som de fleste økonomer ifølge Bloomberg News også havde forventet.En handler i Asien, der har ønsket at være anonym, fortæller til nyhedsbureauet, at man efter beskeden på Twitter kunne se, at algoritmehandlen tog over og solgte den newzealandske dollar, der faldt op mod 0,6 pct., før svækkelsen igen blev udvisket.Onsdag eftermiddag koster newzealandske dollar 0,6684 amerikanske dollar mod 0,6646 dollar tirsdag eftermiddag.Den amerikanske dollar rykker omvendt ikke meget på sig i løbet af onsdagen. Til gengæld holder valutaen fast i tirsdagens styrkelse, som indfandt sig efter taler fra flere ledende medlemmer af den amerikanske centralbank, Federal Reserve.Ifølge nyhedsbureauet Reuters skyldes fremgangen reducerede forventninger til aggressive amerikanske rentenedsættelser næste måned, men en bred overbevisning om, at Federal Reserve dog kommer til at lempe sin pengepolitik, begrænser imidlertid styrkelsen.Onsdag middag koster en euro 1,1366 dollar mod 1,1382 dollar tirsdag eftermiddag. Dollar koster onsdag eftermiddag 107,70 yen mod 106,96 yen tirsdag klokken 17.00 dansk tid./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2019-06-26
+          &nbsp;·&nbsp; e7403aaf
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.579</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.55</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Følg med fra Aarhus Universitet</h4>
+        <div>
+          RIBE: Tag med til spændende foredrag i Aarhus, men bliv siddende i Seminariehusets Fællessal i Ribe og hør det hele.Lyder det som et spændende tilbud, så læs videre.Aarhus Universitet livestreamer nu foredrag direkte til byer over hele landet. Således kan man fra Seminariehusets Fællessal i Ribe opleve foredragene &quot; På rumkrydstogt ud i solsystemet&quot;, &quot; Big data og algoritmer&quot; samt &quot; Sådan fungerer hjernen&quot;. Det foregår henholdsvis tirsdag 9. februar, tirsdag 23. februar og tirsdag 1. marts.Efter foredragene er der mulighed for at stille spørgsmål til foredragsholderen enten ved håndsoprækning (i Aarhus) eller på sms fra andre steder i landet.Det er Esbjerg Kommunes Bibliotek og Ribe Katedralskole, der er sammen om livestreaming-arrangementerne.Der er fri entré til foredragene og det kræver ingen tilmelding. / caa.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Esbjerg</em>
+          &nbsp;·&nbsp; 2016-01-25
+          &nbsp;·&nbsp; e5858bad
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.781</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tag på safari i Solsystemet, forstå big data og bliv klog på hjernen</h4>
+        <div>
+          Kulturhuset har fire live-transmitterede naturvidenskabelige foredrag fra Aarhus Universitet på programmet i foråretI februar og marts har du mulighed i Kulturhuset Skanderborg at opleve fire naturvidenskabelige foredrag fra Aarhus Universitet publikumssucces: 'Offentlige foredrag i Naturvidenskab, der hver gang har haft trukket over 2.000 interesserede publikummer.Tirsdag 9. februar handler det om Solsystemet. Professor i astrofysik Hans Kjeldsen holder foredraget 'På rumkrydstogt ud i Solsystemet', hvor han tager publikum med på et rumkrydstogt til en række fascinerende og smukke naturscenerier i Solsystemet.Tirsdag 23. februar fortæller professor i datalogi Lars Arge om begrebet Big data og om effektive algoritmer. Han fortæller om de enorme mængder digitale data der i dag indsamles   kaldet Big Data - og forklarer om de smarte algoritmer, som for eksempel kan udnytte Big Data til at forudsige, hvor der er fare for oversvømmelse i forbindelse med skybrud.Tirsdag 1. marts er hjernen i fokus, når professor i neurovidenskab, Leif Østergaard, fortæller om hjernen og hvordan den fungerer. Udgangspunktet er de seneste ti års gennembrud i forståelsen af hjernen, takket være blandt andet teoretisk fysik og avanceret skanner-teknologi.Tirsdag 15. marts handler det om, hvordan is og vand formede det danske landskab. Professor i geofysik David Lundbek Egholm og lektor i geologi Nicolaj Krog Larsen fortæller om istidernes nedbrydning af bjergkæder, og hvorfor det danske landskab ser ud, som det gør i dag.Foredragene vises i Sløngelsalen og begynder klokken 19.00. Der er gratis entré, men det er nødvendigt at bestille billet på Kulturhusets hjemmeside.
+        </div>
+        <footer>
+          <em>Nytomostjylland.dk</em>
+          &nbsp;·&nbsp; 2016-01-29
+          &nbsp;·&nbsp; e587c895
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.692</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Foredragsrække om spildesign</h4>
+        <div>
+          SØNDERBORG: Drømmer du om at blive spil-designer, så kan du blive meget klogere på emnet, når Biblioteket Sønderborg fra januar til marts har en foredragsrække om netop spil-design. Her kan du møde en perlerække af professionelle spil-designere og spil-forskere.Første arrangement er onsdag den 25. januar klokken 17, hvor Lars Kroll Kristensen holder foredraget Kunstig intelligens og spildesign.Her vil Lars Kroll Kristensen ogs ¨ å vise demoer af sit nyeste spil.Der er fri entré.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Sønderborg</em>
+          &nbsp;·&nbsp; 2017-01-18
+          &nbsp;·&nbsp; e6126b63
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.889</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.664</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>USA sortlister kinesiske selskaber for overgreb mod muslimer (v.2)</h4>
+        <div>
+          WashingtonDet amerikanske handelsministerium sortlister 28 kinesiske virksomheder, som ifølge USA har været involveret i overgreb mod uighurer og andre muslimske mindretal i Xinjiang-regionen.Det oplyser den amerikanske handelsminister, Wilbur Ross, natten til tirsdag dansk tid.USA &quot;hverken kan eller vil tolerere den brutale undertrykkelse af etniske minoriteter i Kina&quot;, siger han.De 28 kinesiske virksomheder vil med tiltaget få et forbud mod at købe amerikanske produkter.Nyhedsbureauet AFP har fået adgang til en liste over navnene på de virksomheder, som USA vil sortliste. Den skal ifølge planen offentliggøres onsdag.Der skal blandt andet være tale om videoovervågningsfirmaet Hikvision. Derudover skal virksomhederne Megvii Technologies og SenseTime, som arbejder med kunstig intelligens, også være på listen./ritzau/AFP
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-10-08
+          &nbsp;·&nbsp; e761795a
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.98</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.613</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.508</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOF debatter på Ragnarock</h4>
+        <div>
+          Ragnarock på Musicon bliver fyldt med debatter på flere torsdag i løbet af efteråret. Det sker takket være FOF, der har fundet en lang række oplægsholdere, som kan danne grundlaget for aftenens debat.Første gang er torsdag 22.oktober klokken 19. Her holder Rasmus Hougaard Nielsen et oplæg om Gode penge.Ugen efter er det Thomas Bolander og Kasper Colling Nielsen med emnet Kunstig intelligens - Drøm og virkelighed.Billetter og det fulde program på www.fof.dk/ midtsj.
+        </div>
+        <footer>
+          <em>Roskilde Avis - Paperboy</em>
+          &nbsp;·&nbsp; 2020-10-07
+          &nbsp;·&nbsp; e7ed5783
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.845</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.553</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.649</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om solen, algoritmer og hjernen</h4>
+        <div>
+          AABENRAA: Folkeuniversitetet i Aabenraa inviterer i foråret til tre naturvidenskabelige foredrag på Aabenraa Bibliotek. Foredragene holdes på Aarhus Universitet og sendes via internettet, således at de samtidig kan høres og ses på storskærmen på biblioteket.Man lægger ud tirsdag den 9. februar med foredrag &quot; På rumkrydstogt ud i solsystemet&quot; ved professor i astrofysik, Hans Kjeldsen.Det andet foredrag er &quot; Big Data og effektive algoritmer&quot; af professor i datalogi, Lars Arge, Institut for Datalogi, Aarhus Universitet. Det foregår onsdag den 24. februar klokken 19.00-21.00.Det tredje foredrag hedder &quot; Hvordan fungerer hjernen?&quot; og er med professor i neurovidenskab, Leif Østergaard, Institut for Klinisk Medicin - Center for Funktionelt Integrativ Neurovidenskab, Aarhus Universitetet . Det foregår mandag den 29. februar klokken 19.00-21.00.Alle er velkomne, og der er gratis adgang, lokker Uwe Lindholdt, Aabenraa Folkeuniversitet, og Liselotte Barker, Aabenraa Bibliotek.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Aabenraa</em>
+          &nbsp;·&nbsp; 2016-01-12
+          &nbsp;·&nbsp; e5736370
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.758</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.755</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.51</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Naturvidenskab live i Hadsten Bio</h4>
+        <div>
+          HADSTEN Hadsten Bio har fået mulighed for at livestreame direkte fra auditoriet i Aarhus, hvor de bedste forskere fortæller. Næste gang er tirsdag 3. november kl. 19. Professor Lars Arge, Institut for Datalogi, vil fortælle om &quot; Big Data og effektive algoritmer&quot;.Gratis adgang, men tilmelding på biografens hjemmeside.
+        </div>
+        <footer>
+          <em>Favrskov Posten</em>
+          &nbsp;·&nbsp; 2015-10-27
+          &nbsp;·&nbsp; e5485aaf
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.733</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.603</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.519</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Algoritmerne kommer</h4>
+        <div>
+          Torsdag er der dialogmøde med professor Rasmus Pagh fra IT-Universitetet i København om algoritmernes betydning for samfundet.Sundhedsvæsenet, politiet og offentlige institutioner bruger i stigende grad digitale systemer baseret på algoritmer.Men hvad ved vi egentlig om, hvad det betyder for os og i hvilken grad bliver politiske, moralske og etiske beslutninger overladt til automatisering? Det er nogle af spørgsmålene som Rasmus Pagh, professer på DTU debatterer, når SF Vesterbro inviterer til dialogmøde torsdag.Torsdag d. 13. februar, kl. 20 - 22 i Forsamlingshuset, Onkel Dannys Plads 5, 1700 V. Entré: Gratis.
+        </div>
+        <footer>
+          <em>Vesterbro Bladet</em>
+          &nbsp;·&nbsp; 2020-02-12
+          &nbsp;·&nbsp; e7934592
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.538</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Landsindsamling til Børns Vilkår søger vejlensere</h4>
+        <div>
+          Der er stadig ledige ruter til de vejlensere, der ønsker at indsamle penge til forsømte børn, når landsindsamlingen til Børns Vilkår begynder søndag 22. marts. Vejle: Frivillige rådgivere på den anden side af linjen hos Børnetelefonen er en mangelvare, når omsorgssvigtede børn i krise ringer ind og søger hjælp. Faktisk er det kun halvdelen af de børn, der ringer til Børnetelefonen, som oplever at få den hjælp, de rækker ud efter. Det skriver Børns Vilkår i en pressemeddelelse. Derfor skal der samles penge ind til Børns Vilkår, når organisationen afholder landsindsamling søndag 22. marts. Overskuddet går til, at endnu flere børn kan få hjælp på Børnetelefonen. Der er stadig ledige ruter til de vejlensere, der ønsker at indsamle penge til forsømte børn, og tilmeldingen skal ske på stopsvigt.dk senest søndag 15. marts. - Det kræver utroligt meget mod for børn at række ud efter hjælp. Derfor er det så vigtigt, at der sidder nogle klar til at besvare deres henvendelse. Som indsamler er man med til at sikre, at ingen børn står alene med deres problemer. Derfor håber vi, at så mange som muligt vil gå på gaden sammen med os søndag den 22. marts, siger direktør i Børns Vilkår Rasmus Kjeldahl i en pressemeddelelse. Kunstig intelligens skal sikre hurtig hjælp til børn i krise
+        </div>
+        <footer>
+          <em>Frdb.dk (Fredericia dagblad)</em>
+          &nbsp;·&nbsp; 2020-02-24
+          &nbsp;·&nbsp; e7979c43
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.669</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.685</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>87 millioner får besked om misbrug i dag: Få overblikket over Facebook-skandalen her</h4>
+        <div>
+           Cookie- og privatlivspolitik41.820 danskere får mandag klokken 18 en alvorlig besked fra Facebook. Deres data er måske blevet høstet og brugt af analyseselskabet Cambridge Analytica i blandt andet den amerikanske valgkamp.Oplysningerne er blevet brugt til at lave en algoritme, der er exceptionel til at målrette politiske budskaber og reklamer. Mark Zuckerberg skal tirsdag til høring i Senatet og onsdag til høring i Kongressen.Begge høringer omhandler Facebooks brud på datasikkerhed.Få overblik over skandalen her:
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2018-04-09
+          &nbsp;·&nbsp; e6b26a35
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.969</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.957</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.599</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Avis afslører russisk støtte til le Pen</h4>
+        <div>
+          FRANKRIG: Den franske præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg. Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.Rusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot; fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé. [ RITZAU].
+        </div>
+        <footer>
+          <em>Dagbladet Holstebro</em>
+          &nbsp;·&nbsp; 2017-02-10
+          &nbsp;·&nbsp; e61ba1de
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.957</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.754</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.647</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.503</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Følg med fra Aarhus Universitet</h4>
+        <div>
+          RIBE: Tag med til spændende foredrag i Aarhus, men bliv siddende i Seminariehusets Fællessal i Ribe og hør det hele.Lyder det som et spændende tilbud, så læs videre.Aarhus Universitet livestreamer nu foredrag direkte til byer over hele landet. Således kan man fra Seminariehusets Fællessal i Ribe opleve foredragene &quot;På rumkrydstogt ud i solsystemet&quot;, &quot;Big data og algoritmer&quot; samt &quot;Sådan fungerer hjernen&quot;. Det foregår henholdsvis tirsdag 9. februar, tirsdag 23. februar og tirsdag 1. marts.Efter foredragene er der mulighed for at stille spørgsmål til foredragsholderen enten ved håndsoprækning (i Aarhus) eller på sms fra andre steder i landet. Det er Esbjerg Kommunes Bibliotek og Ribe Katedralskole, der er sammen om livestreaming-arrangementerne. Der er fri entré til foredragene og det kræver ingen tilmelding./caaHjernens fantastiske funktioner er blandt emnerne, der er livestreames om. Foto: Lars Kruse / AU-foto.Hjernens fantastiske funktioner er blandt emnerne, der er livestreames om. Foto: Lars Kruse / AU-foto.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-01-22
+          &nbsp;·&nbsp; e584cf3a
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.825</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.586</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Foredragsrække om spildesign</h4>
+        <div>
+          SØNDERBORG: Drømmer du om at blive spil-designer, så kan du blive meget klogere på emnet, når Biblioteket Sønderborg fra januar til marts har en foredragsrække om netop spil-design. Her kan du møde en perlerække af professionelle spil-designere og spil-forskere.Første arrangement er onsdag den 25. januar klokken 17, hvor Lars Kroll Kristensen holder foredraget Kunstig intelligens og spildesign.Her vil Lars Kroll Kristensen ogs¨å vise demoer af sit nyeste spil.Der er fri entré.Lars Kroll. Foto: Pressefoto..Lars Kroll. Foto: Pressefoto..
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-01-13
+          &nbsp;·&nbsp; e61122df
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.919</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.733</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.563</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOF debatter på Ragnarock</h4>
+        <div>
+          Roskilde Avis - 11. oktober 2020 kl. 05:17 Kontakt redaktionen Ragnarock på Musicon bliver fyldt med debatter på flere torsdag i løbet af efteråret. Det sker takket være FOF, der har fundet en lang række oplægsholdere, som kan danne grundlaget for aftenens debat.Første gang er torsdag 22. oktober klokken 19. Her holder Rasmus Hougaard Nielsen et oplæg om Gode penge. Ugen efter er det Thomas Bolander og Kasper Colling Nielsen med emnet Kunstig intelligens - Drøm og virkelighed.Billetter og det fulde program på
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2020-10-11
+          &nbsp;·&nbsp; e7ef22da
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.824</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.663</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Invasion: Skal vi vogte os for robotter?</h4>
+        <div>
+          De støvsuger og klipper græs, hvad bliver det næste? At de stiller diagnoser eller henter børn? Skal vi være på vagt?Det kan man høre nogle bud på i Hinnerup Bibliotek &amp; Kulturhus torsdag 15. januar kl. 19.30. Søren Tranberg, der forsker i kunstig intelligens og robotteknologi, holder foredrag om emnet.
+        </div>
+        <footer>
+          <em>Favrskov.lokalavisen.dk</em>
+          &nbsp;·&nbsp; 2015-01-11
+          &nbsp;·&nbsp; e4c46922
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.95</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.675</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om solen, algoritmer og hjernen</h4>
+        <div>
+          AABENRAA: Folkeuniversitetet i Aabenraa inviterer i foråret til tre naturvidenskabelige foredrag på Aabenraa Bibliotek. Foredragene holdes på Århus Universitet og sendes med internettet, således at de samtidig kan høres og ses på storskærmen på biblioteket.Man lægger ud tirsdag den 9. februar med foredrag &quot;På rumkrydstogt ud i solsystemet&quot; ved professor i astrofysikHans Kjeldsen .Det andet foredrag er &quot;Big Data og effektive algoritmer&quot; af professor i datalogiLars Arge , Institut for Datalogi, Aarhus Universitet. Det foregår onsdag den 24. februar klokken 19.00-21.00.Det tredje foredrag hedder &quot;Hvordan fungerer hjernen?&quot; og er med professor i neurovidenskabLeif Østergaard, Institut for Klinisk Medicin - Center for Funktionelt Integrativ Neurovidenskab, Aarhus Universitetet .Det foregår mandag den 29. februar klokken 19.00-21.00.Alle er velkomne, og der er gratis adgang, lokker Uwe Lindholdt, Aabenraa Folkeuniversitet, og Liselotte Barker, Aabenraa Bibliotek.Uwe Lindholdt, Aabenraa Folkeuniversitet, og Liselotte Barker, Aabenraa Bibliotek, inviterer til foredrag. Foto: Pressefoto.Uwe Lindholdt, Aabenraa Folkeuniversitet, og Liselotte Barker, Aabenraa Bibliotek, inviterer til foredrag. Foto: Pressefoto.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-01-11
+          &nbsp;·&nbsp; e5732b32
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.754</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.737</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.511</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kina vil skanne mobilbrugeres ansigt</h4>
+        <div>
+          Kina. Kinas myndighed for informationsteknologi oplyste søndag, at teleselskaber i Kina fra nu af skal skanne folks ansigter, når nye telefonbrugere registreres i butikker. Det har tidligere fremgået, at teleselskaber skal bruge »kunstig intelligens og andre teknologier« til at verificere folks identitet, når de får et nyt telefonnummer.Ritzau/AFP.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-12-02
+          &nbsp;·&nbsp; e77836a2
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.822</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.634</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.526</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Slår de kendte: Nyborg-hotel kåret som Danmarks bedste</h4>
+        <div>
+          Det familiedrevne Hotel Hesselet er dansk vinder af Travellers Choice 2014. Foran kendte hoteller som blandt andet Hotel d'Angleterre og Crowne Plaza.Hvert år kårer rejsesitet, Tripadvisor, verdens bedste hoteller baseret på brugernes vurderinger. Og i år er det Nyborg-hotellet Hesselet, der løber med prisen Travellers Choice 2014.Det familiedrevne hotel, der har omkring 15.000 overnattende gæster om året, overhaler dermed en lang række kendte hoteller. Blandt andet Hotel d'Angleterre, Hilton, Radisson Blu, Bella Sky og Crowne Plaza.- Det er en dejlig anerkendelse fra vores gæster. Og det bekræfter, at vi skal fortsætte, siger Peter Kraner til Politiken.dk , der er indehaver af Hotel Hesselet.Ifølge Tripadvisor selv bliver Traveller's Choice afgjort på baggrund af de rejsende anmeldelser af hoteller. De besøgende giver hotellerne karakterer fra et til fem, hvor fem er det bedste.Men præcis hvordan Tripadvisor finder frem til det bedste hotel, vil virksomheden ikke ud med.- Den algoritme vi bruger, holder vi for os selv. Men du skal tage udgangspunkt i, at opgørelsen er lavet på baggrund af kvaliteten og kvantiteten af de rejsendes anmeldelser, meninger og bedømmelser i hver kategori, siger James Kay fra Tripadvisors presseafdeling i en mail til Politiken.dk .Du kan læse meget mere om Hotel Hesselet i morgen.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2014-01-29
+          &nbsp;·&nbsp; e43bf58e
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.579</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.744</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Streaming-foredrag på VUC Syd</h4>
+        <div>
+          AF: Publiceret 04. februar 2016 kl. 15:01HADERSLEV: I lighed med flere andre steder i landet kan VUC Syd i Haderslev i det kommende par måneder tilbyde foredrag streamet direkte fra Aarhus Universitet. Naturvidenskabelige forskere fortæller på dansk om de nyeste opdagelser og erkendelser på en måde, så alle kan være med. Og man kan sms'e til foredragsholderen undervejs.Det første foredrag finder sted torsdag den 11. februar kl. 18.45-21 og hedder &quot;På rumkrydstogt ud i solsystemet&quot;. Her tages deltagerne med på et enestående rumkrydstogt til en række fascinerende og smukke naturscenerier i solsystemet. Foredraget vil være illustreret med et væld af smukke billeder fra NASA og ESA's rummissioner.Hos VUC Syd på Chr. X's Vej 39 kan man før foredraget, der iøvrigt er gratis og åben for alle, nyde en middag i Kulturcafeen, når dette blot bestilles forud.De tre øvrige foredrag afvikles den 23. februar med emnet &quot;Big data og effektive algoritmer&quot;, 1. marts &quot;Hvordan fungerer hjernen?&quot; og 17. marts &quot;Hvordan is og vand dannede Danmark&quot;.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-02-04
+          &nbsp;·&nbsp; e58a87ef
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.936</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.711</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.571</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Det kan du opleve onsdag</h4>
+        <div>
+           Journalist Anders Høgh Nisssen holder foredrag på Ringsted Bibliotek onsdag den 25. oktober klokken 19-20.30 om robotter og kunstig intelligens.Galleri Frem, Tinggade 11, har åbent klokken 14.30-17.30.Ringsted Museum og Arkiv, Køgevej 41, har åbent klokken 11-16.Klostermarkskirken, Ahorn Allé 46, har onsdagstræf med Otto Lundgaard, der holder foredrag om »Du Pusling-Land« .13-16.30: Vetterslev-Høm Seniorkub har bankospil og stolegymnastik i Birkely, Næstvedvej 392.PROPA har træffetid for mænd med prostatakræft i Anlægspavillonen, Tværallé 5, Ringsted.DEr er filmklub i graverhuset ved Sneslev Kirke klokken 19.30, hvor filmen »Kongens valg« vises.Kino Ringsted viser »Snemanden« klokken 19.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2017-10-25
+          &nbsp;·&nbsp; e67908ea
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.813</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.764</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.56</kbd>
+            <kbd data-tooltip="Dates &amp; times">L80_DATETM&nbsp;0.674</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Legat</h4>
+        <div>
+          Læge, ph. d.-studerende Signe Schmidt fra Hvidovre Hospital, Endokrinologisk Afdeling, har modtaget Diabetesforeningens Forskningslegat 2013 på 350.000 kroner. Signe Schmidt forsker i teknologien, der kaldes » en kunstig bugspytkirtel « . Den består af en insulinpumpe, en blodsukkermåler og en lille computer, der med en avanceret algoritme styrer de to andre, og dermed fritager diabetespatienten for selv at måle blodsukker og tage insulin-indsprøjtninger.Legatet fra Diabetesforeningen vil Signe Schmidt bruge til yderligere forsøg med at teste systemet på patienters hverdag, hvor de både spiser, drikker og er fysisk aktive.
+        </div>
+        <footer>
+          <em>Nordvestnyt Kalundborg</em>
+          &nbsp;·&nbsp; 2013-06-01
+          &nbsp;·&nbsp; e3d16371
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.827</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Big data -hvad er det?</h4>
+        <div>
+          HADERSLEV: VUC Syd i Haderslev tilbyder i februar og marts fire offentlige foredrag i samarbejde med Aarhus Universitet. Foredragene streames live fra Aarhus Universitet til storskærmen på VUC Syd i Haderslev. Her fortæller naturvidenskabelige forskere på dansk om de nyeste opdagelser og erkendelser på en måde, så alle kan være med. Og man kan sms'e til foredragsholderen undervejs. Det første foredrag har været afholdt med flere end 80 deltagere, mens foredrag nummer to finder sted tirsdag den 23. februar og hedder &quot; Big Data og effektive algoritmer&quot;. Her ser vi nærmere på, om Google er bedre til at forudsige influenzaepidemier end lægerne -og hvad Big Data egentlig er.Foredragene er gratis, og alle er velkomne.
+        </div>
+        <footer>
+          <em>Aabenraa Ugeavis</em>
+          &nbsp;·&nbsp; 2016-02-16
+          &nbsp;·&nbsp; e5924172
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.799</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.528</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FEJL OG FAKTA</h4>
+        <div>
+          Inger Støjberg (V) blev omtalt på forsiden tirsdag 29.12. som »den djærve nationalkonservative fra Hvalpsund-egnen«, men vi mente Hadsund-egnen. Hadsund ligger i det sydlige Himmerland ved Mariager Fjord, mens Hvalpsund ligger 60 km længere mod vest ved farvandet af samme navn mellem Himmerland og Salling.Inger Støjberg kommer fra Hjerk i Salling.»Vaccinen beskytter både dig selv mod virus, men gør også, så du ikke kan bære smitten videre«, lød et ordret citat fra ledelsen af et plejehjem på side 4 i 1. sektion søndag 27.12. Som der stod på side 4 i 1. sektion i går, forhindrer en vaccination dog næppe, at man kan smitte andre.En »algoritmisk skala« optrådte på debatsiderne mandag 28.12. i omtalen af pHværdier.Der mentes en logaritmisk skala.Hårdere beskatning af milliardærer var temaet for en artikel på side 7 i 1. sektion tirsdag 29.12., hvor vi skrev, at »nobelprismodtageren Thomas Piketty har leveret det akademiske skyts«, der understøtter folkelige krav. Den berømte franske økonom og forfatter har imidlertid ikke fået prisen.Sprogligt: »Kort inden eksplosionen lød en advarsel om, at autocamperen ville sprænge i luften«, stod der på side 11 i 1. sektion mandag 28.12. Der skulle have stået, at den ville springe i luften. Man skal bruge sprænge, når der er et genstandsled i sætningen. Derfor hedder det for eksempel ' frosten sprænger vandrøret', men ' vandrøret springer i frosten'. Suk.Politiken korrigerer fejl og misforståelser hurtigst muligt. Henvendelse med angivelse af dato og side bedes rettet til Læsernes Redaktør på mail: fejl. fakta@pol.dk eller på telefon 33 47 23 26 mandag til fredag kl. 10.30-12.30, onsdag dog 12-14.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2020-12-31
+          &nbsp;·&nbsp; e80e0406
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.505</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.695</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.603</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

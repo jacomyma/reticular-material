@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_51 <kbd>H_0_51</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>for</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vigtig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samtidig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>melder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bringe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dertil</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>leder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nævnte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>systematisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>særligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kommunikation</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aktivt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_51 DESC LIMIT 50</pre>
+      <article>
+        <h4>Lingvistisk går forud for machine learning hos tekstanalyse-specialist</h4>
+        <div>
+          For tiden kan man få indtryk af, at maskinlæring er svaret på det meste. Det kan utvivlsomt bruges til meget, men samtidig er maskinlæring ofte afhængig af store datamængder. Det har man ikke altid, for eksempel når målet er at hente viden ud af ustrukturerede data, for eksempel dokumentsamlinger i relativt små virksomheder.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-11-20
+          &nbsp;·&nbsp; e6faf228
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.819</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.792</kbd>
+            <kbd data-tooltip="New technologies">L80_NEWTEC&nbsp;0.593</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.746</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Læs opråbet fra de 262 forskere: Vi bliver intimideret og chikaneret i en sådan grad, at flere er blevet sygemeldt</h4>
+        <div>
+          Den politisk motiverede mistænkeliggørelse af vores forskning har store faglige og personlige omkostninger for os og for forskningsfriheden. Ane Halsboe-Jørgensen, du er vores minister, har du tænkt dig at modarbejde chikanen?K ære forskningsminister Ane Halsboe-JørgensenDet var med stor interesse, at vi som kønsforskere og/eller migrationsforskere fulgte forespørgselsdebatten i Folketinget, som Henrik Dahl (LA) og Morten Messerschmidt (DF) havde indkaldt til for nylig. Debatten er kulminationen på flere måneders eskaleret diskussion, hvor især køns- og migrationsforskere og -miljøer er blevet udstillet som »pseudovidenskabelige« , »uredelige« , »venstredrejede«  og »identitetspolitiske«  aktivister. Ja, flere af os er endog hængt ud med navns nævnelse af både politikere, medier og meningsdannere.Du har som forskningsminister også deltaget i debatten. Til Kristeligt Dagblad sagde du: »Hvis vi politikere ikke skal blande os, så skal de heller ikke bedrive aktivisme og politik med deres forskning« . Det lyder som en trussel. Vi må forstå, at vi ikke må bedrive aktivisme eller politik.Men hvad du mener med 'aktivisme' og 'politik' forbliver dog uklart, selv efter flere måneders debat. Det er svært at forstå din vedvarende 'bekymring' som andet, end at du billiger den politiske mistænkeliggørelse af vores forskning og af vores forskningsinstitutionernes kontrol og kvalitetssystemer. Vi savner dine svar på, hvor og hvornår vi har bedrevet det, som vi ikke må. Hvilke videnskabelige metoder er ifølge dig ministergodkendte, og hvilke medfører et politisk indgreb i vores forskningsfrihed?Vi håbede under debatten at få svar på, hvor du står, og hvad du mener, men vi oplevede, at du undveg at melde klart ud. Det gjorde Messerschmidt og Dahl til gengæld ikke. De udpegede forskellige universitetscentre for køns- og migrationsforskning som hjemsted for såkaldt aktivistisk og dårlig forskning, ligesom de hængte både internationalt anerkendte seniorforskere og løst ansatte juniorforskere ud med navns nævnelse på et endog meget uklart grundlag. Ifølge de to folkevalgte politikeres indlæg er der så store problemer på vores forskningscentre, at det kræver særlig opmærksomhed og deciderede politiske indgreb.Dit eget parti , Socialdemokratiet, underskrev efterfølgende et forslag til vedtagelse sammen med alle borgerlige partier, som dermed har flertal i Folketinget. Her kan vi læse, at der ikke må forekomme »ensretning« , at »politik ikke må forklædes som videnskab« , og at det ikke må være »muligt systematisk at unddrage sig berettiget faglig kritik« .Det er vi helt enige i. Vi arbejder også netop for at modvirke ensretning i forskning. Vi mener nemlig, at vores videnskabelige praksis er en anden end jeres politiske arbejde, og vi sætter vores lid til systematisk faglig kritik af egen og kollegaers forskning. Derfor forstår vi heller ikke, hvor Folketinget og ministeren mener at se, at dette ikke er tilfældet. Hvor finder ensretningen, »pseudovidenskaben«  og unddragelsen af kritik konkret sted?Mener ministeren, at det er blandt de centre, miljøer og forskere, som Dahl og Messerschmidt hænger ud, at vi kan finde disse problemer? Vi spørger, fordi netop du er vores minister, og fordi du ikke gik i rette med en eneste af de mange beskyldninger, som blev rettet mod os i Folketinget. Og fordi du heller ikke brugte anledningen til at stille spørgsmål til de systematiske ideologiske angreb, som vores arbejde udsættes for i medierne og blandt enkelte borgerlige kommentatorer og meningsdannere.Vi spørger, fordi både Dahl og Messerschmidt og de borgerlige meningsdannere eksplicit refererer til transnationale bevægelser og politiske projekter, som enten allerede har haft held med, eller som søger, at fjerne statsstøtte til forskningsområder. Det gælder specifikt de områder, som leverer analyser, der måtte bryde med visse politikeres verdensbillede.Den transnationale anti-gender-bevægelse er for eksempel blevet et hyppigt referencepunkt i den danske debat, på trods af at denne i en række andre lande har taget form af en voksende politisk trussel mod forskningsfriheden og angreb på kønsstudier som fagfelt. Nedlæggelsen af kønsforskningsstudiet ved Central European University (CEU) i Budapest og de mange lovforslag fra Rumænien til USA om at forbyde undervisning i kønsstudier er bare nogle eksempler på dette.Anti-gender-ideologierne er tæt sammenvævet med populistiske projekter, som ikke bare arbejder for at afskaffe køns- og migrationsforskningen, men også generelt er mod kønslig ligestilling og minoriteters lige rettigheder. Senest er den franske minister for højere uddannelse, Frédérique Vidal, gået til angreb på de forskere, hun er politisk uenig med, ved at påstå, at de er allierede med radikale islamister. Vidals plan om at skille »videnskabelig forskning fra politisk aktivisme«  er ifølge Dahl og Messersmidt det direkte forbillede for de politiske indgreb herhjemme.Det synes paradoksalt , at vores forskningsmiljøer iscenesættes som dem, der knægter andre forskeres frihed til at forske, skrive og debattere. De forskere, som kritiserer vores fagområder, er blevet repræsenteret bredt i medierne med kronikker og læserbreve, de har deltaget i podcasts, interviews og debatter, hvor de netop i høj grad demonstrerer deres uindskrænkede forsknings- og ytringsfrihed til - på varierende grader af sagligt grundlag - at gå i rette med forskellige dele af vores forskning.Det er naturligvis deres gode ret at kritisere vores forskning, ligesom det er vores gode ret at være uenige i deres analyser. Det er faktisk både deres og vores videnskabelige forpligtelse at diskutere faglige uenigheder. Men berettiget faglig kritik kan ikke være baseret på antagelser, fornemmelser og generelle mistænkeliggørelser eller motivfortolkninger.Det er dog desværre dette, som gang på gang udgør præmissen for de nævnte politikeres beskyldninger om, at hele forskningsmiljøer og forskningscentre er uvidenskabelige. Og det er i stigende grad disse løse beskyldninger, som vi bliver bedt om at skulle forholde os til i medierne.Når vi gang på gang oplever at måtte rydde op i mange misforståelser, som de løse anklager retter mod os, er det svært at få gang i en ordentlig samtale.På det seneste oplever vi, at flere og flere af vores kolleger holder sig tilbage fra at dele deres forskningsresultater og diskutere dem i medierne. De skarpe angreb, som politikere og medier har rettet mod navngivne forskere, centre og miljøer, ledsages i stigende grad af voldsomme personlige angreb på sociale medier, i private beskeder og på mails.Vi kan se, at den personvendte chikane, mange af os oplever, styrkes af den politisk motiverede mistænkeliggørelse af vores forskning. Vi og vores kollegaer bliver intimideret og chikaneret i en sådan grad, at flere er blevet sygemeldt. De personlige konsekvenser er store, hvis man udtaler sig i medierne. Mistænkeliggørelsen og chikanen skaber en alvorlig fare, ikke alene mod vores velvære og arbejdsglæde, men også mod vores forsknings- og ytringsfrihed.Vi vil gerne fremlægge vores forskning, og vi mener, at forskning bør være genstand for både debat og dialog. Men vi oplever, at vores vilkår for at præsentere, formidle og debattere vores forskning i det nuværende politiske klima er under et så stærkt pres, at det har store faglige og personlige omkostninger.Kære forskningsminister. Du er den frie forsknings og vores minister. Og vi synes, du skylder os svar: Hvordan forholder du dig til de angreb, som Dahl og Messerschmidt retter mod navngivne forskere, miljøer og centre både i Folketinget og i deres debatindlæg og interviews i trykte, digitale og sociale medier?Har du tænkt dig at arbejde for vores forskningsfrihed ved at modarbejde den systematiske chikane, som mange af os har haft som arbejdsvilkår gennem flere år, og som forværres af de nuværende politiske angreb mod os?Hvordan forholder du dig til den transnationale anti-gender-bevægelse og de danske udtryk, som denne bevægelse tager?Kan vi regne med, at vores minister også beskytter forskningsfriheden for køns- og migrationsforskningen, når den er under pres?Følgende forskere underskriver opråbet ovenfor:Lektor Michael Nebeling Petersen, Center for Køn, Seksualitet og Forskellighed, Institut for Nordiske Studier og Sprogvidenskab, Københavns Universitet.Lektor Mons Bissenbakker, Center for Køn, Seksualitet og Forskellighed, Institut for Nordiske Studier og Sprogvidenskab, Københavns Universitet.Lektor Mathias Danbolt, Institut for Kunst- og Kulturvidenskab, Københavns Universitet.Adjunkt Kia Ditlevsen, Sektion for Forbrug, Bioetik og Regulering, Institut for Fødevare- og Ressourceøkonomi, Københavns UniversitetLektor Marie Maegaard, Institut for Nordiske Studier og Sprogvidenskab, Københavns UniversitetLektor Stine Willum Adrian, Institut for Kultur og Læring, Aalborg UniversitetPh.d.-studerende Anna Kai Jørgensen, Institut for Nordiske Studier og Sprogvidenskab, Københavns Universitet.Professor Sara Louise Muhr, Institut for Organisation, Copenhagen Business School.Professor Lene Myong, Senter for kjønnsstudier, Universitetet i StavangerProfessor Emerita, Dr. Phil. Nina Lykke, Adjungeret Professor, DPU (Danmarks Institut for Pædagogik og Uddannelse), Aarhus Universitet.Undervisningsassistent Tess Skadegård Thorsen, PhD, Center for Køn, Seksualitet og Forskellighed, Institut for Nordiske Studier og Sprogvidenskab, Københavns Universitet.Professor Karen Hvidtfeldt, Center for køn og diversitet, Institut for kulturvidenskaber, Syddansk Universitet.Ph.d. Marie Meier, The Politics of Family Secrecy, Saxo Instituttet.Lektor Randi Marselis, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetLektor Kirsten Hvenegård-Lassen, Center for Køn, Magt og Mangfoldighed, Roskilde UniversitetLektor Helene Pristed Nielsen, FREIA Center for Kønsforskning, Institut for Politik og Samfund, Aalborg UniversitetPh.d.-studerende Marie Lunau Dejgaard, Center for Køn, Magt og Mangfoldighed, Institut for Samfundsvidenskab og Erhverv, Roskilde UniversitetAdjunkt, Tobias Skiveren, Institut for Kommunikation og Kultur, Aarhus UniversitetAdjunkt Cecilie Ullerup Schmidt, forskningscentret Kunsten som Forum, Institut for Kunst og Kulturvidenskab, Københavns Universitet.Post.doc. Anette Ekström Larner, Historie, Department of Politics, Aalborg UniversitetPh.d.-studerende Charlotte Johanne Fabricius, Institut for Kulturvidenskaber, Syddansk UniversitetLektor Heidi Bojsen, Institut for Kommunikation og Humanistisk Videnskab (IKH), Roskilde UniversitetLektor Signe Arnfred, Center for Køn, Magt og Mangfoldighed, Institut for Samfundsvidenskab og Erhverv, Roskilde UniversitetLektorvikar Marianne Kongerslev, Institut for Kultur og Læring, Aalborg UniversitetSeniorforsker Peter Hervik, NOISE (Network of Independent Scholars in Education) og Det Frie UniversitetLektor Lise Paulsen Galal, Institut for Kommunikation og Humanistisk Videnskab, Roskilde Universitet.Ph.d.-studerende Nina Cramer, Institut for Kunst- og Kulturvidenskab, Københavns UniversitetPost.doc Rebecca Lund, Ph.d., Center for tværfaglige Kønsstudier (STK), Universitetet i Oslo, Norge.Adjunkt Linda Lapina, Kultur- og Sprogmødestudier, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetLektor Florence Villesèche, Institut for Ledelse, Politik og Filosofi, Business in Society Platform for Diversity and Difference, Copenhagen Business School.Post.doc Maria Bee Christensen-Strynø, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetEkstern Lektor, Tore Holst, Ph.d., Advanced Migration Studies, Københavns Universitet.Lektor Lise Lotte Hansen, leder af Center for Køn, Magt &amp; Mangfoldighed, Roskilde UniversitetOle Jensen. Institut for Politik og samfund, Aalborg Universitet/ Aalborg universitetsbibliotekLektor Martha Sif Karrebæk, dansk / dansk som andetsprog, Institut for Nordiske Studier og Sprogvidenskab, KUPh.d.-studerende Ayan Yasin Abdi, Center for Køn, Magt &amp; Mangfoldighed, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetPost.doc Kristian Møller, Digital Design Department, IT Universitetet i KøbenhavnGæstforsker Annika Lindberg, Centre for Advanced Migration Studies, SAXO-Instituttet, Københavns UniversitetPh.d.-studerende Mathias Klitgård, Senter for Kjønnsstudier, Universitetet i Stavanger.Ph.d.-studerende Anne Bettina Pedersen, Institut for Kultur og Læring, Aalborg UniversitetLektor Nina Grønlykke Mollerup, Centre for Advanced Migration Studies, Saxo Instituttet, Københavns UniversitetLektor Martin Lemberg-Pedersen, Saxo-Instituttet, Københavns UniversitetPh.d.-studerende Signe Uldbjerg, Afdeling for Nordiske Studier og Oplevelsesøkonomi, Institut for Kommunikation og Kultur, Aarhus Universitet.Seniorforsker Jens Peter Andersen, Center for Forskningsanalyse, Institut for Statskundskab, Aarhus UniversitetLektor Jan Thorhauge Frederiksen, Pædagogik, Institut for Kommunikation, Københavns UniversitetPost.doc Niels Nyegaard, Senter for tverrfaglig kjønnsforskning, Universitetet i Oslo.Cand.mag Asker Bryld Staunæs, Afdeling for Filosofi- og idehistorie, Aarhus UniversitetForskningsleder Mari Holen, Center for Sundhedsfremmeforskning ved Roskilde UniversitetLektor Georg Walter Wink, Center for Latinamerikanske Studier, Institut for Engelsk, Germansk og Romansk, Københavns UniversitetCand.mag. Anton Juul, Københavns UniversitetLektor Clara Juncker, Amerikanske Studier, Institut for Kulturvidenskaber, Syddansk UniversitetAdjunkt/Post.doc Asta Smedegaard Nielsen, Institut for Politik og Samfund, Aalborg Universitet.Lektor Trine Øland, Sektion for Pædagogik, Institut for Kommunikation, Københavns UniversitetLektor Tobias Raun, Kommunikation, Institut for Kommunikation og Humanistisk Videnskab, Roskilde Universitet.Lektor Óscar García Agustín, DEMOS, Institut for Kultur og Læring, Aalborg UniversitetPh.d.-studerende Louise Rognlien, Institut for kultur og samfund, Aarhus universitet og KØN - Gender Museum DenmarkLektor Rashmi Singla, Center for køn, magt og mangfoldighed, Roskilde UniversitetLektor, Anders Michelsen, Institut for Kunst og Kulturvidenskab, Københavns UniversitetProfessor emerita Drude Dahlerup, Stockholm Universitet og Roskilde UniversitetLektor Pauline Stoltz, FREIA, Institut for Politik og Samfund, Aalborg UniversitetProfessor Rikke Andreassen, Institut for kommunikation og humanistisk videnskab, Roskilde UniversitetLektor Rasmus Præstmann Hansen, Institut for Pædagoguddannelse, Det Pædagogiske og Samfundsfaglige Fakultet, Københavns ProfessionshøjskoleLektor Lise Rolandsen Agustín, FREIA / Center for Kønsforskning, Institut for Politik og Samfund, Aalborg UniversitetLektor Mie Plotnikof, Forskningsprogrammet Policy Futures, Forskningsenheden Etnicitet, Diversitet og Uddannelse, Afdeling for Uddannelsesvidenskab, DPU, Aarhus UniversitetPh.d.-studerende Dina Amlund, Det Teologiske Fakultet, Købehavns UniversitetPh.d.- studerende Mathilda Ernberg, Genusvetenskapliga Institutionen, Lunds UniversitetAdjunkt Camilla Bruun Eriksen, Kultur og Formidling, Institut for Kulturvidenskaber, Syddansk UniversitetLektor Laura Horn, Department of Social Science and Business, Roskilde UniversitetPh.d. i historie Astrid Elkjær Sørensen, Post.doc ved DPU, Aarhus UniversitetPh.d.-studerende Pernille Svare Nygaard, Afdeling for Pædagogisk Sociologi, DPU, Århus Universitet.Professor Sine Nørholm Just, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetLektor Mirjam Gebauer, Institut for Kultur og Læring, Aalborg UniversitetPost.doc Jakob Rosendal, Kunsthistorie, Institut for Kommunikation og Kultur, Aarhus Universitet, og KØN - Gender Museum Denmark.Videnskabelig assistent Lærke Munk Rigtrup-Lindemann, Diversity and Difference Platform, Institut for Ledelse, Samfund og Kommunikation, Copenhagen Business SchoolLektor Jo Krøjer, Center for Køn, Magt &amp; Mangfoldighed, Roskilde UniversitetLektor Steen Baagøe Nielsen, Center for Køn, Magt og Mangfoldighed, Institut for Mennesker og Teknologi, Roskilde Universitet.Professor Stephen Carney, Institut for Mennesker og Teknologi, Roskilde UniversitetProfessor Mette Buchardt, Centre for Education Policy Research, Aalborg UniversitetLektor Karen Valentin, DPU, Aarhus UniversitetPh.d.-studerende Anna-Bertha Heeris Christensen, department of Marketing, Copenhagen Business SchoolPost.doc, Maja Rudloff, Institut for Kommunikation, Københavns UniversitetLektor Martin Bak Jørgensen, Institut for Kultur &amp; Læring, Aalborg UniversitetLektor Helle Strandgaard Jensen, Afdeling for Historie og Klassiske Studier, Institut for Kultur og Samfund, Aarhus UniversitetProfessor Eva Bendix Petersen, Center for Køn, Magt og Mangfoldighed, Roskilde Universitet.Post.doc Marie Kolmos, Institut for Mennesker og Teknologi, Roskilde UniversitetAdjunkt Jacobo Ramirez, Latin American Business Development, Department of Management, Society and Communication, Copenhagen Business School.Professor Dorthe Staunæs, Aarhus UniversitetLektor emerita Kirsten Bransholm Pedersen, RUCProfessor MSO Janine Leschke, Dpt. of Management, Society and Communication, Copenhagen Business SchoolLektor Kevin Holger Mogensen, Forskningsgruppen Uddannelse, Social inklusion og Profession, Institut for Menneske og Teknologi, Roskilde UniversitetProfessor mso Mikkel Rytter, Afdeling for antropologi, Aarhus UniversitetLektor Julia Suárez-Krabbe, Kulturmødestudier, Institut for Kommunikation og Humanistisk Videnskab, Roskilde Universitet.Ph.d.-studerende Søren Christian Krogh, FREIA, Institut for Politik og Samfund, Aalborg UniversitetLektor Emerita Christina Hee Pedersen, Institut for kommunikation og Humanistisk Videnskab, CKMM og forskningsgruppen for Dialogisk Forskning, RUC.Videnskabelig assistent Magnus Andersen (Ph.d.), Institut for Politik og Samfund, Aalborg UniversitetPh.d.- studerende Abir Mohamad Ismail, Afdelingen for antropologi. Institut for kultur og samfund, Aarhus Universitet.Professor Cathrine Hasse, Pædagogisk Antropologi og Program for Fremtidsteknologi, Kultur og Læreprocesser, Institut for Læring og Uddannelse, Aarhus UniversitetLektor Jan Ifversen, Afdeling for Globale Studier, Aarhus UniversitetProfessor MSO Morten Nissen, Danmarks institut for Pædagogik og Uddannelse, Aarhus UniversitetEvangelia Kousounadi Knountsen- Center for RusmiddelforskningLektor Mette Thunø, Globale Studier, Aarhus UniversitetProfessor Britta Timm Knudsen, School of Communication and Culture, Aarhus UniversitetProfessor MSO Hans Lauge Hansen, Spansk samt Center for Migrations- og Integrationsforskning, Aarhus UniversitetLektor Lasse Folke Henriksen, Institut for Organisation, Copenhagen Business SchoolSif Lehman Jensen, Globale Flygtningestudier, Institut for Politik og Samfund, Aalborg UniversitetLektor Iram Khawaja, Danmarks Institut for Pædagogik og Uddannelse, Aarhus UniversitetForsker Katrine Syppli Kohl, VIVE - Det Nationale Forskningscenter for VelfærdLektor Birgitte Ravn Olesen, Dialogisk Kommunikation, Institut for Humaniora og Kommunikation, Roskilde UniversitetLektor Karen N. Breidahl, Institut for Politik &amp; Samfund, Aalborg UniversitetUndervisningsassistent Anders Pilmark, Institut for Mennesker og Teknologi, Roskilde UniversitetLektor Christina Fiig, Europastudier/ Globale Studier, Institut for Kultur og Samfund, Aarhus UniversitetLektor Maria Herold, Center for Rusmiddelforskning, Psykologisk Institut, Aarhus Universitet.Lektor Sara Lei Sparre, Afdeling for Antropologi, Aarhus UniversitetLektor Bolette B. Blaagaard, Institut for Kommunikation og Psykologi, Aalborg Universitet.Lektor Helle Plauborg, Danmarks institut for Pædagogik og Uddannelse, Århus UniversitetPost.doc Macon Holt, Department of Management, Society and Communication, Copenhagen Business School.Ph.d.-studerende Cecilie Louise Kjølholt, Kultur- og Sprogmødestudier, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetStudieadjunkt Susan Yi Sencindiver, Afdeling for Engelsk, Institut for Kommunikation og Kultur, Aarhus UniversitetProfessor MSO Annette Risberg, Diversity Management, Copenhagen Business SchoolLektor, Hanne Kirstine Adriansen, Aarhus UniversitetProfessor Anette Borchorst, Institut for Politik og Samfund, Aalborg UniversitetLektor Gritt B. Nielsen, DPU, Aarhus UniversitetStudielektor Galina Starikova, Aarhus UniversitetLektor Jette Kofoed, Afd for Uddannelsesvidenskab, Aarhus UniversitetPh.d.-studerende Liv Nanvtoft Henningsen, Institut for Samfundsvidenskab og Erhverv, Roskilde UniversitetLektor Georg Fischer, Afdeling for Globale Studier, Institut for Kultur og Samfund, Aarhus Universitet.Lektor Derek Pardue, Afdeling for Globale Studier, Institut for Kultur og Samfund, Aarhus UniversitetLektor Karen Vallgårda, Saxo-Instituttet, Københavns UniversitetAdjunkt Jin Hui Li, Center for Uddannelsesforskning, Institut for Kultur og Læring, Aalborg UniversitetProfessor Emerita, Dr. Phil. Nina Lykke, Adjungeret Professor, Danmarks Institut for Pædagogik og Uddannelse, Aarhus UniversitetLektor Finn M. Sommer, Institut for Mennesker og Teknologi, Roskilde UniversitetPh.d.-studerende Bontu Lucie Guschke, Department of Organization, Copenhagen Business SchoolPh.d.- studerende Lise Ulrik Andreasen, Afdelingen for pædagogisk antropologi, DPU, Aarhus UniversitetProfessor Eva Gulløv, Danmarks Institut for Pædagogik og Uddannelse (DPU), Aarhus UniversitetProfessor Emerita Birte Siim, FREIA, Center for Kønsforskning, Institut for Politik og Samfund, Aalborg Universitet.Ph.d.-studerende Charlotte Sun Jensen, afdeling for Pædagogisk antropologi, DPU, Aarhus Universitet.Ph.d. Kathrine Bjerg Bennike, Freia - Centre for Gender Research, Institut for Politik og Samfund, Aalborg UniversitetProfessor MSO Morten Nissen, Danmarks institut for Pædagogik og Uddannelse, Aarhus UniversitetPh.d.-studerende Marie Fjellerup Bærndt, Center for Rusmiddelforskning, Aarhus BSS, Aarhus Universitet.Ph.d.-studerende, Gry Thorsen, Institut for Mennesker og Teknologi, Roskilde UniversitetLektor Sabina Pultz, Institut for Mennesker og Teknologi, Roskilde UniversitetProfessor Kirsten Simonsen, Institut for mennesker og teknologi, Roskilde Universitet.Lektor emerita Åse H. Lading, Institut for Mennesker og Teknologi (IMT), Roskilde UniversitetPost.doc Jannick Friis Christensen, Institut for Ledelse, Politik og Filosofi, Copenhagen Business SchoolLektor Mathias Nielsen, Sociologisk Institut, Københavns UniversitetLektor Bolette Moldenhawer, Institut for Kommunikation, Københavns UniversitetSeniorforsker og Chefkonsulent, ph.d. John Gulløv Institut for pædagoguddannelse, Københavns Professionshøjskole.Dr. Laura McAtackney, Dept of Archaeology and Heritage Studies, Aarhus UniversitetLektor Thomas Fibiger, Arabisk- og Islamstudier / Religionsvidenskab, Institut for Kultur og Samfund, Aarhus UniversitetPh.d.-studerende Maya Acharya, Pædagogisk Antropologi, DPU, Aarhus Universitet.Ph.d.-studerende Nina Halberg, Center for sundhedsfremmeforskning, Institut Mennesker og Teknologi, Roskilde UniversitetProfessor dr. jur. Hanne Petersen, Center for European and Comparative Legal Studies, KULektor Christoffer Kølvraa, Institut for Kultur og Samfund, Aarhus UniversitetLektor Anne Leonora Blaakilde, Center for Sundhedsfremmeforskning, Institut for Menneske og Teknologi, Roskilde UniversitetPost.doc Mante Vertelyte, Department of Education Science, Aarhus Universitet.Lektor Jonas Ross Kjærgård, Afdeling for Litteraturhistorie, Institut for Kommunikation og kultur, Aarhus Universitet.Professor Lill-Ann Körber, Institut for Kommunikation og Kultur, Aarhus UniversitetLektor Annegrethe Ahrenkiel, Center for Daginstitutionsforskning, Institut for Mennesker og Teknologi, Roskilde UniversitetLektor Louise Fabian, Afdeling Filosofi og Idehistorie, Aarhus UniversitetLektor Mads Anders Baggesgaard, Centre for the Study of the Literatures and Cultures of Slavery &amp; Litteraturhistorie, Aarhus UniversitetLektor Signe Hvid Thingstrup, Institut for Pædagoguddannelse, Københavns ProfessionshøjskoleDr.phil. Grethe Jacobsen, Førstebibliotekar (em.), Det Kongelige BibliotekPost.doc Lea Skewes, Political Science, Aarhus UniversitetLektor Rikke Egaa Jørgensen, Center for Socialt Arbejde og Forvaltning, Professionshøjskolen AbsalonPh.d.-studerende Signe Rom Rasmussen, Institut for Kulturvidenskaber, Syddansk Universitet.Censorformand for Historie, Hanne Caspersen.Ekstern lektor Gry Nielsen-Jexen, Saxo Instituttet på Københavns Universitet.Camilla Dindler, Institut for Kommunikation og Psykologi, Aalborg UniversitetLektor Tekla Canger, Institut for Læreruddannelse, Københavns ProfessionshøjskoleLektor Sine Lehn, Institut for Mennesker og Teknologi, Roskilde Universitet.Adjunkt Dr. Rebecca Rutt, Department of Food and Resource Economics, Københavns UniversitetLektor Camilla Møhring Reestorff, Institut for Kommunikation og Kultur, Aarhus UniversitetPh.d.-studerende Francois Questiaux, Institute for Food and Resource Economics, Københavns UniversitetLektor Lars Holm, Afdelingen for Pædagogisk Antropologi, DPU, Aarhus UniversitetLektor Karen Prins, Institut for pædagoguddannelse, Københavns Professionsuddannelse.Lektor Jeremy Morris, Globale studier, Aarhus Universitet.Lektor Bjørg Kjær, Afdeling for Pædagogisk Antropologi, Danmarks institut for Pædagogik og Uddannelse, Aarhus UniversitetSenior Researcher Sine Plambech, Department of Migration and Global Order. DIIS - Danish Institute for International Studies.Post.doc Mie Birk Jensen, Center for Køn og Diversitet, Institut for Kulturvidenskaber, Syddansk Universitet.PhD Fellow, Zoë Ogahara, Section for Global Development, Institute of Food and Resource Economics, Københavns UniversitetPh.d.-kandidat Charlotte Maybom, Institut for Fødevare- og Ressourceøkonomi, Københavns UniversitetProfessor Susan Wright, Professor of Educational Anthropology, Danish School of Education (DPU), Aarhus Universitet.Lektor Sally Anderson, Danmarks Insitut for Pædagogik og Uddannelse, Pædagogisk Antropologi, Aarhus UniversitetPh.d.-studerende Bushra Hanif, Roskilde UniversitetPh.d.-studerende Steffen Bering Kristensen, Etnicitet, Diversitet og Uddannelse, Danmarks Pædagogiske Universitet afdelingen for Pædagogisk Antropologi, Aarhus UniversitetSeniorforsker Mette Kia Krabbe Meyer, Specialsamlinger, Det Kgl. BibliotekLektor Stine Thidemann Faber, Center for Kønsforskning, Institut for Politik og Samfund, Aalborg Universitet.Adjunkt Mira Skadegård, Institut for Kultur og Læring, Aalborg UniversitetPh.d.-studerende Kornelia Kraglund, DPU, Aarhus UniversitetPost.doc Antonio Rivero Ostoic, Institut for Kultur og Samfund, Aarhus UniversitetLektor Christian Suhr, Afdeling for Antropologi, Aarhus UniversitetProfessor Betina Dybbroe, Center for Køn, Magt og Mangfoldighed, Institut for Mennesker og Teknologi, Roskilde UniversitetProfessor Charlotte Kroløkke, Center for Køn og Diversitet, Institut for Kulturvidenskaber, Syddansk UniversitetLektor Miguel Sicart, Center for Computer Games Research Play, Culture and AI Section Digital Design Department, IT Universitetet i KøbenhavnLektor Lotte Holck, IOA Copenhagen Business SchoolProfessor Betina Dybbroe, Institut for Mennesker og Teknologi, Roskilde UniversitetProfessor Ning de Coninck-Smith, DPU, Aarhus UniversitetEkstern Lektor Claus Munch Drejer, Institut for Mennesker og teknologi, Roskilde UniversitetProfessor MSO Christian Ydesen, Center for Uddannelsesforskning, Institut for Kultur og Læring, Aalborg UniversitetLektor Vladimir Pacheco Cueva, Department of Global Studies, School of Culture and Society, Aarhus UniversitetPh.d.-studerende Ahrong Yang, Center for Uddannelsesforskning, Institut for Kultur og Læring, Aalborg UniversitetForskningsassistent Camilla Mengel Kaastrup, Uddannelsesvidenskab, DPU - Danmarks institut for Pædagogik og Uddannelse, Aarhus UniversitetLektor Ehab Galal, Institut for Tværkulturelle og Regionale Studier, Københavns Universitet.Lektor Annette Skovsted Hansen, Institut for Kultur og Samfund, Aarhus UniversitetPh.d.-studerende Zenia Yonus, Institut for Tværkulturelle og Regionale Studier, Københavns UniversitetProfessor Lisa Ann Richey, Copenhagen Business SchoolPost.doc Byron Z. Rom-Jensen, Afdeling for Historie og Klassiske Studier, Institut for Kultur og Samfund, Aarhus UniversitetLektor Charlotte Rosenberg, Center for socialt arbejde og forvaltning, Velfærd, marginalisering og socialt arbejde i forandring, Professionshøjskolen AbsalonSeniorforsker, Nanna Gram Ahlmark, Statens Institut for Folkesundhed, Syddansk UniversitetLektor Thessa Jensen, InDiMedia, Center for interaktive digitale medier og oplevelsesdesign, Institut for Kommunikation og Psykologi, Aalborg UniversitetLektor Magdalena Naum, Arkæologi og Kulturarvsstudier, Aarhus UniversitetDocent Marta Padovan-Özdemir, Program for samfund og mangfoldighed, Center for ledelse, organisation og samfund, VIA University CollegeProfessor Line Lerche Mørck, DPU, Aarhus UniversitetLektor Iben Jensen, Institut for Kultur og Læring, Aalborg UniversitetEkstern lektor, Susanne Jacobsen Pérez, Pædagogik og Uddannelsesstudier, Institut for Mennesker og Teknologi, Roskilde UniversitetPh.d.-stipendiat, Storm Møller Madsen, Institut for Kunst- og Kulturvidenskab, Københavns Universitet.Post.doc Ea Høg Utoft, Dansk Center for Forskningsanalyse, Institut for Statskundskab, Aarhus UniversitetLektor Raymond Yamamoto, Japanstudier, Institut for Kultur og Samfund, Aarhus Universitet.Ph.d.-studerende Edmonia Baker, Management Society &amp; Communication, Copenhagen Business SchoolPh.d.-studerende Jette Sandager, Department of Management, Politics and Philosophy, Copenhagen Business SchoolLektor Marlene Spanger, Institut for Politik &amp; Samfund, Aalborg UniversitetPh.d. Maria Mortensen, bestyrelsesmedlem af Foreningen for KønsforskningLektor Leonardo Cecchini School of Communication and Culture Aarhus UniversitetLektor Mogens Rüdiger, Institut for Politik og Samfund, AAUCand.mag. i historie Anette Eklund Hansen, tidl. Århus Universitet.Ph.d.-studerende Lærke Anbert, Pædagogisk Antropologi, Aarhus UniversitetLektor Hilda Rømer Christensen, Sociologisk Institut, Københavns UniversitetLektor Devika Sharma, Institut for Kunst- og Kulturvidenskab, Københavns UniversitetLektor Justine Grønbæk Pors, Institut for ledelse, politik og filosofi, Copenhagen Business SchoolLektor Camilla Skovbjerg Paldam, Institut for Kommunikation og Kultur, Aarhus UniversitetDocent Emeritus Magnus Dahl, Forskningsgruppen Subjekt, teknologi og social praksis, Institut for Mennesker og Teknologi / Psykologi, Roskilde UniversitetPh.d.-studerende Nanna Kirstine Leets Hansen, Roskilde UniversitetPh.d.-studerende Anna Vestergaard Jørgensen, Institut for Kunst- og Kulturvidenskab, Københavns UniversitetPh.d.-studerende Morten Stinus Kristensen, Institute of Communications Research, University of Illinois, Urbana-Champaign.Projektforsker Bolette Frydendahl Larsen, Genusvetenskapliga institutionen, Lunds Universitet.Lektor Laura Gilliam, Danmarks institut for pædagogik og uddannelse, Aarhus UniversitetPost.doc Tine Brøndum, Sektion for Pædagogik, Institut for Kommunikation, Københavns UniversitetPh.d.-studerende Sofie Mortensen, Institut for Fødevare- og Ressourceøkonomi, Københavns UniversitetLektor Kenneth Reinicke, Center for Køn, Magt og Mangfoldighed, ISE, Roskilde UniversitetPh.d.-studerende Molly Occhino, Institut for Samfundsvidenskab og Erhverv, Roskilde UniversitetPh.d.-studerende Michelle Vestbo-Nielsen, Institut for Mennesker og Teknologi, Roskilde UniversitetLektor Christel Stormhøj, Institut for Samfundsvidenskab og Erhverv, Roskilde UniversitetProfessor Louise Phillips, Institut for Kommunikation og Humanistisk Videnskab, Roskilde UniversitetLektor og faglig forskningsleder Michael Christensen, Center for socialt arbejde og forvaltning, Socialrådgiveruddannelsen, Professionshøjskolen AbsalonAdjunkt Pernille Storm Faxe, Afdeling for Socialt Arbejde, SØJ, Grønlands UniversitetPost.doc Anna Sofie Bach, Institut for Kultur og Læring, Aalborg UniversitetProfessor Andreas Steen, Kina Studier, Institut for Kultur og Samfund, Aarhus UniversitetLektor Ushma Chauhan Jacobsen, Institut for Kommunikation og Kultur, Aarhus Universitet.Ph.d.-studerende Annema
+ie Jensen, European Studies, Aarhus UniversitetPost.doc Line Henriksen, Business IT, IT-Universitetet i KøbenhavnPh.d.-studerende Thilde Juul-Wiese, Afdeling for Pædagogisk Antropologi, Danmarks Institut for Pædagogik og Uddannelse, Aarhus UniversitetPh.d.-studerende, Silke Holmqvist. Afdelingen for Historie, Aarhus UniversitetLektor Helle Merete Nordentoft, DPU, Aarhus UniversitetPh.d.-studerende Tine Friis, Medicinsk Museion, Københavns UniversitetLektor Jytte Bang, Institut for Mennesker og Teknologi, Subjekt, teknologi og social praksis, Roskilde Universitet.Ph.d.-studerende Amalie Sehested Rom, Institut for Samfundsvidenskab og Erhverv, RUC og Senter for Kjønnsstudier, UiSPh.d.-studerende Pernille Welent Sørensen, Performance Design, Institut for Kommunikation og Humanistisk Videnskab/Dialogisk Kommunikation, Roskilde Universitet.Lektor Anne Folke Henningsen, Saxo-Instituttet, Københavns UniversitetLektor Marie Sandberg, Saxo Instituttet, Københavns UniversitetPh.d.-studerende Charlotte Lange Hald, DPU, Aarhus UniversitetAIAS Fellow - Associate professor Laure Guirguis, Aarhus Institute for Advanced Studies, Aarhus UniversitetPh.d.-studerende Turið Hermannsdóttir, Center Køn, Magt og Mangfoldighed, Institut for Mennesker og Teknologi, Roskilde Universitet
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2021-06-06
+          &nbsp;·&nbsp; e84cf5a9
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.925</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.724</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.511</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vestjysk Bank vinder prisen for Årets digitale Finansvirksomhed</h4>
+        <div>
+          HOLSTEBRO: FinansWatch og analysefirmaet Wilke har lavet en stor undersøgelse af den digitale udvikling i de største danske finansvirksomheder, og Vestjysk Bank er kåret som vinder af Årets Digitale Finansvirksomhed i kategorien mellemstore banker.FinansWatch skriver om kåringen: -Vestjysk Bank vinder prisen som Årets Digitale Finansvirksomhed blandt de mellemstore pengeinstitutter.Vestjysk Bank får den bedste vurdering blandt de mellemstore pengeinstitutter for sin netbank og digitale kommunikation og den næstbedste vurdering for sin hjemmeside og arbejde med sociale medier.god på nettet I panelundersøgelsen blandt kunderne får Vestjysk Bank den bedste score for sin hjemmeside.Vestjysk Bank får den bedste score i ekspertvurderingen for sin netbank, den næstbedste score for sit arbejde med sociale medier og den tredjebedste score for henholdsvis mobilbank, hjemmeside og digital respons.Samtidig opnår Vestjysk Bank den bedste bedømmelse for sit interne arbejde med den digitale strategi og den næstbedste bedømmelse for arbejdet med kunde-og forbrugerindsigter.Vestjysk Bank scorer ligeledes ganske højt på sit arbejde med automatisering samt for proces automatisering og kunstig intelligens.-Vi er utrolig glade for og stolte af prisen. Vi prioriterer den digitale udvikling højt både i vores interne kundeprocesser, i vores selvbetjeningsmuligheder overfor vores kunder og i vores udtryk og kommunikation overfor vores omverden generelt, siger Jan Ulsø Madsen, administrerende bankdirektør i Vestjysk Bank.
+        </div>
+        <footer>
+          <em>Holstebro Onsdag</em>
+          &nbsp;·&nbsp; 2018-05-02
+          &nbsp;·&nbsp; e6bbd193
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.974</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.68</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.524</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Støtte</h4>
+        <div>
+          Anders Møller, lektor og leder af Center for Advanced Software Analysis, CASA, på Institut for Datalogi, Aarhus Universitet, har fået et ERC Consolidator Grant på to mio. euro til at udvikle nyskabende algoritmer til automatisk fejlfinding og effektivisering af avancerede web-applikationer.Projektet skal forbedre internet-software.
+        </div>
+        <footer>
+          <em>Vejle Amts Folkeblad</em>
+          &nbsp;·&nbsp; 2015-04-10
+          &nbsp;·&nbsp; e4f382b7
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.878</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Chef for Accenture Danmark leder efter cloud-specialister</h4>
+        <div>
+          Det er en klar prioritering for Accenture i Danmark at rekruttere specialister inden for cloud, kunstig intelligens og dataydelser, fortæller Carsten Sachmann, landechef for virksomheden, til ITWatch.Under corona-pandemien har mange virksomheder fået øjnene op for en cloud-baseret tilgang, og derfor er kompetencer på området meget efterspurgt. Hos konsulent- og teknologivirksomheden Accenture Danmark, har man » speederen helt i bund « for at finde nye medbarjedere.» De har virkelig fået et kæmpeboost i form af, hvor vigtige de er for virksomheder - både offentlige og private. Det er dejligt for branchen, at det er på tværs, men det gør jo bare, at behovet bliver endnu større, frem for hvis det blot var i enkelte brancher, « fortæller Carsten Sachmann til ITWatch.Han uddyber, at man både leder efter at ansætte erfarne og nyuddannede.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-02-26
+          &nbsp;·&nbsp; e824ca49
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.703</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.736</kbd>
+            <kbd data-tooltip="Business &amp; innovation">L80_BUSINN&nbsp;0.591</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.669</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Transportpris til DTU-forsker</h4>
+        <div>
+          Professor David Pisinger fra DTU Management Engineering har modtaget Hedorfs Fonds Pris for Transportforskning på 75.000 kr.Prisen blev overrakt af direktør Michael Svane ved et arrangement, der i samarbejde med Transportøkonomisk Forening, fandt sted i Industriens Hus.Hedorfs Fonds Pris for Transportforskning uddeles hvert andet år som belønning for en betydelig indsats for udviklingen af forskning og brobygning inden for transportområdet i Danmark.David Pisinger forsker i flere områder inden for transportsektoren, bl. a. distributionsplanlægning, maritim optimering og lufthavnsoptimering.Hans forskning er med til at løse en række problemstillinger inden for transportsektoren, hvor han i løbet af sin karriere har bidraget til løsningen af komplekse transportproblemer inden for disse områder.Han har bl. a. udviklet en ny branch-and-cut algoritme, som har løst en lang række optimeringsproblemer, som tidligere ikke har kunnet løses.
+        </div>
+        <footer>
+          <em>Det Grønne Område</em>
+          &nbsp;·&nbsp; 2013-12-03
+          &nbsp;·&nbsp; e41ee63c
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.845</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.643</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Hende, TV 2 21.05: Therodore er lige blevet skilt fra sin kone og arbejder for et firma, der forfatter kærlighedsbreve for dem, der ikke selv er kreative nok til den slags. Hans nysgerrighed pirres af en reklamekampagne, der omhandler det sidste nye inden for operativsystemer med kunstig intelligens. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2018-07-01
+          &nbsp;·&nbsp; e6cf51de
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.922</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.697</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robot med kunstig intelligens skal finde ridser og fejl på blankt metal</h4>
+        <div>
+          Fejl på blanke metalemner er udfordrende at registrere for kameraer. MADE-­projekt kombinerer vision, deflektometri og kunstig intelligens for at opdage ridser og poleringsfejl. Øverst på et vandhane­armatur fra Vola sidder et cylinderformet greb, der gennemgår en række slibninger, børstninger og poleringer for at opnå det helt rigtige blanke look. Behandlingen klares af en robotcelle,
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-05-27
+          &nbsp;·&nbsp; e7b9aa14
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.934</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.646</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.745</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>KU-forsker vinder pris for kunstig intelligens fødevareproduktionen</h4>
+        <div>
+          Lektor Klavs Martin Sørensen for Institutu for Fødevarevidenskab på Københavns Universitet har fundet måder at reducere ressourcespild i den globale fødevareindustri.Klavs Martin Sørensen arbejder i sektionen Kemometri og analytisk teknologi, hvor han forsker i hurtigmetoder, der kan optimere fødevareproduktioner. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-11-20
+          &nbsp;·&nbsp; e6fb3110
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.775</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DTU opretter ny studielinje, der kombinerer digitale værktøjer og miljø</h4>
+        <div>
+           »Anvendelsen af avancerede sensorer, satellitter og droner til overvågning af miljøet er stærkt stigende. Det har medført et øget behov for ingeniører, der både har tilstrækkelig indsigt i komplekse miljøforhold og samtidig er i stand til at analysere og behandle de store datasæt, overvågningen og anden dataindsamling genererer,«  skriver DTU på universitetets hjemmeside I første omgang tilbyder DTU 20 kandidatstuderende muligheden for at specialisere sig inde for dette faglige krydsfelt på studielinjen Environmental Informatics , hvor kurser i eksempelvis vandressourceforvaltning og modellering af risiko for urbane oversvømmelser går hånd i hånd med kurser i digitale databehandlingsværktøjer, machine learning og data mining. »Vi ved fra både virksomheder, myndigheder og rådgivere inden for eksempelvis klimasektoren, at der er et stort behov for medarbejdere med disse kompetencer. Derfor har vi oprettet den nye studielinje, som er åben for studerende med en bachelor inden for miljø eller med mere databaserede baggrunde som softwareteknologi, matematik eller systemdesign,«  siger Stefan Trapp, der er professor og studieleder for masteruddannelserne i miljøteknologi på DTU Miljø. Redaktionen
+        </div>
+        <footer>
+          <em>Pro.ing.dk/digitech</em>
+          &nbsp;·&nbsp; 2019-09-17
+          &nbsp;·&nbsp; e758b3ee
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.806</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.649</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rolf Fagerberg er udnævnt til professor i datalogi på SDU</h4>
+        <div>
+            Rolf Fagerberg er udnævnt til professor i datalogi på Institut for Matematik og Datalogi på SDU. Rolf Fagerbergs speciale er algoritmer og datastrukturer.Senest har han, sammen med en gruppe medforfattere, modtaget prisen for bedste videnskabelige artikel på konferencen Annual Symposium on Algorithms 2019 for en artikel, der for første gang vurderer sorteringsalgoritmer ud fra, hvor mange sammenligninger, hvert enkelt element kan udsættes for. Udover forskning og undervisning er Rolf Fagerberg optaget af at udvikle SDUs datalogi-uddannelse og at tiltrække unge mennesker til uddannelsen.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2019-10-30
+          &nbsp;·&nbsp; e76b1738
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.962</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.506</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.533</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>BEVILLING</h4>
+        <div>
+          Anders Møller, lektor og leder af Center for Advanced Software Analysis, Casa, ved Institut for Datalogi, Aarhus Universitet, har modtaget det prestigefyldte ERC Consolidator Grant på 14,7 mio. kr. fra The European Research Council (ERC).ERC Consolidator Grants har til formål at styrke fremragende og nyskabende forskning og er målrettet erfarne forskere, som står over for at konsolidere deres forskning og forskningskarriere.Målet med Anders Møllers nye projekt &quot;Automated Program Analysis for Advanced Web Applications&quot; er at udvikle nyskabende algoritmer til automatisk fejlfinding og effektivisering af avancerede web-applikationer.
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2015-04-10
+          &nbsp;·&nbsp; e4f338b8
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.841</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.68</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amazon åbner for maskinlæring i skyen i Europa</h4>
+        <div>
+          Amazon giver nu mulighed for at bruge selskabets værktøjer til at forudsige eksempelvis efterspørgsel og salg ved hjælp af maskinlæring.Nu får også europæerne mulighed for at bruge Amazons maskinlæringsværktøjer til at lave prognoser for eksempelvis fremtidigt salg ud fra historiske data. Det skriver Wall Street Journal .Værktøjerne er en del af Amazons platform for maskinlæring, hvor et sæt algoritmer kan analysere historiske data og ud fra dem lave prognoser for, hvordan udviklingen vil se ud i fremtiden.Det kan eksempelvis bruges inden for detailhandlen til at forudsige, hvordan efterspørgslen vil se ud efter bestemte produkter. Der kunne eksempelvis være et mønster inden for mode, hvor der bliver solgt færre vinterfrakker efter en sommer med høje salgstal for badetøj.Amazon tilbyder værktøjerne gennem sin cloud-tjeneste, men kan anvendes uden at køre systemerne på Amazons sky. Microsoft tilbyder tilsvarende maskinlæringsværktøjer som en del af sin cloud-tjeneste.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-08-28
+          &nbsp;·&nbsp; e52f7c18
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.571</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.672</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.678</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens: Iværksættere vil være &quot;et af Europas guldkorn&quot;</h4>
+        <div>
+            Kunstig intelligens er en af Margrethe Vestagers store opgaver i den nye EU-kommission. Iværksætter tror på &quot;europæisk vej&quot; for teknologien I Lyngby sidder to brødre i en nedlagt fabriksbygning med en vision: De vil gøre kunstig intelligensteknologien... Få indsigt med Børsen Uddannelse Kompetenceudvikling til dig, der hver dag tager ansvar for dig selv, for andre og for din virksomhed - fordi ansvar kræver indsigt. Se alle uddannelserne her Ledelse
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2019-11-11
+          &nbsp;·&nbsp; e76ef06b
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.649</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.957</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.953</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.579</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Øjet i det høje er blevet skarpere</h4>
+        <div>
+          Satellitbilleder. To nyuddannede har opfundet en løsning til at skabe skyfri satellitbilleder: For at undgå at sprede for meget gødning på marker bruger landmænd ofte satellitbilleder. Men når der er skyer på himlen, kan den løsning ikke bruges, og det kan derfor have konsekvenser for miljøet. Ved hjælp af kunstig intelligens og radarteknologi har to nyuddannede fra Aalborg Universitet udviklet nye satelliter, som de netop har vundet en international innovationskonkurrence for. lisa.seidelin@pol.dk 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2021-05-27
+          &nbsp;·&nbsp; e84897a1
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.961</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.775</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pris for at hjælpe kvinder</h4>
+        <div>
+          Kronprinsesse Mary modtager en hæderspris på en konference for kvindelige erhvervsledere den 16. maj.Prisen får hun for at forbedre kvinders vilkår i Danmark og i udlandet. Det oplyser stifteren af konferencen Womenomics Business Conference CPH, Tine Arentsen Willumsen, i en pressemeddelelse.Womenomics Business Conference CPH har de seneste tre år uddelt priser til kvindelige ledere, der er ekstraordinære rollemodeller, og som kæmper for kvinders rettigheder og ligestilling.Ud over kronprinsessen modtager den radikale politiker Ida Auken også en pris med titlen The Womenomics Influencer Award 2017, og det sker for hendes arbejde med Sirikommissionen.Hun belønnes for her at sætte fokus på, hvad kunstig intelligens og digital disruption vil betyde i den nære fremtid for vores arbejdspladser, økonomi og samfund.Den tredje prismodtager i år bliver Pia Vemmelund, som er administrerende direktør for rejsesitet Momondo.Hun modtager en pris kaldet The Womenomics Leadership Award 2017 for sit ledelsesarbejde.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-05-08
+          &nbsp;·&nbsp; e63eb51d
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.727</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.537</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.529</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>UBS bruger kunstig intelligens til kundehjælp</h4>
+        <div>
+          Verdens største private banking bank, schweiziske UBS, tyer nu til kunstig intelligens for at kunne rådgive deres rigeste kunder på den mest direkte og personlige vis.Således har UBS efter en konkurrence med 80 andre selskaber valgt Singapore-baserede Sqreem Techonologies til at kortlægge og kategorisere en syndflod af data, til gavn for de rigeste kunder.Sqreems opgave er: Udtræk informationen der er mest relevant til for den individuelle kunde og præsenterer dette skræddersyede indhold til klienternes mobiltelefoner, iPads osv.Internetgiganter er en trusselVerdens største banker - inklusive UBS - vender sig i øjeblikket mod avanceret teknologi for at indsamle dybsindig viden til deres kunder. det gør de for at være fortsat konkurrencedygtige i en gennemdigitaliseret verden.Tiltagne fra eksempelvis UBS sker for at imødegå introduktionen af mobile betalingssystemer fra internet giganter, som Google, Apple og Amazon. De nye giganter har også en masse information om verdens forbrugere og evnerne til at udnytte disse informationer.&quot;Vi har data! Faktisk alt for mange. I hele vores industri bliver kunderne overfyldt med data,&quot; siger Dirk Klee, der er driftsdirektør for UBE formuevaltningsdivision og ansvarlig for digitale initiativer om UBS problemstillinger med at håndtere egne data intelligent.verdens største rigmandsbank, UBS, og for så vidt også lilebror, Credit Suisse, opruster over for deres kernekunder med viden fra selskaber der anvender kunstig intelligens Foto: Scanpix.verdens største rigmandsbank, UBS, og for så vidt også lilebror, Credit Suisse, opruster over for deres kernekunder med viden fra selskaber der anvender kunstig intelligens Foto: Scanpix.
+        </div>
+        <footer>
+          <em>Finans.Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2014-12-09
+          &nbsp;·&nbsp; e4b697b3
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.788</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.622</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.574</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: Amerikansk it-selskab flytter ind på Frederiks Plads for at komme tættere på talenter og universitet</h4>
+        <div>
+          Verdens største selvejende it-selskab med fokus på analyse og kunstig intelligens, SAS Institute, åbner på mandag en nyoprettet Aarhus-afdeling på Frederiks Plads. Nye rammer for vækst, bedre forhold for kunder og partnere, fastholdelse og tiltrækning af medarbejdere samt mulighed for samarbejder med universiteterne og de højere læreanstalter motiverer oprettelsen af Aarhus-kontoret. AARHUS, side 4. 
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2019-01-25
+          &nbsp;·&nbsp; e70e3358
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.56</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.669</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.517</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>LASTBILEN ER LADET MED EN AUTONOM REVOLTE</h4>
+        <div>
+          Dermed overser vi, at de tekniske udfordringer og ikke mindst socioøkonomiske gevinster ved selvkørende lastbiler faktisk er gevaldigt større. Eller sagt med andre ord, lastbilerne udgør lakmustesten for autonome køretøjer.For selvkørende lastbiler kan eksempelvis trille i kilometerlange flåder med minimale mellemrum for at spare brændstof via reduceret vindmodstand. Læg dertil, at lastbiler i forvejen ikke bare kan tage et hurtigt sving for at undgå en farlig situation ligesom en personbil uden at risikere at skabe en destruktiv dominoeffekt på motorvejen.»Mange algoritmer for selvkørende biler duer ikke til lastbiler,« som Eric Berdini, produktmanager på taxitjenesten Ubers lastbil-projekt Otto, har sagt til MIT Technology Review.Dertil kommer den menneskelige faktor.»Autonom trafik bliver hurtigt mere sikker og rentabel end den konventionelle, men vi skal lære at begå os i den ny form for trafik,« siger Henrik Schärfe, ph. d. i Human Centered Informatics samt medstifter og administrerende direktør i fonden Autonomous.»Det vil tage tid at opbygge tillid til, at de automatiske systemer faktisk overholder reglerne - særligt i bebyggede områder. Derfor vil lastbiler måske først implementeres på motorvejene. Samtidig skal vi forstå, at der også skal tages hensyn til selvkørende trafik, for selvom jeg eksempelvis ved, at den selvkørende bil altid holder tilbage for mig, betyder det jo ikke, at jeg skal tage flere chancer i trafikken.«Gennembrud: 2026 Centrale aktører: Otto, Volvo, Daimler, Peterbilt.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2017-04-28
+          &nbsp;·&nbsp; e63b5885
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.911</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.513</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fire industrielle revolutioner</h4>
+        <div>
+          Man taler om, at vi i øjeblikket befinder os i den fjerde industrielle revolution, der i lighed med de tre tidligere vil have store betydninger for samfund og arbejdsmarked.-Den første industrielle revolution fandt sted i England i slutningen af det 18. århundrede, hvor tekstilindustrien blev mekaniseret, og fabrikker blev til. Dampkraft var en vigtig forudsætning for, at den kunne finde sted.-Den anden industrielle revolution fandt sted i perioden mellem 1860 og første verdenskrig, og et typisk eksempel er Henry Fords masseproduktion ved samlebåndet.Elektricitet var en vigtig faktor, og det samme var udvikling i transport og nye muligheder for kommunikation, for eksempel telefon og telegraf.-Den tredje industrielle revolution begynder efter anden verdenskrig og er baseret på udviklingen i elektronik og computerteknologi.-Den fjerde industrielle revolution omhandler ikke blot industrien, og dækker blandt andet over udviklingen inden for digitalisering, robotteknologi, sensorer, Big Data, autonome køretøjer, 3D-print og kunstig intelligens.Kilde: Ing. dk, ufm.dk.
+        </div>
+        <footer>
+          <em>Nordvestnyt Kalundborg</em>
+          &nbsp;·&nbsp; 2016-10-08
+          &nbsp;·&nbsp; e5eada1f
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.974</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.63</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Sexrobotterne kommer, TV 2 22.45: I en stor lagerbygning nord for San Diego i Californien bliver der fremstillet sexrobotter med den allernyeste teknologi. Mød manden bag firmaet, Matt McMullen, som i de seneste fem år har arbejdet sammen med et team af robotingeniører og programmører inden for kunstig intelligens for at udvikle den seneste model, Harmony.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2018-09-03
+          &nbsp;·&nbsp; e6e19719
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.708</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.716</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danmark går ind i stort europæisk supercomputerprojekt</h4>
+        <div>
+          Således kan det eksempelvis bidrage positivt til sundhedspleje, sikkerheden i biler og cybersikkerhed.Uddannelses- og forskningsminister Tommy Ahlers (V) er glad for, at Danmark er med i projektet.- Den hurtige stigning i mængden af data skaber nye perspektiver for forskning og innovation, og her er det vitalt for Europa at være frontløber.- Supercomputere vil være centrale for fremtidig forskning, og danske forskere og virksomheder er klar til at bidrage til udviklingen, siger han.Det europæiske samarbejde har til formål at give offentlige og private brugere i Europa bedre adgang til databehandling. Det har ifølge EU-Kommissionen stor betydning for både konkurrenceevne og innovation.Europa er nødt til at følge med udviklingen. Det mener EU-Kommissionens næstformand med ansvar for det digitale indre marked, Andrus Ansip.- I dag er de fleste af vores forskere og virksomheder tvunget til at begive sig uden for Europa for at finde de topklassecomputere, som de har brug for. EU har ikke råd til at sakke bagud, siger han.- Data er vores digitale økonomis råmateriale. Vi har brug for supercomputere til at behandle disse data, udvikle kunstig intelligens og finde løsninger på komplekse spørgsmål inden for områder som sundhed og sikkerhed.I dag er EU's bedste supercomputer rangeret som nummer 13 i verden. Den er cirka ti gange langsommere end verdens hurtigste maskine.Der er 24 EU-lande plus Norge med i projektet, der har et budget på en milliard euro.EU står for den ene halvdel af budgetteringen, men de deltagende lande står for den anden halvdel./Ritzau/
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-09-29
+          &nbsp;·&nbsp; e6ea9a23
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.739</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.796</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.639</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny chef får ansvar for AI og droneteknologi</h4>
+        <div>
+          Carsten har i mere end 15 år beskæftiget sig med digital forretningsudvikling og vil i den nyoprettede stilling få ansvaret for selskabets udvikling inden for blandt andet anvendelse af kunstig intelligens og droneteknologi, ligesom han indgår i virksomhedens ledelsesteam.Carsten kommer fra en stilling som Manager for Technology &amp; Innovation hos DEIF A/S. Han er uddannet ingeniør i proceskontrol.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-03-07
+          &nbsp;·&nbsp; e71b5c77
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.719</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.932</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: KORT SAGT: Ny teknologi vil altid være farlig</h4>
+        <div>
+          Frygten for ny teknologi går formentligt længere tilbage end til Gutenberg, men massefremstilling af trykte tekster var farlig for menneskers sjælefred. Spinning Jenny var farlig for beskæftigelsen. Automobiler var fysisk farlige for både heste og mennesker. Radioen var farlig på grund af strålerne, der forårsagede psykiske lidelser.Da røgen havde lagt sig, kom fjernsynet, som var farlig for foreningslivet og forsamlingshuskulturen.Senere kom mobiltelefonerne, hvor både strålingen fra masterne og telefonerne selv gav hjerneskader.Computerspil var farlige for ens sociale færdigheder.Smartphones er nu blevet sat i fokus af bekymringsindustrien. De udmærker sig ved at samle næsten alle fortidens trusler i én pakke, og de er derfor særligt bekymrende.Det kan kun ende galt, hvis den uoprettelige skade på menneskeheden ikke allerede er sket. Det er i hvert fald forudsigelsen, som bøger, avisartikler og netaviser for tiden flyder over med. Hvis det går som hidtil, vænner vi os snart til smartphones, og bekymringsindustrien står over for nye udfordringer med selvkørende biler, virtual reality og kunstig intelligens. Ny teknologi vil være farlig for et eller andet, og det er også så dejligt livsbekræftende at være bekymret på hele menneskehedens vegne.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-07-28
+          &nbsp;·&nbsp; e6596e29
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.969</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.977</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>HÆDER - NAVNENYT</h4>
+        <div>
+           Mads Pramming, advokat hos Ehmer Pramming Advokater, har modtaget Dreyers Fonds hæderspris. Udover hæderen modtager han en pengepræmie på 400.000 kr.Dreyers Fonds hæderspris er på samlet 800.000 kr. og tildeles en arkitekt og en advokat, der har udmærket sig inden for sit felt. Han får prisen for sit store kollegiale arbejde, sin utrættelige indsats inden for retsområder med særligt udsatte mennesker, samt for sin evne til at sætte fokus på samfundsmæssige problemstillinger i et juridisk perspektiv. Han har gjort en stor indsats for at sikre retssikkerhed for samfundets svageste og har bl.a. ført retsskabende retssager for psykisk syge, krigsveteraner og børn, og han har bidraget til at bibringe politikere en forståelse for, når lovgivning ikke virker efter hensigten. Han blev cand.jur. i 2005 fra Københavns Universitet. I 2009 blev han advokatfuldmægtig hos LETT Advokatfirma, hvorefter han blev ansat hos Elmer &amp; Partnere. I 2012 etablerede han en selvstændig virksomhed, og i dag driver han advokatfirmaet Ehmer Pramming Advokater sammen med Malou Ehmer. Dertil har han siden 2006 undervist på Københavns Universitet. Desuden blev Mads Pramming uddannet som mediatoradvokat i 2010.Simon Krabbe, klinisk assistent hos Videncenter for Reumatologi og Rygsygdomme hos Rigshospitalet Glostrup, har fra Gigtforeningen modtaget 50.000 kr. til projektet: 'Developing a prediction model for the risk of hospitalized infektions in patients with chronic inflammatory arthritis treated with biological drugs'. Risikoen for indlæggelseskrævende infektion hos patienter med inflammatorisk gigt er formentlig omkring dobbelt så stor som i baggrundsbefolkningen. Projektets formål er at udvikle en simpel algoritme til at beregne risikoen hos den enkelte patient, således at man kan forbedre rådgivningen i forhold til infektionsrisiko og vaccinationer. Projektet forventes afsluttet i august 2018.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-03-25
+          &nbsp;·&nbsp; e6ae10b7
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.688</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vestjysk Bank vinder prisen for Årets digitale Finansvirksomhed</h4>
+        <div>
+          AF: Publiceret 20. april 2018 kl. 13:19 Vestjysk Bank får bl.a. den bedste vurdering blandt de mellemstore pengeinstitutter for sin netbank og digitale kommunikation.Ringkøbing: FinansWatch og analysefirmaet Wilke har lavet en stor undersøgelse af den digitale udvikling i de største danske finansvirksomheder, og Vestjysk Bank er kåret som vinder af Årets Digitale Finansvirksomhed i kategorien mellemstore banker.FinansWatch skriver om kåringen:- Vestjysk Bank vinder prisen som Årets Digitale Finansvirksomhed blandt de mellemstore pengeinstitutter. Vestjysk Bank får den bedste vurdering blandt de mellemstore pengeinstitutter for sin netbank og digitale kommunikation og den næstbedste vurdering for sin hjemmeside og arbejde med sociale medier.I panelundersøgelsen blandt kunderne får Vestjysk Bank den bedste score for sin hjemmeside.Vestjysk Bank får den bedste score i ekspertvurderingen for sin netbank, den næstbedste score for sit arbejde med sociale medier og den tredjebedste score for henholdsvis mobilbank, hjemmeside og digital respons.Samtidig opnår banken den bedste bedømmelse for sit interne arbejde med den digitale strategi og den næstbedste bedømmelse for arbejdet med kunde- og forbrugerindsigter. Vestjysk Bank scorer ligeledes ganske højt på sit arbejde med automatisering samt for proces automatisering og kunstig intelligens.Stolte af prisen- Vi er utrolig glade for og stolte af prisen. Vi prioriterer den digitale udvikling højt både i vores interne kundeprocesser, i vores selvbetjeningsmuligheder overfor vores kunder og i vores udtryk og kommunikation overfor vores omverden generelt, siger Jan Ulsø Madsen, administrerende bankdirektør i Vestjysk Bank.- Vores nøgleord er nærvær, enkelhed og handling. For os er det ikke kun ord. Alt hvad vi gør i vores arbejde skal understøtte disse tre ord - det gælder naturligvis også på det digitale område. Vi skal sikre, at vi bruger vores viden om vores kunder på en måde, så vi kan agere proaktivt i kontakten med dem. Med kåringen som Årets Digitale Finansvirksomhed har vi fået et solidt skulderklap og kvalitetsstempel af vores digitale indsatser, og prisen går til alle medarbejdere i Vestjysk Bank.
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2018-04-20
+          &nbsp;·&nbsp; e6b836ff
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.949</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.64</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.533</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FBI undersøger lynhurtige aktiestorme</h4>
+        <div>
+          På millisekunder kan computere markant påvirke aktiehandlen.FBI slutter sig nu til det amerikanske børstilsyn i efterforskningen af de potentielle farer for markedsmanipulation, der udgøres af sofistikerede algoritmiske og computerhandelsstrategier, såkaldt High Frequency Trading.Det skriver Financial Times.De højteknologiske strategier mistænkes for at være yderst destabiliserende for markedet og på kant med loven.FBI samarbejder i sagen om de avancerede computerstyrede handler med en ny enhed for kvantitativ analyse i det amerikanske børstilsyn, der netop er blevet oprettet som et modsvar på den rivende udvikling inden for investerings- og hedgefund-området.Afgørende millisekunderBlandt de metoder, der er under efterforskning fra dette myndighedssamarbejde, er såkaldt layering, hvor millioner af ordrer bliver placeret og derefter lynhurtigt aflyst igen, hvilket kan drive aktieprisen dramatisk op eller ned til gavn for spekulanterne, samt en praksis kaldet news aggregation, hvorved supercomputere afsøger internettet, nyhedssites og sociale medier for nøgleord og nyheder, for derefter at placere ordrer. Det sker alt sammen i løbet af millisekunder, inden resten af markedet har mulighed for at reagere.Det nye samarbejde mellem FBI og børstilsynet vil nu undersøge, om de nye metoder grænser til overtrædelse af regler for insider-handel, samt hvorvidt der er potentielle huller i lovgivningen.Ritzau Finans
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2013-03-06
+          &nbsp;·&nbsp; e3b06521
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.971</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.608</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tusindvis af danskere bliver snydt af udlejere</h4>
+        <div>
+          Lejeloven sætter grænser for, hvad udlejere må kræve i månedlig leje, og i rigtig mange tilfælde bliver lejerne snydt, viser en ny opgørelse fra sitet Tjekdinleje.dk.Siden hjemmesiden blev lanceret for halvanden måned siden, har over 11.000 lejere tjekket, om de betaler en fair pris - eller om den er for høj.6.846 af de udførte lejetjek har vist, at der i det pågældende lejemål betales en for høj leje. Det svarer til næsten to ud af tre, skriver metroxpress.Det er særligt i de større byer København, Aarhus og Odense at folk betaler for meget i leje, men også i små byer er der mange, der betaler for meget i husleje.På Tjekdinleje.dk kan danskere tjekke, om de betaler for meget i leje, ved at indtaste postnummer, kvadratmeter, månedlig husleje samt vurdere køkkenets og badeværelsets stand. Siden udregner den besparelse, man eventuelt kan få, hvis man søger om huslejenedsættelse.Tjekdinleje.dk samarbejder med blandt andre Lejerforening.dk og Odense Lejerforening for at sikre, at udregningerne er korrekte.»Vi har faktisk indregnet i algoritmen, at folk er pessimistiske, når de vurderer deres egen lejlighed, og så vil vi hellere fortælle for få lejere, at de betaler for meget, og så være på den sikre side, end fortælle for mange, at de kan spare penge, hvis vi ikke er sikre,« forklarer Anton Wrisberg, der er den ene af de to iværksættere bag sitet, til metroxpress.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2013-11-12
+          &nbsp;·&nbsp; e4159dc8
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.635</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.679</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Støtte</h4>
+        <div>
+          Professor ved IT-Universitetet i København Rasmus Pagh, der er født og opvokset i Vejle, har fået 1,9 mio. euro i en fem-årig bevilling fra Det Europæiske Forskningsråd (ERC).Bevillingen kaldes ofte for forskningens pendant til en Oscar og tildeles de mest lovende topforskere inden for natur-, ingeniørog biovidenskab.Rasmus Pagh har fået bevillingen inden for de såkaldte ERC Consolidator Grants. De gives til topforskere midt i deres karriere, som ønsker at sammensætte en uafhængig forskergruppe til at forfølge nye idéer.Rasmus Paghs forskningsfelt inden for it er algoritmer og databaser.Hans nyeste arbejder ligger inden for applikationer i databaser og udnyttelse af parallelisme i moderne computerarkitektur.For at komme i betragtning til ERC-bevillingen skal en forsker have publiceret mindst 10 artikler i et internationalt tidsskrift.Foruden Rasmus Pagh har fem andre danske forskere fået en ERCbevilling.Det placerer Danmark på en andenplads inden for Norden.navne@jyskemedier. dk.
+        </div>
+        <footer>
+          <em>Vejle Amts Folkeblad</em>
+          &nbsp;·&nbsp; 2014-01-22
+          &nbsp;·&nbsp; e4391b29
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.601</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.734</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsker modtager talentpris for forskning i maskinlæring</h4>
+        <div>
+          Årets Early Career Award går til Alexandros Iosifidis, lektor ved Institut for Elektro- og Computerteknologi på Aarhus Universitet. Han modtager prisen for hans forskning i i maskinlæring og kunstig intelligens. Det skriver universitetet i en pressemeddelse.Prisen bliver hvert år udgivet af den europæiske sammenslutning for signalbehandling, EURASIP, for at anerkende forskere under 40 år, der har leveret lovende videnskabelige resultater.»Jeg er meget glad for denne anerkendelse af mit arbejde på internationalt niveau. Jeg har deltaget og præsenteret min forskning ved den europæiske signalbehandlingskonference EUSIPCO i næsten 10 år, og derfor er det en stor ære for mig at modtage prisen til dette års event,« fortæller lektoren, som står i spidsen forforskergruppen 'Machine Learning and Computational Intelligence'.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-03-08
+          &nbsp;·&nbsp; e8287f45
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.869</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.89</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.508</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Wolt-bud: Gør Wolt statsejet, så vi kan hjælpe både de udsatte og budene</h4>
+        <div>
+          Nationaliserer vi madudbringningsservicen Wolt, kan udsatte undgå smittefare og få mad leveret billigt, og budene kan få samme rettigheder, som arbejdere i andre vigtige funktioner skriver Wolt-buddet Jack Campbell i dette debatindlægI marts foreslog Mette Frederiksen danskerne at bestille takeaway i stedet for at gå på restaurant for på den måde at reducere spredningen af COVID-19. Som bud for madudbringningsplatformen Wolt i København bed jeg mærke i hendes forslag.For at udbringningen af takeaway kan fungere optimalt for alle, har vi brug for en koordineret indsats. Oprettelsen af en national madudbringningsservice kunne sikre dette og blive en del af den sociale indsats.Fundamentet for sådan en service har vi allerede, som Callum Cant skriver i bogen Riding for Deliveroo : Nemlig i den teknologi, der ligger bag eksisterende madudbringningsplatforme som Wolt. Men den teknologi skal gøres statsejet, så den arbejder for os alle, ikke kun for privat profitmaksimering.Wolt er ikke for udsatteWolts algoritmiske system gør, at cykelbude kan arbejde på en ny og yderst effektiv måde, som ikke hidtil har været mulig.Wolt bruger nemlig big data til at oplære deres algoritme, så den hele tiden kan levere den mest tidssvarende information og på den måde kan optimere alle dele af forretningsgangen, lige fra når buddet henter maden hos en restaurant til den endelige levering hos kunden.Wolt har på den måde revolutioneret madudbringning i de fleste større byer i Danmark ved at garantere hurtig service og billigere gebyrer end andre madudbringningsfirmaer.Som det største madudbringningsfirma i større danske byer er Wolt en af de virksomheder, der vinder mest ved statsministerens forslag, og de vil højst sandsynligt opnå øget fortjeneste hen over de næste måneder.Deres monopollignende status i nogle byer har endda givet dem mulighed for at hæve leveringspriserne og opretholde deres andel af restauranternes i forvejen drastisk dalende omsætning.Selv om Wolt er billigere end andre, er servicen stadig uden for økonomisk rækkevidde for mange immunkompromitterede såsom ældre og handicappede. De har ikke råd til regelmæssigt at benytte Wolt, selv om madudbringningsservicen kunne være til stor gavn for dem.Vi har gjort alle artikler om coronakrisen gratis.Offentligheden har især nu brug for saglig og kritisk journalistik. Men journalistik koster stadig penge at lave. Støt fri og uafhængig journalistik - den første måned er gratis.Prøv gratisEr du abonnent? Log ind herDerfor bør man i Danmark nationalisere Wolt og skabe en statsejet virksomhed for madudbringning, der i krisetider som disse kan agere som del af kriseberedskabet.At gøre Wolt statsejet, ville også løse problemet med budenes ansættelsesforhold. Wolt anser sine bude som værende selvstændige erhvervsdrivende frem for ansatte, hvilket betyder, at vi ikke har arbejdstagerrettigheder såsom løn under sygdom.For tiden har Wolt dog tilbudt noget hjælp til budene i form af 50 kroner i refusion på køb af håndsprit og en form for sygekompensation, hvis du kan bevise, at du er blevet smittet med COVID-19.Dette er langtfra den sikkerhed som andre, der udfører vigtigt arbejde for at holde samfundets basale funktioner i gang på trods af øget smittefare, har ret til. Vi er som så mange andre afhængige af vores job for at kunne betale vores regninger, så det er bekymrende, at vi ikke har råd til at være bevidste om eventuelle symptomer.Bedre adgang til madFor at gøre op med de nuværende forhold kan man, som Callum Cant foreslår, ekspropriere platformen. Så kan udsatte personer få mad leveret til døren med støtte fra staten frem for at frygte de høje omkostninger ved brug af en service som Wolts. Samtidig vil budene kunne blive ansatte dækket af en overenskomst, så vi har råd til at blive hjemme, hvis vi har symptomer på COVID-19.Der er mange udviklingsmuligheder inden for denne model. Cant skriver, at »en platformbaseret, medarbejderdrevet udbringningsservice ville kunne dække for behovene hos en aldrende befolkning og udvide hjælpen til dem med midlertidig eller permanent plejebehov« .En national madudbringningsservice kunne desuden samarbejde med for eksempel folkekøkkener, der før krisen spillede en vigtig rolle i at reducere madspild og afhjælpe social isolation.I takt med at verden oplever effekterne af coronavirus, søger højrefløjen fremgang ved at skærpe sin retorik over for flygtninge. Venstrefløjen er nødt til at være kreativ i sit modsvar, og en national madudbringningsservice, der dækker et behov for mange, kunne godt opnå momentum og blive en vigtig del af vores vision for en verden efter COVID-19.Det kommer ikke af sig selv. Vi bliver nødt til at så frøene nu ved at engagere os i hjælpegrupper for udsatte og bakke op om budenes kamp for at organisere sig.Frem for alt har vi brug for en plan for at reagere på, hvad der har vist sig at være en fundamental krise for kapitalismen - og en omstrukturering af vores adgang til mad til gavn for arbejdere, ældre og andre udsatte personer er en afgørende del af dette.Jack Campbell er kurerpartner for Wolt. Indlægget er oversat fra engelsk.Mindre panik, mere perspektiv: Tilmeld dig Informations coronaoverblik
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2020-04-28
+          &nbsp;·&nbsp; e7af2458
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.639</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.653</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Startup forudsiger de bedste priser til webshops: Ikke kun for Amazon og Walmart</h4>
+        <div>
+          For selskaber som Walmart og Amazon er prissætning er kompliceret disciplin drevet af data og machine learning. Såkaldt dynamisk prissætning sørger for, at de store e-handelskæmper konstant opdaterer priserne, og hverken sælger for billigt eller overbyder konkurrenten.Vil du have fuld adgang til Tech Management?Savner du den indsigt, der gør dig i stand til at se de nyeste teknologier i et forretningsmæssigt perspektiv? Tech Management er mediet om ledelse, forretning og teknologi for bestyrelsesmedlemmer, direktører og strategiske ledere i særligt de små- og mellemstore virksomheder.Har du allerede et abonnement? Log indEr dit prøveabonnement udløbet?
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-08-20
+          &nbsp;·&nbsp; e74f03ae
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.684</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Østrigsk ministerium nedsætter robotråd</h4>
+        <div>
+          ØSTRIG I Østrig tager man den gryende mulighed for kunstig intelligens så alvorligt, at ministeriet for teknologi og innovation har oprettet et såkaldt robotråd. Det skriver filosofimediet Philosophynow.org.Det østrigske ministerium mener, at ændringerne i menneskers liv vil være så omfattende, både hvad angår privat-og arbejdsliv, at man vil have førende filosofi-og teknologieksperter til at overveje, hvordan robotter vil være en hjælp i stedet for en trussel, og hvordan man skal varetage muligheder for, at der kan fremstilles menneskelignende intelligens.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-11-09
+          &nbsp;·&nbsp; e67e806c
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.944</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.547</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.659</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Region får ny koncerndirektør</h4>
+        <div>
+          Region Sjæl land: Leif Panduro Jensen bliver ny koncerndirektør og indtræder i den øverste ledelse af Region Sjælland.Han kommer fra stillingen som centerdirektør for Finsencentret på Rigshospitalet og er uddannet speciallæge i karkirurgi.-Vi får en erfaren topleder med mange stærke sider og et skarpt øje for udviklingen af det danske sundhedsvæsen og brug af den nyeste teknologi. Med Leif Panduro Jensen får vi en koncerndirektør, som er parat til at gå foran og tænke nyt og innovativt for at skabe de bedste rammer for patienter og medarbejdere, siger adm.direktør Per Bennetsen, Region Sjælland.Leif Panduro Jensen tiltræder 1. marts. Som koncerndirektør bliver han en del af direktionen for Region Sjælland, der er arbejdsplads for over 17.000 medarbejdere inden for sundhedsvæsnet, psykiatri, regional udvikling og specialiserede sociale tilbud. Han får et særligt ansvar for de sundhedsrettede opgaver og for at fortsætte arbejdet med at skabe et mere moderne og patientorienteret sundhedsvæsen.-Jeg glæder mig til at være med til at udvikle regionens sygehuse sammen med medarbejdere, ledere og politikerne i regionsrådet, siger Leif Panduro Jensen.-Hver patient er unik og skal behandles som det. Vi skal højne befolkningens sundhedstilstand, og vi skal både udbygge tilbuddene for de mange patienter på alle sygehuse og opbygge de specialiserede tilbud til patienterne på Sjællands Universitetshospital.Uddannelse, forskning og rekruttering af medarbejdere har også høj prioritet.På Finsencentret -der er Rigshospitalets center for medicinsk kræftbehandling -har Leif Panduro Jensen som centerdirektør siden 2014 været ansvarlig for et budget på 1,1 mia. kroner og ledelsen for fire klinikker for onkologi, hæmatologi, infektionsmedicin og Finsenlaboratoriet, cirka 900 ansatte og 250 forskningsansatte.Her har han også været med til at teste brugen af kunstig intelligens i form af supercomputeren Watson.Før da har han haft stillinger som vicedirektør i hospitalsledelsen på Nordsjællands Hospital i Hillerød og som ledende overlæge for Karkirurgisk Afdeling i Gentofte.Leif Panduro Jensen er uddannet fra Københavns Universitet i 1985, speciallæge i karkirurgi i 1997 og Master of Health Management fra CBS i 2010.
+        </div>
+        <footer>
+          <em>Solrød Avis</em>
+          &nbsp;·&nbsp; 2018-02-08
+          &nbsp;·&nbsp; e69c3f60
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.566</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.612</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt data science akademi modtager bevilling på 184 millioner</h4>
+        <div>
+          I løbet af 2021 skal der opbygges et nationalt akademi for data science på DTU. Akadamiet vil få en national bestyrrelsen og bliver støttet af Novo Nordisk Fonden og VILLUM FONDEN, som har bevilget i alt 184,3 kroner. Det oplyser universitetet i en pressemeddelelse.Akadamiet skal støtte og igangsætte nye initiativer for danske forskningsinstitutioner og virksomheder og på den måde styrke Danmarks konkurrencedygtighed inden for områder som kunstig intelligens og internet of things.»Der er et enormt behov for data science-eksperter i alle dele af det danske samfund. Akademiet vil give enestående muligheder for at støtte uddannelse og træning af de nye generationer af data science-eksperter og skabe et unikt dansk data science-miljø, der kan konkurrere internationalt og tiltrække talent,« siger formanden for akadamiet, professor Lars Kai Hansen.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-05-05
+          &nbsp;·&nbsp; e8406a1f
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.674</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.515</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sundhedsforskere får Rigshospitalets internationale KFJ-pris</h4>
+        <div>
+          Søren Brunak, professor og forskningsleder på Novo Nordisk Foundation Center for Protein Research, og Michael Kjær, overlæge på Institut for idrætsmedicin på Bispebjerg Hospital og klinisk professor ved Institut for Klinisk Medicin, bliver i år belønnet og anerkendt med en pris fra Kirsten og Freddy Johansens Fond for deres forskningsresultater gennem årene.Den årlige KFJ-pris bliver blandt andet uddelt til forskning inden for lægevidenskaben, og tidligere modtagere har beskæftiget sig med alt fra hjerte-kar-sygdomme til epigenetik. Michael Kjær modtager den kliniske pris, mens Søren Brunak modtager den prækliniske pris.Med begge priser følger der 1,5 millioner kroner.Michael Kjær har altid været interesseret i fysisk aktivitet og fysiologi. I sin forskning har han blandt andet arbejdet med sund aldring, hormoner og stofskifte, men særligt arbejdet med idrætsskader har i de senere år spillet en stor rolle i hans forskningskarriere.Man har i forskningsverdenen længe troet, at bindevævet ikke havde en specielt dynamisk funktion i kroppen. Men i løbet af de sidste 20 år har Michael Kjær været en uundværlig ressource i at fastslå, at bindevævet ikke bare ligger dødt hen, men tværtimod spiller en vigtig rolle for fysisk aktivitet og idrætsskader.Som klinisk professor på Institut for idrætsmedicin på Bispebjerg Hospital er Michael Kjær med til at lede verdens højest rangerede institut på det idrætsmedicinske område, ifølge Shangai Rankings &quot; Global Ranking of Sport Science Schools and Departments&quot;. Hans forskningsresultater har dermed ikke kun haftimponerende betydning for Bispebjerg Hospital og Det Sundhedsvidenskabelige Fakultet, men for idrætsvidenskaben i hele verden.Søren Brunaks karriere har berørt mange forskellige forskningsområder, som både har lagt grundlaget for resten af hans excellente forskning samt hele den internationale forskning på området.Oprindeligt var fokus på machine-learning, kunstig intelligens og biologisk sekvensanalyse, inden interessen for alvor faldt på systembiologi og big data. Blandt andet har Søren Brunak i samarbejde med kolleger fra Rigshospitalet brugt 20 års sundhedsdata fra den enkelte til at udvikle en algoritme, som præcist kan vurdere en intensivpatients chance for at overleve.Og det er ikke kun på hospitalerne, at brugen af data og genomsekventering kommer til at gøre gavn for patienterne: Som en af grundlæggerne og som forskningsleder for Center for Protein Research, støttet af Novo Nordisk Fonden, på Københavns Universitet, har Søren Brunak været en vigtig grundsten for centrets banebrydende forskning i de grundlæggende biologiske processer bag sundhed og sygdom. Med mere end 50.000 citationer og over 300 videnskabelige artikler har Brunaks egen forskning været en vigtig kilde i det stadigt voksende forskningsområde, som er big data.navne@k.dk 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-07-02
+          &nbsp;·&nbsp; e741bd5c
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.987</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.586</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.594</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EU tager kamp op mod USA's it-giganter</h4>
+        <div>
+          EU: Europa halter efter de store amerikanske og kinesiske it-giganter. Prisen er tab af kontrol.En datastrategi skal bringe Europa i førersædet med et indre marked for data, som skal gøde jorden for, at europæiske IT-virksomheder kan vokse sig store.Det var et af budskaberne onsdag fra EU-Kommissionen anført af formand Ursula von der Leyen og næstformand Margrethe Vestager.Strategien dækker alt fra sikkerhed, kritisk infrastruktur og digital uddannelse til demokrati og medier.Den er samtidig et forsøg på at tæmme op for især amerikanske it-giganters magt i kraftaf de datamængder, de besidder.Lovforslaget ventes senere i år./ RITZAU/.
+        </div>
+        <footer>
+          <em>Avisen Danmark (eftermiddag)</em>
+          &nbsp;·&nbsp; 2020-02-20
+          &nbsp;·&nbsp; e7962311
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.934</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.526</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.556</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vestager vil tæmme den kunstige intelligens</h4>
+        <div>
+           I sit første store udspil som næstformand for EU-Kommissionen vil Margrethe Vestager ruste Europa digitalt. At tøjle den kunstige intelligens er afgørende.Robotter med ansvar for beslutninger om liv og død. Ansigtsgenkendelse på smartphones. Biler, der kan køre af sig selv.Kunstig intelligens (AI) giver os nye muligheder. Men den indeholder også faldgruber, og derfor præsenterer den danske konkurrencekommissær og næstformand for EU-Kommissionen, Margrethe Vestager, onsdag en digital strategi for Europa.For at læse denne artikel skal du have et digitalt abonnement eller et abonnement på et af vores dagblade: DAGBLADET, Frederiksborg Amts Avis, Nordvestnyt eller Sjællandske.Hvis du ikke har et digitalt abonnement, kan du tegne det her.Du kan få 24 timers digital adgang for 25 kr. eller fuldt digitalt abonnement for 279 kr. pr. måned.Særtilbud: Få første måned for kun 49 kr.Det er hurtigt og nemt - og du kan betale via MobilePay eller betalingskort.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2020-02-18
+          &nbsp;·&nbsp; e7956455
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.711</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>3.900 ledige it-job mangler hjerner</h4>
+        <div>
+          Selv om det er lykkedes at få flere unge til at vælge en it-uddannelse, står 3.900 job stadig ledige i Danmark, fordi det ikke er muligt at finde kvalificeret arbejdskraft.- Der bliver stadig større mangel på kvalificerede folk. Det er en begyndende flaskehals, og vi vil mangle op mod 4.000-5.000 i 2020, hvis der ikke gøres noget.Der er størst efterspørgsel på de allerdygtigste, for eksempel dataloger med dyb forståelse for algoritmer, men også på ingeniører og naturvidenskabelige kandidater.- Det gør det svært at udvikle nye produkter eller lave fabrikker, hvis man ikke kan få folk, der kan designe tingene fra grunden. Og det er helt klart sværere at skaffe folk i Jylland og allersværest længst væk fra de store universitetsbyer, men selv i Esbjerg mangler der alene 300 ingeniører, siger Adam Lebech, direktør for Dansk Industris brancheforening for itog televirksomheder, ITEK.Han tror ikke, det er lønniveauet, men det at man skal flytte, der er den største barriere.Ifølge Danmarks Statistik er antallet af ledige stillinger inden for informations-og kommunikations-teknologi steget med 56 procent på et år frem til udgangen af juni 2014.De fleste ledige stillinger brænder virksomheder med under 50 ansatte inde med. Fra 2010 til 2012 var der næsten konstant omkring 1.600-1.800 ledige stillinger, men i begyndelsen af 2013 nåede tallet 2.000 og er siden blot steget, så de nu udgør 3,7 procent af alle ledige stillinger i Danmark mod 2,6 procent sidste år.Fødelinien er for tynd- Fødelinjen er simpelthen for tynd. Man begynder ikke tidligt nok at introducere de unge for de kompetencer, som den digitale teknologi og det digitale samfund efterspørger.- Da fysik, matematik og kemi kom ind i folkeskolen og gymnasiet, var det, fordi de unge skulle snuse til det. Man har ikke tænkt tilsvarende tanker om it.- Man lukker øjnene for, at det skal ske i folkeskolen. Godt nok drysses iPads med videre ud over folkeskolen, men det er for at bruge it, ikke for at lære it.- Synet er for snævert, fordi man ikke får grundlagt interessen for it, og derfor er det ikke naturligt at overveje at gøre karriere inden for it, når man står og skal vælge en videregående uddannelse, siger Klaus Kvorning Hansen, vicedirektør på Københavns Universitet og formand for interesseorganisationen Dansk IT's udvalg for digitale kompetencer.Han er glad for den øgede interesse, der er for it.- Der er opstået rigtig mange blandings-eller hybriduddannelser, men der bliver ikke uddannet nok inden for hardcore, målrettede it-discipliner, siger han.Samme holdning har Adam Lebech fra ITEK.- Vi skal gerne have flere studiepladser, og så skal frafaldet på studierne bringes ned. Desuden skal kompetencerne inden for humaniora styrkes - for eksempel med grundkompetencer i matematik.Man er nødt til at skærpe studierne lidt i forhold til virksomhedernes behov.- I dag sker specialiseringen på studierne for tidligt. Der bør være mere tid til at få de matematiske grundkompetencer på plads, og så er det vigtigt, at uddannelsen også omfatter forretningsforståelse, mener Adam Lebech.FAKTAKampagneFor at løse problemet igangsætter Dansk Industri over efteråret en kampagne for at skaffe folk fra udlandet.- Vi vil byde dygtige udlændinge velkommen, for der er brug for dem i virksomhederne.Samtidig skal vi tiltrække - og fastholde - flere studerende i Danmark, siger Adam Lebech, ITEK.
+        </div>
+        <footer>
+          <em>JydskeVestkysten</em>
+          &nbsp;·&nbsp; 2014-09-19
+          &nbsp;·&nbsp; e495df2c
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.604</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.642</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Uddeling af Grundfosprisen</h4>
+        <div>
+          BJERRINGBRO: Modtageren af Grundfosprisen 2016 hædres onsdag den 5. oktober. Dagen vil stå i digitaliseringens tegn, og en af Europas absolutte sværvægtere inden for kunstig intelligens -professor Jürgen Schmidhuber -vil give årets keynote-tale. Samtidig er der mulighed for at møde årets Grundfosprismodtager og blive klogere på, hvorfor vedkommendes forskningsområde er relevant for Grundfos.Der ventes desuden op mod 150 universitetsstuderende, som er inviteret indenfor til specialdesignede rundture og networking med Grundfos' ansatte. Det hele foregår på The Poul Due Jensen Academy i Bjerringbro.pcb.
+        </div>
+        <footer>
+          <em>Bjerringbro Avis</em>
+          &nbsp;·&nbsp; 2016-09-14
+          &nbsp;·&nbsp; e5e1e2cf
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.763</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.685</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.54</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Danmark skal sætte fart på digitaliseringen</h4>
+        <div>
+          KøbenhavnDigitalt Vækstpanel blev nedsat sidste år for at give regeringen råd og anbefalinger til digital omstilling.Her kan du se et uddrag af de 33 anbefalinger til regeringen, som er opdelt i fire overskrifter:* Digitale kompetencer til alle:Regeringen skal sætte sig i spidsen for en teknologipagt. Den skal få virksomheder og uddannelser til at imødekomme behovene for digitale kompetencer og efterspørgsler fra erhvervslivet.Der skal udvikles digitale kompetencer fra folkeskoleniveau og op. Informatik skal være et obligatorisk fag i folkeskolen og på de treårige videregående uddannelser.Der skal være et tættere samarbejde mellem skoler og virksomheder og et øget optag på digitale og tekniske uddannelser.Panelet anbefaler mere fleksibel voksen- og efteruddannelse med fokus på virksomhedernes behov samt større økonomiske incitamenter til digital opkvalificering.* Attraktivt digitalt vækstmiljø:København skal være førende inden for teknologier som &quot;internet of things&quot;, kunstig intelligens og &quot;big data&quot;.Danmark skal være et attraktivt land for internationale digitale talenter, og de skal målrettet trækkes hertil. Der skal være gode rammer for højtkvalificeret udenlandsk arbejdskraft inden for teknologi.Små og mellemstore virksomheder skal lettere kunne rekruttere højtkvalificeret udenlandsk arbejdskraft.Det vil medføre en styrket digital forskning. Små- og mellemstore virksomheder skal have bedre adgang til testfaciliteter.* Proaktive rammer for digitalisering:Der skal være bedre og mere smidige rammer for nye digitale teknologier, produkter og forretningsmodeller.Det betyder lovgivning, som i højere grad er rustet til udfordringerne for digitalisering.Panelet anbefaler mere ambitiøse 2025-mål for den digitale infrastruktur, herunder udrulning af 5G-internet.Der skal være en handlingsplan for test og udbredelse af førerløse fartøjer.Danske virksomheder skal være blandt de førende i Europa inden for it-sikkerhed. Der skal være styrkede rammer for en konkurrencedygtig e-handel.* Digital ansvarlighed og begejstring:Regeringen anbefales et årligt digitaliserings-topmøde med køreplan for Danmarks digitale udvikling.Det vil medføre en udbredelse af kendskabet til de digitale muligheder.Det kan for eksempelvis betyde en digitaliserings-uge og en bred informationskampagne med fokus på mulighederne ved digitalisering.Kilde: Digitalt Vækstpanel./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-05-09
+          &nbsp;·&nbsp; e63f696c
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.869</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.992</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.965</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Algoritmeprofessor får Danmarks største forskerpris</h4>
+        <div>
+          Mikkel Thorup får et legat på fem millioner som anerkendelse for sin forskning inden for algoritmer.Af Jesper Stein Sandal Fredag, 23. januar 2015 - 13:49Professor Mikkel Thorup fra Datalogisk Institut ved Københavns Universitet får i dag tildelt Danmarks største forskerpris, Villum Kann Rasmussens Årslegat til Teknisk og Naturvidenskabelig Forskning. Det oplyser Københavns Universitet ifølge en pressemeddelelse .Mikkel Thorup har tidligere høstet internationale priser for sin forskning inden for algoritmer, og nu får han altså også den danske pris med et legat på fem millioner kroner.»Prisen er fantastisk, fordi den sætter mig i stand til at fortsætte arbejdet med at gå nye vejen inden for algoritmik. Min ambition er at fortsætte med at skabe nye forståelser og løsninger, der kan give os en mere sikker og effektiv brug af computere og bedre it-netværk,« udtaler Henrik Thorup ifølge pressemeddelelsen.Mikkel Thorup blev i 2013 hentet til Datalogisk Institut for at lede forskningscenteret for effektive algoritmer og datastrukturer.I et interview med Berlingske siger Henrik Thorup, at han ikke har lyst til at sidde som chef hos eksempelvis Google eller Apple, selvom der er efterspørgsel efter algoritmeeksperter i hans kaliber.»Jeg har ikke lyst til at være chef for noget, jeg ikke kan stå inde for. Jeg har kun lyst til at være chef for min egen forskning. For mig er matematikken vigtigere end pengene,« siger Henrik Thorup til Berlingske.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-01-23
+          &nbsp;·&nbsp; e4c9a755
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.676</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.581</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robotter på skolebænkenTeknisk skole har fået et Center for anvendt robotteknologi</h4>
+        <div>
+           Robotter skal også i skole for at lære, og for at andre kan lære at arbejde sammen med dem. Skolebænken for robotter og mennesker finder man på Roskilde Tekniske Skole der nu er blevet hjemsted for Center for anvendt robotteknologi.Indvielsen fandt sted ved et større arrangement, hvor skolen og CORO Co-lab Roskilde var værter for arrangement med gæster fra skolen og virksomheder inden for robotteknik og kunstig intelligens, både dem der bruger det og dem der fremstiller det. Gæsterne blev budt velkommen af direktør for Roskilde Tekniske Skole Jesper Østrup og borgmester Tomas Breddam.-Vi er glad for at få lidt kunstig intelligens ind på skolen, sagde Jesper Østrup til stor morskab for gæsterne.- Det skulle jeg nok have sagt på en anden måde, men det er en vigtig udvikling, hvor vi skal være med.Den mening blev delt af borgmesteren, da han overtog taletiden.- Centeret er vigtig, da der er gang i robotterne i stort set alle sammenhæng, så det er vigtigt at folk kan og har mulighed for at videreuddanne sig.Roskilde Tekniske Skole har en lang række robotter, der indgår i undervisningen. Der står små industrirobotter i flere lokaler. For at gøre klippet af den røde snor til indvielsen lidt anderledes, fik Tomas Breddam lov til at trykke på en rød knap, der satte gang i en robot, som klippede snoren.Men teknik driller, så der var ingen, der så resultatet på storskærmen selv om robotten løste sin opgave, da internetforbindelsen fra kamera til skærm svigtede. Man skulle ind i rummet, hvor robotten stod, for at se den brudte snor.Skolen har flere former for robotter, som eleverne kan øve sig på at programmere. De simpleste er i familie med det legetøj, der kommer til at ligge under mange juletræer. Det er små droner, der kan flyves med uden kørekort og et par små kamprobotter. De store robotter på skolen er rigtige industrirobotter, som dem man arbejder med i virksomhederne.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2019-12-29
+          &nbsp;·&nbsp; e785879e
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.733</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.719</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Det er altså den skillevej, EU endnu en gang står ved. Og som det ud nu, er Europa tættere på at gentage fejlen fra softwarelovgivning end ved at tage et skridt ud i et nyt territorium, som man gjorde for databeskyttelse, vurderer professoren.</h4>
+        <div>
+          Med EU-Parlamentets holdning klart udtrykt i to ud af tre AI-resolutioner synes chancen for juridisk personlighed til AI snæver.Men ideen bør som minimum testes af i en juridisk sandkasse, som det har været andvendt på Fintech-området for nyligt.»Vi kan ikke forudsige alting, AI kommer til at gøre. Derfor har vi brug for at være fleksible, og det kan vi gøre ved at teste denne her tilgang parallelt med det øvrige lovarbejde,« siger Vagelis Papakonstantinou.»Vi skal sørge for at give os selv muligheder i fremtiden.« 
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2021-03-04
+          &nbsp;·&nbsp; e826d776
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.817</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.648</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.569</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.682</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI under corona: Systemer, der ville have været utænkelige for et år siden, bliver hastet igennem</h4>
+        <div>
+          De britiske myndigheder hasteimplementerede i sommers et tvivlsomt AI-system i skolerne, der endte med at gå ud over karaktererne for elever fra socialt belastede områder, mens algoritmen hjalp elever fra privatskoler. Corona-pandemien har demonstreret behovet for AI-regulering, mener hollandsk AI-ekspert Catelijne Muller.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2021-05-13
+          &nbsp;·&nbsp; e8435e6e
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.744</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.798</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.523</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google anklages for at tjene penge på holocaustbenægtelse</h4>
+        <div>
+          Hjemmesider med holocaustbenægtelser er noget af det første, der popper op, når der søges på Holocaust. Så museer og organisationer ser sig nødsaget til at betale Google for at justere på rækkefølgen af de resultater, der kommer frem, når man søger på, om Holocaust overhovedet har fundet stedEt museum for jødisk kulturarv beskylder nu Google for at profitere på holocaustbenægtelse. For museet ser sig nødsaget til at betale søgetjenesten for at forhindre, at en nynazistisk hjemmeside vises som øverste resultat for søgninger i stil med: »Fandt Holocaust sted?«.David Schendowich, der er marketingdirektør for Breman Museum i Atlanta, Georgia, USA, kalder det »kvalmende«, at Googles algoritmer som udgangspunkt leder brugere til et websted, der propaganderer for hvidt overherredømme.Han tilføjer, at museet nu betaler Google op til to dollar per klik for i stedet at dirigere folk, der søger på netop den slags spørgsmål, til sit eget websted via AdWords, Googles pay-per-click -reklameservice.David Schendowich kalder det »vrøvl«, når Google afviser at have profiteret på Holocaust-benægtelse.»Det er meget muligt, at de ikke får indbetalt penge fra holocaustbenægtere, men pointen er, at museer som vores og tilsvarende andre organisationer bliver tvunget ud i at betale for at bekæmpe dette her.«Han ønsker ikke at oplyse, hvor meget museet i alt har betalt til Google, men pointerer, at AdWords og søgemaskineoptimering (SEO), hvor man fremmer sin egen hjemmesides placering, når folk søger i for eksempel Google, er en central   og omkostningskrævende   del af museets markedsføringsstrategi.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-01-06
+          &nbsp;·&nbsp; e60e59cc
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.844</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.802</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny teknologi vil altid være farlig</h4>
+        <div>
+          Frygten for ny teknologi går formentligt længere tilbage end til Gutenberg, men massefremstilling af trykte tekster var farlig for menneskers sjælefred.Frygten for ny teknologi går formentligt længere tilbage end til Gutenberg, men massefremstilling af trykte tekster var farlig for menneskers sjælefred. Spinning Jenny var farlig for beskæftigelsen. Automobiler var fysisk farlige for både heste og mennesker. Radioen var farlig på grund af strålerne, der forårsagede psykiske lidelser.Da røgen havde lagt sig, kom fjernsynet, som var farlig for foreningslivet og forsamlingshuskulturen. Senere kom mobiltelefonerne, hvor både strålingen fra masterne og telefonerne selv gav hjerneskader. Computerspil var farlige for ens sociale færdigheder.Smartphones er nu blevet sat i fokus af bekymringsindustrien. De udmærker sig ved at samle næsten alle fortidens trusler i én pakke, og de er derfor særligt bekymrende. Det kan kun ende galt, hvis den uoprettelige skade på menneskeheden ikke allerede er sket. Det er i hvert fald forudsigelsen, som bøger, avisartikler og netaviser for tiden flyder over med. Hvis det går som hidtil, vænner vi os snart til smartphones, og bekymringsindustrien står over for nye udfordringer med selvkørende biler, virtual reality og kunstig intelligens. Ny teknologi vil være farlig for et eller andet, og det er også så dejligt livsbekræftende at være bekymret på hele menneskehedens vegne.Vil du have meninger direkte i din indbakke? Tilmeld dig gratis og få de seneste indlæg fra Jyllands-Postens debatsektion én gang i døgnet - klik her, sæt flueben og indtast din mailadresse. Følg også JP Debat på Twitter
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-07-28
+          &nbsp;·&nbsp; e6599f0e
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.831</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.859</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.628</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Privacy-kommissær: Brug af AI i det offentlige udfordrer vores borgerrettigheder</h4>
+        <div>
+          Databeskyttelseskommissær (beauftragte, red. ) for Schleswig-Holstein Marit Hansen, som også kommissær for informationsfrihed, er bekymret for, at brugen af kunstig intelligens og algoritmer i den offentlige forvaltning skaber en ny situation med afgørelser, der ikke er til at forstå for borgerne.»Den offentlige forvaltnings afgørelser skal være gennemskuelige - det grundlæggende forfatningsmæssige princip ændres ikke ved brug af teknologi. Vi har brug for garantier for troværdighed og kvalitet ved udnyttelse af alle de teknologi, vi tager i brug. Det krav er ikke tilstrækkeligt opfyldt med de nuværende teknologier, og med selvlærende og stadigt foranderlige systemer bliver det endnu vanskeligere,« siger hun ifølge en meddelelse.Er en Beauftragter en kommissær?Der findes ikke et helt korrekt dansk ord for det tyske Beauftragter, det nærmeste man kommer er nok &quot;kommitteret&quot;, men det klinger ikke helt korrekt.I mange sammenhænge vil direktøren for en styrelse være en analogi.Det bliver ikke bedre af, at de enkelte delstater har forskellige love og regler, og en &quot;beauftragter&quot; opfattes som politisk udvalgt for en valgperiode, med hovedvægt lagt på den rådgivende side, og ingen til begrænsede forvaltningsmæssige magtbeføjelser og ingen egentlige juridiske beføjelser.I store, men ikke hundrede procent dækkende, træk er der tale om en rådgivende funktion for det politiske plan. Ikke så løsrevet som fx Etisk Råd, men på linje med chefen for en styrelse og uden de beføjelser, som for eksempel en ombudsmand har.Databeskyttelseskommissæren har i samarbejde med andre føderale og statslige repræsentanter udsendt en officiel holdningsskrivelse (et såkaldt positionspapir, PDF ) omhandlende gennemsigtighed i anvendelsen af algoritmer i forvaltningen, kaldet &quot;Transparens i forvaltningen også ved brug af algoritmer og kunstig intelligens&quot;.Ifølge kommissariatet, Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein, ULD, undersøger den offentlige forvaltning for tiden, hvorvidt algoritmer og fremgangsmåder, der involverer kunstig intelligens, kan forenkle opgavevaretagelsen i det offentlige.Oftest involveres der dog ikke persondata, men faktaorienterede data i forbindelse med vejrudsigter, undersøgelse af broers stabilitet, planlægning af vejtrafik eller føringen af el-kabler.Men hvad betyder udviklingen for retten til information, spørger kommissærerne. Hvad betyder det for det bagvedliggende princip om adgangen til at kontrollere forvaltningens handlinger?Kommissærerne for informationsfrihed understreger i den forbindelse myndighedernes pligt til - inden en beslutning om at anvende redskaberne tages - at undersøge om de understøtter, at grundlæggende rettigheder overholdes, ikke alle former for databehandling er tilladt.Samtidig fremhæves forvaltningens ansvar for at sikre tilstrækkelig gennemsigtighed.Det ville være betydeligt enklere, hvis udviklerne af sådanne systemer allerede i planlægningsfasen tilgodeså transparenskrav - i betydningen &quot;Transparency by Design&quot;, anfører ULD i skrivelsen.»Lovgiverne i forbundstaten og delstaterne opfordres også til at øge indsatsen for &quot;transparensforeskrifter&quot;, for eksempel i lovgivningen omkring adgangen til information eller i fagorienterede love,« lyder det.»Holdningsskrivelsen har gjort det klart for os, at der er behov for at reagere. Vi ser frem til at drøfte konkret, hvordan de krav, der skal efterleves, kan implementeres. Forskning i kunstig intelligens, som bør bidrage med belysning af området og gøre redskaberne forståelige (&quot;forklarlig kunstig intelligens&quot;) kan også spille en vigtig rolle her. Og selvfølgelig ser jeg ikke kun problemer for dataanvendelsen, men også privatlivsudfordringer, da algoritmer og kunstig intelligens behandler personlige oplysninger,« udtaler Marit Hansen.Version2-læser Kurt Friis Hansen har bidraget med oversættelse.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-10-18
+          &nbsp;·&nbsp; e6f0b531
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.614</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.5</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Flere bøger på eReolen</h4>
+        <div>
+          BØGER: En helt ny aftale betyder, at nogle af de mest efterspurgte bøger nu kan lånes som e-bøger. Det gælder for eksempel &quot; Alle mine morgener på jorden&quot; af Troels Kløvedal, &quot; Under bjælken&quot; om kronprins Frederik af Jens Andersen og Hanne-Vibeke Holsts &quot; Som pesten&quot;.Aftalen, der trådte i kraft den 1. januar, er indgået mellem bibliotekernes digitale platform for udlån af e-bøger, eReolen, og forlagene Gyldendal (inkl. Rosinante) og Modtryk (inkl. Alvilda).Ved offentliggørelsen af aftalen udtalte formand for Danmarks Biblioteksforening Steen Bording Andersen: -Aftalen er utrolig vigtig for bibliotekernes e-bogudlån og dermed for borgernes adgang til litteratur og viden. Bibliotekerne står centralt i litteraturformidlingen og spiller en betydelig rolle for både bogmarkedet og det enkelte menneskes lyst og mulighed for at læse.Den rolle er måske endnu vigtigere i et algoritmestyret digitalt marked, så derfor er det nødvendigt at bibliotekerne har mulighed for at udlåne bøger, uanset om det er fysiske eller e-bøger.Med aftalen er Danmark igen frontløber på verdensplan, når det kommer til biblioteker som digitale formidlere, oplyser biblioteksforeningen, og tilføjer: -Det ligger i fin forlængelse af den danske folkeoplysende tradition, hvor borgernes adgang til viden har spillet en central rolle siden Grundtvig.
+        </div>
+        <footer>
+          <em>Helsingør Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-12
+          &nbsp;·&nbsp; e693103a
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.546</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.604</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rolf Fagerberg er udnævnt til professor i datalogi på SDU</h4>
+        <div>
+            Rolf Fagerberg er udnævnt til professor i datalogi på Institut for Matematik og Datalogi på SDU. Rolf Fagerbergs speciale er algoritmer og datastrukturer.Senest har han, sammen med en gruppe medforfattere, modtaget prisen for bedste videnskabelige artikel på konferencen Annual Symposium on Algorithms 2019 for en artikel, der for første gang vurderer sorteringsalgoritmer ud fra, hvor mange sammenligninger, hvert enkelt element kan udsættes for. Udover forskning og undervisning er Rolf Fagerberg optaget af at udvikle SDUs datalogi-uddannelse og at tiltrække unge mennesker til uddannelsen. Få dagens vigtigste nyheder direkte i din indbakke. Det er gratis, og du kan afmelde dig til hver en tid.
+        </div>
+        <footer>
+          <em>Faa.dk</em>
+          &nbsp;·&nbsp; 2019-10-30
+          &nbsp;·&nbsp; e76b1729
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.8</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.575</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

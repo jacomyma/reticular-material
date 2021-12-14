@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_41 <kbd>H_0_41</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>egen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>selv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>måske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hvad</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>taler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hvorfor</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hvem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spørger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>øjeblik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nej</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virkeligheden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virkelighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pointe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stoler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forvirret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spørgsmål</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opfatter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hinanden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>berøring</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>psykologer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremstå</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lader</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stødt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lad</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>redde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>passe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forstås</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vide</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gammeldags</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forstand</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>snakken</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bange</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skyld</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>munden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>foranderlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>personligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>emotionel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>argumentere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skrives</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fornuft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hører</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>svare</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indtryk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>påstå</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sult</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>....</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>egentlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>frygt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spørgsmålene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skoen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>algoritmernes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>formulerer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hint</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virkelighedens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tales</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>føhns</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>harddisken</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beriget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grunden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bunder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>slip</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>blind</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dybt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>råber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>engagere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nuanceret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kendis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bevidst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>villig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>begår</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sure</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>love</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overforbrug</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uundværlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bekvemt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>egentlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>alverdens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grundigere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>seriøst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>diskuterer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skabelon</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forestillet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opmærksomheden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>friday</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nuancer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>drukner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samtaler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samtalen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hedde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bort</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mirakel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anskue</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pointen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>havner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>subjektivt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beslutte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>entusiasme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kniber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>præmis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stadighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kolossal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uundværligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skræmmer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hverdagsliv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>it-ekspert</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uforudsigelige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forberedte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bekendt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>givetvis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>diskuteret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>timevis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bemærket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>erkende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>optagede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ubevidst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>søg</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bogstaveligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vær</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>synder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intention</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hjælpsomme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opfatte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>miks</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>støder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stregen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fravælger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>trælse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udsætter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>belært</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>appellere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hacke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>glem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>session</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>misser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>disciplinen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forslagene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>demokratisere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undvære</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uheldige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grammatik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>valgmuligheder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bås</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>villighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hinandens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stræber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>psykologien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omtaler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>-ikke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>klinger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>symptom</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>derpå</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>givende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ufattelige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stereotyper</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rygning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rygte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sprogbrug</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>millenials</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>raketvidenskab</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_41 DESC LIMIT 50</pre>
+      <article>
+        <h4>Kom til filosofisk debat</h4>
+        <div>
+          Helsinge: &quot;Sokrates Café - Helsinge&quot; inviterer til start-up møde og filosofisk debat om alt fra dagligdagens trivialiteter til livets helt store spørgsmål.Vi stiller selv spørgsmålene, som eksempelvis - Hvad er livets mening? Hvad er dannelse? Har vi fri vilje? Hvad er lykke? Er alting tilfældigt? Hvem er vi? Hvad er objektivitet? Hvordan får ordene mening? Hvad er kærlighed? Hvordan er sammenhængen mellem sprog og virkelighed? Hvad er frihed? Bør vi frygte kunstig intelligens? Hvordan skabes retfærdighed?Taletid er frivillig og alle er velkomne, uanset baggrund.Daf onsdag 18/11 kl. 16Helsinge Bibliotek(Møderum 1)
+        </div>
+        <footer>
+          <em>Gribskov.lokalavisen.dk</em>
+          &nbsp;·&nbsp; 2015-11-18
+          &nbsp;·&nbsp; e551fe0b
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.834</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.716</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Click: Klimaet og AI'en, lykke og lysårene</h4>
+        <div>
+          - Det er det første projekt i verden, hvor kunstig intelligens direkte spiller med på scenen og diskuterer med os. Forestillingen handler blandt andet om at redde klimaet, og måske er mennesket ikke det bedste til det. Måske er den kunstige intelligens bedre, forklarer Mikael Fock, leder af Kulturværftet.Nu kan du få alt vores indhold digitalt på helsingordagblad.dk 99 kr./md
+        </div>
+        <footer>
+          <em>Helsingordagblad.dk</em>
+          &nbsp;·&nbsp; 2019-04-27
+          &nbsp;·&nbsp; e72d1f1c
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.745</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.663</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Borgmesterens kæreste er et hit</h4>
+        <div>
+          fredericia - Hvor gammel er Jane Findahl egentlig og hvem er Jacob Bjerregaard kæreste med?Det er spørgsmål, som optager de lokale internetbrugere, viser en uvidenskabelig undersøgelse, som Fredericia Dagblad har foretaget via Googles autocomplete-funktion.Googles autocomplete-funktion er en hjælpefunktion, der selv foreslår emner, allerede mens brugeren er i gang med at taste sine søgeord. Emnerne bliver foreslået ud fra en avanceret og til dels hemmelig algoritme, der bl.a. tager udgangspunkt i, hvad andre har søgt på tidligere, lige som det spiller en rolle, hvor du rent geografisk foretager søgningen fra.Dagbladets undersøgelse viser, at de lokale internetbrugere er interesserede i at vide alderen på SF's byrådsmedlem Jane Findahl, hvem kommende borgmester Jacob Bjerregaards kæreste er samt, hvad Thomas Banke-sagen egentlig gik ud på.Du kan læse mere i fredagens avis.(Genrefoto).Hvor gammel er Jane Findahl? Det vil Googles brugere gerne vide..Hvem er den kommende borgmester kæreste med? Det spørgsmål er der tilsyneladende mange, som søger svar på, viser Dagbladets lille undersøgelse..Når der søges på tidligere borgmester Thomas Banke, er det først og fremmest sagen, der kostede Venstre-politikeren borgmesterkæden, som Googles brugere søger information om..(Genrefoto).(Genrefoto).Hvor gammel er Jane Findahl? Det vil Googles brugere gerne vide..Hvem er den kommende borgmester kæreste med? Det spørgsmål er der tilsyneladende mange, som søger svar på, viser Dagbladets lille undersøgelse..Når der søges på tidligere borgmester Thomas Banke, er det først og fremmest sagen, der kostede Venstre-politikeren borgmesterkæden, som Googles brugere søger information om..(Genrefoto).
+        </div>
+        <footer>
+          <em>Frdb.dk (Fredericia Dagblad)</em>
+          &nbsp;·&nbsp; 2013-12-27
+          &nbsp;·&nbsp; e42eae2b
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.624</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.657</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>7 forskeres spørgsmål til kunstig intelligens</h4>
+        <div>
+          Kunstig intelligens bliver spået, at den vil revolutionere vores arbejde, liv og samfund. Dagbladet Information bad til Forskningens Døgn 7 forskere om at gøre os klogere på, hvordan vi skal forstå og fortolke udviklingen - nu spørger vi jerNår talen falder på kunstig intelligens er vi hurtige til enten at parkere vores største drømme og værste mareridt i en teknologi, vi endnu ikke helt forstår. Kommissioner og råd forsøger at give svar på hvordan teknologien kan være et vækstpotentiale, men mange spørgsmål trænger sig på?Har kunstig intelligens altid ret? Hvordan bruger vi teknologien til det fælles bedste? Hvilken autonomi kan og bør vi tildele teknologien og hvad betyder det for vores liv og samfund?Til Forskningens Døgn gik vi på jagt efter de mange spørgsmål vi bør stille os selv, hinanden og beslutningstagere, når den kunstige intelligens slippes løs i vores liv og hverdag.Hver især udvider de debatten ved hver at præsentere ét spørgsmål vi bør stille os selv, politikere eller andre, og kommer med et bud på, hvordan kan vi besvare det spørgsmål?På samme måde vil vi gerne høre jeres bud på, hvilke spørgsmål I savner svar på i forhold til debatten om kunstig intelligens? Hvad er jeres frygt og forhåbninger   giv jeres bud i kommentarsporet.
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-07-14
+          &nbsp;·&nbsp; e655b187
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.979</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.987</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vind med Ingeniørens julekalender: 23. december</h4>
+        <div>
+          Vær med i Ingeniørens julekalender 2020. Hver dag med nye præmier! Af Hver dag frem til juleaften får du et nyt spændende spørgsmål, som tager udgangspunkt i en artikel, vi har bragt i løbet af året.Dagens spørgsmålHvor god er den kunstige intelligens GPT-3 til at svare på spørgsmål om kemi på bachelor-niveau?Klik her for at gå til kalenderenVind præmier for over 15.000 kroner.Bag dagens låge gemmer sig et gavekort på 500 kr. til Gavekortet.dk
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-12-23
+          &nbsp;·&nbsp; e80c34e1
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.699</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.519</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Algoritmerne kommer</h4>
+        <div>
+          Torsdag er der dialogmøde med professor Rasmus Pagh fra IT-Universitetet i København om algoritmernes betydning for samfundet.Sundhedsvæsenet, politiet og offentlige institutioner bruger i stigende grad digitale systemer baseret på algoritmer.Men hvad ved vi egentlig om, hvad det betyder for os og i hvilken grad bliver politiske, moralske og etiske beslutninger overladt til automatisering? Det er nogle af spørgsmålene som Rasmus Pagh, professer på DTU debatterer, når SF Vesterbro inviterer til dialogmøde torsdag.Torsdag d. 13. februar, kl. 20 - 22 i Forsamlingshuset, Onkel Dannys Plads 5, 1700 V. Entré: Gratis.
+        </div>
+        <footer>
+          <em>Vesterbro Bladet</em>
+          &nbsp;·&nbsp; 2020-02-12
+          &nbsp;·&nbsp; e7934592
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.538</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>»Hvad skal vi med mennesker?«</h4>
+        <div>
+          Deltagerne i den kommende LæseLounge kommer som første bog til at læse »Hvad skal vi med mennesker?« Peter Svarre er forfatter -foruden foredragsholder og digital strateg.»Hvad skal vi med mennesker?« handler om kunstig intelligens og de mange etiske dilemmaer, der følger i kølvandet på, at teknologien udvikler sig. Hvad nu, hvis robotter kan erstatte os på arbejdsmarkedet? Hvad nu, hvis de bliver klogere end os? Hvad med snakken om de kommende selvkørende biler, der også skal kunne træffe moralske valg i tilfælde af ulykker?.Peter Svarre kommerMange er bekymrende, ved Peter Svarre. På forståelig vis forklarer han i »Hvad skal vi med mennesker?«, hvad kunstig intelligens faktisk er. Hvordan den fungerer.Bogens mission er at ruste enhver til at kunne tage del i den vigtige diskussion om vores alle sammens fremtid. Peter Svarre kommer selv i LæseLoungen i oktober.TilmeldingTilmelding til LæseLoungen sker til Mette Dahl Juelner fra firmaet BizBuddy på mdj@bizbuddy.dk
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2019-06-12
+          &nbsp;·&nbsp; e73bb9e9
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.981</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.916</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.53</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kulturbegreb. glædelig kultur, kolding</h4>
+        <div>
+          LÆSERBREV: Jeg har i den sidste uges tid stillet mig selv spørgsmålet: Hvad er kultur? Er det en kode eller en algoritme, som gemmer på hemmeligheden om dem, vi er? Er det en sammensætning af farver på et lærred, en skulptur eller et pigment? Jeg vil gerne ryste posen og stikke et spadestik dybere, så her kommer mit bud: Kulturbegrebet finder sin aktualitet i vores samtids standard for, hvordan vi behandler hinanden. Lad mig være helt klar i spyttet: Kultur = hvorledes vi byder det fremmede og ukendte velkommen helt ind under huden. For skal vi være helt ærlige, så er vi i bund og grund en smule identitetsforvirrede, når det kommer til spørgsmålet om, hvilke søjler vores kulturelle halvtag hviler på (jeg undlader her at nævne stegt flæsk med persillesovs, Tuborg, det danske flag i kolonihaven mm.) Nej, jeg vil opfordre til, at vi spørger os selv, om vi egentlig forholder os nok til begrebet &quot; kultur&quot;? Lad os tvinge hinanden til at tage stilling til det fremmede og ukendte, thi her kan vi spejle os selv: Hvad skyldes vores aversioner og inderste fordomme, som lever i bedste velgående lige fra bybussens velkendte hvisken mellem de vidtspredt-besatte sæderækker til saunaens selvtilfredse pensionistfornufti svømmehallen? Glædelig kultur, Kolding, husk at række hånden ud til din næste, vi er gjort af samme stof, og dette stof kan du, efter min mening, roligt kalde &quot; kultur&quot; i sin aller-inderligste betydning. 
+        </div>
+        <footer>
+          <em>JydskeVestkysten Kolding</em>
+          &nbsp;·&nbsp; 2019-08-30
+          &nbsp;·&nbsp; e7526a8a
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.972</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.875</kbd>
+            <kbd data-tooltip="People, life and society">L80_PPLSOC&nbsp;0.626</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.521</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Har Mette Frederiksen fundet guld i Hygum Bakker?</h4>
+        <div>
+            Debat: Da jeg så kortet over kommuner, der skal betale, og dem der får penge via udligningsordningen, måtte jeg ud for at vaske mine briller. Er Lemvig flyttet fra vandkanten til whiskybæltet?Eneste fordel er, hvis nogen spørger, hvor kommer du fra? Whiskybæltet.... Hvis vandkanten skal flyttes, kan det nemt give oversvømmelse. Uden at kende baggrunden må det være en nyfortolkning af, hvor vandkantsdanmark ligger. Hvad er fakta, og hvad er socialdemokratisk spin. Hvad er nye parametre i algoritmen? Eller er det måske en socialdemokratisk dummebøde? Hvis storken, ud over at flyve med børn, nu også skal flyve med penge for Mette Fr. Det orker de ikke. Vender om, og forlader det nye whiskybælte.
+        </div>
+        <footer>
+          <em>Folkebladetlemvig.dk (Lemvig Folkeblad)</em>
+          &nbsp;·&nbsp; 2020-01-31
+          &nbsp;·&nbsp; e78fa7ea
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.73</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.649</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.615</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens i kommunen</h4>
+        <div>
+          RUDERSDAL: »Hvad kan jeg hjælpe med?«. Med denne besked bliver man nu mødt, når man besøger Rudersdal Kommunes hjemmeside. Sætningen dukker op i skærmens nederste højre hjørne ved siden af en tegning af en smilende, blåhåret kvinde iført briller.Kvinden -som egentlig »blot« er en såkaldt chatbot -hedder Kommune Kiri og er den første kommunale chatbot i Danmark, skriver Rudersdal Kommune i en pressemeddelelse.Ifølge kommunen kan hun svare på en lang række ofte stillede og generelle spørgsmål inden for borgerserviceområdet.Kiri skal dog som alle andre, der starter nyt arbejde, lige have lidt tid til at få helt styr på alle svar.Derfor vil man godt kunne stille spørgsmål, som Kiri ikke kan svare på, men hun vil løbende blive oplært i nye fagområder.Én ting kommer Kiri dog ikke til at kunne gøre, og det er at svare på konkrete, personlige sager. Her skal borgerne fortsat henvende sig til kommunen for at få behandlet deres sag.Gemmer samtalen i IrlandFrederiksborg Amts Avis har taget en »snak« med Kiri, og resultatet kan du læse her: -Hej. Jeg hedder Kiri og er kommunens nye chat-robot.Skriv kort og præcist. Du må ikke skrive personlige oplysninger som cpr-nummer.Jeg vil svare dig så godt, jeg kan.-Hej.-Hej! Er der noget, som jeg kan hjælpe med? -Hvad hedder du? -Jeg hedder Kiri og er Rudersdal Kommunes chatrobot.-Jeg hedder Joram.-Det er et flot navn.-Tak. Og i lige måde.-Tak.-Jeg er journalist.-Jeg er stadig ny og kan ikke svare på alle spørgsmål endnu. Jeg kan måske svare, hvis du skriver spørgsmålet på en anden måde.-Journalist er jeg.-Jeg er stadig ny og kan ikke svare på alle spørgsmål endnu. Jeg kan måske svare, hvis du skriver spørgsmålet på en anden måde.-Mig journalist.-Jeg er stadig ny og kan ikke svare på alle spørgsmål endnu. Jeg kan måske svare, hvis du skriver spørgsmålet på en anden måde.-Hvor gammel er du? -Man spørger da ikke en kvinde om hendes alder.-Undskyld.-Helt i orden! -Det var ikke for at være uforskammet.-Jeg forsøger ikke at være uhøflig.-Det er for læserens skyld.-Nej, jeg kan ikke se, hvem du er, og jeg gemmer ikke andet om dig, end det du selv skriver.-Bliver vores samtale gemt? -Vores samtale bliver gemt i 21 dage i en krypteret database i Irland. Derefter slettes samtalens indhold helt.Hvis du ikke ønsker, at vores samtale bliver gemt, skal du trykke på?-ikonet oppe til højre i chatvinduet og vælge »Slet samtalen«. -Hvad bruger i vores samtale til? -Vores samtale bliver gemt, så jeg kan lære af samtalen og blive endnu bedre til at svare på spørgsmål.Men jeg gemmer ikke dine personoplysninger.-Hvad kan du hjælpe borgerne med? -Du kan stille mig spørgsmål om flytning, pas, kørekort, dagtilbud, skole, lægevalg og sundhedskort samt kultur-og fritidsområdet.Er det noget, som du vil høre mere om? -Ellers tak.-Selv tak. Jeg er glad for, at du kunne bruge svaret.-Hvem er din chef? -Det ved jeg faktisk ikke.Men jeg arbejder hos borgerservice i Rudersdal Kommune.-Hvad hedder borgmesteren i Rudersdal? -Det ved jeg ikke, hvem er.-Hvem er kommunaldirektør? -Bjarne Pedersen er kommunaldirektør i Rudersdal Kommune.-Er du glad for dit nye job? -Ja. Jeg synes selv, at jeg har verdens bedste job.-Har du en kæreste? -Jeg arbejder døgnet rundt, så jeg har ikke tid til at have en kæreste.-Har du børn? -Nej, jeg har ikke børn endnu. Lige nu fokuserer jeg på min karriere som chat-robot.-Jeg har ikke flere spørgsmål.-Okay. Håber du kigger forbi en anden gang.-Tak for hjælpen.-Selv tak. Jeg er glad for, at du kunne bruge svaret.-God dag.-Tak. Du må også have en god dag.Den norske kusine Kiri stammer egentlig fra Norge, hvor 60 kommuner sammen har skabt den norske pendant til Kiri, Kommune Kari.Danske Kiri er ifølge Rudersdal Kommune udviklet i samarbejde med Deloitte og det norske firma Boost. ai, og udover Rudersdal er også Frederiksberg, Gladsaxe, Gentofte, Roskilde og Lyngby-Taarbæk kommuner med i Kiris startfase.I startfasen dækker Kommune Kiri områderne flytning, pas, kørekort, vuggestue, børnehave, skole, kultur og fritid, sundhedskort og lægeskift, politik, valg og generelle spørgsmål om kommunen. Nogle af de næste områder, der tilføjes, er affald og byggeri. joram.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2019-05-14
+          &nbsp;·&nbsp; e73275cd
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.873</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.581</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techtopia #175: Hvordan forhindrer vi, at kunstig intelligens tager magten i vores liv?</h4>
+        <div>
+          Kunstneren Cecilie Wagner Falkenstrøm udforsker med kunstige intelligenser, hvad der sker, hvis vi ikke længere ved, om vi taler med en maskine eller et menneske.Hvad sker der, hvis vi ikke længere ved, om vi taler med en maskine eller et menneske? Og hvordan forhindrer vi, at maskinintelligens tager magten i vores liv?Kunstneren Cecilie Wagner Falkenstrøm udforsker disse spørgsmål i sine kunstværker, der er kunstige intelligenser, som man kan have en eksistentiel dialog med.Medvirkende:Cecilie Wagner FalkenstrømKom gerne med dine bud på , hvilke emner vi skal tage op.Du kan finde alle episoder af Techtopia HER.Emner :Kunstig intelligens
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2021-01-06
+          &nbsp;·&nbsp; e80fa5ad
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.971</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.958</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hver 3. huskøber går hverken på kompromis med pris eller beliggenhed Er delvis indfrielse af realkreditlånet en god idé? Kronik: Ondsindede robotter vil ikke udslette os &quot;Det er så let at undgå skatten&quot; SUV-topmøde: Smuk italiener vs. effektiv Porsche Frederik Bagger er nu helt ude af fars enorme skygge med eget brand Lea: EDC-ejet og klar til opkøb</h4>
+        <div>
+          Den kunstige intelligens vil have muligheden for at bygge robotter, som kan udslette os, hvis den altså vil? Men hvorfor skulle den, spørger kronikøren. Robotterne vil måske tage. Læs mere...Enebarn af Danmarks store designer Erik Bagger viser nu sit værd i eget regi og sin helt egen måde at drive virksomhed og tillidsbaseret ledelse på trods sine kun 29 år. Hans...Danmarks sjettestørste ejendomsselskab, Lea Ejendomspartner, vil op på en tredjeplads på listen over de største administratorer Troels Riis Poulsen har netop sat sig i chefstolen.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2017-08-27
+          &nbsp;·&nbsp; e66384d5
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.899</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.673</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.564</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk opfindelse kan gøre Facebook mindre ond</h4>
+        <div>
+          Hør dagens afsnit af 'Du lytter til Politiken'. Du lytter til PolitikenDagens gæst: Kristian Corfixen journalist på Politiken.Dagens vært: Bo Søndergaard.En dansk algoritme kan rydde op i alle de hadske kommentarer på Facebook. Politikens journalist Kristian Corfixen fortæller om algoritmen og hvad, der gør danskerne så vrede. Hvem bliver hadet rettet mod, og hvorfor sletter vi ikke bare Facebook?Vi hører gerne fra dig, skriv til: dulyttertilpolitiken@pol.dkDu lytter til PolitikenDagens gæst: Kristian Corfixen journalist på Politiken.Dagens vært: Bo Søndergaard.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2021-05-28
+          &nbsp;·&nbsp; e8492ea8
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.935</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.937</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.817</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Slagsmålet i KL</h4>
+        <div>
+          Lad os en gang for alle være fri for den evige slåskamp i KL om udligningsordningen.Lad kommunerne beholde kommuneskatten, som jo ikke er progressiv, og lad Folketinget sørge for, at de trængende kommuner støttes på en rimelig måde, men altså med penge fra statsskatten. Det kræver en vis overgangsordning, sådan at kommuneskatteprocenterne kan tilpasses den nye ordning, men den algoritme burde der kunne være enighed om i Folketinget.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-03-31
+          &nbsp;·&nbsp; e7233bb6
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.903</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.846</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.69</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bliv klogere på kunstig intelligens</h4>
+        <div>
+          FOREDRAG Forskeren Thomas Bolander gæster Viby Bibliotek for at fortælle om kunstig intelligens. Det sker torsdag 23. oktober klokken 16.30-18.30. Foredraget vil belyse den kunstige intelligens' historie, herunder forskellige tiders opfattelser af hvad kunstig intelligens egentlig er eller bør være. Tilmelding på bibliotekets hjemmeside. 
+        </div>
+        <footer>
+          <em>Lokalavisen Aarhus Syd</em>
+          &nbsp;·&nbsp; 2014-10-21
+          &nbsp;·&nbsp; e4a20eda
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Store filosoffer og store spørgsmål</h4>
+        <div>
+          Sydvestjysk Folkeuniversitet byder i den kommende uge på to foredrag om store spørgsmål: Hvad er det gode liv? Kan krig være retfærdig? Og hvad med ham Luther - var han en helt eller en skurk?Esbjerg: På mandag åbner folkeuniversitetet atter dørene for en serie foredrag om flere af livets store spørgsmål. Det sker under overskriften &quot;Store filosoffer&quot;. Her vil en gruppe af forskere fra Syddansk Universitet endevende nogle af livets store spørgsmål.Hvad er det gode liv? Hvad betyder vores følelser? Hvad med vores frihed og lighed?Krig og kunstig intelligensModerne krig, hvor kunstig intelligens og robotter spiller en afgørende rolle, er også på tapetet. Findes der noget, man kan kalde &quot;retfærdig krig&quot;? Bør krigsførelse uddelegeres til intelligente systemer, der med den rette etiske programmering vil være bedre til at følge krigens love end mennesker?Der bliver også tid til at se nærmere på en af de mest indflydelsesrige filosoffer, Immanuel Kant, og den måske vigtigste filosof i det 20. århundrede, østrigeren Ludwig Wittgenstein.Luther - helt eller skurk?På onsdag holder ph.d. og lektor i religionsvidenskab Marie Vejrup Nielsen, Aarhus Universitet, et foredrag, der ser nærmere på skyggesiderne ved Luther og reformationen - både dengang og nu. I reformationsjubilæets år buldrede diskussionen om Luther. Kampstregerne er trukket hårdt op imellem dem, der mener, at Luther og hans tanker har skabt nærmest alt, hvad der godt i den moderne verden - og dem der mener, han er en modbydelig skikkelse, som skal forblive i fortiden.Foredragene kræver tilmelding, og man kan få mere at vide på folkeuniversitetets hjemmeside. /EXP
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-02-02
+          &nbsp;·&nbsp; e69a74f2
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.982</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.75</kbd>
+            <kbd data-tooltip="People, life and society">L80_PPLSOC&nbsp;0.504</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Quiz: Hvor begejstret er du for kunstig intelligens?</h4>
+        <div>
+          Debatten om teknologiens fremtid er polariseret. Kritiserer du teknologi, bliver du afvist som reaktionær maskinstormer, men lader du dig rive med af teknologien og dens fascinerende produkter, er du afkoblet den virkelighed, hvor folk risikerer at miste deres jobs.Intet sted gælder det så meget som i udviklingen af kunstig intelligens, og så bliver det som religion og aliens   det er der, vi parkerer vores største drømme og værste mareridt.Men hvad med dig? Tror du på, at kunstig intelligens vil redde os fra os selv, eller går vi en verden med uoverstigelig ulighed og arbejdsløshed i møde? Find din position i debatten om kunstig intelligens og automatisering.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-11-17
+          &nbsp;·&nbsp; e5fcae62
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.824</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.809</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.52</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          Vil du se min smukke kirke?dk4 08.55 Vær Kirke nord for Horsens er fuld af spændende historier - om en kælder fuld af kister, om en gentleman-tyv og om en hemmelighed bag et forhæng. Den var en herregårdskirke, indtil den i 1970' erne blev en almindelig folkekirke.Kierkegaards Kabinetdk4 13.10 Hvordan har Gud det i dag? Er Gud død? Hvordan definerer du gud? Hvorfor mener du, at ateisten kan trænge til lidt gud? Hvad tror en ateist på? Sådan lyder nogle af de helt centrale spørgsmål i denne udgave af &quot; Kierkegaards Kabinet&quot;.Temalørdag: Den førerløse bilDR 2 16.50 I den selvkørende bil er vi passagerer og bliver fragtet frem og tilbage af en teknologi, der ikke laver fejl. Men hvad betyder kunstig intelligens? Kan den førerløse bil se og kommunikere? Kan den tænke selv? Har den en moral?.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-02-09
+          &nbsp;·&nbsp; e7130ba9
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.882</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.517</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          Brinkmanns briksDR P1 10.03 Professor i psykologi Svend Brinkmann undersøger sammen med landets fremmeste eksperter, hvorfor vi mennesker handler, som vi gør. På briksen er ikke patienter, men tendenser i samfundet, sindet og menneskelivet.Kierkegaards Kabinetdk4 10.30 Hvad er samvittighed? Hvor kommer samvittigheden fra? Er den fælles for alle, og hvordan har samvittigheden det i dagens Danmark? Sådan lyder nogle få af de centrale spørgsmål i denne udgave af &quot; Kierkegaards Kabinet&quot;.Supermennesket: Den optimerede hjerneDR 2 16.25 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidner til en ny arts opståen, eller er det enden på vores egen art?.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-04-03
+          &nbsp;·&nbsp; e72435bc
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.963</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.611</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.512</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Gift med fortiden, gift for fremtiden</h4>
+        <div>
+          Jeg ved ikke, om jeg er den eneste, der ikke kan huske noget Danmark, som ikke hele tiden har været under forandring. Nej, der er i virkeligheden mere og mere, som mange mennesker ikke kender og ikke forstår. En fornemmelse af ikke at kunne holde trit med de mange forandringer. Og det bliver bare meget værre ifølge den israelske stjernehistoriker Yuval Noah Hararis seneste bog &quot;21 ting du bør vide om det 21. århundrede&quot;.&quot;Det vil være algoritmerne, der bestemmer, hvem vi er, og hvad vi bør vide om os selv&quot; (Harari).Efter min opfattelse er det meget, meget mærkeligt, at vi så sjældent taler om fremtidens udfordringer - alt andet end det Danmark, vi kender. Måden politik produceres på minder mest af alt om en omgang konserves - gamle lukkede dåser, som ikke rummer plads til det foruroligende og ukonventionelle, måske endda et fremtidig digitalt diktatur.Frygten for at automatisering indtil videre aldrig er blevet til virkelighed. Men ifølge Harrari er der gode grunde til, at det bliver anderledes denne gang: &quot;Den teknologiske revolution vil snart skubbe milliarder af mennesker ud af arbejdsmarkedet og skabe en ny ubrugelig klasse [...] I 2050 vil en kasseassistent eller tekstilarbejder, der mister sit job til en robot, næppe være i stand til begynde at arbejde som kræftforsker eller droneoperatør [...].I 2050 vil den hektiske verden fremkalde en global stressepidemi - manglen på mental udholdenhed udfordres markant. Efter min menig bør vi allerede nu forholde os til helt centrale spørgsmål - enig med Harari - hvem ejer dataene, hvordan beskytter vi menneskers socialstatus og selvværd, og hvordan vi kan vedblive at have en fornemmelse af, hvem vi er, med en klar forestilling om hvad livet handler om?Socialdemokratiets formand Mette Frederiksen - nu børnenes fremtidige mulige statsminister: De mest udsatte må beskyttes og næres. Enig. Men det kræver også, at hun tør forholde sig til virkelighedens foruroligende fremtid, at det 21. århundrede kan blive det mest ulige samfund i menneskehedens historie. De politiske landsmøder bar efter min mening præg af: Gift med fortiden gift for fremtiden.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2018-10-20
+          &nbsp;·&nbsp; e6f155e0
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.853</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.837</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.52</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Noget på hjerte: Velfærdskatten</h4>
+        <div>
+          DEL Af Michael Thorbjørnsen, mith@faa.dk 04. maj 2020 kl. 08:46 Min genbo har en kat. Sådan en rigtig velfærdskat, med lidt ekstra på sidebenene til trange tider, og som i synderlig grad ikke gør sig de store bekymringer.Den ligger ofte i vindueskarmen på 1.salen, puttet mellem en frodig sukkulent i en mørkebrun potte og en billedramme, som jeg selv sagt ikke kan se, hvad portrætterer. Måske et billede af en person, som min genbo holder særligt meget af - et barn eller barnebarn eller et fotografi fra en særlig oplevelse, og som bringer dejlige minder frem.Katten er formentlig ligeglad, så længe den bare får fred og ro til at ligge der og fintænke, mens den betragter de mennesker, som går forbi nede på vejen. Her ligger den højt og godt og feder den - fuldstændig intetanende om verdens tilstand udenfor vinduet.Inden den 11. marts anede jeg ikke, at min genbo havde en kat, eller havde gjort mig tanker om, hvem eller hvad der kunne være på billedet i vindueskarmen. Faktisk havde jeg ikke tilbragt megen tid ved lige præcis det skråvindue i min taglejlighed, hvorfra jeg kan stå og betragte verden udenfor vinduet og opdage den her velfærdskat i bygningen på den anden side af gaden. Men det gør jeg nu.Af en eller anden grund fik katten i vindueskarmen mig til at tænke, at måske er tiden kommet, hvor vi alle bør hæve blikket og se og mærke vores virkelige verden.Hvor vi giver os mere tid til refleksion og livsbetragtninger som efterlader de helt grundlæggende og eksistentielle spørgsmål: Hvad er værd at stå fast på i tilværelsen? Hvad har vi som mennesker pligt til at gøre? og hvad er overhovedet et meningsfuldt liv?Måske er tiden kommet, hvor vi fjerner os mere fra den overfladiskhed, som i en lind strøm tillader at livet suser forbi os, i takt med tommelfingerens swipe over den lille ligegyldige flade skærm, som alt for længe har haft sit virke som vores foretrukne tidsfordriv.Måske kommer tiden nu, hvor vi omsider opdager vigtigheden af det gode naboskab, vores lokale butiks- og handelsliv, restaurationsmiljø, kulturlivet, familiebåndet, det gode faste håndtryk - eller kram, eller bare en hel søndag i nattøj efter en festlig aften i gode venners lag.Måske er tiden kommet, hvor vi ser den ægte verden, som udspiller sig udenfor Netflix, Facebook og kameraet i vores smartphone, hvor det er øjeblikkene i nuet fremfor algoritmerne der viser os vejen i livet og gør os lykkelige.Måske vi nu opdager fællesskabets sande værdier og evnen til at se udover egne behov. Nu vi bliver bedre til at lytte, som vi lærte i skolen, så hører vi måske fællesskabets røst, frem for vores egen indre stemme. For hvorfor er det, at vi først og fremmest skal lære at favne os selv, inden vi kan noget som helst? Måske tiden er inde til at vi ser udad i stedet for indad....Og foråret er kommet. Fuldstændig, som det plejer.
+        </div>
+        <footer>
+          <em>Ugeavisensvendborg.dk</em>
+          &nbsp;·&nbsp; 2020-05-04
+          &nbsp;·&nbsp; e7b1149a
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.929</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.861</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.613</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kommunikations-rådgiver: Facebook er ikke skurken. Det er os selv, der dagligt fodrer monstret</h4>
+        <div>
+          Hvis du ikke læser avis, hører radio og generelt orienterer dig om det samfund, du er en aktiv vælger i, så får du som fortjent. Og meget kunne tyde på, at det for nuværende er fake news i dit nyhedsfeed på Facebook.Grundig journalistik beviste endnu engang sin berettigelse over weekenden, da Guardian, New York Times og Channel 4 optrevlede og fremlagde dokumentation for, hvad vi egentlig godt vidste eller i hvert fald mistænkte.Hvordan vores personlige data, som vi med åbne øjne har givet til Facebook - for hvem læser egentlig 'terms of agreement' - er blevet videregivet, lækket eller solgt til en tredje part med det ædle formål at udvikle en algoritme, der kan ramme os med sande, men mest af alt falske historier og (negative) politiske reklamefremstød på særligt Facebook. Historier designet til at påvirke vores kryds i stemmeboksen.Kommer det bag på mig, at Facebook ikke har styr på deres datasikkerhed? Ja, nej, måske. Danske myndigheder har sendt cd-rommer med danske cpr-numre til Kina, så hvorfor skulle jeg tro på, at Facebook har styr på mine private data?
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2018-03-21
+          &nbsp;·&nbsp; e6acc220
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.888</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.855</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kulturbegreb. glædelig kultur Kolding</h4>
+        <div>
+          LÆSERBREV: Jeg har i den sidste uges tid stillet mig selv spørgsmålet: Hvad er kultur? Er det en kode eller en algoritme, som gemmer på hemmeligheden om dem, vi er? Er det en sammensætning af farver på et lærred, en skulptur eller et pigment? Vi elsker at hylde kulturen i denne &quot; sæsonens højtid&quot; med flashende installationer på hvert et gadehjørne, rigeligt med &quot; kulturelt proviant&quot; og lykønskninger, som uddeles til de, der angiveligt brugte de offentlige midler mest &quot; klapsalverisk&quot;.Jeg vil gerne ryste posen og stikke et spadestik dybere, så her kommer mit bud: Kulturbegrebet finder sin aktualitet i vores samtids standard for, hvordan vi behandler hinanden. Lad mig være helt klar i spyttet: Kultur = hvorledes vi byder det fremmede og ukendte velkommen helt ind under huden. For skal vi være helt ærlige, så er vi i bund og grund en smule identitetsforvirrede, når det kommer til spørgsmålet om, hvilke søjler vores kulturelle halvtag hviler på (jeg undlader her at nævne stegt flæsk med persillesovs, Tuborg, det danske flag i kolonihaven mm.) Nej, jeg vil opfordre til, at vi spørger os selv, om vi egentlig forholder os nok til begrebet &quot; kultur&quot;? Ordet stammer i sagens natur fra det faktum, at der findes adskillige forskellige kulturer på moder jord. Disse bør (såfremt vi påskønner fred) samarbejde så vidt muligt på tværs af grænser i en verden, som er mere global end nogensinde før, hvilket vi selv har ønsket og opslugte kvitterer for med næsen begravet i vor digitale skitzo-skærme op til - ja - hvad hørte jeg sidst, jeg stak øret i statistikkens maskineri: 8 timer sammenlagt pr. dag.Det er efterhånden svært at gå gennem Jernbanegade og få øjenkontakt med andre end sit eget spejlbillede i de tomme butiksvinduer, helt ærligt, hvad er det for en kultur Kolding? Lad os derfor tvinge hinanden til at tage stilling til det fremmede og ukendte, thi her kan vi spejle os selv: Hvad skyldes vores aversioner og inderste fordomme, som lever i bedste velgående lige fra bybussens velkendte hvisken mellem de vidtspredt-besatte sæderækker til saunaens selvtilfredse pensionistfornufti svømmehallen? Er det et spørgsmål om sprog, altså andre lydkoder end dem vi kender fra TV2, er det et spørgsmål om opførsel og pli - et produkt af vores opdragelse, altså noget, som i princippet står udenfor os selv, handler det om systemer, tekniske omstændigheder som eksempelvis lavere materielle standarder, musik (kultur), naturens elementære omstændigheder (eksempelvis klima, madvaner, lugte, lyde etc.). Hvor placerer vi egentlig vores undskyldning bedst, så hjemlen for vor kollektive aversion imod forskellighed og fællesskab kan retfærdiggøres? Glædelig kultur Kolding, husk at række hånden ud til din næste, vi er gjort af samme stof, og dette stof kan du, efter min mening, roligt kalde &quot; kultur&quot; i sin aller-inderligste betydning.Hilsen en mavesur kulturprovokatør, som nemt kunne være skudsmål for hele denne kroniks egentlige anke.
+        </div>
+        <footer>
+          <em>Kolding Ugeavis</em>
+          &nbsp;·&nbsp; 2019-09-03
+          &nbsp;·&nbsp; e7539792
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.663</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.519</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kom op af kælderen, menneske</h4>
+        <div>
+          Politikerne ser ikke ud til at forholde sig til en samlet levedygtig vision for fremtiden. Eller forholder sig til Big Data - algoritmernes autoritet, der kan munde ud i et digitalt diktatur, med forskellige biologiske kaster. Jeg oplever, at vi slet ikke har tiden til at føle os overflødig og irrelevante. I stedet ind i kampen for ny status og selvfølelse og en klar forestilling om, hvad livet handler om? Finde ind til de centrale spørgsmål og hvem vi er, før end algoritmerne og klimaet bestemmer for os - afstå fra ligegyldigheds og uvidenhedens &quot;kældertilværelse&quot;.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-09-25
+          &nbsp;·&nbsp; e6e93730
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.82</kbd>
+            <kbd data-tooltip="People, life and society">L80_PPLSOC&nbsp;0.609</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Den forandringsfyldte fremtid</h4>
+        <div>
+          NYBORG: Fremtidsforsker Denis Revin ved noget om de forandringer, fremtiden vil bringe os. Det holder han foredrag om på Nyborg gymnasium på torsdag den 21. september fra klokken 19.30. Det er FOF Østfyn, der arrangerer i samarbejde med gymnasiet.Oplægget til aftenen lyder: Vi lever i en utrolig tid, hvor den teknologiske udvikling gør alle i stand til at forbedre verden -og der sker fantastiske fremskridt hver eneste dag.Men hvad består den teknologiske udvikling af? Hvad er kunstig intelligens, bioteknologi, virtual reality? Hvad kommer det alt sammen til at betyde for uddannelse og arbejdsmarked, og hvorfor går det hele egentlig så stærkt, når vi er vant til en ekstremt langsommelig evolution? Det er den slags spørgsmål, foredragsholderen giver en række tankevækkende bud og dermed svar på, når han forklarer om nogle af de mest banebryde teknologier, der er på vej.
+        </div>
+        <footer>
+          <em>LokalAvisen Nyborg</em>
+          &nbsp;·&nbsp; 2017-09-19
+          &nbsp;·&nbsp; e66b9ed6
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.981</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.651</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.532</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>22.40 DR3 Ex Machina</h4>
+        <div>
+          Denne britiske science fiction-thriller fra 2014 med Alicia Vikander i rollen som robotpigen Ava blev skabt på et forholdsvis lille budget og blev en overraskende succes både økonomisk og blandt kritikerne. Her diskuteres kunstig intelligens og menneskelig psykologi i et stramt drama, der udfolder sig mellem tre karakterer. To mænd og en kvindelig robot, der måske, måske ikke er ved at få sin helt egen vilje.Filmen vandt en Oscar for bedste visual effects.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-01-13
+          &nbsp;·&nbsp; e70a6949
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.931</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.945</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Når loven bliver automatiseret: Komplekse sager er stadig jura-robottens værste fjende</h4>
+        <div>
+          Digitaliseringen har indtaget den juridiske verden, og en håndfuld større advokatfirmaer i ind- og udland - bl.a. Kammeradvokaten - har allerede &quot;ansat&quot; deres første robot. Peter Istrup, du forsker i digitalisering af lovgivning og sagsbehandling ved Center for Ret &amp; Digitalisering på Aarhus Universitet. Hvad kan man egentlig bruge robotter til i advokatbranchen?»Robotterne - eller software - kan bruges til meget, særligt til at hjælpe med behandling af data. Tag f.eks. en virksomhedsoverdr...
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2019-05-24
+          &nbsp;·&nbsp; e736226e
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.772</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Demokrati og algoritmer</h4>
+        <div>
+          Hvis vi er bange for, at algoritmerne truer vores demokratier, bør vi måske genoverveje, hvad vi forstår ved demokratiHvis vi er bange for, at algoritmerne truer vores demokratier, bør vi måske genoverveje, hvad vi forstår ved demokrati.Demokratiet har altid været truet. Der var altid magtfulde mænd bag scenen, der trak i tråde, manipulerede og fordrejede sandheden. Ikke desto mindre svømmer vores medier for tiden over med historier om, hvordan der er en helt ny trussel mod demokratiet. En trussel, som har sin rod i computerteknologi, big data, og som for nylig er blevet personificeret af Alexander Nix, (suspenderet) CEO fra firmaet Cambridge Analytics.Nix blev ufrivilligt berømt, da han for skjult kamera udbredte sig om, hvad firmaet havde ekspertise med. Her fortalte han blandt andet, at de kunne bruge store mængder data og sociale medier til at placere den helt rigtige besked foran de rigtige mennesker på det rigtige tidspunkt og på den måde vinde et valg for deres klienter.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2018-03-30
+          &nbsp;·&nbsp; e6afb23c
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.561</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.514</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.614</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ÅNDSSVAGT SPØRGSMÅL</h4>
+        <div>
+          En annonce, der også har Ekstra Bladet som afsender, stiller spørgsmålet: ' Skal folketingsvalget afgøres af amerikanske algoritmer eller russiske trolde?' Ved stambordet er der bred enighed om, at det er et åndssvagt spørgsmål.Også chefredaktør Poul Madsen burde vide, at valget afgøres af vælgerne.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2019-04-18
+          &nbsp;·&nbsp; e72a9825
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.746</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>-Arbejdet er i gang</h4>
+        <div>
+          Hvorfor har Odense Zoo ikke en mobilvenlig hjemmeside? Årsagen er, at vi ikke har haft ressourcerne til det, og timingen har ikke været rigtig. Til gengæld har vi lavet en responsiv hjemmeside til vores Science Zoo på havnen. Det gjorde vi for at få erfaring og viden om, hvad der virker.Google har lige ændret sine algoritmer. Hvorfor gjorde I det ikke før? Som sagt har vi sat processen i gang. Vi har indsamlet viden om, hvordan folk navigerer på vores Science Zoo hjemmesiden.Vi ved, hvad der hitter mobilt.Hvad hitter på jeres mobile hjemmeside? Vi kan se, at folk gerne vil købe billetter på vores responsive hjemmeside. Så konklussionen må være, at vi skal have flyttet vores hovedside, så den bliver mobilvenlig.Arbejdet er i gang.Hvad koster det for jer at lave hjemmesiden mobilvenlig? Det er interne oplysninger.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2015-05-02
+          &nbsp;·&nbsp; e5033f91
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.698</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.722</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.571</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>KRISTELIGT DAGBLAD: Endnu en jul med Poul Nesgaard II</h4>
+        <div>
+          DR P1 SØNDAG 15.30 Sidste år havde Poul Nesgaard brugt hele december på at lave ét godt juleprogram til juleaftensdag.Men udsendelsen blev sat for sent på, og alt gik i vasken. Derfor har DR givet Poul Nesgaard lov til at fortsætte udviklingen for åben mikrofon frem mod juleaften. Han stoler ikke længere på DR's algoritmer og sætter i stedet i år sin lid til sine to medværter og en ny, intelligent superpult, der måske kan redde julen.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-11-29
+          &nbsp;·&nbsp; e7773e31
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.679</kbd>
+            <kbd data-tooltip="Year">L80_YEAR&nbsp;0.504</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.654</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Store filosoffer og store spørgsmål</h4>
+        <div>
+          ESBJERG: På mandag åbner folkeuniversitetet atter dørene for en serie foredrag om flere af livets store spørgsmål.Det sker under overskriften &quot; Store filosoffer&quot;. Her vil en gruppe af forskere fra Syddansk Universitet endevende nogle af livets store spørgsmål.Hvad er det gode liv? Hvad betyder vores følelser? Hvad med vores frihed og lighed? .Krig og kunstig intelligensModerne krig, hvor kunstig intelligens og robotter spiller en afgørende rolle, er også på tapetet. Findes der noget, man kan kalde &quot; retfærdig krig&quot;? Bør krigsførelse uddelegeres til intelligente systemer, der med den rette etiske programmering vil være bedre til at følge krigens love end mennesker? Der bliver også tid til at se nærmere på en af de mest indflydelsesrige filosoffer, Immanuel Kant, og den måske vigtigste filosof i det 20.århundrede, østrigeren Ludwig Wittgenstein.På onsdag holder ph. d. og lektor i religionsvidenskab Marie Vejrup Nielsen, Aarhus Universitet, et foredrag, der ser nærmere på skyggesiderne ved Luther og reformationen -både dengang og nu. I reformationsjubilæets år buldrede diskussionen om Luther. Kampstregerne er trukket hårdt op imellem dem, der mener, at Luther og hans tanker har skabt nærmest alt, hvad der godt i den moderne verden -og dem der mener, han er en modbydelig skikkelse, som skal forblive i fortiden.Foredragene kræver tilmelding, og man kan få mere at vide på folkeuniversitetets hjemmeside www.fusydvest.dk./ EXP.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Esbjerg</em>
+          &nbsp;·&nbsp; 2018-02-03
+          &nbsp;·&nbsp; e69a9c80
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.98</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.67</kbd>
+            <kbd data-tooltip="People, life and society">L80_PPLSOC&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kronik: Teknologien skal redde os fra os selv</h4>
+        <div>
+          MENNESKER ER DEFINERET ved at have begrænsede ressourcer. I form af tid og rum - og i form af erfaring. Begrænset tid og rum er lig med begrænset indsigt og udsyn. Der er grænser for, hvor megen viden vi kan kapere og oversætte til meningsfuld adfærd. Med den digitale teknologi er det lige omvendt. Den digitale teknologi er defineret ved at være ubegrænset i tid og rum. Den opfører sig på samme måde, uanset hvor og hvornår den bliver brugt. Og den kan bearbejde enorme mængder data på millisekunder.Den digitale teknologi har ikke begrænset erfaring. Den har ingen erfaring.For den har ikke brug for erfaring.Erfaring er menneskers måde at kompensere for, at vi hverken har tid eller rum til at afprøve samtlige løsningsmuligheder, før vi træffer en beslutning om, hvordan vi løser et problem. Erfaring er menneskers måde at håndtere problemer på, som den digitale teknologi aldrig behøver at håndtere. Problemer, der er forbundet med at vide, at vi ikke ved alt, hvad der er at vide - og vi derfor konstant må beslutte, hvad det er vigtigt og ikke vigtigt at bruge vores tid på.At beslutte, hvad der er vigtigt, er væsensforskelligt fra at bearbejde data. Det handler om at stille de spørgsmål, der hjælper os med at tage stilling. Og det handler om at tage ansvar for de svar, vi finder. Erfaring handler om at stille og besvare de spørgsmål, der betyder noget for os - velvidende at vi aldrig vil kunne undslippe den historie, der har gjort os til dem, vi er.Vi har altid været, og vi vil altid være teknologiske væsner. Lige siden tidernes morgen har vi mennesker videregivet vores erfaringer til vores efterkommere.I kraftaf adfærd, sprog, kunst og teknologi. Vi har altid brugt teknologi til at få mest muligt ud af den begrænsede tid og plads, vi har. Og vi har altid efterspurgt bedre måder at leve vores liv på.I menneskehedens tidlige år efterspurgte vi bedre måder at slå dyr ihjel på. Det teknologiske svar var en kniv.Senere efterspurgte vi en bedre måde at komme fra A til B på. Et af de teknologiske svar var biler.I DAG BEFINDER VI OS i en ny teknologisk tidsalder. Teknologien er blevet digital, og den er blevet så avanceret, at vi tror, den kan svare på alt. Hvor skal jeg hen? Google Maps har svaret. Hvem skal jeg følge? Facebook har et bud. Hvad skal jeg foretage mig? Min smartphone sender mig en notifikation. Den digitale tidsalder har fået os til at tro, at det interessante ved teknologien er de uendelige muligheder, Google, Facebook og smartphones giver. Men det er det ikke.Det interessante ved teknologien er, at den reflekterer den måde, vi mennesker håndterer vores egen endelighed på. Og det har ændret sig med den digitale teknologi.Vi plejede at tænke: &quot; Fordi vi er begrænsede, har vi brug for teknologi.&quot; Nu tænker vi: &quot; Fordi vi har teknologi, behøver vi ikke at være begrænsede.&quot; For første gang er vi omgivet af teknologi, der ikke er videregivet fra vores forfædre som værdifuld erfaring. Tværtimod er den meste moderne digitale teknologi designet ud fra et løfte om, at vi ikke behøver erfaring, fordi vi har data.At vi ikke behøver at beslutte, hvad der er vigtigt, fordi vi har algoritmer.VI SLIPPER ALDRIG for spørgsmålet om mennesket. Det særlige ved det symbiotiske menneske-teknologi-forhold er, at uanset hvor mange svar teknologien tilvejebringer, så vil mennesker blive ved med at stille spørgsmål. Hvor skal jeg hen? Hvem skal jeg følge? og Hvad skal jeg foretage mig? er nogle af de allermest fundamentale spørgsmål i et menneskes liv. Det er de spørgsmål, der hjælper os med at navigere i tid og rum.Det er de spørgsmål, der afgør, hvordan vi bruger vores liv. Det er de spørgsmål, der hverken kan eller skal besvares af nogen som helst andre end os selv.Struyker Boudier skrev engang, at i modsætning til mennesker, så filosoferer dyr og guder ikke, fordi de ikke har nogen spørgsmål: &quot; De er ikke ' spørgsmålsdyr', fordi de ikke betragter deres væren som værende til diskussion.&quot; Det samme gælder teknologien. Uanset om den er analog eller digital, så sætter den ikke spørgsmålstegn ved sin egen væren.Den tænker ikke over muligheden for ikke at være. Den er ikke bange for at løbe tør for tid og plads. Og den spørger ikke sig selv, hvordan den får mest ud af den tid og plads, den har.Det er kun mennesker, der gør det. Vi kan ikke undslippe vores begrænsede position i tid og rum. Og det skal vi heller ikke. Det er netop, fordi vi ved, at vi ikke ved alt, hvad der er at vide, at vi spørger, hvad der er vigtigt og ikke vigtigt.Og det er, fordi vi stiller spørgsmål, som vi ikke kender svaret på, at vi indgår i ansvarlige fællesskaber.Når vi søger svarene på de allermest fundamentale menneskelige spørgsmål i algoritmer, så fraskriver vi os ansvaret for den unikke position, der gør os til mennesker. Vi er skabt til at være spørgende væsner, der er afhængige af hinanden for at finde meningsfulde svar.Hvis vi ikke søger svarene i os selv og hinanden, så ophører vi med at være mennesker.Samtidig er vi også afhængige af teknologien for at få mest muligt ud af den begrænsede tid og plads, vi har. Historien viser, at hver gang vi konfronteres med et problem, så efterspørger vi en teknologisk løsning. Det er ligefrem sådan, at hvis vi ikke har en teknologisk løsning på et problem, så opfinder vi enten en eller stopper med at betragte problemet som noget, vi skal løse. Det er så teknisk disponerede, vi er, og det er derfor, det kun er teknologien, der kan hjælpe os med at genoverveje og genoprette forbindelsen til, hvad det vil sige at være menneske.Vi har brug for teknologi, der minder os om at være mennesker. Det er for sent at designe mennesker til den digitale tidsalder, men det er ikke for sent at designe digital teknologi til mennesker. I stedet for at prøve at gøre vores liv ubegrænsede og forbundet til alting altid, bør vi designe digital teknologi, der forstærker den konkrete forankring i tid og rum, der gør os til mennesker. Det kræver, at vi aktiverer den &quot; moderteknologi&quot;, der fødte og stadig undfanger al ny teknologi. Det kræver, at vi trækker på den ældste og mest kraftfulde teknologi, der nogensinde er opfundet. Det kræver spørgsmål.DU ER FORMENTLIG IKKE VANT TIL at tænke på spørgsmål som en teknologi, men hvis du giver det et skud, vil du opdage, at spørgsmål er det ene &quot; værktøj&quot;, der hjælper dig med at navigere i livet.Tænk over det: Har du nogensinde stillet et spørgsmål uden at søge efter noget? Håb, hjælp, oprigtighed? Har du nogensinde stillet et spørgsmål uden at erfare noget? Om dig selv, den, du spørger, eller det, du spørger om? Har du nogensinde stillet et spørgsmål uden at opnå noget? Indsigt, interaktion, indflydelse? Som enhver anden teknologi blev spørgsmål opfundet for at forbedre vores liv. Modsat enhver anden teknologi, har spørgsmål ikke et prædefineret svar på, hvordan vi skal gøre det. Spørgsmål påvirker os ikke til at tænke og handle på en bestemt måde. De minder os bare om, at vi kan tænke, og at vi bør handle i overensstemmelse med de svar, vi finder.Spørgsmål er løsningen på de problemer, der møder menneskeheden i den digitale tidsalder, fordi spørgsmål får os til at tænke og handle ansvarligt af os selv. Når vi stiller spørgsmål, tager vi stilling. Og når vi svarer, tager vi ansvar.Derfor har vi brug for digital teknologi, der er designet med udgangs-og omdrejningspunkt i spørgsmål. Så vi kan bruge moderteknologien til at redde menneskeheden fra det falske løfte om, at vi ikke behøver at være mennesker.Det er for sent at designe mennesker til den digitale tidsalder, men det er ikke for sent at designe digital teknologi til mennesker.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-07-10
+          &nbsp;·&nbsp; e6d1c529
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.968</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.803</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lars Boje Mathiesen er en rigtig 'conversation starter', og Facebook elsker det</h4>
+        <div>
+          Som politiker skal man kende sine algoritmer. Det gør Lars Boje Mathiesen, som er den mest aktive i Facebooks kommentarspor. Her er FOLK, Informations daglige sladderspalteVelkommen til FOLK, Informations daglige sladderspalte, hvor ingen er for høj, og ingen er lav nok til at flyve under radaren.Ida Auken ISom borger stiller man af og til sig selv spørgsmålet: Hvad er bedst at gøre for klimaet? Tage offentlig transport eller stoppe med at spise oksekød? Lukke vinduerne eller købe genbrugstøj? Det samme spørgsmål stiller politikerne sig selv, tag nu for eksempel Ida Auken (S).Ida Auken IIDen socialdemokratiske politiker siger til Politiken, at hun har »fundet ud af, at det er vigtigere at omlægge energisektoren end at gå og slukke lys på Christiansborg« , og selv om der er virkelig mange elektriske pærer på borgen, så virker det som den rigtige beslutning.Lars Boje Mathiesen ISom politiker skal man kende sine vælgere. Hvem er de? Hvad laver de? Hvor bor de? Men her i 2021 er det ikke nok, man skal altså også kende sine algoritmer. Det gør Lars Boje Mathiesen fra Nye Borgerlige. Han er ifølge en ny analyse den mest aktive i Facebooks kommentarspor blandt danske politikere.Lars Boje Mathiesen IIAnalyse &amp; Tal har gennemgået danske politikeres opslag i kommentarspor på Facebook siden 2017. Boje Mathiesen er den med flest kommentarer, og selv om man kan tænke, at det må da gå ud over kvaliteten, så tænker Facebooks algoritmer det modsatte: Han er en rigtig conversation starter!Informations egen sladderspalte, hvor ingen er for høj eller lav nok til at flyve under radaren. Et uundværligt og personorienteret nyhedsoverblik.Alle seriens artikler &gt;
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2021-04-23
+          &nbsp;·&nbsp; e83c0e99
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.634</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.584</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.552</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bestyrelsen som krumtap i digitaliseringen</h4>
+        <div>
+          Ny teknologi er blevet et tema for bestyrelser. De nye avancerede teknologier som kunstig intelligens, 3D-print og blockchain åbner for nye forretningsmæssige muligheder. Det rejser også en masse spørgsmål.Hvilke skal man satse på? Hvordan ser markedet ud? Og hvad betyder det for ens egen organisation.På Tech Management sætter vi løbende fokus bestyrelsens rolle, når ny teknologi skal blive til forretning. Vi har samlet casehistorier, gode råd og viden til dig her.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-01-06
+          &nbsp;·&nbsp; e787668c
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.638</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.97</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.828</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.542</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DE KENDER DINE DATASPOR</h4>
+        <div>
+          Kære læser, det her er en helt personlig anbefaling fra mig til dig.Ikke at jeg ved, hvem du er. Det ved Politikens databaser en del mere om. Og Google. Og Facebook og et ukendt antal amerikanske datafirmaer, som har købt en masse informationer om dig af bl. a. Google og Facebook. Så de kan skabe skræddersyede netbaserede anbefalinger til lige netop dig.Deres algoritmer ved, hvor du bor, og hvorfra du logger på. De ved, hvor hurtigt du løber fem kilometer, og hvilket tidspunkt på dagen du foretrækker at gå i Fitness World. De kender dine dataspor, kort sagt. Men hvem - eller hvad - er ' de', og hvad bruges dine data til? Og KRISTIAN HUSTED hvem er du, hvis din identitet mere og mere er noget, der aflæses og formes af algoritmer på nettet? ' Aeneaderne', som får premiere på Københavns Musikteater i aften, er en kærlighedshistorie om sex, løgn og digital selviscenesættelse i de sociale mediers tidsalder. »Hvad nu hvis man er nedtrykt, folkens? Hvad skal man så lytte til? Verdens sørgeligste kærlighedssang? Anyone? Nogen bud?«, skriver Line Mørkeby, stykkets dramatiker. Hun er ikke anyone, men en af de bedst skrivende dramatikere herhjemme lige nu.Hitchcock og en høneAnyone, eller ' hr. hvem som helst', er omdrejningspunktet for ' George Kaplan', der spiller på Husets Teater fra i morgen aften. George Kaplan er navnet på den opdigtede regeringsagent i filmen ' North by Northwest' af Alfred Hitchcock fra 1959. Vi kender scenen, hvor Cary Grant ved en korsvej in the middle of nowhere pludselig bliver beskudt fra luften af en ukendt spiongruppe, som tror, han er denne George Kaplan. Som altså ikke findes. Måske ikke.Den franske dramatiker Frédéric Sonntag har skrevet stykket, der handler om forbindelserne imellem Hitchcocks film, hacktivisterne i Anonymous, en høne, og en usynlig regering, som sidder et sted derude - eller inde - og studerer vores daglige afsondringer i nettets endeløse korridorer. Ifølge IBM anløber vores data lige nu til cirka 2,5 kvintillioner bytes om dagen. Heraf 2,5 milliarder stykker dagligt indhold på Facebook alene. Og 72 timer frisk, ny video på YouTube. Hvert minut.Hvem er han, denne George Kaplan? Hvad vil han? Og kan vi bruge ham til noget? Spørger altså den usynlige regering i ' George Kaplan'. Aeneas og Dido søger hinanden og kærligheden i ' Aeneaderne'.Men hvad finder de? Undersøgelser viser, at du og jeg ikke får det samme resultat, når vi googler det samme ord. Det afhænger af vores søgehistorik og 57 andre kriterier, som defineres af Googles algoritmer. Måske lever vi slet ikke i den samme virkelighed længere, selv om vi skriver og læser det samme sprog. Hvem ved? Eric Smith, måske? Googlechefen har sagt, at fremtidens internetsøgninger skal kunne besvare personlige spørgsmål som: ' Hvilken uddannelse skal jeg tage?'. Det kunne sådan set være meget rart. Især hvis der ikke bliver råd til et fjumreår på SU længere. Eller hvad med: ' Hvad skal jeg se i teatret denne weekend?'. Efter min mening skal du se ' Aeneaderne' og ' George Kaplan'. Men det er selvfølgelig dit helt eget valg.Københavns Musikteater. Aeneaderne.Af Line Mørkeby. 8.-23. mar.WWW kobenhavnsmusikteater. dk Husets Teater. George Kaplan.Af Frédéric Sonntag. 9. mar.-13. apr.WWW husetsteater. dk.kristian.husted@pol.dk 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2013-03-08
+          &nbsp;·&nbsp; e3b1647b
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.603</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>10. marts 2017</h4>
+        <div>
+          I denne uge bringer vi et særtillæg om teknologi og kulturVed at vende blikket mod kulturen og kunsten forsøger vi at forstå de udfordringer og muligheder, der opstår i forbindelse med tidens teknologiske fremskridt. Vi lader blandt andet den amerikanske romanforfatter Jonathan Safran Foer skrive essay om teknologiens påvirkning af vores liv. Vi spørger den italienske stjerneforsker og Google-rådgiver Luciano Floridi, hvordan vi tøjler algoritmernes stigende magt. Vi genbesøger computerspiluniverset Second Life og konsulterer filmhistoriens blik på kunstig intelligens.Du kan læse hele tillægget her
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-03-10
+          &nbsp;·&nbsp; e6268dd3
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.755</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.751</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sport, natur og samfund: Vi udfordrede Bezzerwizzer i fem af deres egne kategorier</h4>
+        <div>
+          Hvem siger, at det er lettere at finde på et spørgsmål end at svare rigtigt på det? Mød Camilla Lauridsen, der er en af hjernerne bag quizspørgsmålene i brætspillet Bezzerwizzer. Siden Camilla Lauridsen var lille, har hun elsket brætspil, så da virksomheden bag quizspillet Bezzerwizzer i 2008 søgte en redaktionsassistent på deltid, var hun ikke i tvivl. Det job skulle hun have. To år tidligere var den lille startup-virksomhed ud af det blå dukket op med sit første brætspil - den grønne udgave af Bezzerwizzer, som i slutningen 00'erne nærmest var fast inventar til fødselsdage, bryllupper og studenterfester. Spillet var i samme kategori som Trivial Pursuit, et quizspil fra Canada, som havde domineret det danske brætspilsmarked siden 1985. Konceptet i quizspil er enkelt: Det handler om at være skarp udi paratviden og svare rigtigt på flest mulige af de spørgsmål, spillet indeholder, så man rykker fremad på spillepladen. I dag har Camilla Lauridsen titel som redaktionschef hos Bezzerwizzer. Gennem årene har hun været inde over tusindvis af quizspørgsmål. »I starten skrev vi alle spørgsmålene selv, men vi er en lille virksomhed (syv fastansatte medarbejdere har virksomheden i øjeblikket, red.), og over årene er vi begyndt at hente mere hjælp fra freelancere,«  siger hun. Ifølge Camilla Lauridsen er det ikke nødvendigvis en fordel at være ekspert i et emne, når der skal findes på gode spørgsmål til hr. og fru Danmark. »De gange, vi har haft en ekspert indover - det kunne f.eks. være en lektor i litteraturvidenskab - er spørgsmålene ofte blevet meget snævre. Så er det bedre at ringe til chefens kone, der læser mange bøger,«  fortæller hun og griner. Nu har hun indvilget i at prøve lidt af sin egen medicin: De næste spørgsmål tager udgangspunkt i fem af spillets egne kategorier. Sportsverdenen er et minefelt af tal og statistikker, der med tiden bliver forældet, samt rekorder, der står for fald. Hvad gør I for at holde spørgsmålene aktuelle og sikre, at svarene er korrekte? »Vi gør meget ud af, at spørgsmålene er langtidsholdbare. Det duer ikke, at vi spørger, hvem der holder verdensrekorden i kuglestød. For det kan være en anden i morgen. Vi har flere principper for, hvordan vi formulerer et spørgsmål, f.eks. at det skal være tidløst. Vi spørger ikke, hvilken mandlig atlet der har verdensrekorden i 100 meter sprint, men hvem der slog den gamle rekord i 2008. Spørgsmålene er stationære - de er trykt på papir, og de skal kunne hives op igen om tre år og stadig være gyldige. Derudover trykker vi et nyt oplag af spillet cirka en gang om året, hvor vi opdaterer spørgsmålene, så de har aktualitet. Kommer der nye verdensrekorder, bliver der valgt en ny formand for Europa-Kommissionen, er der nye tv-serier, der hitter? Vi spørger altid os selv, om et spørgsmål også har relevans om fem år. I forhold til at sikre korrekte svar har vi en regel om, at den person, der skriver spørgsmålene, skal forsyne hvert spørgsmål med to uafhængige kilder, som er valide, og som bekræfter svaret. Til sidst har vi så en tredjepart til også at kigge på spørgsmålet og finde endnu en kilde, så vi er helt sikre på, at der ikke er fejl.«  Danskerne er et broget folkefærd - nogle bor i København, andre i provinsen, flertallet er kristne, men vi har også muslimer og ateister. Hvordan sikrer I et spil, der afspejler samfundet? »Som redaktør er det min opgave at sørge for, at der er en jævn fordeling af spørgsmål, og at vi rammer så bredt som muligt. Ligesom der både skal være spørgsmål fra Jylland og Sjælland, skal der også både være spørgsmål om pop, rock og jazz, om moderne og klassiske kunstmalere osv. Vi bruger testpersoner til at gå alle spørgsmål igennem og markere, hvor de svarede rigtigt og forkert. På den måde får vi et billede af, om vi er lykkedes med at ramme den gennemsnitlige dansker. Her har fremkomsten af sociale medier været en gevinst, da de gør det lettere at finde folk med helt forskellige baggrunde.«  Vi lever i en digital tidsalder, hvor kunstig intelligens og data fylder mere og mere. Hvor langt er I fremme med brugen af den slags? »Vi er ikke særlig højteknologiske. Det eneste, jeg kan komme i tanke om, er, at vi udregner svarprocenter. Baseret på hvor lang tid det helst skal tage at gennemføre et spil, og hvilken fornemmelse spilleren gerne skal sidde tilbage med i kroppen, er vi kommet frem til, at vores målgruppe skal svare rigtigt på ca. 40 pct. af spørgsmålene.«  Bezzerwizzer er et populært spil, som kan findes i hundredtusindvis af danske hjem. Nogle virksomheder vil måske betragte jer som en mulig reklamesøjle. Kan man købe sig til at få sit navn nævnt i Bezzerwizzer? »Det er ikke noget, vi nogensinde har oplevet at få henvendelser omkring, og hvis det skete, ville svaret være nej. Vi har en streng redaktionel linje - på en måde er vi et medie som så mange andre.«  Klimaet er et af tidens helt store samtaleemner. Er det et godt bud på en ny kategori i en kommende udgave af Bezzerwizzer? »Det er i hvert fald noget, som fylder mere og mere. Når jeg kigger på vores &quot;Året der gik&quot;-spilserie, kan jeg tydeligt se, at der er kommet flere spørgsmål, som handler om klima, kampen mod plastic, elbiler og den slags. I 2016 udgav vi en familieudgave af Bezzerwizzer, hvor kategorien &quot;Natur og miljø&quot; er med i stedet for &quot;Natur&quot;, som den blot plejer at hedde. På den måde har klimaet sneget sig ind, selvom jeg alligevel tror, at det er for snævert til sin helt egen kategori. Men der er ingen tvivl om, at der kommer et spørgsmål eller to om Greta Thunberg i næste udgave af spillet.«  Ansv. Chefredaktør Jacob Nybroe
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-10-16
+          &nbsp;·&nbsp; e7668024
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.788</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.629</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.681</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pas på! Robotterne kommer</h4>
+        <div>
+          Har du tænkt på, at en stor del af nutidens skolebørn sandsynligvis kommer til at skulle varetage arbejdsopgaver, der endnu ikke findes? Det tænker jeg faktisk en hel del på.SOM LÆRERUDDANNET ER jeg selv oplært i det der med at sigte efter konkrete læringsmål, men det undrer mig, at vi, de voksne, er så skråsikre på egen dømmekrafti forhold til, hvad vi bør forvente af vores børn. Vi aner jo mildest talt ikke, hvad vi klæder dem på til, gør vi? MENS ARBEJDSPLADSERNE SKRIGER på innovation og kreativitet, er pladen tilsyneladende gået i hak inde hos undervisningsministeriet.Den teknologiske udvikling udfordrer os på, hvordan vi i fremtiden må fordele os på arbejdsmarkedets poster. Robotteknologi og kunstig intelligens er kommet for at blive, og i stedet for at undersøge hvorvidt vores elever præsterer målbar testkultur bedre eller dårligere end dem i Kina, burde nogen så ikke have enormt travlt med at finde ud af, hvordan vi bliver bedre til at mestre det, som robotterne aldrig kan tage fra os - nemlig de gode, originale idéer? SOM ELEV I folkeskolen havde jeg en lærer, som med glimt i øjet ofte brugte sætningen &quot; gæt hvad læreren tænker på&quot;, når han havde stillet klassen et spørgsmål. Dengang brugte jeg alle mine kræfter på at aflure, hvad det præcis var, han fiskede efter. I dag slår det mig, at det måske skulle opfattes som en stille hån af den der forestilling om, at læreren altid har ret. En forestilling, jeg aldrig selv har været tilhænger af.Jeg mener ikke, vi i så høj grad skal vurdere vores børn ud fra deres evne til at &quot; ramme rigtigt&quot; på mål, der på forhånd er defineret for dem. Jeg tror på, at det er afgørende for vores børns fremtid, at de bliver mere vante med at gøre brug af sig selv, sine kreative ideer og intuitive sans.FOR MIG EGET vedkommende øver jeg mig hele tiden i at stille børnene spørgsmål, jeg ikke selv har et svar på, når de besøger museet. Det er ikke nogen let opgave, men jeg er sikker på, at det er alle anstrengelser værd.DE GODE AHA-OPLEVELSER sker nemlig lige præcis der, hvor vi ikke på forhånd har bestemt os for, hvor vi skal hen.Og nej, aha-oplevelser kan man nok ikke presse ind i en test, der skal sammenligne elevpræstationer på tværs af landegrænser, så  hvem gider lige at vende pladen?.For mig eget vedkommende øver jeg mig hele tiden i at stille børnene spørgsmål, jeg ikke selv har et svar på, når de besøger museet.
+        </div>
+        <footer>
+          <em>Ugeavisen Varde</em>
+          &nbsp;·&nbsp; 2018-11-20
+          &nbsp;·&nbsp; e6fb0c4c
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.8</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.644</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI i Power BI, NLP i Tableau, og hvad man gør, når chefen ikke kan lide dataanalysen</h4>
+        <div>
+          Hver dag flyder over to millioner opslag gennem LinkedIns feed. Og som på alle sociale medier, kan det ved første øjekast være svært at skelne perler fra glaskugler. Så hvem skal man give sin opmærksomhed, og hvem skal man scrolle forbi? Det giver LinkedIn selv et bud på med konceptet 'Top Voices', der lister de vigtigste LinkedIn-personligheder inden for forskellige kategorier - herunder Data Science og Analytics. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-11-16
+          &nbsp;·&nbsp; e6f9defe
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.612</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.588</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Investor om Seiers sats: Kunstig intelligens kan blive afgørende</h4>
+        <div>
+          Det tror adm. direktør Joachim Høegh-Krohn i...Børsen vil rigtig gerne vide, hvad du mener om denne historie. Bidrag gerne med holdninger, gode ideer og konstruktive indspark. Vi ønsker en god og saglig debat. Du kan læse om vores debatregler her.Med venlig hilsenThomas Bernt Henriksen, debatredaktørArgentum-topchef Joachim Høegh-Krohn..Argentum-topchef Joachim Høegh-Krohn..
+        </div>
+        <footer>
+          <em>Finans.Børsen.dk</em>
+          &nbsp;·&nbsp; 2016-08-02
+          &nbsp;·&nbsp; e5d2798a
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.528</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.691</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.509</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techtopia #147: Forskerens ansvar for AI</h4>
+        <div>
+          Med udgangspunkt i den dystopiske dokumentarfilm 'iHUMAN' af Tonje Hessen Schei diskuterer vi fremtiden med AI. Af Professor i kunstig intelligens og logik på DTU Thomas Bolander diskuterer AI-forskerens ansvar for sine kreationer. Han forklarer også, hvad generel kunstig intelligens (AGI) er, og vurderer om filmen &quot;iHuman&quot; har ret i sin frygt for, at AGI har en negativ indflydelse på samfundsudviklingen og er en trussel mod mennesker som art. Kom gerne med dine bud på , hvilke emner vi skal tage op. Du kan finde alle episoder af Techtopia og Ingeniørens øvrige podcasts Næste afsnit af Techtopia kan man høre den 20. april. sort
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-04-06
+          &nbsp;·&nbsp; e7a7b1d5
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.971</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.566</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ledelse af den digitale arbejdsstyrke</h4>
+        <div>
+          Body Kunstig intelligens, machine learning, robotter og hele feltet af digitale assistenter er mere aktuel end nogensinde før. Trenden er global, men det er nu, den bliver til virkelighed på danske arbejdspladser.Hvad gør det ved HR- og ledelsesgerningen? Hvordan håndterer du en arbejdsstyrke med både mennesker og maskiner, hvordan balanceres de dataetiske aspekter, og hvad gør du, når robotten ryger ind i samarbejdsproblemer?Det er temaet, når CfL i samarbejde med Knowit inviterer til CfL-Briefing med oplæg og debat.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-10-17
+          &nbsp;·&nbsp; e766d10e
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.816</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOLK</h4>
+        <div>
+          SamtidssinglerNu om stunder er en single - igen med et indlån fra engelsk - betegnelsen for en person, som ikke lever i et ægteskab eller anden form for fast parforhold, men som måske gerne vil. På hovedstadens plakatsøjler kører single.dk en hårdtslående hvervekampagne.ParringslystneSingle.dk tilbyder »en yderst effektiv match-algoritme« og også»en unik matchmaker-funktion« . Sidstnævnte tilbydes til den, der er»for travl til selv at skrive i timevis på en almindelig datingprofil« . De kan få en»PlatinMatch-løsning« , hvor alt ordnes.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2018-07-16
+          &nbsp;·&nbsp; e6d38d09
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.944</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.695</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.782</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tilbyd dig selv noget bedre</h4>
+        <div>
+            Pointen med globalisering, med internettet, med at få verden tættere på, var jo netop det modsatte, det skulle udvide vores horisont. Det er nærmere det modsatte, der er sket. &quot;I have come here to chew bubblegum and kick ass And I'm all out of bubblegum.&quot; Kære alle. Godt nytår. Farvel 2019, goddag 2020. Vi lever mere og mere i vores egne små verdener, det blev tydeligere og tydeligere for mig i 2019. Selv når det handler om noget så vigtigt som klimaet, er det stadig &quot;Se mig, føl mig, like mig&quot;-tanken, der sætter dagsorden for mange. Men hvor meget tænker andre folk rent faktisk på dig? På mig? Det er sikkert ikke meget, for vi har alle sammen travlt med at tænke på vores egen lille version af virkeligheden. Men ideen om, at vi alle har vores egne versioner af virkeligheden, og dermed også af sandheden, har den effekt, at vi i stadig højere grad vender blikket indad fremfor at kigge udad. At vi faktisk ikke hører efter, hvad andre mennesker siger, med mindre det passer med frekvensen af den støj, vi selv udsender. Pointen med globalisering, med internettet, med at få verden tættere på, var jo netop det modsatte, det skulle udvide vores horisont. Det er nærmere det modsatte, der er sket. Selvom folk både virker oplyste og kloge, når de eksempelvis skriver en opdatering på Facebook eller et pip på Twitter, bliver det ofte ikke til mere end nogle ord, som blot sendes ud. Derefter smutter man tilbage i sin egen lille boble af personlig indsigt, hvor man igen glemmer fællesskabet. Altså det ægte fællesskab. Ikke bare den illusionen om et fællesskab, som sociale medier ofte skaber. Kort sagt synes jeg, at vi misser et stort potentiale for fællesskab, som ellers med fordel kunne udnyttes. Og egentlig bliver vi selv udnyttet af de forskellige platformes spøjse regler om, hvad der kan defineres som fællesskaber ifølge algoritmerne. Så vi skal simpelthen se at vågne op, vi skal svømme mod overfladen. Vi skal alle sammen tænke på den store fortælling og på, at vi hver især er en del af noget alment menneskeligt, ellers er toget kørt. Og det gælder både for klimaet og for samfundet generelt. Før var vi en del af noget større, på godt og ondt, landsbyens gadekær eller forsamlingshuset rummede hele vores verden, og nu hvor verden er så stor og rummer så meget mere, er vi bare dele. Løsrevne fragmenter, der søger illusionen om fællesskabet, den romantiske drøm om fællesskabet. Som alsang under anden verdenskrig, som fællessang på friskolen, som en samlet nation, hvor fællesskab ikke bare var nationalistisk pladder, men en reel lyst til at være sammen om noget. En fælles mening, et fælles mål! Men kan vi det i en tid, hvor alle ved bedst selv? Det tror jeg godt. Og dét er mit største ønske for 2020. Et bedre sammenhold og en fælles retning, både nationalt og globalt. Det er nok for meget for bare ét år at skulle levere. Så lad os starte ved os selv og lade ringene spredes. For mig er sammenhold og fællesskab ikke det samme som flere arrangementer i skolen eller flere møder eller mere snak. For mig er sammenhold en mental tilstand, hvor vi vil hinanden, og dét sammenhold er blottet for racisme og andet utøj om, at nogle ikke er gode nok. Sammenhold kunne også være lidt mindre vrede på nettet, flere gode film, mere åbenhed og respekt. Hvis man ikke forventer så meget af andre, altså udover den mindre vrede og de lidt bedre film, og i stedet begynder med sig selv, er der en masse at gå i gang med. Og det kan vi egentlig godt forvente af hinanden. At vi gør en indsats. Ligesom helten i filmen They Live fra det indledende citat må vi få arbejdshandskerne på og hoppe ind i 2020 med en intention om at gøre en forskel. Både for os selv, for vores venner, for vores børn og for samfundet, som er os alle. Jeg slutter lige af med endnu et filmcitat. Et citat, der i denne kontekst handler om, at vi skal turde udfordre os selv til at tænke mere på fællesskabet. Et citat, der dybest set handler om selvrealisering, om at give sig selv en peptalk, om dét øjeblik hvor du ser dig selv i et spejl og rusker ham derinde vågen ved at sige: &quot;I'm going to make him an offer he can't refuse.&quot; Og hvad enten det tilbud så er om en burger, et nyt tv, en vandretur på Bornholm, eller noget mere sofistikeret, så er det vigtige, at du og jeg kan overbevise os selv om, at det er en god ide med nogle markante ændringer. Så godt nytår, lad os gøre 2020 til noget stort for vores fælles skyld.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2020-01-09
+          &nbsp;·&nbsp; e7888137
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.759</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.619</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ceremonileder i Humanistisk Samfund: Måske skulle vi bare indse, at mennesker er nogle halvdumme dyr</h4>
+        <div>
+            Fordi vi generelt er mere intelligente end de andre arter på kloden, vælger vi at opfatte os selv som kloge. Men er vi egentlig det? spørger Karin Liltorp Som aktiv i Humanistisk Samfund hænder det ikke sjældent, at jeg bliver mødt med en &quot;anklage&quot; om, at mit ikke-religiøse udgangspunkt må være, at jeg sætter mennesket øverst i hierarkiet i stedet for Gud. Sådan tolker jeg dog ikke humanisme. Derimod betragter jeg os mennesker som nogle finurlige væsener, som har ret til at være her på kloden i respekt for naturen. Godt nok har vi mennesker nogle helt unikke egenskaber, der adskiller os fra dyrene. Som Dostovjevskij lader det udtrykke i &quot;Forbrydelse og straf&quot;: Vores unikke egenskab er, at vi kan lyve. Ikke en videre besnærende beskrivelse, men dog et udtryk for indsigt i den menneskelige natur: Vi har evnen til at forestille os forskellige scenarier og formidle ikke-sande historier. Mig bekendt er der ingen dyr, der har denne egenskab. På andre punkter er mennesket dog langtfra overlegent: Tænk på de dyreunger, der kan klare sig selv helt fra fødslen. Personligt vil jeg ikke overleve mange dage, hvis jeg blev efterladt alene i en stor skov, på trods af min evne til at tænke. Fordi vi generelt er mere intelligente end de andre arter på kloden, vælger vi at opfatte os selv som kloge. Men er vi egentlig det? Den svenske forsker i kunstig intelligens Nick Bostrom præsenterer i flere af sine foredrag en meget tankevækkende illustration af menneskets intellektuelle formåen: Hvis vi antager en &quot;max intelligens&quot; på 100, vil dyr og mennesker måske ligge på 10 og derunder, mennesket lidt højere end dyrene. Derfor burde vi, ifølge ham, frygte kunstig intelligens, der med intelligens 100 vil være mennesket stærkt overlegent. Vi kan nemlig kun kapere at analysere en forholdsvis lille mængde data og drager ofte forkerte konklusioner, da vi faktisk overhovedet ikke forstår det fulde billede. Hvis vi forestiller os, at væsener med intelligens 50 på ovenstående arbitrære skala kigger på os fra det ydre rum, vil de nok hurtigt konkludere, at vi er nogle sjove, mærkelige væsener. Tænk på, hvor meget af det, vi mennesker foretager os, der ikke giver overordnet mening. Vi gør det, fordi vi synes, det er sjovt og spændende: spiller fodbold og skak, rejser, ser fjernsyn - listen er uendelig. Måske vil de opfatte os, som vi selv opfatter køer, der kommer på græs om sommeren? At vi som mennesker mener, at vi har et krav på at forstå det hele, er i virkeligheden irrationelt. Vores hjernekapacitet er begrænset, selvom vi hele tiden forstår lidt flere af sammenhængene. Ligesom det er umuligt at lære en hest at spille skak, er det for meget at forlange, at vi skal forstå alt. Hvor mange af os kan reelt påstå, at vi forstår Big Bang-teorien: &quot;Før var der intet, så var der lige pludselig noget&quot;? Min abstraktionsevne ikke slår ihvertfald ikke til. I denne uforståelige verden giver det mening, at man tyr til en religiøs forklaring som et holdepunkt frem for &quot;det hele er baseret på uforståelige tilfældigheder&quot;. På dette punkt skilles vandene mellem troende og ikke-troende: Troende vil gerne have ikke-troende til at anerkende deres forståelse af verden, og ikke-troende vil gerne have de troende til at indrømme, at deres simple verdensbillede ikke kan passe. Og tit kommer vi ikke-troende måske til at fremstå arrogante i vores insisteren på, at vi ihvertfald forstår det hele lidt bedre, fordi vi forholder os til fakta. Måske ville vi alle være godt tjent med ydmygt at acceptere, at vi er nogle halvdumme dyr, der prøver at skabe mening i vores eget liv. At påstå at vi forstår det hele, vil altid fremstå som et arrogant og dumt synspunkt. Der er reelt så meget, vi ikke forstår, og det er helt i orden, så længe vi ikke ødelægger det for hinanden. Karin Liltorp er ceremonileder i Humanistisk Samfund.
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2019-11-11
+          &nbsp;·&nbsp; e76edc7c
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.994</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.896</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Samfund. Gift med fortiden, gift for fremtiden</h4>
+        <div>
+          LÆSERBREV: Både de konservative og socialdemokraterne holdt politisk landsmøde eller kongres for nylig weekend. Søren Pape Poulsen, formand for de konservative, fiskede et slogan op af den borgerlige konservesdåse: Det Danmark vi kender -genkende det Danmark vi kender om 20 år, stramme op på asylpolitikken.Jeg ved ikke, om jeg er den eneste, der ikke kan huske noget Danmark, som ikke hele tiden har været under forandring. Nej, der er i virkeligheden mere og mere, som mange mennesker ikke kender og ikke forstår. En fornemmelse af ikke at kunne holde trit med de mange forandringer.Og det bliver bare meget værre ifølge den israelske stjernehistoriker Yuval Noah Hararis seneste bog &quot; 21 ting du bør vide om det 21.århundrede&quot;.&quot; Det vil være algoritmerne, der bestemmer, hvem vi er, og hvad vi bør vide om os selv&quot; (Harari).Efter min opfattelse er det meget, meget mærkeligt, at vi så sjældent taler om fremtidens udfordringer -alt andet end det Danmark, vi kender.Måden politik produceres på minder mest af alt om en omgang konserves -gamle lukkede dåser, som ikke rummer plads til det foruroligende og ukonventionelle, måske endda et fremtidig digitalt diktatur.Frygten for at automatisering indtil videre aldrig er blevet til virkelighed. Men ifølge Harrari er der gode grunde til, at det bliver anderledes denne gang: &quot; Den teknologiske revolution vil snart skubbe milliarder af mennesker ud af arbejdsmarkedet og skabe en ny ubrugelig klasse [] I 2050 vil en kasseassistent eller tekstilarbejder, der mister sit job til en robot, næppe være i stand til begynde at arbejde som kræftforsker eller droneoperatør [].I 2050 vil den hektiske verden fremkalde en global stressepidemi -manglen på mental udholdenhed udfordres markant. Efter min menig bør vi allerede nu forholde os til helt centrale spørgsmål -enig med Harari -hvem ejer dataene, hvordan beskytter vi menneskers socialstatus og selvværd, og hvordan vi kan vedblive at have en fornemmelse af, hvem vi er, med en klar forestilling om hvad livet handler om? Socialdemokratiets formand Mette Frederiksen -nu børnenes fremtidige mulige statsminister: De mest udsatte må beskyttes og næres.Enig. Men det kræver også, at hun tør forholde sig til virkelighedens foruroligende fremtid, at det 21. århundrede kan blive det mest ulige samfund i menneskehedens historie. De politiske landsmøder bar efter min mening præg af: Giftmed fortiden giftfor fremtiden.
+        </div>
+        <footer>
+          <em>Fyns Amts Avis</em>
+          &nbsp;·&nbsp; 2018-10-21
+          &nbsp;·&nbsp; e6f1679f
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.778</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.8</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.528</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          Den forbandede flåtDR P1 10.03 &quot; Vildt Naturligt&quot;: Har skovflåten virkelig ingen naturlige fjender? Og hvor farlig er den egentlig? Biologerne Johan Olsen og Vicky Knudsen undersøger sagen i selskab med naturvejleder Jes Aagard, som er flåt-ekspert i Naturstyrelsen.Gode råd til coronaDR 1 21.25 Hver torsdag hjælper vært Nina Munch-Perrin og økonomikorrespondent Casper Schrøder i et direkte program med at skaffe svar på dine spørgsmål om alt fra arbejdsløshed til ferierejser og bolighandler i coronaens skygge.Supermennesket: Den optimerede hjerneDR 2 11.15 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidne til en ny arts opståen eller er det enden på vores egen art?.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-08-13
+          &nbsp;·&nbsp; e7d5bcb2
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.952</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.708</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tegn og gæt med deep learning: Kan du narre et neuralt net?</h4>
+        <div>
+            Deep learning giver mulighed for at designe helt nye spiloplevelser. Hvordan tegner man en kat, så et menneske kan genkende den, men en computer bliver forvirret?Det spørgsmål skal man stille sig selv, hvis man skal være god til spillet iNNK. Her konkurrerer spillere mod et neuralt netværk om at være først til gætte, hvad en spiller tegner. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-08-18
+          &nbsp;·&nbsp; e7d76b33
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.837</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.838</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.521</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google vil ikke svare på, hvem Jesus er</h4>
+        <div>
+          &quot; Hvem er Jesus?&quot; Spørgsmålet kan ikke være mere enkelt. Men svaret er ikke let for internetgiganten Google, som har udviklet &quot; Google Home&quot; en såkaldt personlig assistent til hjemmet, en interaktiv højttaler, som kan give svar på alt fra vejret til generelle spørgsmål.Men Google er havnet i et stormvejr på grund af det i princippet simple spørgsmål om Jesus.På internettet florerer videoer, hvor brugerne stiller forskellige spørgsmål til Google Home, som med en mekanisk kvindestemme citerer blandt andet internetleksikonet wikipedia.Hun svarer hver gang, lige bortset fra spørgsmålet om Jesus eller Jesus Kristus, som i stedet udløste variationer over svaret: &quot; Jeg beklager, men jeg kan ikke hjælpe dig med dit spørgsmål.&quot; Omvendt blev der svaret på spørgsmål om Muhammed, Buddha og selv Djævelen.Sagen blev hurtigt taget op af blandt andre kristne medier i USA og Storbritannien, og det fik Google til at reagere med en udtalelse på Twitter.&quot; Nogle af assistentens mundtlige svar kommer fra internettet, og for nogle emners vedkommende kan dette indhold være mere sårbar over for spam og vandalisme.Hvis vores assistent har mistanke om den slags, vil assistenten måske ikke svare,&quot; hedder det diplomatisk.Som konsekvens har Google suspenderet alle svar på spørgsmål om religiøse figurer, indtil man har fundet en ny løsning.&quot; Religion kan være kompliceret, og jeg lærer stadig,&quot; lyder det nye standardsvar.Men det undrer Bex Lewis, seniorlektor i digitale studier ved Manchester Metropolitan University i Storbritannien, at det overhovedet kunne blive et problem i første omgang.&quot; Google er et amerikansk selskab, og Amerika er, i det mindste nominelt, et kristent land, så man skulle tro, at de kunne få denne type svar ind i deres system. Deres algoritmer er udviklet af mennesker med hjælp af computere, så det vil være interessant at se, hvad det er for processer, der gør, at noget bliver udelukket,&quot; siger hun til den britiske kristne radiostation Premier.Blandt kritikerne af Google er den amerikanske tv-producer og forfatter David Sams, som på Facebook har offentliggjort videoer, hvor han stiller spørgsmål til sin personlige interaktive assistent.&quot; Jeg spurgte Google ' hvem er David Sams?'. Google vidste, hvem jeg var. Men Google vidste ikke, hvem Jesus var.Det er skræmmende, for det er som om, Google har fjernet Jesus og Gud,&quot; siger han til den lokale tv-station Fox 17 News i Nashville i USA.Han demonstrerer videre, at Alexa - en tilsvarende personlig digital assistent fra Amazon - uden problemer kan fortælle, hvem Jesus er.norum@k.dk 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-02-03
+          &nbsp;·&nbsp; e69a8c34
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.591</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.695</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.58</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

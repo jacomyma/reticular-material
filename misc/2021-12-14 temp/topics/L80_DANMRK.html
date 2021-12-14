@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>L80_DANMRK <kbd>L80_DANMRK</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:51.09pt; padding:0px 12px"><strong>danske</strong>&nbsp;<span style="font-size:.5em">16072</span></span>
+        <span style="font-size:39.16pt; padding:0px 12px"><strong>danmark</strong>&nbsp;<span style="font-size:.5em">7927</span></span>
+        <span style="font-size:28.13pt; padding:0px 12px"><strong>morten</strong>&nbsp;<span style="font-size:.5em">2933</span></span>
+        <span style="font-size:27.48pt; padding:0px 12px"><strong>mads</strong>&nbsp;<span style="font-size:.5em">2715</span></span>
+        <span style="font-size:27.04pt; padding:0px 12px"><strong>danskerne</strong>&nbsp;<span style="font-size:.5em">2573</span></span>
+        <span style="font-size:25.14pt; padding:0px 12px"><strong>nye</strong>&nbsp;<span style="font-size:.5em">2000</span></span>
+        <span style="font-size:22.56pt; padding:0px 12px"><strong>både</strong>&nbsp;<span style="font-size:.5em">1337</span></span>
+        <span style="font-size:22.28pt; padding:0px 12px"><strong>danskere</strong>&nbsp;<span style="font-size:.5em">1273</span></span>
+        <span style="font-size:20.37pt; padding:0px 12px"><strong>hele</strong>&nbsp;<span style="font-size:.5em">879</span></span>
+        <span style="font-size:20.15pt; padding:0px 12px"><strong>2018</strong>&nbsp;<span style="font-size:.5em">838</span></span>
+        <span style="font-size:20.13pt; padding:0px 12px"><strong>år</strong>&nbsp;<span style="font-size:.5em">833</span></span>
+        <span style="font-size:19.53pt; padding:0px 12px"><strong>kommende</strong>&nbsp;<span style="font-size:.5em">728</span></span>
+        <span style="font-size:19.37pt; padding:0px 12px"><strong>landets</strong>&nbsp;<span style="font-size:.5em">701</span></span>
+        <span style="font-size:19.18pt; padding:0px 12px"><strong>netop</strong>&nbsp;<span style="font-size:.5em">669</span></span>
+        <span style="font-size:19.17pt; padding:0px 12px"><strong>landet</strong>&nbsp;<span style="font-size:.5em">667</span></span>
+        <span style="font-size:19.05pt; padding:0px 12px"><strong>brug</strong>&nbsp;<span style="font-size:.5em">648</span></span>
+        <span style="font-size:18.97pt; padding:0px 12px"><strong>uge</strong>&nbsp;<span style="font-size:.5em">635</span></span>
+        <span style="font-size:18.87pt; padding:0px 12px"><strong>går</strong>&nbsp;<span style="font-size:.5em">620</span></span>
+        <span style="font-size:18.29pt; padding:0px 12px"><strong>største</strong>&nbsp;<span style="font-size:.5em">532</span></span>
+        <span style="font-size:18.28pt; padding:0px 12px"><strong>uger</strong>&nbsp;<span style="font-size:.5em">530</span></span>
+        <span style="font-size:18.28pt; padding:0px 12px"><strong>møder</strong>&nbsp;<span style="font-size:.5em">529</span></span>
+        <span style="font-size:18.15pt; padding:0px 12px"><strong>danmarks</strong>&nbsp;<span style="font-size:.5em">511</span></span>
+        <span style="font-size:17.98pt; padding:0px 12px"><strong>dk</strong>&nbsp;<span style="font-size:.5em">487</span></span>
+        <span style="font-size:17.65pt; padding:0px 12px"><strong>møde</strong>&nbsp;<span style="font-size:.5em">443</span></span>
+        <span style="font-size:17.56pt; padding:0px 12px"><strong>fortsat</strong>&nbsp;<span style="font-size:.5em">430</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY L80_DANMRK DESC LIMIT 50</pre>
+      <article>
+        <h4>Open Source Days - vores konference!</h4>
+        <div>
+          Open Source Days 2011 - Community Edition byder på korte og lange foredrag, debatoplæg og en dag fyldt med muligheder for involvering fra deltagerne. Det er ikke vigtigt om du er hard-core BSD-bruger, ny Linux-bruger - eller bare vi snuse til Open Source. Der er noget for alle, og det er billigt at deltage. I år kalder vi konferencen en &quot;Community Edition&quot;, fordi der er mere fokus på at hygge sig end mængde. Det ligger således tættere op ad de gamle &quot;BOF-dage&quot; end f.eks. OSD2010.Der er netop nu ved at komme en masse abstracts ind på http://www.opensourcedays.org/abstracts - læs løs :)Som det kan ses bliver der mange foredrag og lignende. Programgruppen anført af Sidsel Jensen regner med, at der kommer syv spor i parallel med følgende tentative overskrifter.Main trackDevelopmentCommunityBusinessLightning talksThe guru is inTinker TrackI - du - dig - kan hjælpe meget ved at blogge eller twitte om Open Source Days. Det ser ud til at der er to tags i omløb #opensourcedays#osd11 - brug dem.Der er også kommet en gæste-blog om OSD2011 - se http://www.version2.dk/blogs/osd2011 - følg den de næste par uger./pto som glæder sig til at møde nye og gamle venner den 5. marts!Civilingeniør, ph.d. og algoritme-designer. 
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-02-13
+          &nbsp;·&nbsp; e27c2e67
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.971</kbd>
+            <kbd data-tooltip="Danish &amp; Denmark">L80_DANMRK&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.581</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Investorer i oprør over robothandel</h4>
+        <div>
+          Forprogrammerede børsrobotter udfører nu fire ud af 10 handler på fondsbørsen. Markedsaktører er i oprør over den stigende computeraktivitet.Det danske børsmarked bliver uigennemskueligt og noget nær umuligt at agere i, når forprogrammerede børsrobotter foretager flere end 40 pct. af aktiehandlerne på fondsbørsen i København. Det vurderer en række kilder i den danske finansektor, som Børsen har talt med.Blandt de største kritikere er afdelingsdirektør i Danske Markets Mads H. Zink, som stiller sig undrende over for, at der ikke er nogen form for regulering af computerhandlerne, som også går under betegnelsen algoritmehandler.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2011-12-14
+          &nbsp;·&nbsp; e3030bca
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.881</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.735</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.611</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En etisk komponent i fremtidens patenter?</h4>
+        <div>
+          DEN 24. september i år udstedte USA's patentmyndigheder (USPTO) Patent No. 8543339: &quot;Sæddonor-selektor baseret på genetisk kalkulation&quot;. Patentholder er den internetbaserede gentestvirksomhed 23andMe, og &quot;opfindelsen&quot; drejer sig grundlæggende om en computerbaseret algoritme, der kan hjælpe kommende forældre med at udvælge netop den sæddonor - eller ægdonor - der gør det mest sandsynligt, at et kommende barn får nogle bestemte, ønskede træk og egenskaber.I mine øjne er patentet endnu et eksempel på, at patentsystemets oprindelige krav om &quot;opfindelseshøjde&quot;...
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2013-10-21
+          &nbsp;·&nbsp; e40be785
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.512</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk it-projekt til 18 milliarder kører på skinner i år</h4>
+        <div>
+          Af MADS ELKÆR, Computerworld Offentliggjort 12.01.11 kl. 18:14I de næste 10 år skal BaneDanmark have udskiftet hele signalsystemet i det danske jernbanenet.Storebæltsbroagtigt.Sådan karakteriserer programdirektør Morten Søndergaard fra BaneDanmark statens total-udskiftning af det danske jernbane-signalsystem på 3.200 kilometer jernbanestrækning inklusiv S-banen.Hele molevitten har været undervejs i fem år og forventes at stå helt færdigt i 2021, hvor det ifølge BaneDanmark vil være det største af sin art i Europa.It kommer til at spille en afgørende rolle i signal-projektet.&quot;It er hele centralnervesystemet i udskiftningen, og et gæt er, at omkring 35 procent af pengene går til special-software og -hardware fra leverandørerne,&quot; fortæller Morten Søndergaard, der - eksklusiv statsreserverne - har et budget på 18 milliarder kroner til rådighed.Sådan skal pengene bruges12 af de 18 milliarder kroner går til aksetællere, sporskiftedrev, kabler, special-software og -hardware på selve strækningerne og i kontrolcentre samt ombordsudrulning indbygget i lokomotivernes førehuse, så de danske tog ikke brager ind i hinanden.Derudover skal al grejet desuden bruges, så kontrolcentrene kan styre tog og indhente informationer om forsinkelser og forhindringer meget mere præcis end i dag, når det hele kører trådløst direkte fra skinner til kontrolcenter og til systemer i de danske lokomotiver.De resterende fire til seks milliarder kroner skal blandt andet bruges på projektledelse, sikkerhedsgodkendelser og efteruddannelse af landets omkring 2.500 lokomotivførere og 500 trafikledere.Mindre sexet end en metro&quot;Danskerne vil først og fremmest kunne mærke udskiftningen ved, at der vil være færre forsinkelser, og der vil være mere præcise informationer, når der opstår forsinkelser,&quot; forklarer Morten Søndergaard fra BaneDanmark.Han tilføjer, at med udskiftningen af signal-teknologien vil de gamle rød/grønne signaler og relæ-anlæg med teknologi helt tilbage fra 1950'erne også forsvinde fra stationerne.Ellers sker der ikke det store set med passagernes øjne.&quot;Naturligvis er det lidt mere sexet, når man betaler store milliard-beløb og får en ny metro. Men dette er et udskiftningsprojekt, og hvis man vil have en national jernbane, så må man også betale, når de gamle teknologier er fuldstændig udslidte og ikke kan mere,&quot; lyder det fra Morten Søndergaard.I den forbindelse koster udvidelsen på Københavns Metro med Cityringens 17 nye metro-stationer med planlagt færdiggørelse i 2018 eksempelvis 21,3 milliarder kroner - en anelse mindre end signalprojektets budget inklusiv statsreserverne.Opdelt i øst og vestDet store beløb med et offentligt it-projekt og udskiftningen af hele landets signalsystem får dog ikke Morten Søndergaard til at ryste på hånden.Han fortæller, at projektet allerede har været undervejs i fem år med minutiøs planlægning, analyser, forundersøgelser og prækvalifikation af leverandørerne, der nu er nede på seks styk.De seks signalsystem-leverandører skal kæmpe om to ensartede kontrakter i signal-udskiftningen til ERTMS-standarden (European Rail Traffic Management System) i en for Østdanmark og en kontrakt til det nye signalsystem en vest for Storebælt.I tilgift vil der være en kontrakt på ombord-udrulningen af kunstig intelligens i togene.Den fjerde store kontrakt er en totaludskiftning af S-banens signalsystem. Her bliver det nye system bygget på CBTC-standarden (Communication Based Train Control).Ingen kan sætte sig på hele landetSamlet set udvælger BaneDanmark minimum to og maksimum fire leverandører, hvoraf ingen kan vinde både Øst- og Vestdanmarks fjernbanekontrakter.&quot;Vi har opdelt det på den måde, fordi det vil være en alt for stor opgave for en enkelt leverandører at være ansvarlig for signal-udskiftningen både øst og vest for Storebælt,&quot; forklarer Morten Søndergaard.Kontrakterne for S-banen bliver derefter skrevet under til sommer, mens den endelige udvælgelse og underskrivning af kontrakterne for resten af landet sker omkring julen 2011.S-banestrækningen mellem Jægersborg og Hillerød bliver den første i landet, som får udskiftet signalsystemet. Strækningen i Nordsjælland vil derefter fungere som erfaringsgrundlag, når udskiftningen bliver rullet ud i resten af S-banen.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2011-01-12
+          &nbsp;·&nbsp; e268bece
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.581</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>OpenAI går til PyTorch, Google simulerer ML-fairness og Venstre vil have ansigtsgenkendelse</h4>
+        <div>
+            Vi ser tilbage på ugen, der er gået. Danmarks Liberale Parti, som partiet Venstre også kalder sig, går officielt ind for brug af ansigtsgenkendelse i politisager. Det fortalte partiets næstformand Inger Støjberg i denne uge i et interview med Berlingske. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-02-07
+          &nbsp;·&nbsp; e791c441
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.631</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.605</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.51</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: DR er helt afgørende for musikken</h4>
+        <div>
+          Når medieforhandlingerne går i gang - forhåbentlig snart - er det mere end vigtigt, at der fortsat er fokus på musikken og al dens mangfoldighed. DR skal tage ansvaret for at være en af Danmarks største og bedste musikformidlere, og deres musikformidling er essentiel for, at musikken netop kan komme ud til alle danskere.Den hestekur, DR har været udsat for, har givet beskæring i musikudbuddet og fjernet rene musikkanaler. P7 Mix er helt væk, mens P6 Beat og P8 Jazz får kunstigt åndedræt kun året ud. De to DR-kanaler står til at lukke, medmindre politikerne griber ind.Måske flere kanaler med dem.Dedikerede musikkanaler er bærende for musikmiljøerne og fanebærere i formidlingen af et mangfoldigt musikudbud. I dag lytter over 80 pct. af danskere til musik på Spotify og andre streamingtjenester.Her udvælger algoritmer få, udvalgte numre for lytteren - gerne med en international slagside. Hos Spotify er al dansk musik samlet under et - alt lige fra klassiske Carl Nielsen over Kim Larsen til elektroniske Trentemøller.Vi har hårdt brug for et ambitiøst DR som modpol til musikalsk ensretning og kortslutning.Lukkes P6 og P8 ved udgangen af året endeligt, bliver Danmark endnu mere kulturelt ensporet. De to radiokanaler manifesterer musikalske miljøer og strømninger i Danmark, som vil miste deres fodfæste, hvis de lukkes. Fremadrettet skal musikken opleves på mange platforme, ikke kun via radiokanaler. Derfor er det vores ønske, at DR også i fremtiden forpligtes til at dedikere nye platforme til det mangfoldige musikliv - som udfolder sig vildt disse år.Vores svar på Joy Mogensens tanker om medieforliget forleden er at prioritere en bred musikformidling.Bibehold P6 Beat og P8 Jazz, og sørg for, at den dedikerede musikformidling er fremtidssikret, også for den musik som blev hjemløs efter lukning af P7. Den mangfoldige musik skal have en tydelig plads i medieforliget.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-01-31
+          &nbsp;·&nbsp; e78f5adc
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.687</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske Banks dominans på børsen brudt</h4>
+        <div>
+          Danske Bank mister dominans på fondsbørsen Foto: Steven Achiam FinansAf RitzauUdenlandske finanshuse er ved at tage magten på det danske aktiemarked, og senest er Danske Banks mangeårige dominans, som største aktør på det danske aktiemarked, blevet brudt og førertrøjen overtaget af Merrill Lynch.Det skriver Økonomisk Ugebrev.&quot;Den amerikanske storbank har de seneste to måneder haft den største markedsandel på handel med danske aktier på det hjemlige aktiemarked, viser den månedlige statistik fra NasdaqOMX Copenhagen,&quot; oplyser ugebrevet.I juli havde Merrill Lynch er markedsandel på 12,7 procent af omsætningen, efterfulgt af Danske Bank med 10,7 procent og Nordea med 8,9 procent. Derefter kommer fem London-baserede finanshuse, før Enskilda med en markedsandel på 3,4 procent og internetmægleren Nordnet med en markedsandel på 3,3 procent.Flere forhold gør sig gældendeÆndringen skyldes flere forhold. Ugebrevet fremhæver:For det første har en række af de store danske C20-aktier det seneste år haft en ekstra attraktion på grund af deres defensive karakter og på grund af den vedvarende usikkerhed om makroøkonomien og den sydeuropæiske statsgældskrise.For det andet har Danmark, som tilflugtssted for udenlandske investorer, som bekendt været udbredt for obligationer, og den danske krone som &quot;safe haven&quot; smitter af på danske aktier.For det tredje har algoritmehandel og HFT trading også været med til at skabe en større omsætning, og desuden er der finanshuse, der laver arbitrage mellem det danske aktiemarked og danske aktier på de øvrige elektroniske markedspladser.Desuden bliver stadig flere udenlandske medlemmer koblet på handelsplatforme, som giver adgang til at handle aktier i Stockholm, Helsinki og København.Og endelig trækker de danske privatinvestorer en relativ begrænset andel af omsætningen på det danske aktiemarked./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2012-08-27
+          &nbsp;·&nbsp; e3601817
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.99</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.665</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.986</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny app samler anmeldelser: Her er gæsternes 25 favorit spisesteder i Viborg</h4>
+        <div>
+          VIBORG: Mange elsker god mad på en dejlig restaurant eller café, men mange kender også udfordringen med at få overblik over alle spisestederne og deres anmeldelser.Folkene bag den nye restaurant-app, Eatie, var selv blevet trætte af at lede på flere forskellige anmeldelsessites for at se, hvordan en restaurant er bedømt.Dét blev starten på Eatie, som samler alle de danske spisesteder og deres anmeldelser fra Google, Tripadvisor og Facebook i én app.-Mine kollegaer og jeg er meget madglade og elsker teknologi, så derfor fokuserer vi på at gøre det nemt og hurtigt for danskerne at finde gode spisesteder i nærheden, siger Morten Lie Jørgensen, der er direktør i Eatie.Top 25 i ViborgApp'en og hjemmesiden gik i luften i sommeren 2018 og har siden da samlet over to millioner anmeldelser på tværs af flere hjemmesider til mere end 6000 restauranter, caféer og andre spisesteder i Danmark.En algoritme udregner en score fra 1 til 10 for hver restaurant og spisested, der gør det muligt at lave en topliste for de danske byer.Det gælder også i Viborg, hvor Reborn aktuelt ligger øverst på toplisten. Top tre spisesteder og restauranter i Viborg er lige nu: Reborn -scorer på 9.7 ud af 10 Kafe Kjelds -9.6 Restaurant Arthur -9.4 Se hele top 25 i Viborg på https:// www.eatie.dk/ bedste-restauranter-8800-viborg.
+        </div>
+        <footer>
+          <em>Viborg Nyt</em>
+          &nbsp;·&nbsp; 2019-06-11
+          &nbsp;·&nbsp; e73b27ce
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.848</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.646</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Faaborg er med på Kunstens Danmarkskort</h4>
+        <div>
+          FAABORG: D. 17. marts lancerede Statens Museum for Kunst det nye digitale danmarkskort, Kunstens Danmarkskort.Kortet, der findes på https:// danmarkskort. open. smk.dk/, gør det muligt at gå på opdagelse i flere tusinde af SMK's kunstværker med motiver fra danske byer og landskaber.På den måde kan man komme på en online kunstrejse hjemmefra sin stue og opleve det danske land set med kunsternes øjne.Man kan blandt andet rejse mod nord og se P. S. Krøyers Måneskin ved Skagen Strand eller tage til hovedstaden og opleve Christen Købkes Udsigt fra Dosseringen ved Sortedamssøen mod Nørrebro. Man kan også klikke sig en tur til Fyn og se Agnete Varmings Sommeraften ved Fåborg eller vende blikket mod øst og nyde synet af Edvard Weies Postbåden kommer. Christiansø.I løbet af otte uger sættes der fokus på otte forskellige danske områder - og i uge 15 zoomes ind på Fyn.Det foregår i Facebookgruppen Kunstens Danmarkskort.Fra mandag 12. april og den følgende uge deles lokale kunstværker og gode kunsthistorier fra Fyn - heriblandt fra Faaborg.Kunstens Danmarkskort er lavet ved hjælp af kunstig intelligens, som har placeret kunstværkerne på kortet ud fra titler og beskrivelser.En smart teknologi - men ikke ufejlbar.Som en del af projektet opfordrer Statens Museum for Kunst derfor alle lokalkendte til at hjælpe museet med at opdatere kortet. Kender man til det nøjagtige gadehjørne eller det præcise sted i skoven, hvor et motiv stammer fra, kan man foreslå en ny placering på kortet. Statens Museum for Kunst gennemgår alle henvendelser og opdaterer kortet løbende.
+        </div>
+        <footer>
+          <em>Ugeavisen Faaborg</em>
+          &nbsp;·&nbsp; 2021-04-07
+          &nbsp;·&nbsp; e833ffd6
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.768</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.604</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Avis afslører russisk støtte til le Pen</h4>
+        <div>
+          FRANKRIG: Den franske præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg. Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.Rusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot; fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé. [ RITZAU].
+        </div>
+        <footer>
+          <em>Dagbladet Holstebro</em>
+          &nbsp;·&nbsp; 2017-02-10
+          &nbsp;·&nbsp; e61ba1de
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.957</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.754</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.647</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.503</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske supercomputere klar til at løse covid-19-opgaver</h4>
+        <div>
+          Supercomputere verden over sætter turbo på simuleringer af corona-virussens opførsel, og hvordan virussen forventes at reagere på forskellige vacciner og behandlingsmetoder. I Danmark er de første tre supercomputere ved at gøre sig klar til forskning i SARS-CoV-2. Mindst tre danske supercomputere er lige nu ved at blive gjort klar til at regne på på forskernes modellering og simulering af SARS-CoV-2. Det viser en rundspørge som organisationen DeiC, der koordinerer den nationale udvikling af supercomputere i Danmark, har lavet på de danske universiteter. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-04-20
+          &nbsp;·&nbsp; e7abe0e4
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.562</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.504</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.553</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Internationale keynotes på plads</h4>
+        <div>
+          I år kan man på DTU High Tech Summit opleve både danske og internationale keynotes fra førende virksomheder, organisationer og universiteter.Man kan bla. møde den danske tech-ambassadør Casper Klynge, der bl. a. fortæller om, hvordan teknologierne skaber samfundet.Man kan også møde David A. M. Wallerstein, der er chief exploration officer og senior executive vice president i den internationale tech-virksomhed Tencent.Han vil drøfte, hvordan Danmark kan udnytte internettet og kunstig intelligens til at styre vores energiforbrug sammen med førende professorer fra DTU.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2019-10-28
+          &nbsp;·&nbsp; e76a0174
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.667</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.703</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.571</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Stevns og kunst</h4>
+        <div>
+          (Last Updated On: 8. april 2021) Kunstnere har gennem århundreder skildret det danske landskab. Nu placerer Statens Museum for Kunst (SMK) kunstværker fra museets store samling på et digitalt danmarkskort og inviterer alle til at opleve de danske byer, kyster og skove set med kunsternes øjne.Et smukt værk fra Stevns, P.C. Skovgaards maleri af Højerup Kirke og Stevns Klint.Stevns: Med staffeli, malingtuber og pensler har danske kunstnere gennem tiden rejst kongeriget tyndt og skildret alt fra fredelige gadekær over idylliske skovbryn til forrevne strandkanter. I SMK's store kunstsamling findes flere tusind værker med motiver fra danske byer og landskaber, og nu kan de udforskes hjemmefra.SMK har nemlig lanceret det nye digitale kort, Kunstens Danmarkskort, og inviterer alle til at tage på en online kunstrejse og opleve det danske land set med kunsternes øjne.I otte uger sætter SMK fokus på otte forskellige danske områder - og i uge 14 zoomes der ind på Sjælland og Lolland-Falster. Det foregår i Facebookgruppen 'Kunstens Danmarkskort', hvor der fra mandag 5. april og ugen igennem deles ud af lokale kunstværker og gode kunsthistorier fra Sjælland og Lolland-Falster - heriblandt fra Stevns.Kunstens Danmarkskort, som kan ses på danmarkskort.open.smk.dk, er lavet ved hjælp af kunstig intelligens, som har placeret kunstværkerne på kortet ud fra titler og beskrivelser.- SMK har en kæmpestor kunstsamling, men hvor skal man begynde, hvis man gerne vil på opdagelse? Et danmarkskort giver en helt umiddelbar indgang, hvor man for eksempel kan starte i sin hjemstavn. Samtidig kan vi forhåbentlig trække på den store viden, som alle danskere har om bestemte områder. Har vi placeret kunstværkerne rigtigt? Vi håber, at brugerne vil hjælpe os med at opdatere Kunstens Danmarkskort, siger Jonas Heide Smith, der er leder af Den Digitale Enhed på SMK.Kender man til det nøjagtige gadehjørne eller det præcise sted i skoven, hvor et motiv stammer fra, kan man foreslå en ny placering på kortet. SMK gennemgår alle henvendelser og opdaterer kortet løbende.Omkring 4.000 kunstværker er blevet placeret på Kunstens Danmarkskort.
+        </div>
+        <footer>
+          <em>Stevnsbladet.dk</em>
+          &nbsp;·&nbsp; 2021-04-08
+          &nbsp;·&nbsp; e8349f37
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.539</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.623</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Svendborg med på Kunstens Danmarkskort</h4>
+        <div>
+          Dette maleri af Søren L. Lange, 1759-1827, som forestiller Svendborg, er et af værkerne på Kunstens Danmarkskort.Staten Museum for Kunst står bag et nyt digitalt danmarkskort, Kunstens Danmarkskort, og her er Sydfyn repræsenteret. Museet har dog brug for hjælp til at opdatere kortet og fakta om værkerne.Michael Spure Thorbjørnsen mith@faa.dkSvendborg: I det tidlige forår lancerede Staten Museum for Kunst (SMK) et nyt digitalt danmarkskort, Kunstens Danmarkskort, som gør det muligt at gå på opdagelse i flere tusinde kunstværker med motiver fra danske byer og landskaber. På den måde kan man komme på en online kunstrejse hjemmefra sin stue og opleve det danske land set med kunsternes øjne.I løbet af otte uger sætter SMK i den forbindelse fokus på otte forskellige danske områder - og i uge 15 zoomer man via i Facebookgruppen &quot;Kunstens Danmarkskort&quot; ind på Fyn. Fra mandag den 12. april og den følgende uge deler SMK lokale kunstværker og gode kunsthistorier fra Fyn - også fra Svendborg.Kunstens Danmarkskort er ifølge en pressemeddelelse lavet ved hjælp af kunstig intelligens, som har placeret kunstværkerne på kortet ud fra titler og beskrivelser. En smart teknologi, men ikke ufejlbar.- Som en del af projektet opfordrer vi derfor alle lokalkendte til at hjælpe museet med at opdatere kortet. Kender man til det nøjagtige gadehjørne eller det præcise sted i skoven, hvor et motiv stammer fra, kan man foreslå en ny placering på kortet. SMK gennemgår alle henvendelser og opdaterer kortet løbende, fortæller Jonas Heide Smith, der er leder af Den Digitale Enhed på SMK.- Kunstnere har gennem århundreder skildret det danske landskab. Nu placerer SMK kunstværker fra museets store samling på et digitalt danmarkskort og inviterer alle til at opleve de danske byer, kyster og skove set med kunsternes øjne.
+        </div>
+        <footer>
+          <em>Ugeavisensvendborg.dk</em>
+          &nbsp;·&nbsp; 2021-03-30
+          &nbsp;·&nbsp; e8313241
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.626</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.599</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>THOMAS DEN FROMME</h4>
+        <div>
+          I forbindelse med omtalen af en ny kunstig intelligens, der hjælper banker med at spotte kunder, der vil hvidvaske penge, ønsker Danske Banks topchef mærkeligt nok ikke at være med.Det fremgår af Berlingske.Danske Bank ser ellers ud til at have hårdt brug for den type service?! Banken tjente som bekendt styrtende i sin filial i Estland frem til 2014 ved at huse en række lyssky kunder, der hvidvaskede penge via Danske Bank til skattely.Men Berlingske må altså nøjes med at citere Danske Banks topchef, Thomas Borgens, generelle kommentar fra marts, da afsløringerne rullede: ' Vi vil gøre alt for at bekæmpe hvidvask.' T T Ha ha - han er sjov, ham Borgen! Danske Bank blev jo netop flere gange advaret om, at det så mistænkeligt ud med en stor del af kunderne i Estland.Men der var ingen, ' der gjorde alt for at bekæmpe hvidvask'.Mens en beskeden kollega som Sydbank sagtens kunne finde ud af at smide kriminelle hvidvaskere ud på få dage.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2017-05-25
+          &nbsp;·&nbsp; e644f3bd
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.911</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.803</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.681</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Svendborg med på Kunstens Danmarkskort</h4>
+        <div>
+          SVENDBORG: I det tidlige forår lancerede Staten Museum for Kunst (SMK) et nyt digitalt danmarkskort, Kunstens Danmarkskort, som gør det muligt at gå på opdagelse i flere tusinde kunstværker med motiver fra danske byer og landskaber. På den måde kan man komme på en online kunstrejse hjemmefra sin stue og opleve det danske land set med kunsternes øjne.I løbet af otte uger sætter SMK i den forbindelse fokus på otte forskellige danske områder - og i uge 15 zoomer man via i Facebookgruppen &quot; Kunstens Danmarkskort&quot; ind på Fyn. Fra mandag den 12. april og den følgende uge deler SMK lokale kunstværker og gode kunsthistorier fra Fyn -også fra Svendborg.Kunstens Danmarkskort er ifølge en pressemeddelelse lavet ved hjælp af kunstig intelligens, som har placeret kunstværkerne på kortet ud fra titler og beskrivelser. En smart teknologi, men ikke ufejlbar.-Som en del af projektet opfordrer vi derfor alle lokalkendte til at hjælpe museet med at opdatere kortet. Kender man til det nøjagtige gadehjørne eller det præcise sted i skoven, hvor et motiv stammer fra, kan man foreslå en ny placering på kortet.SMK gennemgår alle henvendelser og opdaterer kortet løbende, fortæller Jonas Heide Smith, der er leder af Den Digitale Enhed på SMK.-Kunstnere har gennem århundreder skildret det danske landskab. Nu placerer SMK kunstværker fra museets store samling på et digitalt danmarkskort og inviterer alle til at opleve de danske byer, kyster og skove set med kunsternes øjne.4000 værker placeret Ved at klikke rundt på Kunstens Danmarkskort kan man opleve kunst fra hele landet. Ved hver knappenål gemmer sig et kunstværk.Man kan blandt andet rejse mod nord og se P. S. Krøyers &quot; Måneskin&quot; ved Skagen Strand eller tage til hovedstaden og opleve Christen Købkes &quot; Udsigt&quot; fra Dosseringen ved Sortedamssøen mod Nørrebro. Man kan altså også klikke sig en tur til Sydfyn og se Søren L. Langes maleri af Svendborg.SMK har en kæmpestor kunstsamling, men hvor skal man begynde, hvis man gerne vil på opdagelse? -Et danmarkskort giver en helt umiddelbar indgang, hvor man for eksempel kan starte i sin hjemstavn. Samtidig kan vi forhåbentlig trække på den store viden, som alle danskere har om bestemte områder. Har vi placeret kunstværkerne rigtigt? Vi håber, at brugerne vil hjælpe os med at opdatere Kunstens Danmarkskort, siger Jonas Heide Smith.Omkring 4000 kunstværker er blevet placeret på Kunstens Danmarkskort. SMK opdaterer kortet løbende.
+        </div>
+        <footer>
+          <em>Ugeavisen Svendborg</em>
+          &nbsp;·&nbsp; 2021-04-07
+          &nbsp;·&nbsp; e833fac8
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.676</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.608</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Gå på opdagelse i kunst fra hjemegnen</h4>
+        <div>
+          FREDERIKSSUND Statens Museum for Kunst har netop lanceret det nye digitale danmarkskort -Kunstens Danmarkskort.Kortet gør det muligt at gå på opdagelse i flere tusinde af SMK's kunstværker med motiver fra danske byer og landskaber, skriver SMK i en pressemeddelelse.På den måde kan man komme på en online kunstrejse hjemmefra sin stue og opleve det danske land set med kunsternes øjne. Man kan eksempelvis udforske sin egen hjemstavn.De næste otte uger sættes fokus på otte forskellige danske områder - og i uge 13 zoomes der ind på hovedstadsområdet.Det foregår i Facebookgruppen Kunstens Danmarkskort.Fra mandag 29. marts og den følgende uge deles lokale kunstværker og gode kunsthistorier fra København og omegn - heriblandt Frederikssund.Kunstens Danmarkskort er lavet ved hjælp af kunstig intelligens, som har placeret kunstværkerne på kortet ud fra titler og beskrivelser. En smart teknologi - men ikke ufejlbar. Som en del af projektet opfordrer vi derfor alle lokalkendte til at hjælpe SMK med at opdatere kortet. Kender man til det nøjagtige gadehjørne eller det præcise sted i skoven, hvor et motiv stammer fra, kan man foreslå en ny placering på kortet. SMK gennemgår alle henvendelser og opdaterer kortet løbende.Læs mere om projektet i vores pressemeddelelse her: www.smk.dk/ article/ nyt-digitalt-danmarkskort-fra-smkgoer-det-muligt-at-se-landetmed-kunstnernes-oejne/.
+        </div>
+        <footer>
+          <em>Lokalavisen Frederikssund</em>
+          &nbsp;·&nbsp; 2021-03-24
+          &nbsp;·&nbsp; e82eb2e6
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.704</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mistanken om russisk støtte til Marine Le Pen stiger</h4>
+        <div>
+          En franske efterretningstjeneste siger til Le Canard enchainé, at Rusland støtter Marine Le Pen i valget.Frankrigs præsident og landets regering er bekymret over meldinger om, at Rusland angiveligt blander sig i det kommende præsidentvalg.Den satiriske og politiske avis Le Canard enchainé, som også har ført an i afsløringer af den konservative kandidat Francois Fillons kones fiktive job, har talt med kilder i efterretningstjenesten DGSE.Ifølge disse kilder støtter Rusland den højrenationale kandidat Marine Le Pen fra Front National.- Bekymringen har nu nået et niveau, så forsvarsrådet i Élyséepalæet er indkaldt til møde om sagen, skrev avisen onsdag ifølge Politico.ADVERTISINGRusland menes at stå bag både hacking, trolling og spredning af misinformation, hedder det i Le Canard enchainé, som betyder Den lænkede And.Når forsvarsrådet er samlet deltager præsidenten, premierministeren og fem andre ministre.Der er ikke kommet en officiel bekræftelse af, at rådet mødes for at drøfte Rusland og valget. Politico har forgæves forsøgt at få det bekræftet af kilder i regeringen.Russerne spreder misinformation via sociale medier. Det sker med brug af algoritmer, der bruges til blandt andet at sprede &quot;fortrolige e-mails fra hendes (Le Pens, red.) rivaler&quot;, siger kilder i DGSE til Le Canard enchainé.Præsidentvalget afvikles over to runder. Første runde 23. april, og anden runde er 7. maj.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2017-02-09
+          &nbsp;·&nbsp; e61b5b8b
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.857</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.631</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.785</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.511</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Helsingoranerne får gratis søndags-Click</h4>
+        <div>
+          Den gratis søndagsbillet kræver kun, at man kan fremvise et sygesikringsbevis med et lokalt postnummer på. Et postnummer-tal på 3.000 eller deromkring på sygesikringskortet er rigeligt til, at man bliver lukket i ind Click-universet uden at skulle have kreditkortet op af tegnebogen.På forkantDet er nu 9. udgave af Click Festival, som Kulturværftet står i spidsen for.Helsingør Dagblad plejer at kalde Click for Danmarks mest nysgerrige festival. Festivalen i Helsingør &quot;er på forkant med alt det nye inden for musik, kunst, innovation, performance, installationer, teknologi, videnskab og meget mere&quot;, skrev Helsingør Dagblad forleden. Og det er stadig sandt.Søndagen på årets Click Festival byder blandt andet på mange koncerter i Hal 14 - med værker af minimalisten Julius Eastman. Gæsterne kan også gå på opdagelse i de forskellige installationer, forestillinger, foredrag og meget andet, som Click byder på om søndagen.Flere ture med guideVil man gerne have en vejviser med på udforskningen af Click Festival, så er der også mulighed for det. Søndag klokken 13 og 16 er der rundvisning med guide.Det er naturligvis også gratis at få denne mulighed for at komme bag om værkerne og kunstnernes tanker. Så hvis man er lokal og bare lidt nysgerrig på, hvordan og hvornår det slår klik for Click Festival, landets mest nysgerrige festival, så bør man ikke gå glip af en rundvisning.Den vigtigste udfordringPå Stram Kurs' hjemmeside beskriver Rasmus Paludan, hvad han kalder Danmarks vigtigste udfordring:&quot;Utrygheden som danskere møder hver eneste dag, fordi vi bliver truet af muslimsk dominansadfærd.Udgifter på mere end 33.000.000.000 (33 mia.) kroner hvert år, som den ikke-vestlige indvandring koster danske skatteydere - penge som kunne være brugt på danskerne selv.EUs demokratiløse imperium, som tilsidesætter det danske folks demokratiske ønske om at bevare Danmark.Forskellige mindretal i Danmark - f.eks. homoseksuelle og jøder - kan ikke længere færdes i fred. Den massive tilstedeværelse af muslimer, har gjort livet ubærligt for grupper som disse.Danmark spilder milliarder hvert år på &quot;integrationsprogrammer&quot;, ekstra politi og andre former for sikkerhed, i skolevæsnet, på sygehusene, i fængselsvæsnet og på andre institutioner, fordi muslimer ligger disse til last&quot;.
+        </div>
+        <footer>
+          <em>Helsingordagblad.dk</em>
+          &nbsp;·&nbsp; 2019-04-29
+          &nbsp;·&nbsp; e72d7ee8
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.709</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.593</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DR er helt afgørende for musikken</h4>
+        <div>
+            Når medieforhandlingerne går i gang - forhåbentlig snart - er det mere end vigtigt, at der fortsat er fokus på musikken og al dens mangfoldighed.DR skal tage ansvaret for at være en af Danmarks største og bedste musikformidlere, og deres musikformidling er essentiel for, at musikken netop kan komme ud til alle danskere. Den hestekur, DR har været udsat for, har givet beskæring i musikudbuddet og fjernet rene musikkanaler. P7 Mix er helt væk, mens P6 Beat og P8 Jazz får kunstigt åndedræt kun året ud. De to DR-kanaler står til at lukke, medmindre politikerne griber ind. Måske flere kanaler med dem. Dedikerede musikkanaler er bærende for musikmiljøerne og fanebærere i formidlingen af et mangfoldigt musikudbud. I dag lytter over 80 pct. af danskere til musik på Spotify og andre streamingtjenester. Her udvælger algoritmer få, udvalgte numre for lytteren - gerne med en international slagside. Hos Spotify er al dansk musik samlet under et - alt lige fra klassiske Carl Nielsen over Kim Larsen til elektroniske Trentemøller. Vi har hårdt brug for et ambitiøst DR som modpol til musikalsk ensretning og kortslutning. Lukkes P6 og P8 ved udgangen af året endeligt, bliver Danmark endnu mere kulturelt ensporet. De to radiokanaler manifesterer musikalske miljøer og strømninger i Danmark, som vil miste deres fodfæste, hvis de lukkes. Fremadrettet skal musikken opleves på mange platforme, ikke kun via radiokanaler. Derfor er det vores ønske, at DR også i fremtiden forpligtes til at dedikere nye platforme til det mangfoldige musikliv - som udfolder sig vildt disse år. Vores svar på Joy Mogensens tanker om medieforliget forleden er at prioritere en bred musikformidling. Bibehold P6 Beat og P8 Jazz, og sørg for, at den dedikerede musikformidling er fremtidssikret, også for den musik som blev hjemløs efter lukning af P7. Den mangfoldige musik skal have en tydelig plads i medieforliget. Til glæde for de pulserende musikmiljøer og ikke mindst for alle de danske lyttere.  Vil du have meninger direkte i din indbakke? Tilmeld dig gratis og få de seneste indlæg fra Jyllands-Postens debatsektion én gang i døgnet - klik her, sæt flueben og indtast din mailadresse. Følg også JP Debat på Twitter Velkommen til debatten Jyllands-Posten ønsker en konstruktiv og god debattone blandt vores læsere uanset uenigheder. Overtrædelse af vores debatregler kan føre til udelukkelse. Anmeldelse af grove kommentarer kan ske til blog@jp.dk eller ved at &quot;markere som spam&quot;. Ansv. Chefredaktør Jacob Nybroe blaah
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2020-01-31
+          &nbsp;·&nbsp; e78f959e
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.732</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Brancheforening: Tabsgrænse på spil er ringe værn mod ludomani</h4>
+        <div>
+          Danske Spil-forslag om tabsgrænse vil virke mod hensigten om at begrænse ludomani, mener brancheforening. 23 jan. 2020 kl. 11:50Del med andre: Danske Spil håber at overtale resten af spillebranchen i Danmark til at indføre et loft over det tab, som den enkelte spiller kan akkumulere på en måned. I første omgang får Danske Spil dog svært ved at overbevise brancheorganisationen Danish Online Gambling Association (Doga). Her er nogle af de største spiludbydere i Danmark medlemmer, blandt andet Danske Spil. Dogas direktør, Morten Rønde, mener, at Danske Spils forslag er bedre til at vaske spiludbydernes hænder end at komme ludomani til livs. - Det er prøvet i andre lande. Hvis det bliver præsenteret som et spiller-beskyttelsesmiddel, er det ikke den rigtige måde at regulere på, siger han. Ifølge Morten Rønde vil forslaget ramme kunder, der spiller for store beløb, men ikke lider af ludomani - og samtidig vil det sende spillere med ludomani ud i at oprette konti flere steder eller hos udenlandske spiludbydere. Dermed mister spiludbyderne deres stærkeste kort, hvis de reelt vil forsøge at afværge ludomani hos deres brugere, mener Morten Rønde. - Værdien i at have spillerne hos danske spiludbydere er, at det er nemmere at holde styr på markedet, siger han. - Man kan overvåge spillerne, når de spiller, og så kan man opfange, hvis de udvikler et uheldigt spilmønster. Så kan man reagere ved at ringe til dem og give dem vejledning. Hvis de spiller i udlandet, mister du kontrollen. Spørgsmål: Er der et fælles kodeks for, hvilken adfærd man reagerer på, så det er ens for spiludbyderne og ikke et konkurrenceparameter? - Der er ikke en fælles standard endnu, for det er stadig ny videnskab, siger Morten Rønde: - Der sker rigtig meget på den front, hvor der er mulighed for at analyse data med kunstig intelligens. Man kan dissekere uheldige spilmønstre på en meget bedre måde, end man kunne før. Men det kan man kun, hvis de spiller i Danmark. Ud over Danske Spil inkluderer Dogas medlemmer blandt andet bookmakerne Bet365, Betfair og Unibet-ejeren Kindred Group samt casino-siderne Mr. Green, Pokerstars-ejeren Stars Group, Leovegas og Spillehallen.dk. /ritzau/
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2020-01-23
+          &nbsp;·&nbsp; e78ce7c9
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.605</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.501</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sundhedsreform. Statshospitalet Danmark er ikke svært eller nært - bare sært</h4>
+        <div>
+          LÆSERBREV: Sygdom, sagde man, var hver mands eje, i den nære fremtid bliver sygdom statens eje -Statshospitalet Danmark. I regeringens nye udspil til en sundhedsreform nedlægges regionerne, og der oprettes 21 nye sundhedsfællesskaber lagt under en central styrelse placeret i Århus.I min optik ville der være så meget at hente i stedet for at tænke oppefra og ned, tænke nedefra og op og inddrage menneskers egen indre visdom.Men det ville betyde, at man ville være nødt til at bruge tid på at lytte til mennesker.Det ville betyde, at man havde en helt anden dagsorden end skjult centralisering og effektivisering -nu udført af glade hænder.Det nye sundhedsudspil, Statshospitalet Danmark, ser jeg som et udtryk for, at man kan gøre hele den danske befolkning til fremtidens laboratorierotter underlagt embedsmænd, ekspertvælde og kunstig intelligens, hvor beslutningerne tages hen over hovedet på borgerne -det er ikke hverken svært eller nært -bare sært.
+        </div>
+        <footer>
+          <em>Danmark Fyns Amts Avis</em>
+          &nbsp;·&nbsp; 2019-01-28
+          &nbsp;·&nbsp; e70ef32d
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.884</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.626</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.573</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.61</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EDC Poul Erik Bech Næstved introducerer ny elektronisk markedsføring</h4>
+        <div>
+          Intelligente markedsføringsløsninger på nettet, hvor boligen annonceres overfor netop de potentielle købere, der formodes at have størst interesse i den pågældende ejendom, har eksisteret i nogle år. EDC var først til at udnytte de nye muligheder og har anvendt intelligente markedsføringsløsninger i tre år. Nu tager Danmarks største mæglerkæde skridtet videre og introducerer den næste generation af værktøjet. På den måde får boligsælgeren selv mulighed for at planlægge og styre markedsføringen af sin bolig på nettet.På baggrund af tre års erfaringer med disse muligheder har EDC's ejendomsmæglere oplevet stor interesse fra mange sælgere for at få nærmere indblik i, hvordan markedsføringen af boligen kan målrettes præcis mod de mest sandsynlige købere.-Nogle kan godt lide selv at styre og dosere markedsføringen af deres bolig, og andre er bare fascineret af, hvor præcist man kan ramme potentielle købere, fortæller Nicky Rud, Partner, afdelingsleder, ejendomsmægler, EDC Poul Erik Bech Næstved, og fortsætter:-Derfor har vi nu lavet en løsning, hvor de kunder, der har lyst, med få klik selv kan håndtere markedsføringen af deres bolig på nettet via deres egen personlige side på edc.dk.Med løsningen kan boligsælgere hos EDC nu eksempelvis bestille en kampagne på Facebook, sikre sig en fremhævet placering i søgeresultaterne på de største boligsites i Danmark eller bestille bannere på mere end 1.000 af de mest besøgte hjemmesider i Danmark, herunder på aviserne og de elektroniske mediers sider. Via de såkaldte algoritmer i systemet sikres det, at boligen vises til de mest sandsynlige købere -både kunder, som har vist interesse for kundens eller en lignende bolig, men også personer med en boligsøgende adfærd på nettet.-Det har været vigtigt for os at skabe et produkt, der er effektivt og samtidig sikrer, at vores kunder ikke betaler mere end højst nødvendigt for annonceringen. Derfor skal boligerne vises overfor de, der har en boligsøgende adfærd, og ikke overfor et mere eller mindre tilfældigt udvalg af internetbrugere, siger Nicky Rud De forskellige muligheder for annoncering er samlet i fire pakker, hvor en særlig &quot; Boost-pakke&quot; giver mulighed for virkelig at sætte tryk på markedsføringen i en kort periode, f. eks. op til afholdelse af åbent hus på boligen.-Naturligvis kan man fortsat vælge at lade os stå for det hele, siger Nicky Rud, og tilføjer: - De nye løsninger giver blot nogle flere valgmuligheder og en større gennemsigtighed i processen for de, der gerne vil have indflydelse på markedsføringen. Samtidig får man adgang til at anvende de systemer og aftaler som EDC har med de største medier på nettet. Har man ikke interesse i dette, sørger vi selvfølgelig som hidtil for at markedsføre boligen både på nettet og i lokalaviserne.Det nye værktøj har fået navnet EDC Effekt og er allerede nu tilgængeligt via den personlige side på ' Mit EDC' på edc.dk.EDC anvender markedets mest avancerede digitale værktøj, der gør det muligt at finde de købere, der er de mest sandsynlige købere til en given bolig.EDC samler data om kundernes onlineadfærd og identi-ficerer både de potentielle og aktivt boligsøgende. Teknologien samler internetbrugernes data og segmenterer dem, så vi præcist rammer de interesserede købere til kundens bolig -ikke kun når de besøger edc. dk, men også når de besøger andre hjemmesider.Hertil benytter EDC mere end 1000 hjemmesider, heriblandt de 20 største i Danmark, der besøges af næsten alle danskere. Herudover anvendes både Facebook og Google samt en lang række lokale medier over hele landet.Foto nicky De forskellige muligheder for annoncering er samlet i fire pakker, hvor en særlig &quot; Boost-pakke&quot; giver mulighed for virkelig at sætte tryk på markedsføringen i en kort periode, f. eks. op til afholdelse af åbent hus på boligen. Nicky Rud, Partner, afdelingsleder, ejendomsmægler, EDC Poul Erik Bech Næstved, er sammen med kollegerne klar til at fortælle meget mere om de mange muligheder hos EDC.På baggrund af tre års erfaringer med disse muligheder har EDC's ejendomsmæglere oplevet stor interesse fra mange sælgere for at få nærmere indblik i, hvordan markedsføringen af boligen kan målrettes præcis mod de mest sandsynlige købere.
+        </div>
+        <footer>
+          <em>Ugebladet Næstved</em>
+          &nbsp;·&nbsp; 2017-03-07
+          &nbsp;·&nbsp; e6250d8a
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.596</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Stevns og kunst</h4>
+        <div>
+          STEVNS: Med staffeli, malingtuber og pensler har danske kunstnere gennem tiden rejst kongeriget tyndt og skildret alt fra fredelige gadekær over idylliske skovbryn til forrevne strandkanter. I SMK's store kunstsamling findes flere tusind værker med motiver fra danske byer og landskaber, og nu kan de udforskes hjemmefra.SMK har nemlig lanceret det nye digitale kort, Kunstens Danmarkskort, og inviterer alle til at tage på en online kunstrejse og opleve det danske land set med kunsternes øjne.I otte uger sætter SMK fokus på otte forskellige danske områder - og i uge 14 zoomes der ind på Sjælland og Lolland-Falster. Det foregår i Facebookgruppen ' Kunstens Danmarkskort', hvor der fra mandag 5. april og ugen igennem deles ud af lokale kunstværker og gode kunsthistorier fra Sjælland og Lolland-Falster - heriblandt fra Stevns.Kunstens Danmarkskort, som kan ses på danmarkskort.open. smk. dk, er lavet ved hjælp af kunstig intelligens, som har placeret kunstværkerne på kortet ud fra titler og beskrivelser.-SMK har en kæmpestor kunstsamling, men hvor skal man begynde, hvis man gerne vil på opdagelse? Et danmarkskort giver en helt umiddelbar indgang, hvor man for eksempel kan starte i sin hjemstavn.Samtidig kan vi forhåbentlig trække på den store viden, som alle danskere har om bestemte områder. Har vi placeret kunstværkerne rigtigt? Vi håber, at brugerne vil hjælpe os med at opdatere Kunstens Danmarkskort, siger Jonas Heide Smith, der er leder af Den Digitale Enhed på SMK.Kender man til det nøjagtige gadehjørne eller det præcise sted i skoven, hvor et motiv stammer fra, kan man foreslå en ny placering på kortet. SMK gennemgår alle henvendelser og opdaterer kortet løbende.Omkring 4.000 kunstværker er blevet placeret på Kunstens Danmarkskort.
+        </div>
+        <footer>
+          <em>Stevnsbladet</em>
+          &nbsp;·&nbsp; 2021-04-07
+          &nbsp;·&nbsp; e834022c
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.521</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.664</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Han er Sønderjyllands svar på Mærsk Mc-Kinney Møller: Her er Danfoss-rigmandens store projekter</h4>
+        <div>
+          Jørgen Mads Clausen har ført sin fars livsværk videre. Danfoss blev grundlagt i 1933 på forældrene Mads og Bitten Clausens gård i Nordborg på Nordals og har nu udviklet sig til et af dansk erhvervslivs flagskibe med over 26.000 medarbejdere og aktiviteter i 100 lande. Jørgen Mads Clausen blev administrerende direktør i 1996 og i 2008 forlod direktørstolen til fordel for formandsposten.Jørgen Mads Clausen var en markant fortaler for Sønderborgmotorvejen mellem Kliplev og Sønderborg, der åbnede i 2012 som det første infrastrukturprojekt udført i offentligt-privat samarbejde (OPP).Fødeøen Als og omegn er Jørgen Mads Clausens hjertebarn. Gennem familiefonden, Bitten og Mads Clausens Fond, støtter og investerer han i et utal af projekter særligt i Sønderborg. Det gælder eksempelvis havneprojektet, butikscentret Borgen, sygehuset, diverse institutioner og kunst- og kulturliv. Eksempelvis var Jørgen Mads Clausen med helt fra idéfasen i videns- og kulturhuset Alsion i Sønderborg, og han er lige nu involveret i at opføre et stort ferieresort i nærheden af Danfoss. Jørgen Mads Clausen har også spillet en vigtig rolle for tilblivelsen af Sønderjysk Elitesport, bedre kendt som SønderjyskE.Jørgen Mads Clausen har oprettet et ventureselskab under Danfoss, ligesom han har brugt meget af sit liv på at lave lobbyarbejde til iværksætteriets fordel. I ti år har han været bestyrelsesformand i Højteknologifonden, der i dag hedder Innovationsfonden, hvor han har været med til at uddele midler til lovende iværksætter- og forskningsprojekter. I dag drømmer han om at forene Odense og Sønderjylland i et højteknologisk mekka for robotter og kunstig intelligens via Als-Fyn bro.Danskerne interesserer sig ikke nok for natur og teknik. Det var en af Jørgen Mads Clausens helt store kæpheste, da han i 90'erne fik ideen til at forene teknologi, industri og naturvidenskab med leg i en kæmpemæssig oplevelsespark. Selvom parken, der åbnede i 2005, hvert år tiltrækker tusindvis af gæster til Als, har den undervejs kæmpet med underskud. Men det er Jørgen Mads Clausen ligeglad med, for parken er ikke sat i verden for at skabe overskud - den har udelukkende til formål at vække danskernes interesse for naturvidenskab.
+        </div>
+        <footer>
+          <em>Dagbladet-Holstebro-Struer.dk</em>
+          &nbsp;·&nbsp; 2019-03-03
+          &nbsp;·&nbsp; e719fb19
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.662</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.586</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.629</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Spil på VM slår rekord: - Hellere 10.000 kunder, der bruger 100 kroner, end omvendt</h4>
+        <div>
+          Danske Spils Oddset slår rekorder i disse uger, hvor VM i fodbold afvikles. Spiludbyderen forventer en omsætning under VM på lige under 700 millioner kroner, og det er mere end en tredobling i forhold til det seneste VM, hvor Danmark deltog. I 2010 omsatte man for 280 millioner kroner, og ved VM i 2014, der var uden dansk deltagelse, lød omsætningen på 582 millioner kroner.Alene i den første uge af VM var der 90.000 kunder, der spillede online på slutrunden, men selv om succesen gør glæde hos Danske Spil, er man meget opmærksom på at forebygge ludomani.Pressechef Marie Westergaard hæfter sig ved, at gennemsnitsindskuddet for spillere er 130 kroner.- Vi vil hellere have 10.000 kunder, der bruger 100 kroner, end omvendt, siger hun.- Vi vil gerne have, at VM skal være folkeligt, og at folk spiller for mindre beløb. Det betyder også, at vi har en klar strategi om ikke at lokke folk ind med store bonustilbud.Derudover har Danske Spil kontinuerligt en spilscanner, en algoritme, der overvåger folks spil og kan føre til, at man bliver kontaktet, hvis man eksempelvis spiller meget eller taber meget.- Men vi må også være ærlige og sige, at vi ikke kan bremse alle her og nu. Man udvikler ikke ludomani på én dag, så derfor kigger vi efter tegn på bekymrende spiladfærd over en længere periode. Hvis du på en dag taber et stort beløb, er det ikke ensbetydende med, at vi ringer, siger Marie Westergaard.Der er dog også grænser for, hvor meget folk kan sætte ind på en spillekonto pr. dag.En slutrunde, hvor Danmark er med, øger Danske Spils omsætning med 10-30 procent.Ifølge Danske Spils chef for sportsspil, Jens Nielsen, har dette VM været udfordrende for spillerne på grund af flere overraskelser. Alligevel er mere end 80 procent af indskuddene blev udbetalt igen som præmier.Danske spil på VMI alt forventer Danske Spil en VM-omsætning på 700 millioner kroner.Indskuddet på Danske Spils Oddset satte i sidste uge (uge 26) rekord for uge-omsætning med lidt mere end 180 millioner kroner. Ugen bød blandt andet på Danmarks ottendedelsfinale mod Kroatien.I forbindelse med kampen mod Kroatien var der mere end 50.000 forskellige onlinekunder inde og spille på kampen.Da Danmark mødte Australien i gruppespillet, blev der spillet cirka 170.000 spil (forskellige væddemål) før og under kampen online. I alt spillede cirka 46.000 forskellige onlinekunder på kampen.Kampene med dansk deltagelse har været de mest populære. Derfor ventes omsætningen at falde lidt, efter Danmark røg ud af turneringen. Finale og semifinaler ventes dog at blive årets største på Oddset.Omsætningen hos Danske Spil er fordelt ligeligt mellem spil online og i butikker.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2018-07-05
+          &nbsp;·&nbsp; e6d0b8bb
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.857</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.575</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.68</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.631</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hedgefonde satser heftigt imod danske aktier</h4>
+        <div>
+          AVISEN Af Eksklusivt for kunderUdenlandske hedgefonde har væddet 5 mia. kr. på, at danske selskabers aktier kuldsejlerI løbet af den seneste måned har 20 forskellige udenlandske hedgefonde spekuleret på et fald i danske aktier. Der er tale om den mest omfattende sats mod danske virksomheder, såkaldt shortselling, siden Finanstilsynet begyndte at registrere den type aktioner.&quot;Man kigger efter, hvad der ikke har fået så mange tæsk, og så prøver man at finde noget, der er prissat lidt i den dyre ende i en forventning om, at intet bliver fritaget fra en nedtur,&quot; siger Peter Brink Madsen, fondmanager og partner Aros Capital, en dansk-britisk kapitalfond, der ofte shorter på det danske marked.At shorte vil sige, at spekulanter låner aktier og sælger dem videre i forventning om, at de er steget i værdi, når de skal købes tilbage.I alt har hedgefonde fra primært London og New York satset over 5 mia. kr. på, at de danske aktier vil falde. En af de virksomheder, som nu bliver satset imod af en britisk hedgefond, er medicoselskabet Coloplast.&quot;Der kan jo være nogle, der synes, at en økonomisk krise lurer. I en økonomisk krise plejer de offentlige kasser at lukke i rundt omkring, og fordi vi har mange tilskudsberettigede produkter, så kunne der være en interesse for at shortselle vores aktie,&quot; siger Ian Christensen, vicechef for investor relations i Coloplast.Større udsving forudeHos kapitalfonden Aros Capital er man ikke overrasket over, at danske aktier netop nu har vist sig på radaren hos internationale hedgefonde.&quot;Danmark er ikke længere isoleret i verden. Alt kan købes og handles. Du kan sidde med skærm og et system og se, hvad der handles dyrt og billigt, og hvad der har klaret sig godt. Og det danske marked har klaret sig generelt bedre end andre europæiske index som Eurostoxx eller tyske DAX,&quot; siger Peter Brink Madsen fra Aros Capital, der ikke i øjeblikket har short-positioner i danske aktier.Den vurdering møder opbakning hos Mads Zink, chefhandler i Danske Bank, som er en af de personer, der følger shortselling tættest i Danmark. Han vurderer, at det danske aktiemarkeds formåen giver forventninger om, at man nødvendigvis står over for en nedtur. Han vurderer samtidig, at spekulanterne vil gøre det danske aktiemarked mere volatilt.&quot;De mange hedgefondes belejring af det danske aktiemarked vil betyde, at vi skal vænne os til større udsving i aktiemarkedet, end vi har set tidligere,&quot; siger Mads Zink.Han peger på, at Finanstilsynet kun registrerer de større short-positioner på mere end en halv pct. af et selskabs aktiekapital. Dermed kan spekulationen reelt være endnu mere omfattende.Danske forbindelserSelvom de internationale hedgefonde baserer deres investeringer på computer-algoritmer, har de også flere forbindelser til Danmark.I den amerikanske hedgefond AQR, der har spekuleret mod FLSmidth og Vestas, indtager danske Lasse Heje Pedersen en nøglerolle udover sit arbejde som professor ved Copenhagen Business School. Lasse Heje Pedersen vil dog ikke kommentere på sin rolle i AQRs shorting af danske aktier.Hos Coloplast er man opmærksom på interessen fra udlandet, men Ian Christensen tager situationen med ro.&quot;At en hedgefond shortseller er jo deres eget syn på, om Coloplast-aktien skal gå op eller ned. Vi tager gerne en snak med dem, hvis de har lyst til at høre, hvordan vi driver vores forretning heroppe,&quot; siger Ian Christensen.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-09-08
+          &nbsp;·&nbsp; e533ef78
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.907</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.682</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.596</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.613</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danmark og Slesvig-Holsten genstarter det nære parløb</h4>
+        <div>
+          Danmarks udenrigsminister og Slesvig-Holstens ministerpræsident mødtes lørdag til de danske møder. Over en solid frokost fik de talt om corona, uddannelse, klima, energi og genstartet kulturudveksling.Flensborg: Danmark og Tyskland har mere til fælles end en landegrænse.Det bekræftede Danmarks udenrigsminister, Jeppe Kofod (S), og Slesvig-Holstens ministerpræsident, Daniel Günther fra det konservative CDU, over for hinanden, da de lørdag mødtes over en dansk frokost med sild og snaps i det danske generalkonsulat i Flensborg.Begge var i Flensborg som del af det danske mindretals årsmøder.Det var det første fysiske dansk-slesvig-holstenske topmøde på tværs af grænsen siden august, og begge glædede sig over den gradvise tilbagevenden til normaliteten, som mødet symboliserede.- Coronapandemien har også påvirket forholdet over grænsen og det tætte samarbejde, der normalt er i grænseområdet mellem Danmark og Tyskland, sagde udenrigsminister Kofod.Hvilket blev bekræftet af ministerpræsident Daniel Günther.- Det er atypisk, at der er så lidt kontakt, og det er godt, at det nu kommer i gang igen, mente Günther.Frokostmødet var derfor en kærkommen lejlighed for Danmark og Slesvig-Holsten til at genstarte den motor for vækst og samarbejde, som begge anser grænselandet for at være. Diskussionen over sildemadderne omhandlede både genstarten af dansk-tysk kulturudveksling, udbygningen af energi- og klimasamarbejdet, og en styrkelse af grænseoverskridende uddannelsesinitiativer.Mangler arbejdskraft- Vi oplever mangel på faglært arbejdskraft inden for energi- og klimaområderne på begge sider af grænsen, så vi vil derfor igangsætte et samarbejde over grænsen for at få unge til at vælge disse fag, fortalte ministerpræsidenten uden dog at kunne komme ind på specifikke initiativer.Udenrigsministeren og ministerpræsidenten drøftede også øget samarbejde inden for digitalisering, brug af kunstig intelligens og ikke mindst den igangværende coronapandemi.Her takkede Daniel Günther endnu engang Danmark for de Astrazenica-vacciner, som danskerne havde til overs og lånte Slesvig-Holsten. Ingen af ministrene kom ind på, hvad Danmark får retur.- Vi var kun glade for, at vi kunne hjælpe Slesvig-Holsten, påpegede Jeppe Kofod og understregede, at en god vaccineudrulning i Slesvig-Holsten også kommer Danmark til gode.- Det er også i vores interesse, at man kan færdes mere frit over grænsen, mente Kofod.De to ministre kunne fortælle, at Slesvig-Holsten hele tiden har været grundigt informeret om alle de tiltag, som den danske regering har taget om coronarestriktioner og grænsekontrol.- Til tider har vi endda været bedre orienteret fra dansk side, end vi blev fra Berlin, sagde Günther.Han tog det ikke ilde op, at det kun havde drejet sig om at blive informeret, mens det havde knebet med koordineringen af tiltagene. Lige på det punkt, sagde han, havde det været tydeligt, at han kun var ministerpræsident og ikke del af den tyske regering. Den slags foregik mellem lande, ikke mellem land og delstat.- For os var det bare vigtigt, at vi blev informeret, og det blev vi, sagde Günther.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2021-05-29
+          &nbsp;·&nbsp; e849d0c5
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.82</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.675</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.534</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.648</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Skype-investor i nyt eventyr</h4>
+        <div>
+          Det skal være lettere for bl.a. bladhuse at nå ud til deres målgrupper og derigennem øge indtjeningen. Det er visionen bag iværksættervirksomheden Ocast, der er stiftet af svenske Eric Gisaeus, og som nu får et rygstød fra den danske iværksætter og Skype-investor Morten Lund.&quot;Vi bygger verdens bedste mediekit-løsning for udgivere, mediegrupper og influencers,&quot; skriver Mike Radoor, adm. direktør i Ocast i en kommentar til Børsen.&quot;Morten (Lund, red.) bakker Ocast op, og dealen indebærer, at han på sigt får en minoritetsaktiepost,&quot; fortsætter han.Ocasts algoritmer hjælper dets kunder med at afkode brugernes færden. Det sker bl.a. gennem aflæsning af antallet af sidevisninger og følgere på sociale medier som Instagram.Og noget tyder på, at der er hårdt brug for nytænkning inden for annoncesalg i mediebranchen. Således kæmper bladhuse i hele verden med en nedadgående salgskurve. Senest indledte JP/Politikens Hus en fyringsrunde grundet svigtende annoncesalg.Morten Lund blev hovedrig i forbindelse med salget af Skype til Ebay i 00'erne. Herefter gik han konkurs, men er siden kommet på benene igen.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-09-06
+          &nbsp;·&nbsp; e5df16b6
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.794</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.591</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nørrebroer har stiftet populær restaurant-app</h4>
+        <div>
+          Morten Lie Jørgensen fra Nørrebro er stifteren af restaurantappen ' Eatie'. Appen overskueliggør danske restauranters anmeldelser samt booking. Morten Lie Jørgensen har udvidet virksomheden til Sverige med flere end 100.000 brugere om måneden.Direktøren og nørrebroeren havde en mission. Det var at samle Google, Facebook og Tripadvisor i ét, når det handler om spisesteder. Det gør det nemmere for folk at finde det helt rette spisested og booke et bord.» Eatie er til for at skabe overblik og gennemsigtighed på den danske restaurantscene. På appen har vi indsamlet over 2,5 millioner gæsteanmeldelser for alle landets spisesteder.På den måde kan man nemt få overblik over, hvordan spisestederne er anmeldt på tværs af mange forskellige hjemmesider, « siger Morten Lie Jørgensen, som er direktør i Eatie.På baggrund af en algoritme har Eatie skabt en top 5 over Nørrebros spisesteder på baggrund af anmeldelser. Den ser sådan her ud netop nu: 1. Ristet Rug -9.8 ud af 10 2. Koelschip -9.7 3. Pico Pizza -9.6 4. Depanneur -9.6 5. PLANT POWER FOOD -9.5.
+        </div>
+        <footer>
+          <em>Nørrebro Nordvest Bladet</em>
+          &nbsp;·&nbsp; 2019-11-05
+          &nbsp;·&nbsp; e76ce0df
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.924</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.589</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Han er Sønderjyllands svar på Mærsk Mc-Kinney Møller: Her er Danfoss-rigmandens store projekter</h4>
+        <div>
+          Flagskibet Danfoss billedePå øverste etage i Danfoss' hovedkvarter på Als hænger portrætter af alle tidligere topchefer. Her ses Jørgen Mads Clausen med portrætterne af sin mor, Bitten Clausen, og sin far, Mads Clausen, der grundlagde virksomheden. Foto: Jacob SchultzJørgen Mads Clausen har ført sin fars livsværk videre. Danfoss blev grundlagt i 1933 på forældrene Mads og Bitten Clausens gård i Nordborg på Nordals og har nu udviklet sig til et af dansk erhvervslivs flagskibe med over 26.000 medarbejdere og aktiviteter i 100 lande. Jørgen Mads Clausen blev administrerende direktør i 1996 og i 2008 forlod direktørstolen til fordel for formandsposten.Sønderborgmotorvejen billedeInden Sønderborgmotorvejen blev åbnet i 2012, kunne cyklister give den gas på den nye asfalt. ArkivfotoJørgen Mads Clausen var en markant fortaler for Sønderborgmotorvejen mellem Kliplev og Sønderborg, der åbnede i 2012 som det første infrastrukturprojekt udført i offentligt-privat samarbejde (OPP).Lokalområdets tillidsmand billedeDronning Margrethe, Kronprinsesse Mary og Kronprins Frederik var royale gæster ved indvielsen af Alsion, Syddansk Universitet og Forskerpark Syd i 2007.Fødeøen Als og omegn er Jørgen Mads Clausens hjertebarn. Gennem familiefonden, Bitten og Mads Clausens Fond, støtter og investerer han i et utal af projekter særligt i Sønderborg. Det gælder eksempelvis havneprojektet, butikscentret Borgen, sygehuset, diverse institutioner og kunst- og kulturliv. Eksempelvis var Jørgen Mads Clausen med helt fra idéfasen i videns- og kulturhuset Alsion i Sønderborg, og han er lige nu involveret i at opføre et stort ferieresort i nærheden af Danfoss. Jørgen Mads Clausen har også spillet en vigtig rolle for tilblivelsen af Sønderjysk Elitesport, bedre kendt som SønderjyskE.Iværksætteri og innovation billedeTeknologisk Institut i Odense udvikler blandt andet robotløsninger inden for velfærdsområdet. Jørgen Mads Clausen drømmer om et tættere samarbejde mellem Odense og Sønderjylland. Robert Wengler/ScanpixJørgen Mads Clausen har oprettet et ventureselskab under Danfoss, ligesom han har brugt meget af sit liv på at lave lobbyarbejde til iværksætteriets fordel. I ti år har han været bestyrelsesformand i Højteknologifonden, der i dag hedder Innovationsfonden, hvor han har været med til at uddele midler til lovende iværksætter- og forskningsprojekter. I dag drømmer han om at forene Odense og Sønderjylland i et højteknologisk mekka for robotter og kunstig intelligens via Als-Fyn bro.Danfoss Universe billedeDen Blå Kube (firkanten i baggrunden) er blevet vartegnet for Danfoss Universe. Jørgen Mads Clausen købte den under en udstilling i Hannover i år 2000. ArkivfotoDanskerne interesserer sig ikke nok for natur og teknik. Det var en af Jørgen Mads Clausens helt store kæpheste, da han i 90'erne fik ideen til at forene teknologi, industri og naturvidenskab med leg i en kæmpemæssig oplevelsespark. Selvom parken, der åbnede i 2005, hvert år tiltrækker tusindvis af gæster til Als, har den undervejs kæmpet med underskud. Men det er Jørgen Mads Clausen ligeglad med, for parken er ikke sat i verden for at skabe overskud - den har udelukkende til formål at vække danskernes interesse for naturvidenskab.
+        </div>
+        <footer>
+          <em>Folkebladetlemvig.dk (Lemvig Folkeblad)</em>
+          &nbsp;·&nbsp; 2019-03-03
+          &nbsp;·&nbsp; e719fb15
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.65</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.527</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.598</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nytteværdi. Offentligt eller privat forbrug</h4>
+        <div>
+          Det interessante er nu, at danskerne efter finanskrisen og sikkert også som konsekvens af et helt andet fokus på miljø og bæredygtighed har reduceret deres privatforbrug betydeligt. Vi har fået en helt andet tilgang til det at forbruge.Samtidig er det bare et faktum, at hele den offentlige sektor skriger på flere midler - nogle af problemerne kan med garanti skyldes, at skattekronerne ikke anvendes optimalt, men når man ser på, hvordan daginstitutionerne, undervisningssektoren, sundhedssektoren, ældreplejen og alle øvrige kerneområder i velfærdsstaten vånder sig og gisper efter luft, kunne man måske forestille sig, at danskerne i stedet for endnu et fladskærms-tv hellere vil bruge lidt ekstra lønkroner til offentlig forbrug, fx i ens børns daginstitution. Måske den enkelte rent faktisk fik større nytte af det?Kunne man derfor forestille sig, at danskerne i en årrække betalte lidt mere i skat til at imødekomme efterspørgslen på offentlige ydelser, mens vi venter på, at den teknologiske udvikling med robotteknologi og kunstig intelligens igen gør det muligt at sænke skatten - således at vi alle hele tiden får største mulig nytte af vores lønkroner: for det er jo det, det drejer sig om.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2019-06-26
+          &nbsp;·&nbsp; e7401ba1
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.582</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.638</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.536</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.654</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EDC introducerer ny markedsføringsform</h4>
+        <div>
+          EDC introducerer nu EDC Effekt, der er værktøj, hvor man selv kan styre meget af sin bolis markeds-føringIntelligente markedsføringsløsninger på nettet, hvor boligen annonceres overfor netop de potentielle købere, der formodes at have størst interesse i den pågældende ejendom, har eksisteret i nogle år.EDC var blandt de første til at udnytte de nye muligheder og har anvendt intelligente markedsføringsløsninger i tre år. Nu tager Danmarks største mæglerkæde skridtet videre og introducerer den næste generation af værktøjet. På den måde får boligsælgeren selv mulighed for at planlægge og styre markedsføringen af sin bolig på nettet.&quot;Nogle kan godt lide selv at styre og dosere markedsføringen af deres bolig, og andre er bare fascineret af, hvor præcist man kan ramme potentielle købere,&quot; fortæller Morten Riis Nielsen fra EDC Poul Erik Bech i Esbjerg i en pressemeddelelse.&quot;Derfor har vi nu lavet en løsning, hvor de kunder, der har lyst, med få klik selv kan håndtere markedsføringen af deres bolig på nettet via deres egen personlige side på edc.dk.&quot;Den rette målgruppeMed den nye løsning kan boligsælgere hos EDC nu eksempelvis bestille en kampagne på Facebook, sikre sig en fremhævet placering i søgeresultaterne på de største boligsites i Danmark eller bestille bannere på mere end 1.000 af de mest besøgte hjemmesider i Danmark, herunder på aviserne og de elektroniske mediers sider.Via de såkaldte algoritmer i systemet sikres det, at boligen vises til de mest sandsynlige købere - både kunder, som har vist interesse for kundens eller en lignende bolig, men også personer med en boligsøgende adfærd på nettet.&quot;Det har været vigtigt for os at skabe et produkt, der er effektivt og samtidig sikrer, at vores kunder ikke betaler mere end højst nødvendigt for annonceringen. Derfor skal boligerne vises overfor de, der har en boligsøgende adfærd, og ikke overfor et mere eller mindre tilfældigt udvalg af netbrugere,&quot; siger Morten Riis Nielsen.Boost markedsføringenDe forskellige muligheder for annoncering er samlet i fire pakker, hvor en særlig -Boost-pakke- giver mulighed for virkelig at sætte tryk på markedsføringen i en kort periode, f.eks. op til afholdelse af åbent hus på boligen.&quot;Naturligvis kan man fortsat vælge at lade os stå for det hele,&quot; siger Morten Riis Nielsen, &quot;men de nye løsninger giver blot nogle flere valgmuligheder og en større gennemsigtighed i processen for de, der gerne vil have indflydelse på markedsføringen. Samtidig får man adgang til at anvende de systemer og aftaler som EDC har med de største medier på nettet. Har man ikke interesse i dette, sørger vi selvfølgelig som hidtil for at markedsføre boligen både på nettet og i lokalaviserne.&quot;Det nye værktøj har fået navnet EDC Effekt og er allerede nu tilgængeligt via den personlige side på 'Mit EDC' på edc.dk.EDC introducerer den næste generation af værktøjet. På den måde får boligsælgeren selv mulighed for at planlægge og styre markedsføringen af sin bolig på nettet..EDC introducerer den næste generation af værktøjet. På den måde får boligsælgeren selv mulighed for at planlægge og styre markedsføringen af sin bolig på nettet..
+        </div>
+        <footer>
+          <em>Esbjerg.lokalavisen.dk (Lokalavisen Esbjerg)</em>
+          &nbsp;·&nbsp; 2017-01-19
+          &nbsp;·&nbsp; e612e523
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.592</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.643</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Excentriker giver blankocheck til studerende</h4>
+        <div>
+          Goodiepal giver undervisning samt en åben invitation til sin konto.KoncerterLine Møller BlankholmBliv klogere på radikal computermusik, når den excentriske lydkunstner Goodiepal, der blandt andet er kendt for at forære 500-kronesedler væk til folk, der køber hans plader, afholder playback- lectures på galleriet IMO.Der er ifølge Goodiepal tale om et fuldt undervisningsprogram, hvor han spiller drømmende synthesizermusik, mens der på storskærm kører videoklip fra hans tidligere foredrag om radikal computermusik - det vil sige musik henvendt til kunstig intelligens i fremtiden.»Studiehjælpsplade«Det er også muligt at erhverve sig en lp med fremtidsmusikken til spotpris.Han kalder det en »studiehjælpsplade«, for med i købet får man enten en blankocheck til Goodiepals konto, en kopi af hans hævekort eller nogle særlige pengesedler af møntfoden romani, han har fremstillet i samarbejde med danske romaer, og som kan omveksles, når romaerne får deres eget land.
+        </div>
+        <footer>
+          <em>iBYEN.dk</em>
+          &nbsp;·&nbsp; 2011-05-14
+          &nbsp;·&nbsp; e2ae5405
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.894</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.687</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.614</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Vores dårlige samvittighed må ikke blokere vejen til fremtidens Grønland</h4>
+        <div>
+          Der bor 56.000 mennesker iGrønland. To af dem repræsenterer verdens største ø i det danske folketing. De var den største oplevelse, da Folketinget forleden holdt afslutningsdebat forud for sommerferien.Aaja Chemnitz Larsen (Inuit Atagatigit) og Aki-Matilda Høegh-Dam (Siumut) holdt et par spændende og meget anderledes indlæg i forhold til deres danske folketingskolleger.Naturligvis koncentrerer de to grønlandske repræsentanter sig om forholdet mellem Danmark og Grønland - og om Grønlands forhold til den øvrige verden i skæret af den overvældende interesse, stormagter som USA, Rusland og Kina på det seneste har vist for Grønland.De to grønlandske folketingsmedlemmer gik på talerstolen på et tidspunkt, hvor der dels bejles til Grønland fra mange sider - dels på et tidspunkt, da en stor gruppe grønlændere, især de unge, tager afstand fra Danmark. Mange unge grønlændere - og i vid udstrækning de bedst uddannede - ønsker total selvstændighed. De ser ikke nogen fremtid for Grønland i et fortsat rigsfællesskab med Danmark.Vi kan selv, og vi vil selv, siger de.I betragtning af denne situation var de grønlandske folketingspolitikeres indlæg en fornøjelse.De var præget af en forsonlig, varm tone. De glædede sig over forståelse og samarbejdsvilje hos mange danske folketingsmedlemmer - og de opfordrede Folketinget til at være mere opmærksom på Grønland. Der var noget højskolepræget over de to grønlænderes indlæg, som en del af de danske folketingsmedlemmer kunne lære af. Der var luft over de grønlandske indlæg og frisk ilt til det videre samarbejde mellem Grønland og Danmark. Talerne bad om større dansk forståelse og mere klarsyn - på rigsfællesskabets vegne. Talerne udtrykte visioner om en fremtid sammen med Danmark. Men med grønlandsk høflighed formåede de alligevel også at sige, at Danmark må flytte sig.Der er ingen tvivl om, at Danmark må lære at se på Grønland med andre øjne end hidtil. Vi må i højere grad begynde at se en partner i stedet for en koloni, se samarbejdsmuligheder i stedet for bloktilskud, se et reelt fællesskab i stedet for et rigsfællesskab på danske præmisser. Kongehuset har gennem årene ydet en stor indsats i forhold til Grønland. Men et sandt fællesskab er for de unge grønlændere ikke dækket ind, fordi &quot;Dannebrog&quot; af og til anløber Nuuk. Det danske syn på Grønland er givetvis stadig præget af fordomme og af såvel naiv romantik som gustent overlæg. Og måske aller mest præget af dårlig samvittighed, hvad der i høj grad er grund til. Men nu må tiden være inde til, at den skrammede fortid får lov at være. Nu må vi, Danmark og Grønland, starte på en frisk.Det danske folketing må sætteGrønland på dagsordenen. Start med at sige undskyld én gang for alle - for tvangsforflyttelser, for fjernelse af børn, for løgne og tomme løfter. Undskyld. Og lad os så komme videre - sammen. Nu skal vi danskere også kunne ranke ryggen og se grønlænderne i øjnene - og stikke hånden frem (trods corona) - og sige: Kære venner - hvad kan vi bruge hinanden til, og hvordan kan vi sammen gøre både Grønland og Danmark til et bedre sted at leve? Naivt? Ja, det kan godt være.Men det er nødvendigt. Vi har holdt mund så længe - og veget uden om i så mange år - at der skal kraftige stemmer til for at råbe det unge Grønland op. Det skal vi begynde at gøre - nu. Ellers kommer kongeskibet en dag til at mangle en kajplads.Kære venner - hvad kan vi bruge hinanden til, og hvordan kan vi sammen gøre både Grønland og Danmark til et bedre sted at leve?.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-06-26
+          &nbsp;·&nbsp; e7c4bd02
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.628</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.624</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Lad mig fortælle dig en sandhed - det perfekte match findes ikke</h4>
+        <div>
+          Medierne masseproducerer fortællingen om den eneste ene og det perfekte match.»Er I blevet kærester?«. Spørgsmålet har jeg fået cirka et tusind gange, siden jeg kastede mig ud i et mærkværdigt eventyr til Bolivia med en fremmed mand, jeg udelukkende valgte som rejsemakker, fordi han havde det samme navn i sit pas som min ekskæreste, Mads Fisker.Ekskæresten slog op, og da flybilletten allerede var betalt, og navnet på billetten ikke kunne ændres, fandt jeg en ny Mads Fisker på Facebook, der takkede ja til at tage med. Jeg fortæller om hele redeligheden i en Politiken Podcast,-Mads Fisker &amp; Mads Fisker-, der blev offentliggjort i forrige uge.HØR PODCAST 'MADS FISKER OG MADS FISKER'Jeg var selv drevet af nysgerrigheden efter et skæbnebestemt kærlighedseventyr, da jeg fandt den nye Mads Fisker på Facebook. Tænk sig, hvis hele denne misere skulle ende med, at jeg omsider fandt det perfekte match   og så endda med min ekskærestes navnebror!Pludselig så jeg mig selv udefra som hovedrolleindehaver i en af de utallige   syndigt trivielle   Hollywoodfilm, jeg lige siden mine teenageår har grint og grædt over på sofaen søndag eftermiddag med heftige tømmermænd.Og det var ikke kun mig, der faldt i. Så snart min historie var ude, stod Aftenshowet og Go- Morgen Danmark på spring for at fortsætte min kærlighedsforestilling og inviterede mig i studiet. Jeg takkede pænt nej.Hverken et algoritme-arrangeret ægteskab, et swipe på Tinder eller en navnesøgning på Facebook kan få mig til at falde for en andenVanessa ChristophersenHar man ikke hørt min podcast, kan jeg afsløre, at jeg ikke blev forelsket i den nye Mads Fisker.Min kærlighed var ene og alene rettet mod forestillingen om det perfekte match.Jeg havde troen på, at jeg   ligesom alle andre   forudsætningsløst kunne falde pladask for en totalt fremmed, som nu, hvor stjernerne stod rigtigt, skulle blive mit livs -Mr. Right-.Medierne masseproducerer fortællingen om den eneste ene og det perfekte match, og imens spinder datingindustrien guld på at forsøge at sætte kærligheden på formel.Indrømmet, jeg har selv swipet løs på Tinder og Happn, og jeg sidder klinet til skærmen hver eneste gang, der er nye afsnit af -Gift ved første blik-.I dag er kærligheden blevet en vare   se bare rejseselskabet Star Tour, der sender to kærlighedshungrende mennesker på romantisk ferie. »Nogen gange har kærligheden bare brug for det rigtige hotel«, skriver Star Tours pressechef.Flere søger i dag det arrangerede ægteskab, men hvor det i præmoderne tider var familien, der fandt vores udkårne, er det i stigende grad algoritmer, parterapeuter og datingbureauer, der tilbyder os »kærlighed uden faldet«, som den slovenske filosof Slavoj Zizek udtrykker det.Kærligheden kan ikke måles. Hverken et algoritme-arrangeret ægteskab, et swipe på Tinder eller en navnesøgning på Facebook kan få mig til at falde for en anden. Det er muligt, det virker for nogen, men nok aldrig for mig.Datinglivet er komplekst, og vi snyder os selv, hvis vi ukritisk køber populærkulturens forestilling om, at det perfekte match venter lige om hjørnet   og at han har en ekstra flybillet med dit navn på.Tegning. Jørn Villumsen.Tegning. Jørn Villumsen.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2016-04-23
+          &nbsp;·&nbsp; e5acd6c3
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.651</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.614</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Overblik: Det skal Samuelsen i Silicon Valley</h4>
+        <div>
+          LA-lederens første besøg i USA som udenrigsminister går til verdens teknologiske centrum, Silicon Valley.Udenrigsminister Anders Samuelsen (LA) er onsdag til fredag på besøg i Silicon Valley i Californien.Her er nogle af punkterne på turen:Wake-up call - så hurtigt går den teknologiske udvikling.- Oplæg fra tænketanken Singularity University, der også har deltaget i statsminister Lars Løkke Rasmussens (V) møder på Marienborg om den teknologiske udvikling.Iværksætteri i Silicon Valley   hvad skaber start-up miljøet?- Møde med iværksættere og deltagelse i såkaldt pitch-træning af unge danske iværksættere.ADVERTISINGDigitalisering og data - alt det vi tror fortsat er fremtid, men som for længst er nutid.- Oplæg fra Danny Lange fra Unity (tidligere Über og Amazon) om, hvad machine learning, artificial intelligence og virtual reality allerede bruges til.Møder på Stanford-universitetet om samspil mellem stater og teknologivirksomheder og anvendelse af nye teknologier i udenrigspolitikken.- Den danske udenrigsminister skal møde forskere fra Stanford samt repræsentanter fra State Department, Pentagon, Department of Homeland Security og USAid.De store tech-virksomheders rolle som partnere for nationalstater.- Apples værdiansættelse er højere end Agentina-s BNP, men hvilken gensidig samfundsværdi kan skabes ud af styrket dialog mellem stater og virksomheder?
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2017-02-22
+          &nbsp;·&nbsp; e6203922
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.501</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOLK</h4>
+        <div>
+          Mads SteffensenDR's joviale altmuligvært Mads Steffensen har sagt op for at udnytte sine talenter andetsteds.Fremover vil der være dobbelt op på radiosuccesen Mads &amp; Monopolet, som både fortsætter på P4 med Sara Bro som vært og på podcasttjenesten Podimo under navnet Mads og A-holdet.TessaRapperen Tessa havde den 1.januar fået den tjans at holde nytårstale i Deadline om den modstand, man møder, når man som kvinde udlever sin seksualitet, og om det forkvaklede kvindesyn, der får kvinder til at skamme sig over overgreb i stedet for at anmelde dem.Timnit GebruDen etiopisk-amerikanske forsker i dataetik Timnit Gebru er blevet fyret fra Google, fordi hun ikke ville holde sin forskning for sig selv. Den viser, at techgigantens brug af kunstig intelligens blandt andet til ansigtsgenkendelse kan virke diskriminerende over for ikkehvide.Ungarske filmfolkUngarns prestigiøse film-og teateruddannelse SZFE er på fjerde måned strejkeramt. De studerende vil ikke finde sig i Orbán-styrets hastigt gennemførte reform af skolen, der fik hele ledelsen til at gå af i protest, fordi den forpligter skolen til at fremme nationalistisk kunst.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2021-01-05
+          &nbsp;·&nbsp; e80f0861
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.899</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kroppens betydning</h4>
+        <div>
+          DR P1 SØNDAG 08.03 Kroppen. Hvad betyder de nye kropserfaringer, vi har fået i coronatiden? Familieterapeut Anette Due Madsen overvejer i &quot; Pilgrim&quot; kroppens betydning for, at vi kan være hinanden nær. Cand. mag.Saliha Marie Fetteh fortæller fra Jordan om kropserfaringer i islam blandt andet under ramadanen. Kunstner Cecilie Waagner Falkenstrøm fortæller om at arbejde med krop, kærlighed og kunstig intelligens. Sognepræst Morten Skovsted fortæller om nye salmer.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-05-15
+          &nbsp;·&nbsp; e7b4e299
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.936</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.529</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ledelse af den digitale arbejdsstyrke</h4>
+        <div>
+          Body Kunstig intelligens, machine learning, robotter og hele feltet af digitale assistenter er mere aktuel end nogensinde før. Trenden er global, men det er nu, den bliver til virkelighed på danske arbejdspladser.Hvad gør det ved HR- og ledelsesgerningen? Hvordan håndterer du en arbejdsstyrke med både mennesker og maskiner, hvordan balanceres de dataetiske aspekter, og hvad gør du, når robotten ryger ind i samarbejdsproblemer?Det er temaet, når CfL i samarbejde med Knowit inviterer til CfL-Briefing med oplæg og debat.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-10-17
+          &nbsp;·&nbsp; e766d10e
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.816</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nytteværdi. Offentligt eller privat forbrug</h4>
+        <div>
+          LÆSERBREV: Hedengangne Svend Auken spurgte en gang: &quot; Hvorfor er privat forbrug partout bedre end offentligt forbrug?&quot; Set med en økonoms briller må det gælde, at den enkelte får størst mulig nytte af sin indkomst.Det interessante er nu, at danskerne efter finanskrisen og sikkert også som konsekvens af et helt andet fokus på miljø og bæredygtighed har reduceret deres privatforbrug betydeligt.Vi har fået en helt andet tilgang til det at forbruge.Samtidig er det bare et faktum, at hele den offentlige sektor skriger på flere midler - nogle af problemerne kan med garanti skyldes, at skattekronerne ikke anvendes optimalt, men når man ser på, hvordan daginstitutionerne, undervisningssektoren, sundhedssektoren, ældreplejen og alle øvrige kerneområder i velfærdsstaten vånder sig og gisper efter luft, kunne man måske forestille sig, at danskerne i stedet for endnu et fladskærms-tv hellere vil bruge lidt ekstra lønkroner til offentlig forbrug, fx i ens børns daginstitution.Måske den enkelte rent faktisk fik større nytte af det? Kunne man derfor forestille sig, at danskerne i en årrække betalte lidt mere i skat til at imødekomme efterspørgslen på offentlige ydelser, mens vi venter på, at den teknologiske udvikling med robotteknologi og kunstig intelligens igen gør det muligt at sænke skatten - således at vi alle hele tiden får største mulig nytte af vores lønkroner.For det er jo det, det drejer sig om.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2019-06-26
+          &nbsp;·&nbsp; e73ff0ff
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.537</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.631</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.505</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fem i finale om bedre liv for en mia</h4>
+        <div>
+          Udfordringen er mere end stor for den tilbageværende håndfuld finalister i konkurrencen Danske Ideer: Målestokken for vinderen er, at han eller hun skal kunne forandre livet positivt for mere end en milliard af klodens indbyggere.Danske Ideer er den danske del af en årlig international konkurrence for unge iværksættere, hvor gevinsten er en plads på det ti uger lange sommerkursus på Singularity University i Silicon Valley, støttet af Industriens Fond.I alt meldte 60 interesserede sig til det fem dage lange undervisningsforløb med fokus på eksponentiel teknologi, computernetværk, kunstig intelligens, forretningsudvikling mv., hvorfra fem finalister blev udvalgt.Finalisterne Andrea Freundt (billedet tv.), Habib Frost, Mads Jeppe Hansen, Jens-Christian Finnerup og Mark Rees-Andersen møder den endelige dom 10. april.pmcFølg Børsen eller Del artikel
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-03-17
+          &nbsp;·&nbsp; e4ea7368
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.514</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.692</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EDC introducerer markedets mest avancerede online-markedsføring</h4>
+        <div>
+          Muligheden for at lave intelligente markedsføringsløsninger på nettet, hvor boligen annonceres overfor netop de potentielle købere, der formodes at have størst interesse i den pågældende ejendom, har været til stede i nogle år.EDC var først til at udnytte de nye muligheder og har anvendt intelligente markedsføringsløsninger i tre år. Nu tager Danmarks største mæglerkæde skridtet videre og introducerer den næste generation af værktøjet, hvor boligsælgeren selv får mulighed for at planlægge og styre markedsføringen af sin bolig på nettet.Kan selv styrePå baggrund af tre års erfaringer med disse muligheder har EDCs ejendomsmæglere oplevet stor interesse fra mange sælgere for at få nærmere indblik i, hvordan markedsføringen af boligen kan målrettes præcis mod de mest sandsynlige købere.-Nogle kan godt lide selv at styre og dosere markedsføringen af deres bolig, og andre er bare fascineret af, hvor præcist man kan ramme potentielle købere.Derfor har vi nu lavet en løsning, hvor de kunder der har lyst, med få klik selv kan håndtere markedsføringen af deres bolig på nettet via deres egen personlige side på edc. dk, fortæller Jeppe Ertman fra EDC Poul Erik Bech i Køge.Her kan boligsælgere hos EDC nu eksempelvis bestille en kampagne på Facebook, sikre sig en fremhævet placering i søgeresultaterne på de største boligsites i Danmark eller bestille bannere på mere end 1000 af de mest besøgte hjemmesider i Danmark, herunder på aviserne og de elektroniske mediers sider. Via de såkaldte algoritmer i systemet sikres det, at boligen vises til de mest sandsynlige købere, både kunder som har vist interesse for kundens eller en lignende bolig, men også personer med en boligsøgende adfærd på nettet.-Det har været vigtigt for os, at skabe et produkt der er effektivt og samtid sikrer at vores kunder ikke betaler mere end højst nødvendigt for annonceringen. Derfor skal boligerne vises overfor de der har en boligsøgende adfærd og ikke overfor et mere eller mindre tilfældigt udvalg af netbrugere, siger Jeppe Ertman.» Boostpakke «De forskellige muligheder for annoncering er samlet i fire pakker, hvor en særlig » Boost-pakke « giver mulighed for virkelig at sætte tryk på markedsføringen i en kort periode, for eksempel op til åbent hus på boligen.-Naturligvis kan man fortsat vælge at lade os stå for det hele. De nye løsninger giver blot nogle flere valgmuligheder og en større gennemsigtighed i processen for de, der gerne vil have indflydelse på markedsføringen.Samtidig får man adgang til at anvende de systemer og aftaler som EDC har med de største medier på nettet. Har man ikke interesse i dette, sørger vi selvfølgelig som hidtil for at markedsføre boligen både på nettet og i lokalaviserne, siger Jeppe Ertman.Det nye værktøj har fået navnet EDC Effekt.Om EDC EffektEDC anvender markedets mest avancerede digitale værktøj, der gør det muligt at finde de købere, der er de mest sandsynlige købere til en given bolig.EDC samler data om kundernes onlineadfærd og identificerer både de potentielle og aktivt boligsøgende.Teknologien samler internetbrugernes data og segmenterer dem, så vi præcist rammer de interesserede købere til kundens bolig -ikke kun når de besøger edc. dk, men også når de besøger andre hjemmesider.Hertil benytter EDC mere end 1000 hjemmesider, heriblandt de 20 største i Danmark, der besøges af næsten alle danskere. Herudover anvendes både Facebook og Google samt en lang række lokale medier over hele landet.
+        </div>
+        <footer>
+          <em>Dagbladet Køge</em>
+          &nbsp;·&nbsp; 2017-01-14
+          &nbsp;·&nbsp; e6112597
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.659</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Utrolige tal: Christian Eriksen koster mere end Ronaldo</h4>
+        <div>
+          I mens VM-Danmark i højere og højere grad venter på en fødsel, der skal sikre Christian Eriksens deltagelse i VM-slutrunden, er der nu ganske opsigtsvækkende nyt omkring den danske stjernespiller.Det er CIES Football Observatory, der laver løbende research om europæisk topfodbold, der har offentliggjort den seneste oversigt over transfer-værdien hos spillerne fra de seks største ligaer.Engelske Harry Kane (Tottenham) topper listen foran Neymar (PSG) med henholdsvis 201,2 og 195,7 millioner Euro, hvilket svarer til 1,498 og 1,457 milliarder danske kroner.Men med danske briller er det opsigtsvækkende, at Christian Eriksen (Tottenham) - placeret som nummer 20 på listen ligger højere end Cristiano Ronaldo (Real Madrid).Eriksens transferværdier er aktuelt målt til 106,2 millioner Euro - 791 millioner danske kroner, mens Ronaldo er sat til 770 millioner danske kroner.Værdien på hver enkelt spiller udregner CIES ud fra en algoritme, der blandt andet tager højde for alder, kontraktlængde, individuelle præstationer og aktuelle transfersituation.Der er næppe tvivl om, at en af årsagerne til Ronaldos forholdsvis beskedne placering på listen skyldes, at der aktuelt er usikkerhed omkring, hvorvidt den portugisiske verdensstjerne er på nippet til at forlade Real Madrid eller ej.VM 2018 - 4. jun. 2018 - kl. 12:58Går verden rundt: Bendtner-beslutning vækker opsigtFC København - 4. jun. 2018 - kl. 08:47Hvad nu, Bendtner? Ståle afviser FCK-drømmen
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2018-06-05
+          &nbsp;·&nbsp; e6c6f191
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.924</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.612</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.855</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske Spil indberetter over 7000 spillere for hvidvask</h4>
+        <div>
+          Der er sket en markant stigning i antallet af indberetninger om hvidvask fra Danske Spil til Bagmandspolitiet. 11 mar. 2020 kl. 07:30Del med andre: Millioner af kroner ryger hvert år igennem Danske Spil, når spillefugle forsøger at hive summer hjem på alt fra Oddset til Lotto og kasinospil. Men ud af de mange millioner løber der også kriminelles penge igennem, når de forsøger at hvidvaske beløb, der stammer fra en kriminel handling. Danske Spil har øget sin indsats mod hvidvask, og det viser sig nu ifølge spiludbyderen i antallet af indberetninger, som sker til statsadvokaten for Særlig Økonomisk og International Kriminalitet (Søik), også kendt som Bagmandspolitiet. I 2017 indberettede Danske Spil 2710 spillere, som man mistænkte for hvidvask. Tallet er i 2019 steget til 7155 indberetninger. Danske Spils CSR-direktør, Stine Hove Marsling, fortæller, at spiludbyderen i dag er mere opmærksom på svindlen, og at det er i det lys, at stigningen i antallet af indberetninger skal ses. - Vi vil simpelthen ikke tolerere, at vores spil misbruges til kriminalitet. Derfor har vi blandt andet sidste år strammet grebet, siger Stine Hove Marsling. Kriminelle kan eksempelvis vaske deres penge hvide ved at spille på meget lave odds. På den måde har de på papiret en stor chance for at få deres penge igen. Vinder de, kan de altså hæve pengene hos forhandleren, hvor de får en kvittering på, at de har vundet pengene gennem Danske Spil. Danske Spil har blandt andet taget kunstig intelligens i brug for at komme de kriminelles hvidvask til livs. Med forskellige analyseplatforme forsøger spiludbyderen at følge de enkelte spilleres forbrug og betalingsmønstre. - Hvis der er nogle uregelmæssigheder i de her mønstre, undersøger vi, om vi kan afkræfte den mistanke. - De handler både om personen, der spiller, og om spillemønstre, beløbets størrelse, eller hvor pengene kommer fra. Og hvis vi ikke kan det, så indberetter vi det til Søik, siger Stine Hove Marsling. Spiludbyderen har for nylig ændret reglerne, så spillere højest kan få udbetalt 5000 kroner kontant hos en forhandler. Tidligere kunne man få 10.000 kroner i hånden. I løbet af i år vil man også indføre nyt id-krav, hvor spillere skal identificere sig for at kunne spille. Og det betyder ifølge CSR-direktøren, at spilselskabet på den måde kan gøre det sværere for personer at bruge spillene til kriminalitet. Kun pengeinstitutterne i Danmark indberetter flere sager om hvidvask end spillebranchen. Ud af alle spiludbydere i Danmark leverer Danske Spil over halvdelen af alle indberetninger. /ritzau/
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2020-03-11
+          &nbsp;·&nbsp; e79dca4a
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.685</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.638</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>OVERBLIK: Det skal Samuelsen i Silicon Valley</h4>
+        <div>
+          KøbenhavnUdenrigsminister Anders Samuelsen (LA) er onsdag til fredag på besøg i Silicon Valley i Californien.Her er nogle af punkterne på turen:* Wake-up call - så hurtigt går den teknologiske udvikling. - Oplæg fra tænketanken Singularity University, der også har deltaget i statsminister Lars Løkke Rasmussens (V) møder på Marienborg om den teknologiske udvikling. * Iværksætteri i Silicon Valley - hvad skaber start-up miljøet?  - Møde med iværksættere og deltagelse i såkaldt pitch-træning af unge danske iværksættere. * Digitalisering og data - alt det vi tror fortsat er fremtid, men som for længst er nutid.- Oplæg fra Danny Lange fra Unity (tidligere Über og Amazon) om, hvad machine learning, artificial intelligence og virtual reality allerede bruges til. * Møder på Stanford-universitetet om samspil mellem stater og teknologivirksomheder og anvendelse af nye teknologier i udenrigspolitikken. - Den danske udenrigsminister skal møde forskere fra Stanford samt repræsentanter fra State Department, Pentagon, Department of Homeland Security og USAid.* De store tech-virksomheders rolle som partnere for nationalstater.  - Apples værdiansættelse er højere end Agentinas BNP, men hvilken gensidig samfundsværdi kan skabes ud af styrket dialog mellem stater og virksomheder? /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-02-22
+          &nbsp;·&nbsp; e6202cfd
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.508</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.629</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nu ved jeg ikke noget om fodbold, men...</h4>
+        <div>
+          Min datter henvendte sig for at få mig til at sætte hendes VM Manager hold, så hun som eneste ansatte kvinde kunne slå mændene på sin arbejdsplads. Jeg satte naturligvis et formidabelt hold.Som floppede totalt.Til gengæld havde hun - lodret ligeglad med fodbold, som hun er - tillige erhvervet et automatisk, algoritme-genereret hold, som triumferede stort.Jeg skal ikke udelukke, at ovenstående har smittet af på mit VM humør. Men torsdag gad jeg ikke danske mediers dækning af Danmark ved VM mere.For nu at gribe i egen barm skrev vi eksempelvis her på Ekstra Bladet: 'Danmark blev for anden kamp i træk offer for en VAR-kendelse og måtte nøjes med uafgjort mod Australien.'Øh, nej! Yussuf Poulsen begik bare sit tredje straffespark i to kampe. Vi skal være glade for, at kun to blev dømt og et af disse brændt. Danmark var ikke offer for noget som helst andet end egne fejl og mangler. Kan vi ikke snart blive fri for denne fornærede tilgang til fodbold?Var der ikke bare en, der kunne skrive, at dommeren på intet tidspunkt var i nærheden af at være lige så ringe til at udføre opgaven, som det danske landshold var?Men danske VM-journalister synes tilsyneladende ofte, at opgaven er at kritisere alle andre end de egentlig ansvarlige, hvis Danmark går fra banen med et tvivlsomt resultat. Som var der indbygget netop en slags algoritme i dækningen af landsholdet. Den udregner efter hvert nederlag - samt visse uafgjorte kampe - præcist, hvor den dårlige undskyldning ligger.Opgaven må vel være at spørge: 'Hvorfor mister du så mange bolde, Christian Eriksen?', 'Hvorfor stillede du igen med Sisto, Åge?', 'Hvorfor spiller du med en højrefodet venstre back?' 'Hvorfor bruger du ikke din sidste udskiftning, Åge?' 'Regner du ligefrem dine resterende spillere for ringere end dem, der var på banen?'Men ulykkelige resultater tilskrives uretfærdige eller uheldige omstændigheder. Eller enkeltpersoner (og nej, det var ikke kun Sistos skyld). Eller bare uforklarlig skæbne. Det synes endog indarbejdet i TV-kommentatorernes stemmeføring, som kun salmer kan være det i en tonedøv degn:'Arh, her kunne vi godt bruge lidt medgang fra dommeren.'Øh, nej igen. Vi kunne godt bruge, at I tager klaphatten af. I må såmænd gerne holde med Danmark. Med der dér fornærmede tilgang, når noget går Danmark imod, er som at høre en svinefarmer forklare for meget kvælstof i åen.Nu ved jeg imidlertid ikke noget om fodbold. Jeg ved kun noget om journalistik og kritik. Og hvis dækningen af Danmark ved VM i fodbold fortsætter på samme niveau, kan man lige så vel indkalde nærmeste hændervridende roligan eller sin ivrigt deltagende mormor til at kommentere og efterbehandle kampene.
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2018-06-22
+          &nbsp;·&nbsp; e6ccc753
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.737</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: FAKTA: Amerikansk festival får dansk besøg</h4>
+        <div>
+          København* SXSW består af fem branchefestivaler og 25 konferencespor og har eksisteret i mere end 30 år.* Flere bands er blevet spottet på SXSW og har senere indgået pladekontrakter med internationale selskaber. Det seneste danske eksempel er MØ, som siden er blevet en af Danmarks største succeser internationalt. * I år er Danmark repræsenteret på festivalen ved blandt andet EU-kommissær Margrethe Vestager og arkitekten Bjarke Ingels, der begge skal være med i såkaldte talks.* Man kan på festivalen se de danske kunstnere Jakob Kudsk Steensen og Christian Lemmerz folde sig ud i virtual reality-mediet og opleve en kunstig intelligens forme kunstværket &quot;Semeion&quot; skabt af gruppen Circuit Circus.* De to danskproducerede computerspil &quot;What the Golf&quot; og &quot;Felix the Reaper&quot; er begge nomineret til en Gamer's Voice Award i kategorien Video Game under SXSWs gamingfestival. * På SXSW's musikfestival kan man opleve danske navne som de aarhusianske duoer Powersolo og ZRN.* Roskilde Festival har kurateret et program, der ud over det danske band Lowly også rummer plads til talks om demokrati og korruption, performancekunst og debat om byudvikling.* Den danske performancekunstner Lilibeth Cuenca Rasmussen opfører desuden værket &quot;Tow With the Flow&quot;, der sætter fokus på bæredygtighed i tøjproduktion.Kilde: Kulturministeriet/ritzau/Denne nyhed må publiceres digitalt bag paywall fra d. 10/03/2019 20:00Denne nyhed publiceres ikke på NET-tjenesten
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-03-10
+          &nbsp;·&nbsp; e71c5390
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.758</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.624</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EDC introducerer nyt værktøj til boligsalg</h4>
+        <div>
+          HOLBÆK: Muligheden for at lave intelligente markedsføringsløsninger på nettet, hvor boligen annonceres overfor netop de potentielle købere, der formodes at have størst interesse i den pågældende ejendom, har været til stede i nogle år.EDC var først til at udnytte de nye muligheder og har anvendt intelligente markedsføringsløsninger i tre år.Nu tager Danmarks største mæglerkæde skridtet videre og introducerer den næste generation af værktøjet, hvor boligsælgeren selv får mulighed for at planlægge og styre markedsføringen af sin bolig på nettet.Og det har EDC Erland's og EDC Westermann benyttet sig af.På baggrund af tre års erfaringer med disse muligheder har EDC's ejendomsmæglere oplevet stor interesse fra mange sælgere for at få nærmere indblik i, hvordan markedsføringen af boligen kan målrettes præcis mod de mest sandsynlige købere.-Nogle kan godt lide selv at styre og dosere markedsføringen af deres bolig, og andre er bare fascineret af, hvor præcist man kan ramme potentielle købere, fortæller John Erland fra EDC Erland's, Ahlgade 3 i Holbæk.-Derfor har vi nu lavet en løsning, hvor de kunder, der har lyst, med få klik selv kan håndtere markedsføringen af deres bolig på nettet via deres egen personlige side på edc.dk.Her kan boligsælgere hos EDC nu eksempelvis bestille en kampagne på Facebook, sikre sig en fremhævet placering i søgeresultaterne på de største boligsites i Danmark eller bestille bannere på mere end 1000 af de mest besøgte hjemmesider i Danmark, herunder på aviserne og de elektroniske mediers sider.Via de såkaldte algoritmer i systemet sikres det, at boligen vises til de mest sandsynlige købere, både kunder som har vist interesse for kundens eller en lignende bolig, men også personer med en boligsøgende adfærd på nettet.-Det har været vigtigt for os at skabe et produkt, der er effektivt og samtidig sikrer, at vores kunder ikke betaler mere end højst nødvendigt for annonceringen.Derfor skal boligerne vises overfor de, der har en boligsøgende adfærd og ikke overfor et mere eller mindre tilfældigt udvalg af netbrugere, siger John Erland.De forskellige muligheder for annoncering er samlet i fire pakker, hvor en særlig » Boost-pakke « giver mulighed for virkelig at sætte tryk på markedsføringen i en kort periode, f. eks. op til at der afholdes åbent hus på boligen.-Naturligvis kan man fortsat vælge at lade os stå for det hele, siger Thomas Westermann fra EDC Westermann i Holbæk, Tølløse &amp; Svebølle og fortsætter: -De nye løsninger giver blot nogle flere valgmuligheder og en større gennemsigtighed i processen for de, der gerne vil have indflydelse på markedsføringen.Samtidig får man adgang til at anvende de systemer og aftaler, som EDC har med de største medier på nettet.Har man ikke interesse i dette, sørger vi selvfølgelig som hidtil for at markedsføre boligen både på nettet og i lokalaviserne.Det nye værktøj har fået navnet EDC Effekt.
+        </div>
+        <footer>
+          <em>By og Land</em>
+          &nbsp;·&nbsp; 2017-01-03
+          &nbsp;·&nbsp; e60d2c43
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.633</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan skal mit Disruptionråd arbejde</h4>
+        <div>
+          DEBAT - Danmark er mulighedernes land, og den teknologiske udvikling giver os nye muligheder. Men det kræver, at vi er klar til at gribe dem. Så hvordan ruster vi bedst danskerne og danske virksomheder til fremtiden - med mere digitalisering, flere robotter og mere kunstig intelligens?De spørgsmål har regeringen sat på dagsordenen, og vi henter hjælp til både at stille de rigtige spørgsmål og til at få de rigtige svar hos Disruptionrådet. Disruptionrådet er bredt sammensat af arbejdsmarkedets parter, erhvervsledere, iværksættere, akademiske kapaciteter og repræsentanter fra det øvrige samfundsliv.Vi skal sammen arbejde for, at danskerne trygt kan gå fremtiden i møde, at vi skaber gode arbejdspladser, og at vi fremmer et dynamisk erhvervsliv, der kan blive ved med at skabe vækst og velstand i Danmark.En oplagt gevinst er, at digitalisering og robotter kan styrke Danmark som produktionsland. Det giver os mulighed for lettere at konkurrere med lande, der har lavere lønomkostninger end os.Mulighederne er mangeEt fleksibelt arbejdsmarked kan sikre, at vi hurtigt kan omstille os og udnytte de muligheder, som ny teknologi giver. Nye og flere job kan opstå i både gamle og nye brancher. Og nye måder at være beskæftiget på kan give større fleksibilitet og flere muligheder i arbejdslivet. Mulighederne er mange, hvis vi griber dem.En ting er i hvert fald sikker: Historisk set har vi været dygtige til at bruge de nye muligheder, der hele tiden dukker op. Det skal vi også være i fremtiden, og vi har et rigtigt godt afsæt. Vi har et omstillingsparat erhvervsliv og et fleksibelt arbejdsmarked. Vi er det mest digitaliserede land i EU, og danske virksomheder tager mere og mere robotterne og de nye teknologiske muligheder til sig. Lige så vigtigt er det, at danskerne har tiltro til fremtiden.Vi har mod på forandring. Undersøgelser viser, at mere end ni ud af ti danskere ikke frygter, at deres arbejdsplads nedlægges som følge af den teknologiske udvikling.Danmark er også det land i EU, hvor flest borgere har et positivt syn på globaliseringen. Tre ud af fire danskere mener, at globaliseringen giver mulighed for øget vækst. Men skal vi have det fulde udbytte af de teknologiske muligheder, og skal vi have alle med, så skal danskerne og dansk erhvervsliv være rustet til fremtiden. Vi ved, at den teknologiske udvikling stryger afsted og udfordrer os på flere områder.Debatten angår os alleVækst kræver flere investeringer. Det gælder særligt i de små og mellemstore virksomheder. Kravene til vores kompetencer og uddannelser ændres. Flere skal lære gennem hele livet. Og vi skal uddanne de unge til en ukendt fremtid - til jobfunktioner, der måske ikke eksisterer endnu.Derfor bliver det rette valg af uddannelse, opkvalificering og omskoling endnu mere afgørende. Jeg ser meget frem til arbejdet i Disruptionrådet og ikke mindst til at komme rundt i Danmark sammen med medlemmerne af rådet det næste halvandet år. Vi skal drøfte både muligheder og udfordringer med danskerne og danske virksomheder. Debatten angår os alle - det handler om vores fælles fremtid.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-06-07
+          &nbsp;·&nbsp; e64987a1
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.516</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.75</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.896</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

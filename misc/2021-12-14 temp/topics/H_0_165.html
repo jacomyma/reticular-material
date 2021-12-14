@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_165 <kbd>H_0_165</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>massivt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>største</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkurrencen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>presset</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>internationale</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>verdens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>førende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>verdensplan</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lande</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rapport</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>financial</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udenlandske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vaskemaskiner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anført</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kapløb</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kontrakten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>allerstørste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkurrence</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>koncerner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>irland</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>holland</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>belgien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>højteknologisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ubalancer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dominerende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hårdere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>offensiv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udgør</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>elektricitet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>offentliggjorte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kul</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kapløbet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hong</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>analysefirmaet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årti</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>700</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aftale</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>canada</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>schmidt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betydelige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>perioden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sigter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hovedkvarter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betydelig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stål</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nordamerika</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>asiatiske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sydamerika</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hovedparten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>igangværende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>multinationale</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>varemærke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>producent</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2050</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tingenes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>understreges</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>satsninger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>accelereret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aftager</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>usd</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>patent</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>støt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>trade</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>atlanten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pressekonference</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>næststørste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spår</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>laveste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aftalen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>informationsteknologi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kurv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2025</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betydningsfuld</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dæmper</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>verdensmarkedet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udbygningen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>løftes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nedskæringer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>internetadgang</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>telekommunikation</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>positionen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bestik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>drivhusgasser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udviklingslande</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forretningsfolk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ineffektiv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>area</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nedlukning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uændrede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>snuppet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spydspids</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vesteuropa</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>solpaneler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bulgarien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indtægtskilde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>top-10</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betalingssystemer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>erhverve</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2.300</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_165 DESC LIMIT 50</pre>
+      <article>
+        <h4>Handelsrobotter dominerer Moskvabørsen</h4>
+        <div>
+          InvestorAktiehandlere i USA med speciale i algoritmer og højfrekvent handel er for alvor på vej ind på det russiske børsmarked.BCS Financial Group, en af Ruslands største aktiemæglere, har købt en New York-baseret afdeling af den russiske Alfa Bank og regner...Denne artikel er kun tilgængelig for abonnenterAlgoritmehandlere udgør mere end halvdelen af aktiehandlen på børsen i Moskva..Algoritmehandlere udgør mere end halvdelen af aktiehandlen på børsen i Moskva..
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2015-12-04
+          &nbsp;·&nbsp; e558bc9e
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.958</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.674</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.626</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Norge er nu verdens mest digitale land</h4>
+        <div>
+          I &quot;Digibarometeret&quot; ligger de fire nordiske lande øverst - med Danmark og Sverige efter Norge og Finland.Finland har mistet dets førsteplads på listen over verdens mest digitale lande og må overlade den til Norge, skriver det finske nyhedsbureau FNB med henvisning til den årlige Digibarometer-undersøgelse.I Digibarometeret ligger de fire nordiske lande øverst - med Danmark og Sverige efter Norge og Finland.Værst klarer Italien sig ved siden af samt BRIC-landene Brasilien, Rusland, Indien og Kina.Digibarometer-undersøgelsen foretages af Etlatieto, som er en forskningsenhed ved det finske erhvervslivs forskningsinstitut Etla. Undersøgelserne omfatter over en snes lande.Digibarometeret sammenligner, hvordan digitalisering udnyttes i de forskellige lande. I år har der været særlig fokus på kunstig intelligens.Digibarometerets parametre omfatter graderne af digitalisering i et givent land på tre forskellige områder: forudsætningerne, den nuværende udnyttelse og effekterne af den nuværende udnyttelse.Der fokuseres traditionelt på tre sektorer: Virksomheder, private borgere og den offentlige sektor.Ved den årlige undersøgelse sidste år var der meget fokus på, at digitaliseringen i navnligt Finlands offentlige sektor var gået stærkt frem./ritzau/FNB
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-06-15
+          &nbsp;·&nbsp; e64c1b3e
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.984</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.982</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.722</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Internationale keynotes på plads</h4>
+        <div>
+          I år kan man på DTU High Tech Summit opleve både danske og internationale keynotes fra førende virksomheder, organisationer og universiteter.Man kan bla. møde den danske tech-ambassadør Casper Klynge, der bl. a. fortæller om, hvordan teknologierne skaber samfundet.Man kan også møde David A. M. Wallerstein, der er chief exploration officer og senior executive vice president i den internationale tech-virksomhed Tencent.Han vil drøfte, hvordan Danmark kan udnytte internettet og kunstig intelligens til at styre vores energiforbrug sammen med førende professorer fra DTU.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2019-10-28
+          &nbsp;·&nbsp; e76a0174
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.667</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.703</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.571</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan fastholder Danmark sin digitale førerpositon</h4>
+        <div>
+          Rapport fra konsulenthuset McKinsey udpeger ni europæiske lande som digitaliseringsdukse, inklusive Danmark.Danmark og otte andre nordeuropæiske lande har udsigt til en vækst i BNP og et fald i arbejdsløsheden frem mod 2030 i takt med, at de øger digitalisering og automatisering.Det fremgår af en rapport fra konsulenthuset McKinsey.Men selvom Danmark lige nu er en af frontløberne i digitaliseringskapløbet, skal vi sammen med de øvrige otte lande, Belgien, Estland, Finland, Holland, Irland, Luxembourg og Norge holde pulsen oppe, hvis vi vil bevare førerpositionen, advarer rapporten.De fem vigtige punkterRapporten opstiller en fempunktsstrategi, som Danmark og de otte andre lande bør følge, hvis de ønsker at høste den økonomiske gevinst af digitalisering og automation, og samtidig øge udbuddet af arbejdspladser.1 Fasthold positionen som digital frontløber ved at investere i den nyeste infrastrukturteknologi.2 Støt lokale økosystemer inden for AI og automation. Plej talenter, sats på offentlig forskning &amp; udvikling og skaber gode rammer for eksperimenter.3 Indret uddannelsessystemet efter fremtidens arbejde. Inddrag automationsteknologi i undervisningen, sæt større fokus på livslang læring og prioriter praktik og oplæring på jobbet.4 Støt overgangen til nye arbejdsformer. Skab nye modeller til sikring af pension, barsel og sygepenge i takt med overgangen til flere freelancejob.5 Sæt rammerne for en global politik på områderne cybersikkerhed, privacy og etik.Herhjemme vil det føre til 495.000 nye job, anslår rapporten, heraf 165.000 inden for helt nye jobtyper.Netop fremkomsten af nye jobtyper kræver, at politikere og andre beslutningstagere sikrer uddannelse, påpeger Jens Riis Andersen, associeret partner hos McKinsey og en af hovedforfatterne af rapporten:»Den vigtigste udfordring for beslutningstagere er at skabe de rigtige mekanismer omkring uddannelse, omskoling og opkvalificering for at sikre en hurtig og smidig overgang,« siger han ifølge en pressemeddelelse.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-11-13
+          &nbsp;·&nbsp; e67fe4be
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.813</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.939</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.739</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.555</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Grab'n Go: The Big Five and the canopy effect</h4>
+        <div>
+          Body På dette morgenmøde vil Duncan Stewart fra Deloitte Canada se på de kommende tendenser indenfor teknologi, medier og telekommunikation, som Deloitte har forudsat dem i rapporten &quot;TMT Predictions 2020&quot;.På mødet vil han blandt andet komme ind på privat 5G, edge AI-chips og meget andet.Begivenheden foregår på engelsk.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-01-30
+          &nbsp;·&nbsp; e78f3a49
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.538</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nu kan Kinas våbenfabrikker omsider kigges i kortene</h4>
+        <div>
+          For første gang offentliggøres tal for Kinas våbenproduktion. Den er verdens næststørste. Kina er verdens næststørste producent af våben. Måske ikke så overraskende i sig selv, men det er faktisk første gang, at det svenske fredsforskningsinstitut Sipri kan dokumentere oplysningen. Sipri udarbejder hvert år en top-100 over de største våbenproducerende lande i verden, men på grund af mangel på troværdige data er Kina hidtil kørt under radaren. Det viser sig nu, at Kina presser sig ind mellem USA, der suverænt er verdens største våbenproducent, og Rusland og indtager andenpladsen. Vi er længe gået ud fra, at Kinas våbenindustri er meget stor. Men datamaterialet har været usikkert. Derfor har vi ikke kunnet medtage Kina. Nan Tian, Sipri, medforfatter på Kina-rapporten »Dette studie er den hidtil mest omfattende analyse af kinesiske virksomheders våbenproduktion,«  hedder det i Sipri-undersøgelsen. Den baserer sig på tal fra perioden 2015-17 for de fire største våbenproducenter i Kina inden for luft- og rumfart, elektronik og landbaserede systemer. »På den måde har det været muligt at nå frem til pålidelige vurderinger af hele den kinesiske rustningsindustri,«  skriver Sipri. Alle disse fire virksomheder hører til på top-20 over verdens største våbenfabrikker med en samlet omsætning på 54 mia. dollars. USA tegner sig for 11, Europa for seks og Rusland for tre koncerner på denne liste. »Vi er længe gået ud fra, at Kinas våbenindustri er meget stor. Men datamaterialet har været usikkert. Derfor har vi ikke kunnet medtage Kina. Men nu har vi fået adgang til nye kilder,«  siger Sipri-eksperten Nan Tian, medforfatter på Kina-rapporten. USA suverænt størst Han vurderer, at Kinas reelle våbenproduktion snarere beløber sig til 70-80 mia. dollars. En del militære udgifter bliver fortsat stuvet af vejen på civile konti, som det ifølge Sipri også sker i Rusland. USA sad sidste år på 59 pct. af den globale våbenproduktion, der samlet løb op i 420 mia. dollars. De fem største våbenproducenter i verden er alle amerikanske. Boom i våben Verdens største våbenproducenter - uden Kina, som nu placeres på andenpladsen: USA: 59,0 pct. Rusland: 8,6 pct. Storbritannien: 8,4 pct. Frankrig: 5,5 pct. Italien: 2,8 pct. Japan: 2,4 pct. Israel: 2,1 pct. Tyskland, 2,0 pct. Indien: 1,4 pct. Sydkorea: 1,2 pct. Kilde: Sipri, årsrapport 2019 Sipri vil ikke oplyse, hvilke nye kilder instituttet har fået adgang til, siden Kina nu kan inddrages. Kina vil fremover indgå i dets årsrapport, der udkommer i december, selv om talmaterialet stadig er usikkert. Ifølge rapporten er den kinesiske våbenproduktion samlet på 10 store koncerner foruden et forskningsinstitut. Hovedparten af produktionen aftages af Kina selv. Våbeneksporten er i modsætning til USA og Rusland meget lille. »Årsagen er, at Kina vil være helt uafhængig af andre lande ved produktion af våben og militær teknologi. Men udlandets efterspørgsel efter kinesiske våben vokser,«  siger Nan Tian. Kunstig intelligens Ikke mindst når det gælder våben baseret på kunstig intelligens, f.eks. droner og satellitter, menes Kina at være langt fremme. Våben, der selv kan udpege mål, er teknologisk i familie med digital ansigtsgenkendelse, som bruges massivt i Kina af politi og myndigheder. Kinas største våbenproducent er Aviation Industry Corporation of China (AVIC), der omsætter for 20 mia. dollars og dermed er verdens sjettestørste producent. Kendetegnende for de kinesiske våbenfabrikker er ifølge Sipri, at de er stærkt specialiserede, hvor de amerikanske spreder sig over flere forskellige våbentyper. Den globale våbenproduktion kender kun én vej: op. Sidste år voksede de 100 største våbenproducenters omsætning med 4,6 pct. Siden 2002 er det globale våbensalg vokset med 47 pct. Ikke mindst lande i Mellemøsten køber stort ind. Kina har i de senere år udbygget sin militære tilstedeværelse i Det Sydkinesiske Hav markant. Øer og atoller er blevet militariseret for at håndhæve en kinesisk overhøjhed. Det har ført til konflikter med andre lande i regionen, ikke mindst Vietnam og Filippinerne. Også Japan er bekymret over Kinas voksende militærbudget. Kina planlægger at have fire egenproducerede hangarskibe inden 2030 og satser desuden hårdt på stealth-teknologi til luftvåbnet samt missilforsvar. Ansv. Chefredaktør Jacob Nybroe
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2020-02-03
+          &nbsp;·&nbsp; e7903d80
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.956</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.526</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.506</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: AKTIEHANDEL UDEN MENNESKER</h4>
+        <div>
+          Verdens største børsmægler er ikke et menneske, men automatiserede algoritmer i computere. På Københavns Fondsbørs besluttes 40 procent af handlerne af maskiner, og tallet er i hastig vækst, uden branchen anser det for et stort problem. Bortset fra når en computerfejl koster et amerikansk firma 2,6 mia. kr.MoDERNE TIDER.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2012-08-11
+          &nbsp;·&nbsp; e35b0338
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.553</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.56</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.582</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: Amerikansk it-selskab flytter ind på Frederiks Plads for at komme tættere på talenter og universitet</h4>
+        <div>
+          Verdens største selvejende it-selskab med fokus på analyse og kunstig intelligens, SAS Institute, åbner på mandag en nyoprettet Aarhus-afdeling på Frederiks Plads. Nye rammer for vækst, bedre forhold for kunder og partnere, fastholdelse og tiltrækning af medarbejdere samt mulighed for samarbejder med universiteterne og de højere læreanstalter motiverer oprettelsen af Aarhus-kontoret. AARHUS, side 4. 
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2019-01-25
+          &nbsp;·&nbsp; e70e3358
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.56</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.669</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.517</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOLK</h4>
+        <div>
+          Nederlændere Det skal være slut med at kalde vores land 'Holland', fastslår myndighederne i de lavtliggende tætbefolkede områder nord for Belgien i ny kampagne. 'Holland' er en region i Nederlandene, som Sjælland er en region i Danmark.EnglændereDer er tale om en såkaldt 'pars-pro-toto'-problematik, som når ældre mennesker insisterer på at kalde Storbritannien for England. Men hvad med hollændervogne, hollandske drops og hollandsk udtræk? Her vil et skifte være nederen.OptimisterEt komplet blankt årti ligger foran os, totalt klar til at blive spoleret af de sædvanlige menneskelige dårskaber. Vi må dog huske, at den globale middelklasse aldrig har været større, og at kunstig intelligens snart tager over.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2019-12-30
+          &nbsp;·&nbsp; e785f38c
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.837</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.513</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.605</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.612</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>UBS bruger kunstig intelligens til kundehjælp</h4>
+        <div>
+          Verdens største private banking bank, schweiziske UBS, tyer nu til kunstig intelligens for at kunne rådgive deres rigeste kunder på den mest direkte og personlige vis.Således har UBS efter en konkurrence med 80 andre selskaber valgt Singapore-baserede...Denne artikel er kun tilgængelig for abonnenterPrøv Børsen i en måned online og på tryk forPrøv Børsen Nu Allerede kunde? Log indFår du avisen?Så har du også købt adgang til at læse denne artikel online.Få hjælp til at logge ind , eller ring til kundeservice på tlf. 33 32 42 42 man-fre kl. 6.30-16.30Følg Børsen eller Del artikelverdens største rigmandsbank, UBS, og for så vidt også lilebror, Credit Suisse, opruster over for deres kernekunder med viden fra selskaber der anvender kunstig intelligens.verdens største rigmandsbank, UBS, og for så vidt også lilebror, Credit Suisse, opruster over for deres kernekunder med viden fra selskaber der anvender kunstig intelligens.
+        </div>
+        <footer>
+          <em>Finans.Børsen.dk</em>
+          &nbsp;·&nbsp; 2014-12-09
+          &nbsp;·&nbsp; e4b696c3
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.765</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.566</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Handelsrobotter dominerer Moskva</h4>
+        <div>
+          Aktiehandlere med speciale i algoritmer og højfrekvent handel er for alvor på vej ind på det russiske børsmarked. BCS Financial Group, en af Ruslands største aktiemæglere, har købt en New York-baseret afdeling af den russiske Alfa Bank, og indkøbet skal bruges til at give amerikanske robotaktiehandlere øget adgang til moskvabørsen, skriver Bloomberg.&quot;Vi kan tilbyde dem infrastruktur og højhastighedsadgang til Moskvabørsen, og jeg taler om mikro- og nanosekunder,&quot; siger BCS's chef for globale markeder Roman Lokhov.Algoritmehandlere udgør ifølge Bloomberg nu mere end halvdelen af aktiehandlen på moskvabørsen. Højfrekvenshandel er særligt attraktiv i et volatilt marked som det russiske, hvor rublen er styrtdykket, og hvor ukrainekrisen og oliepriskollapset har fået internationale investorer til at trække sig ud.magrArkivfoto: Maxim Zmeyev/Bloomberg.Arkivfoto: Maxim Zmeyev/Bloomberg.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-12-06
+          &nbsp;·&nbsp; e55f6135
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.975</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Løft blikket og kig ud</h4>
+        <div>
+          UDVIKLING: Vi kan alle mærke det - markeder er i opbrud, kravene til kvalitet, tempo og ikke mindst nye, bæredygtige løsninger stiger, og nye aktører fra nær og fjern trænger ind og udfordrer vores adgang til gode og hidtil trofaste kunder.Vi mærker begyndelsen til den store tech-revolution, der åbner op for en helt ny tænkning i nye, geniale løsninger og baner vejen for eksponentiel vækst. Vedkommer det dig? Ja, det gør det helt bestemt - både som forbruger og som virksomhed.Som forbruger åbner der sig en verden så stor af muligheder - uanset ønsker og behov. Både i den fysiske butik og online. Amazon sætter snart fødderne på dansk jord, Alibaba og andre e-handelsmastodonter vil følge efter, og den skarpe konkurrence til give forbrugerne attraktive priser og betingelser.Som virksomhed oplever vi også, at konkurrencen stiger.Det viser vores seneste undersøgelse i Det fynske erhvervspanel.Det er i stigende grad vigtigt at være tæt på sit marked og spotte nye trends og tendenser, læse sine kunder og udnytte de teknologiske muligheder for at komme på forkant af efterspørgslen. For konkurrencen kan komme fra helt uventet kant.Made in China 2025 I september måned besøgte jeg en række små kinesiske start-up-virksomheder, inspirerende innovationsmiljøer og de to store e-handelsmastodonter Alibaba og JD. com i Hangzhou og Shanghai. Her gik det for alvor op for mig, hvordan big data og kunstig intelligens vil revolutionere måden at løse opgaver på lige om lidt. Med den kinesiske centralregerings '' Made in China 2025&quot;-plan og massiv statslig støtte styrer de kinesiske virksomheder i høj fart efter at blive verdensførende indenfor en række teknologier, herunder computerchips, robotter, vedvarende energi, biotek og elbiler. Med det engagement og tempo, de lægger for dagen, sammenholdt med et totalt ureguleret marked - for eksempel inden for privatdata, så er der god grund til at rette opmærksomheden mod øst og tage bestik af den næste techrevolution.For 10-15 år siden sad Vestas og andre udenlandske vindmølleproducenter på en tredjedel af verdens største marked, men konkurrencen fra lokale kinesiske producenter har vendt totalt op og ned på billedet. I dag må de få udenlandske producenter, der er tilbage i Kina, nøjes med ca. 3 pct. af markedet, og de bliver i stigende grad presset på priserne globalt på grund af den voksende konkurrence fra de fremadstormende kinesiske producenter.Hvordan er det sket? Opskriften er simpel og går ud på, at den kinesiske stat, som har udpeget vindmølleindustrien som strategisk vigtig, tvang udenlandske producenter til at etablere lokal produktion, hvis de ville sælge i Kina.Mindst 70 pct. af en vindmølle skulle være produceret i Kina, hvis man ønskede at sælge i Kina. Det betød i praksis, at udenlandske producenter blev tvunget til teknologitransfer, og det gav kinesiske virksomheder mulighed for at klatre uhørt hurtigt op i den globale værdikæde. Herefter bortfaldt reglen.Der er god grund til bekymring, når den kinesiske stat har opsat et ambitiøst mål om, at Kina skal være verdens førende inden for bl. a. robotteknologi i 2025. Det kinesiske marked sluger ca. en tredjedel af verdens industrirobotter, og det er en fantastisk vækstmulighed for de fynske robotvirksomheder.Men der skal ikke meget fantasi til at regne ud, at konkurrencen fra kinesiske virksomheder vil blive massiv inden for ganske få år - også uden for Kina.Tag bestik af udviklingen Derfor skal vi være hurtige og dygtige, hvis vi vil have del i den vækst, som den store techrevolution baner vejen for. Hvad betyder dette for din virksomhed? Tag bestik af det - hellere i dag end i morgen.
+        </div>
+        <footer>
+          <em>Erhvervsavisen Fyn</em>
+          &nbsp;·&nbsp; 2018-11-15
+          &nbsp;·&nbsp; e6f77b02
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.859</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.738</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dorte Toft: Kina er petriskål for fremtiden med nye teknologier til både fremgang og undertrykkelse</h4>
+        <div>
+          De nye teknologier er de stærkeste magtmidler med grøn energi, droner, kunstig intelligens, lagring af strøm og overvågning. Og Kina vil være førende.Kina. Et mægtigt rige, der ikke dur til andet end at kopiere og masseproducere. Et rige uden kreative. Et rige, hvor alle snyder med alt, lige fra Pisa-prøver til fødevarer. Et rige befængt med korruption, krænkelser af menneskerettigheder og en forfærdelig forurening.Der er en del sandhed i udsagnene, men vær ikke blind for, hvad der også sker i Kina i disse år. Tro ikke, at Vesten længere er bedst til alt - bedre end nationen, der opfandt papiret og den trykte presse, krudt og fyrværkeri, kompas og seismograf, porcelæn samt måske tilmed alkohol. Det vil være så dumt at overse udviklingen i innovation og effektivitet, for Kina buldrer af sted.Se på rigets styrke inden for vedvarende energi. Ifølge medier står nationen for 5 af verdens 6 største producenter af solceller og 3 af verdens største producenter af vindmøller til brug på land. Lagring af strøm er en anden og sværere disciplin, men Kina står for over halvdelen af verdens produktion af litiumbatterier. Sådanne bruges for eksempel i elbiler og i ejendomme med egen sol- eller vindenergiproduktion.Af stor betydning for fremtiden er også kunstig intelligens og robotter, og ingen anden nation sætter flere milliarder og mere handling bag ordene om vigtigheden af det teknologispring.Kina har en målsætning om i 2025 at være verdens største inden for kunstig intelligens (artificial intelligence, AI), men allerede nu er Pentagon bekymret over de store kinesiske investeringer, ikke mindst i de amerikanske AI-selskaber.Overvågningen af borgere, der allerede er voldsom, bliver altomfattendeRobotiseringen kører allerede på højtryk for at genvinde fuld konkurrencekraft mod de lande, der i dag har lavere lønomkostninger. Kinesiske selskaber har opkøbt en del robotfirmaer de seneste år, heriblandt tyske Kuka Roboter, der er verdens fjerdestørste producent af industrirobotter.Kina har i forvejen detroniseret flere af Vestens gamle kæmper inden for de lidt ældre teknologier som smartphones og udstyr til telekommunikation.Inden for mobilerne er Apple den eneste vestlige leverandør, der er tilbage i top-5. Kina har erobret plads nummer 3, 4 og 5, jævnfør analysefirmaet IDC-s seneste statistik. Og de kinesiske firmaer, anført af Huawei, byder på større vækst end nummer 1, koreanske Samsung, og nummer 2, Apple. Amerikanske Facebook kender du, men vidste du, at kinesiske Tencent, der er et sandt kraftværk inden for sociale medier, underholdning og e-betaling, overgår Facebook i markedsværdi?Tencent er nummer 5 på en top-10-liste over verdens største techfirmaer. Listen indledes af Apple, Google (i form af holdingselskabet Alphabet), Microsoft og Amazon, og Tencent fremhæves i Vesten som et af verdens mest innovative selskaber. Verdens 7.-største techfirma er endnu et kinesisk kraftværk på nettet, nemlig Alibaba, der blandt andet har et enormt e-stormagasin og e-betalingstjenesten Alipay med kunder i foreløbig 110 lande.Verdens størstefabrikant af avancerede droner, DJI, er kinesisk, og Baidu er endnu et techfirma, der imponerer. Baidu har nationens største søgemaskine og er helt på forkant med kunstig intelligens. For nylig bebudede selskabets topchef i øvrigt, at Donald Trumps holdninger skader USA-s innovationsevne, og Baidu-bossen anbefalede Silicon Valleys mange ikke-amerikanske techeksperter at søge mod Kina.Men også andre sider af udviklingen gør det klogt at holde tæt øje med, hvad der sker i landet, hvor menneskerettigheder ikke er en potte pis værd, heller ikke som værn mod de mørkeste sider af kunstig intelligens og robotter.Overvågningen af borgere, der allerede er voldsom, bliver altomfattende. Teknologierne bliver mægtige våben i krige, både dem, hvor blodet flyder, og dem, der køres via nettet. Endelig bliver Kina sandsynligvis også landet, hvor vi først ser, om AI og robotter fører til en stor klasse af ubrugelige mennesker eller ej.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2017-12-16
+          &nbsp;·&nbsp; e68be1f9
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.759</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.587</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>UBS bruger kunstig intelligens til kundehjælp</h4>
+        <div>
+          Verdens største private banking bank, schweiziske UBS, tyer nu til kunstig intelligens for at kunne rådgive deres rigeste kunder på den mest direkte og personlige vis.Således har UBS efter en konkurrence med 80 andre selskaber valgt Singapore-baserede Sqreem Techonologies til at kortlægge og kategorisere en syndflod af data, til gavn for de rigeste kunder.Sqreems opgave er: Udtræk informationen der er mest relevant til for den individuelle kunde og præsenterer dette skræddersyede indhold til klienternes mobiltelefoner, iPads osv.Internetgiganter er en trusselVerdens største banker - inklusive UBS - vender sig i øjeblikket mod avanceret teknologi for at indsamle dybsindig viden til deres kunder. det gør de for at være fortsat konkurrencedygtige i en gennemdigitaliseret verden.Tiltagne fra eksempelvis UBS sker for at imødegå introduktionen af mobile betalingssystemer fra internet giganter, som Google, Apple og Amazon. De nye giganter har også en masse information om verdens forbrugere og evnerne til at udnytte disse informationer.&quot;Vi har data! Faktisk alt for mange. I hele vores industri bliver kunderne overfyldt med data,&quot; siger Dirk Klee, der er driftsdirektør for UBE formuevaltningsdivision og ansvarlig for digitale initiativer om UBS problemstillinger med at håndtere egne data intelligent.verdens største rigmandsbank, UBS, og for så vidt også lilebror, Credit Suisse, opruster over for deres kernekunder med viden fra selskaber der anvender kunstig intelligens Foto: Scanpix.verdens største rigmandsbank, UBS, og for så vidt også lilebror, Credit Suisse, opruster over for deres kernekunder med viden fra selskaber der anvender kunstig intelligens Foto: Scanpix.
+        </div>
+        <footer>
+          <em>Finans.Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2014-12-09
+          &nbsp;·&nbsp; e4b697b3
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.788</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.622</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.574</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Legat</h4>
+        <div>
+          Læge, ph. d.-studerende Signe Schmidt fra Hvidovre Hospital, Endokrinologisk Afdeling, har modtaget Diabetesforeningens Forskningslegat 2013 på 350.000 kroner. Signe Schmidt forsker i teknologien, der kaldes » en kunstig bugspytkirtel « . Den består af en insulinpumpe, en blodsukkermåler og en lille computer, der med en avanceret algoritme styrer de to andre, og dermed fritager diabetespatienten for selv at måle blodsukker og tage insulin-indsprøjtninger.Legatet fra Diabetesforeningen vil Signe Schmidt bruge til yderligere forsøg med at teste systemet på patienters hverdag, hvor de både spiser, drikker og er fysisk aktive.
+        </div>
+        <footer>
+          <em>Nordvestnyt Kalundborg</em>
+          &nbsp;·&nbsp; 2013-06-01
+          &nbsp;·&nbsp; e3d16371
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.827</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Toyota har de samme værdier som Lego</h4>
+        <div>
+          MOTOR: Toyota indtager for syvende år i træk tronen som det mest værdifulde varemærke i bilverdenen. Det viser en helt ny undersøgelse, Best Global Brands 2018, af de mest værdifulde brands i verden foretaget af det anerkendte internationale konsulentbureau Interbrand.Toyota indtager førstepladsen som det absolut mest værdifulde bilmærke i verden med en varemærkeværdi på hele 350 mia. kr.Det er en stigning på seks procent sammenlignet med resultatet i fjor. Bilmærket med den næsthøjeste varemærkeværdi ligger ifølge undersøgelsen 32 mia. kr. efter Toyota.Toyotas førsteplads blandt bilmærker sikrer den japanske koncern en samlet syvendeplads blandt alle verdens virksomheder. Her placerer techgiganten Apple sig igen i år som den mest værdifulde virksomhed med en markedsværdi på 1.405 mia. kr.Andre brands som for eksempel Google, Amazon, Microsoftog Coca Cola ligger også blandt de højest vurderede på listen, mens Lego er det højest placerede danske varemærke som nummer 74 med en varemærkeværdi på 43 mia. kr.Meget mere end en motorInterbrand peger i undersøgelsen på flere årsager til Toyotas placering som verdens mest værdifulde bilmærke.Toyota er efter en lang række tiltag gået fra at være en bilproducent med biler af høj kvalitet og høj kundetilfredshed til også at være et mobilitets-varemærke med et enormt fokus på bæredygtighed og innovation.Toyota har sat nye standarder for, hvilket bæredygtigt ansvar internationale virksomheder tager ved bl. a. miljøudfordringen, Toyota Environmental Challenge 2050, lyder det i undersøgelsen.Det japanske bilmærke har over en lang periode været førende inden for miljøtiltag, men med Environmental Challenge 2050, der blev lanceret i 2015, søger Toyota bl. a. at sænke udledningerne af CO2 fra nye biler på verdensplan med 90 procent frem til 2050. Derudover sigter Toyota mod nul CO2-udslip fra virksomhedens fabrikker ved at optimere produktionsteknologier og skifte til alternative energikilder.Dette er blot to ud af i alt seks ambitiøse særskilte udfordringer, som Toyota arbejder med i Enviromental Challenge 2050.Vælger hybridToyota har yderligere markeret sig særligt stærkt inden for salget af hybridbiler, der på verdensplan nu har rundet 12 millioner. Det har reduceret udledningen af CO2 med 93 mio. tons - svarende til den samlede udledning fra hele Danmarks befolkning i over to år.I Danmark har hybridbilerne også fået deres gennembrud, og hybridbilerne, der kører på ren el i gennemsnitligt halvdelen af tiden, og som automatisk selv lader op under kørslen, udgør i dag over halvdelen af Toyotas salg i Danmark.I 1997 introducerede Toyota verdens første serieproducerede hybridbil, Prius, der i løbet af de seneste 21 år er blevet synonym med den miljørigtige hybridteknologi.Efterfølgende er adskillige andre modeller blevet tilføjet hybridfolden med Yaris Hybrid og Auris Hybrid som Danmarks mest populære hybridmodeller.Toyota tilbyder i dag otte forskellige hybridmodeller i Danmark - og 34 forskellige på verdensplan - samt den helt forureningsfrie brintbil Mirai. Endnu flere hybridbiler er på vej, ligesom virksomheden også udvikler biler med selvkørende teknologier, kunstig intelligens, robotter og et væld af nye bæredygtige mobilitetsløsninger drevet af helt forureningsfrie teknologier som el og brint.Alt dette har medvirket til at styrke Toyotas position som verdens mest værdifulde bilmærke i Interbrands nye undersøgelse.FAKTA BEDST BLANDT ALLEBest Global Brands 2018 (blandt alle virksomheder) Varemærke Værdi (mia. kr.) 1. Apple 1.405 2. Google 1.019 3. Amazon 660 4. Microsoft607 5. Coca Cola 435 6. Samsung 392 7. Toyota 350 8. Mercedes 318 9. Facebook 296 10. McDonalds 284 KilDe: iNTerBrAND.FAKTA BEDSTE BRANDSBest Global Brands 2018 (blandt bilmærker) Varemærke Værdi (mia. kr.) 1. Toyota 350 2. Mercedes Benz 318 3. BMW 269 4. Honda 155 5. Ford 92 6. Hyundai 89 7. Nissan 80 8. Volkswagen 80 9. Audi 80 10. Porsche 70.
+        </div>
+        <footer>
+          <em>Ugeavisen Vejle</em>
+          &nbsp;·&nbsp; 2018-11-13
+          &nbsp;·&nbsp; e6f88c72
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.842</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.709</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.636</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.501</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook og Microsoft samarbejder med universiteter om teknologi til at spotte deepfakes</h4>
+        <div>
+          Facebook lancerer sammen med Microsoft og en række amerikanske universiteter konkurrencen 'Deepfake Detection Challenge'. Organisationerne bag håber, at konkurrencen bidrager med at udvikle open source-teknologi til bedre at opdage, når kunstig intelligens har været brugt til at ændre videoer i håb om at mislede seeren.Det skriver Interesting Engineering.Facebook sætter 10 millioner dollars (ca. 67 mio. kroner) af til konkurrencen og vil gøre datasæt med ansigter samt videoer tilgængelige for deltagerne. Ingen data fra verdens største sociale medie vil dog blive brugt, siger Facebooks teknologidirektør, Mike Schroepfer.Relateret jobannonce: Ingeniør eller lignende med interesse for flyvesikkerhed»Deepfake-teknologier, hvor realistiske AI-genererede videoer af rigtige mennesker, der gør og siger fiktive ting, har betydelige implikationer i forhold til at afgøre legitimiteten af den information, der bliver præsenteret online. Alligevel har branchen ikke et godt datasæt eller benchmark til at detektere dem,« fortæller Facebooks teknologidirektør, Mike Schroepfer, i et blogindlæg, som fortsætter:»Vi vil fremme mere forskning og udvikling på det her område og sikre, at der er bedre open source-værktøjer til at opdage deepfakes.« 
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-09-06
+          &nbsp;·&nbsp; e75511ba
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.788</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Én dansk it-bog banker alle de andre</h4>
+        <div>
+          Én dansk it-bog slår alle de udenlandske it-udgivelser på Saxo.com af banen, når det gælder salgstal. Læs hvad bogen handler om her.Den danske bogudgivelse &quot;Windows 8&quot; af Jens Koldbæk er den mest solgte it-bog på online-boghandlen Saxo.com i 2013.Dermed topper bogen ikke bare bestseller-listen over den mest solgte danske bog - men slår også de udenlandske konkurrenter.Således er det altså den mest solgte bog under kategorien &quot;it-bøger&quot; med små 13.000 titler.På de følgende to pladser finder man udenlandske udgivelser om mere specialiserede emner som interaktionsdesign og algoritmer.Men derefter tager danske udgivelser om blandt andet Excel, Linkedin og Wordpress over.Du kan tjekke de 50 mest solgte danske og udenlandske it-bøger her.Foto: Per Folkver.Foto: Per Folkver.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2014-02-19
+          &nbsp;·&nbsp; e4453f90
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.753</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.555</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.519</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Elbil omskriver kulthistorie</h4>
+        <div>
+          STORYTELLING: Med et nyt eksperiment lader Renault elbilen Zoe, fatte pennen og omskrive én af verdens bedst kendte roadtrip historier. Ved hjælp af kunstig intelligens skal eksperimentet være med til at sætte fokus på mulighederne ved elbilens øgede rækkevidde. Målet med kampagnen er at udfordre én af de største betænkeligheder ved at købe elbiler, nemlig angsten for at løbe tør for strøm. 
+        </div>
+        <footer>
+          <em>Ugeavisen Esbjerg</em>
+          &nbsp;·&nbsp; 2017-04-19
+          &nbsp;·&nbsp; e637ca2c
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.817</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.808</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Seks af verdens største banker vil samarbejde om ny digital valuta</h4>
+        <div>
+          Med et fælles ønske om at udvikle en fælles digital valuta er seks af verdens største banker gået sammen om at tilbyde kunder transaktioner med blockchainSeks af verdens største banker har indgået et samarbejde om at skabe en valuta, der kun findes på digitale platforme. Parterne håber på at kunne tilbyde kunder transaktioner med blockchain, der er teknologien bag bitcoin.Det skriver Financial Times ifølge finanswatch.dk.Barclays, Credit Suisse, Canadian Imperial Bank of Commerce, HSBC, MUFG og State Street er alle gået med i et projekt med navnet &quot;utility settlement coin&quot;.Projektet er startet af schweiziske UBS for at effektivisere finansielle transaktioner. Parternes ambition er at lancere den nye pengevaluta om et års tid.»Vi har været i drøftelser med centralbanker og myndigheder, og det vil vi fortsætte med i løbet af de kommende 12 måneder med det formål at gå live i slutningen af 2018,« siger Hyder Jaffrey, chef for strategiske investeringer og fintech innovation i UBS, til Financial Times.Valutaen bygger på blockchain-teknologien, som bygger på et komplekst sæt af algoritmer, der gør det muligt at handle og verificere kryptovalutaer   såsom bitcoin   elektronisk via et netværk af computere.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-09-04
+          &nbsp;·&nbsp; e6661476
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.714</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.552</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.581</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>L'Oréal satser på kunstig intelligens</h4>
+        <div>
+          Frankrig: Kosmetikgiganten L'Oréal køber det kinesiske makeup-firma Modiface, som bruger kunstig intelligens til at hjælpe forbrugere med at lægge makeup. Det skriver The Independent. Modiface blev stiftet for 11 år siden og specialiserer sig i at bruge teknologi til at hjælpe forbrugere med at lægge makeup virtuelt - ved at tracke ansigtstræk og farve. L'Oréal er verdens største kosmetikfirma og har 34 brands. / ritzau/ Finans. 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-03-20
+          &nbsp;·&nbsp; e6abed84
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.546</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.545</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Toyota er verdens mest værdifulde bilmærke</h4>
+        <div>
+          MOTOR: Toyota indtager for syvende år i træk tronen som det mest værdifulde varemærke i bilverdenen. Det viser en helt ny undersøgelse, Best Global Brands 2018, af de mest værdifulde brands i verden foretaget af det anerkendte internationale konsulentbureau Interbrand.Toyota indtager førstepladsen som det absolut mest værdifulde bilmærke i verden med en varemærkeværdi på hele 350 mia. kr. Det er en stigning på seks procent sammenlignet med resultatet i fjor. Bilmærket med den næsthøjeste varemærkeværdi ligger ifølge undersøgelsen 32 mia. kr. efter Toyota.Toyotas førsteplads blandt bilmærker sikrer den japanske mobilitets koncern en samlet syvendeplads blandt alle verdens virksomheder.Her placerer techgiganten Apple sig igen i år som den mest værdifulde virksomhed med en markedsværdi på 1.405 mia. kr.Andre brands som fx Google, Amazon, Microsoftog Coca Cola ligger også blandt de højest vurderede på listen, mens Lego er det højest placerede danske varemærke som nummer 74 med en varemærkeværdi på 43 mia. kroner.Meget mere end en motorInterbrand peger i undersøgelsen på flere årsager til Toyotas placering.Toyota er efter en lang række tiltag gået fra at være en bilproducent med biler af høj kvalitet og høj kundetilfredshed til også at være et mobilitets-varemærke med et enormt fokus på bæredygtighed og innovation.Toyota har sat nye standarder for, hvilket bæredygtigt ansvar internationale virksomheder tager ved bl. a. miljøudfordringen, Toyota Environmental Challenge 2050, lyder det i undersøgelsen.Det japanske bilmærke har over en lang periode været førende inden for miljøtiltag, men med Environmental Challenge 2050, der blev lanceret i 2015, søger Toyota bl. a. at sænke udledningerne af CO2 fra nye biler på verdensplan med 90 procent frem til 2050. Derudover sigter Toyota mod nul CO2-udslip fra virksomhedens fabrikker ved at optimere produktionsteknologier og skifte til alternative energikilder.Dette er blot to ud af i alt seks ambitiøse særskilte udfordringer, som Toyota arbejder med i Enviromental Challenge 2050.over halvdelen vælger hybrid Toyota har yderligere markeret sig særligt stærkt inden for salget af hybridbiler, der på verdensplan nu har rundet 12 millioner.Det har reduceret udledningen af CO2 med 93 mio.tons - svarende til den samlede udledning fra hele Danmarks befolkning i over to år.I Danmark har hybridbilerne også fået deres gennembrud, og hybridbilerne, der kører på ren el i gennemsnitligt halvdelen af tiden, og som automatisk selv lader op under kørslen, udgør i dag over halvdelen af Toyotas salg i Danmark.I 1997 introducerede Toyota verdens første serieproducerede hybridbil, Prius, der i løbet af de seneste 21 år er blevet synonym med den miljørigtige hybridteknologi.Efterfølgende er adskillige andre modeller blevet tilføjet hybridfolden med Yaris Hybrid og Auris Hybrid som Danmarks mest populære hybridmodeller.Toyota tilbyder i dag otte forskellige hybridmodeller i Danmark - og 34 forskellige på verdensplan - samt den helt forureningsfrie brintbil Mirai.Endnu flere hybridbiler er på vej, ligesom virksomheden også udvikler biler med selvkørende teknologier, kunstig intelligens, robotter og et væld af nye bæredygtige mobilitetsløsninger drevet af helt forureningsfrie teknologier som el og brint.
+        </div>
+        <footer>
+          <em>Aabenraa Ugeavis</em>
+          &nbsp;·&nbsp; 2018-11-06
+          &nbsp;·&nbsp; e6f64122
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.771</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.714</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.591</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Verdens dyreste &quot;enhjørninger&quot; er 11.400 mia. værd</h4>
+        <div>
+          En ny liste over alle klodens start-ups, der har en værdi på over 1 mia. dollars, viser, at Kina for første gang netop har taget førertrøjen fra USA. E-handel og fintech er de store brancher. I en stor rapport spækket med tal og opgørelser har Kina netop overhalet USA som det land i verden med flest af de såkaldte &quot;enhjørninger&quot;. Begrebet dækker over start-ups med en værdi på over 1 mia. dollars, ca. 6,7 mia. kr., og konkurrencen er i høj grad et kapløb mellem USA og Kina, der tilsammen har 409 ud af de 494 lovende virksomheder. Det viser en ny rapport fra det kinesiske analysehus Hurun Research. Rapporten er spækket med enorme tal og opgørelser. Eksempelvis har de 494 enhjørninge en samlet værdi på 1.700 mia. dollars, svarende 11.400 mia. kr., og alene de tre største - Ant Financial, Byte Dance og Didi Chuxing, alle fra Kina - er ifølge vurderingerne 280 mia. dollars værd. På listen over de 10 største findes Airbnb, Elon Musk' SpaceX og det lettere kriseramte WeWork, mens JUUL Labs, der sidder på 75 pct. af det amerikanske e-cigaretmarked, har en værdi på 48 mia. dollars til trods for, at det først blev stiftet i 2015. Ant Financial øverst på listen blev i 2014 skilt ud fra en anden af verdens mest værdifulde virksomheder, Alibaba, og er den primære betalingstjeneste til Alibaba. Kina fører med 206 start-ups knebent foran USA med 203, og herfra er der et ordentligt hop ned til Indien på 3. pladsen med 21 og Storbritannien på 4. pladsen. Der er kun 24 lande på listen, og Danmark er ikke et af dem. Til gengæld har broderfolket hinsidan to virksomheder med - Klarna og Northvolt - til en samlet værdi på 6 mia. dollars. Ser man på brancherne, virksomhederne fordeler sig på, er det især e-handel, fintech, cloud og kunstig intelligens, der tilsammen har 168 af de 494 virksomheder, mens det er fintech (22 pct.), deleøkonomi (11 pct.), medier (9 pct.) og e-handelsbrancherne (9 pct.), der har de største vurderinger med 53 pct. af hele værdien. Start-up Værdi, mia. dollars Hovedkvarter Ant Financial Hangzhou, Kina ByteDance Beijing, Kina Didi Chuxing Beijing, Kina Infor New York, USA JUUL Labs San Francisco, USA Airbnb San Francisco, USA Lufax Shanghai, Kina SpaceX Los Angeles, USA WeWork New York, USA Stripe San Francisco, USA Se også Ansv. Chefredaktør Jacob Nybroe
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2019-10-23
+          &nbsp;·&nbsp; e768b92b
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.976</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.562</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.633</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.544</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Analyse: Det næste rumkapløb er kunstig intelligens - og Kina vinder</h4>
+        <div>
+          Af Henrik Vinther Følg @henrik_vinther 10. nov 2017 kl. 08:32 Putin udtalte fornyligt omkring kunstig intelligens, at &quot;hvem end, der bliver leder af denne sfære, vil blive verdens hersker.&quot; Og Kina har imidlertid sat så hårdt ind i det kapløb, at, ifølge denne analyse, ser ud til, at de til sidst kan ende med at komme først over målstregen....
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-11-10
+          &nbsp;·&nbsp; e67f1632
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.535</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.632</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan finder danskernes deres nyheder</h4>
+        <div>
+          * Smartphonen er den mest anvendte platform til at få nyheder. 67 procent har brugt en smartphone til nyheder inden for den seneste uge. 56 procent har brugt en computer.* Når danskerne vil have nyheder, finder 63 procent af dem frem til nyhederne ved at gå direkte til et nyhedsbrand, de kender.* 40 procent følger en vej styret af algoritmer igennem for eksempel sociale medier eller søgemaskiner.* 36 procent af danskerne er bekymrede for &quot;fake news&quot; i form af opdigtede historier. Det er væsentligt færre end i lande som Spanien (69 procent) og USA (64 procent).Kilde: &quot;Danskernes Brug af Nyhedsmedier 2018&quot; - den danske del af den internationale rapport &quot;Reuters Digital News Report&quot;. Stikprøve med 2025 svar./Ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2018-07-14
+          &nbsp;·&nbsp; e6d31eae
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.957</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.837</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.579</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.507</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny rapport: Alvorlige risici truer verden i 2017</h4>
+        <div>
+          Ekstremt vejr, migration, naturkatastrofer, terrorangreb og hackerangreb.Disse er de største globale risici i 2017, når man spørger medlemmerne i World Economic Forums samt risikoanalytikerne i nogle verdens største forsikrings- og genforsikringsselskaber.Fælles for dem er, at verdenssamfundet selv gennem rettidig omhu såvel politisk som økonomisk har meget svært ved effektivt at forhindre dem eller for alvor mindske de potentielle konsekvenser.Der er imidlertid store regionale forskelle på, hvordan risikobilledet ser ud.I Europa er de fem største risici strukturel arbejdsløshed, migration, statsfinansielle kriser, børskrak og kollaps i finansielle institutioner og mekanismer.Efter sandsynlighed:I den netop offentliggjorte Global Risks Report 2017 opregner World Economic Forum de største risici og dermed også nogle af de potentielt største udfordringer, som verdens ledere vil stå over for i det nye år.En risiko, der er gennemgående over alt i verden, er den stigende økonomiske og sociale lighed samt følgevirkningerne af Den Fjerde Industrielle Revolution.»Efter det seneste års valgchok spørger mange, om krisen i de etablerede politiske partier i de vestlige demokratier er udtryk for en dybere krise for demokratiet som institution. De hastige teknologiske forandringer, den voksende sociale og kulturelle polarisering og den postfaktuelle politiske debat kan alle pege i den retning og repræsenterer dermed en global risiko,«hedder det i rapporten.Danmark fremhæves i Global Risks Report 2017 for at være blandt de lande, hvor uligheden målt på indkomster og formue ikke er alarmerende. Medvirkende hertil er den danske -flexicurity model-, anføres det, men omvendt noteret World Economic Forum sig også, at Danmark oplever stigende medvind til »stærkt højreorienterede partier«.Efter konsekvenser:»Vi lever i disruptive tider, da teknologiske fremskridt også skaber udfordringer. Uden den rette ledelse og efteruddannelse af arbejdsstyrken vil teknologi eliminere job hurtigere, end den skaber dem. Regeringer kan ikke længere levere den samme høje sociale beskyttelse, som folk har været vant til,«siger Cecilia Reyes, global risikodirektør i forsikringsgiganten Zürich Insurance, der har medvirket til at udarbejde rapporten.»Derfor har populistiske kræfter vundet fodfæste, og nye politiske ledere giver globalisering skylden for samfundets udfordringer, hvilket skaber en ond cirkel, da lavere økonomisk vækst kun vil forstærke uligheden,«føjer hun til.Rapporten beskæftiger sig specifikt med kunstig intelligens som en voksende global risiko, fordi brugen af denne teknologi i computerrobotter i langt de fleste lande ikke er omfattet af nævneværdig lovgivning eller kontrol.Konklusionerne i Global Risks Report 2017 vil stå i centrum for drøftelserne for World Economic Forums årsmøde i Davos i den kommende uge.Ekstremt vejr er den største globale risiko i 2017, viser en ny rapport fra World Economic Forum. Fotot: AP/Vincent Yu.Ekstremt vejr er den største globale risiko i 2017, viser en ny rapport fra World Economic Forum. Fotot: AP/Vincent Yu.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-01-11
+          &nbsp;·&nbsp; e60ff3ba
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.855</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.524</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google køber intelligens</h4>
+        <div>
+          Google har foretaget sit største opkøb i Europa ved at overtage selskabet DeepMind, der udvikler kunstig intelligens og har hjemme i London. Google har overtaget medarbejderne og selskabets teknologi, der skal sætte computere i stand til at lære af hinanden uden input fra mennesker. Financial Times skriver, at Google for cirka 2,7 milliarder kroner sikrede sig selskabet for næsen af Facebook. tp. 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2014-01-29
+          &nbsp;·&nbsp; e43bb29d
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.632</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.522</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Flash: Dræberrobotter - maskiner der kan tænke selv og tage liv ... (v.1)</h4>
+        <div>
+          GenèveDræberrobotter - maskiner der kan tænke selv og tage liv uden menneskelig indblanding - er de seneste fem dage blevet drøftet på en FN-konference.Mødet markerede begyndelsen på en proces, som skal ende med en aftale omkring brugen af krigsmaskiner med kunstig intelligens.Men det eneste, repræsentanterne fra de flere end 80 lande blev enige om, var at mødes igen i 2018. Det rapporterer flere nyhedsbureauer.
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-11-17
+          &nbsp;·&nbsp; e681e9a8
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.715</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.674</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.667</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ASIATISK VELSTANDSLØFT GØR BANKER TIL GOD INVESTERING</h4>
+        <div>
+          I de seneste årtier har den asiatiske økonomi buldret opad, og de fleste asiatiske lande har oplevet markante for øgelser i velstandsniveauet. Det har samtidig givet medvind til den asiatiske banksektor, som har lukreret kraftigt på fremgangen i regionen, og det kan du udnytte som privatinvestor.Ifølge Søren Nemec, som er senior porteføljemanager i Jyske Capital, går den asiatiske banksektor en lys fremtid i møde.»I de kommende år vil de folkerige nationer som Kina og Indien opleve en øget efterspørgsel efter finansielle ydelser.Dette skyldes det stigende velstandsniveau, som har været med virkende til en kraftig forøgelse af middelklassen. Derudover vil den igangværende urbaniseringsproces også have en positiv indvirkning på fremdriften i banksektoren i de asiatiske lande,« siger Søren Nemec.En anden afgørende drivkraft for den fortsatte positive udvik ling i den asiatiske banksektor er, ifølge senior analytiker Amy Yuan Zhuang fra Nordea, at de asiatiske lande fortsat vil levere de høje vækstrater, som har været tilfældet i de seneste årtier. En vækst i de asiatiske økonomier vil, ifølge hende, samtidig betyde en øget efterspørgsel efter finansielle ydelser.Søren Nemec, der er seniorporteføljeforvalter i Jyske Capitals, forudser en fortsat positiv udvikling i samfundsøkono mien i regionen som helhed: »Der må forventes en fortsat øget handel og en fortsat strøm af udenlandske investeringer i de asiatiske lande, hvilket kan have en positiv effekt på aktiviteten i den finansielle sektor.«.Forskelle i produktudbudSøren Nemec forklarer, at der, sammenlignet med de europæis ke banker, kan være forskelle i strukturen og det produkt sortiment, som en bank i Asien udbyder.»De asiatiske banker har normalt ikke en så bred produktpalet og udbyder ikke i samme grad pensionsog forsikringsprodukter,« siger Søren Nemec.Derimod er de kinesiske banker på udvalgte nicheområder blandt de teknologisk førende i verden. Dette forklarer han med den eksplosive stigning i den kinesiske onlinehandel og de heraf affødte betalingstransaktioner. Her udover er mobile betalingstransaktioner blevet særdeles udbredt i visse lande i Asien.Den øgede digitali sering kan ifølge ham være en central driver for den fortsatte fremgang i den asiatiske banksektor.Risikofaktorer ved asiatiske bankerGennem tiderne har de asiatiske banker oplevet krise lignende tilstande i lighed med, hvad vi har set i såvel USA og Europa, hvor det fra politisk side har været nødvendigt at rekapitalisere de nødlidende banker. Som følge heraf har der de seneste år været øget fokus på reguleringer af banksektoren i Asien med henblik på at skabe en sundere og mere holdbar udvikling. Der har eksempelvis, fra den kinesiske centralbanks side, været en øget erkendelse af, at den øko nomiske vækst ikke kan blive ved med at blive kredit finansieret.»Trods de øgede reguleringer behøver der ikke nødvendigvis at være ryddet tilstrækkeligt op i de dårlige udlån. Herudover er bankerne specielt i Kina underlagt en vis form for statslig styring, hvilket betyder, at de kinesiske banker har deltaget i finansieringen af den store offentlige infrastrukturudbygning i landet,« siger Søren Nemec.»Den generelle regnskabspraksis, herunder definitionen af dårligere udlån, kan variere i forhold til den praksis, der anvendes i f. eks. Europa og USA. Der kan være banker, som kan ligge inde med dårlige udlån. Disse banker kan på et tidspunkt blive tvunget til nedskrive kraftigt,« siger Søren Nemec.Dette udsagn er Amy Yuan Zhuang enig i: »I øjeblikket er nedskrivningerne på udlån ikke specielt høje. Der kan dog inden for visse banker være skjulte gældsproblemer, som på et tidspunkt vil se dagens lys,« siger Amy Yuan Zhuang.Geopolitiske risici, som f. eks. Nordkoreakonflikten, kan have en vis effekt på den asiatiske banksektor, da der kom en opblødning i forholdet mellem USA og Nordkorea.En øget global protektionisme på handelsområdet med indførelsen af toldtariffer kan potentielt lægge en dæmper på den globale økonomiske vækst, hvilket kan have en negativ indvirkning på bankdriften i Asien.Boligprisernes effekt på banksektorenEn af de primære årsager til den globale finansielle nedtur 20082009 og den efterfølgende bankkrise var kraftige fald i boligpriserne i USA og Europa. De samme risikofaktorer kan gøre sig gældende på det asiatiske marked, hvor der - specielt i storbyerne - har været en tendens til spekulation i boligpriser.»Banksektoren kan være sårbar, hvis der sker en nedgang i boligpriserne i storbyerne, da en større andel af udlånene er koblet op på lån til selskaber inden for ejendomsudvikling,« siger Amy Yuan Zhuang.Som privat investor kan investering i asiatiske banker være en udmærket strategi, hvis du ønsker en bred eksponering inden for de asiatiske økonomier.Spred investeringerne til flere landeDe asiatiske banker kan ses som fundamentet for den bredere samfundsøkonomi, der for flere landes vedkommende præges af flotte velstandsløft og dermed øget økonomisk aktivitet.Der kan dog være centrale elementer, som du som investor skal være særlig opmærksom på i den forbindelse, som vi tidligere har været inde på, f. eks. omkring de finansielle reguleringer samt forekomsten af skjulte, dårlige udlån i visse banker.»Overvejer du at investere i den asiatiske banksektor, vil det være fornuftigt ikke at lægge alle æg i samme kurv, men at sprede sine investeringer på flere banker i forskellige lande i regionen, således at du reducerer den selskabsspecifikke risiko,« siger Søren Nemec.OVERVEJER DU AT INVESTERE I DEN ASIATISKE BANKSEKTOR, VIL DET VÆRE FORNUFTIGT IKKE AT LÆGGE ALLE ÆG I SAMME KURV, MEN SPREDE DINE INVESTERINGER.SØREN NEMEC, SENIOR PORTEFØLJEMANAGER I JYSKE CAPITAL.5 STÆRKE BANKAKTIER I ASIENEn lang række banker har kronede dage i Asien i disse år. Her er fem markante banker i regionen, som du selv kan vurdere, om du synes, er værd at medtage i din egen aktieportefølje.»Flere banker har entreret det asiatiske marked som følge af den positive økonomiske udvikling i regionen. Det har samtidig betydet, at konkurrencesituationen er blevet relativt mere intens. I Kina og Indien domineres markedet dog stadig af en række af de store nationale banker,« siger Amy Yuan Zhuang, der er senioranalytiker Nordea.Netop væksten vil ifølge hende betyde en fundamental øget efterspørgsel efter finansielle ydelser, i takt med at Asien udvikler sig.Kilde: Bloomberg - data opdateret 23.04.2018.ICBC ER KINAS STØRSTE KOMMERCIELLE BANKBørsnoteret: Hong Kong Samlede udlån: 13.687 mia. kr.Markedsværdi: 2006 mia. kr.P/ E: 6,8 K/ I: 0,9 1 års kursudvikling: 6,8 pct.Rangering i verden: 1 ICBC, som også er kendt under navnet Industrial and Commercial Bank of China, er Kinas største kommercielle bank med multinational profil. Markedsværdien er eksempelvis det halve af Apples.Banken, der har hovedkontor i Beijing, er den største bank på verdensplan målt på samlede aktiver. Banken blev børsnoteret i 2006 og solgte aktier for 21,9 mia. dollar (133 mia. kr.).Banken fokuserer på den teknologiske udvikling og tilbyder sine kunder e-bankingtjenester, herunder internet-, telefon og mobiltjenester. I 2017 kunne banken melde om en styrket indtjening som følge af nedbringelse af tab på dårlige udlån samt en øget udlånsefterspørgsel.BANK OF CHINA ER FJERDESTØRST I VERDENBørsnoteret: Hong Kong Samlede udlån: 10.478 mia. kr.Markedsværdi: 1030 mia. kr.P/ E: 5,9 K/ I: 0,7 1 års kursudvikling: 7,6 pct.Rangering i verden: 4 Bank of China, som ofte forkortes BOC, er verdens fjerdestørste bank grundlagt af staten i 1912 og dermed den ældste bank i Kina. Historisk fungerede banken som centralbank for den kinesiske regering.Banken blev børsnoteret i 2006, idet 26 pct.af aktierne nu ejes af private investorer.Hovedparten af selskabets aktiviteter foregår i Kina, selvom banken også opererer i 27 lande på alle kontinenter i verden, uden for det kinesiske fastland. I december 2010 åbnede banken en filial i New York og tilbød handel med renminbi.Den kinesiske bank tilbyder tjenester inden for bl. a. indlån, udlån, valutahandel samt investerings-og forsikringsvirksomhed.NOMURA KØBTE LEHMANS ASIEN-DELBørsnoteret: Tokyo Samlede udlån: 174 mia. kr.Markedsværdi: 132 mia. kr.P/ E: 8,7 K/ I: 0,8 1 års kursudvikling: -3,4 pct.Rangering i verden: 68 Nomura er et japansk finansielt holdingselskab, der bl. a. tilbyder kapitalforvaltning. Banken blev grundlagt af Tokushichi Nomura II, der var en velhavende japansk aktiehandler.I oktober 2008 opkøbte Nomura hovedparten af Lehman Brothers asiatiske aktiviteter. Efterfølgende flyttede banken sit hovedkontor for investment banking fra Tokyo til London som led i en strategi om at fokusere på det globale marked.Hovedparten af bankens profit skabes dog stadig på det japanske marked.Den japanske bank vil i de kommende år have fokus på at reducere omkostningsniveauet ved at indføre robotter og kunstig intelligens.HDFC BANK HAR 84.000 ANSATTEBørsnoteret: Mumbai Samlede udlån: 640 mia. kr.Markedsværdi: 460 mia. kr.P/ E: 27,0 K/ I: 4,6 1 års kursudvikling: 3,4 pct.Rangering i verden: Uoplyst HDFC Bank hører til blandt Indiens største banker og har 84.000 ansatte. HDFC står for Housing Development Financial Corporation, og banken er den største i Indien inden for langsigtede boliglån til private personer og virksomheder, såvel som byggefinansiering til ejendoms udviklingsselskaber.Gennem de seneste år har banken gennem kontinuerlig produktinnovation formået at udbrede sine produkter til landdistrikterne i Indien. Samtidig har banken i en årrække haft fremgang på bundlinjen.I 2016 præsenterede banken »Projekt Al«. Dette projekt omfattede implementering af robotter i enkelte bankfilialer til at tage sig af en række af de daglige bankopgaver.SIAM COMMERCIAL BANK REDUCERER I ANTAL ANSATTEBørsnoteret: Bangkok Samlede udlån: 398 mia. kr.Markedsværdi: 89 mia. kr.P/ E: 10,9 K/ I: 1,2 1 års kursudvikling: -9,3 pct.Rangering i verden: Uoplyst Den thailandske bank Siam Commercial Bank blev i 1904 grundlagt af prins Jayanta Mongkol. Dette skete som følge af et ønske om, at landet skulle opbygge sit eget banksystem, der skulle være med til at fremme den økonomiske udvikling og skabe en ny fremtid for landet.Bankens produkter omfatter bl. a. indskuds konti, udlånsaktiviteter, forskellige investeringsprodukter samt visse forsikringsprodukter. Banken har filialer i Hong Kong, Laos, Vietnam og Cayman Øerne.Den thailandske bank offentliggjorde i marts 2018 en storstilet teknologisk satsning, der samtidig vil betyde en kraftig reduktion i medarbejderstaben.
+        </div>
+        <footer>
+          <em>Penge og Privatøkonomi</em>
+          &nbsp;·&nbsp; 2018-05-30
+          &nbsp;·&nbsp; e6bb1789
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.957</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.805</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.58</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ekspert: WWW vil ikke eksistere i 2028</h4>
+        <div>
+          Den 63-årige tidligere direktør og bestyrelsesformand for Google, Eric Schmidt, er ikke optimistisk i forhold til sit syn på fremtiden for World Wide Web.Han mener, at Kinas censur og ønske om kontrol med online-indhold er uforeneligt med det vestlige ideal om et demokratisk internet, skriver Daily Mail.Derfor ser han fremtidens internet opdelt i to: Et kinesisk reguleret og et vestligt internet, præget af USA. Dermed vil verdens online-kommunikation snart få to forskellige udtryk.Schmidt ser imidlertid ikke fremtidens kontrollerede web som en hæmsko for vækst i Kina. Tværtimod vurderer han, at markedet for varer og tjenester vil vokse eksponentielt her.Den tidligere Google-chef ser på den anden side en stor risiko ved Kina og Ruslands fremtrædende positioner inden for kunstig intelligens. Han ser endda en risiko for, disse lande kan få et verdensherredømme, hvis de anvender deres it-kompetencer militært.»Det er meget, meget vigtigt, at Vesten får tilført flere ressourcer til it-basisforskning for at undgå ovenstående scenarie,« pointerer Eric Schmidt.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2018-09-21
+          &nbsp;·&nbsp; e6e836c1
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.966</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.542</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Toyota er fortsat verdens mest værdifulde bilmærke</h4>
+        <div>
+          VAREMÆRKE Toyota er for sjette år i træk det mest værdifulde varemærke i bilverdenen.Sådan lyder konklusionen, efter Interbrand har offentliggjort deres internationale undersøgelse af de mest værdifulde varemærker i verden, Best Global Brands 2017.Toyota indtager pladsen som det absolut mest værdifulde bilmærke i verden med en varemærkeværdi på hele 318 mia. kr. Det markerer en lille nedgang på det historiske resultat fra sidste år, hvor den japanske bilproducent oplevede sin højeste værdi nogensinde i undersøgelsen.Men det cementerer samtidig også Toyotas fortsatte plads på toppen i bilbranchen. Der er således 16 mia. kr. ned til bilmærket med den næsthøjeste varemærkeværdi.Den mest værdifulde virksomhed i verden er igen i år Apple, der har en værdi på over 1.100 mia. kr. Toyota ligger placeret som verdens syvende mest værdifulde varemærke blandt alle varemærker i verden foran andre kendte brands som fx Facebook, Disney, McDonald's og Nike. Lego er højest placerede danske varemærke på listen som nummer 67 med en værdi på godt 44 mia. kr.Meget mere end biler Der er mange årsager til, at Toyota placerer sig som det bilmærke i verden med den højeste varemærkeværdi. Toyota har efter en række tiltag udviklet sig fra at være en bilproducent med biler af høj kvalitet og høj kundetilfredshed til også at være et varemærke, der har enormt fokus på bæredygtighed og innovation.Toyota har bl. a. med sin miljøudfordring, Environmental Challenge 2050, sat nye standarder for, hvilket bæredygtigt ansvar internationale virksomheder tager på globalt plan. Det japanske bilmærke har over en lang periode været førende inden for miljøtiltag, men med Environmental Challenge 2050, der blev lanceret for nylig, søger Toyota bl. a. at sænke udledningerne af CO2 fra nye biler på verdensplan med 90 procent frem til 2050.Derudover har Toyota markeret sig særligt stærkt inden for hybridbiler, hvor salget nærmer sig 11 millioner i verden.Toyota introducerede allerede i 1997 verdens første serieproducerede hybridbil, Prius, der over de seneste 20 år er blevet synonym med den miljørigtig hybridteknologi.Efterfølgende er adskillige andre modeller blevet tilføjet hybridfolden - senest i form af den skarpt designede C-HR Hybrid.Tidligere på året lancerede Toyota sin egen venture kapitalfond, hvilket også har været med til at vægte positivt i Interbrands undersøgelse. Med startinvesteringer for ca. 600 mio. kr. i nye virksomheder har Toyota AI Ventures allerede markeret sig på det sprudlende Start-up marked og dermed udvidet grundlaget for Toyotas varemærkeværdi.Toyota AI Ventures udspringer af storsatsningen Toyota Research Institute, der er tilknyttet de prestigefyldte amerikanske universiteter Stanford University i Californien, University of Michigan og Massachusetts Institute of Technology (MIT).Se hele undersøgelsen fra Interbrand på interbrand.com/ best-brands.Lokal forhandler: Toyota Køge, Tangmosevej 106, Køge.
+        </div>
+        <footer>
+          <em>Lørdagsavisen Køge</em>
+          &nbsp;·&nbsp; 2017-10-05
+          &nbsp;·&nbsp; e672183f
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.754</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.589</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.755</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Handelsrobotter dominerer Moskvabørsen</h4>
+        <div>
+          Aktiehandlere i USA med speciale i algoritmer og højfrekvent handel er for alvor på vej ind på det russiske børsmarked.BCS Financial Group, en af Ruslands største aktiemæglere, har købt en New York-baseret afdeling af den russiske Alfa Bank og regner med at få myndighedernes godkendelse af handlen inden årets udgang. I så fald skal indkøbet bruges til at give amerikanske robotaktiehandlere øget adgang til Moskvabørsen, skriver Bloomberg.Fra sit Londonkontor arbejder BCS allerede sammen med en halv snes algoritmehandlere -med amerikanske rødder,- siger BCS-s chef for globale markeder Roman Lokhov.-Vi kan tilbyde dem infrastruktur og højhastighedsadgang til Moskvabørsen, og jeg taler om mikro- og nanosekunder,- siger Roman Lokhov.Hvis man samarbejder med BCS må man dog regne med at blive gransket af Ruslands centralbank, som overvåger højfrekvens-aktiehandlerne for at sikre at de ikke manipulerer markedet.Algoritmehandlere udgør ifølge Bloomberg nu mere end halvdelen af aktiehandlen på Moskvabørsen.Højfrekvenshandel er særlig attraktiv i et volatilt marked som det russiske, hvor rublen er faldet 20 pct. mod dollar det seneste halve år. Samtidig har internationale investorer trukket følehornene ud af Rusland på grund af sanktionerne efter konflikten med Ukraine og den dramatisk faldende oliepris, som har ramt økonomien.Deltag i debattenAlgoritmehandlere udgør mere end halvdelen af aktiehandlen på børsen i Moskva..Algoritmehandlere udgør mere end halvdelen af aktiehandlen på børsen i Moskva..
+        </div>
+        <footer>
+          <em>Investor.Børsen.dk</em>
+          &nbsp;·&nbsp; 2015-12-04
+          &nbsp;·&nbsp; e558bccb
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.985</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.578</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.623</kbd>
+            <kbd data-tooltip="Companies &amp; financial reports">L80_FINREP&nbsp;0.585</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.588</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan lever du for evigt</h4>
+        <div>
+          Engelsk dokumentar. Den 32-årige russiske mangemillionær Dmitry Itskov ønsker at leve for evigt. Derfor er han gået sammen med nogle af verdens førende hjerneforskere samt forskere i robotteknologi og kunstig intelligens for at forsøge at udtænke et system, der kan give ham evigt liv.Holdet arbejder på at udvikle en metode, der kan koble en menneskehjerne med en robot og dermed give evigt liv.DR3 kl. 21.00.
+        </div>
+        <footer>
+          <em>Fyns Amts Avis</em>
+          &nbsp;·&nbsp; 2016-09-29
+          &nbsp;·&nbsp; e5e771c9
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.967</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.556</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.597</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Legat</h4>
+        <div>
+          Læge, ph. d.-studerende Signe Schmidt fra Hvidovre Hospital, Endokrinologisk Afdeling, har modtaget Diabetesforeningens Forskningslegat 2013 på 350.000 kr.Signe Schmidt forsker i teknologien, der kaldes »en kunstig bugspytkirtel«. Den består af en insulinpumpe, en blodsukkermåler og en lille computer, der med en avanceret algoritme styrer de to andre, og dermed fritager diabetespatienten for selv at måle blodsukker og tage insulin-indsprøjtninger.Signe Schmidts forskning sigter på at udvikle systemet, så det bliver så stabilt og sikkert, at det kan udbredes til patienterne -både børn og voksne med type 1-diabetes, som vil få en langt lettere hverdag med deres kroniske sygdom.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2013-05-04
+          &nbsp;·&nbsp; e3c6d9e3
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.911</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.859</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.596</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Selvsikkert DTU-hold: Bruce Schneier bange for at tabe SHA-3-dyst</h4>
+        <div>
+          It-sikkerhedskoryfæet Bruce Schneiers ønske om at stoppe en konkurrence om at lave den bedste efterfølger til SHA-2 krypteringsstandarden, bunder i frygt for at tabe, lyder meldingen fra det danske hold, som er blandt de fem finalister tilbage i konkurrencen.Af Jakob Møllerhøj Torsdag, 27. september 2012 - 10:44Den internationalt anerkendte sikkerhedsguru Bruce Schneier var fornyligt fremme med en opfordring til at stoppe konkurrencen om at finde en efterfølger til krypteringsstandarden SHA-2.Læs også: Ny, unødvendig SHA-3-krypteringsalgoritme på vej - efter fem års tilløbSom begrundelse for at vente med at udråbe vinderen af konkurrencen og dermed SHA-3-algoritmen, har Schneier kort fortalt anført, at SHA-2 stadig klarer sig fint rent sikkerhedsmæssigt. Hans eget bud på SHA-3 er i øvrigt blandt de fem tilbageværende finalister i konkurrencen, hvor vinderen forventes at blive offentliggjort inden for kort tid.Men Schneiers begrundelse for at sætte konkurrencen på pause giver professor ved Institut for Matematik ved Danmarks Tekniske Universitet Lars R. Knudsen ikke meget for. Han deltager på et hold hovedsageligt bestående af folk fra DTU i konkurrencen med et SHA-3-bud kaldet Grøstl. Ifølge Lars R. Knudsen har amerikanske National Institute of Standards and Technology, der står bag konkurrencen, i hvert fald tidligere meldt ud, at vinderen ville blive fundet i løbet af september.»Schneier har nok indset, at han ikke vinder. Han kommer jo med udmeldingen mindre end en uge inden vinderen skal offentliggøres, og efter konkurrencen har været i gang i omkring fem år,« siger Lars R. Knudsen og tilføjer:»Det virker på os, som om han er bange for at tabe.«Deltagerne i kryptokonkurrencen har gransket hinandens algoritmer på kryds og tværs for at finde eventuelle svagheder i dem. Og efterhånden er de oprindelige 64 SHA-3-bud nu indsnævret til de fem finalister.I har set Schneiers algoritme, har han grund til at være bange?»Narh, den er ikke dårlig, men den er ikke lige så god som vores,« siger Lars. R. Knudsen med et grin.Læs mere om DTU-holdets bud på en SHA3-algoritme i morgen, fredag, på Version2's ogIngeniørens hjemmesider.Læs ogsåNy, unødvendig SHA-3-krypteringsalgoritme på vej - efter fem års tilløbLars R. Knudsen, professor og leder af kryptogruppen på DTU..
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2012-09-27
+          &nbsp;·&nbsp; e36cb271
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.98</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.533</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Professor får ærefuld pris</h4>
+        <div>
+          Aktuelt portræt: Professor Mikkel Thorup modtager Danmarks største individuelle forskerpris.De fleste ville være glade for at blive præmieret med 5 mio. kroner, men glæden var formentlig endnu større hos professor Mikkel Thorup fra Datalogisk Institut på Københavns Universitet, da han den 23. januar fik Villum Kann Rasmussens Årslegat til Teknisk og Naturvidenskabelig Forskning.Legatet er nemlig Danmarks største individuelle forskerpris og giver, ud over anerkendelse til Mikkel Thorup for hans internationale forskningsgennembrud, den danske professor mulighed for at fortsætte sine studier af algoritmik.»Min ambition er at fortsætte med at skabe nye forståelser og løsninger, der kan give os en mere sikker og mere effektiv brug af computere og bedre it-netværk&quot; , siger Mikkel Thorup om sine planer med pengene fra prisen.Mikkel Thorup er en af verdens førende eksperter inden for datastrukturer og leder forskningscentret EADS - Center for effektive algoritmer og datastrukturer. Derudover fungerer han som forskningskonsulent for Google og Microsoft.Den danske professor er uddannet civilingeniør fra DTU og har en ph.d. fra Oxford University. Siden har han i mange år forsket for den amerikanske tele- og forskningsmastodont AT&amp;T, inden han i 2013 blev ansat som professor og centerleder på Københavns Universitet.Mikkel Thorup er medlem af Det Kongelige Danske Videnskabernes Selskab og har tidligere modtaget priser såsom den matematiske &quot;MAA Robbins Prize&quot;, &quot;Fellow of ACM&quot; inden for datalogi og industriprisen &quot;Fellow of AT&quot;.Derudover er han forfatter til mere end 170 videnskabelige publikationer og holder foredrag ved internationale konferencer inden for sit felt datastrukturer og algoritmik.Professor Mikkel Thorup modtager Danmarks største individuelle forskerpris. Foto: Københavns Universitet.Professor Mikkel Thorup modtager Danmarks største individuelle forskerpris. Foto: Københavns Universitet.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-01-25
+          &nbsp;·&nbsp; e4ca38fe
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.706</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.806</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Valuer åbner kontor i London</h4>
+        <div>
+          Det danske selskab Valuer vil åbne et nyt kontor i London. Det oplyser selskabet i en pressemeddelelse.»Det er en vigtig milepæl for vores internationale strategi, at åbne kontoret i london,« fortæller Dennis Poulsen, administrerende direktør i Valuer, er det nye kontor første del i virksomhedens internationale strategi.Selskabet, der står bag en algoritme-drevet platform, som kan matche virksomheder med startups, blev børsnoteret tidligere i år.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-04-19
+          &nbsp;·&nbsp; e839dc1a
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.974</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.52</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.541</kbd>
+            <kbd data-tooltip="Business &amp; innovation">L80_BUSINN&nbsp;0.628</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.662</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Farlige aktie-computere skal stoppes</h4>
+        <div>
+          Det skal være slut med de ukontrollable og vilde aktiehandels-computere, der med lynets hast automatisk handler enorme mængder værdipapirer.EU sætter sejl for at få bugt med den voldsomt udbredte brug af de lynhurtige computere og algoritmer, der i dag i stor stil anvendes til at handle aktier.Med de relativt komplekse handels-algoritmer køber og sælger computerne automatisk og lynhurtigt store mængder aktier, der hver især blot kaster en ganske lille fortjeneste af sig.De automatiske handels-computere er efterhånden blevet så udbredte, at de i dag sørger for en stor del af verdens aktiehandel - ofte i et tempo, hvor ingen menneskelig aktiehandler kan følge med.Men det skal være slut nu med den vilde og ukontrollerede automatiske aktie-handel.Regulering og kontrolDerfor har EU-landene ifølge Bloomberg netop indgået en foreløbig og indledende aftale om kommende regulering og kontrol over de automatiske handler.Bliver aftalen endelig godkendt, vil det betyde, at alle handels-algoritmer skal tjekkes og gennemgåes, inden de tages i brug.Dermed vil EU undgå risikoen for, at algoritmerne får for meget indflydelse, som det eksempelvis skete under det såkaldte 'flash crash' i 2010, da Dow Jones-indekset pludselig faldt med 700 point, fordi en computer-algoritme pludselig solgte enorme mængder værdipapirer på ganske få minutter.Du kan læse mere om dette crash her.Aftalen sigter dermed mod at minimere risikoen for systemfejl.Omgående stopEU sigter ligeledes efter at kræve, at en algoritme stoppes omgående, hvis pris-volatiliteten kommer ud af kontrol.Også den danske Nasdaq OMX-børs i København anvender i stor stil aktie-robotterne. Det kan du læse mere om her.Læs også på Computerworld:Kurt har kodet et system, der sætter verdens investorer til vægsBekymring: Robotter står for danske børshandlerLøbsk algoritme udløste mini-børskrak
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2013-10-28
+          &nbsp;·&nbsp; e40f26de
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.547</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.681</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robotterne skal redde Tysklands velsmurte vækstmaskine</h4>
+        <div>
+          Hvis regeringschefer fik karakterpenge, ville der nok være en skilling til den tyske kansler, Angela Merkel.I hvert fald er det netop offentliggjorte skudsmål fra Den Internationale Valutafond (IMF) af den mere misundelsesværdige art: »Tysklands åbne og innovative økonomi har klaret sig godt, understøttet af forudseende økonomisk ledelse, tidligere strukturelle reformer og et veludviklet socialt sikkerhedsnet. Beskæftigelsesfremgangen er stærk, arbejdsløsheden er rekordlav, den økonomiske vækst ligger over potentialet, og den statsfinansielle position bliver stærkere,« konstaterer IMF i den såkaldte &quot;Artikel IV-erklæring&quot;, der afslutter den årlige gennemgang af et medlemslands økonomi.Faktisk er tempoet i tysk økonomi nu så højt, at der er et stigende antal ubesatte job, og det kan på længere sigt betyde udfordringer af mere negativ art.Kerneinflationen er fortsat lav, som i resten af euroland, ligesom lønudviklingen er moderat.Imidlertid savner industriinvesteringerne momentum, påpeger IMF. Manglen på kvalificeret arbejdskraft får tysk erhvervsliv til at lægge en større del af investeringerne i andre lande, men dette er ikke nødvendigvis optimalt.Da Tyskland ligesom Danmark og andre industrilande oplever, at der bliver stadigt flere ældre, vil udviklingen på længere sigt kunne sætte den økonomiske vækst under pres.»Det store og stadig høje betalingsbalanceoverskud afspejler en høj indenlandsk opsparing samt bedre internationale end nationale investeringsmuligheder såvel som eksterne faktorer. Tyskland bør gennemføre et sæt koordinerede finanspolitiske og strukturelle tiltag for at sikre landets styrker og adressere de tilbageværende udfordringer, herunder at reducere de eksterne ubalancer,« hedder det videre i erklæringen.Netop kombinationen af rekordlav arbejdsløshed og et stigende antal ubesatte job gør den fjerde industrielle revolution særlig relevant for Tyskland, da automatisering er det nærliggende svar på udfordringerne.Tanken er på ingen måde fremmed, konstaterer konsulentkoncernen The Boston Consulting Group, der i en rapport påpeger, at tysk erhvervsliv er væsentligt bedre forberedt end amerikansk erhvervsliv.Tysk forspring på fem år Forklaringen skal bl. a. søges i, at Tyskland allerede i 2011 lancerede &quot;Projekt Industrie 4.0&quot;, hvilket var fem år før, at World Economic Forum, den internationale organisation for offentligt-privat samarbejde, gjorde &quot;Den Fjerde Industrielle Revolution&quot; til tema for årsmødet 2016 i Davos og dermed fik sat emnet på den globale økonomiskpolitiske dagsorden.»Næsten halvdelen af alle tyske industrivirksomheder har udviklet deres første Industri 4.0-koncept, og kun hver femte svarer i en rundspørge, at de endnu ikke har taget hul på denne proces. I USA er det kun hver tredje fremstillingsvirksomhed, der har en klar strategi, mens 41 pct. svarer, at de endnu ikke har forberedt sig på den fjerde industrielle revolution,« anfører Christian Greiser, seniorpartner i Boston Consulting Group.»De tyske virksomheders stærke ambitioner for Industri 4.0 afspejler deres behov for at overvinde udfordringerne fra høje lønninger og et mindre fleksibelt arbejdsmarked.Disse faktorer tvinger virksomhederne til at stræbe efter større produktivitet og derfor hurtig implementering af ny teknologi,« føjer han til.De seneste data viser, at der i Tyskland er 301 industrirobotter pr. 10.000 ansatte, hvilket er markant flere end de 176 robotter pr. 10.000 ansatte i USA, men langt under de 531 pr. 10.000 i Sydkorea.Folk med it-uddannelser søgesI lighed med andre industrilande står Tyskland med den udfordring, at mange af de ansatte i industrien ikke har de nødvendige kvalifikationer, og selv om to tredjedele af de tyske industrivirksomheder har efteruddannelsesprogrammer, er det ikke tilstrækkeligt, viser en analyse fra revisions-og konsulentkoncernen Pricewaterhouse Coopers (PWC), da der i tiåret frem til 2025 vil blive behov for flere ansatte med it-uddannelser og færre klassiske industriarbejdere.Beregninger fra Boston Consulting Group viser, at der i Tyskland frem til 2025 netto vil blive skabt 400.000 nye job.Tallet dækker over, at der vil blive behov for ca. 1 million nye job for folk med ituddannelser i bred forstand, mens der omvendt vil forsvinde 600.000 klassiske industrijob.»Fire industrigrupper tegner sig i dag for hovedparten af aktive industrirobotter: Produktion af computere og forbrugerelektronik, produktion af elektrisk udstyr, hårde hvidevarer og komponenter, produktion af transportmateriel og produktion af maskiner. I 2025 vil disse fire grupper tegne sig for 75 pct. af alle industrirobotter,« betoner Christian Greiser.I disse fire industrigrupper har mindst 85 pct. af produktionen et automatiseringspotentiale, vurderer Boston Consulting Group, og inden for transportudstyr og computerindustri er incitamentet endnu større, da lønningerne i disse to industrier globalt ligger 20 pct. over lønningerne generelt i fremstillingsindustrien.Der kan imidlertid også være andre konsekvenser, som ikke hidtil har indgået i debatten.Lande, der ikke forstår at udnytte den fjerde industrielle revolution, kan blive ramt på kreditværdigheden, siger kreditvurderingskoncernen Moody's Investors Service i en netop offentliggjort rapport.Forventningen er, at 75 pct. af alle nye industrirobotter frem til 2025 vil ende i fem lande: Kina, USA, Japan, Sydkorea og Tyskland - alene halvdelen i verdens to største økonomier, USA og Kina.»I disse fem lande vil øget brug af robotter kunne føre til hjemflagning af produktion fra udviklingslande med lavere lønomkostninger.Dog vil antallet af job, der vil gå tabt som følge af automatisering, sandsynligvis være større, end antallet af job der vindes ved hjemflagning,« siger senioranalytiker Samar Maziad fra Moody's.Sydkoreanske virksomheder vinder »Udviklingen vil få dramatiske konsekvenser for konkurrenceevnen. Vores beregninger viser, at de største vindere vil blive fremstillingsvirksomheder i Sydkorea, hvor de kombinerede omkostninger ved mennesker og robotter i 2025 vil være 33 pct. lavere end uden den aggressive implementering af robotter, der forventes i Sydkorea. Det er dobbelt så meget som de gennemsnitlige omkostningsreduktioner i 25 andre lande,« konstaterer Christian Greiser fra Boston Consulting Group.I Japan ventes produktionsomkostningerne at kunne falde med 25 pct. frem til 2025, 24 pct. i Canada, 22 pct. i USA, 21 pct.i Tyskland og Storbritannien, 20 pct. i Australien samt 18 pct. i Kina og Tjekkiet.»I lande, hvor en befolkning med stadig flere ældre reducerer væksten i arbejdsstyrken, vil øget anvendelse af robotter kunne styrke den økonomiske vækst ved at mindske behovet for manuel arbejdskraft og i samme proces øge produktiviteten,« anfører Samar Maziad fra Moody's.»Udviklingslande med en veluddannet arbejdsstyrke og lave lønninger har hidtil haft en konkurrencefordel, hvilket har betydet, at de er blevet centrale led i værdikæderne for højteknologiske produkter og en deraf følgende stor eksport.Automatiseringen vil imidlertid kunne udviske eller helt eliminere disse fordele,« føjer han til. Moody's peger specifikt på lande som Tjekkiet, Ungarn og Slovenien i Europa, Malaysia og Thailand i Asien samt Mexico i Latinamerika som lande, der vil kunne blive særligt udfordrede i de kommende år.»Evnen til at absorbere ny teknologi i produktionsprocesserne vil i udviklingslande som disse blive afgørende for, om de vil kunne fastholde deres konkurrenceevne.Her skiller Tjekkiet, Ungarn og Malaysia sig ud som de lande, der vil være relativt bedst positioneret til at kunne opretholde investeringer, eksport og global produktion, der hidtil har understøttet den økonomiske vækst,« understreger Samar Maziad.Analysen fra PWC peger på, at ikke kun udviklingslande, men også industrilande med lav produktivitetsvækst, høje lønninger og rigide arbejdsmarkeder potentielt vil blive de store tabere, når den fjerde industrielle revolution løber over scenen.Lande som Italien, Frankrig og Belgien har et latent behov for at styrke produktiviteten bl. a. gennem intensiveret automatisering, men det vil næppe ske i det påkrævede omfang på grund af økonomiske, kulturelle og sociale barrierer, hvilket vil føre til et yderligere tab af konkurrenceevne i forhold til Tyskland.Konsekvensen kan være, påpeger rapporten fra Moody's, at lande, der økonomisk taber terræn ved ikke i tilstrækkelig grad at udnytte fordelene ved den fjerde industrielle revolution, vil kunne blive ramt på kreditværdigheden.Man skulle tro, at lande med meget lave lønninger, der i al væsentligt eksporterer produkter med et lavt teknologiindhold, produceret af arbejdere med lav uddannelse, ville være de mest udsatte for konsekvenserne af den fjerde industrielle revolution, men det er ikke tilfældet.De fortsat konkurrencedygtige»Disse lande - som bl. a. Indien og Indonesien - vil fortsat være konkurrencedygtige i kraft af lave lønninger og i mange tilfælde produktion, der er kompliceret at automatisere som bl. a. tekstilindustrien. Faren for disse lande er, at de bliver fastholdt i denne form for produktion, selv om de får en stadig mere veluddannet arbejdsstyrke,« pointerer Samar Maziad og fortsætter: »Eksporten af højteknologiske varer udgør mere end halvdelen af bruttonationalproduktet (bnp) i økonomier som Ungarn, Tjekkiet og Slovakiet. I nogle af disse lande hidrører mere end halvdelen af arbejdsindkomsterne fra den eksportbaserede fremstillingsindustri. Tab af eksportmarkeder vil derfor føre til et signifikant tab af beskæftigelse og arbejdsindkomst med deraf følgende nationaløkonomiske konsekvenser.«.Tyskland står gunstigtFå lande står i en mere gunstig position end Tyskland, der ikke blot kan imødegå demografiske udfordringer gennem øget automatisering. Tyskland er også verdens største producent af industrirobotter efter Japan.Sydkorea, Japan og Tyskland har identiske demografiske udfordringer, og derfor er forventningen, at de tre lande også vil fastholde den globale førerposition, når det gælder implementeringen af robotter.Konsekvensen kan blive, at Tyskland fortsat vil have meget store overskud på handels-og betalingsbalancerne, hvilket ikke blot er en makroøkonomisk udfordring, som påpeget af IMF, men også politisk i forhold til bl. a. de europæiske lande, der føler, at tyskerne kun taler om behovet for balance, men reelt ikke gør ret meget for at skabe balance.Tyskland kører med IMF's ord økonomisk så velsmurt som nogensinde, og ved foreløbig tre delstatsvalg her i foråret har kansler Angela Merkel og regeringspartiet CDU fejet al modstand til side, hvilket har øget sandsynligheden for, at det samme kan blive resultatet ved valget til Forbundsdagen søndag den 24. september.Sker det, kan det vel kaldes en form for karakterpenge.louiedk@finans.dk De tyske virksomheders stærke ambitioner for Industri 4.0 afspejler deres behov for at overvinde udfordringerne fra høje lønninger og et mindre fleksibelt arbejdsmarked.Christian Greiser, seniorpartner, Boston Consulting Group.Fakta: FIRE INDUSTRIELLE REVOLUTIONERUnder den igangværende fjerde industrielle revolution spiller robotter en voksende rolle og løser langt flere opgaver end tidligere. Samtidig forventes især 3D-print, kunstig intelligens, brug af data, IOT (internet of things) og genteknologi at ændre vores hverdag markant i løbet af få år som led i den fjerde industrielle revolution.Den tredje industrielle revolution defineres som computernes og automatiseringens gennemslag og markerede et skift fra den mekaniske og analoge teknologi til den digitale.Den anden industrielle revolution blev især båret af stål og elektricitet, som for alvor gav mulighed for at sætte masseproduktion i system via f. eks. samlebånd.Den første industrielle revolution rullede i sidste del af det 18. og første del af det 19. århundrede, da teknologiske fremskridt som masseproduktion, minedrift og dampmaskinen ændrede grundlæggende på samfundet.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-05-20
+          &nbsp;·&nbsp; e6433c0d
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.808</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.856</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.597</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Søgemaskine skal udvikles af kunstig intelligens</h4>
+        <div>
+          Google har allieret sig med eksperter i kunstig intelligens, der har arbejdet på at udvikle Googles søgemaskines algoritmer. Det teknologiske fremskridt markerer en ny æra i Googles historie, hvor kunstig intelligens på sigt kan erstatte menneskelig intelligens. Det skriver Financial Times.- Min Star Trek-drømmecomputer er ved at blive en realitet, og den er bedre, end hvad jeg nogensinde har forestillet mig, siger Googles tidligere ingeniør, Amit Singhal, til Financial Times.RBFINANS.
+        </div>
+        <footer>
+          <em>JydskeVestkysten</em>
+          &nbsp;·&nbsp; 2016-02-05
+          &nbsp;·&nbsp; e58ac367
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.814</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.602</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.538</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vardekort med verdenskunst</h4>
+        <div>
+          Her står de: Poul Erik Bech har givet 18 nye kunstværker til Varde by. Det tager godt en time at gå ruten. Her kan du se placeringen, navn og titel på kunstneren.Læs mere om den store kunstgave på næste side.1. SEABRIDGES I &amp; II, 2018 af Jörg Plickat Cortenstål 2. PATTEDYR, 2019 af Mia Edelgart Bemalet fiberbeton 3. UDEN TITEL, 2001 af Jun-Ichi Inoue Sort granit (På hjørnet af Posthusvej og Torvegade) 4. VINDROSEN, 2020 af Jens Ingvard Hansen Rustfrit stål 5. WHISTLEBLOWER, 2011 af Jesper Neergaard Finsk Kuru granit 6. VÆKSTEN, 2008 af Per Sommer Rustfrit stål 7. OMEGA, 2018 af Per Sommer Rustfrit stål 8. UDEN TITEL, 2014 af Carsten Fun Jensen Bronze / cortenstål 9. SLÆDEN, 1986 af Harvey Martin Cortenstål 10. UDEN TITEL, 1997 af Børge Jørgensen Rustfrit stål 11. LIVET, 1994 af Børge Jørgensen Rustfrit stål 12. ULVETIDER, 2020 af Steen Bendt Langvad Cortenstål I VARDE GARTEN 13. STARSTRUCK, 2020 af Vivi Linnemann Acrylglas 14. KRIGENS SKYGGE, 2015 af Helle Rask Crawford Bronze 15. KVINDETORSO, 1989 af Keld Moseholm Bronze 16. DREAM, 2019 af Viktor Grachev Carrara marmor 17. BALLOON RABBIT, 2019 af JeffKoons Porcelæn 18. ARTIFICIAL INTELLIGENCE, 2019 af Peter Schudde Aluminium og cortenstål (Æblehaven).
+        </div>
+        <footer>
+          <em>Ugeavisen Varde</em>
+          &nbsp;·&nbsp; 2020-09-02
+          &nbsp;·&nbsp; e7de43e0
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.757</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.946</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mega-pengetank vil forske i kunstig intelligens</h4>
+        <div>
+           Verdens største kapitalforvalter, Blackrock, vil forske i kunstig intelligens og planlægger at etablere et forskningscenter i Californien. Det illustrerer investeringsindustriens øgede interesse i at få maskiner til at &quot;tænke&quot;.Det skriver Financial Times.Når Blackrock i slutningen af året åbner et laboratorium for kunstig intelligens, håber kapitalforvalteren, at det vil effektivisere selskabets præstationer og i sidste ende komme kunderne til gavn.ADVERTISING&quot;Når folk hører udtrykket kunstig intelligens, tænker de ofte på en robot, der overtager verden. Men det handler om at øge effektiviteten af, hvad vi gør rundt omkring i verden,&quot; siger Blackrocks driftschef, Rob Goldstein, til Financial Times.Han tilføjer, at teknologien allerede er &quot;ved at ændre verden&quot;.Investeringsindustrien har længe været fulgt udviklingen af kunstig intelligens i håbet om, at det vil kunne bruges til at analysere store mængder data og dermed øge resultater og mindske omkostninger./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-02-20
+          &nbsp;·&nbsp; e6a07749
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.903</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.516</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>HSBC vil bruge kunstig intelligens i kamp mod svindel</h4>
+        <div>
+           Den britiske bank HSBC vil fremover bruge kunstig intelligens-teknologi for bedre at kunne opdage svindel, hvidvask og finansiering af terror.Det skriver Financial Times.HSBC, der er Europas største bank, vil, i samarbejde med softwareudvikleren Quantexa, integrere kunstig intelligens i sine systemer, der skal sammenligne forbrugernes transaktioner med offentligt tilgængelig data, i et forsøg på at udpege mistænkelig adfærd.ADVERTISINGInitiativet kommer, efter at storbanken gennem det sidste årti er blevet straffet med bøder i milliardklassen for ikke at stoppe finansiering af illegale aktiviteter.Integrationen af kunstig intelligens-teknologi har til formål at spare HSBC for penge.Ifølge en undersøgelse, foretaget af det britiske selskab Financial Conduct Authority, bruger britiske banker 5 mia. pund (42,7 mia. kr.) om året på at bekæmpe kriminelle finansaktiviteter.Andre banker, heriblandt Danske Bank, har også indgået samarbejde med softwareudviklere for bedre at kunne overvåge kriminelle aktiviteter.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-04-09
+          &nbsp;·&nbsp; e6b247ab
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.836</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.753</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Her vil Kina være verdens bedste om syv år</h4>
+        <div>
+          KUALA LUMPUR P å Beijing Motor Show i slutningen af april var det ikke modeller og nyheder fra Vestens kendte bilmærker, der stjal projektørlyset. Det var derimod moderne, smarte køretøjer i utraditionelt design og nye materialer med navne og mærker som BAIC, Hanteng, ZD, EYD, Zotye, Nio, JAC og Geely. Fællesnævneren: Elektriske biler produceret i Kina.Tre fjerdedele af de udstillede elbiler var hjemmelavede. En illustration af, at Kina i dag er verdens største marked for elektriske biler og i BAIC har et af verdens mest sælgende mærker.I fjor rullede der 92.000 enheder ud fra BAIC-forhandlerne på et marked på 600.000 køretøjer - tre gange så stort som det amerikanske.Kina har i dag omkring 200 større eller mindre nationale fabrikanter parat til at kæmpe om kunderne.For Kina har en plan. Den hedder &quot;Made in China 2025&quot; - eller bare MIC 2025.I den er identificeret 10 områder, hvor Riget i Midten har ambitioner om at blive verdensførende.De elektriske biler falder under den hat.Der kanaliseres bevidst ressourcer ind i elbilerne via et system af underliggende støttefunktioner.Der er programmer for finansiering, skat, talentudvikling og innovation.Der er mål, kvoter og tidsrammer. Målsætningen er klinisk.Kinesisk producerede elbiler skal dække 70 pct. af hjemmemarkedet i 2020 og 80 pct. i 2025. Som manden bag elbilen Tesla, Elon Musk, tweetede til Donald Trump for en måned siden, »er det som at deltage i en olympisk løbekonkurrence iført blysko«. Kina rykker på alle 10 områder. Planmæssigt og systematisk.Kina er allerede verdens førende inden for sol, vind og vandenergi og investerer mere i vedvarende energi end USA og Europa tilsammen.75 pct. af Kinas industrirobotter skal produceres lokalt om syv år.En direkte udfordring for USAHøjhastighedstog er et andet eksempel.På 15 år har Kina udviklet et højhastighedsnet, der barberer timer og dage af lokale rejser og i dag dækker to tredjedele af klodens samlede netværk. Produktet sælges nu også uden for landets grænser.MIC 2025 blev luftet på partikongressen i 2013. Hundredvis af embedsmænd blev sat til at udvikle planer og strategier, og i 2015 var projektet klar til at blive rullet ud. De ambitiøse mål er nu en direkte udfordring til USA's dominans inden for teknologi og højteknologi. New York-tænketanken Council on Foreign Relations kalder udviklingen for »en reel eksistentiel trussel mod USA's teknologiske førerposition«. Den lurende handelskrig handler ikke kun om kul, stål, kød og forsikringer, men i høj grad om mikrochips, kunstig intelligens og et Kina, som fra at være en lavprisbase nu kaster sig ind i avancerede industrier med potentiale til at blive verdens førende.Mange ser dog 2025-planen som betydeligt mere end blot en industriel opgradering via traditionelle planøkonomiske femårsplaner.Strategisk drejer det sig også om Kina som en stormagt. Og om sikkerhed.I dag er Kina afhængig af amerikansk teknologi fra IBM til Intel og Microsoft.Nu har Kina sat kurs mod en fremtid, hvor kineserne selv kan fremstille avanceret teknologi og ikke er afhængige af andre.Det amerikanske handelskammer (U. S.Chamber of Commerce) konstaterer, at USA og Kina har et stærkt integreret, men komplekst forhold, der er afgørende vigtigt for begge nationer og for resten af verden.»Vores økonomiske og kommercielle forbindelser har længe været ballasten i relationerne. På en række vigtige områder sender en plan som MIC 2025 nu de to økonomier på hver sin kurs i modsætning til en integration,« skriver handelskammeret i en 80 sider lang rapport om problematikken.Det blå oceanPlanen er integreret i Kinas sideløbende lancering af den nye Silkevej - kaldet &quot;One Belt, One Road&quot; (Obor) - og også integreret i miljøpolitikken. Obor er et vidtforgrenet netværk, som skal forbinde Kina med først og fremmest Europa, men også Mellemøsten plus dele af Afrika og Latinamerika. Kina forlænger de nationale trafikkorridorer til fjerne horisonter via naboer og genboer.De kinesiske strateger arbejder i det område af erhvervslivet, der defineres som &quot;The Blue Ocean&quot;. Områder, hvor der ikke i forvejen er konkurrence mellem etablerede spillere, og hvor man relativt nemt kan blive verdensdominerende. For eksempel i rummet, i de dybe oceaner, med kunstig intelligens og i cyberspace.Her kan kineserne innovere og træde ind på den globale arena på lige fod med resten af verden. Kina har for eksempel erkendt, at man ikke kan konkurrere med en mere end 100-årig vestlig bilindustri baseret på benzin og diesel. Derimod sidder man med de samme kort som alle andre inden for elbiler.Regeringen sender milliarder af kroner efter projekterne. Der prioriteres nu skarpt.De seneste to år har regeringen strammet definitionerne af, hvad kinesiske selskaber kan investere i ude og hjemme.Regeringen sørger for, at ressourcerne kanaliseres ned i projekter, der matcher overskrifter som MIC 2025, Silkevej, miljø, grøn energi og teknologi. Enten i form af investeringer, lån eller skattefordele. Eller ved at tillade opkøb i udenlandske selskaber med en ekspertise, der matcher visionerne.Når alarmklokkerne lyder i USA, skyldes det den hastighed, som Kina kan levere med. Når først projekterne er klappet af i det politiske system, bliver de implementeret med en gennemslagskraft, som ingen andre i verden kan hamle op med i øjeblikket.Det er den evne, der har gjort Kina til en økonomisk magtfaktor på cirka 30 år.Som Jeremie Waterman, præsident for det amerikanske handelskammer, konstaterer: »Hvis Made in China 2025 når sine mål, vil USA og andre nationer formentlig blot blive råvareeksportører til Kina - sælge olie, gas, bøffer og soja.«.jan.lund@jp.dk På en række vigtige områder sender en plan som MIC 2025 nu de to økonomier på hver sin kurs.U. S. Chamber of Commerce.Fakta: MADE IN CHINA 2025Om færre end syv år vil Kina være verdens førende inden for robotteknologi, kunstig intelligens, elbiler, m. m.Strategien hedder &quot;Made in China 2025&quot;, og sammen med den nye Silkevej gennem Centralasien til Europa og storstilede opkøb af virksomheder globalt satser Kina på at blive verdens førende økonomiske og politiske magt.10 strategiske områder, hvor Kina vil være førende i 2025: M Avanceret informationsteknologi.Automatiserede maskiner og robotter.Rumfarts-og dybhavsudstyr.Maritimt udstyr og højteknologisk shipping.Moderne togtransport.Nye energikøretøjer.Energi.Landbrugsudstyr.Nye materialer.Biomedicin og avanceret medicinsk udstyr.MEDICINOverordnede målsætninger for udviklingen i den farmaceutiske og medicinske industri som et eksempel på, hvordan Kina strukturerer planer og målsætninger frem mod 2025.2020 Årlig fabrikation når 600 mia.dollars.Eget medicinsk udstyr til hospitaler når 50 pct.National produktion af kernekomponenter når 60 pct.Etablering af fem eller flere fælles platforme eller investeringscentre for forskning og teknologi.20 demonstrations-og applikationsbaser.Udvikle tre eller flere internationale brands.2025 Årlig fabrikation når 1.200 mia. dollars.Eget medicinsk udstyr 70 pct.Kernekomponenter 80 pct.10 eller flere platforme.Seks industricentre på provinsniveau med et salg for milliarder af dollars.30 demonstrations-og applikationsbaser.Inden for alle større produktområder at have skabt fem eller flere anerkendte internationale brands.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-05-18
+          &nbsp;·&nbsp; e6c12f95
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.775</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.597</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Toyota satser syv milliarder kroner på udviklingen af kunstig intelligens</h4>
+        <div>
+          Toyota har investeret syv milliarder kroner i et nyt forskningscenter, der skal væbne firmaet til kamp mod Google. For kapløbet om fremtidens bil handler mere om computerkraft end hestekræfter.TOKYO - »Det er sjovt at køre bil,« lyder Toyotas klassiske slogan. Google har måske et lidt andet motto: »Det er sjovt at blive kørt i bil.«Det fiktive slogan bør siges med et glimt i øjet, men der er også alvor bag. For fremtidens computerdrevne transportmidler vil i stigende grad kunne køre uden en chauffør bag rattet. Teknologien er allerede så effektiv, at de såkaldt selvkørende biler vil dukke op på verdens veje inden udgangen af dette årti.Bilindustrie...Toyota har bået kastet sig tidligt ind i kampen, da det galdt udvikling af brint - og elbiler. Nu satser de stort på selvkørende biler i skarp konkurrence med bl.a. Google og den nye dreng i bilklassen - Tesla. Foto: JP.Toyota har bået kastet sig tidligt ind i kampen, da det galdt udvikling af brint - og elbiler. Nu satser de stort på selvkørende biler i skarp konkurrence med bl.a. Google og den nye dreng i bilklassen - Tesla. Foto: JP.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-11-09
+          &nbsp;·&nbsp; e54e1610
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.654</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.579</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Flere bøger på eReolen</h4>
+        <div>
+          BØGER: En helt ny aftale betyder, at nogle af de mest efterspurgte bøger nu kan lånes som e-bøger. Det gælder for eksempel &quot; Alle mine morgener på jorden&quot; af Troels Kløvedal, &quot; Under bjælken&quot; om kronprins Frederik af Jens Andersen og Hanne-Vibeke Holsts &quot; Som pesten&quot;.Aftalen, der trådte i kraft den 1. januar, er indgået mellem bibliotekernes digitale platform for udlån af e-bøger, eReolen, og forlagene Gyldendal (inkl. Rosinante) og Modtryk (inkl. Alvilda).Ved offentliggørelsen af aftalen udtalte formand for Danmarks Biblioteksforening Steen Bording Andersen: -Aftalen er utrolig vigtig for bibliotekernes e-bogudlån og dermed for borgernes adgang til litteratur og viden. Bibliotekerne står centralt i litteraturformidlingen og spiller en betydelig rolle for både bogmarkedet og det enkelte menneskes lyst og mulighed for at læse.Den rolle er måske endnu vigtigere i et algoritmestyret digitalt marked, så derfor er det nødvendigt at bibliotekerne har mulighed for at udlåne bøger, uanset om det er fysiske eller e-bøger.Med aftalen er Danmark igen frontløber på verdensplan, når det kommer til biblioteker som digitale formidlere, oplyser biblioteksforeningen, og tilføjer: -Det ligger i fin forlængelse af den danske folkeoplysende tradition, hvor borgernes adgang til viden har spillet en central rolle siden Grundtvig.
+        </div>
+        <footer>
+          <em>Helsingør Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-12
+          &nbsp;·&nbsp; e693103a
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.546</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.604</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kina overhaler Nordamerika i at tiltrække venturekapital</h4>
+        <div>
+          Det skriver South China Morning Post.Ifølge en rapport lavet af Crunchbase, der observerer og samler finansieringsdata, tegnede startups i Kina sig for 47 pct. af verdens venturekapital-finansiering i andet kvartal, sammenlignet med 35 pct. for USA og Canada tilsammen.Det er især områder som personligt forbrug, medicin- og sundhedsbehandlinger og informationsteknologi, der har tiltrukket de største finansieringer i maj måned, og det var investeringer i de begyndende udviklingsfaser, der var mest populære, ifølge data indsamlet af det kinesiske analyseselskab Zero2IPO.Kina har set en markant stigning i antallet af startups de seneste år, efter at den kinesiske regering lovede, at den ville gøre mere for at implementere en innovationsdrevet udviklingsstrategi, der skal gøre landet mere konkurrencedygtigt.Regeringens løfte kom som led i landets øgede fokus på at transformere sig selv fra et industriland til et globalt innovativt kraftcentrum og gav også genklang på den 19. kommunistiske partikongres, hvor den kinesiske præsident, Xi Jinping, i sin åbningstale nævnte både internettet, big data og kunstig intelligens, som nogle af Kinas største innovationsmuligheder i fremtiden.Venturekapital-finansierede aftaler nåede et rekordhøjt niveau på global plan i 2017 på 182 mia. amerikanske dollar, på trods af at antallet af aftaler faldt med 4,7 pct., ifølge data serviceudbyderen Preqin. På daværende tidspunkt dominerede USA toppen af listen, med 42 pct., eller mere end 76,4 mia. dollar, hvorimod Kina lå på en andenplads med 36 pct. af den totale handelsværdi med omkring 65 mia. dollar./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-07-05
+          &nbsp;·&nbsp; e6d0937f
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.99</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.524</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.584</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Status på det, der truer os allermest: »I søvne bevæger vi os direkte ind i katastroferne«</h4>
+        <div>
+          Ekstreme vejrforandringerMislykkede forsøg på klimapolitikkerNaturkatastroferDatasvindel og datatyveriCyberangrebKilde: The Global Risk Report 2019Vis mereSvedperler på overlæben og på andre uønskede steder blev et vilkår dag som nat. Og naturområder, som før var grønne og frodige, tørrede ud og begyndte at ligne sandfarvede scener fra 'Mad Max'-filmene.Spørgsmålet er så, om det uforudsigelige klima gør comeback. Og det er en mulighed, hvis man ser på den årlige vurdering af største globale risici, The Global Risk Report 2019, som blev præsenteret onsdag på en pressekonference.Afsenderen på rapporten er World Economic Forum, som er en schweizisk fond, der driver et diskussionsforum for udforskning af verdens økonomiske problemstillinger.Top tre over største truslerNummer ét over største trusler er ekstreme vejrændringer. Den næste i rækken er, at vi mislykkes i forsøget på at bekæmpe klimaforandringer.Og den tredjemest sandsynlige trussel er, at vi kommer til at stå overfor flere store naturkatastrofer.»Jeg bliver nødt til at sige, at ud af alle de risici, som bliver fremlagt i rapporten, er de miljømæssige det sted, hvor verden ser ud til at gå i søvne direkte ind i katastrofer« , siger Alison Martin fra Zurich Insurance Group, som har medvirket i undersøgelsen:»2018 var desværre et år med skovbrande, oversvømmelser og stigende udledninger af drivhusgasser. Og det er derfor ikke en overraskelse, at miljømæssige risici igen dominerer på listen over store bekymringer i 2019. Det samme gør sandsynligheden for mislykket miljøpolitik og mangel på på gennemførsel af miljøpolitikker« .Truet klimaThe Global Risk Report inddeler truslerne efter, hvor stor sandsynligheden er for, at de vil forekomme samt de konsekvenser, de vil medføre.Rapporten udgives hvert år af World Economic Forum og kommer altid forud for den store årlige risicikonference i Davos, Schweiz. På mødet diskuterer regeringsledere, politikere, erhvervsledere og kunstnere fra hele verden aktuelle udfordringer for verdenssamfundet.Og resultaterne i rapporten bygger på de seneste resultater i Global Risks Perception Survey, hvor næsten 1000 beslutningstagere fra den offentlige sektor, den private sektor samt akademikere og civile vurderer de risici, verden står overfor.Ni ud af ti respondenter forudser værre økonomiske og politiske konfrontationer mellem stormagter. Men set ud fra et ti-årigt perspektiv bliver de ekstreme vejrændringer og mislykkede forsøg på klimapolitik set som nogen af de største trusler.Dette års rapport indeholder også en serie af »hvad-nu-hvis« -scenarier, der undersøger emner såsom vejrmanipulation, kvantecomputere samt kunstig intelligens med følelser.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2019-01-18
+          &nbsp;·&nbsp; e70c6155
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.81</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.65</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.56</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NYE CENTRE FORSKER I AI 1 mia. kr.</h4>
+        <div>
+          Midler fra Danmarks Grundforskningsfond, Lundbeckfonden, Novo Nordisk Fonden, Villum Fonden og Carlsbergfondet udgør finansieringen af nye pionércentre på universiteterne.Centrenes formål bliver at bedrive forskning i verdensklasse i store samfundsmæssige udfordringer som kunstig intelligens, klima og energi.
+        </div>
+        <footer>
+          <em>Tech Management</em>
+          &nbsp;·&nbsp; 2019-05-28
+          &nbsp;·&nbsp; e75ce2cf
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.885</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.919</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.91</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nato's tidligere generalsekretær får elektronisk nej til USA</h4>
+        <div>
+          Den besked fik han elektronisk, da han søgte indrejse via den amerikanske regerings hjemmeside.- Det er en smålig beslutning, er hans kommentar. Men det er noget med en algoritme i et amerikansk it-program, siger han.- Hvis det ved, at du var i Iran for nylig, så piller det dig ud af systemet, fortæller han.Solana var i 2013 med til præsident Hassan Rouhanis indsættelse i Teheran.Han havde deltaget i de internationale atomforhandlinger.De internationale forhandlinger, hvor også USA deltog, førte i 2015 til en aftale med Iran om landets atomprogram.I maj besluttede præsident Donald Trump at trække USA ud af aftalen, hvis øvrige garanter er Tyskland, Storbritannien, Frankrig, EU, Rusland og Kina.Solana siger, at han nu må gennem visa-ansøgninger for at komme ind i USA. Her underviser han på flere universiteter.Solana er udover tidligere generalsekretær i Nato også tidligere spansk udenrigsminister og udenrigspolitisk koordinator i EU./ritzau/AFP
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-06-26
+          &nbsp;·&nbsp; e6cd9326
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.975</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.66</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.769</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

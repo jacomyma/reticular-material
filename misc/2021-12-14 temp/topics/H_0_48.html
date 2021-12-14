@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_48 <kbd>H_0_48</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ikke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nogen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>men</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nok</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konstatere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forsøger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dårligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bryder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sådan</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>galt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fordi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lade</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forkert</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>heller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tvivl</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>længe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>undrer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>slags</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>helst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>svær</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sjældent</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>inde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>alligevel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rent</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskellen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dårlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sikkert</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>groft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fuldstændig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kalder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>interviewet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>svært</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stedet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>slet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dårlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ender</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>altså</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>talt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>desværre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hellere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>burde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>frit</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lever</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hænder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overrasket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skeptisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skidt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>læne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hænderne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ødelægge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nyttig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>medmindre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beslutter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>åbenlyse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>medgiver</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tide</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tydelig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tåle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_48 DESC LIMIT 50</pre>
+      <article>
+        <h4>Debat: Slagsmålet i KL</h4>
+        <div>
+          Lad os en gang for alle være fri for den evige slåskamp i KL om udligningsordningen.Lad kommunerne beholde kommuneskatten, som jo ikke er progressiv, og lad Folketinget sørge for, at de trængende kommuner støttes på en rimelig måde, men altså med penge fra statsskatten. Det kræver en vis overgangsordning, sådan at kommuneskatteprocenterne kan tilpasses den nye ordning, men den algoritme burde der kunne være enighed om i Folketinget.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-03-31
+          &nbsp;·&nbsp; e7233bb6
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.903</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.846</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.69</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Hende, TV 2 21.05: Therodore er lige blevet skilt fra sin kone og arbejder for et firma, der forfatter kærlighedsbreve for dem, der ikke selv er kreative nok til den slags. Hans nysgerrighed pirres af en reklamekampagne, der omhandler det sidste nye inden for operativsystemer med kunstig intelligens. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2018-07-01
+          &nbsp;·&nbsp; e6cf51de
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.922</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.697</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lad være med at betale: Fejl i ransomware låser dine filer</h4>
+        <div>
+          En variant af Power Worm-ransomwaren indeholder en fejl, så det ikke er muligt at låse krypterede filer op igen.Når betalingen falder sker det, it-kriminelle faktisk udleverer nøglen, der kan dekryptere filer, der er ramt af ransomware - ellers var der jo ingen motivation til at betale i første omgang. Men sådan er det ikke med en ny variant af ransomwaren Power Worm. Det fortæller det tekniske support-site BleepingComputer.En fejl bevirker nemlig, at det slet ikke er muligt at dekryptere filerne igen. Og så nytter det under ingen omstændigheder at betale.Fejlen består i opstår ved den måde, AES-nøglen, der bliver brugt til krypteringen, bliver initialiseret på. Bagmanden eller -mændene har øjensynligt tænkt sig at krypere alle ofres computere med samme nøgle. Men AES-nøglen bliver ikke padded tilstrækkeligt under konverteringen til en Base64-streng. Og det bevirker, at dekodningen af Base64-strengen fejler og AES-nøglen ender med at få værdien 'null'.Og da AES-algoritmen bliver forsøgt initialiseret med værdien null, så genererer algoritmen i stedet en tilfældig nøgle til hvert offer. Som altså hverken offer eller bagmand kender. Og som heller ikke bliver lagret nogen steder. Og dermed kan de krypterede data ikke længere dekrypteres.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-11-10
+          &nbsp;·&nbsp; e54e91b3
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.961</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.974</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.711</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pernille Skipper: »Der er ikke noget fordækt i det her. Vi bilder ikke nogen ind, at vi laver objektiv journalistik«</h4>
+        <div>
+          Enhedslistens nye podcast er et moderne medlemsblad, siger Pernille Skipper (Ø), ikke politik forklædt som journalistik.Er -Listen   Danmarks progressive podcast- politiske budskaber forklædt som journalistik?»Nej, der er ikke noget fordækt i det her. Vores podcast er klart varedeklareret   det er et politisk lyd-medlemsblad. Vi bilder ikke nogen ind, at vi forsøger at lave objektiv journalistik, og jeg vil ikke håbe, at der er nogen, som vil erstatte deres nyhedsforbrug med vores podcast« .Er de politiske partiers egne medier med til at forstærke ekkokamrene på bekostning af en fælles, demokratisk samtale?»Det er der en risiko for, jo, og jeg er enig i, at det overordnet er en problematisk udvikling. Facebooks algoritmer laver for eksempel et usynligt ekkokammer, og det er et kæmpe problem for vores demokratiske samtale. Men vi foregiver ikke at lave et objektivt medie. Hvis vi lavede politisk propaganda forklædt som nyhedsjournalistik, ville det være et problem, men det gør vi ikke. Nye medier og muligheder betyder nye farer og udfordringer, men samtidig skaber udviklingen et enormt potentiale for, at vi kan samtale på tværs af landsdele og aldersgrupper. Det er positivt, og det vil vi gerne udnytte med vores nye podcast« .Jeg lover dig, at vi ikke stopper med at stille op til kritiske spørgsmål, heller ikke fordi vi nu har lanceret en podcastPernille Skipper (Ø)I jeres podcast bestemmer I selv, hvad I vil spørge jer selv om. Ville lytterne ikke blive klogere af kritiske spørgsmål, der kunne udfordre jeres holdninger?»Jo, men en kritisk journalist ville også være mere optaget af hullerne end nuancerne i min argumentation. Og altså, vi forsøger ikke at erstatte mainstreammedierne, det ville være absurd. Og folk er jo ikke dumme. Der er ikke nogen, der hører Enhedslistens podcast og så ikke besøger andre medier. Der er jo stort set heller ingen, der kun benytter et enkelt medie i dag. Og i så fald er det sådan noget som radio- eller tv-avisen. Det ville jo være katastrofalt, hvis man kun læste Dansk Folkepartis medlemsblad eller kun lyttede til Enhedslistens podcast« .Risikerer journalister, at I fremover vil henvise til udtalelser i egne medier frem for at stå til rådighed for pressen?»Jeg lover dig, at vi ikke stopper med at stille op til kritiske spørgsmål, heller ikke fordi vi nu har lanceret en podcast. Det er vigtigt, at vi for eksempel holder fast i, at journalisterne kan gå rundt inde på Christiansborg, så politikerne ikke kan gemme sig. Det skal vi passe enormt godt på. Men det betyder ikke, at vi ikke samtidig kan udnytte teknologien til at have flere samtaler på forskellige niveauer og med flere nuancer. Hvis jeg roser SF, er det ikke nogen historie i medierne. Og det er da fint at sidde og skændes med Søren Pape (K) i Deadline-studiet en gang imellem, men det er også vigtigt, at vi kommer i dybden med nogle ting, som ikke nødvendigvis er konfliktstof. Det er der mulighed for i vores podcast« .
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2017-09-13
+          &nbsp;·&nbsp; e669bb82
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.654</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.528</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.649</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DFDS har satset stort på data: »Første projekt sparer os 516 mandetimer årligt«</h4>
+        <div>
+          Når mennesker og gods transporteres, sker det sjældent, uden at der indsamles en masse data - men uden de rette værktøjer er transportselskaber ofte ikke i stand til at drage fordel af de mange informationer. Men med teknologien machine learning er det billede måske for alvor ved at ændre sig i disse år.DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-05-24
+          &nbsp;·&nbsp; e735e6c8
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.833</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.825</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.628</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Privatliv hører fortiden til</h4>
+        <div>
+          TV 2 20.00 Facebook ved mere om os end nogen anden virksomhed i historien, men hvad stiller firmaet op med alle de personlige oplysninger? Reporter Darragh MacIntyre undersøger i &quot; Sådan sælger Facebook dine hemmeligheder&quot;, hvordan Facebooks magtfulde algoritmer gør det muligt for annoncører og politikere at målrette deres kommunikation mere direkte end nogensinde før. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-06-16
+          &nbsp;·&nbsp; e64c5c82
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.964</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.915</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dyson opgiver at bygge elbil</h4>
+        <div>
+          Normalt bliver opfindelserne fra britiske James Dyson til en guldrandet forretning, men milliardæren har netop måtte opgive at bygge en elektrisk bil.Planen var, at produktionen skulle ske i Dysons nye hjemland Singapore, men projektet er skrinlagt, fordi det ikke kan blive en kommerciel succes. Dyson satser nu på kunstig intelligens og robotter.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2019-10-11
+          &nbsp;·&nbsp; e762ad2d
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.827</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.601</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt digitalt værktøj opdager slidte ledninger, inden de bliver dyre at reparere</h4>
+        <div>
+          Machine learning er en væsentlig del af et værktøj, der ikke kun effektiviserer renoveringen af kloaksystemet, men også minimerer rotterisiko og gener for kunder. Tv-inspektion er et helt centralt element.Der havde ikke rigtig været problemer med spildevandsledningerne i villakvarteret i Hvidovre ved hovedstaden. Men da Hofor fik lagt data fra ledningsnettet ind i det nye digitale værktøj Rehab-IT, blinkede
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2021-05-02
+          &nbsp;·&nbsp; e83f1b04
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.605</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.545</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.717</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ledende artikel: Ensidig kærlighed</h4>
+        <div>
+          Et forhold kan være let af komme ind i. Men svært at komme helt ud af. Sådan er det i den menneskelige, analoge verden - men sådan bør det naturligvis ikke være i den digitale forretningsverden.Men det er just tilfældet, når det gælder den ekstremt populære datingapp Tinder.På Tinder swiper millioner af mennesker hver eneste dag sig til dates, udveksler intime beskeder og afslører deres personlige præferencer omkring deres kærlighedsliv. Er der noget, der per definition er privat, er det denne slags data. Men desværre lever Tinder overhovedet ikke op til den umådelige tillid, som millioner af brugere dagligt udviser.Tværtimod faktisk.I weekenden beskrev Politiken på baggrund af den franske journalist Judith Duportails nye bog ' L'amour sous Algorithme' - ' Kærlighed i en algoritmetid' - hvordan datinggiganten, der ejer Tinder, beholder brugernes data, længe efter de har slettet appen, og endda deler dem med dusinvis af andre digitale platforme i firmaet.Og det er ikke små mængder data.Efter fire år på Tinder fyldte datingappens oplysninger om Judith Duportail over 800 sider.AT TINDER beholder enorme mængder intime data, efter brugeren sletter appen, er indlysende stødende - uanset hvad der står med småt i forretningsbetingelserne.Næppe nogen ønsker, at ens allermest private beskeder ligger til fri afbenyttelse i et datalager og kan bruges til at målrette reklamer og opbygge personprofiler.Men så kan man jo bare lade være med at bruge Tinder og andre datingapps, vil nogle sige. Men det er ikke svaret. Vores samfund er på godt og ondt blevet gennemgribende digitaliseret, og det gælder også kærlighedslivet.Vi ønsker os ikke tilbage til analoge tider, men vi ønsker ordentlighed i de digitale. Og det kræver, at det bliver gjort fuldkommen klart i både lovgivning og anden regulering, at brugerens personlige data er vedkommendes ejendom. Ønsker en person at blive slettet og glemt, skal det være muligt.Det udfordrer sikkert techfirmaerne både teknologisk og på deres forretningsmodeller. Men sådan skal det naturligvis være. Som det er nu, er vores forhold til techfirmaer som Tinder helt skævt.Brugeren røber alt om sig selv og deres hedeste drømme. Tinder lurepasser, men husker det hele. Det er en ufin og helt igennem skamløs måde at tjene penge på. mr.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-04-15
+          &nbsp;·&nbsp; e728199e
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.638</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.663</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: ET HUS I VEJLE</h4>
+        <div>
+          Ole Nedergaard, Mølgårdsvej 19, Vejle Øst: Jeg undrer mig over Politikens meget kritiske anmeldelse af Fjordenhus i Vejle (16.6.).Indrømmet, jeg er ukvalifi-ceret som vejlenser og ikkearkitekt, men jeg undrer mig som lægmand over den uforklarede kritik af værket.Linjen lægges i den lidt nedladende overskrift:' Lego-prinserne har bygget'. Vi er nogle, der er glade for, at folk med mulighederne bygger noget smukt, men Anne Pind bryder sig ikke om udtrykket ' at give noget tilbage'.Godt er det heller ikke, at der måske er brugt algoritmer og ikke kun papir og blyant, men det store problem er vinduesglasset. Det medgives, at vinduerne indefra kommer til deres ret, men der er ikke noget bud på, hvordan de skulle bidrage udefra. Vinduesglas skal der vel til. Interiøret er heller ikke i orden, selv om det er udformet ned til mindste detalje af Eliasson. Der har sneget sig nogle Wegner-stole ind. Måske skal det være problemet.Og, ja, vi vil se rigtig meget på ' ikonet', som lokale kan finde på at kalde det. Vi må så leve med, at den nye anmelder mener, det er en »synsmaskine, der er gået i selvsving«.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2018-06-23
+          &nbsp;·&nbsp; e6ccd069
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.852</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.653</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DSB nægtede unge forskere adgang</h4>
+        <div>
+          Nordtyskland AF: Publiceret 04. november 2015 kl. 22:30De blev anset for at være flygtninge, men det var tre unge mænd på vej til konference om kunstig intelligens i Sverige, der ikke fik lov til at stige på aftenens sidste tog. DSB undersøger sagen.For at læse denne artikel kræver det, at du har et abonnement på JydskeVestkysten eller jv.dk.Hvis du har et abonnement, men ikke adgang, kan du oprette adgang her.Hvis du ikke allerede har et abonnement, kan du prøve i 30 dage for kun kr. 49,-De tre unge mænd fra Sri Lanka var egentlig på vej til en konference i Sverige, men DSBs medarbejdere afviste dem, fordi de troede, at mændene var flygtninge. Foto: Simone Lange.De tre unge mænd fra Sri Lanka var egentlig på vej til en konference i Sverige, men DSBs medarbejdere afviste dem, fordi de troede, at mændene var flygtninge. Foto: Simone Lange.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-11-04
+          &nbsp;·&nbsp; e54c39ee
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.787</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.594</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Talnørder vil være forfatter og doktor i datalogi</h4>
+        <div>
+          Talknuserne fra Katrinebjergskolen i Aarhus N har kursen sat mod gymnasiet, men ikke alle går efter matematikkenLine Gerding YdeJeg er bestemt ikke en talnørd, og matematik interesserer mig egentlig ikke særligt meget, men jeg kan godt lide at konkurrere, og vil gerne vinde. Jeg er dygtig til det faglige sådan lidt all-round. Og nej, jeg skal heller ikke arbejde med matematik. Jeg vil rigtig gerne være forfatter og leve af at skrive. Efter 9. klasse skal jeg på Samsø Efterskole. Derefter vil jeg på gymnasiet. Og der bliver det altså ikke matematik, der skal tegne profilen.Jesper BergendorffJeg er nok noget af en talnørd. Jeg beskæftiger mig rigtig meget med matematik, for jeg programmerer software og skriver en masse forskellige små apps, og der er det nødvendigt at vide noget om algoritmer og matematiske ligninger. Jeg skal på gymnasiet efter 9. klasse og have matematik på A niveau. Derefter vil jeg gerne læse datalogi på universitetet, og håber at kunne tage en ph.d i datalogi og efterfølgende blive ansat som lektor ved universitetet.Line Gerding Yde forestiller sig ikke en fremtid indenfor matematikken - hun vil tværtimod langt hellere arbejde med bogstaver.. 
+        </div>
+        <footer>
+          <em>Lokalavisen.dk (Politikens Lokalaviser)</em>
+          &nbsp;·&nbsp; 2011-05-10
+          &nbsp;·&nbsp; e2ac08cc
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.984</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.606</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Sådan sælger Facebook dine hemmeligheder, TV 2 20.50: Facebook ved mere om dig end nogen anden virksomhed i historien, men hvad gør firmaet, som Mark Zuckerberg har skabt, med alle dine personlige oplysninger? Reporter Darragh MacIntyre undersøger, hvordan Facebooks magtfulde algoritmer gør det muligt for annoncører og politikere at målrette deres kommunikation mere direkte end nogensinde før. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2017-06-21
+          &nbsp;·&nbsp; e64e08a0
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.97</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.888</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.535</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.605</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.508</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Talnørder vil være forfatter og doktor i datalogi</h4>
+        <div>
+          Talknuserne fra Katrinebjergskolen i Aarhus N har kursen sat mod gymnasiet, men ikke alle går efter matematikkenLine Gerding YdeJeg er bestemt ikke en talnørd, og matematik interesserer mig egentlig ikke særligt meget, men jeg kan godt lide at konkurrere, og vil gerne vinde. Jeg er dygtig til det faglige sådan lidt all-round. Og nej, jeg skal heller ikke arbejde med matematik. Jeg vil rigtig gerne være forfatter og leve af at skrive. Efter 9. klasse skal jeg på Samsø Efterskole. Derefter vil jeg på gymnasiet. Og der bliver det altså ikke matematik, der skal tegne profilen.Jesper BergendorffJeg er nok noget af en talnørd. Jeg beskæftiger mig rigtig meget med matematik, for jeg programmerer software og skriver en masse forskellige små apps, og der er det nødvendigt at vide noget om algoritmer og matematiske ligninger. Jeg skal på gymnasiet efter 9. klasse og have matematik på A niveau. Derefter vil jeg gerne læse datalogi på universitetet, og håber at kunne tage en ph.d i datalogi og efterfølgende blive ansat som lektor ved universitetet.Jeg kan godt lide matematik, men tænker ikke på det som en levevej. Efter 9. klasse skal jeg på Midtjysk Ungdomsskole, og om jeg så skal på gymnasiet der efter, det har jeg faktisk ikke helt besluttet mig for endnu. Der er jo rigtig mange mulighederMåske er jeg lidt en talnørd. Jeg kan rigtig godt lide matematik, og vil helt sikkert vælge en linje med matematisk på A- niveau på gymnasiet. Men inden da vil jeg måske gerne et år på efterskole, Det har jeg ikke helt taget stilling til endnu, selvom det er sent. Og jo, jeg skal helt sikkert arbejde med tal. Det er sjovt og spændende.Line Gerding Yde forestiller sig ikke en fremtid indenfor matematikken - hun vil tværtimod langt hellere arbejde med bogstaver.. 
+        </div>
+        <footer>
+          <em>Aarhus.Lokalavisen.dk (Lokalavisen Århus)</em>
+          &nbsp;·&nbsp; 2011-05-10
+          &nbsp;·&nbsp; e2ac0b91
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.989</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.617</kbd>
+            <kbd data-tooltip="Testimonies (says, tells...)">L80_TSTMNS&nbsp;0.555</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Staten tænker kun i tal: En arbejdsløs er altså ingen aktie, men et tal i en negativ spiral</h4>
+        <div>
+          Jobcentrene har kronede dage. Arbejdsløsheden er nemlig drastisk faldende, mens udgifterne i centrene er stigende. Det virker mærkeligt.Der må med andre ord være penge nok. Og tid nok.Hvad pengene bliver brugt til, er der, så vidt jeg er orienteret, ikke rigtig nogen, som ved. Man forklarer sig bl. a. med, at klienterne er blevet tungere og sagerne længerevarende.Men det var de vel også, før beskæftigelsen steg. Man taler også om udgifter til ansættelser, kurser, en mere individuel behandling osv. Men alligevel går regnestykket ikke op.Faldet i arbejdsløsheden er en både menneskelig og samfundsmæssig succes, lad det være sagt med det samme, men denne succes burde også afspejle sig i jobcentrenes økonomiske bundlinjer.En tredjedel af de arbejdsløse har forladt centrene inden for en ca.seks-syvårig periode, hvilket må være en kæmpe besparelse. Alligevel stiger udgifterne. Det er tankevækkende.Jobcentrenes fineste opgave burde være at nedlægge sig selv. Det ville jo være et tegn på, at vi var hinsides arbejdsløsheden. Var alle i beskæftigelse, havde vi ikke noget at bruge jobcentrene til. Det burde de økonomiske tal afspejle.Men det viser sig at være omvendt proportionalt. Jobcentrene trives som aldrig før, men ikke på grund af stigende arbejdsløshed.Paradoksalt? Man kan derfor spørge, hvilken funktion jobcentrene egentlig har. Det er, som om de lever deres eget lukkede liv.Jobcentrene er ikke til for at spare penge. På de arbejdsløse, jo, men ikke på sig selv. Det er ikke jobcentrenes funktion. Deres funktion er at aktivere og motivere de arbejdsløse på den ene side. Det bryster de sig af.Men deres funktion er i langt højere grad at kontrollere, evaluere, nivellere og straffe de arbejdsløse på den anden side. Det sidste er vigtigt. Det kræver staten. De arbejdsløse er nemlig intet aktiv for staten. Det fornemmer man tydeligt i den politiske fordømmelse.De er en økonomisk udgift og et symbolpolitisk minus.Arbejdsløshed er med andre ord en sygdom. Jobcentrenes funktion er at vise dette - at udstille selve arbejdsløsheden i sig selv. Med andre ord: Jobcentrene er præventive.De signalerer et sted, man ikke skal være, og en sygdom, man ikke skal få.Før Berlinmurens fald i 1989, dengang vi stadig havde partier med ideologier, var det samfundets skyld, hvis det enkelte menneske blev arbejdsløst. Det blev ikke straffet med detailkontrol, det blev ikke betragtet ud fra en algoritme, og det blev ikke set ned på af politiske partier og perfide politikere.En arbejdsløs var en aktie for samfundet og blev ikke betragtet som jaget vild.Men efter Berlinmurens fald opløstes ideologierne, og der, hvor ideologierne sad, der sidder nu staten og markedet. Og de har ingen holdning.De er hverken sande eller falske, gode eller onde.Ideologier kan man diskutere, være for eller imod. En ideologi er nemlig altid sand eller falsk. Men sådan tænker staten ikke. Den de-finerer ikke sig selv ud fra &quot;sandt eller falsk&quot;, men ud fra et &quot;mere eller mindre&quot;. Staten tænker med andre ord i tal. En arbejdsløs er altså ingen aktie, men et tal i en negativ spiral.Før Murens fald var det samfundets skyld, hvis man blev arbejdsløs. I dag er det den arbejdsløses egen skyld. Staten kan nemlig ikke føle skyld, da den ingen følelser har. På den måde stigmatiserer man de arbejdsløse helt inde fra politisk hold.Når man hører den retorik, som visse politikere har, bliver man rystet.Og bedre bliver det ikke, når man hører de selvsamme politikere tale selvhøjtideligt om inklusion, aktivering og rummelighed.Tilbage til jobcentrene. Det er ikke deres fortjeneste, at folk er kommet i arbejde. Det er de økonomiske konjunkturer i første omgang.I anden omgang er det den enkelte selv. Jobcentrene har ikke meget at rose sig af, hvad angår beskæftigelsesgraden.Deres funktion er som sagt præventiv.De skal sende det signal, at arbejdsløshed er en slags livsstilssygdom, man selv er skyld i. Det har staten pålagt dem.Men efter Berlinmurens fald opløses ideologierne, og der, hvor ideologierne sad, der sidder nu staten og markedet. Og de har ingen holdning.De er hverken sande eller falske, gode eller onde.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-11-11
+          &nbsp;·&nbsp; e6f7f29b
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.622</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.545</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Her er verdens dummeste aliens</h4>
+        <div>
+          Det nye Aliens Colonial Marines har fat-svage aliens. (Foto: Colourbox)Tilbage i slutningen af 2012 havde vores egen Martin Robinson mulighed for at afprøve Aliens: Colonial Marines - og han var ikke umiddelbart særligt imponeret. En af de ting, han satte fingeren på, var den kunstige intelligens.- Det hjælper heller ikke, at den kunstige intelligens føles meget, meget svag, skrev han.- Alien-væsenerne farer frem og tilbage som forvirrede skabninger, og der er slet ikke samme kynisme og gruppevirkning, som man ellers kender fra dyrene i Alien-filmene.Takket være en video fra Kotaku kan vi nu se, hvor dårlig den kunstige intelligens rent faktisk er.Se de sørgelige alienvideoerherTilsyneladende glemmer Aliens alt om dig, så snart du er løbet forbi dem.Det er lidt svært at vide med sikkerhed ud fra denne film, om det virkeligt er det, der sker. Det er muligt, at dette kan lade sig gøre, fordi rumvæsnerne bliver optaget af at kæmpe imod ens computerstyrede holdkammerater, som bliver telepateret frem til dig.
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2013-02-14
+          &nbsp;·&nbsp; e3a7ef38
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.98</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.785</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.667</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Anm: Spænder ben for sig selv</h4>
+        <div>
+          De er nemme at genkende, fordi Sennheisers over-ear-hovedtelefoner i den bedste klasse de seneste år har fået deres helt eget sprog i Momentum-serien.På hovedbåndet af metal, som du skubber ørekopperne frem og tilbage med. På det sammenklappelige design og naturligvis logoerne på ydersiden.Netop Momentum-serien i en kablet version var en af de første over-ear-hovedtelefoner, jeg for alvor blev glad for at bruge.Blandt andet fordi de sad og sidder godt på ørerne. Og ikke mindst fordi lyden var og er fremragende til en gennemsnitslytter som mig.På den front har intet ændret sig med Momentum 3 i den trådløse udgave.Alt det basale er på plads, men alligevel drømmer jeg mig tilbage til fortiden.For elektronisk har Sennheiser altså noget at indhente.I praksis er det manglerne i elektronikken, der ender med at spænde ben for brugeroplevelsen, hvilket er ærgerligt, når nu både lyd og fysisk design er godt på plads.Jeg er således aldrig blevet venner med måden, hovedtelefonen tændes og slukkes på. Nemlig ved at folde den ud og ind. På papiret har det sikkert virket fint i Sennheisers laboratorium, men for mig som bruger er det kilden til evig irritation.Undervejs i testen er enheden, som i forvejen ikke hører til de mest batteristærke på markedet, løbet tør for strøm, alene fordi jeg glemte at slå dem samme. Det er muligt at slukke manuelt for hovedtelefonen på en knap, men det hjælper dig jo ikke, når man ikke kan slå funktionen fra, der tænder enheden igen, hvis de ved en fejl åbnes.Til gengæld kan du slå en anden funktion fra, nemlig den såkaldte ' Smart pause', i appen.Gør det omgående, hvis du køber denne hovedtelefon. Eller forvent at lyden tændes og slukkes på de mærkeligste måder, fordi den indbyggede algoritme fortsat er alt for upræcis.Jeg kan heller ikke få lov til at bruge appen, medmindre jeg giver lov til at dele min placering. Helt sikkert fordi der er indbygget det såkaldte Tile-system, der bruges til at finde bortkomne hovedtelefoner.Men jeg er ikke interesseret i systemet og bliver rasende, når Sennheiser og talrige andre producenter af hovedtelefoner tvinger mig til at dele min placering med deres apps.Stop det og giv mig magten tilbage! Sennheiser Momentum 3 Wireless er set til 2.490,-.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2020-06-13
+          &nbsp;·&nbsp; e7bfdcd2
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.949</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.706</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.685</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook skyr dårlig omtale</h4>
+        <div>
+          LAD OS KRITISERE Facebook højt og vedvarende - for frihedens og den åbne debats skyld.DET ER KOMMET Lars Hedegaard og Aia Fog til gode, at Facebook er følsom over for kritik. De fik begge efter en offentlig mindre mediestorm genåbnet deres Facebook-profiler.De var ellers blevet lukket ned begge to, fordi de havde omtalt et arrangement i Trykkefrihedsselskabet med den engelske aktivist og islamkritiker Tommy Robinson.HANS NAVN MÅ MAN ikke nævne på Facebook, for så risikerer man at få lukket sin profil.Nu er det så kommet frem, at Facebook har besluttet at undtage medlemmer af Folketinget for denne begrænsning i ytringsfriheden.Folketingsmedlemmer - altså mine 178 kolleger og jeg - må gerne debattere frit, men du og resten af danskerne må ikke.JEG NÅEDE AT SIGE TIL Berlingske Tidende, da de ringede til mig med nyheden, at sådan noget giver mig myrekryb.' Hold kæft, de trænger til et kursus i ytringsfrihed', sagde jeg helt spontant.Det er skinnende klart og indlysende, at Facebook undtager folketingsmedlemmer fra censur, fordi de håber på den måde at undgå kritik. Når de ikke censurerer dem, der har let adgang til medierne, men kun dem, der lever, som folk er flest, så bliver der nok ikke en ' sag' ud af det.DET GÅR ALTSÅ IKKE. Det er den slags, der giver mindelser om totalitære systemer som Sovjet og andre fascistiske ideologier.Der er en grund til, at vi har fået grundloven, og at den gælder for alle - høj som lav, ens for politikere og magthavere som for alle andre.Det er vores frihed som folk, der undergraves, når et udenlandsk selskab som Facebook begynder at flytte rundt på de helt fundamentale spillebrikker i demokratiet.VI ER NØDT TIL AT LAVE LARM. Vi er nødt til at give Facebook så meget dårlig omtale, at de indser, at sådan kan vi ikke have det i et frit land.Og så er vi politikere nok også nødt til at lave noget lovgivning, der forpligter Facebook til ikke at forskelsbehandle deres brugere på grund af politiske synspunkter, som måske ikke er helt så politisk korrekte, som man vil have det i Facebooks hovedkontor.Facebook har nærved monopol på den platform, hvor en rigtig stor del af den politiske debat i Danmark foregår.Det forpligter.DET FRIE ORD ER VORES dyrebare eje. Det skal ikke knægtes i en algoritme på de sociale medier.Sådan noget giver mig myrekryb.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2020-01-27
+          &nbsp;·&nbsp; e78ddceb
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.98</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.879</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.695</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tænk fremad - drop loft over uddannelser</h4>
+        <div>
+          Uddannelse handler om at give mennesker flere muligheder. Derfor er vi imod forslaget. Vi skal være på arbejdsmarkedet i mange årtier. For mange vil der være brug for at skifte job i løbet af livet. Enten fordi man bliver nedslidt, fordi man har lyst til noget andet eller fordi jobbet simpelthen er væk. Robotter, kunstig intelligens og anden ny teknologi vil betyde at job forsvinder, fordi mennesker ikke udfører dem mere.Mennesker skal have lov til at udvikle sig gennem hele livet. Derfor skal man også kunne tage flere uddannelser. Med den nye lov, som flertallet snart vedtager, må man ikke engang uddanne sig på ny for sine egne penge. At tage en ny uddannelse bliver simpelthen forbudt. Lofter og forbud mod uddannelse er grotesk. Danmark er et land, der lever af, at vi har uddannet os.Vi kan ikke blive kloge nok. Uddannelse handler om at give mennesker flere muligheder. Derfor er vi imod forslaget om færre muligheder i uddannelsessystemet.
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2016-12-12
+          &nbsp;·&nbsp; e606037a
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.983</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.731</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: It-giganter er stater i staten, og Zuckerberg er pave</h4>
+        <div>
+          Apropos alt det besvær, alle for tiden har med persondataforordningen eller databeskyttelsesloven, eller hvad den hedder: Statsmagtens - statsmagternes, for det er generelt - problem med de meget store selskaber - Google, Facebook, Apple, Amazon - er, at staterne ikke selv kan finde rundt i deres egen komplicerede lovgivning, mens de store selskaber på deres side ikke har nogen problemer med at finde alle hullerne. De kan til enhver tid sætte 100 mand med computere af til det.Derfor disse meningsløse sminkelove, hvor man skyder bredt og rammer alle de firmaer, som ingen problemer giver, men ikke dem, man er ude efter, for de har allerede for længst fejet for den dør.Hver gang det lykkes statsadministrationen at udtænke en plan, er internettet drønet videre i en anden retning. Det er bare ét eksempel på, hvorfor demokratiet har det svært. Manglende overblik parrer sig med manglende vilje. Et andet er lovgivningen om indvandring, hvor man på grund af konventioner, EU-regler og manglende politisk vilje aldrig helt rammer de problemer, man gerne vil ramme.Den demokratiske stat er nok stadig indehaver af den lovgivende og udøvende og dømmende magt, men har store problemer med at bruge magten.Og sådan er det overalt. Også verdens mest magtfulde stat, USA, er rundt på gulvet. Og det er ikke, fordi man ikke har midlerne, heller ikke, fordi man ikke har adgang til den fornødne viden - aldrig har en stat vidst så meget om, hvad der foregår i verden, men alligevel sejler det. Da Trump havde vundet præsidentvalget, sendte han straks bud efter alle cheferne fra Silicon Valley - Google, Facebook, Apple, Amazon - for lige at demonstrere hierarkiet, at USA's præsident var capo di tutti capi. Så sagde han noget.De hørte lidt på det og tog så hjem igen. Det var det. Det var bare et show som det meste af, hvad Trump har lavet. Og det er ikke bare ham - i sine otte år udrettede Barack Obama absolut ingenting i nogen retninger.Internettet er i dag en lovløs zone hinsides demokratiets rækkevidde.Staterne kan slet ikke følge med.De demokratiske regeringer overvældes med data. Aldrig før i historien har regeringer &quot;vidst&quot; så meget om, hvad der foregår i verden, men hvem skal læse dem? De er åbenbart ude af stand til at læse dem hurtigt nok. De bliver kvalt af data. De nævnte selskaber er blevet stater i staten. Facebook er den største stat i verden med over to milliarder borgere. Mark Zuckerberg er pave, og hans stenrige ansatte lever og arbejder afsondret fra resten af samfundet og med en ganske anden dagsorden.Det er Tvind, bare i en lidt større skala.I de kommende år vil datarevolutionen blot tage til, og det vil blive endnu mere tydeligt, at demokratiets institutioner - valg, partier, parlamenter - ikke kan følge med, fordi de ikke kan behandle data hurtigt nok. Og staterne kan ikke finde ud af at slå i bordet over for mogulerne, der mangler politisk vilje.Regeringerne leder ikke samfundene længere, de administrerer dem. Eller forsøger på det. Der er ingen politiske visioner, hvilket man kan sige er en god ting, når man ved, hvad politiske visioner tidligere har ført til af ulykker.Men ikke alle visioner er skadelige, og det repræsentative demokrati lider under en stadig stærkere følelse hos borgerne af, at der ikke er styr på noget.Og imens driver internettet videre mod - ja, hvorhen? Ingen ved det. Ifølge den digitale videnskab er alle organismer blot algoritmer, og alt liv former for databehandling.Slutpunktet for dét kaldes for tiden &quot;Internet of Things&quot;. Havner vi der, er vi færdige.Kunne være interessant, om nogen ville gøre noget... snart?.Internettet er i dag en lovløs zone hinsides demokratiets rækkevidde.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-05-29
+          &nbsp;·&nbsp; e6c48f6b
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.707</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.647</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.655</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Topøkonom: &quot;Den nye kolde krig om verdensherredømmet vil vare i mange årtier&quot;</h4>
+        <div>
+          &quot;Det specifikke spørgsmål om told på import fra Kina for 200 mia. bliver sikkert løst, men den underliggende krig om globalt og regionalt overherredømme forsvinder ikke. Det er den nye kolde krig. Den gamle kolde krig varede i 40 år og stoppede kun, fordi Sovjetunionen var så venlig at opløse sig selv. Den nye kolde krig vil også vare i årtier. Ingen opløser sig selv, så krigen stopper ikke af sig selv,&quot; siger Willem Buiter, global økonomisk rådgiver for den amerikanske storbank, Citi.Kinas topforhandlere rejste op til weekenden hjem fra Washington efter et møde på ministerniveau. Robert Lighthizer, USA's særlige handelsrepræsentant, præsenterer resultatet af mødet som, at diskussion om amerikanske vidtgående krav om strukturelle kinesiske reformer nu er i gang. Altså USA's krav om, at Kina skal opgive store dele af den statssubsidierede industripolitik.&quot;Men Kina vil aldrig opgive deres særlige økonomiske model med store statsejede industrier med målrettede subsidier for at opnå visse politiske mål. Sådan er kinesisk statskapitalisme. Selv om det snævre handelsspørgsmål bliver løst, vil resten være en kilde til politiske gnidninger årevis, sikkert i årtier,&quot; understreger Willem Buiter.Men hvis den kolde krig bliver koldere, kan det ikke tvinge det eksportafhængige Kina til indrømmelser?&quot;Det tvivler jeg på. Vi er helt inde i kernen af den kinesiske model, hvor statens prioriteter bliver pålagt visse virksomheder og hele sektorer. Sagen om Huawei forsvinder ikke. Kina bliver aldrig USA-light,&quot; mener Citis globale rådgiver.Tog det for lang tid for Vesten at blive klar over Kinas ambitioner?&quot;Nej, ingen var overraskede over forsøget på at blive teknologisk førende og at vinde kapløbet om førstepladsen i nye teknologier som kunstig intelligens, robotter og maskinlæring. Det er et kapløb om geopolitisk kontrol. Kina vil have et forspring, men det skal ikke deles frit. Måske er man overrasket over tempoet. Ambitionen i Made in China 2025 er om kun seks år.Vinder Kina?&quot;Det er svært at sige. Men Europa vil sikkert arbejde sammen med USA for at bekæmpe dem.&quot;I denne uge vil EU-Kommissionen sikkert afvise en togfusion mellem Siemens og Alstom, der vil kæmpe mod en større konkurrent fra Kina. Er det en dårlig idé?&quot;Nej, vi skal ikke have national champions eller vort eget Made in Europa 2025. Vi skal fokusere på statslige investeringer i grundforskning på universiteter og lade virksomhederne konkurrere. Monopoler er en dårlig idé. De ender med at udnytte deres monopol og kun bruge deres styrke til at kæmpe mod monopoler i andre lande. Siemens og Alstom er ikke en&quot;mom-and-pop shop&quot;. De er store nok til at klare sig selv.&quot;hare@borsen.dk
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-02-04
+          &nbsp;·&nbsp; e7115f9b
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.763</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.594</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.588</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apples direktør bekræfter: Vi arbejder på selvkørende bil-system</h4>
+        <div>
+          Det har længe været en offentlig hemmelighed, men nu bekræfter Apples CEO, Tim Cook, at firmaet arbejder på selvkørende bilteknologi. I et video-interview med Bloomberg, kalder Cook autonome biler for &quot;the mother of all AI projects&quot;. Oplysningen falder efter længere tids medie-kritik af Apple for ikke at være langt nok fremme på beatet indenfor udviklingen af kunstig intelligens. Apple-direktøren fremhæver i interviewet, at det særligt interessante ved den selvkørende bil er kombinationen af den autonome teknologi, elbilen og delebils-konceptet. &quot;Der venter stor disruption på dette område&quot;, siger Tim Cook. Dog løfter Apple-bossen ikke sløret for, om firmaet udvikler et system eller en færdig bil.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-06-13
+          &nbsp;·&nbsp; e64b759e
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.675</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.581</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ubuntu 11.04 kører (på krykker)</h4>
+        <div>
+          Så fik jeg Ubuntu 11.04 til at køre, men det stinker på min maskine. Jeg er ved at forstå hvad der går galt. For at kunne køre det fancy nye grafik skal jeg have gang i en nVidia-closed source driver til mit FX5200 grafik-kort. Ubuntu 11.04 giver mig et valg om at få den installeret, men den starter ikke op. Derfor går Unity i hegnet og KDE har også problemet.Pt. virker gamle Gnome fint uden Compiz under 11.04.Jeg har naturligvis prøvet med forskellige versioner af nVida-driveren - samme resultat.Men jeg har stødt på mange andre problemer på vejen til 11.04. Jeg prøvede at installere på en sekundær disk og lad boot-loaderer installere på den primære disk - alt fik fint indtil første boot, hvor systemet ikke længere kan genkende den sekundære disk. ÆV!Derefter re-installerede jeg den primære disk, hvor jeg gav lov til at slette de system-filer, der er på disken i forvejen. Det fik fint, men jeg forventede at Ubuntu slettede med hård hånd. Det var nu ikke tilfældet. I stedet gik systemet i gang med at analysere hvilke system-pakker, der var der i forvejen og derefter prøvede at få et tilsvarende niveau af pakker. Det er da prisværdigt især hvis man prøver at redde en defekt installation, men det virkede ikke ordentligt. Efter en rum tid kom Ubuntu ud med at nogle pakker ikke kunne matches, men listen af pakker fik jeg ikke. Æv!Anyway - jeg har en ikke-Compiz 11.04 installeret pt. men det er nok en stakket frist. Den skal ud.Jeg har kigget på OpenSuse i &quot;rolling release&quot; dvs. Tumbleweed - eller min gamle trofaste Debian. Andre forslag?/ptoCivilingeniør, ph.d. og algoritme-designer. 
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-05-08
+          &nbsp;·&nbsp; e2ab2966
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.986</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.565</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.674</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rektor ønsker tættere dialog med firmaerne</h4>
+        <div>
+          Det er de hårde it-kompetencer, it-virksomhederne efterspørger. Sådan lyder det fra Birgitte Hass, adm. direktør i IT-Branchen, der repræsenterer 300 it-virksomheder.&quot;Det er dem, der virkelig kan udvikle noget software og kan vokse videre og blive it-arkitekter og it-projektledere. De mere bløde uddannelser, hvor man har en anden baggrund og får smurt lidt it oven på, og så er man god til at designe systemer - dem er der altså ikke beskæftigelse til,&quot; siger hun.Den store efterspørgsel efter it-kompetente er i en tid, hvor optaget på it-universiteterne er steget siden 2004.Hos IT-Universitet (ITU) er man f.eks. gået fra at optage 40 til 90 om året på bachelordelen på softwareuddannelserne.Ifølge rektor Mads Tofte har man øget optaget så meget, man kan, når det samtidig skal ske med kvalitet.Når virksomhederne efterspørger de hårde it-kompetencer, mener han ikke, at alle behov på arbejdsmarkedet kan dækkes af nyuddannede.&quot;Det er i hvert fald mere nuanceret end bare at sige, at der ikke bliver uddannet nok, eller der ikke uddannes nok af de rigtige,&quot; siger han og peger på, at der stadig er dimittendledighed hos it-kandidater.Begge veje rundtPå Danmarks Tekniske Universitet (DTU) er optaget øget de seneste par år på f.eks. civil- og diplomingeniøruddannelserne, fortæller institutdirektør på DTU Compute, Rasmus Larsen.IT-Branchen oplyser at en ny måling fra sidste uge viser, at 27 pct. af 242 it-virksomheder i 2014 har måttet opgive at besætte ledige job.&quot;Du vil altid finde eksempler på stillinger, der ikke bliver besat, og omvendt kan vi også vise eksempler på kandidater, der har fået en god uddannelse, men som har svært ved at finde arbejde,&quot; siger Mads Tofte, ITU.Er det så fordi, dem, der bliver uddannet, ikke er gode nok?&quot;Nej, det ville være en bred generalisering. Det vil nok aldrig blive sådan, at alle it-kandidater er gode nok til alle it-job. Dertil er der for mange specialiseringer inden for it,&quot; siger Mads Tofte, som ønsker en tættere dialog mellem uddannelserne og virksomheder:&quot;Det er den tætte og fakta- baserede dialog, så vi f.eks. kommer hen til at snakke om det samme. Så ikke den ene part snakker om stillinger, der kræver masser af erfaring, og den anden part kan levere nogen, som jo er nyuddannede.&quot;Den dialog er man klar til at tage i IT-Branchen.Adspurgt om branchen stiller for høje krav til nyuddannede svarer Adam Lebech, branchedirektør i DI ITEK:&quot;Der er ingen tvivl om, at vi skal blive endnu bedre til at ansætte. I forhold til de typer kandidater er der nogle typer, virksomhederne hellere vil have, nemlig dem der har de hårdeste kompetencer inden for algoritmer og naturvidenskab, hvor nogle af dem, der uddannes med en humanistisk baggrund, ikke er lige så stærke inden for klassiske datalogkompetencer.&quot;
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-03-24
+          &nbsp;·&nbsp; e4edafae
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.579</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.615</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.682</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ledende artikel: Sorg i ekkokamre</h4>
+        <div>
+          Mandag gik en stor dansk kulturpersonlighed bort.De sociale medier strømmede over med mindeord, og tirsdag morgen havde flere store dagblade ryddet forsiden til minde om den afdøde, et menneske, der tog store bidder af livet, men som tilbød os et ærligt og hudløst indblik i livet for skæbner på vores samfunds yderkanter.' Mopper', Ann-Patricia Christiansen, er død. Som mor til realitystjernen Linse Kessler og bokser Mikkel Kessler har hun gennem ni sæsoner inviteret tv-seerne indenfor i DR3' s reality-serie Familien fra Bryggen, der med et ugentligt seertalsgennemsnit på 170.000 er en af dansk reality-tv's største succeser.Troede du, at den indledende beskrivelse henviste til forfatter Jan Sonnergaard? I så fald sikkert med god grund. For det var den store danske samtidsforfatter, der i weekenden døde i en alder af kun 53 år (alt for tidligt) og efterlod sig et stort forfatterskab (men slet ikke nok), som denne avis ryddede forsiden for.Og det var sandsynligvis også ham, der mandag ragede op i det sociale medielandskab hos hovedparten af Informations faste læsere, mens Facebooks algoritmer og jeres venner sandsynligvis ikke vurderede, at Kessler-familiens tab havde jeres interesse. Men i skrivende stund har Linse Kesslers rørende farvel til sin mor 117.000 likes, mens sønnen Mikkels fik 94.000 menneskers medfølelse.De to sørgetog mødte bare ikke hinanden derude i medierne.Skal det begrædes, at vi i dag lever i så adskilte verdener, at vores fælles tab kun er fælles i grupper afgænset fra hinanden? Ikke nødvendigvis. Men det kan være en anledning til at konstatere, at det faktum kun gør god litteratur og tv om dem, vi ikke kender, des mere vigtig.For godt nok var Moppers meritter ikke så konkrete som Sonnergaards, men fælles for dem var, at de eksponerede os for livet, som det leves langt fra de fleste af os. Den ene skrev om underklassens vilkår med Marcel Proust ved hånden. Den anden levede den for os, godt hjulpet på vej af tilrettelæggerne på TV3. Og de gjorde det begge med en sådan effekt, at deres farvel fortjente forsider.Som Jens Raahauge, formand for bestyrelsen for Dansklærerforeningens Hus, sagde i gårsdagens Information, lod Jan Sonnergaard eleverne spejle sig i det anderledes.»Det er en vigtig proces i en skole, hvor vi har valgfrihed, hvorfor elever stadig oftere går i klasse med andre unge, der ligner dem selv.« Mopper blev 78 år. ansp Læs nekrolog på information.dk.Godt nok var Moppers meritter ikke så konkrete som Sonnergaards, men fælles for dem var, at de eksponerede os for livet, som det leves langt fra de fleste af os.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2016-11-23
+          &nbsp;·&nbsp; e5fe9b7e
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.58</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.638</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>HVAD ER: Er værktøjerne til at identificere misbrug velegnede?</h4>
+        <div>
+          Finanstilsynet mener, at det ikke har velegnede værktøjer til at at identificere markedsmisbrug ved hjælp af såkaldte algoritmer. På den anden side mener fondsbørsen, at den har velegnede værktøjer til at identificere markedsmisbrug.Jyllands-Posten har spurgt Hanne Råe Larsen, underdirektør i Finanstilsynet, hvorfor man ikke ser ens på sagen.Når I kalder værktøjerne for &quot;ikke velegnet&quot; og fondbørsen kalder dem &quot;velegnet,&quot; så lyder det som I er en anelse uenige? »Det kan godt være, at en tekstanalytiker ville komme frem til det. Men jeg har svært ved at se det. Vi udtrykker os nok forskelligt for at sige det samme: Man kan sagtens identificere den her form for svindel. Men retsikkerhedsmæssigt er vi også nødt til at sige, at hvis vi skulle føre en sag af den her type, ville vi være nødt til at gå et spadestik dybere, end overvågningen giver mulighed for. Vi skal jo kunne dokumentere, hvad der er foregået, så det holder i en retssal.« Det er den mulighed, I får automatisk fra 2018? »Ja. I dag vil vi være nødt til at spørge hos de handlere, vi mener, der kan være noget med.« I rapporten og I et tidligere interview slår I ellers fast, at typer af markedsmisbrug som f. eks.&quot; spoofing&quot; via algoritmer ikke vil være til at se på det danske marked? »Vi vil ikke alene ud fra de handelsdata, vi har i dag kunne sige, om der er brugt en algoritme til den slags misbrug, nej. Men vi vil stadig kunne se, om der sker noget med kurserne, vi bør undersøge, og om en vis aktør er meget aktiv i det mønster. Bare ikke, hvilken metode der bliver brugt, eller om det er en person eller en robot.« Finanstilsynet har dog ikke fået henvendelser af den type fra fondsbørsen i det seneste årti.At der slet ikke skulle være nogle sager over en 10-årig periode virker vel mindre sandsynligt, end at de værktøjer man har, skulle være for dårlige til at opdage misbrug? »Det kan du jo godt have en mening om. Når vi har forhørt os i udlandet, som har samme udfordringer, hører vi ikke om, at det foregår.Findes det ikke herhjemme, eller ser vi bare ikke? Det kan jeg ikke endegyldigt svare på, men indtrykket fra andre EU-lande, som har samme værktøjer, er at det ikke sker i vid udstrækning. Og jeg ville nok være mere bekymret, hvis udlandet præsenterede sag efter sag, specielt hvis det var på tværs af markeder.«.alexander.bitsch@finans.dk christian.sehested@finans.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-03-14
+          &nbsp;·&nbsp; e59cdc06
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.658</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.636</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.691</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DSB nægtede unge forskere adgang</h4>
+        <div>
+          FLENSBORG: Tirsdag aften fik tre unge mænd fra Sri Lanka en lang næse, da de ved 22-tiden stod på perronen på banegården i Flensborg.De var på vej til en konference i Halmstad i Sverige om kunstig intelligens.En af dem skulle oven i købet holde oplæg. Men DSB's togfører ville ikke lade dem tage det sidste tog mod nord.- Det var godt nok en sær fornemmelse, sådan bare at blive efterladt der. Det var bittert, og vi havde heller ikke noget sted at være, siger Thilina Rathnayake på en mobiltelefon onsdag formiddag, hvor rejsen kunne fortsætte.- En venlig dame hjalp os i banegårdshallen. Hun kontaktede flygtningehjælper Simone Lange, der fandt et hotel i byen, hvor vi kunne overnatte, fortæller han fra toget.Kostede en del- Det kostede os både kostbar tid og overnatningens pris på 150 euro, siger Thilina Rathnayake. Det er en kendt sag, at DSB kun tager et begrænset antal flygtninge med i tog, der kører mod nord. - Så der er nok ikke tvivl om, at togpersonalet anså dem for at være flygtninge og derfor afviste at tage dem med, siger Simone Lange.- Jeg vil hurtigst muligt tage kontakt med togføreren på det omtalte tog og finde ud af, hvad der er op og ned på denne sag og også tale med de tre, der måtte tilbringe natten i Flensborg, siger Leif Fabrin fra DSB's presseafdeling.Og har DSB handlet forkert, venter der både en undskyldning og penge retur for hotellet.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Tønder</em>
+          &nbsp;·&nbsp; 2015-11-05
+          &nbsp;·&nbsp; e54c547f
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.915</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.835</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.707</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Spænder ben for sig selv</h4>
+        <div>
+            Momentum 3 i trådløs udgave leverer den rigtige lyd og komfort, men den forkerte brugeroplevelse De er nemme at genkende, fordi Sennheisers over-ear-hovedtelefoner i den bedste klasse de seneste år har fået deres helt eget sprog i Momentum-serien. På hovedbåndet af metal, som du skubber ørekopperne frem og tilbage med. På det sammenklappelige design og naturligvis logoerne på ydersiden. Netop Momentum-serien i en kablet version var en af de første over-ear-hovedtelefoner, jeg for alvor blev glad for at bruge. Blandt andet fordi de sad og sidder godt på ørerne. Og ikke mindst fordi lyden var og er fremragende til en gennemsnitslytter som mig. Spænder ben for brugeroplevelsen På den front har intet ændret sig med Momentum 3 i den trådløse udgave. Alt det basale er på plads, men alligevel drømmer jeg mig tilbage til fortiden. For elektronisk har Sennheiser altså noget at indhente. I praksis er det manglerne i elektronikken, der ender med at spænde ben for brugeroplevelsen, hvilket er ærgerligt, når nu både lyd og fysisk design er godt på plads. Jeg er således aldrig blevet venner med måden, hovedtelefonen tændes og slukkes på. Nemlig ved at folde den ud og ind. På papiret har det sikkert virket fint i Sennheisers laboratorium, men for mig som bruger er det kilden til evig irritation. Vil vide hvor du er Undervejs i testen er enheden, som i forvejen ikke hører til de mest batteristærke på markedet, løbet tør for strøm, alene fordi jeg glemte at slå dem samme. Det er muligt at slukke manuelt for hovedtelefonen på en knap, men det hjælper dig jo ikke, når man ikke kan slå funktionen fra, der tænder enheden igen, hvis de ved en fejl åbnes. Til gengæld kan du slå en anden funktion fra, nemlig den såkaldte 'Smart pause', i appen. Gør det omgående, hvis du køber denne hovedtelefon. Eller forvent at lyden tændes og slukkes på de mærkeligste måder, fordi den indbyggede algoritme fortsat er alt for upræcis. Jeg kan heller ikke få lov til at bruge appen, medmindre jeg giver lov til at dele min placering. Helt sikkert fordi der er indbygget det såkaldte Tile-system, der bruges til at finde bortkomne hovedtelefoner. Men jeg er ikke interesseret i systemet og bliver rasende, når Sennheiser og talrige andre producenter af hovedtelefoner tvinger mig til at dele min placering med deres apps. Stop det og giv mig magten tilbage! Det er en ommer På et marked med så mange gode alternativer kommer Sennheiser altså alvorligt til kort, fordi de snubler i deres egen elektronik, som kræver alvorlige forbedringer. Og de bliver ikke reddet af hverken god lyd eller fin pasform. Slet ikke når man skal betale så meget, som denne model stadig koster. Jeg glæder mig til en ommer! Sådan virker prislinks i denne artikel Denne artikel indeholder affiliate links til Ekstra Bladets samarbejdspartner PriceRunner. Når læserne klikker på disse links, modtager vi en mindre betaling. Samarbejdet har ingen betydning for, hvilke tests eller techhistorier vi bringer - eller en eventuel bedømmelse af et produkt. - redaktionen
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2020-06-08
+          &nbsp;·&nbsp; e7bddb2f
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.844</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.807</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.653</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Måske skulle vi være lidt mindre kloge og leve i nuet</h4>
+        <div>
+          Da mennesket for 50 år siden tog til Månen, var tyrkerne stort set alle stadig i Tyrkiet. Men fordi vi havde det så godt, og ikke gad det hårde arbejdsliv, inviterede vi nogle af dem til Danmark for at tage det arbejde, vi ikke selv ville have. De havde en anden kultur - hvad det så end var og anden religion. Men vi har jo religionsfrihed, så pyt. Og vi var så kloge, og er det stadig. Tror vi.Nu skal vi til Mars. De unge synes, det er spændende. Nye veje, der åbner sig til en ny verden, der skal erobres. Men ikke os &quot;kloge&quot;, vi ønsker ikke forandring, vi har opgivet at erobre verden. Nej, nu skal vi have stabilitet. Vi har jo investeret i uddannelser, pension og ser tilbage og er så kloge og fulde af erfaring. Måske vi skal leve meget længere, men det er bare ikke så'n at opbygge noget nyt.Mangler staten penge til velfærd, kan de jo bare smide de mennesker ud af landet, der har været med til at bygge velstanden op. Jeg tænker naturligvis på gæstearbejderne. Altså muslimerne. Dem, der kom som flygtninge, mangler jo forandringsevne og bringer hverken noget økonomisk eller socialt godt med sig. I hvert fald ikke noget, jeg får glæde af. Lyder det dumt? Ja.Måske betyder klogskab og erfaring ikke så meget mere. Vi bliver oversvømmet af superintelligente maskiner, designede kroppe, algoritmer, der manipulerer med vores følelser med en uhyggelig præcision. Menneskeskabte klimakatastrofer og behovet for at skifte arbejde en gang om året. Og så videre.Hvad med vores børn, hvordan vil det se ud for dem om 50 år? Styres de udelukkende af de der algoritmer - eller noget helt andet? Sandsynligvis. Kloden har eksisteret i millioner af år og vil eksistere flere millioner endnu. Måske skulle vi være lidt mindre kloge og leve i nuet med de mennesker, der er omkring os. Vi aner jo ikke, hvordan verden ser ud om 50 år alligevel. Vi vil ikke kunne absorbere og analysere det hele. Om hvordan vi skal leve i fremtiden. En fremtid, hvor uvished ikke er undtagelsen, men reglen. Men måske ikke, hvis vi slipper noget af vores klogskab og nogle af vores tunge fordomme.
+        </div>
+        <footer>
+          <em>Frdb.dk (Fredericia dagblad)</em>
+          &nbsp;·&nbsp; 2019-07-25
+          &nbsp;·&nbsp; e747ab37
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.969</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.826</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Kærlighed er ikke en Tinder-algoritme</h4>
+        <div>
+          For nylig læste jeg, at der i Danmark er flere singler end nogensinde før. Det fik mig til at tænke på den franske filosof Jean Buridan og hans æsel.Som tankeeksperiment placerer Buridan et æsel mellem to identiske høstakke. Og da kræet ikke ved, hvilken høstak det skal spise af, ender det med at blive stående og sulte ihjel.På dating-app'en Tinder står singler over for lignende valg. Det har aldrig været nemmere at kickstarte kærligheden.Hvorfor står så mange singler så mellem høstakkene og tøver? Dating-app'en tjener penge på, at man swiper frem og tilbage - ikke på at man finder kærligheden.Derfor holder Tinder gryden i kog ved hele tiden at præsentere dig for nye profiler, så hvis du er i tvivl, om du har valgt den rigtige, behøver du ikke tvivle længe, før et nyt forslag melder sig.Måske en profil, der er pænere og sjovere end den, du lige har været på date med.Som bruger forledes du til at tro, at der midt i strømmen af pro-filer er ét optimalt match - du skal bare swipe længe nok.Jean Buridans æselhistorie handlede om at tage pis på det rationelle valg og den frie vilje. Kærligheden kan heldigvis ikke sættes på formel.På samme måde kan singler heller ikke regne kærligheden ud, selv om Tinders algoritmer forsøger at lege virtuel wingman.Kærlighed handler om at give sig hen til et andet menneske. Ligesom æslet finder vi aldrig ud af, hvilken høstak der er bedst. Men det er også fuldstændig ligegyldigt, så længe vi ikke sulter ihjel.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2016-03-04
+          &nbsp;·&nbsp; e5992221
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.932</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.684</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.663</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Reklamemand: Valgplakater virker</h4>
+        <div>
+           Der er gode, og der er mindre gode valgplakater, men al markedsføring virker, siger chefen i et århusiansk reklamebureau.Peder van der Schaft er chef og partner i det århusianske reklamebureau Grobowski, og han glæder sig ved hvert valg til at se, om partierne har fundet på nye valgplakater.- Det har været stereotypt i mange år, for i dag behøver man ikke sende et budskab med plakaterne. Det var noget andet i gamle dage, der blev valgplakaterne brugt til at fortælle noget, men i dag er der ikke behov for budskaber - dem får vi på for eksempel TV eller på Facebook. Så et ansigt, et parti og et navn er rigeligt på plakaterne i dag, siger han.Peder van der Schaft slår fast, at al markedsføring virker - der er bare noget, der virker bedre end andet.- Det handler om involvering og kan man få folk til bare et øjeblik at stoppe op, har man involveret dem, og så er man et skridt foran. Ved sidste folketingsvalg så vi for eksempel Alternativets, der havde en anden form og hang under alle de andre med teksten &quot;der er også Alternativet&quot;. Og ved kommunalvalget i 2013 en fra Venstre, hvor politikeren var i fire rammer som i et Andy Warhol-billede - den skabte stor opmærksomhed og appellerede måske til de liberale, der ikke lige var til jakkesæt og slips. Der er ingen formel på den gode valgplakat, og jeg tror, at det er svært at lave en dårlig, men man skal alligevel passe på, for det kan godt gå hen at blive overgjort, og så falder det til jorden, mener han.Reklamer virker ikke på mig! Den overbevisning er der angiveligt flere, der har, men ifølge Peder van der Schaft holder den ikke - og således heller ikke i forbindelse med valgplakater.- Vi tror selv, vi er super-rationelle, selv kan vælge fra og til og ikke er styret af impulser. Men reklamer virker, vi er bare ikke altid bevidste om det, og heller ikke, når vi står i valglokalet og skal sætte kryds. Der er dog stor sandsynlighed for, at vi sætter kryds ved en, vi kender navnet på, og her har valgplakaterne stor betydning. For selvom vi måske bliver trætte af dem, kan vi ikke undgå dem. Vi ser ansigter, vi måske ikke ellers ville se - i hvert fald ikke på Facebook, hvor alt med algoritmer er afstemt efter den enkelte person, forklarer han.Peder van der Schaft slutter af med at konstatere, at valgplakaterne også har en virkning for partierne i form af mobilisering af de frivillige til ophængning og en god og fælles måde at få skudt valgkampagnen i gang.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2017-10-28
+          &nbsp;·&nbsp; e67a60c4
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.798</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.738</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.712</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Er værktøjerne til at identificere markedsmisbrug velegnede eller ej?</h4>
+        <div>
+          I en rapport har Finanstilsynet skrevet, at det ikke har velegnede værktøjer til at identificere markedsmisbrug ved hjælp af algoritmer. På den anden side mener Fondsbørsen, at den har velegnede værktøjer.Finanstilsynet mener, at det ikke har velegnede værktøjer til at at identificere markedsmisbrug ved hjælp af såkaldte algoritmer. På den anden side mener Fondsbørsen, at den har velegnede værktøjer til at identificere markedsmisbrug.Finans har spurgt Hanne Råe Larsen, underdirektør i Finanstilsynet, hvorfor man ikke ser ens på sagen.Når I kalder værktøjerne for -ikke velegnet- og fondbørsen kalder dem -velegnet,- så lyder det som i er en anelse uenige?»Det kan godt være, at en tekstanalytiker ville komme frem til det. Men jeg har svært ved at se det. Vi udtrykker os nok forskelligt for at sige det samme: Man kan sagtens identificere den her form for svindel. Men retsikkerhedsmæssigt er vi også nødt til at sige, at hvis vi skulle føre en sag af den her type, så ville vi være nødt til at gå et spadestik dybere, end overvågningen giver mulighed for. Vi skal jo kunne dokumentere, hvad der er foregået, så det holder i en retssal.«Det er den mulighed, I får automatisk fra 2018?»Ja. I dag vil vi være nødt til at spørge hos de handlere, vi mener, der kan være noget med.«I rapporten og I et tidligere interview slår I ellers fast, at typer af markedsmisbrug som fx -spoofing- via algoritmer ikke vil være til at se på det danske marked?»Vi vil ikke alene ud fra de handelsdata vi har i dag kunne sige, om der er brugt en algoritme til den slags misbrug, nej. Men vi vil stadig kunne se, om der sker noget med kurserne, vi bør undersøge, og om en vis aktør er meget aktiv i det mønster. Bare ikke, hvilken metode der bliver brugt, eller om det er en person eller en robot.«Finanstilsynet har dog ikke fået henvendelser af den type fra fondsbørsen i de seneste årti.At der slet ikke skulle være nogle sager over en 10-årig periode virker vel mindre sandsynligt, end at de værktøjer man har, skulle være for dårlige til at opdage misbrug?»Det kan du jo godt have en mening om. Når vi har forhørt os i udlandet, som har samme udfordringer, hører vi heller ikke om at det foregår. Findes det ikke herhjemme, eller ser vi bare ikke? Det kan jeg ikke endegyldigt svare på, men indtrykket fra andre EU-lande, som har samme værktøjer, er at det ikke sker i vid udstrækning. Og jeg ville nok være mere bekymret hvis udlandet præsenterede sag efter sag, specielt hvis det var på tværs af markeder.«Foto: Lars Krabbe.Hanne Råe Larsen, underdirektør i Finanstilsynet, har tidligere forklaret, at tilsynet ikke har mulighed for at opdage manipulation med danske aktier, hvis den foregår via udenlandske markedspladser. Foto: Lars Krabbe.Foto: Lars Krabbe.Hanne Råe Larsen, underdirektør i Finanstilsynet, har tidligere forklaret, at tilsynet ikke har mulighed for at opdage manipulation med danske aktier, hvis den foregår via udenlandske markedspladser. Foto: Lars Krabbe.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-03-13
+          &nbsp;·&nbsp; e59cd5ac
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.578</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.585</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.676</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>RapidMiner-boss: Pas på den skjulte sorte boks i AutoML</h4>
+        <div>
+          Dette er en forkortet artikel fra DataTech, et nyt PRO-medie fra Ingeniøren om data og analytics.Læs den fulde artikelI den fulde artikel fra DataTech kan du læse meget mere om RapidMiners platform, konsekvenserne ved manglende transparens og hvor vigtigt det er, at data scientists ikke arbejder i et vakuum.Automatiseret machine learning er et glimrende værktøj til at gøre data scientists mere produktive. Men hvis du ikke kigger AutoML-systemerne efter i kortene, vil du ikke kunne stole på, at systemet ikke producere modeller med kritiske fejl.Sådan lyder budskabet fra RapidMiner-grundlægger Ingo Mierswa, der opfordrer til en open source-tilgang til AutoML, som kan øge tilliden til værktøjerne.»Det er den samme open source-idé, vi ser inden for it-sikkerhed. Hvis nok mennesker har kigget på koden og ikke fundet huller, så kan vi nok stole på det,« forklarer han, da DataTech møder ham i London.»Men det kræver stadig en form for open source-tilgang eller -attitude over for det her. At du rent faktisk åbner op.« Relateret jobannonce: Senior ForretningsudviklerDet er ikke alle leverandører af systemer til automatiseret machine learning-systemer, der vælger den tilgang. Og den strategi er Ingo Mierswa skeptisk over for.Læs resten af artiklen på vores PRO-medieDataTech.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-04-05
+          &nbsp;·&nbsp; e7252dab
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.881</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.982</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook forbyder manipulerede videoer - men satire er okay (v.2)</h4>
+        <div>
+          KøbenhavnFacebook forbyder manipulering med videoer - såkaldte deepfakes.Det oplyser koncernen i en pressemeddelelse tirsdag.Forbuddet gælder dog ikke videoer, som skal være parodier eller satire. Det gælder heller ikke videoer, som er blevet redigeret udelukkende for at undlade eller ændre ordenes rækkefølge.De såkaldte deepfakes kan i dag laves med simpel teknologi som Photoshop eller via værktøjer, som bruger kunstig intelligens.Med sin nye politik vil Facebook fjerne de videoer, som lever op til nogle kriterier om, at de manipulerer, ved eksempelvis at få det til at se ud som om, at nogen siger noget, som de ikke har sagt.Ifølge Facebook er videoerne stadig sjældne på nettet, men de repræsenterer alligevel en betydelig udfordring for Facebook, eftersom de ses oftere.Facebook har tidligere fået kritik for ikke at fjerne en manipuleret video af lederen af Repræsentanternes Hus, demokraten Nancy Pelosi. Videoen var manipuleret, så den gav indtryk af, at Pelosi var fuld eller dårlig tilpas./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-01-07
+          &nbsp;·&nbsp; e787d490
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.982</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.817</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.675</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.642</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Email på steroider fra Google</h4>
+        <div>
+          Jeg har igennem lang tid været irriteret over email-systemet, som basalt set har været uændret igennem alt for mange år. Det går bare for lang tid med at få skrevet mails og holde styr på dem. Enig!?For dem som IKKE er signet op endnu, så se lige denne video om Googles næste store project efter det kuldsejlede Google Wave. Jeg prøvede Wave, men blev aldrig helt hooked - men Gmail Motion er lige mig.Check videoen på http://mail.google.com/mail/help/motion.html og sign up!/ptoCivilingeniør, ph.d. og algoritme-designer. 
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-04-01
+          &nbsp;·&nbsp; e298c67e
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.643</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.697</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>IBM bruger uvidende menneskers ansigter til at udvikle ansigtsgenkendelse</h4>
+        <div>
+          IBM har fodret algoritmer til ansigtsgenkendelse med næsten en million Flickr-billeder uden at spørge menneskerne på billederne om lov. Det afslører NBC i en lang udredning.IBM har indsamlet billederne fra et større datasæt på 99,2 million billeder, som er delt under en Creative Commons-licens, hvilket normalt giver rettigheder til at billederne kan blive brugt frit.Men det er ikke sikkert, at rettighederne går så vidt til, at de afbillede skal finde sig i, at deres ansigter bliver brugt til at udvikle ansigtskendelsesalgoritmer.Relateret jobannonce: Commercial Analyst to optimise wind farm business casesDen ansvarlige for AI-forskning hos IBM, John Smith, siger til NBC, at enhver har lov til at bede om at få en specifik URL fjernet fra datasættet.Men det kræver, at fotografen bag det specifikke billeder sender linket til billedet, og det kan blive svært, fordi IBM ikke har offentliggjort listen over, hvilke billeder der indgår i datasættet.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-03-13
+          &nbsp;·&nbsp; e71d546e
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.876</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.638</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ER DU EN RIGTIG TALNØRD, DER DRØMMER OM AT BLIVE PROFESSOR I MATEMATIK?</h4>
+        <div>
+          Nej, det er jeg bestemt ikke, og matematik interesserer mig egentlig ikke særligt meget, men jeg kan godt lide at konkurrere, og vil gerne vinde. Jeg er dygtig til det faglige sådan lidt all-round. Og nej, jeg skal heller ikke arbejde med matematik.Jeg vil rigtig gerne være forfatter og leve af at skrive. Efter 9. klasse skal jeg på Samsø Efterskole.Derefter vil jeg på gymnasiet. Og der bliver det altså ikke matematik, der skal tegne profilen.Ja, det må man nok sige. Jeg beskæftiger mig rigtig meget med matematik, for jeg programmerer software og skriver en masse forskellige små apps, og der er det nødvendigt at vide noget om algoritmer og matematiske ligninger.Jeg skal på gymnasiet efter 9.klasse og have matematik på A niveau. Derefter vil jeg gerne læse datalogi på universitetet, og håber at kunne tage en ph. d i datalogi og efterfølgende blive ansat som lektor ved universitetet.Måske lidt. Jeg kan rigtig godt lide matematik, og vil helt sikkert vælge en linje med matematisk på A-niveau på gymnasiet.Men inden da vil jeg måske gerne et år på efterskole, Det har jeg ikke helt taget stilling til endnu, selvom det er sent. Og jo, jeg skal helt sikkert arbejde med tal.Det er sjovt og spændende.Jeg kan godt lide matematik, men tænker ikke på det som en levevej. Efter 9. klasse skal jeg på Midtjysk Ungdomsskole, og om jeg så skal på gymnasiet der efter, det har jeg faktisk ikke helt besluttet mig for endnu. Der er jo rigtig mange muligheder.
+        </div>
+        <footer>
+          <em>Lokalavisen Århus Nord</em>
+          &nbsp;·&nbsp; 2011-05-10
+          &nbsp;·&nbsp; e2abce16
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.987</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.571</kbd>
+            <kbd data-tooltip="Testimonies (says, tells...)">L80_TSTMNS&nbsp;0.592</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.648</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Koder og algoritmer indtager folkeskolen</h4>
+        <div>
+          Regeringen vil skabe øget forståelse for teknologiens muligheder blandt de danske børn og unge. Det står klart, efter at den i går fremlagde sin strategi for digital vækst i Danmark. Syv større initiativer udgør strategien, og en af dem er et ønske om at øge den yngre generations digitale kompetencer. &quot; Alle børn skal lære at kode, men ikke sådan at alle skal være teknologiudviklere.Men man skal have en forståelse for teknologien. Ikke kun kodning, men også algoritmer og teknologi som infrastruktur, værktøj og kommunikation,&quot; sagde undervisningsminister Merete Riisager (LA) ved præsentationen. Regeringen vil i første omgang ruste de unge gennem en fireårig forsøgsordning med cirka 40-50 folkeskoler. / ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-31
+          &nbsp;·&nbsp; e6995535
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.652</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.664</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.523</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Nye chips kan accelerere AI algoritmer</h4>
+        <div>
+          Det skal ikke være nogen hemmelighed at den menneskelige hjerne er en fremragende enhed for beregning. Den kan udføre utrolig mange beregninger i parallel uden at bruge ret mange watt. Det skal heller ikke være nogen hemmelighed at selv om der er mange spændende og gode algoritmer i AI-verdenen, har beregningskraft altid været en udfordring. Men måske der sker noget nu.Vi er alle vokset om med den traditionelle CPU som har en plads i så at sige alle datamaskiner vi kan huske. Den er god til nogle ting, og knap så god til andre.Så fik vi GPU'en (de som har haft en Amiga fik den tidligt). Den vidste sig rigtig god til matricemanipulationer som mange AI algoritmer godt kan lide at gøre.Nu i år har vi hørt fra Google om deres TPU. De har konstrueret en Tensor Processing Unit (TPU) som ikke har så høj precision på beregninger. En typisk chip i dag har enten 32bits eller 64bits precision. Men det har mange maskinlæringsalgoritmer egentlig ikke behov for. TPU'en har 8bits precision.Ikke nok med det, så har IBM også i år lanceret deres TrueNorth chip som kan replikere 16 millioner neuroner med 4 milliander synapser - og kun bruge 2,5 watt!Jeg ved næste ikke hvad jeg skal sige - andet end jeg ved hvad jeg ønsker mig til jul.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2016-09-13
+          &nbsp;·&nbsp; e5e1a4c5
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.944</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.661</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>»Hvis du kalder det beslutningsstøtte, er det, fordi du ikke er sikker på, at det regner rigtigt«</h4>
+        <div>
+          Klinisk AI til beslutningsstøtte sætter læger i bizar situation, mener direktør for Visiana.De bedste kliniske AI-systemer er dem, der overtager opgaver fra læger eller giver dem information, de ikke selv kan udlede. Sådan lyder vurderingen fra Hans Henrik Thodberg, stifter og direktør i Visiana, der ikke giver meget for AI-løsninger, der slår sig på at levere beslutningsstøtte.»Hvis du kalder det beslutningsstøtte, er det, fordi du ikke er sikker på, at det regner rigtigt hver gang,« siger han.»Der er mange, som laver AI-systemer, der kommer med et forslag, som lægen kan være enig eller uenig i. Men det sætter lægen i en bizar situation, hvor lægen måske gerne vil overlade noget til modellen, men samtidig skal vurdere, om systemet regner rigtigt eller ej.« I stedet for at gøre, hvad læger er bedst til, må lægen forholde sig til, om et scanningsbillede f.eks. er inden for modellens kompetence at analysere, siger Hans Henrik Thodberg.»Hvis læger sidder og skal tage hensyn til et ubehjælpsomt AI-system, så fokuserer de forkert.« Visiana står bag det ML-drevne system BoneXpert, der bruges af størstedelen af hospitaler i Skandinavien, England, Italien og Benelux-landende til at udregne knoglealder ud fra røntgenbilleder. Omkring halvdelen af udviklingstiden til det system er gået med at gøre det i stand til at melde pas, hvis billedet ikke passer med, hvad modellen kender, fortæller Hans Henrik Thodberg.»Hvis hånden har nogle stærke deformationer, som ligger uden for modellens normalområde, så melder den det. På den måde peger den netop på de billeder, som lægen skal være ekstra opmærksom på.« »Det er jo et virkelig stort problem, hvis du giver læger et system i hånden, som mange gange rammer rigtigt, men nogle gange regner forkert, og systemet ikke ved, hvornår det regner forkert.« 
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-03-25
+          &nbsp;·&nbsp; e82f0b68
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.989</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.894</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.694</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hans Hauge: Selvom Trump forsvinder, kommer sandheden ikke igen</h4>
+        <div>
+          ''Donald Trumps vælgere lever ikke i virkeligheden, men i en fantasy-verden. De tror ikke på videnskab. Trumps 70 millioner vælgere fornægter fakta,'' skriver Hans HaugeDet har været en underlig debat om Donald Trumps tid som præsident i snart fire år. Den har ikke handlet om politik, men om forholdet mellem sandhed og løgn. Trump løj hele tiden. Det er en vedtaget sandhed. 22.000 gange løj han. Politikere og medier må ikke lyve og skal holde sig til fakta, hvis de ikke gør det, kommer Detektor og faktatjekker. Men hvem faktatjekker faktatjekkerne?Vi har at gøre med en klassisk filosofisk diskussion, som ikke diskuteres filosofisk, men som om den var politisk. Man kan ligefrem sige, at erkendelsesteori har erstattet politik. Vi kender det også fra pandemi-situationen, hvor politikken underordner sig videnskaben. ''Filosofferne'' styrer, og ministrene er deres tjenere. Politik er kommet til at handle om sandhed og løgn.Dernæst har debatten handlet om retorik. Om Trumps retorik især. Trump er retoriker, og han læser ikke taler op, som taleskrivere har skrevet, sådan som andre præsidenter gør. Retorikken er filosofiens modsætning. Kampen mellem retorik og filosofi blev udkæmpet i Grækenland mellem sofisterne (Gorgias) og filosofferne (Platon). Retorikere vil overbevise og overtale, filosofferne vil bevise og tale eller tælle. Filosoffer mener, retorikere lyver. Platon ville udvise kunstnerne (fiktion) fra sin stat, fordi de ikke talte sandt, og fordi de ikke vidste noget. De kunne kun efterligne sandheden. Platonisk set er Trump en kunstner, der skal forvises fra republikken eller staten. Trump har gjort politik til æstetik. Trump er sofisten, Biden filosoffen.Der har været endnu et begrebspar i spil. Det er modsætningen mellem ''videnskab'' (fakta, sandhed) og ''fiktion'' (løgn, digt). Joe Biden og Barack Obama tror på videnskab, Trump tror på fiktion, altså ifølge Biden. Da Obama var i København til klimatopmødet sagde han, at dette er videnskab og ikke fiktion.Trumps vælgere lever ikke i virkeligheden, men i en fantasy -verden. De tror ikke på videnskab. Trumps 70 millioner vælgere fornægter fakta. CNN's antifiktionsmotto er ''Facts First'' (en efterligning af Trumps ''America First'').Der hersker en nervøsitet, der går ud på, at sandheden er forsvundet, og alle vil gerne finde den igen. Løgnens fader skal fornægtes. To plus to er altså fire. Det er trosbekendelsens minimalistiske udgangspunkt. Det minder om, da Gud døde, men ganske som vi lever efter Gud, lever vi efter sandheden. Det har tiden med Trump og Brexit afsløret. Algoritmer sættes til at fjerne løgne. Man regner med om ikke længe at finde en maskine, der kan adskille sandhed fra løgn. Man må ikke håbe, den kommer i kirke.Vi lever i en efter-sandheden-epoke, og Trump er en typisk repræsent for den epoke, men det mener han naturligvis ikke selv. Han tror på fakta. Også Brexit kom til at handle om den samme modsætning. Nigel Farage er en stor retoriker, Boris Johnson er det samme. Han er klassisk dannet. De to løj, men Theresa May gjorde ikke. Hun er videnskaben (uddannet geograf), og hun talte sandt.Ubehaget ved at leve efter sandheden kommer til udtryk i en patetisk klamren sig til ''fakta''. Fakta findes forud for fortolkning, siges det. Fakta er nøgne, indtil man sætter ord på dem. De kan godt lide at få ord sat på sig, for så kan de sige noget, skønt protestere kan de ikke, når nogen går stik imod dem.Men det mener mange faktisk, at de kan. De tror, fakta kan slå igen. Kan fakta da hævne sig? Farlige fakta? Nej, fakta kan kun sige noget på samme måde, som havren kan sige ''jeg er havren''. Det er retorik. Man har personificeret fakta.Tal spiller en stor rolle for faktatjekkere. De tæller og tæller, og derefter fortæller de, og når de fortæller, fortaler de sig. Vi hører ofte journalister eller lignende sige, at denne eller hin gruppe har en ''fortælling'' eller endnu finere et narrativ, som de lever efter.Fakta, tal og fortælling hører sammen. Sammenhængen mellem tal og fakta er der en historisk forklaring på, for fakta blev opfundet i det 17. århundrede i forbindelse med dobbelt bogholderi, hvor den ene række tal skulle svare til den anden. Fakta er historiske, og der var engang, hvor de ikke fandtes.Lige siden Trump blev indsat, har kampen raset om antallet af folk på pladsen foran Capitol. Ikke en politisk kamp, men en kamp om, hvem der har talt rigtigt. Og talte du rigtigt, var du med i den sande fortælling. Fakta er noget, man tror på, og derfor var det blasfemi, da Trumps presserådgiver Kellyanne Conway brugte ordet ''alternative fakta'' (retorik). Det er som at sige, at der er flere guder end fakta. Trump imiterer fakta. Det hedder med et ord hentet fra retorikken hypotyposis.Den tyske filosof Friedrich Nietzsche indledte sit opgør med videnskaben sådan her: ''Der findes ikke fakta, kun fortolkninger.'' Læs ikke Nietzsche på gymnasierne. De unge må ikke miste troen på fakta og skal helst ikke lære at fortolke. Ingen nihilister i vores gader. Men vi lever i post-sandhedens æra, og selvom mange drømmer sig tilbage til tiden før efter-sandheds-tiden, kommer de aldrig tilbage til den, for den har aldrig eksisteret.Hans Hauge er lektor emeritus, dr.phil. og forfatter.
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2021-01-16
+          &nbsp;·&nbsp; e813edc7
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.633</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.659</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Aktivisme og Greta Thunberg kan ikke redde verden. Det kan kun de politiske institutioner - og de er i stykker</h4>
+        <div>
+          Den politiske magt er sivet ud af de politiske institutioner, mener den tyske politolog Ulrike Guérot. I stedet har vi fået aktivisme. Det føles rigtigt, når man liker et opslag om Greta Thunberg, men reelt betyder det ikke noget. Vi har brug for gammeldags politik, hvis vi vil ændre verdenMange glæder sig over den voksende aktivisme. Over unge, der går til klimademonstrationer, hylder Greta Thunberg og underskriver kampagner imod skovrydning i Amazonas.Men den nye aktivisme skjuler en dybere sandhed om moderne politik i Vesten, mener den tyske politolog Ulrike Guérot: At den politiske magt er gledet ud af vores politiske institutioner, og at borgerne nu reelt står magtesløse tilbage.Borgerne kan brokke sig, protestere og indsamle underskrifter, men vi kan ikke for alvor forandre verden. Det kræver nemlig velfungerende politiske institutioner med bred opbakning - og de er forsvundet.»Det er paradoksalt: Aldrig har flere stemt til europaparlamentsvalget, der er masser af demonstranter i gaderne og en masse civil aktivisme, men vi har aldrig lavet så lidt politik i Europa. Vi laver ikke bankunion, finansunion, social union, Schengen går i stykker. Når det kommer til virkelig politik, sker der ingenting,« siger Ulrike Guérot, som ud over at være en flittig forfatter også er professor og leder af Center for Europapolitik og Demokratiforskning på Donau-Universität Krems i Østrig.- Hvad med klimamarcherne? Eller protesterne imod brandene i Amazonas. Presser den slags aktivisme og debat ikke politikerne til at handle?»Regnskoven er faktisk et rigtigt godt eksempel. Hvor mange har ikke skrevet under på dit og dat og klikket på et ikon på de sociale medier, men har man virkelig handlet, bare fordi man har handlet virtuelt? Hvad sker der nu, hvor den ikke længere er i vores opmærksomhed? Den brænder stadig. Vi kunne jo også have sendt NATO-soldater til Brasilien og sagt 'Hey, stop det der, det er vanvid!'« »Og se på Greta Thunberg  hun er 16 år, hun har intet mandat, hun er ikke minister, hun er ikke udsendt af FN. Magten har flyttet sig. Jeg siger ikke, at det kun er dårligt, men det bliver sværere at ændre noget. Aktivismen får os til at føle, at vi agerer. Vi kunne jo også vedtage en lov i EU i morgen om, at SUV-biler nu skulle være forbudt. Men vi gør det ikke, og mens vi diskuterer og klikker, steg produktionen af SUV'er sidste år. Virtuelt vil vi ikke have SUV'er, men i virkeligheden vil vi gerne have SUV'er.« Født i 1964.Professor og leder af Center for Europapolitik og Demokratiforskning på Donau-Universität Krems i Østrig.Arbejdede i 1990'erne for EU's kommissionsformand Jacques Delors.Forfatter til en lang række bøger om europæisk politik.Ønsker sig et føderalt Europa og grundlagde i 2014 tænketanken European Democracy Lab i Berlin, hvis mål er en europæisk republik.- Nogle ville sige, at den politiske magt bare har fået en anden karakter. Der er jo stadig masser af politisk kraft og engagement, og befolkningerne er mere vidende og bedre uddannet end nogensinde. De melder sig godt nok ikke ind i partier, men civilsamfundet går på gaden. Er det ikke en stor kvalitet?»Jeg er træt af al den snak om aktivisme og civilsamfundet. Folk taler, som om at civilsamfundet altid er godt, men Pegida er også civilsamfundet. Vi er alle civilsamfundet, det betyder ikke noget. Civilsamfundet har ikke nogen politisk magt. Man kan gå på gaden, men ikke for alvor ændre samfundet. De laver konferencer og taler med hinanden, men det bliver ikke til reel politik.« »Vi lever i en postinstitutionel tid. I en algoritmisk og digital tid, hvor bureaukrati, hierarkier og institutioner tilhører fortiden. Du kan være influencer og sidde foran et kamera og lægge mascara for tre millioner følgere, og så har du mere indflydelse end Heiko Maas (den tyske udenrigsminister, red. ), der skriver et eller andet om Iran på Twitter.Din placering i samfundets hierarki afhænger ikke længere af institutioner. Det giver et mere fragmenteret samfund. Vi taler ikke om institutionelle reformer, men om borgerne, om borgernes rettigheder og om borgerinitiativer. Men hvem er suverænen? Hvem har magten? Hvad er vores realitet? Vi lever stadig på jorden, men vi laver politik på nettet, men man har altså ikke reddet bierne, bare fordi nogle har lavet et borgerinitiativ, hvor man klikker ja til 'We save the bees.'« - Hvad betyder det for måden, vi kan lave politik på i Europa?»At Europa ikke fungerer. Se på SPD (det tyske socialdemokrati, red. )! De var Europas stærkeste parti, og nu er det en lederløs flok mennesker, der render rundt om sig selv, som om de var en børnehave. Det er sigende, ikke? Magten er diffus. Hvor er magten i dag?« »Det giver mindre og mindre mening at tale om europæisk politik. Når vi talte om Europa i 90'erne, handlede det om noget, om det indre marked, om udvidelse, om euroen. Om ting med en klar ramme og en tidshorisont. I dag handler Europa om alt og intet, om migration, digitalisering, finans, miljø, alt.Men vi har fået 'politik uden plan'. Vi spejder mod fortiden efter de store europæiske projekter, som har bragt os til det sted, vi er i dag, men vi kan ikke længere lave store politiske projekter. Vi laver måske en kommission eller udsender nogle statements, men der sker ikke noget. For et årti siden ville vi lave en europæisk forfatning, men hvis du talte om det i dag, ville folk tro, du var vanvittig. Energien er helt væk. Forventer du virkelig en dyb reformagenda fra Ursula von der Leyen?« - Hvor ligger den politiske magt i dag, hvis den ikke længere er i politiske institutioner?»Et af svarene er, at magten er flyttet over til kapitalen.« - Nu gør du mig deprimeret »Tja, det ser jo heller ikke alt for godt ud, vel?« 
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-10-29
+          &nbsp;·&nbsp; e76ac405
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.636</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.51</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.606</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: AKTIEHANDEL UDEN MENNESKER</h4>
+        <div>
+          Verdens største børsmægler er ikke et menneske, men automatiserede algoritmer i computere. På Københavns Fondsbørs besluttes 40 procent af handlerne af maskiner, og tallet er i hastig vækst, uden branchen anser det for et stort problem. Bortset fra når en computerfejl koster et amerikansk firma 2,6 mia. kr.MoDERNE TIDER.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2012-08-11
+          &nbsp;·&nbsp; e35b0338
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.553</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.56</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.582</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DSB afviste forskere - troede de var flygtninge</h4>
+        <div>
+          &quot;Der er ikke mere plads i toget. Det er helt fyldt op. I kan ikke komme med.&quot;Sådan lød beskeden fra DSBs togfører tirsdag aften til tre unge mænd fra Sri Lanka, da de ved 22-tiden stod på perronen på banegården i Flensborg.De var på vej til en konference i Halmstad i Sverige, til Scandinavian Conference on Artificial Intelligence, hvor de skulle deltage og den ene komme med et oplæg på konferencen, der finder sted 5. og 6 november.Men lige lidt hjalp det. De fik ikke lov til at stige på DSBs sidste tog mod nord, skriver Flensborg Avis i sin torsdagsudgave.- Det var godt nok en sær fornemmelse, sådan bare at blive efterladt der. Det var bittert, og vi havde heller ikke noget sted at være, siger Thilina Rathnayake til avisen..Billetterne til Halmstad var booket online, og de havde dem på deres mobiltelefoner, men lige lidt hjalp det. De måtte se toget køre uden dem og gå tilbage i banegårdshallen: Her fik de hjælp til at finde et hotel i grænsebyen til Danmark.Onsdag morgen var de tidligt tilbage på banegården og forklarede hele situationen for personalet i infocenter hos Deutsche Bahn (DB), som tog de affære, bookede billetterne om, og gik helt med ud på perronen til IC4-toget mod Danmark, så forskerne dennegang kom med - 150 euro fattigere.DSB vil undersøge sagenDet er en kendt sag, at DSB kun tager en begrænset antal flygtninge med i tog, der kører mod nord, og i dette tilfælde helt til Sverige.&quot;Så der er nok ikke tvivl om, at togpersonalet anså dem for at være flygtninge og derfor afviste at tage dem med,&quot; siger Simone Lange fra Flygtningenetværket på Flensborg Banegård til avisen.På perronen blev de ikke bedt om at legitimere sig, og det er heller ikke DSB-personalets opgave at tjekke, om de rejsende har papirerne i orden, siger Leif Fabrin fra DSBs presseafdeling. Hvis et tog er fuldstændig fyldt op, sørger DSB typisk for at finde andre transportmuligheder, så de rejsende kan nå deres destination som planlagt. Det var så ikke tilfældet her.&quot;Nu vil jeg hurtigst muligt tage kontakt med togføreren på det omtalte tog og finde ud af, hvad der er op og ned på denne sag og også tale med de tre, der måtte tilbringe natten i Flensborg&quot;, siger han.Og har DSB handlet forkert, venter der både en undskyldning og penge retur for hotellet.Flensborg Banegård Foto: Lene Esthave, arkiv.Flensborg Banegård Foto: Lene Esthave, arkiv.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-11-04
+          &nbsp;·&nbsp; e54c315f
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.871</kbd>
+            <kbd data-tooltip="Commentary on articles">L80_COMMNT&nbsp;0.511</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.716</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Sociale medier må ikke være politikeres eneste vej til borgerne. De mangler journalistisk filter og kritik</h4>
+        <div>
+          DET ER INTERESSANTE betragtninger, professor Peter Nedergaard gør sig om styrkeforholdet mellem medierne og politikerne i Kristeligt Dagblad den 10. maj. Helt konkret handler det om mediernes uhindrede adgang til en regerings ministre, når sager skal kommenteres, og når regeringen skal stilles til ansvar - men hvor der i stedet kommer skriftlige svar.Så lyder det ofte sådan: &quot; Ministeren har i en mail oplyst, at &quot; eller &quot; ministeren skriver på Facebook, at &quot;. Det er altså igen ikke lykkedes for journalisten at få fat i den pågældende minister eller for den sags skyld et folketingsmedlem.Peter Nedergaard skriver, at andelen af skriftlige svar er steget fra 7,6 procent under Helle Thorning-Schmidt (S) til henholdsvis 22,3 procent under Lars Løkke Rasmussen (V) og 27,8 procent under Mette Frederiksen (S). Er der mon nogen øvre grænse? De skriftlige svar har journalisten svært ved at vurdere, idet der ofte er tale om et svar fra enten en embedsmand eller en spindoktor. Ingen kan se, i hvilket omfang svaret overhovedet har været i nogen konkret berøring med politikeren.Det er forståeligt, at en vis kontrol og sortering er nødvendig. Gennem mere end fire årtier i Folketinget har jeg oplevet, hvordan mediernes arbejdshastighed er steget. Særligt med det gennembrud, som TV 2 News repræsenterede.Det er klart, at en minister ikke kan stå til rådighed med svar her og nu døgnet rundt.Men når en regerings ministre vælger helt at løsrive sig fra medierne, er det også et problem, og jeg har gang på gang advaret mod denne udvikling, som ikke alene handler om mediernes adgang til ministrene, men såmænd også folketingsmedlemmernes muligheder for at få en minister i tale i en sag.NOGET ANDET, som i den grad har præget mediebilledet, er de sociale medier.Her kan vi politikere boltre os, som vi har lyst og evner til. Det kan handle om makrelmadder og kolonihaveidyl. Det kan handle om den helt almindelige hverdag.Jeg benytter selv de sociale medier, og det behøver ikke nødvendigvis at handle om politisk kommunikation, men om en mulighed for at vise folk nogle sider af mig selv, som måske ikke lige kommer frem i medierne. Særligt Instagram giver mulighed for at give følgerne indblik i min hverdag.Anvendt rigtigt er de sociale medier et udmærket supplement til medierne - men de kan ikke stå alene. Jeg bilder mig ikke ind, at jeg kan føre politik eller gøre rede for Dansk Folkepartis politiske udspil på Facebook eller Instagram.Og så sidder jeg altså heller ikke og filmer mig selv i min bil på vej væk fra Christiansborg og giver indtryk af, at nu er jeg på vej &quot; tilbage til virkeligheden&quot;, sådan som jeg har set politikere gøre.Som om de slet ikke er politikere, men blot gæster på Christiansborg.Politik er min virkelighed, og det har jeg det fint med. Ellers havde jeg intet at bestille i Folketinget.Problemet opstår, når Facebook, Instagram, Twitter og andre sociale medier bliver politikeres primære kommunikationskanal til borgerne, fordi de er uden journalistisk filter og kritik.Der er intet galt med skriftlige svar.Der er heller ikke noget galt med sociale medier. Men ingen af delene kan erstatte den direkte kontakt med journalister eller borgere.Ministrene må mande sig op og leve med det element af uforudsigelighed, der kan være i et telefonopkald eller et liveinterview.Hvis vores demokrati bliver henvist til en elektronisk mailboks eller de sociale mediers komplicerede algoritmer, så dør det af iltmangel og havner i total ligegyldighed.Det eneste, der vinder frem, er politikerleden, kynismen og borgernes mavefornemmelse af, at det sikkert er løgn det hele. J Pia Kjærsgaard er medlem af Folketinget og værdiordfører for Dansk Folkeparti samt tidligere formand for Folketinget.&quot; Der er intet galt med skriftlige svar. Der er heller ikke noget galt med sociale medier.Men ingen af delene kan erstatte den direkte kontakt med journalister eller borgere.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2021-05-12
+          &nbsp;·&nbsp; e842d0a7
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.817</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.792</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.615</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Citattilbud fra Flensborg Avis: DSB afviste forskere - troede de var flygtninge</h4>
+        <div>
+          FlensborgCitattilbud fra Flensborg Avis distribueret af Ritzau.&quot;Der er ikke mere plads i toget. Det er helt fyldt op. I kan ikke komme med.&quot;Sådan lød beskeden fra DSBs togfører tirsdag aften til tre unge mænd fra Sri Lanka, da de ved 22-tiden stod på perronen på banegården i Flensborg. De var på vej til en konference i Halmstad i Sverige, til Scandinavian Conference on Artificial Intelligence, hvor de skulle deltage og den ene komme med et oplæg på konferencen, der finder sted 5. og 6 november. Men lige lidt hjalp det. De fik ikke lov til at stige på DSBs sidste tog mod nord, skriver Flensborg Avis i sin torsdagsudgave.- Det var godt nok en sær fornemmelse, sådan bare at blive efterladt der. Det var bittert, og vi havde heller ikke noget sted at være, siger Thilina Rathnayake til avisen..Billetterne til Halmstad var booket online, og de havde dem på deres mobiltelefoner, men lige lidt hjalp det. De måtte se toget køre uden dem og gå tilbage i banegårdshallen: Her fik de hjælp til at finde et hotel i grænsebyen til Danmark.Onsdag morgen var de tidligt tilbage på banegården og forklarede hele situationen for personalet i infocenter hos Deutsche Bahn (DB), som tog de affære, bookede billetterne om, og gik helt med ud på perronen til IC4-toget mod Danmark, så forskerne dennegang kom med - 150 euro fattigere.DSB vil undersøge sagenDet er en kendt sag, at DSB kun tager en begrænset antal flygtninge med i tog, der kører mod nord, og i dette tilfælde helt til Sverige.&quot;Så der er nok ikke tvivl om, at togpersonalet anså dem for at være flygtninge og derfor afviste at tage dem med,&quot; siger Simone Lange fra Flygtningenetværket på Flensborg Banegård til avisen.På perronen blev de ikke bedt om at legitimere sig, og det er heller ikke DSB-personalets opgave at tjekke, om de rejsende har papirerne i orden, siger Leif Fabrin fra DSBs presseafdeling. Hvis et tog er fuldstændig fyldt op, sørger DSB typisk for at finde andre transportmuligheder, så de rejsende kan nå deres destination som planlagt. Det var så ikke tilfældet her.&quot;Nu vil jeg hurtigst muligt tage kontakt med togføreren på det omtalte tog og finde ud af, hvad der er op og ned på denne sag og også tale med de tre, der måtte tilbringe natten i Flensborg&quot;, siger han.Og har DSB handlet forkert, venter der både en undskyldning og penge retur for hotellet.**** DENNE ARTIKEL ER VIDEREFORMIDLET AF RITZAUS BUREAU PÅ VEGNE AF Flensborg Avis ****Betingelser for brug af materiale fra Ritzaus citattjeneste:- Forkortelser kan foretages i overensstemmelse med god citatskik.- En artikel må forkortes, men ikke tilføjes stramninger eller udtryk, som afsenderen ikke kan stå inde for.- Det skal tydeligt fremgå, hvilket medie artiklen kommer fra. Ansvaret herfor ligger hos mediet, der videreudnytter indholdet - også hvor afsenderen måtte have glemt at inkludere kildehenvisning ved udsendelse.- Ritzau må ikke krediteres for artiklen eller angives som kilde.- Materialet må ikke videreudnyttes kommercielt andet end i egne udgivelser.- Hvis afsenderen har indsat link i artiklen, opfordres der til altid at inkludere dette ved videreudnyttelse.
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2015-11-04
+          &nbsp;·&nbsp; e54c3086
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.765</kbd>
+            <kbd data-tooltip="Commentary on articles">L80_COMMNT&nbsp;0.595</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.657</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: NOVELLE: Globaliseringens glæder</h4>
+        <div>
+          Jeg er flyttet fra København og ud på landet til en lille landsby, hvorfor jeg selvfølgelig er mere i naturen, end jeg var før. Jeg går lange ture med mine hunde, og jeg har en stor køkkenhave med en masse andre, som jeg bruger meget tid på. Jeg ved ikke, hvad det er, men det er, som om jeg tænker klarere, end jeg gjorde før. Da jeg boede i byen, havde jeg altid for travlt til at tænke, men herude på landet har jeg ikke så travlt, og mange at de ting, jeg laver, kan jeg lave uden at tænke for meget over det, og så tænker jeg over andre ting og sager. På det seneste har jeg tænkt en del over al den brok, der er over alle de fremmede, som vil til Danmark: Hvorfor brokker vi os over det? Hvorfor ser vi ikke positivt på det? Det er da i første omgang utrolig positivt, at så mange vil bo her, for så gør vi da noget rigtigt, og desuden kan vi jo så i princippet vælge og vrage mellem millioner, ja, milliarder af mennesker, som vil hertil, og så tage dem, som vi ønsker, enten fordi de er billige i drift, eller fordi de er særligt dygtige til et eller andet, vi har brug for.Den anden dag skulle jeg for eksempel hjælpe til på mejeriet. Vi er del af en stor andelsforening, hvor vi bor. Vi hjælper alle til nogle timer om ugen, og så betaler vi 1.000 kroner om måneden, og så har vi faktisk stort set, hvad vi har brug for for at leve ganske overdådigt. Det eneste, vi køber, er toiletpapir og tandpasta og sådan noget, men selv dens slags er vi også begyndt at lave selv. Der er åbnet en forretning i landsbyen, som laver shampooer og sæber af lokale produkter. Men det var en ekskurs.Det, jeg ville sige, var, at den anden dag, da jeg skulle hjælpe til i mejeriet, kom jeg til at tænke på, at vi for eksempel kommer til at mangle en masse sygeplejersker og socialog sundhedsassistenter i fremtiden i Danmark.Der er jo ingen af os, der gider tørre de gamle i røven. Ligesom vi heller ikke gider at gøre rent og sådan noget. Og så tænkte jeg: Hvorfor inviterer man ikke 10.000 kvinder fra Thailand og Filippinerne til at komme og ordne det for os? Thailændere og filippinere er venlige og disciplinerede folk, som ikke kunne drømme om at gøre en flue fortræd. Så kan vi installere dem i nogle containerbyer, hvor de kan bo billigt, mens de er her. Så giver vi dem et lynkursus i dansk på et halvt års tid sammen med lidt uddannelse, og så er de klar til at arbejde. Hvem vil ikke passes af en sød thaipige på plejehjemmet? Jeg ville i hvert fald gerne.De udgifter, der er, tjener man hurtigt ind igen, for de behøver ikke tjene at mere end omkring 6.000 kroner om måneden, så er de glade og kan stadig sende en masse penge hjem til deres fattige familier. Man vil selvfølgelig ikke have, at de bliver her for evigt, så de skal have pension og sådan noget, men så man kan måske lave nogle kontrakter med dem på 5-6 år ad gangen? Når det så er tid, sender man de gamle hjem og modtager nogle nye. Måske skulle man hellere sige 10 år, for det koster noget at uddanne dem, og de gamle taler jo sikkert flydende dansk, når man så sender dem hjem, men det er sådan nogle småting, man må finde ud af hen ad vejen. Det er jo ikke sådan, at de er slaver. De kan jo gå frit omkring og gå i biffen eller i byen, som det passer dem, når de har fri, og så når de kommer hjem til Thailand igen, er de hovedrige og vil kunne købe et hus eller åbne en stripbar.NU TÆNKER du sikkert: Det kan man ikke, for der er internationale regler, som vi skal overholde. Men det kan man da sagtens. Det sker jo allerede nu. Tag de rige, som har au pairer, det er da fuldstændig det samme.Hvorfor skal den ordning kun være til glæde for de rige? Hvorfor kan vi ikke alle sammen få glæde af det? Det er jo en af de helt grundlæggende fordele ved globaliseringen, at vi har adgang til billig arbejdskraft.Det er da for dumt, hvis den danske stat ikke også udnytter den fordel. Vi har selv haft glæde af denne mulighed her, hvor jeg bor.Vi har en masse thailændere og filippinere ansat, som muger ud og gør rent og alt muligt andet. Det er utrolig dejligt, og så har de endda også åbnet restauranter i byen. Vi kunne ikke drive vores landbrug så billigt, som vi gør, hvis vi ikke havde dem til at hjælpe os.Folk vil jo gerne bo her, fordi her er fredeligt, og fordi vi er et rigt samfund, så lad dem dog. Men hvad med fagbevægelsen, tænker du måske, vil det ikke underminere vores rettigheder på arbejdsmarkedet? Jo, måske, men det gør det jo også, når virksomheder flytter deres produktion til Asien.Hvad er forskellen på, om asiaterne arbejder her eller der? De flytter jo netop produktionen, fordi arbejdskraften i de lande er billig, fordi de er fattige og ikke har nogen rettigheder.Det har vi jo normalt ikke noget imod, for så får vi billigere produkter herhjemme.Jeg har endnu ikke set nogen kritisere, at virksomheder flytter produktionen til Asien, så hvorfor skulle det pludselig blive et problem, hvis der kom nogen og arbejdede her? Hvorfor er det kun de rige og de store virksomheder, som må høste fordelene ved globaliseringen? Desuden er mit forslag meget bedre, for der er slet ikke nok danskere, som vil have de jobs, jeg snakker om, og det er jo ikke altid tilfældet med de jobs, som de store virksomheder flytter.Vi har et forskningscenter herude, som arbejder med droner og kunstig intelligens og sådan noget, og de afprøver deres opfindelser i vores bedrift. Det er sjovt og spændende at følge med i. Alle teknikerne og forskerne taler meget dårligt om Kina, også de kinesere, som arbejder hos os, især dem faktisk.Jeg har selv for nylig været i Kina, og alle de kinesere, jeg snakkede med, ville til Vesten og bo. Det skal vi da også udnytte. Hvorfor importerer vi ikke de dygtigste kinesiske forskere til landet? Vi snakker hele tiden om, at kineserne stjæler vores knowhow, op-findelser og krænker vores patenter. I dag kan man slet ikke eksportere noget til Kina, uden at de først skal kende alle detaljer om éns virksomhed, så de kan kopiere teknologierne.Hvorfor er det kun Kina, som skal udnytte os? Hvorfor udnytter vi ikke Kina? Kinas uddannelsessystem er meget hårdt og elitært. Der er en kvinde på vores forskningscenter, som fortalte, at hun voksede op i en lille provins i Kina. Hun var tilfældigvis meget dygtig til matematik, så da hun var 9 år, sendte de hende på en regional eliteskole, og hvis hun også klarede sig godt der, ville hun komme på en eliteskole i Beijing.Der klarede hun sig også godt, og så kom hun på et eliteuniversitet, hvor hun også var blandt de allerbedste, og sådan blev hun forsker.Konkurrencen er benhård i Kina. Det er sådan, de har opbygget deres dygtige arbejdsmarked.Men deres svage punkt er, at ingen gider at bo i Kina. De drømmer alle sammen om at bo i Vesten hos os, hvor der er mere åbent, frit og humant. Hvorfor snupper vi ikke de dygtigste og giver dem statsborgerskab? De er så kloge, at de kan lære dansk på seks måneder. Forskeren, jeg fortalte om, talte flydende, og jeg mener fuldstændig flydende, dansk efter fire måneder.De kinesere, som bor og arbejder i vores by, er meget glade for Danmark og kunne ikke drømme om at flytte tilbage, og de har været med til at løfte vores forskningscenter op i den internationale elite.Men det løser ikke problemerne med flygtningene, som kommer hertil og begår terror og kriminalitet, tænker du måske.Nej, måske ikke, men tag nu for eksempel de der afviste asylansøgere, dem kan man da også udnytte i stedet for at se dem som et problem. I stedet for at sende dem ud på en øde ø, som koster det hvide ud af øjnene, hvorfor sender man dem så ikke ud at arbejde? Og så tænker du: Men vi vil slet ikke have de aber rendende rundt i samfundet, for de laver kriminalitet og voldtægter og ballade.Men hvad nu, hvis man gav dem fodlænker på, så man vidste, hvor de var hele tiden? Så ville det ikke være noget problem, og hvis de klagede over forholdene, kunne de jo bare tage hjem. Det er da en total winwin.De har jo intet at skulle have sagt.ALTSÅ, ALT I ALT er det da en kæmpe fordel for os, at halvdelen af Jordens befolkning vil bo her. Det skal vi da udnytte, især fordi de fleste af dem er fattige og desperate eller flygtninge, som vil gøre hvad som helst for at komme ind i landet. De er i en meget dårlig forhandlingssituation, mens vi sidder med alle esserne på hånden. Lige nu er det kun de rige og de store virksomheder, som udnytter denne fordel, men slip dog den glæde fri, så alle vi andre også kan få del af den. Vi kunne spare milliarder af kroner på de offentlige udgifter og samtidig forbedre vores sundhedssystem og vores forskningsmiljøer.I virkeligheden er det jo også en måde at forsvare vores værdier på. Fordi vi udnytter, at vi er et åbent, frit og demokratisk samfund.Det er et aktiv, vi har. Et aktiv, som vi kan og bør udnytte.Jeg siger altid, at grunden til, at så mange gerne vil bo her i vores lille landsby, er, at her er så trygt og smukt, som her er. På den ene side har vi selvfølgelig den mest moderne teknologi, men alt er samtidig gammeldags.Vores gader er brolagt, og byen er opfør, som en hyggelig middelalderby med en masse smalle gyder imellem de smukke huse, som alle er rigt ornamenteret. Man må kun køre med hestevogn her. Biler er bandlyst. Selv naturen uden for byen har vi omdannet, så den ser mere vild og oprindelig ud, og vi har sat en masse dyrearter ud, som det er en fryd at gå og iagttage. Den anden dag sad jeg for eksempel og betragtede en bæverkoloni. Sikke de arbejdede. Det er helt vildt, at de kan fælde træer med deres tænder.Fakta: BLÅ BOGKaspar Colling NielsenFødt i 1974. Forfatter til bøgerne ' Mount København' (2010), ' Den danske borgerkrig 2018-2024' (2013) og ' Det europæiske forår' (2017). Han er bachelor i filosofi(SDU) og cand. merc. fil. (CBS) og har hver søndag skrevet en novelle på denne plads i Politiken. Dette er den sidste novelle i denne omgang.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-01-06
+          &nbsp;·&nbsp; e7082f5a
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.663</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.568</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.687</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: POLITIKEN: Det nye politiken. dk giver mig klaustrofobi</h4>
+        <div>
+          KÆRE POLITIKENS netavis.Jeg kan ikke lide jeres nye format. For det første - hvor f... er dagens tegning blevet af? En af de evige glæder er netop de forskellige tegneres satire over dagens begivenheder.Men jeg kan ikke finde dem, og jeg savner bl. a. den geniale Roald Als.Hvad værre er, at jeg føler mig hensat til Google og Facebook med deres klaustrofobifremkaldende registreringer og statistiske beregninger af, hvem jeg er, og hvad der kan interessere mig. Det kommer jo ikke jer ved.Jeg læser netop avis for at få en bred orientering om, hvad der sker rundt om i verden - også om de ting, der ellers ikke interesserer mig. Det skal være mit valg, hvad jeg vil læse om, ikke Politikens. Nu har jeg fået ' min strøm' og ' mit Politiken'.Hvem har defineret dem? I hvert fald ikke jeg. Jeg vil ikke have dem på skærmen, og jeg vil ikke defineres af dem.Kære Politikens netfolk. I misbruger nettets muligheder. Jeg vil ikke have nyheder målrettet mig og censureret ud fra mine tidligere interesser. Jeg vil have de nyheder, der er overalt i verden - om alt i verden og med alle de forskellige meninger og holdninger bag. Ikke nogen, I tror, jeg har eller støtter.Desuden er det en pestilens, at adskillige artikler bliver afbrudt af reklamer, der starter med et brøl for fulde gardiner og indleder ellers interessante videoindslag.Nogen skal jo betale avisen, men det behøver vel ikke at være som fjernsynets reklamer, der også altid ligger i et højere lydleje end resten af udsendelsen.MED ET URIMELIGT billigt abonnement (som I selv har tilbudt mig), er jeg næppe den abonnent, I allerhelst vil beholde.Men jeg har med små afbrydelser været Politiken-læser - også i papirformat og eavis - i rigtig mange år.Og jeg savner mine nyheder leveret på en måde, der dækker det, jeg har købt - nemlig dagens nyheder og relevante artikler.Jeg er ikke imod ændringer, og selv om jeg godt ved, at noget af det sværeste er at ændre på formatet på en avis, er jeg vred, fordi I er gået over stregen.Det er et indgreb af rang at målrette nyheder og artikler og vælge dem ud - ud fra kriterier, I ikke har det fjerneste begreb om, og som jeg ikke selv ville bruge.At I kan se, hvad jeg læste i går (uf!), betyder ikke, at I kan beregne, deducere, ' algoritmisere' jer frem til, hvad jeg vil læse i dag.Det er ubehageligt at vide, at I registrerer og opbevarer min historik over de nyheder, jeg har valgt at læse.Det nye Politiken på nettet er en ommer.Det er et indgreb af rang at målrette nyheder og artikler og vælge dem ud - ud fra kriterier, I ikke har det fjerneste begreb om, og som jeg ikke selv ville bruge.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2015-03-18
+          &nbsp;·&nbsp; e4ea75d7
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.677</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.663</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ROBOTALSK</h4>
+        <div>
+          Politiken meddeler: ' Verden står over for en ny industriel revolution, hvor robotter og kunstig intelligens vil vende op og ned på vores verden. De kan tage vores job. Og de vil have besked på, om det er bedre at køre ind i en blind mand end i en gravid kvinde.' Ville det ikke være bedre, hvis de slet ikke kørte ind i nogen?. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2016-01-26
+          &nbsp;·&nbsp; e585fe52
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.91</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.941</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.768</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Medier stopper politiker-kapring af kommentarspor på Facebook</h4>
+        <div>
+          Fremover vil en række landsdækkende medier vise nyeste Facebook-kommentar under artikler.En række landsdækkende medier har ændret deres indstillinger på Facebook, så kommentarer fra politikere ikke altid ligger øverst i kommentarsporet under artikler.Medierne Jyllands-Posten, B.T., Ekstra Bladet og DR har ændret, så det fremover vil være de nyeste kommentarer, som ligger øverst. Det skriver Fagbladet Journalisten.Ændringen kommer, fordi en række politikere har været meget aktive i kommentarsporene til mediers opslag på Facebook og på den måde har høstet mange likes og kommentarer.Hos B.T. fortæller chefredaktør Jonas Kuld Rathje, at man har valgt at ændre indstillingerne, fordi man finder det problematisk, at politikere kan spekulere i at udnytte Facebooks algoritmer til at ligge øverst.- Dels fordi det gør, at særlige modbydelige kommentarer, der får mange likes, kan ligge højt, dels fordi politikere - typisk fordi de har verificeret profiler - bliver prioriteret højt.- Politikerne må hjertens gerne blande sig i debatten, men vi har ikke nogen interesse i at være reklamesøjle for dem i vores feed.- Og det kan vi helt entydigt se er noget, som politikere er begyndt at spekulere i inden for det sidste halve års tid, siger Jonas Kuld Rathje til Journalisten.Hos Berlingske har man ikke ændret sine Facebook-indstillinger, men digital redaktionschef Kevin Walsh siger, at avisen har samme udfordringer med, at politikernes kommentarer ofte ryger øverst.Han er ikke afvisende over at lave samme løsning som de øvrige medier, men påpeger over for Journalisten, at det ikke nødvendigvis skaber den bedste debat i kommentarsporet, hvis det altid er den nyeste kommentar, som ligger øverst./ritzau/Eksternt indhold kan ikke vises på grund af manglende samtykke til marketing cookies.
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2021-05-07
+          &nbsp;·&nbsp; e8413e85
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.987</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.773</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.632</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

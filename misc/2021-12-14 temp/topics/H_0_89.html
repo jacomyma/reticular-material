@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_89 <kbd>H_0_89</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>amerikanske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>potentiel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>journal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mod</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ifølge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dets</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aggressiv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>godkendte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>offentliggjorde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkluderede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>reuters</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hævder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konstaterede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>carnegie</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mellon</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>japan</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dollars</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udsendte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>alvorlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uges</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>risikoen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>milliarder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tredjedele</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tusinder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>velhavende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>quartz</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rapporterer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årtusindskiftet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>general</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>annoncerede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>it-giganten</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gambling</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbød</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tvinge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udløse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udtalt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ball</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udmeldingen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forfølger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forhindre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>officielle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bekymring</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betalte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>urealistisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uansvarligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bremse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>giganter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forholdsregler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udelukket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>national</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indblanding</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>menes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hensigt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rivaler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>meddeler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>american</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>svag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afventer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>91.000</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kølvandet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>francisco</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>midlertidigt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>deriblandt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udtrykt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>230</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>advarer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>signalerer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>offentliggørelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>card</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udløber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bekræftede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>understreget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sværvægtere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grundlægger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forholdene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indledt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overvejende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tvunget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>coronavirussen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pandemiens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>coronapandemien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>godkendes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>storstilet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>algoritmebaserede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teknologi-giganter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>territorium</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>coronaepidemien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>titusindvis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udtalelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>licens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afviser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>offensive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forsigtige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sårbar</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>presser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vedtagne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>angribe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>israelske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udenlands</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>belønnes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>påpegede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kæmpet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>advaret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>moderselskab</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>brasilien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>florida</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>advarsel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indførte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dødsfald</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>smittet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forside</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aggressive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>søgsmål</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spekuleret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>avisendanmark.dk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mikrochips</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omgå</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tech-firmaer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>legale</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>værn</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>meddelt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>henvisning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>delstat</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>estland</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>svagere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>angriber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>london-baserede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gråzone</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>jose</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>titusinder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>guldåre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opgørelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lovede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teknologigigant</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udvælger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>reageret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>signalere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overtagelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bay</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>america</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kritikerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>påpeget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fjerdedel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>meldingen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>formelt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>døbte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>20:00denne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nedjusteret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremdeles</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>underskriver</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>underskrev</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spekulationer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>californiske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uklart</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilføjelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vanlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udmeldinger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>formodentlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>cnbc</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udkæmpet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>annullere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilsigtet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>luftet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opgiver</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bøden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ubegrundet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ansete</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>south</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anand</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bekræfte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>belaste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>katastrofalt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anslået</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>presseafdeling</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rand</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uoplyst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>præcedens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tiltroen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hævdes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>genåbning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>borre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>monopollignende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>villigheden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bagdøren</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udskrev</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ken</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>elektromagnetisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sri</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkluderet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>adlyde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udspurgt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>british</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lukrativt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>offentliggøres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>naturkatastrofer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>p1-radioprogram</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>underrettet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1.900</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>robotrevolution</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afdækning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>computerchips</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>oversteg</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indland</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ekspertpanel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>firmaernes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2.200</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>herald</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>county</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>huang</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vaccineret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>notoriske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>heilmann</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_89 DESC LIMIT 50</pre>
+      <article>
+        <h4>Flash: Ford Motor Co planlægger ifølge Reuters at investere en ... (v.1)</h4>
+        <div>
+          WashingtonFord Motor Co planlægger ifølge Reuters at investere en milliard dollar (knap syv milliarder kroner) over de kommende fem år til produktion af selvkørende biler i den nye højteknologiske virksomhed Argo AI, meddeler den amerikanske bilproducent fredag. Målet er at få udviklet produktionsklare selvkørende biler i 2021.
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-02-10
+          &nbsp;·&nbsp; e61bf754
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.507</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En date med Julia og hvorfor vi skal frygte dårlig AI mere end dræber-AI</h4>
+        <div>
+          Tesla-grundlægger Elon Musk har i efterhånden flere år advaret mod en kunstig superintelligens, som ifølge Musk er en større trussel mod menneskeheden end atomvåben. Men truslen fra en superintelligent dræber-AI risikerer at skygge fra de reele fare og praktiske problemstillinger der i dag foregår i arbejdet med machine learning. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-12-14
+          &nbsp;·&nbsp; e702df9b
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.957</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Halsbånd vil lære dig at forstå din hund</h4>
+        <div>
+          SYDKOREA: Hunden er angiveligt menneskets bedste ven, men det halter nogle gange med kommunikationen på tværs af racer.Det har et sydkoreansk firma sat sig for at råde bod på, skriver Reuters.Firmaet, Petpuls Lab, har udviklet et halsbånd med en mikrofon, som det påstår kan opfange hundens gøen og vurdere, om den er glad, afslappet, nervøs, vred eller ked af det.Ifølge firmaet har det udviklet systemet på basis af flere end 10.000 lydklip fra mere end 50 hunderacer.Forskere på Seoul National University har angiveligt vurderet halsbåndet til at være op mod 90 procent pålideligt.Ifølge Reuters bliver der årligt brugt omkring 1000 milliarder kroner på kæledyrsudstyr verden over. / ritzau/ Reuters.
+        </div>
+        <footer>
+          <em>Danmark Fyns Amts Avis</em>
+          &nbsp;·&nbsp; 2021-01-15
+          &nbsp;·&nbsp; e812a671
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.61</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.669</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.589</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>USA sortlister kinesiske selskaber for overgreb mod muslimer (v.2)</h4>
+        <div>
+          WashingtonDet amerikanske handelsministerium sortlister 28 kinesiske virksomheder, som ifølge USA har været involveret i overgreb mod uighurer og andre muslimske mindretal i Xinjiang-regionen.Det oplyser den amerikanske handelsminister, Wilbur Ross, natten til tirsdag dansk tid.USA &quot;hverken kan eller vil tolerere den brutale undertrykkelse af etniske minoriteter i Kina&quot;, siger han.De 28 kinesiske virksomheder vil med tiltaget få et forbud mod at købe amerikanske produkter.Nyhedsbureauet AFP har fået adgang til en liste over navnene på de virksomheder, som USA vil sortliste. Den skal ifølge planen offentliggøres onsdag.Der skal blandt andet være tale om videoovervågningsfirmaet Hikvision. Derudover skal virksomhederne Megvii Technologies og SenseTime, som arbejder med kunstig intelligens, også være på listen./ritzau/AFP
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-10-08
+          &nbsp;·&nbsp; e761795a
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.98</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.613</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.508</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kilder: Oprør i Google over kontrakt med USA's forsvar</h4>
+        <div>
+          Det sker efter intern uro i Google om projektet. Det bekræfter kilder i selskabet til nyhedsbureauet Reuters og BBC.Det pågældende projekt går under navnet Maven.En gruppe af medarbejdere i Google har gjort oprør mod, at selskabets teknologi skal indgå i krigsførelse.De har påpeget, at det støder sammen med Googles og moderselskabet Alphabets erklærede princip om ikke at begå noget ondt.De har også påpeget risikoen ved at slippe kunstig intelligens løs i dødelige kampsituationer.Google har fredag fortalt medarbejderne, at det ikke vil forny den pågældende kontrakt med USA's forsvarsministerium, når den udløber i marts næste år, siger kilderne.Men Kate Conger fra teknologimediet Gizmodo siger til BBC, at Google ikke har meldt sig ud af projektet, og selskabet har formentlig ikke udelukket at arbejde for den amerikanske hær i fremtiden.Ifølge kilderne har Google mod betaling hjulpet USA's hær med at opsøge mål gennem avancerede analyser af billeder taget fra droner./Ritzau/
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-06-02
+          &nbsp;·&nbsp; e6c653f7
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.605</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.682</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robotpersonale langer drinks over disken</h4>
+        <div>
+          Enjoy Budapest Cafe hedder robotbeværtningen. Ifølge nyhedsbureauet Reuters er caféen åbnet af et lokalt it-selskab med det mundrette navn E-SzoftverfejlesztÅ'.Og selv om robotterne via kunstig intelligens kan udføre simple serviceopgaver, er der ifølge ejerne ikke grund til bekymring for jobmangel i den nære fremtid.Man har nemlig et hold it-specialister ansat, der sørger for, at de 18-20 robotter i caféen fungerer optimalt i hele åbningstiden.De første anmeldelser af robotservicen er positive./Ritzau/
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-01-26
+          &nbsp;·&nbsp; e70ebf39
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.808</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.623</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.609</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Valuta: Newzealandsk dollar bølgede frem og tilbage efter rentemøde</h4>
+        <div>
+          Valutaen blev ellers kortvarigt svækket efter centralbankens rentemøde, der blev afsluttet natten til onsdag dansk tid, og her kan et forkert tweet på det sociale medie Twitter have spillet en rolle, skriver Bloomberg News.I hvert fald udsendte et finansielt dataselskab et tweet, om at centralbanken havde sænket renten, på trods af at den faktisk fastholdt den, som de fleste økonomer ifølge Bloomberg News også havde forventet.En handler i Asien, der har ønsket at være anonym, fortæller til nyhedsbureauet, at man efter beskeden på Twitter kunne se, at algoritmehandlen tog over og solgte den newzealandske dollar, der faldt op mod 0,6 pct., før svækkelsen igen blev udvisket.Onsdag eftermiddag koster newzealandske dollar 0,6684 amerikanske dollar mod 0,6646 dollar tirsdag eftermiddag.Den amerikanske dollar rykker omvendt ikke meget på sig i løbet af onsdagen. Til gengæld holder valutaen fast i tirsdagens styrkelse, som indfandt sig efter taler fra flere ledende medlemmer af den amerikanske centralbank, Federal Reserve.Ifølge nyhedsbureauet Reuters skyldes fremgangen reducerede forventninger til aggressive amerikanske rentenedsættelser næste måned, men en bred overbevisning om, at Federal Reserve dog kommer til at lempe sin pengepolitik, begrænser imidlertid styrkelsen.Onsdag middag koster en euro 1,1366 dollar mod 1,1382 dollar tirsdag eftermiddag. Dollar koster onsdag eftermiddag 107,70 yen mod 106,96 yen tirsdag klokken 17.00 dansk tid./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2019-06-26
+          &nbsp;·&nbsp; e7403aaf
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.579</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.55</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techgiganter stortrives i nedsmeltet økonomi</h4>
+        <div>
+          NEW YORK CITY: Mens store dele af verden var i lockdown, forbruget kollapsede, og mange virksomheder nærmede sig afgrundens rand, ser en lille gruppe af meget magtfulde teknologiselskaber ud til at stortrives under coronakrisen.Det leverede de fire største aktører i den amerikanske techindustri, Apple, Google, Facebook og Amazon, bevis for torsdag med deres regnskaber for andet kvartal af 2020.Tilsammen solgte de fire selskaber for over 200 milliarder dollar i april, maj og juni svarende til godt og vel 1250 milliarder kroner, skriver Bloomberg News.Men de svimlende tal kan vise sig at være et tveægget sværd.Regnskaberne kommer dagen efter meget omtalte høringer i Repræsentanternes Hus i USA, hvor tech-branchens topchefer blev udspurgt om selskabernes monopollignende status.Deres gode resultater kan risikere at puste til den mistillid, som fremgik tydeligt af politikernes spørgsmål under høringen.Ifølge Bloomberg giver den store indtjening et indtryk af, at selskaberne og deres » algoritmeoptimerede forretninger ikke blot kan overleve coronapandemien, men også trives i den « . -Politisk kan det styrke mistanken om, at væksten blandt de amerikanske producenter af teknologi er ude af kontrol, skriver erhvervsmediet.David Cicilline, demokraten i spidsen for det udvalg, som gennemførte høringen onsdag, mener, at selskabernes magt kun vil blive større.-Inden coronaviruspandemien markerede disse firmaer sig allerede som kæmper i vores økonomi, sagde han ifølge BBC.-Efter covid-19 er det sandsynligt, at de kommer stærkere og mere magtfulde ud på den anden side end nogensinde før.E-handelsselskabet Amazon satte rekord i de tre måneder frem til den 30. juni med en indtjening på 5,2 milliarder dollar -eller 33 milliarder kroner.Det er omtrent det dobbelte af indtjeningen samme periode sidste år og det højeste nogensinde for selskabet ifølge nyhedsbureauet Reuters.-Det har været endnu et højst usædvanligt kvartal, sagde topchef JeffBezos.Apple holdt sig ikke tilbage.Salget steg i de tre måneder med 11 procent til 59,69 milliarder dollar. Det er rekord for selskabet i det pågældende kvartal og langt højere end forventet af børsanalytikere ifølge Bloomberg News.Pandemien har holdt folk hjemme, hvilket har øget efterspørgslen efter Apples produkter, idet det har hjulpet millioner af forbrugere med at komme i kontakt med venner, familie og kolleger.Googles moderselskab, Alphabet, og Facebook leverede også overraskende solide kvartalsresultater, pandemiens negative påvirkning af økonomien taget i betragtning, konstaterer New York Times.-De stærke fortsætter med at blive stærkere, siger Dan Ives, direktør for aktieanalyse hos finanshuset Wedbush Securities, til avisen.Og dermed trodser de fire giganter et af de værste tilbagefald i mands minde for både den amerikanske og globale økonomi.USA's økonomi skrumpede i andet kvartal med 9,5 procent i forhold til første kvartal.Det er ifølge Washington Post det største tilbageslag i lidt mere end 70 år./Ritzau/Techgiganter overgik forventningerneApple, Amazon, Facebook og Googles moderselskab, Alphabet, offentliggjorde torsdag regnskaber for andet kvartal. Og tallene var bedre end ventet af fi-nansanalytikere. I parentes det forventede tal: Apple: Salget steg 11 procent til 59,7 milliarder dollar (52,3 milliarder dollar).Indtjening per aktie endte på 2,58 dollar (2,07 dollar).Amazon: Salget steg 40 procent til 88,91 milliarder dollar.(81,2 milliarder dollar). Driftsoverskuddet steg 89 procent til 5,84 milliarder dollar. (950,1 millioner dollar).Facebook: Salget steg 11 procent til 18,7 milliarder dollar.(17,3 milliarder dollar).Indtjening per aktie blev på 1,80 dollar. (1,39 dollar).Alphabet: Salget faldt to procent til 38,3 milliarder dollar.(37,4 milliarder dollar).Kilder: Reuters, Bloomberg News/ ritzau/.
+        </div>
+        <footer>
+          <em>Nordvestnyt Holbæk/Odsherred</em>
+          &nbsp;·&nbsp; 2020-07-31
+          &nbsp;·&nbsp; e7d182eb
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.996</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.605</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.641</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.526</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kontroversielt AI-firma trækkes i retten for at stjæle biometriske data</h4>
+        <div>
+          En gruppe amerikanske borgere har lagt sag an mod firmaet Clearview AI, der har scrapet biometriske data om uvidende personer fra sociale medier. Sagsanlægget kommer et par uger efter, at Facebook indgik forlig i en lignende sag. En gruppe amerikanske borgere i delstaten Illinois har lagt sag an mod virksomheden Clearview AI, der for nylig blev kendt for at have scrapet tre milliarder billeder fra sociale medier og lagt dem i en database. Illinois vedtog tilbage i 2008 loven 'Biometric Information Privacy Act', som skal beskytte borgere mod, at de får taget deres biometriske data. Gruppesøgsmålet, der er blevet indgivet i New York, hvor Clearview AI har hjemme, er lige nu i sin begyndende fase, men tidligere sager viser, at det kan lade sig gøre at vinde sådanne sager. Facebook har tidligere fået bøde Det skal dog ses i lyset af, at Facebook risikerede at skulle betalt helt op mod 35 milliarder dollars.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-02-17
+          &nbsp;·&nbsp; e794d62b
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.848</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.684</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.593</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>IBM's omsætning stiger for første gang i seks år (v.1)</h4>
+        <div>
+          New YorkInternational Business Machines (IBM) har brudt en lang periode på 22 kvartaler med faldende omsætning. Hjulpet på vej af stærk vækst i it-forretningsområder havde IBM i i fjerde kvartal 2017 et salg på 22,5 milliarder dollar. Det er 3,6 procent mere end i samme periode året før, og tallet overgår ifølge Bloomberg News også analytikernes forventninger. Det er især den amerikanske koncerns satsning på it-tjenester som cloudservice, dataanalyse, sikkerhedssoftware og kunstig intelligens, der løfter salget. Trods fremgangen på toplinjen fik IBM i kvartalet et underskud på 1,1 milliarder dollar. Tabet skyldes en særlig belastning på 5,5 milliarder dollar som følge af den nyligt vedtagne skattereform i USA. Til sammenligning havde IBM året tidligere et overskud på 4,5 milliarder dollar. /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-01-18
+          &nbsp;·&nbsp; e69542ed
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.984</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.837</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.825</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.531</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amazon leverer bedre end ventet men venter sløv start på året</h4>
+        <div>
+          I sit regnskab for fjerde kvartal sælger internetgiganten for cirka 20 procent mere end i samme kvartal forrige år. Omsætningen lander på 72,4 milliarder dollar.Det er bedre end analytikernes forventning, der lød på 71,9 milliarder dollar.Og ser man på tallene for hele 2018, så runder e-handelsgiganten 200 milliarder dollar i omsætning og lander på 232,9 milliarder dollar. Det er en stigning på 31 procent mod året før.I fjerde kvartal steg nettoomsætning næsten 20 procent til 72,38 milliarder dollar. Analytikerne havde ifølge Bloomberg News regnet med en omsætning på 71,92 milliarder.For hele 2018 nåede internetkæmpen en nettoomsætning på 232,9 milliarder dollar. Det svarer til en vækst på 31 procent fra 177,9 milliarder i 2017.I mange år har investorer givet Amazon grønt lys til at bruge penge på nye tiltag: Varehuse og datacentre rundt om i verden, et studie nær Hollywood og kunstig intelligens. Det skriver nyhedsbureauet Reuters.Netgigantens forventninger til salget i første kvartal ligger dog lavere end ventet.Blandt andet står Amazon over for regulatoriske forhindringer i Indien, så selskabet har måtte fjerne flere varer fra sin e-handel i landet.Analytikere bemærker, at væksten i salget på nogle europæiske markeder er aftaget i det vigtige kvartal med julehandlen.Virksomhedens forventning til netsalget ligger på mellem 56 og 60 milliarder dollar for det første kvartal. Og det er altså under analytikernes forventning på 60,77 milliarder dollar./Ritzau/
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-02-01
+          &nbsp;·&nbsp; e7107f1c
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.99</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.654</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.858</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.521</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kilder: Oprør i Google over kontrakt med USA's forsvar</h4>
+        <div>
+          Vrede blandt medarbejdere over, at Google stiller teknologi for kunstig intelligens til rådighed for Pentagon.Google har besluttet ikke at forny en kontrakt med USA's forsvarsministerium, hvor it-giganten skulle bidrage med kunstig intelligens til at opspore mål.Det sker efter intern uro i Google om projektet. Det bekræfter kilder i selskabet til nyhedsbureauet Reuters og BBC.Det pågældende projekt går under navnet Maven.En gruppe af medarbejdere i Google har gjort oprør mod, at selskabets teknologi skal indgå i krigsførelse.De har påpeget, at det støder sammen med Googles og moderselskabet Alphabets erklærede princip om ikke at begå noget ondt.De har også påpeget risikoen ved at slippe kunstig intelligens løs i dødelige kampsituationer.Google har fredag fortalt medarbejderne, at det ikke vil forny den pågældende kontrakt med USA's forsvarsministerium, når den udløber i marts næste år, siger kilderne.Men Kate Conger fra teknologimediet Gizmodo siger til BBC, at Google ikke har meldt sig ud af projektet, og selskabet har formentlig ikke udelukket at arbejde for den amerikanske hær i fremtiden.Ifølge kilderne har Google mod betaling hjulpet USA's hær med at opsøge mål gennem avancerede analyser af billeder taget fra droner.
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2018-06-02
+          &nbsp;·&nbsp; e6c65398
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.582</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.565</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Politiet i Los Angeles forbyder brug af kommerciel ansigtsgenkendelse</h4>
+        <div>
+          Los Angeles Police Department har lavet et forbud mod, at dets medarbejdere bruger kommercielle teknologier til ansigtsgenkendelse. Det sker efter afsløringen af, at ansatte har lavet hundredevis af søgninger i det omstridte Clearview AI.Politiet i Los Angeles (LAPD) har forbudt dets ansatte mod at bruge kommercielle ansigtsgenkendelses-teknologier.Det skriver The RegisterForbuddet kommer efter en afsløring fra BuzzFeed, der pegede på, at mere end 25 ansatte har foretaget næsten 475 søgninger med den omstridte software til ansigtsgenkendelse ved navn Clearview AI. Denne løsning bygger på millioner af billeder fra internettet.I meddelelsen om forbuddet blev det slået fast, at politiets ansatte kun må benytte sig af det officielle LAPD ID system til at identificere personer med. Dette system er baseret på billeder, som politiet har taget.En talsperson fra LAPD har i forbindelse med det nye forbud udtalt, at to betjente havde brugt Clearview til officielle efterforskninger, hvorimod de resterende betjente har brugt det til tests.Kritikere har advaret mod brugen af ansigtsgenkendelses-software med henvisning til, at resultaterne ikke altid er tilstrækkeligt nøjagtige, og derudover har der været flere bekymringer om racemæssig bias i resultaterne.I andre byer såsom San Francisco har den slags bekymringer ført til, at ansigtsgenkendelse er blevet forbudt
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-11-19
+          &nbsp;·&nbsp; e7ff367b
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.572</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.638</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.589</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google nej til krigsførelse</h4>
+        <div>
+          Google har besluttet ikke at forny en kontrakt med USA's forsvarsministerium, hvor it-giganten skulle bidrage med kunstig intelligens til at opspore mål.Det sker efter intern uro i Google om projektet.Det bekræfter kilder i selskabet til nyhedsbureauet Reuters og BBC.En gruppe af medarbejdere i Google har gjort oprør mod, at selskabets teknologi skal indgå i krigsførelse. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2018-06-03
+          &nbsp;·&nbsp; e6c65635
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.712</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.541</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig hjerne farlige end Kim</h4>
+        <div>
+          Teslas excentriske ejer, Elon Musk, har endnu en gang advaret verden mod kunstig intelligens eller AI.I et opslag på Twitter konstaterer han, at vi bør være langt mere nervøse for følgerne af AI end Nordkorea. Ifølge Musk er der brug for streng lovgivning og regler, hvis ikke den kunstige hjerne en dag skal tage magten fra menneskeheden.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2017-08-16
+          &nbsp;·&nbsp; e65fadcb
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.63</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>IBM-s omsætning stiger for første gang i seks år</h4>
+        <div>
+          IBM-s salg stiger for første gang siden 2012, men skattereform i USA giver blodrød bundlinje, viser regnskab.International Business Machines (IBM) har brudt en lang periode på 22 kvartaler med faldende omsætning.Hjulpet på vej af stærk vækst i it-forretningsområder havde IBM i i fjerde kvartal 2017 et salg på 22,5 milliarder dollar.Det er 3,6 procent mere end i samme periode året før, og tallet overgår ifølge Bloomberg News også analytikernes forventninger.Det er især den amerikanske koncerns satsning på it-tjenester som cloudservice, dataanalyse, sikkerhedssoftware og kunstig intelligens, der løfter salget.Trods fremgangen på toplinjen fik IBM i kvartalet et underskud på 1,1 milliarder dollar.Tabet skyldes en særlig belastning på 5,5 milliarder dollar som følge af den nyligt vedtagne skattereform i USA. Til sammenligning havde IBM året tidligere et overskud på 4,5 milliarder dollar./Ritzau/
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-01-18
+          &nbsp;·&nbsp; e69542a4
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.985</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.822</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.866</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.555</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>USA sortlister kinesiske selskaber for overgreb mod muslimer</h4>
+        <div>
+          USA vil ikke tolerere den brutale undertrykkelse af etniske minoriteter i Kina, siger USA's handelsminister. Det amerikanske handelsministerium sortlister 28 kinesiske virksomheder, som ifølge USA har været involveret i overgreb mod uighurer og andre muslimske mindretal i Xinjiang-regionen. Det oplyser den amerikanske handelsminister, Wilbur Ross, natten til tirsdag dansk tid. Det skriver nyhedsbureauet AFP. USA 'hverken kan eller vil tolerere den brutale undertrykkelse af etniske minoriteter i Kina', siger han. De 28 kinesiske virksomheder vil med tiltaget få et forbud mod at købe amerikanske produkter. AFP har fået adgang til en liste over navnene på de virksomheder, som USA vil sortliste. Den skal ifølge planen offentliggøres onsdag. Der skal blandt andet være tale om videoovervågningsfirmaet Hikvision. Derudover skal virksomhederne Megvii Technologies og SenseTime, som arbejder med kunstig intelligens, også være på listen. Hikvision har natten til tirsdag på det kraftigste modsat sig USA's beslutning. Det skriver kinesiske statsmedier ifølge Reuters. Anklagerne bygger ikke på fakta, lyder det videre fra Hikvision. Fordømmer Kina Ifølge FN er mindst en million etniske uighurer og andre muslimer tilbageholdt i det, Kina betegner som 'frivillige træningscentre' for at udrydde ekstremisme og lære folk nye færdigheder. Det amerikanske forsvarsministerium har tidligere anslået, at antallet i virkeligheden kan være 'tættere på tre millioner'. Tidligere indsatte i lejrene har over for nyhedsbureauet Reuters beskrevet tortur under afhøringer, overfyldte celler og daglig brutalitet og indoktrinering, som har drevet nogle muslimer til at begå selvmord. Ved FN's Generalforsamling i september blev USA og flere end 30 andre lande enige om at fordømme Kina for undertrykkelsen. »Vi opfordrer andre til at deltage i den internationale indsats mod Kinas forfærdelige undertrykkelse« , sagde den amerikanske viceudenrigsminister, John Sullivan, i den forbindelse. »Historien vil dømme det internationale samfund på, hvordan vi reagerer på dette angreb på menneskerettigheder og grundlæggende frihedsrettigheder« . ritzau Portræt: Arkitekten bag forfølgelsen af uighurerne er en politisk stjerne i Kina
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2019-10-08
+          &nbsp;·&nbsp; e7618738
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.989</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.802</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.787</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.53</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amazon leverer bedre end ventet men venter sløv start på året (v.5)</h4>
+        <div>
+          SeattleAmazon kommer godt ud af fjerde kvartal med en omsætning, der slår analytikernes forventning efter et stærkt julesalg.Omvendt er selskabets forventning til første kvartals salg også til den svage side, og aktien falder derfor med 1,5 procent i eftermarkedet.I sit regnskab for fjerde kvartal sælger internetgiganten for cirka 20 procent mere end i samme kvartal forrige år. Omsætningen lander på 72,4 milliarder dollar.Det er bedre end analytikernes forventning, der lød på 71,9 milliarder dollar.Og ser man på tallene for hele 2018, så runder e-handelsgiganten 200 milliarder dollar i omsætning og lander på 232,9 milliarder dollar. Det er en stigning på 31 procent mod året før.I fjerde kvartal steg nettoomsætning næsten 20 procent til 72,38 milliarder dollar. Analytikerne havde ifølge Bloomberg News regnet med en omsætning på 71,92 milliarder.For hele 2018 nåede internetkæmpen en nettoomsætning på 232,9 milliarder dollar. Det svarer til en vækst på 31 procent fra 177,9 milliarder i 2017. I mange år har investorer givet Amazon grønt lys til at bruge penge på nye tiltag: Varehuse og datacentre rundt om i verden, et studie nær Hollywood og kunstig intelligens. Det skriver nyhedsbureauet Reuters.Netgigantens forventninger til salget i første kvartal ligger dog lavere end ventet.Blandt andet står Amazon over for regulatoriske forhindringer i Indien, så selskabet har måtte fjerne flere varer fra sin e-handel i landet. Analytikere bemærker, at væksten i salget på nogle europæiske markeder er aftaget i det vigtige kvartal med julehandlen.Virksomhedens forventning til netsalget ligger på mellem 56 og 60 milliarder dollar for det første kvartal. Og det er altså under analytikernes forventning på 60,77 milliarder dollar./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-01-31
+          &nbsp;·&nbsp; e7107e2a
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.99</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.638</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.873</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kinesisk teknologiselskab klar til børsintroduktion på 3,4 mia kr i Kina</h4>
+        <div>
+           Det kinesiske teknologiselskab Megvii ser ud til at være klar til kinesisk børsintroduktion på omkring 3,4 mia. kr efter det kinesiske nytår i slutningen af januar.Det skriver nyhedsbureauet Reuters mandag.Megvii, der producerer kunstig intelligens (AI) og ansigtsgenkendelsessoftware, blev tilbage i oktober sortlistet af USA sammen med 28 andre kinesiske virksomheder.Børsen i Hongkong har siden bedt om yderligere information fra selskabet, og ifølge kilder med indgående kendskab til sagen ser det ud til, at selskabet bliver godkendt til en børsintroduktion på 500 mio. dollar - cirka 3,4 mia. kr.Ifølge USA har de 28 selskaber været involveret i overgreb mod uighurer og andre muslimske mindretal i Xinjiang-regionen, og USA har derfor nedlagt forbud mod, at de kan samarbejde og handle med amerikanske virksomheder.Ifølge FN er mindst en million etniske uighurer og andre muslimer tilbageholdt i det, Kina betegner som &quot;frivillige træningscentre&quot; for at udrydde ekstremisme og lære folk nye færdigheder.Megvii, der blandt andet har investorer som den australske investeringsbank Macquarie Group og Abu Dhabi Investment Authoritet, er ifølge Reuters vurderet til 4 mia. dollar - cirka 27,1 mia. kr./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2020-01-06
+          &nbsp;·&nbsp; e78761e9
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.951</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.58</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.518</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsker: Vi forbinder hjernen med datalagre i 2029</h4>
+        <div>
+          USA Den amerikanske opfinder og Google-chef Ray Kurzweil har for nylig på en amerikansk kongres hævdet, at man i 2029 vil være i stand til at forbinde menneskers hjerne med en såkaldt &quot; smart cloud&quot; - et teknologisk udtryk for adgang til en fælles digital datamængde, der ikke ligger på en specifik computer, men på internettet, så mennesker kan opnå fællesadgang til den. Det skriver filosofimediet Philosophynow.org.Hvor mange eksperter på området advarer mod disse eskaleringer af digital forbedring af menneskets hjerne, er Kurzweil begejstret. Ifølge Philosophynow.org hævder han, at &quot; kunstig intelligens ikke vil erstattet mennesket, men blot forbedre det. Det gør kunstig intelligens allerede&quot;.kirke@k.dk 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-12-09
+          &nbsp;·&nbsp; e6895bfb
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.534</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Senator vil have kontroversiel ansigtsgenkendelse bandlyst fra amerikanske demonstrationer</h4>
+        <div>
+          De mange demonstrationer mod politivold og racisme i USA betyder, at politiet tager forskellige overvågningsmetoder i brug. Senatoren fra Massachusetts beder nu om, at ansigtsgenkendelsessoftware fra Clearview AI ikke bliver brugt. Clearview AI er igen kommet i søgelyset, denne gang i forbindelse med protesterne mod politivold og racisme i USA. Alt sammen siden januar, hvor virksomheden rigtig kom i mediernes søgelys. Nu vil den Demokratiske senator fra Massachusetts Edward Markey have undersøgt virksomheden igen, da han er bange for, at den kontroversielle software bliver brugt mod demonstranter. Flere politimyndigheder i stater, hvor der er uroligheder og demonstrationer, bruger nemlig digitale overvågningsværktøjer til at spore demonstranterne - også dem der ikke gør noget ulovligt. Det bør ifølge senatoren stoppe. Amerikanere har nemlig ifølge forfatningen lov til at demonstrere. Denne frihed til at demonstrere kan dog blive sat under pres, hvis ikke folk tør, fordi overvågningen er allestedsnærværende, skriver senatoren i et brev til Clearview. Flere søgsmål mod Clearview Ifølge en rapport fra Buzzfeed bruger flere politimyndigheder omkring Minneapolis, hvor demonstrationerne startede på baggrund af George Floyds død i politiets varetægt, netop ansigtsgenkendelsessoftware fra Clearview AI. Senator Markey har nu bedt om at få en opdateret liste over kunder og beder samtidig virksomheden om at bede sine kunder om ikke at bruge softwaren i forbindelse med demonstrationerne. Tidligere har både American Civil Liberties Union og rigsadvokaten i staten Vermont lagt sag an mod virksomheden.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-06-09
+          &nbsp;·&nbsp; e7be65ae
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.733</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.572</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>IBM's cloud-division glimrer i kvartalsregnskab</h4>
+        <div>
+          Teknologikoncernen omsatte i det seneste kvartal for over 18 milliarder dollar. Cloud vokser med 30 procent.AnnonceStærk vækst i cloud-forretningen sikrer den amerikanske teknologigigant IBM et bedre end forventet resultat i andet kvartal.Det viser selskabets regnskab, der er offentliggjort sent mandag aften dansk tid.Cloud-computing, som IBM på bekostning af nogle af selskabets traditionelle forretningsområder har fokus på, øgede salget med 30 procent til 6,3 milliarder dollar.IBM, der i tidligere tider var ledende inden for it, har haft svært ved at løfte omsætningen på sine kerneområder som infrastruktur til virksomheder og it-service.For at ændre det, har selskabet investeret kraftigt i kunstig intelligens og cloud-software.IBM omsatte i kvartalets tre måneder samlet for 18,12 milliarder dollar.Det er over fem procent mindre end i samme periode året før, men bedre end analytikeres estimat, der lød på 17,72 milliarder dollar.Nettooverskuddet faldt i perioden frem til 30. juni til 1,36 milliarder dollar fra 2,5 milliarder dollar om året.Fraregnes særlige poster tjente IMB 2,18 dollar per aktie i kvartalet. Her lød forventningen hos analytikerne på 2,07 dollar.De bedre end ventede tal har efterfølgende sendt IBM's aktiekurs op med omkring seks procent./ritzau/reuters
+        </div>
+        <footer>
+          <em>Helsingordagblad.dk</em>
+          &nbsp;·&nbsp; 2020-07-20
+          &nbsp;·&nbsp; e7cd4b40
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.99</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.816</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.898</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.561</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tech-giganter trodser coronakrise og fremviser flotte salgstal</h4>
+        <div>
+          Solide regnskaber fra blandt andet Apple og Amazan kan puste til den mistillid, som hersker over for branchen. Aktiekurserne hos tech-giganterne Apple, Amazon og Facebook tager natten til fredag dansk tid et solidt spring opad efter selskabernes kvartalsregnskaber. Også Googles moderselskab, Alphabet, klarer sig fint på en stor dag for tech-branchen, hvor de fire selskaber for første gang præsenterede regnskaber samtidig. Det skriver nyhedsbureauet Reuters. De fire selskaber er blevet udråbt som &quot;lockdown-vindere&quot;. Mens millioner af amerikanere og borgere verden over er blevet bedt om at blive inde for at holde coronaudbruddet nede, har flere af selskabernes aktier nået rekordniveauer. I efterhandlen på den amerikanske bør steg aktierne hos Apple, Amazon og Facebook med fem procent eller mere ifølge Reuters. Hos Alphabet steg de med 0,5 procent. Tilsammen solgte de fire selskaber for over 200 milliarder dollar i april, maj og juni svarende til godt og vel 1250 milliarder kroner, skriver Bloomberg. For e-handelsselskabet Amazon var der endda tale om en indtjeningsrekord. De nye regnskaber kommer kun en dag efter meget omtalte høringer i Repræsentanternes Hus i USA, hvor tech-branchens topchefer blev udspurgt om selskabernes monopollignende status. Og deres gode resultater kan risikere at puste til den mistillid, som fremgik tydeligt af politikernes spørgsmål under høringen. Ifølge Blomberg styrker den store indtjening et indtryk af, at selskaberne og deres &quot;algoritmeoptimerede forretninger ikke blot kan overleve coronapandemien, men også trives i den&quot;. - Politisk kan det styrke mistanken om, at væksten blandt de amerikanske producenter af teknologi er ude af kontrol, skriver erhvervsmediet. /ritzau/ Få dagens vigtigste nyheder fra avisendanmark.dk direkte i din indbakke. Du kan til hver en tid afmelde dig igen.
+        </div>
+        <footer>
+          <em>Avisendanmark.dk</em>
+          &nbsp;·&nbsp; 2020-07-31
+          &nbsp;·&nbsp; e7d14fff
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.989</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.798</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.554</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Skyen ligger på en dansk mark - og den æder strøm</h4>
+        <div>
+          AfFå gik med en forventning om, at amerikanske it- giganter pludselig ville begynde at investere i fed, dansk agerjord. Men snart ligger Apple og Facebooks datacentre på marker ved Kassø, Foulum og Andrup. Desuden har Google via underselskaber som Dapsi International ApS opkøbt marker ved Kassø og Tårup.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2018-12-31
+          &nbsp;·&nbsp; e706ea2c
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.903</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.595</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.609</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Goldman Sachs tjekkes for kredit-sexisme</h4>
+        <div>
+          Goldman Sachs skal undersøges for at diskriminere mod kvinder i kreditvurderinger i forbindelse med det nye Apple Card, skriver Reuters. Apple Card er et kreditkort, der er lavet af techgiganten Apple, men er udviklet af Goldman Sachs.Den danske programmør og forfatter David Heinemeier Hansson skrev en serie af tweets, hvori han beskrev, at at han og hans hustru havde fået meget forskellige kreditgrænser på deres Apple Cards. Faktisk var hans 20 gange højere end hendes.Hansson beskriver bl. a., at de har lavet fælles selvangivelser, og at hans kone har en bedre kreditværdi.Han har i samme serie af tweets rettet skarp kritik mod de algoritmer, der bruges i kreditvurderingerne.New Yorks afdeling for fi-nansielle tjenester har siden bekræftet, at der bliver foretaget en undersøgelse af Goldman Sachs' praksis mht. kreditvurderinger.»Enhver algoritme, der forsætligt eller ikke resulterer i diskriminerende behandling af kvinder eller andre beskyttede klasser, er i strid med New York-lovgivningen,« lyder det i en udtalelse til Reuters.Apple Card blev lanceret i august som Goldman Sachs' første kreditkort. Filbert.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-11-11
+          &nbsp;·&nbsp; e76ec6e6
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.571</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.581</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Overgreb mod Kinas muslimer vækker harme</h4>
+        <div>
+          Washington D.C.Kina har længe måtte lægge øre til skarp kritik af behandlingen af det muslimske mindretal uighurerne, der har hjemme i den vestlige region Xinjiang. Mandag aften blev kritikken dog mere udtalt, da det amerikanske handelsministerium valgte at sortliste 28 kinesiske virksomheder, som ifølge USA har været involveret i overgreb mod uighurer og andre muslimske mindretal i regionen.Beslutningen blev annonceret af den amerikanske handelsminister, Wilbur Ross, natten til tirsdag dansk tid. Det skriver nyhedsbureauet AFP.USA &quot;hverken kan eller vil tolerere den brutale undertrykkelse af etniske minoriteter i Kina&quot;, lød det fra handelsministeren.Ifølge FN er mindst en million etniske uighurer og andre muslimer tilbageholdt i det, Kina betegner som &quot;frivillige træningscentre&quot; for at udrydde ekstremisme og lære folk nye færdigheder.Det amerikanske forsvarsministerium har tidligere anslået, at antallet i virkeligheden kan være &quot;tættere på tre millioner&quot;.Rettighedsgrupper fortæller til tv-stationen BBC, at indsatte i lejrene tvinges til at lære mandarin og tilmed kritisere og afsværge deres tro. Tidligere indsatte i lejrene har over for nyhedsbureauet Reuters beskrevet tortur under afhøringer, overfyldte celler og daglig brutalitet og indoktrinering, som har drevet nogle muslimer til at begå selvmord.Ifølge Human Rights Watch er uighurer udsat for massiv overvågning og bliver tvunget til at afgive dna og biometriske prøver. Der er omkring 11 millioner uighurer i Xinjiang. Uighurerne er blevet et mindretal efter årtiers massiv indvandring af etniske kinesere fra andre dele af Kina. Ifølge BBC har det ført til stadig større problemer, da mange uighurer ser deres kulturelle egenart blive fortrængt til fordel for en mere klassisk kinesisk kultur. De 28 kinesiske virksomheder er ifølge BBC placeret på den såkaldte Entity List og har dermed forbud mod at købe amerikanske produkter.Ifølge AFP er en række producenter af overvågningsudstyr kommet på listen. Det gælder blandt andet Hikvision, der laver kameraer.  Derudover skal virksomhederne Megvii Technologies og SenseTime, som arbejder med kunstig intelligens, også være på listen.Ved FN's Generalforsamling i september blev USA og flere end 30 andre lande enige om at fordømme Kina for undertrykkelsen.- Historien vil dømme det internationale samfund på, hvordan vi reagerer på dette angreb på menneskerettigheder og grundlæggende frihedsrettigheder, sagde den amerikanske viceudenrigsminister, John Sullivan, i den forbindelse./ritzau/Denne nyhed må publiceres digitalt bag paywall fra d. 08/10/2019 12:00Nyheden er på NET-tjenesten d. 08/10/2019 04:38Fakta medfølger
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-10-08
+          &nbsp;·&nbsp; e7618d50
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.952</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.632</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.61</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.551</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Japans supercomputer skal være hurtigst</h4>
+        <div>
+          SUPERCOMPUTERE I kampen om at være de første til at ramme en exaflop vil den japanske regering investere 19,5 milliarder yen, svarende til over én milliard danske kroner, i en ny, kunstigt intelligent supercomputer, skriver BBC.Computeren, der kommer til at hedde AI Bridging Cloud Computer (AIBC), skal være verdens hurtigste med 130 petaflops.»Japans nuværende hurtigste computer, Reiken K, kører med 11,2 petaflops, så der er noget af et spring for Japan op til de 130 petaflops,« fortæller professor Brian Vinter fra Niels Bohr Institutet.Motivationen for den japanske regering er ifølge Brian Vinter dels at forhindre det japanske erhvervsliv i at vende sig mod amerikanske udbydere såsom Intel og Cray, dels at komme med forrest i den teknologiske udvikling igen. j ref LÆS MEGET MERE OM AI I INGENIØRENS FOKUS PÅ ing.dk/ fokus/ kunstig-intelligens.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2016-12-02
+          &nbsp;·&nbsp; e60262c4
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.541</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.524</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>USA: Kinesere bag kæmpe hackerangreb</h4>
+        <div>
+          USA anklager fire hackere fra det kinesiske militær for at stå bag et omfattende hackerangreb i 2017, oplyser den amerikanske justitsminister, William Barr.Angrebet, der ramte kreditvurderingsselskabet Equifax, påvirkede omkring 147 millioner amerikanere - næsten halvdelen af alle landets indbyggere.- Det var et af historiens største datatyverier, lyder det fra Barr. Blandt de oplysninger, der blev stjålet, var amerikaneres navne, fødselsdatoer og personnumre, skriver The New York Times.- Tyverierne kan være med til at styrke Kinas udvikling af værktøjer inden for kunstig intelligens, siger Barr ifølge amerikanske CNN.Ritzau/Reuters.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2020-02-11
+          &nbsp;·&nbsp; e792cdf4
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.966</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.859</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.515</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Amerikanske aktier: Regnskabsaktuelle selskaber dykker i positivt marked</h4>
+        <div>
+           Der er en overordnet god stemning på de amerikanske aktiebørser fredag ved handelsstart, hvor de regnskabsaktuelle selskaber som IBM, American Express og Schlumberger går mod den positive strøm.Fra start stiger S&amp;P 500 0,2 pct. til 2804,79. Nasdaq stiger med 0,3 pct. til 7319,26, og Dow Jones har indledt dagen stort set uændret i 26.014.Markedsdeltagerne ser dermed ikke ud til at være alt for bekymrede for muligheden for en amerikansk regeringsnedlukning.Politikerne i Repræsentanternes Hus vedtog torsdag et lovforslag til finansiering af regeringens aktiviteter frem til 16. februar og undgik dermed en nedlukning i weekenden, når den eksisterende bevilling udløber. Men forslaget skal stadig godkendes af Senatet, hvor usikkerheden om en vedtagelse er anderledes stor.På selskabsfronten er der flere nyheder at handle på, da både IBM og American Express offentliggjorde regnskabstal efter børslukketid torsdag.Den amerikanske it-gigant IBM havde en stigende kvartalsomsætning for første gang i seks år i fjerde kvartal, og både omsætningen og indtjeningen var en spids højere end ventet.Omsætningsfremgangen kom ikke fra virksomhedernes fremtidssatsning på højmarginale aktiviteter, der omfatter cloud computing og kunstig intelligens. Aktien falder 2,6 pct. kort efter handelsstart.Kreditkortfirmaet American Express slog analytikernes forventninger i sit regnskab for fjerde kvartal, men selskabets egne forventninger til 2018 viste sig at være skuffende.For 2018 forventer selskabet et resultat i intervallet 6,90-7,30 dollar per aktie, og der er under de 7,38 dollar, som analytikerne havde ventet for resultatet i indeværende år ifølge Bloomberg News. Investorerne sender aktien ned med 4,5 pct.Amerikanske Schlumberger, der er en af de største underleverandører til oliebranchen, var klar med regnskab for fjerde kvartal fredag før handelsstart, og det var bedre end ventet.Overskuddet før særlige poster landede på 0,48 dollar per aktie. Analytikerne havde til sammenligning ventet et overskud på 0,44 dollar per aktie ifølge Bloomberg News.Alligevel falder aktien 1,5 pct. ved børsåbningen.
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-01-19
+          &nbsp;·&nbsp; e6958e12
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.989</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.5</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.915</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.585</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Panel: USA har en moralsk forpligtelse til at udvikle AI-våben</h4>
+        <div>
+          USA skal holde sig uden for en aftale om forbud mod fuldt autonome våbensystemer. Kun affyring af atomvåben bør kræve menneskelig indblanding, konkluderer et panel udpeget af den amerikanske regering trods modstand fra flere lande og organisationer.USA skal holde sig uden for en aftale om at forbyde udviklingen af automatiske våben, der styres af kunstig intelligens (AI). Det fremgår af udkastet til en rapport til den amerikanske kongres udarbejdet af panelet 'National Security Commission on Artificial Intelligence', der er udpeget af regeringen. Det skriver The Guardian.Med tidligere administrerende direktør i Google, Erik Schmidt, i spidsen konkluderede panelet tirsdag, at verdens største militærmagt bør overveje AI i relation til landets sikkerhed og i udviklingen af ny teknologi.Ifølge panelets næstformand og tidligere forsvarssekretær Robert Work forventes de autonome AI-våben at lave færre fejl i kamp end mennesker, reducere antallet af døde og minimere risikoen for at angribe fejlidentificerede mål.»Det er et moralsk imperativ i det mindste at forfølge hypotesen,«  lød det fra næstformanden.En moralsk rød linjeUdvikling og anvendelse af AI-våben møder imidlertid hårdnakket modstand. Ifølge organisationen Campaign to Stop Killer Robots, der i omkring otte år har advaret og kæmpet for et forbud mod AI-våben, overtræder brugen af autonome våben en moralsk rød linje.'Ingen vil være sikker', står der på organisationens hjemmeside, hvor det også fremgår, at Europa-Parlamentet, 30 lande og mere end 140 NGO'er og 4.500 AI-eksperter vil forbyde brugen af fuldt ud autonome våben.Ifølge Campaign to Stop Killer Robots er menneskelig kontrol nødvendig for at bedømme angrebenes proportionalitet og for at kunne rette anklager for eventuelle krigsforbrydelser mod mennesker.Kun atomvåben skal kræve menneskelig indblandingMens mulighederne inden for autonome våben har eksisteret i flere årtier, er der stigende bekymringer ved at lade AI styre våbensystemerne, i takt med at forskere finder bias i AI samt flere eksempler på misbrug af software bygget på kunstig intelligens.Panelet National Security Commission on Artificial Intelligence anerkendte på sine møder i denne uge disse problemer. Eksempelvis advarede et af panelets medlemmer, som er ansat i Microsoft, at presset for at bygge maskiner, der reagerer hurtigt, kan være med til at optrappe konflikter.Men kun når det gælder beslutningen om at affyre atomvåben, vil panelet stille krav om, at mennesker skal være involveret . Panelet anbefaler en aftale om antispredning frem for en traktat med et forbud mod de autonome våben, fordi det vil være i strid med amerikanske interesser og en svær opgave at håndhæve, skriver The Guardian.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2021-01-27
+          &nbsp;·&nbsp; e81979c6
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.661</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.541</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techgiganter stortrives i nedsmeltet økonomi</h4>
+        <div>
+          Dagen efter kritisk høring i Kongressen viste regnskaber fra Apple, Facebook, Google og Amazon, at de fuldt ud lever op til betegnelsen lockdown-vindere. Mens store dele af verden var i lockdown, forbruget kollapsede, og mange virksomheder nærmede sig afgrundens rand, ser en lille gruppe af meget magtfulde teknologiselskaber ud til at stortrives under coronakrisen. Det leverede de fire største aktører i den amerikanske techindustri, Apple, Google, Facebook og Amazon, bevis for torsdag med deres regnskaber for andet kvartal af 2020. Tilsammen solgte de fire selskaber for over 200 milliarder dollar i april, maj og juni svarende til godt og vel 1250 milliarder kroner, skriver Bloomberg News. Men de svimlende tal kan vise sig at være et tveægget sværd. Regnskaberne kommer dagen efter meget omtalte høringer i Repræsentanternes Hus i USA, hvor tech-branchens topchefer blev udspurgt om selskabernes monopollignende status. Deres gode resultater kan risikere at puste til den mistillid, som fremgik tydeligt af politikernes spørgsmål under høringen. Ifølge Bloomberg giver den store indtjening et indtryk af, at selskaberne og deres &quot;algoritmeoptimerede forretninger ikke blot kan overleve coronapandemien, men også trives i den&quot;. - Politisk kan det styrke mistanken om, at væksten blandt de amerikanske producenter af teknologi er ude af kontrol, skriver erhvervsmediet. David Cicilline, demokraten i spidsen for det udvalg, som gennemførte høringen onsdag, mener, at selskabernes magt kun vil blive større. - Inden coronaviruspandemien markerede disse firmaer sig allerede som kæmper i vores økonomi, sagde han ifølge BBC. - Efter covid-19 er det sandsynligt, at de kommer stærkere og mere magtfulde ud på den anden side end nogensinde før. E-handelsselskabet Amazon satte rekord i de tre måneder frem til den 30. juni med en indtjening på 5,2 milliarder dollar - eller 33 milliarder kroner. Det er omtrent det dobbelte af indtjeningen samme periode sidste år og det højeste nogensinde for selskabet ifølge nyhedsbureauet Reuters. - Det har været endnu et højst usædvanligt kvartal, sagde topchef Jeff Bezos. Apple holdt sig ikke tilbage. Salget steg i de tre måneder med 11 procent til 59,69 milliarder dollar. Det er rekord for selskabet i det pågældende kvartal og langt højere end forventet af børsanalytikere ifølge Bloomberg News. Pandemien har holdt folk hjemme, hvilket har øget efterspørgslen efter Apples produkter, idet det har hjulpet millioner af forbrugere med at komme i kontakt med venner, familie og kolleger. Googles moderselskab, Alphabet, og Facebook leverede også overraskende solide kvartalsresultater, pandemiens negative påvirkning af økonomien taget i betragtning, konstaterer New York Times. - De stærke fortsætter med at blive stærkere, siger Dan Ives, direktør for aktieanalyse hos finanshuset Wedbush Securities, til avisen. Og dermed trodser de fire giganter et af de værste tilbagefald i mands minde for både den amerikanske og globale økonomi. USA's økonomi skrumpede i andet kvartal med 9,5 procent i forhold til første kvartal. Det er ifølge Washington Post det største tilbageslag i lidt mere end 70 år. /ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2020-07-31
+          &nbsp;·&nbsp; e7d17825
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.994</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.578</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.575</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>USA og Kina skærper krav til hinanden i truende handelskrig</h4>
+        <div>
+          Både USA og Kina øger kravene til hinanden i forhandlinger, der ellers skulle søge at afværge en truende handelskrig.En højtstående amerikansk delegation bestående af bl. a. finansminister Steven Mnuchin og handelsminister Wilbur Ross forlod fredag aften Beijing, efter at delegationen i to dage havde forhandlet med kinesiske embedsmænd.De amerikanske forhandlere undlod ved deres afrejse at komme med en udtalelse, hvilket antyder, at USA og Kina står stejlt over for hinanden. Den opfattelse bliver bekræftet af, at et planlagt møde mellem den amerikanske delegation og den kinesiske præsident, Xi Jinping, og hans vicepræsident, Wang Qishan, ifølge avisen The Wall Street Journal aldrig blev til noget.Den amerikanske præsident, Donald Trump, er stærkt utilfreds med Kinas store handelsoverskud over for USA, og derudover har han beskyldt Kina for at stjæle teknologisk viden fra amerikanske virksomheder.Den amerikanske delegation var i Beijing for at påbegynde den første runde af drøftelser i et forsøg på at undgå en handelskrig.Trump har truet med handelssanktioner mod Kina for over 900 milliarder kroner, hvilket har fået Kina til at true med gengældelse.Hårde kravFlere medier refererer lørdag morgen den liste med krav, som de amerikanske forhandlere skulle have haft med til møderne i Beijing.Ifølge disse oplysninger kræver USA, at Kina reducerer sit handelsoverskud over for USA med 600 milliarder kroner i løbet af de næste 12 måneder og med yderligere 600 milliarder kroner i de efterfølgende 12 måneder. USA forlanger desuden, at Kina undlader at gengælde yderligere amerikanske handelsrestriktioner.USA vil derudover have, at Kina sænker sine toldsatser med to tredjedele for at matche de amerikanske toldsatser.Et andet stort konfliktpunkt er den kinesiske ledelses ambition om at gøre Kina til en verdensførende nation inden for højteknologiske områder som flyindustri, robotter, kunstig intelligens, elektriske biler og halvledere.Det er områder, som i fremtiden vil få afgørende betydning for begge landes økonomi og evne til at indtage en global førerposition.USA mener, at den kinesiske ledelse giver statsstøtte til kinesiske virksomheder inden for disse områder og kræver nu, at den støtte ophører.Desuden mener USA, at Kina forsøger at tilegne sig manglende teknologisk viden ved at kræve, at amerikanske techvirksomheder indgår samarbejdsaftaler med kinesiske virksomheder for at få adgang til det kinesiske marked.USA forlanger, at Kina stopper med denne form for teknologioverførsel.Ifølge The Wall Street Journal afviser Kina disse beskyldninger og forlanger tværtimod, at USA giver kinesiske teknologivirksomheder bedre vilkår. Kina er stærkt utilfreds med, at USA har forbudt salg af telefoner og andet elektronisk udstyr fra de to kinesiske techvirksomheder ZTE Corp og Huawei, fordi USA frygter, at disse virksomheder videregiver oplysninger om deres kunders adfærd til de kinesiske myndigheder.Forhandlinger følges tætUSA og Kina udgør verdens to største økonomier, og derfor bliver forhandlingerne mellem de to lande fulgt tæt af investorer og regeringer over hele verden. Men den dybe uenighed betyder ikke, at en handelskrig er vej til at bryde ud inden for kort tid.Allerede inden forhandlingerne begyndte i Beijing i denne uge, advarede den amerikanske forhandlingsdelegation om, at det kunne tage et års tid at nå til enighed.Mens de amerikanske forhandlere sad i flyet på vej tilbage til USA, fastslog Det Hvide Hus i en erklæring, at de to lande havde haft »åbenhjertige samtaler«. Nogenlunde samtidig udsendte det statslige kinesiske nyhedsbureau Xinhua en udtalelse, som sagde, at der stadig herskede »markant uenighed om visse emner«, men at der var opnået konsensus på andre områder, og at der var blevet oprettet en »arbejdsmekanisme« for at sikre, at dialogen fortsætter.Foreløbig er der dog ikke blevet aftalt nye møder mellem USA og Kina.claus.blok.thomsen@pol.dk USA forlanger, at Kina undlader at gengælde yderligere amerikanske handelsrestriktioner.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2018-05-06
+          &nbsp;·&nbsp; e6bd4a3d
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.971</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.644</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.768</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI-selskab klar til børséntre i Kina</h4>
+        <div>
+          Det kinesiske teknologiselskab Megvii ser ud til at være klar til kinesisk børsintroduktion på omkring 3,4 mia. kr.efter det kinesiske nytår i slutningen af januar. Det skriver nyhedsbureauet Reuters mandag.Megvii, der producerer kunstig intelligens (AI) og ansigtsgenkendelsessoftware, blev tilbage i oktober sortlistet af USA sammen med 28 andre kinesiske virksomheder.Børsen i Hong Kong har siden bedt om yderligere information fra selskabet, og ifølge kilder med indgående kendskab til sagen ser det ud til, at selskabet bliver godkendt til en børsintroduktion på 500 mio. dollar - ca. 3,4 mia. kr.Ifølge USA har de 28 selskaber været involveret i overgreb mod uighurer og andre muslimske mindretal i Xinjiangregionen, og USA har derfor nedlagt forbud mod, at de kan samarbejde og handle med amerikanske virksomheder.Megvii har blandt andet investorer som den australske investeringsbank Macquarie Group og Abu Dhabi Investment Authority.Ritzau Finans.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2020-01-07
+          &nbsp;·&nbsp; e7878974
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.957</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.519</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.549</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft gør værktøj til machine learning tilgængelig på GitHub</h4>
+        <div>
+          It-giganten gør sit såkaldte deep learning-værktøj open source under MIT-licens.Microsoft frigav mandag et værktøj, der er blevet brugt internt i it-selskabet til machine learning. Det såkaldte Computational Network Toolkit ligger nu på GitHub under MIT-licens.Det skriver amerikanske Computerworld .Computational Network Toolkit - eller bare CNTK - er blandt andet blevet brugt til at forbedre stemmegenkendelse som i Windows-assistenten Cortana, men kan ifølge Microsoft tages i brug af alle, der skal behandle store mængder data i real tid.Softwaren er - ifølge Microsoft selv - mere effektiv end Googles konkurrerende TensorFlow-platform.Frigivelsen af CNTK kommer i kølvandet på, at Microsoft i november gjorde det beslægtede stykke software Distributed Machine Learning Toolkit tilgængelig for alle. Både Google og IBM har taget lignende beslutninger og open sourcet henholdvis TensorFlow-platformen og SystemML.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-01-26
+          &nbsp;·&nbsp; e5861df0
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.58</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.55</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.536</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apple smider 1 mia. dollars i tech-fond</h4>
+        <div>
+          Apple har investeret 1 mia.dollars i en ny japansk teknologifond, som på det seneste har knyttet stærke bånd til Donald Trump.»Vi har arbejdet tæt sammen med Softbank i mange år, og vi tror på, at dens nye fond vil sætte skub i den teknologiske udvikling, som strategisk kan blive vigtig for Apple,« siger Josh Rosenstock, en talsmand for Apple, til CNN.1 mia. dollars lyder måske af meget, men Apples seneste investering udgør kun en hundrededel af fondens erklærede målsætning.Triumf for TrumpI oktober sidste år annoncerede den japanske tele-og internetmastodont Softbank, at man agtede at rejse 100 mia. dollars til den nye Softbank Vision Fund. Saudi-Arabien lagde for nogle måneder siden 45 mia. dollars i projektet.Softbank har selv lagt 25 mia. dollars.Efter det amerikanske præsidentvalg besøgte fondens ejer, milliardæren Masayoshi Son, Trump Tower på Manhattan for at lykønske Donald Trump med sejren over Hillary Clinton.I samme ombæring svor han at hjælpe USA i bestræbelserne på at skabe 50.000 nye arbejdspladser med 50 mia. dollars.En investering, som Donald Trump ikke var sen til at tage æren for.»Det havde Masa aldrig gjort, hvis ikke vi havde vundet valget,« tweetede Trump.Apple afviste at svare på, om selskabets investering skal gå direkte til Masayoshi Sons løfte om at skabe amerikanske job - et træk, der potentielt kunne løsne spændingerne mellem den kommende præsident og tech-giganten. Trump har tidligere harceleret mod Apples outsourcing af arbejdspladser til Kina.Kunstig intelligensMen Apples fokus er på at kapitalisere på fondens investeringer i ny teknologi, som ifølge CNN inkluderer kunstig intelligens og robotter.Data fra National Venture Capital Association viser, at Softbank Vision Fund med 100 mia. dollars kommer op på samme størrelse som alle venturekapitalfonde i USA med opstart inden for de seneste to et halvt år.kasper.baatrup@finans.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-01-06
+          &nbsp;·&nbsp; e60e357c
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.93</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.505</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robotpersonale serverer drinks</h4>
+        <div>
+           BUDAPEST: Fremtiden er kommet til Ungarns hovedstad, Budapest. En af byens mange caféer har fået et robotpersonale, der kan servere mad og drikke, føre samtaler og sågar danse med kunder.Enjoy Budapest Cafe hedder robotbeværtningen. Ifølge nyhedsbureauet Reuters er caféen åbnet af et lokalt it-selskab med det mundrette navn E-SzoftverfejlesztÅ'.Og selv om robotterne via kunstig intelligens kan udføre simple serviceopgaver, er der ifølge ejerne ikke grund til bekymring for jobmangel i den nære fremtid.Man har nemlig et hold it-specialister ansat, der sørger for, at de 18-20 robotter i caféen fungerer optimalt i hele åbningstiden.De første anmeldelser af robotservicen er positive./Ritzau/
+        </div>
+        <footer>
+          <em>Sjællandske Slagelse</em>
+          &nbsp;·&nbsp; 2019-01-28
+          &nbsp;·&nbsp; e70ef820
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.696</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.525</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.619</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AMERIKANSK STJERNEINVESTOR DUMPER DANSKE TRANSPORTAKTIER</h4>
+        <div>
+          Transportgiganterne DSV og Mærsk har givet baghjul til det meste af C20-indekset i 2017. Men tiden med fuld fart på kursstigningerne nærmer sig muligvis en ende ifølge den amerikanske topinvestor og mangemilliardær Ken Fisher.Han gæstede for nylig Danmark, og Penge &amp; Privatøkonomi bad ham i den forbindelse om at evaluere på en række af de største danske aktier.»Big data og teknologisektoren vil inden for en overskuelig fremtid æde en stor del af indtjeningen i transportsektoren.Det er i den for bindelse vanskeligt at få øje på, hvad henholdsvis DSV og Mærsk kan stille op i forhold til den udvikling,« siger Ken Fisher, som i forlængelse heraf nævner de hastige fremskridt inden for selvkørende transportmidler og avancerede logistik-algoritmer til at planlægge de kommercielt mest optimale ruter.Ken Fisher, som har oparbejdet en formue på knap 25 mia. kr. ved at investere, mener dog ikke, at der er grund til bekymring på den korte bane. Aktiemarkedet er ifølge ham ikke kammet helt over i eufori endnu. Derfor kan begge aktier godt stige.»Men de kommer under pres. For ingen af de to selskaber besidder efter min mening unikke konkurrencemæssige fordele, som er voldsomt vanskelige at kopiere,« siger Ken Fisher, der til gengæld lovpriser Novo Nordisk.»Jeg har aktien i mine porteføljer og ser selskabet som en klar markedsleder på et vækstmarked. Der vil blive brug for masser af insulin mod diabetes, i takt med at middelklassen bliver større og mere velhavende i f. eks. Asien og Sydamerika, siger Ken Fisher.Hans selskab, Fisher Investments Private Client Group, varetager ifølge Investopedia investeringer for intet mindre end 27.000 kunder, som tilsammen repræsenterer værdier for 33 mia. dollar.Fisher Investments Institutional Group, der servicerer institutionelle investorer, har omkring 150 kunder, der repræsenterer cirka 28 mia. dollar.KonKurrencemæssige fordeleDen amerikanske Harvard-professor Michael E. Porter har bidraget stort til opfattelsen af, hvad et selskabs konkurrencemæssige fordele egent lig er. Han argumenterer, at et selskab står ekstraordinært stærkt, når: Truslen i form af nye markedsaktører er lav.Det er måske meget dyrt at komme ind på markedet.Rivaliseringen på markedet er lav.Eksempelvis fordi der er få aktører eller markante kvalitetsforskelle.Selskabet har en overhånd på dets leverandører. De kan eksempelvis være nemme og billige at udskifte.Selskabet står stærkt i forhold til dets kunder. Det koster måske mange penge eller tid at skifte.Truslen fra substituerende produkter er lav.Tænk blot på smartphonens indflydelse på printmedier.
+        </div>
+        <footer>
+          <em>Penge og Privatøkonomi</em>
+          &nbsp;·&nbsp; 2017-10-26
+          &nbsp;·&nbsp; e6783e5e
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.934</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.754</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.766</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Aktiemarkedet i USA: IBM og American Express vil stjæle fokus i grønt marked</h4>
+        <div>
+           Investorerne vil sandsynligvis have blikket fæstnet mod aktierne i de regnskabsaktuelle selskaber IBM, American Express og Schlumberger, når de amerikanske aktiebørser åbner for handlen fredag.Ugens sidste handelsdag tegner til at blive en positiv en af slagsen, og både de europæiske aktier og de amerikanske futures stiger omkring en time før handelsstart.Markedsdeltagerne kan dog også blive påvirket af frygten for en amerikansk regeringsnedlukning.ADVERTISINGPolitikerne i Repræsentanternes Hus vedtog torsdag et lovforslag til finansiering af regeringens aktiviteter frem til 16. februar og undgik dermed en nedlukning i weekenden, når den eksisterende bevilling udløber. Men forslaget skal stadig godkendes af Senatet, hvor usikkerheden om en vedtagelse er anderledes stor.Torsdag lukkede S&amp;P 500-indekset med et minus på 0,2 pct. i 2798,03. Dow Jones-indekset sluttede med et tab på 0,4 pct. i 26.017,81, mens Nasdaq-indekset endte med dagens mindste fald på under 0,1 pct. i 7296,05.På selskabsfronten er der flere nyheder at handle på, da både IBM og American Express offentliggjorde regnskabstal efter børslukketid torsdag.Den amerikanske it-gigant IBM havde en stigende kvartalsomsætning for første gang i seks år i fjerde kvartal, og både omsætningen og indtjeningen var en spids højere end ventet.Omsætningsfremgangen kom ikke fra virksomhedernes fremtidssatsning på højmarginale aktiviteter, der omfatter cloud computing og kunstig intelligens. Aktien falder 3,3 pct. i formarkedet.Kreditkortfirmaet American Express slog analytikernes forventninger i sit regnskab for fjerde kvartal, men selskabets egne forventninger til 2018 viste sig at være skuffende.For 2018 forventer selskabet et resultat i intervallet 6,90-7,30 dollar per aktie, og der er under de 7,38 dollar, som analytikerne havde ventet for resultatet i indeværende år ifølge Bloomberg News. Aktien falder 2,6 pct. i formarkedet.Amerikanske Schlumberger, der er en af de største underleverandører til oliebranchen, var klar med regnskab for fjerde kvartal fredag før handelsstart, og det var bedre end ventet.Overskuddet før særlige poster landede på 0,48 dollar per aktie. Analytikerne havde til sammenligning ventet et overskud på 0,44 dollar per aktie ifølge Bloomberg News.I formarkedet falder aktien 0,4 pct./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-01-19
+          &nbsp;·&nbsp; e6958906
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.99</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.512</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.988</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.559</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ak­tie­sta­tus i USA: Regn­skabsu­ge ind­le­des med et nø­len­de skridt bag­læns</h4>
+        <div>
+          Positive forventninger til de store bankregnskaber senere på ugen inspirerer mandag ikke umiddelbart de amerikanske aktiehandlere til en fortsættelse af sidste uges indeksrekorder.Ved middagstid amerikansk tid peger de tre store, toneangivende amerikanske aktieindeks - det brede S&amp;P 500, teknologiindekset Nasdaq og de tunge aktiers Dow Jones - nedad med 0,1-0,3 pct. efter indledende fald på 0,2-0,3 pct.I S&amp;P 500-indekset går det værst ud over teknologiaktierne, som samlet set taber 0,4 pct.Ugen byder på regnskaber fra J.P. Morgan, Goldman Sachs og Wells Fargo onsdag samt Bank of America og Citigroup dagen efter, og ifølge nyhedsbureauet AP venter aktiemarkedet positive rapporter fra de fire finansgiganter, der traditionelt indleder den amerikanske regnskabssæson. Opmærksomheden er rettet mod bedre indtjening på grund af stigende renter som føle af øget inflation og mod mulighed for at konvertere dårlige lån tilbage til gode lån, i takt med at coronapandemien løsner sit pres på den amerikanske økonomi. Generelt er stemningen ifølge AP optimistisk på de amerikanske finansmarkeder, efter at præsident Joe Biden har rykket deadline for tilgængelig vaccine til alle voksne amerikanere frem til 19. april. Omvendt peger finanshuset Morgan Stanley på, at aktier i de små selskaber - small cap-aktierne, som findes i Russell 2000-indekset - har haltet 8 pct. efter S&amp;P 500-indekset siden toppen den 12. marts.- Efter min opfattelse er nedturen til small cap-aktierne og de cykliske aktier et tidligt advarselstegn på, at den faktiske åbning af økonomien vil blive sværere, end man havde drømt om, siger Michael Wilson, chefstrateg for amerikanske aktier hos Morgan Stanley, til Reuters.MICROSOFT KØBER NUANCEPå selskabsplan tiltrække Nuance Communications sig opmærksomhed, efter at Microsoft her indgået aftale om køb af selskabet, som blandt andet arbejder med kunstig intelligens og avanceret taleteknologi, for 19,7 mia. dollar.Aktionærerne i Nuance Communications tilbydes 56 dollar pr. aktie kontant af Microsoft, og aktien ligger ved middagstid 16,5 pct. højere i 53,10 dollar. Microsoft stiger 0,5 pct.Kinesiske Alibaba stiger 9,3 pct. i selskabets amerikanske notering efter oplysninger om en planlagt reorganisering for at imødegå kinesiske myndigheders bekymring for selskabets stigende markedsdominans.Luminex stiger 11,8 pct. til 36,84 dollar, efter at den Texas-baserede coronatestproducent har fået et købstilbud af italienske Diasorin på 37 dollar pr. aktie.Samkørselstjenesten Ubers leveringstjeneste har sat en rekord i marts med 52 mia. dollar i bruttobookinger, hvilket er en vækst på mere end 150 pct. Uber-aktien ligger ved middagstid 3,2 pct. højere.SMYKKEKÆDEN SIGNET OPJUSTERER FORVENTNINGERNESmykkekæden Signet opjusterer forventningerne. Omsætningen ventes nu lande på 6-6,14 mia. dollar i 2021/22. Tidligere forudså Signet en omsætning på 5,85-6 mia. dollar. Målt på bundlinjen venter Signet nu et overskud efter skat på 335-364 mio. dollar mod tidligere 290-324 mio. dollar.Aktien bliver sendt op med 7,7 pct. ved middagstid.TESLA OPGRADERESTesla starter ugen i plus, efter at finanshuset Canaccord nu anbefaler ''køb'' af aktien mod tidligere ''hold''. Samtidig hæves kursmålet markant til 1071 dollar fra 419 dollar.Det skriver Bloomberg News.Aktien stiger 3,3 pct. til 699,22 dollar.Analytikerne hos Canaccord vurderer, at Tesla vil komme til radikalt at ændre batteriscenen. Og at leveringerne af Model 3 og Y i første kvartal klart viser selskabets succesfulde transformering over mod det brede marked for elbiler./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2021-04-12
+          &nbsp;·&nbsp; e835ffc1
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.994</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.833</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.527</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Seks­klø­ver af Ca­na­das tun­ge­ste ban­ker ven­der ryg­gen til Face­book</h4>
+        <div>
+            Listen over selskaber, der bakker op om kampagnen Stop Hate For Profit, bliver længere og længere. Senest har et sekskløver af Canadas største banker føjet sig til de ca. 400 andre selskaber, der lægger pres på Facebook for at blokere for hadefulde kommentarer, foto og videoer på det sociale medie. De seks canadiske banker er Royal Bank of Canada, Toronto-Dominion Bank, Bank of Nova Scotia, Bank of Montreal, National Bank of Canada og Canadian Imperial Bank of Commerce. For Facebook betyder det, at de mister annonceindtjening i hele juli fra de selskaber, der støtter kampagnen. Fjerner racistiske organisationer Ifølge Reuters har Facebook reageret på kampagnen ved at forbyde 250 hvide, racistiske organisationer fra Facebook og Instagram. Desuden vurderer Facebook, at dets investering i kunstig intelligens medvirker til, at det sociale medie kan finde 90 pct. af samtlige hadefulde ytringer, før brugerne rapporterer dem. Bank of Montreal oplyser ifølge Reuters, at den er i løbende dialog med Facebook om, hvilke ændringer Facebook kan foretage for at mindske de hadefulde udtalelser. Tæt på kursrekord Facebook-aktien er primært upåvirket over for kampagnen. Aktiekursen tog dog et dyk på 8,3 pct. i slutningen af juni, hvor den røg ned i kurs 209 dollar, men aktien lukkede første handelsuge i juli med en samlet stigning på 2,8 pct. i kurs 233,42, hvilket er ganske tæt på kursrekorden ved 242.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-07-04
+          &nbsp;·&nbsp; e7c8022b
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.864</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kina slår igen: Udenlandsk it og software skal udrenses</h4>
+        <div>
+          TOKYO USA har længe beskyldt Kinas techfirmaer for varierende grader af spionage. Siden maj har Kongressen endda forbudt en række af de største at levere produkter til det amerikanske militær, dets ministerier og andre offentlige instanser.Nu tager Kina til genmæle: Ifølge kilder til Financial Times skal al udenlandsk software og andet computerudstyr nu fjernes fra Kinas offentlige institutioner og udskiftes med lokalproducerede af slagsen.30 mio. computere rammesLandets plagede it-folk får travlt - udskiftningen dækker, ifølge avisens beregninger, op mod 30 millioner computere og servere. De første 30 pct. af masseudskiftningen vil finde sted allerede næste år, mens 50 pct. skal følge efter i 2021, ifølge kilder. De sidste 20 pct.skiftes ud i 2022.Kinesiske versionerDet er ikke første gang, Kina har forsøgt sig med den slags.I 2014 beskrev kilder til Bloomberg, hvordan Det Kommunistiske Parti i Beijing langsomt var begyndt at installere kinesiske versioner af styresystemer som Windows på offentlige maskiner i testbyer rundt omkring i landet.Men dengang gik det stille og roligt. Efter at den amerikanske Kongres blacklistede en række kinesiske topvirksomheder, har den nye bølge derimod fået højeste prioritet.Den nuværende udskiftningsordre blev udstedt, ifølge kilderne til Financial Times, kort efter at USA's Kongres i forsommeren forbød amerikanske techfirmaer at sælge softwareudstyr til Huawei. Ordren var dengang hemmeligstemplet, men blev lækket til avisen i slutningen af sidste uge.Avisen har siden bekræftet historien.Det er endnu ukendt, hvilken effekt dette vil have på amerikanske producenter som Dell og Microsoft, der begge sælger bjerge af computerudstyr til det kinesiske marked.Men de skal formodentlig ikke forvente megen sympati fra Kina. For USA, lyder kritikken, har længe behandlet kinesiske techfirmaer på samme måde.RamaskrigDen amerikanske sortlistning af kinesiske teknologiproducenter skabte et ramaskrig i maj, da den første bølge af erhvervsrestriktioner blev offentliggjort. Ligesom firmaer som Huawei samt en lang række embedsmænd blankt afviste alle anklager om spionage.I stedet beskyldte de USA for at bruge ufine kneb til at holde sig foran i det globale kapløb om teknologier som 5G-mobilnetværket, kunstig intelligens og Tingenes Internet.»Vi mener, at USA's amerikanske politikere bruger cybersikkerhed som undskyldning for at skaffe sig opbakning fra offentligheden til handlinger, der i virkeligheden har andre formål,« udtalte Song Liuping, chefadvokat for Huawei, på en pressekonference i maj, kort efter at Kongressen nedlagde forbud mod at sælge udstyr til firmaet.Dengang blev 143 firmaer sortlistet. I august fulgte en ny runde, der især gik ud over kinesiske firmaer, der specialiserede sig i kunstig intelligens og overvågningsteknologi.Det kan især gøre det svært for firmaerne at skaffe sig amerikanske computerchips - der svært kan købes andre steder - og arrangere forskningssamarbejder med USA's eliteuniversiteter.thomas.hoy.davidsen@jp.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-12-10
+          &nbsp;·&nbsp; e77bc21c
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.909</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.603</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.584</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kilder: Oprør i Google over kontrakt med USA's forsvar (v.3)</h4>
+        <div>
+          San FranciscoGoogle har besluttet ikke at forny en kontrakt med USA's forsvarsministerium, hvor it-giganten skulle bidrage med kunstig intelligens til at opspore mål. Det sker efter intern uro i Google om projektet. Det bekræfter kilder i selskabet til nyhedsbureauet Reuters og BBC.Det pågældende projekt går under navnet Maven.En gruppe af medarbejdere i Google har gjort oprør mod, at selskabets teknologi skal indgå i krigsførelse.De har peget på, at det støder sammen med Googles og moderselskabet Alphabets erklærede princip om ikke at begå noget ondt.De har også peget på risikoen ved at slippe kunstig intelligens løs i dødelige kampsituationer.Google har fredag fortalt medarbejderne, at det ikke vil forny den pågældende kontrakt med USA's forsvarsministerium. Den udløber i marts næste år, siger kilderne.Men Kate Conger fra teknologimediet Gizmodo siger til BBC, at Google næppe har meldt sig ud af projektet, og selskabet har formentlig ikke udelukket at arbejde for den amerikanske hær i fremtiden.Ifølge kilderne har Google mod betaling hjulpet USA's hær med at opsøge mål gennem avancerede analyser af billeder taget fra droner. Over 4600 ansatte i Google har skrevet under på en protestskrivelse. Den opfordrer Google til at trække sig ud af aftalen med Pentagon. Mindst 13 ansatte har de seneste uger sagt op på grund af deres modvilje over for projektet. Det siger en af kilderne til Reuters.Kontrakten, som Google har med forsvarsministeriet, skal have en værdi af 64 millioner kroner, skriver BBC.Google siger kortfattet, at det ikke ønsker at kommentere interne papirer og oplysninger i selskabet./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-06-02
+          &nbsp;·&nbsp; e6c65526
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.728</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.557</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Avis: NSA betalte RSA 55 millioner kroner for at bruge usikker kryptering</h4>
+        <div>
+          Sikkerhedsfirmaet RSA fik i en hemmelig aftale med NSA 10 millioner dollars for at vælge kryptering, som NSA kunne omgå, skriver Reuters. RSA afviser anklagen.Af Jesper KildebogaardFørst måtte RSA advare sine kunder mod at bruge krypteringensalgoritmen Dual_EC_DRBG, efter Edward Snowdens afsløringer i efteråret viste, at efterretningstjenesten NSA bevidst havde svækket sikkerheden i den.Læs også: Sikkerhedsfirmaet RSA advarer mod NSA-bagdør i eget udviklerkitOg nu står RSA med et endnu større forklaringsproblem. Ifølge nyhedsbureauet Reuters var det nemlig ikke bare manglende omtanke, der fik RSA til at holde fast i Dual_EC_DRBG-algoritmen, som de fleste andre havde droppet, men en kontant aftale med NSA, der udløste 55 millioner kroner som tak for hjælpen.RSA afviser 'kategorisk', at firmaet bevidst har indbygget bagdøre eller svækket sikkerheden i produkterne. Det skriver RSA i en pressemeddelelse.Den svage krypteringsalgoritme blev taget i brug i 2004 og indgik i produktet Bsafe, som en af flere muligheder. Dengang var der tillid til, at NSA's råd om valg af kryptering var fornuftige, skriver firmaet, der også forsvarer brugen af algoritmen frem til september 2013 med, at den indtil da var godkendt af USA's teknologiske standard-organisation National Institute of Standards and Technology (NIST).Reuters skriver, at selvom aftalen om de 10 millioner dollars, som to kilder har fortalt nyhedsbureauet om, ikke syner af meget hos kæmpefirmaet RSA, udgjorde pengene en tredjedel af overskuddet i den division, hvor aftalen blev indgået.Algoritmen Dual_EC_DRBG er en tilfældighedsgenerator baseret på et princip om elliptiske kurver, som NSA selv udviklede. RSA tog algoritmen i brug allerede i 2004, altså inden den var godkendt af NIST, og gjorde den til standardvalg i sikkerhedskittet Bsafe.Men allerede i 2006 var der kritik af algoritmen, som viste sig ikke at være så tilfældig alligevel. It-sikkerhedsguruen Bruce Schneier mente, at der var en bagdør bygget ind, og to ansatte hos Microsoft demonstrerede i 2007, hvordan man kunne bryde kryptering bygget på algoritmen. Det fik industrien til generelt at afskrive den omstridte tilfældighedsgenerator.Via: Reuters
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2013-12-23
+          &nbsp;·&nbsp; e42da971
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.662</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Alphabet er et af verdens største internetfirmaer</h4>
+        <div>
+           To amerikanske studerende stiftede i 1998 det, der i dag er et af verdens største internetfirmaer.Mandag offentliggjorde Googles moderselskab, Alphabet, regnskabet for første kvartal i år.Her kunne internetgiganten fremvise et overskud på 9,4 milliarder dollar.Her kan du læse mere om Alphabet, der på 20 år er blevet til et af verdens største internetfirmaer:* Google blev stiftet af de amerikanske ph.d.-studerende Larry Page og Sergey Brin i september 1998.* Google var oprindeligt kun en algoritme, der lod brugere søge på internettet. Efterfølgende kom flere og flere tjenester på.* I 2017 havde firmaet over 80.000 ansatte på verdensplan.* Firmaets hovedsæde bliver kaldt Googleplex og ligger i byen Mountain View i den amerikanske delstat Californien.* Ud over at være en søgemaskine på internettet tilbyder Google nettjenester inden for e-mail (Gmail), oversættelse (Google Translate), sociale medier (Google+), kort/navigation (Google Earth og Google Maps), arbejde/produktivitet (Google Docs, Sheets og Slides) og meget mere.* Google har siden 2006 ejet videotjenesten YouTube.* Efter en intern omstrukturering i 2015 er Google i dag ejet af firmaet Alphabet, der ledes af de to Google-stiftere, Larry Page og Sergey Brin.* Alphabet omsatte i 2017 for over 110 milliarder dollar.Kilder: Google, Business Insider, Information og Forbes.
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2018-04-23
+          &nbsp;·&nbsp; e6b91e58
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.905</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.681</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.669</kbd>
+            <kbd data-tooltip="Google &amp; YouTube">L80_GOOGYT&nbsp;0.558</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En kvinde meldes dræbt og flere såret ved Venezuelas grænse</h4>
+        <div>
+          En kvinde er dræbt, og flere er såret på grænsen mellem Venezuela og Brasilien efter et sammenstød med venezuelanske sikkerhedsstyrker, Det skriver nyhedsbureauerne AP og Reuters.Borgmester Emilio Gonzales fra byen Gran Sabana siger, at han har identificeret den dræbte kvinde, der sammen med flere andre stødte sammen med den venezuelanske hær.Venezuelas præsident, Nicolás Maduro, meddelte torsdag, at han ville lukke grænsen til Brasilien for at forhindre nødhjælp i at komme ind i Venezuela.Opdateres ritzauKopiér linkKopier og del linket http://politiken.dk/7053929Pædofile bruger YouTube til at finde videoer af letpåklædte børn, og de bliver hjulpet af videotjenestens algoritme. Det gik ud over danske Dianne Bertelsen og hendes børn.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2019-02-22
+          &nbsp;·&nbsp; e7175ef7
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.743</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.75</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Overgreb mod Kinas muslimer vækker harme</h4>
+        <div>
+          WASHINGTON D. C.: Kina har længe måttet lægge øre til skarp kritik af behandlingen af det muslimske mindretal uighurerne, der har hjemme i den vestlige region Xinjiang.Mandag aften blev kritikken dog mere udtalt, da det amerikanske handelsministerium valgte at sortliste 28 kinesiske virksomheder, som ifølge USA har været involveret i overgreb mod uighurer og andre muslimske mindretal i regionen.Beslutningen blev annonceret af den amerikanske handelsminister, Wilbur Ross, natten til tirsdag dansk tid. Det skriver nyhedsbureauet AFP.USA » hverken kan eller vil tolerere den brutale undertrykkelse af etniske minoriteter i Kina « , lød det fra handelsministeren.Ifølge FN er mindst en million etniske uighurer og andre muslimer tilbageholdt i det, Kina betegner som » frivillige træningscentre « for at udrydde ekstremisme og lære folk nye færdigheder.Det amerikanske forsvarsministerium har tidligere anslået, at antallet i virkeligheden kan være » tættere på tre millioner « . Rettighedsgrupper fortæller til tv-stationen BBC, at indsatte i lejrene tvinges til at lære mandarin og tilmed kritisere og afsværge deres tro.Tidligere indsatte i lejrene har over for nyhedsbureauet Reuters beskrevet tortur under afhøringer, overfyldte celler og daglig brutalitet og indoktrinering, som har drevet nogle muslimer til at begå selvmord.Ifølge Human Rights Watch er uighurer udsat for massiv overvågning og bliver tvunget til at afgive dna og biometriske prøver.Der er omkring 11 millioner uighurer i Xinjiang.Uighurerne er blevet et mindretal efter årtiers massiv indvandring af etniske kinesere fra andre dele af Kina.Ifølge BBC har det ført til stadig større problemer, da mange uighurer ser deres kulturelle egenart blive fortrængt til fordel for en mere klassisk kinesisk kultur.De 28 kinesiske virksomheder er ifølge BBC placeret på den såkaldte Entity List og har dermed forbud mod at købe amerikanske produkter.Ifølge AFP er en række producenter af overvågningsudstyr kommet på listen. Det gælder blandt andet Hikvision, der laver kameraer.Derudover skal virksomhederne Megvii Technologies og SenseTime, som arbejder med kunstig intelligens, også være på listen.Ved FN's Generalforsamling i september blev USA og flere end 30 andre lande enige om at fordømme Kina for undertrykkelsen.-Historien vil dømme det internationale samfund på, hvordan vi reagerer på dette angreb på menneskerettigheder og grundlæggende frihedsrettigheder, sagde den amerikanske viceudenrigsminister, John Sullivan, i den forbindelse./Ritzau/Muslimer i KinaUighurerne i Xinjiang-regionen i det vestlige Kina er et tyrkisk og muslimsk folkeslag.Der er omkring 11 millioner uighurer -langt de fleste har hjemme i Xinjiang.Uighurerne føler et slægtskab med en række centralasiatiske lande som for eksempel Kasakhstan og Kirgisistan.Efter flere års massiv indvandring at etniske kinesere til Xinjiang-regionen er uighurerne nu i mindretal.Der bor i dag 26 millioner mennesker i regionen.Kilde: BBC.
+        </div>
+        <footer>
+          <em>Dagbladet Køge</em>
+          &nbsp;·&nbsp; 2019-10-08
+          &nbsp;·&nbsp; e761be73
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.911</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.705</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.687</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Stærk dollar belaster IBM's omsætning i kvartalsregnskab</h4>
+        <div>
+          /Ritzau/Den amerikanske teknologigigant IBM overgik i sit regnskab for andet kvartal analytikernes skøn for overskuddet, og det sendte aktiekursen i vejret med over to procent.IMB havde i kvartalet en indtjening svarende til 3,17 dollar per aktie. Mens det var noget bedre end forventet, så landede omsætningen helt som forudset på 19,16 milliarder dollar.Det svarer til en nedgang på godt fire procent i forhold til året før.Tilbagegangen kan tilskrives en svag udvikling i koncernens hardwareforretning, oplyser finansdirektør James Kavanaugh.En stærk dollar i regnskabsperioden trak omsætningen ned med omkring 500 millioner dollar.IMB henter omkring 60 procent af sine indtægter fra aktiviteter uden for USA.IBM, der i tidligere tider var den ledende stjerne inden for it, har haft svært ved at løfte omsætningen på sine kerneområder som infrastruktur til virksomheder og it-service.For at vende det har selskabet investeret betydeligt i kunstig intelligens og cloud-software.Over de seneste 12 måneder er cloud-omsætningen steget fem procent til 19,5 milliarder dollar, fremgår det af onsdagens regnskabsmeddelelse.Selskabet noterer desuden, at det er på rette kurs mod at indfri sine målsætninger for indtjeningen for hele året./ritzau/reuters
+        </div>
+        <footer>
+          <em>Dagbladet-Holstebro-Struer.dk</em>
+          &nbsp;·&nbsp; 2019-07-18
+          &nbsp;·&nbsp; e745ed99
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.987</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.823</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.863</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.595</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook øger brugen af kunstig intelligens</h4>
+        <div>
+          Facebook erstatter hjemsendte moderatorer med kunstig intelligens. Ifølge en ekspert i misinformation, øger beslutningen risikoen for fejl. For at har skruet op for brugen af kunstig intelligens, for at erstatte hjemsendte moderatorer. Det betyder at der nu i langt højere grad, er algoritmerne der opsporer og fjerner problematisk indhold Det fortæller Nick Clegg, Facebooks kommunikationschef, politiske chef, til Politiken. . Beslutningen kan ifølge en ekspert øge risikoen for fejl. »Automatisering øger risikoen for fejl. Både, at der ikke bliver fjernet nok, men også den anden vej, hvor brugere får at vide, at det, de deler, ikke overholder Facebooks standarder. I de forgangne uger har tusinder fået at vide, at det, de havde delt på Facebook, ikke overholdt retningslinjerne - det gjaldt delinger af artikler fra velsete medier såsom National Geographic og Buzzfeed (amerikansk internetmedie, red.). Jeg blev også stoppet i at lave opslag. Det gik så galt, at Facebook undskyldte,«  siger Johan Farkas, der forsker i misinformation ved Malmø universitet, til Politiken. Ifølge Nick Clegg bliver systemet hele tiden bedre, og det betyder, at de fejl der tidligere har givet problemer ikke nødvendigvis vil opstå i fremtiden.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-04-08
+          &nbsp;·&nbsp; e7a87946
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.627</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.533</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.601</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.655</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Satser formue på robothjerne</h4>
+        <div>
+          Bilgiganten Ford har haft den store pengepung fremme og netop investeret syv milliarder kroner i firmaet Argo AI, der udvikler kunstig intelligens.Planen er at bruge teknologien i selvkørende biler og til tjenester, der kan udnytte den avancerede form for transport.Også andre store bilfirmaer bruger i disse år milliarder på området.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2017-02-15
+          &nbsp;·&nbsp; e61d7bb2
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.58</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.554</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Aktiestatus i USA: Banker belønnes efter regnskaber</h4>
+        <div>
+          Forud for markedets åbning klemte Bank of America og Bank of New York Mellon sig dog ind med regnskaber, og dermed sluttede de sig til Citigroup, JPMorgan Chase og Goldman Sachs, som i denne uge også har leveret regnskaber.It- og teknologitunge Nasdaq bakker i onsdagens amerikanske middagshandel med 0,1 pct., mens det smalle Dow Jones-indeks falder 0,2 pct. Det brede S&amp;P 500-indeks taber 0,3 pct.FOKUS PÅ NETFLIX OG IBMNetflix leverer regnskab for andet kvartal efter amerikansk børslukketid onsdag, og her vil investorerne rette øjnene mod bundlinjen.Indtil nu har det helt store spørgsmål for Netflix nemlig været, hvorvidt kunderne er villige til at betale en højere pris for deres abonnement, efter at streamingtjenesten har hævet prisen på deres abonnement verden over.Analytikerne regner ikke med den store vækst på hjemmemarkedet i USA, og det er brugerne rundt omkring i verden, som skal trække væksten for Netflix, skriver Bloomberg News.De højere priser vil også have en positiv indvirkning på omsætningen allerede i dette kvartal, påpeger analytikere. Omsætningen forventes at lande på 4,93 mia. dollar, hvilket vil være en stigning på 26 pct.Netflix-aktien falder i onsdagens handel 0,3 pct. til 364,70 dollar.Handelsplatformen eBay, som også leverer regnskab for andet kvartal efter børslukketid, går efter sigende videre med planerne om at sælge billetmarkedspladsen Stubhub. Det rapporterer anonyme kilder til amerikanske CNBC.I starten af marts annoncerede eBay, at selskabet havde indledt en strategisk gennemgang af dattervirksomhederne Stubhub og eBay Classifieds, der blandt andet ejer danske DBA og Bilbasen.Ifølge CNBC har selskabet i løbet af året været under pres fra Elliott Management, efter at hedgefonden købte en aktiepost i handelsplatformen til en værdi af 1,4 mia. dollar.eBay afviser at kommentere oplysningerne over for CNBC.Ebay-aktien falder 0,7 pct. til 39,66 dollar.For softwaregiganten IBM vil der være fokus på selskabets kerneforretning i regnskabet for andet kvartal. IBM var i tidligere tider den ledende stjerne inden for it, men selskabet har haft svært ved at løfte omsætningen på sine kerneområder som infrastruktur til virksomheder og it-service.For at vende det har selskabet investeret meget i kunstig intelligens og cloud-software. Aktien er steget med 26 pct. i 2019, og onsdag forud for regnskabet falder aktien med 0,5 pct. til 142,87 dollar.BANKER BELØNNESBank of America belønnes i dagens handel, efter at selskabet har leveret et regnskab, som viste, at banken havde sit bedste kvartal nogensinde.Indtjeningen per aktie landede på 0,74 dollar, og det var højere end samme periode sidste år, hvor tallet lød på 0,63 dollar per aktie. Til sammenligning havde analytikerne ventet en indtjening per aktie på 0,71 dollar.Aktien stiger 1,6 pct. til 29,46 dollar.Også Bank of New York Mellon belønnes onsdag.Indtjeningen per aktie endte i andet kvartal på 1,01 dollar mod analytikernes estimat på 0,95 dollar ifølge Bloomberg News.Banken skuffede lidt på rentemarginalen, der i andet kvartal blev opgjort til 1,12 pct. mod ventet 1,16 pct. Også her var der en tilbagegang sammenlignet med den tilsvarende periode året før, hvor nettorentemarginalen endte på 1,26 pct.Investorerne sender aktien op med 2,6 pct. til 44,23 dollar./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2019-07-17
+          &nbsp;·&nbsp; e745d30d
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.909</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.526</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

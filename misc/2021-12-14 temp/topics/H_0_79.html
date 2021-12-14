@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_79 <kbd>H_0_79</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>du</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>din</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dine</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dit</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sluk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vælg</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pernille</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mediepartner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>app-en</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>scroller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lækkert</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fortryde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sørg</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tjekker</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>googler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>føj</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>husk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overvej</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hey</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>naboens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>notifikation</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ure</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>internetforbindelser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sms'er</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>chatte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>selfie</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ørjan</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>selv.-</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>autoriseret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>præference</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>home</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>logget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>yoghurt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>jan.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tommelfingeren</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>solbriller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>begynd</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vennerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vine</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>paraderne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>e-mailen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fane</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>prøveperiode</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indbakken</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>menuen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tap</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intelligens-teknologi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>apr.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bridle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sladrer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>coded</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gps-position</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>accepter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>youtube-video</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pl</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>slik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>computer-algoritme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ballie</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>boomerang</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grooming</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_79 DESC LIMIT 50</pre>
+      <article>
+        <h4>Udviklerprofil: Fabian arbejder med det, han synes er allermest spændende: Kunstig intelligens</h4>
+        <div>
+            Fabian Sødal Dietrichson er 26 år gammel og ansat som konsulent i Accentures teknologiafdeling. Kan du kort beskrive din stilling og dine opgaver? Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-01-21
+          &nbsp;·&nbsp; e78bfb6c
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.668</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Cleveland Clinic mødte corona med analytics: Lær at bruge imperfekt data</h4>
+        <div>
+            Den 10. marts fik Cleveland Clinic sin første Covid-19-patient. Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer.Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-23
+          &nbsp;·&nbsp; e7c36a29
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.708</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.579</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mød din digitale tvilling</h4>
+        <div>
+          Din digitale tvilling er et begreb, der dækker over alle dine digitale data. Sammenlagt er dine data nemlig så omfattende, at det giver mening at tale om et særskilt individ. Tilsætter man så også kunstig intelligens, kan din digitale tvilling træffe valg på dine vegne, kommunikere med andre digitale tvillinger og leve en stor del af dit liv. Og når du er død, lever din digitale tvilling videre. Det lyder godt - eller?
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2019-01-03
+          &nbsp;·&nbsp; e707abd1
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.536</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.624</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.542</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Overvejer du at sælge din bil?</h4>
+        <div>
+          Denne artikel indeholder sponsoreret indhold Selv den mest elskede bil kan af og til trænge til en udskiftning. Måske har en familieforøgelse gjort, at du har brug for et større køretøj end dit nuværende.Det kan også ske, at en bil slet ikke er nødvendig for din hverdag længere. Hvis du overvejer at sælge din bil, skal du uanset hvad først og fremmest have lavet en . På solgt.com foregår vurderingen nemt og hurtigt, og processen omfatter de i alt fire trin, som vi gennemgår nedenfor.Beskriv din bilTil at starte med skal du beskrive din bil så detaljeret som muligt. Beskrivelsen skal indeholde bilens nummerplade, dét antal kilometer som bilen har kørt, bilens status i forhold til servicebogen og din kontaktinformation.Modtag din tilbudspris inden for et døgnNår du har udfyldt bilbeskrivelsen, går solgt.coms prisrobot i gang med at generere en tilbudspris af din bil. Du modtager tilbudsprisen inden for 24 timer, så du hurtigt kan komme videre i processen, hvis du beslutter dig for at godkende den pris, du har fået.Få et vurderingstjek hos en lokal forhandlerHvis du gerne vil gå videre med salget af din bil, har du nu mulighed for at køre forbi en autoriseret solgt.com forhandler. Du kan køre forbi, når det passer dig, og du bestemmer selv, hvilken forhandler, der skal foretage vurderingstjekket. Forhandleren vil undersøge bilen for at kunne afdække dens stand, og forhandleren vil også notere, om det er nødvendigt med en mindre justering af den tilbudspris, som du modtog, da du indtastede beskrivelsen af din bil.Sæt bilen til salgNår bilen er blevet tjekket, gælder tilbudsprisen i syv dage. Du kan inden for denne periode enten vælge at sælge din bil til forhandleren eller lade den indgå i en byttehandel. Hvis vurderingsprisen ikke lever op til dine forventninger, kan du naturligvis altid takke nej tak til handlen og beholde køretøjet.Om solgt.comSolgt.com ejes af indkøbsforeningen Techno Danmark F.M.B.A's medlemmer, og dermed er siden en del af et landsdækkende netværk af Danmarks største og mest anerkendte autoriserede bilforhandlere. Samtlige forhandlere har til mission at gøre det så nemt som muligt for dig at sælge din brugte bil. Målet nås ved hjælp af en kunstig intelligens, som har adgang til data fra næsten alle autobaserede forhandlere i landet. Intelligensen udregner automatisk din bils værdi, og dét betyder, at du ved første henvendelse til solgt.com ikke behøver at bekymre dig om en lang sagsbehandlingstid. Når du sælger din bil via solgt.com, får du dertil dine penge inden for tre hverdage, efter du har godkendt købsaftalen. Meget nemmere bliver det ikke. Det er med rigtig god grund, at mange danskere i dag vælger solgt.com, når deres bil skal sælges. Denne artikel indeholder sponsoreret indholdAabenraaTraktor brød i brand: -Vi har haft alle slanger ude
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2021-06-03
+          &nbsp;·&nbsp; e84b86b9
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.757</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.661</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.609</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>OpenAI laver GPT-3 API, Norge laver 'AI-landshold' og GitHub bliver mere data science-venlig</h4>
+        <div>
+            Vi ser tilbage på ugen, der er gået. GitHub bliver mere data science-venlig, OpenAI laver API til GPT-3 og Norge laver landsholds for AI-forskning Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-19
+          &nbsp;·&nbsp; e7c2321e
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.836</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.831</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Drinks i samråd med kunstig intelligens</h4>
+        <div>
+          IBM Watson Twist (Iphone/ Ipad. Gratis) Der findes mange klassiske drinks og måder at få fingre i opskrifterne til disse. Men hvad hvis du en dag mest har lyst til en drink, som afspejler din nuværende sindstilstand -eller bare har lyst til at gå lidt ud over grænserne og opfinde noget nyt? Så er der nu hjælp at hente i gratis-app'en Watson Twist, som bygger over konceptet at Watson, dvs. din Ipad, vælger dele af din drink, baseret på dine følelsesmæssige anvisninger, mens du selv får lov til at toppe den givne drinkopskrift af med dit eget pift.Du siger cola? Så har Watson nogle forslag til ingredienser.Du kan slutte af med at dele dine opskrifter socialt på eksempelvis facebook, og tilmed gemme dine opskrifter med egne billeder, så du på sigt har et helt menukort af unikke drinks, hvis du skal være vært med krydderi.
+        </div>
+        <footer>
+          <em>Fredericia Dagblad</em>
+          &nbsp;·&nbsp; 2016-06-16
+          &nbsp;·&nbsp; e5c2bea9
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.634</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.802</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan bruger du Facebooks vennelister</h4>
+        <div>
+          For et par år siden gjorde Facebook det væsentlig nemmere at sortere i sine facebookvenner i det, de kalder for lister for venner.Der er flere forskellige måder at gå til stålet på, men i første omgang skal du lige i gang med listerne i det hele taget.Hvis du aldrig har brugt listerne, er dine venner nemlig bare samlet i én stor, usorteret liste, uanset hvor mange af dem du har.Dette sorteringsarbejde sker på desktopversionen af Facebook, altså når du går ind i Facebook med en webbrowser på en computer. Afhængigt af hvilken mobil platform du bruger, kan dette sorteringsarbejde så også blive reflekteret i Facebook på smartphonen eller din tablet.Find de nære vennerNår du logger ind på Facebook på computeren, kan du ude til venstre se en række menuer med forskellige muligheder såsom apper, grupper, favoritter med mere.Her bør du også kunne se en menu, der hedder ' Venner'. Hvis den ikke er der, skal du trykke på knappen ' Flere' nederst i spalten.Den øverste mulighed i menuen hedder ' Nære venner'. Det er denne liste, der er udgangspunktet for din ' sortering'.Når den er oprettet, vil du primært se opdateringer fra vennerne på denne liste i din nyhedsfeed. Du vil stadig se opdateringer fra andre, men de vil blive nedprioriteret i forhold til vennerne på din ' Nære venner'-liste.Det eneste, du behøver at gøre for at oprette listen, er at klikke på linket og tilføje den første ven på listen. Det sker ovre til højre, hvor du har en oversigt over vennerne på listen. Klikker du i feltet ' Tilføj venner til denne liste' kan du skrive navnet på en af dine venner og tilføje personen til din liste over ' Nære venner'.Algoritmerne hos Facebook er ikke så dumme endda. Derfor kan det godt betale sig at kigge på den sektion, der hedder ' Forslag til lister'. Her finder Facebook folk frem, som Facebooks computere tror, du gerne vil høre mere fra. Måske har de ret, måske har de ikke. Men det er ikke usædvanligt, at man i sin udvælgelse kommer til at overse en person, man gerne vil høre mere fra.Venner, bekendte og familieNår listen er oprettet, bliver alle de øvrige facebookvenner placeret i gruppen ' Bekendte', og hvis de er indikeret på Facebook som en del af din familie, dukker de også op under kategorien ' Familie'. Dertil kommer de grupper, som du måske er medlem af på Facebook, hvad enten det gælder dine medfodboldfans eller kollegerne fra arbejdet.Du kan nu redigere listerne ved at klikke på ' Venner'-knappen øverst i menuen med det samme navn. Hvis du klikker herpå, får du en liste op med alle de forskellige grupper og lister, du p. t. bruger. Ude til venstre for hvert listenavn er der en blyant, og når du klikker på denne, får du mulighed for at vælge ' Føj til foretrukne'. Denne funktion lægger listen ind under dine favoritter, så du nemt kan komme til den.Hvis du klikker på listenavnet, enten i den store liste eller i menuen ude til venstre, får du en sorteret nyhedsfeed op, der kun viser facebookposts fra de venner, der er på netop denne liste, og du får samme mulighed for at tilføje venner til listen som under ' Nære venner'.Begræns de bekendteEn særlig liste, der kan være en god idé at bruge, er den, der hedder ' Begrænset'.Her kan du placere venner, du ikke ønsker at blokere helt fra Facebook, men som du på den anden side heller ikke vil have jævnlige opdateringer fra.Venner på denne liste kan heller ikke se, hvad du lægger op på Facebook, medmindre, du ' tagger' personen i selve opdateringen.Du kan også nøjes med at dele dine opdateringer med en bestemt liste.Hvis for eksempel du har lagt alle dine arbejdskolleger på en bestemt liste, kan du nøjes med at sende arbejdsrelaterede opdateringer til dem. Det gør du ved at bruge menuknappen, der sidder til venstre for ' Slå op'-knappen i statusopdateringsvinduet.Her kan du vælge, om dit opslag skal være offentligt eller til en bestemt liste.Når listerne er på plads, bør din nyhedsfeed på startsiden være sorteret efter, hvordan dine lister er prioriteret.Du ser altså opdateringer fra dine nære venner først, derefter dine bekendte og så fremdeles.Husk, du kan altid se, hvad folk på de andre lister laver, ved at klikke på listenavnet ude til venstre.morten.bay@pol.dk 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2013-11-02
+          &nbsp;·&nbsp; e4114eea
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.593</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.644</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En rumraket i stuen</h4>
+        <div>
+          Der er sket meget med teknologien, siden man satte en cd i anlægget, og lod skiven diktere, hvilke lydbølger øregangene skulle forkæles med. Hvis cd-afspilleren er en hestevogn, så er Bang og Olufsens nye anlæg BeoSound 5 Encore en rumraket med automatpilot. Ikke nok med at du kan vælge mellem 13.000 netradiostationer over hele verden. Du kan også få anlægget til selv at generere afspilningslister til dig baseret på dine egne favoritnumre.Den kunstige intelligens i anlægget laver afspilningslisterne ud fra en lang række variabler, som du ikke skal bekymre dig om. Du skal bare slappe af, smække dig ned i sofaen og vælge et nummer - eller beslutte dig for, hvilken af de 13.000 netradiostationer, du helst vil lytte til.
+        </div>
+        <footer>
+          <em>Lemvig Folkeblad</em>
+          &nbsp;·&nbsp; 2011-09-03
+          &nbsp;·&nbsp; e2dccc45
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.961</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.603</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Først omgang frie vejrdata fra DMI er klar til brug</h4>
+        <div>
+            Meteorologisk observationdata er første led i DMI's arbejde på at sætte data fri. Efter mere end et års arbejde er DMI nu klar med første bølge af åbne vejrdata til brug for virksomheder, organisationer og myndigheder. Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-23
+          &nbsp;·&nbsp; e7c36c03
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.659</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.677</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.504</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Data scientisten må være sin egen ambassadør og tolk</h4>
+        <div>
+          Data scientists skal være tekniske generalister og domæne-specialister. For de færreste danske virksomheder vil have råd til andet. I 2018 udpegede McKinsey Global Institute en musthave data-rolle, som skulle være kritisk for selskaber at udfylde - den såkaldte analytics translator Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-25
+          &nbsp;·&nbsp; e7c44a51
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.528</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.505</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Her er de skjulte tricks til Android</h4>
+        <div>
+          Vil du høre en hemmelighed? Eller hvad med syv? Der er nemlig rigtig mange hemmelige tricks til din Android-telefon, som ikke er lige sådan at se   før man altså kender demDu har en lækker, lille telefon med en flot skærm og noget nær uendelige muligheder for at bruge den til stort og småt. Og det kan faktisk godt være lidt overvældende med alle de muligheder, for hvornår i alverden skal du sætte dig ned og lære det hele at kende.Androids nye systemopdatering Marshmallow giver endnu flere spændende muligheder, som ikke var tilgængelige før. Men for at bruge dem skal man selvfølgelig vide, at de er der, og det er langtfra dem alle sammen, der skiltes med.Her får du syv nye og gamle tricks til din Android, som gør det hele en lille smule lettere, når du cruiser rundt på din smartphone.Nu med et trykOkay, det første, du skal finde ud af, når din telefon er opdateret med Marshmallow, er den spritnye funktion 'Nu med et tryk' eller på engelsk 'Now on tap'. Og her er der næsten tale om, at din telefon bliver udstyret med evnen til at spå eller måske lidt kunstig intelligens. Nu kan du nemlig få telefonen til at søge, mens du er inde i en app   og den søger altså baseret på indholdet.Det vil sige, at hvis du sidder og planlægger aftenens program med en ven over Hangouts og nævner, at I skal se den nye 'X-Men'-film i biografen, og så skal I ud at spise på restaurant Flammen bagefter, så kan telefonen hjælpe dig med ekstra-info om lige præcis de ting. Og nu til det smarte: Det eneste, du skal gøre for at få mere at vide, mens du er inde i din app, er at holde'Home'-knappen nede.Funktionen er ikke begrænset til dine beskeder. Du kan også bruge funktionen, mens du lytter til musik eller læser en nyhedsartikel.Google Now er blevet taget til et nye niveau med 'Now on tap'.Tilføj en besked til din låste telefonHar du prøvet at miste din telefon i en brandert? Eller måske at have efterladt den på toilettet på en restaurant, og da du endelig kom i tanke om, hvor du havde glemt den, var den væk? Hvis du er en af dem, der kommer til at lægge telefonen et lidt mærkeligt sted, hvor andre kunne finde på at samle den op for dig, så har Android-telefonen en rigtig smart funktion til dig.Du har nemlig muligheden for at skrive en besked, som bliver en del af dit skærmbillede lige under uret, når telefonen er låst. Her kan du altså bare skrive din adresse, et nødtelefonnummer eller måske bare en mail-adresse, som gør, at hvis telefonen bliver fundet, så kan vedkommende let komme i kontakt med dig for at fortælle, hvor telefonen nu befinder sig. Og de behøver overhovedet ikke at kende koden, for det hele står på den låste skærm.For at lave din helt egen besked til folk, der måtte finde din telefon, skal du bare gå ind under indstillinger. Her vælger du 'Sikkerhed' og trykker på den knap, der hedder 'Tekst fra ejer'. Så er det bare med at være kreativ, og så snart du har gemt din besked, er den en fast del af din låste skærm   lige under uret, men adskilt fra dine push-meddelelser.Du kan selvfølgelig også bruge denne funktion til at bede folk om at holde fingrene fra dit dyrebareste eller skrive et småkikset 'carpe diem'-citat.Få styr på lydenEn anden tilføjelse, der kommer med Marshmallow-opdateringen, er en meget bedre styring af lyden. For at få slideren frem på skærmen, hvor du kan præcisere lyden, trykker du ganske enkelt på volumenknappen på din telefon. Nu dukker den lille slider op i toppen af skærmen.Det nye er, at der i Marshmallow-opdateringen er tilføjet en lille pil helt ude til højre. Når du klikker på den, får du muligheden for at ændre på lyden i tre forskellige slidere: Notifikationer, musik og timer. Så du skal altså ikke rode det hele sammen. I stedet kan du hurtigt styre de tre individuelt.Styr dine app-tilladelser enkeltvisHvis du godt kan lide at holde styr på, hvad dine apps egentlig må få adgang til, så har Marshmallow-opdateringen en fed, ny feature, som gør livet lidt lettere. Du kan nemlig styre det helt præcist for hver enkelt app.Du går bare ind i dine indstillinger, finder fanen 'Apps', og så kan du klikke dig ind på de enkelte apps og vælge hvilke tilladelser, de skal have. Vælg, om appen skal have adgang til din mikrofon, din lokation, kameraet og en række andre ting.Find et lille bonusspilTrænger du til at slå hjernen fra et øjeblik? Så er der et lille indbygget pausespil i Androids styresystem, som du kan prøve. Du kan finde spillet på samme måde, uanset om du har installeret opdateringen Lollipop eller den nye Marshmallow   det er bare to forskellige spil, der kommer frem. Eller  spillet er rimelig meget det samme, men grafikken er forskellig.Gå ind under indstillinger, scroll helt ned i bunden og tryk på 'Om telefonen'. Når du er herinde, skal du finde der, hvor der står, hvilken Android-version du har. Klik igen og igen på det felt, indtil der dukker noget op på skærmen. Hvis du har Lollipop, kommer der en farvet cirkel frem. Tryk på den igen, så den vokser og bliver til en slikkepind. Nu kan du få den til at skifte farve ved at klikke på den igen. Hold fingeren nede på slikkepinden for at få minispillet frem.Hvis du har Marshmallow, er det i stedet et 'M', der kommer frem og bliver til en skumfidus, hvis du trykker på den. Og vupti, så dukker der et lille spil frem.Vælg nye standard-appsEr du på et eller andet tidspunkt kommet til at vælge, at det altid er Chrome, der skal åbne links, eller Facebook-links åbnes inde i appen, så kan det være, du på et tidspunkt også godt kunne tænke dig at vælge om.Det kan du gøre ved at slette dine 'default apps'. Gå ind under indstillinger og vælg den fane, der hedder'Apps'. Swipe til højre, til du kommer til den fane, som hedder 'Alle'. Nu kan du se alle de apps, der findes på din telefon. Find den app, du er træt af er blevet den, der som standard åbner noget. Nu klikker du på den, går ned under den linje, der hedder'Åbn som standard'og klikker på knappen'Ryd standarder'.Sådan slipper du af med autocorrectHvis du er kommet til at sende nogle uheldige beskeder, fordi autocorrect har besluttet sig for at ændre 'nogen' til 'nøgen','rov'til'røv'eller'brister'til'bryster', så kan du faktisk godt slippe af med den lille ordbog, som altid synes, at den ved bedre.Gå ind under indstillinger og vælg 'Sprog og input'. Klik på det keyboard, du bruger, der kan for eksempel være SwiftKey Tastatur eller Google Keyboard. Når du er derinde, vælger du knappen'Skrivning', som giver dig en række nye muligheder. Under overskriften 'Indstillinger' får du blandt andet muligheden 'Skrivning og autokorrektur'. Klik på den og fjernt fluebenet ud for kategorien'Autokorrektur.Herinde er der også masser af andre muligheder for at tilpasse dit tastatur helt efter dit eget behov. Du kan for eksempel få telefonen til at foreslå emojis - helt på linje med når den normalt foreslår hvilket ord, den tror, du prøver at skrive.
+        </div>
+        <footer>
+          <em>EkstraBladet.dk/Ekstra</em>
+          &nbsp;·&nbsp; 2016-09-07
+          &nbsp;·&nbsp; e5df4366
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.98</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.551</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hvorfor GPT-3 er »flydende i bullshit« , og hvor du selv kan teste det</h4>
+        <div>
+            Vi ser tilbage på ugen, der er gået. GPT-3 fortsætter med at inspirere og imponere, men selvom du både kan bede den enorme sprogmodel fra OpenAI om bageopskrifter og matematikopgaver er den ikke til at stole på. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-08-28
+          &nbsp;·&nbsp; e7db7d2a
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.616</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.702</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Platform for dansk sprogteknologi i luften, men rykker Danmark hurtigt nok?</h4>
+        <div>
+          Digitaliseringsstyrelsens lancerer i dag platform for dansk sprogteknologi. Men der er brug for mere, skriver Anne Bøgh Fangel og Anders Kofod-Petersen. Digitaliseringsstyrelsens nye platform for sprogteknologiske modeller på dansk er et vigtigt skridt i retningen af et større fokus på området. Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2020-06-23
+          &nbsp;·&nbsp; e7c36be0
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.631</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.52</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.504</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>National strategi for kunstig intelligens</h4>
+        <div>
+          Vil du have fuld adgang til Tech Management?Savner du den indsigt, der gør dig i stand til at se de nyeste teknologier i et forretningsmæssigt perspektiv? Tech Management er mediet om ledelse, forretning og teknologi for bestyrelsesmedlemmer, direktører og strategiske ledere i særligt de små- og mellemstore virksomheder.Har du allerede et abonnement? Log indEr dit prøveabonnement udløbet?
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-08-20
+          &nbsp;·&nbsp; e74f12e0
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.917</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.946</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.753</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Algoritme skaber skarpe billeder ud fra slørede - og sætter ild under etik-debat</h4>
+        <div>
+          En metode til at 'upsample' slørede eller pixelerede billeder har fået AI-eksperter hos Google og Facebook til at fare i flint. Muligheden for at depixelere et billede - eller forstørre et billede langt over den oprindelige opløsning - er hyppigt anvendt i alskens detektiv-serier. Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-25
+          &nbsp;·&nbsp; e7c45af6
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.658</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.651</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan får du igen lokale nyheder på Dagbladets Facebook-side</h4>
+        <div>
+          En ændring i Facebook betyder, at de seneste nyheder fra Dagbladet ikke længere popper automatisk op i dit nyhedsfeed. Men heldigvis er der gode råd at hente...vestjyllandMåske har du allerede undret dig, måske har du slet ikke lagt mærke til, at der er sket noget.Men er du én af de mange vestjyder, der dagligt tjekker din Facebook-profil, er der alligevel sket noget. I slutningen af juni offentliggjorde det sociale netværk nemlig, at det havde ændret på den algoritme, der bestemmer hvilke nyheder og opslag, der er synlige i hver enkelt brugers personlige nyhedsoversigt.En ændring, der opprioritere opslag fra venner og familie, mens du sjældnere og sjældnere vil se artikler, billeder og videoer fra professionelle medier, heriblandt Dagbladet.Gode råd at henteMen bare rolig, det betyder ikke at du i fremtiden må undvære at få de lokale nyheder serveret, når du surfer rundt på Facebook.Det kræver bare, at du selv går ind og aktivt tilvælger, at få nyheder fra Dagbladet. Her kommer en trin for trin guide til, hvordan du gør:1. Gå ind på Dagbladet Ringkøbing-Skjerns Facebook-side, som kan søges frem i søgefeltet, eller ved at skrive https://www.facebook.com/dagbladetRS/ i din internetbrowser.2. Tjek først, at du allerede har klikket på knappen »Synes godt om«. Det er den første forudsætning for overhovedet at få nyheder fra Dagbladet.3. Dernæst skal du klikke på »Synes godt om«-knappen (hvis du sidder ved en computer skal du bare holde musen henover den), og klikke der, hvor der står»Se først«.Nu skulle du igen få dine nyheder direkte ind i din nyhedsstrøm på Facebook sammen med naboens feriebilleder og onkel Gerts opslag om hans besøg hos tandlægen.Mark Zuckerberg og Facebook-teamet har ændret i algoritmen bag Facebook, hvilket?betyder, at du risikerer at misse de vigtigste lokale nyheder. Her er en guide til,?hvordan du sikrer dig at få nyhederne tilbage i din nyhedsstrøm. Arkivfoto: Scanpix.Mark Zuckerberg og Facebook-teamet har ændret i algoritmen bag Facebook, hvilket?betyder, at du risikerer at misse de vigtigste lokale nyheder. Her er en guide til,?hvordan du sikrer dig at få nyhederne tilbage i din nyhedsstrøm. Arkivfoto: Scanpix.
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-07-14
+          &nbsp;·&nbsp; e5ccf3a5
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.919</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.99</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.643</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan får du igen lokale nyheder på Facebook</h4>
+        <div>
+          En ændring i Facebook betyder, at de seneste nyheder fra Dagbladet ikke længere popper automatisk op i dit nyhedsfeed. Men heldigvis er der gode råd, at hente...Mark Zuckerberg og Facebook-teamet har ændret i algoritmen bag Facebook, hvilket betyder, at du risikerer at misse de vigtigste lokale nyheder. Her er en guide til, hvordan du sikrer dig at få nyhederne tilbage i din nyhedsstrøm. Arkivfoto: Scanpix.Mark Zuckerberg og Facebook-teamet har ændret i algoritmen bag Facebook, hvilket betyder, at du risikerer at misse de vigtigste lokale nyheder. Her er en guide til, hvordan du sikrer dig at få nyhederne tilbage i din nyhedsstrøm. Arkivfoto: Scanpix.
+        </div>
+        <footer>
+          <em>Folkebladetlemvig.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-07-12
+          &nbsp;·&nbsp; e5cc53df
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.98</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.975</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.54</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.595</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dagskursus ved Djøf om datatetik - principper og praksis</h4>
+        <div>
+          BodyLær at anvende dataetik som et pejlemærke for ansvarlig brug af persondata i udviklingsprocesser og i drift.Du ønsker at integrere dataetik i strategisk planlægning, projekt- og driftsledelse og i rapportering.Du vil gerne blive bedre til at integrere dataetiske principper i projekter, der omfatter persondata og fx brug af automatiseret beslutningstagning, AI og machine learning. Måske har du også brug for viden om, hvordan du udformer en strategi eller politik om dataetik.Du er jurist, udvikler eller program-/projektleder med interesse for bæredygtige dataløsninger.styrket din viden om dataetik og om hvordan du udformer en strategi og politik om dataetik skærpet dit blik for at integrere persondatabeskyttelse og dataetik i planlægning og daglig praksis udviklet dine kompetencer til at arbejde med integreret persondatabeskyttelse (privacy by design) og dataetik omsat din fornemmelse for dataetik til håndgribelige begreber suppleret din compliancetilgang til persondatabeskyttelse omsat dataetiske principper til praktiske løsninger med konkrete redskaber omsat sparring og feedback på din case.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2021-03-23
+          &nbsp;·&nbsp; e82e6dba
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.779</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.538</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Guide: Sådan bruger du vennelister i Facebook</h4>
+        <div>
+          Der er facebookvenner, vi hellere vil se opdateringer fra, end andre.For et par år siden gjorde Facebook det væsentligt nemmere at sortere i sine facebookvenner i det, de kalder for lister for venner.Der er flere forskellige måder at gå til stålet på, men i første omgang skal du lige i gang med listerne i det hele taget. Hvis du aldrig har brugt listerne, er dine venner nemlig bare samlet i én stor, usorteret liste, uanset hvor mange af dem du har.LÆS ARTIKEL Facebook fjerner populær privatlivsindstillingDette sorteringsarbejde sker på desktopversionen af Facebook, altså når du går ind i Facebook med en webbrowser på en computer. Afhængigt af hvilken mobil platform du bruger, kan dette sorteringsarbejde så også blive reflekteret i Facebook på smartphonen eller din tablet.Find de nære vennerNår du logger ind på Facebook på computeren, kan du ude til venstre se en række menuer med forskellige muligheder såsom apper, grupper, favoritter med mere.Her bør du også kunne se en menu, der hedder 'Venner'. Hvis den ikke er der, skal du trykke på knappen 'Flere' nederst i spalten.Den øverste mulighed i menuen hedder 'Nære venner'. Det er denne liste, der er udgangspunktet for din 'sortering'.Når den er oprettet, vil du primært se opdateringer fra vennerne på denne liste i din nyhedsfeed. Du vil stadig se opdateringer fra andre, men de vil blive nedprioriteret i forhold til vennerne på din 'Nære venner'-liste.LÆS OGSÅ Guide: Tag kontrol over din Facebook-kontoDet eneste, du behøver at gøre for at oprette listen, er at klikke på linket og tilføje den første ven på listen. Det sker ovre til højre, hvor du har en oversigt over vennerne på listen. Klikker du i feltet 'Tilføj venner til denne liste' kan du skrive navnet på en af dine venner og tilføje personen til din liste over 'Nære venner'.Algoritmerne hos Facebook er ikke så dumme endda. Derfor kan det godt betale sig at kigge på den sektion, der hedder 'Forslag til lister'. Her finder Facebook folk frem, som Facebooks computere tror, du gerne vil høre mere fra. Måske har de ret, måske har de ikke. Men det er ikke usædvanligt, at man i sin udvælgelse kommer til at overse en person, man gerne vil høre mere fra.Venner, bekendte og familieNår listen er oprettet, bliver alle de øvrige facebookvenner placeret i gruppen 'Bekendte', og hvis de er indikeret på Facebook som en del af din familie, dukker de også op under kategorien 'Familie'. Dertil kommer de grupper, som du måske er medlem af på Facebook, hvad enten det gælder dine med-fodboldfans eller kollegerne fra arbejdet.Du kan nu redigere listerne ved at klikke på 'Venner'-knappen øverst i menuen med det samme navn. Hvis du klikker herpå, får du en liste op med alle de forskellige grupper og lister, du p.t. bruger. Ude til venstre for hvert listenavn er der en blyant, og når du klikker på denne, får du mulighed for at vælge 'Føj til foretrukne'. Denne funktion lægger listen ind under dine favoritter, så du nemt kan komme til den.LÆS OGSÅ Mark Zuckerberg vil forbinde fem milliarder mennesker til nettetHvis du klikker på listenavnet, enten i den store liste eller i menuen ude til venstre, får du en sorteret nyhedsfeed op, der kun viser facebookposts fra de venner, der er på netop denne liste, og du får samme mulighed for at tilføje venner til listen som under 'Nære venner'.Begræns de bekendteEn særlig liste, der kan være en god idé at bruge, er den, der hedder 'Begrænset'. Her kan du placere venner, du ikke ønsker at blokere helt fra Facebook, men som du på den anden side heller ikke vil have jævnlige opdateringer fra. Venner på denne liste kan heller ikke se, hvad du lægger op på Facebook, medmindre, du 'tagger' personen i selve opdateringen.Du kan også nøjes med at dele dine opdateringer med en bestemt liste. Hvis for eksempel du har lagt alle dine arbejdskolleger på en bestemt liste, kan du nøjes med at sende arbejdsrelaterede opdateringer til dem. Det gør du ved at bruge menuknappen, der sidder til venstre for 'Slå op'-knappen i statusopdateringsvinduet. Her kan du vælge, om dit opslag skal være offentligt eller til en bestemt liste.LÆS OGSÅ Ældre går på Facebook for at holde kontakt med børnebørneneNår listerne er på plads, bør din nyhedsfeed på startsiden være sorteret efter, hvordan dine lister er prioriteret. Du ser altså opdateringer fra dine nære venner først, derefter dine bekendte og så fremdeles.Husk, du kan altid se, hvad folk på de andre lister laver, ved at klikke på listenavnet ude til venstre.Facebook. En af funktionerne på det sociale netværk Facebook er vennelister, der gør det muligt at placerer venner, familie og bekendter i grupper. - Foto: Thomas Borberg.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2013-11-02
+          &nbsp;·&nbsp; e4116894
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.527</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.519</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.64</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blanding af simulation og virkelighed kan give ubegrænsede mængder træningsdata</h4>
+        <div>
+            Spørgsmålet er, hvor realistisk du kan skabe din kunstige træningsdata. Mere realistisk end simulering, og mere skalerbar end virkeligheden. Sådan lyder pitchet for en ny metode til at generere træningsdata, som forskere ved Aarhus Universitet har præsenteret. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-08-13
+          &nbsp;·&nbsp; e7d5d52e
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.817</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.795</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Valentinsdag: Intet siger 'jeg elsker dig' som et pornopostkort</h4>
+        <div>
+            Panik på Store kærlighedsdag? Vi kommer dig til undsætning med denne lille vifte af romantiske ideer -- Over artiklen relateret Sexpert-tv fra arkivet: Sexologens bedste Valentintips -- Du kan lige så godt overgive dig, al modstand er håbløs: Valentinsdag er kommet for at blive. Det behøver ikke at ordnes med blomster fra tanken, et Happy Meal fra Mac D eller et kroophold i Sønder Bøvelse - vi har fundet tre ting, der redder dig og din kærestes eller din potentielle kærestes Valentinsdag. 1. Den hurtige og billige løsning Denne her kræver næsten intet af dig - men en god portion overskud af din kæreste eller din udkårne. Mastodonten pornhub.com, der er blevet verdens største pornoside i kraft af en velsmurt markedsføringsmaskine, har lanceret en valentinspostkortsgenerator. Du indtaster blot navnet på din valentinsdate og vælger en af tre modeller, Asa Akira, Rod Jackson eller Ryan Creamer. Og vupti, en så får du en lille postkortvideo, hvor din elskedes navn optræder, som du kan sende til din elskede. Han eller hun får så tilmed et gratis pornhub premium abonnement, hvor filmene er i HD. Fordi intet siger 'jeg elsker dig' som et pornopostkort og gratis slaskere i HD. Sex og samliv Sådan pornosurfer danskerne 2. Den følsomme løsning Du har nok hørt om de fem kærlighedssprog, som har fyldt utallige dameblade (og også disse sider ) siden Gary Chapman i 1992 lancerede konceptet i bogen 'The Five Love Languages: How to Express Heartfelt Commitment to Your Mate'. Alene den engelske version solgte 11 millioner eksemplarer. Det handler om, hvordan vi helst vil elskes, og om at man typisk giver den type kærlighed, man ønsker at modtage. Desværre er det ikke sikkert, at kæresten taler samme sprog. For at hjælpe dig med at finde ud af, hvilke kærlighedssprog du og din kæreste taler, har landets største sexshop, sinful.dk, udviklet en app. I den svarer du og din partner hver især på en række simple spørgsmål som dette: Til sidst regner algoritmerne sig frem til, hvilket sprog du taler og giver en kort forklaring på, hvad det indebærer. Og den kan du så sende til kæresten, som dermed får at vide, hvad han eller hun kan gøre for, at du føler dig elsket. Og så kan vedkommende selv tage testen. De fem kærlighedssprog er: Tid og nærvær - du bliver glad af at tilbringe kvalitetstid med din partner. Søde ord - du bliver glad af at få anerkendende ord, ros og opmuntring. Tjeneste r - du føler dig elsket, hvis din partner er betænksom og gør ting for dig. Gaver - du bliver glad af at få konkrete, håndfaste beviser på, at din partner elsker di g. Fysisk kontakt - du føler dig elsket, når din partner giver dig kys og kram, eller når han/hun rører ved dig. For intet siger 'jeg elsker dig' som 'hvordan vil du elskes?' Kys &amp; kærlighed - 23. feb. 2019 - kl. 21:13 Tag denne samtale og få bedre sex &amp; samliv 3. Den frække løsning Nå, er kæresten blevet lidt skuffet over dine to Valentins-tiltag? Havde han/hun sat næsen op efter noget med lidt mere schwung? Jamen, så går du blot ind på swingerguiden.dk og tjekker kalenderen for 14. februar, hvor du kan finde den nærmeste (eller fjerneste, hvis du ikke vil møde naboen og din kollega) swingerklub, der har et særligt Valentinstema. I Tucan mellem Kolding og Vejle klæder de klubben i rødt og opfordrer gæsterne, både singler og par, til at komme i rødt, altså udklædt i for eksempel røde trusser. Er du rigtig fantasifuld og fræk, kan du endda vinde en flaske Asti. Du kan også vinde et gavekort på 500 kroner i en særlig leg. Ved tjek-ind får du mulighed for at deltage ved at tage imod klubbens hjerte-mærke: 'Mærket kan gives til en anden, for 'en god gerning', en lille fræk ydelse, et kys, eller blot til en med et sødt smil. Det er helt op til hver enkelt person. Måske er det DIG, der modtager et mærke fra en eller flere andre.' For intet siger 'jeg elsker dig' som en tur i den lokale swingerklub.
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2020-02-13
+          &nbsp;·&nbsp; e793e8c9
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.938</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan bliver fremtidens tv-oplevelse</h4>
+        <div>
+          Hele tv-oplevelsen kører via din internetforbindelse på samme måde, som streamingtjenester gør i dag. Dermed vil store internetforbindelser være det mest nødvendige fremover.I stedet for at tænde for tv-et og have en lang række flowkanaler (kanaler, der viser en række programmer efter hinanden fra morgen til aften) vil indholdet være brudt ned i enheder.To mulige scenarier:1: En app-baseret løsning, som du kender fra dit Smart TV i dagNår du tænder dit tv, er der en række apps, du kan trykke på. Det kan for eksempel være en Superliga-app, en -De unge mødre--app, en madprogram-app og så videre. I de apps ligger så en lang række afsnit/programmer, som du kan vælge imellem. Der vil stadigvæk være mulighed for nyhedsudsendelser og flowkanaler som TV 2 News, men det vil igen være i en app, du selv har købt til. Du betaler individuelt for de små enheder, så du kun har apps med den type indhold, du vil se.Læs også:Stor test af streamingtjenester: Her er de bedste2: Den smidige model, der ligner din tv-oplevelse i dagEn anden   og mere genkendelig model   er, at du på samme måde som i dag har en række kanaler på dit tv, som du kan zappe imellem. På nummer et har du for eksempel Netflix, nummer to HBO Nordic, nummer tre har en sportsapp, nummer fire en -De unge mødre--app og så videre. Når du zapper hen på kanalen, vil en algoritme fremhæve det indhold, som er mest relevant for dig baseret på, hvad du tidligere har set. Igen   du betaler kun for de små enheder, du selv gider se.Uanset hvordan det teknisk kommer til at fremgå på din skærm, er tanken, at du i meget højere grad udelukkende betaler for den type programmer og indhold, du ser. I yderste tilfælde kan det betyde, at du betaler for hvert program, du ser. Eksempelvis 20 kroner for en fodboldkamp, to kroner for et serie-afsnit og så videre.Kilder: Claus Bülow Christensen, YouSee, Stofa
+        </div>
+        <footer>
+          <em>Sondagsavisen.dk</em>
+          &nbsp;·&nbsp; 2015-07-31
+          &nbsp;·&nbsp; e524f3e4
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.563</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.557</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DigiPlex får ny CEO</h4>
+        <div>
+            Wiljar Nesse bliver ny CEO for DigiPlex med tiltrædelse d. 1. marts 2020. Det skriver DigiPlex i en pressemeddelelse. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-01-29
+          &nbsp;·&nbsp; e78ee5be
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.508</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.503</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan får du igen lokale nyheder på Dagbladets Facebook-side</h4>
+        <div>
+          VESTJYLLAND: Måske har du allerede undret dig, måske har du slet ikke lagt mærke til, at der er sket noget.Men er du én af de mange vestjyder, der dagligt tjekker din Facebook-profil, er der alligevel sket noget. I slutningen af juni offentliggjorde det sociale netværk nemlig, at det havde ændret på den algoritme, der bestemmer hvilke nyheder og opslag, der er synlige i hver enkelt brugers personlige nyhedsoversigt.En ændring, der opprioritere opslag fra venner og familie, mens du sjældnere og sjældnere vil se artikler, billeder og videoer fra professionelle medier, heriblandt Dagbladet.Gode råd at henteMen bare rolig, det betyder ikke at du i fremtiden må undvære at få de lokale nyheder serveret, når du surfer rundt på Facebook.Det kræver bare, at du selv går ind og aktivt tilvælger, at få nyheder fra Dagbladet. Her kommer en trin for trin guide til, hvordan du gør: 1. Gå ind på Dagbladet Ringkøbing- Skjerns Facebook-side, som kan søges frem i søgefeltet, eller ved at skrive https:// www.facebook.com/ dagbladetRS/ i din internetbrowser.2. Tjek først, at du allerede har klikket på knappen » Synes godt om « . Det er den første forudsætning for overhovedet at få nyheder fra Dagbladet.3. Dernæst skal du klikke på » Synes godt om « -knappen (hvis du sidder ved en computer skal du bare holde musen henover den), og klikke der, hvor der står » Se først « . Nu skulle du igen få dine nyheder direkte ind i din nyhedsstrøm på Facebook sammen med naboens feriebilleder og onkel Gerts opslag om hans besøg hos tandlægen.
+        </div>
+        <footer>
+          <em>Ugeavisen Ringkøbing</em>
+          &nbsp;·&nbsp; 2016-07-20
+          &nbsp;·&nbsp; e5ce5085
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.796</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.807</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.728</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.625</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: Magtens matematik</h4>
+        <div>
+          Vi står på dørtrinnet til en ny verden, styret af kraftfulde ligninger og komplicerede koder, som vil få afgørende indflydelse på dit job, dine indkøb og din økonomi. Brugen af avancerede algoritmer vil ændre forudsætningerne for din hverdag, privat og professionelt, for bestandigt.Serie: Matematik styrer millioner af kunder, side 6-7 Kommentar: De ændrer dit syn på verden, side 2.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-03-26
+          &nbsp;·&nbsp; e5a1f09b
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.782</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>LE34s app til dataindsamling ved ledningsarbejde vinder innovationspris</h4>
+        <div>
+            Det er landinspektørfirmaet LE34s app SmartSurvey, der har vundet en innovationspris fra det østjyske forsyningspartnerskab Vandpartner, skriver firmaet i en pressemeddelelse. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-05-05
+          &nbsp;·&nbsp; e7b1a1ec
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.534</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.722</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan slipper du for reklamer på Facebook.</h4>
+        <div>
+          MEDIER: Hver gang du »Synes godt om« en artikel, et band, en person, et firma, en video eller et spil på Facebook, så bliver dit klik registreret, lagret og brugt i Facebooks system, der målretter fremtidige annoncer til dig. Du efterlader dig digitale spor overalt på internettet, og det er de såkaldte »cookies«, også uden for Facebook, som det gigantiske sociale medie bruger til at skræddersy de mange reklamer og deres indhold til lige præcis dig efter dine interesser og indkøbsvaner. For Facebook holder øje med dig.»Ud over at være et socialt medie, så er Facebook et enormt stort annoncebureau.Det er også et trendbureau og et reklame bureau, som sælger information om store grupper af befolkninger.På den måde kan annoncørerne købe sig til den nødvendige viden om, hvem deres annoncer skal henvendes til,« forklarer Anders Kjærulff, der er teknologikritiker og redaktør på Radio24syv-programmet »Aflyttet«.Facebook læser alle alt»Facebook bruger ikke kun dine 3likes til at analysere dig. Facebook læser alle dine beskeder. Og den chat, du sidder og skriver direkte med dine venner, bliver også læst og analyseret. Ikke af mennesker, men det bliver kørt igennem Facebooks algoritmer og analyseret, så du fremover kan få annoncer, der handler om de emner, I taler om,« siger Anders Kjærulff fra Radio24syv.Selv om nogen brugere måske kan unde Facebook, som jo er en gratis tjeneste, at tjene penge på annoncer og videresalg af oplysninger om dig, dine interesser og behov, så er det ikke alle, der gider se på annoncerne. Men det behøver de heller ikke. Det kræver ikke en uddannelse som IT-programmør at slippe for Facebooks bannerreklamer på din skærm.Du kan enten slå de skræddersyede reklamer fra en ad gangen, eller du kan blokere alle annoncer fuldstændigt.Desuden kan du også blo kere Facebook fra at kigge med på din færden på internettet, som intet har med Facebook at gøre, men som alligevel bliver indsamlet og solgt videre i kommercielt øjemed. For selv om Facebook ikke direkte kræver penge af brugerne, så tager firmaet sig stadig betalt for dit medlemskab.»Problemet er: Hvad betyder »gratis«? Du betaler med dine data, som du ikke selv kender værdien af. Hvis du giver Facebook dine ægte data, så betaler du en pris, som jeg synes, er alt for høj,« siger Pernille Tranberg, presseetisk rådgiver for Digital Identitet.»Facebook har viden om din fødselsdag, dit fulde navn, samtlige lokationer du har været på, hele din vennekreds og dine interesser.Du sælger faktisk hele dit sociale liv for at få adgang til Facebook. Så spørgsmålet er: Hvilken pris betaler du for en »gratis« tjeneste? Personligt benytter jeg mig af et pseudonym på Facebook. Jeg giver dem ikke mine ægte data,« forklarer Pernille Tranberg./ ritzau/ FOKUS.= FAKTA SLIP FOR ANNONCERNE PÅ FACEBOOK1. Hvis du blot vil slippe for de personlige, skræddersyede reklamer, så kan du gå ind på den amerikanske hjemmeside »www.aboutads.info/ choices«. Den vil automatisk vise en liste over, hvilke firmaer der følger din færden på nettet med henblik på at annoncere til dig. Her kan du klikke firmaer fra, inklusiv Facebook, på listen. Det samme kan gøres via »www.disconnect.me«, hvor du downloader et program, der vil afsløre de firmaer, der overvåger dig, og give dig mulighed for at blokere dem.2. Du kan også køre pilen over annoncerne på Facebook, hvorefter du kan vælge at slå dem fra og blokere dem, et firma ad gangen. Så kan du selv vælge, hvilke reklamer du har lyst til at kigge på.3. Hvis du ønsker at slippe fuldstændigt for annoncer og reklamer, så skal der skrappere metoder i brug. Der findes flere gratis tjenester til formålet, og et par af de mest udbredte er »www.adblockplus.org« og »www.adblockfast.com«.Siderne kan blokere for både de skjulte cookies og for reklamer, men til gengæld kan brugen af »adblock« i visse tilfælde gå ud over brugervenligheden og udseendet på Facebook.Kilder: Anders Kjærulff/ Radio24syv, Pernille Tranberg/ Digital Identitet.
+        </div>
+        <footer>
+          <em>Dagbladet Ringkøbing-Skjern</em>
+          &nbsp;·&nbsp; 2016-01-23
+          &nbsp;·&nbsp; e5851edf
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.845</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.722</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.609</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan slipper du for reklamer på Facebook</h4>
+        <div>
+          Facebook overvåger dine søgninger, interesser og indkøb over nettet, også uden for Facebook, med henblik på personligt, målrettede annoncer.Hver gang du &quot;Synes godt om&quot; en artikel, et band, en person, et firma, en video eller et spil på Facebook, så bliver dit klik registreret, lagret og brugt i Facebooks system, der målretter fremtidige annoncer til dig.Du efterlader dig digitale spor overalt på internettet, og det er de såkaldte &quot;cookies&quot;, også uden for Facebook, som det gigantiske sociale medie bruger til at skræddersy de mange reklamer og deres indhold til lige præcis dig efter dine interesser og indkøbsvaner. For Facebook holder øje med dig.»Ud over at være et socialt medie, så er Facebook et enormt stort annoncebureau. Det er også et trendbureau og et reklamebureau, som sælger information om store grupper af befolkninger. På den måde kan annoncørerne købe sig til den nødvendige viden om, hvem deres annoncer skal henvendes til,« forklarer Anders Kjærulff, der er teknologikritiker og redaktør på Radio24syv-programmet &quot;Aflyttet&quot;.»Facebook bruger ikke kun dine likes til at analysere dig. Facebook læser alle dine beskeder. Og den chat, du sidder og skriver direkte med dine venner, bliver også læst og analyseret. Ikke af mennesker, men det bliver kørt igennem Facebooks algoritmer og analyseret, så du fremover kan få annoncer, der handler om de emner, I taler om,« siger Anders Kjærulff fra Radio24syv.Selv om nogen brugere måske kan unde Facebook, som jo er en gratis tjeneste, at tjene penge på annoncer og videresalg af oplysninger om dig, dine interesser og behov, så er det ikke alle, der gider se på annoncerne.Men det behøver de heller ikke. Det kræver ikke en uddannelse som it-programmør at slippe for Facebooks bannerreklamer på din skærm.Du kan enten slå de skræddersyede reklamer fra en ad gangen, eller du kan blokere alle annoncer fuldstændigt.Desuden kan du også blokere Facebook fra at kigge med på din færden på internettet, som intet har med Facebook at gøre, men som alligevel bliver indsamlet og solgt videre i kommercielt øjemed.For selv om Facebook ikke direkte kræver penge af brugerne, så tager firmaet sig stadig betalt for dit medlemskab.»Problemet er: Hvad betyder &quot;gratis&quot;? Du betaler med dine data, som du ikke selv kender værdien af. Hvis du giver Facebook dine ægte data, så betaler du en pris, som jeg synes, er alt for høj,« siger Pernille Tranberg, presseetisk rådgiver for Digital Identitet.»Facebook har viden om din fødselsdag, dit fulde navn, samtlige lokationer du har været på, hele din vennekreds og dine interesser. Du sælger faktisk hele dit sociale liv for at få adgang til Facebook. Så spørgsmålet er: Hvilken pris betaler du for en &quot;gratis&quot; tjeneste? Personligt benytter jeg mig af et pseudonym på Facebook. Jeg giver dem ikke mine ægte data,« forklarer Pernille Tranberg.Sådan kan du slippe for annoncerne på Facebook:Hvis du blot vil slippe for de personlige, skræddersyede reklamer, så kan du gå ind på den amerikanske hjemmeside &quot; www.aboutads.info/choices &quot;. Den vil automatisk vise en liste over, hvilke firmaer der følger din færden på nettet med henblik på at annoncere til dig. Her kan du klikke firmaer fra, inklusiv Facebook, på listen. Det samme kan gøres via &quot; www.disconnect.me &quot;, hvor du downloader et program, der vil afsløre de firmaer, der overvåger dig, og give dig mulighed for at blokere dem.Du kan også køre pilen over annoncerne på Facebook, hvorefter du kan vælge at slå dem fra og blokere dem, et firma ad gangen. Så kan du selv vælge, hvilke reklamer du har lyst til at kigge på.Hvis du ønsker at slippe fuldstændigt for annoncer og reklamer, så skal der skrappere metoder i brug. Der findes flere gratis tjenester til formålet, og et par af de mest udbredte er &quot; www.adblockplus.org &quot; og &quot; www.adblockfast.com &quot;. Siderne kan blokere for både de skjulte cookies og for reklamer, men til gengæld kan brugen af &quot;adblock&quot; i visse tilfælde gå ud over brugervenligheden og udseendet på Facebook.
+        </div>
+        <footer>
+          <em>JP.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2016-01-14
+          &nbsp;·&nbsp; e574adc5
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.856</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.722</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.587</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>16 FEDE FIF</h4>
+        <div>
+          Lyv så det driverOpgiv ikke dine rigtige eller fulde informationer på gratis tjenester som Gmail eller YouTube. Det er ikke ulovligt, og du skylder dem ikke noget.De plyndrer dig alligevel for data. Nøjes med dele af dit navn, eller kald dig noget andet. Ændr også din fødselsdato på Facebook, ellers har du frivilligt afgivet en stor del af dit CPR-nummer, og sammen med dit fulde navn gør det dig sårbar over for identitetstyveri.Gå på biblioteketDer må ikke laves logning på hverken bibliotekets stationære computere eller trådløse netværk, så det er et godt sted at gå hen og søge information, som du ikke vil have bliver registreret om dig.Der er dog et filter, som blokerer for adgang til bestemte sites for at undgå hacking og piratkopiering. Biblioteksloven er skrap, og der må ikke gemmes informationer om, hvilke bøger du har lånt.Beskyt dit domicilDit navn er allerede på nettet, og så kræver det ikke mere end en tur forbi en søgemaskine som krak. dk for at finde din adresse og dit telefonnummer. Hvis du vil undgå, at alle og enhver kan forbinde dit digitale liv med dit privatliv, skal du søge om navne-og adressebeskyttelse hos din kommune.Det er stadig nødvendigt at henvende dig til firmaerne bag søgemaskinerne for at få slettet dine oplysninger. Eniro står bag Krak og De Gule Sider, og TDC står bag 118. dk.Del med omtankeOveralt på nettet og i særdeleshed på Facebook skal du tænke over, hvad du deler, og hvem der har adgang til det.Del kun billeder, statusopdateringer og andet indhold med venner, og accepter kun venner, som du ved, hvem er.Facebook lagrer automatisk dit indhold og kan sælge ud af det, men med et program som Tinfoil for Facebook kan du undgå, at der lækkes oplysninger om din gøren og laden på det sociale medie.Programmet er til mobile enheder, og samtidig kan du skrive beskeder direkte fra programmet og dermed slippe for at bruge Facebook Messenger.Tal sikkertTelefonopkald registreres og lagres systematisk, men med en app som RedPhone til Android kan du kryptere forbindelsen, når du ringer via wifi eller datanetværk. Det kræver, at modtageren også har programmet. Det er udelukkende til taleopkald, så der er ikke mulighed for video, som det kendes fra Skype eller Facetime.Sms sikkertOgså sms'er kan sendes i krypteret form, så uvedkommende ikke kan opsnappe din kommunikation. Med Textsecure og Signal til henholdsvis Android og iPhone kan du gratis sende sms'er via wifi eller datanetværket på din smartphone. Modtageren behøver ikke at have programmet for at modtage sms'erne, og du kan vedhæfte billeder og andre filer, som du kender det fra eksempelvis iMessage til iPhone.Chat sikkertPopulære apps som Facebook Messenger, WhatsApp og Viber til såkaldt instant messaging er fra store firmaer, som først og fremmest har øje på indtjeningen og ikke brugernes ret til privatliv. Et alternativ er Cryptopcat, der krypterer din chat med vennerne.Også schweiziske Threema tilbyder krypteret chat til både Android og iPhone.Drop kameraetTillad kun adgang til mobilens kamera til de apps, der virkelig har brug for det.Det kan slås fra under indstillinger og anonymitet. Slå også geolokalisering fra, når du tager billeder, så undgår du, at Facebook kan gemme oplysninger om, hvor i verden du har været, hvis du uploader billeder på det sociale medie.Kameraet på din laptop er sårbart over for angreb fra hackere, der kan fjernstyre det og optage med det, uden du ved det. Sæt et lille klistermærke over kameraet for at være helt sikker.Ryst forfølgerne af digNår du er på farten, sladrer din smartphone konstant om, hvor du er. Gør arbejdet sværere for forfølgerne ved at slå gps-funktionen fra. Gps er kun strengt nødvendigt til apps med kort-funktion. Aktiver også kun wifi, når du bruger det. Trådløse netværk på offentlige steder kan registrere serienummeret på din mobil, også selv om der ikke er oprettet forbindelse til netværket.Opdag overvågerneFor at sikre din sikkerhed og dit privatliv på nettet, er det en fordel at vide, hvem du er oppe imod. Med programmet Disconnect kan du se, hvilke oplysninger der bliver opsnappet om dig, når du besøger forskellige hjemmesider, og du kan blokere cookies eller skadelig malware. Ghostery, der kan tilføjes som en udvidelse til din browser, virker på samme måde.Dræb virusVirus, malware og andet skidt findes overalt på nettet, og de skadelige koder udvikles mere og mere sofistikeret for at tilluske sig adgang til din computer.Modsvaret er et velafprøvet anitivirusprogram, og det behøver ikke at koste noget. Programmer som Avira, AVG og Avast er gratis og virker både til pc, mac, mobiler og tablets.Opdater, opdater, opdaterGammel software gør dig sårbar over for hackere, fordi det har ' huller', som fjendtlige programmer kan trænge igennem. I de nyeste opdateringer til programmer som Java og Adobe Flash Player er de kendte sikkerhedshuller lukket, men det er tidskrævende og uoverskueligt at holde alle programmer opdateret. Programmet Heimdal fra danske CSIS sparer dig for besværet og sørger automatisk for, at alle dine programmer er up to date.Brug uafhængig browserHvis du bruger Chrome fra Google eller Safari fra Apple til at surfe på nettet, stabler du frivilligt ovenpå den bunke af oplysninger, som de store firmaer i forvejen har om dig. Browseren Firefox er drevet af brugerne og sætter privatlivet i højsædet. Den kan blandt andet indstilles til at slette alle oplysninger, når du logger af. Såkaldte private faner kan bruges til at surfe uden at gemme historikken, men gør derudover ikke meget for at sikre privatlivet.Slør din søgningLigesom alle andre tjenester fra Google gemmer den populære søgemaskine oplysninger om, hvad du foretager dig på nettet. Der findes andre søgemaskiner, som tilbyder privat søgning, men deres algoritme er anderledes end den, du kender fra Google, og kan derfor virke mere besværlige at bruge. En søgemaskine som DuckDuckGo giver dig mulighed for at tilpasse dine søgeindstillinger.Send krypteret mailGmail sladrer om dig til Google, og danske mail-tjenester er underlagt logningsbekendtgørelsen, så det bliver registreret, hvem du sender til, hvor du er, og hvad der står i emnefeltet. Det sikre alternativ er krypteret mail, hvilket tilbydes af blandt andet ProtonMail. Det nye projekt Ghostmail har it-sikkerhedsekspert Peter Kruse blandt udviklerne og tilbyder ud over kryptering mail, der i bedste Mission Impossible-stil destruerer sig selv.Styrk dit passwordDet er digital børnelærdom, men alligevel slækker alt for mange på sikkerheden og bruger fødselsdatoer, navnet på barnet eller hunden eller andet gennemskueligt som password.Grundreglen for et stærkt password er: mindst otte karakterer, brug både små og store bogstaver og tal og specialtegn.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2015-05-12
+          &nbsp;·&nbsp; e506f636
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.674</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.51</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.625</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook kan koste dig lånet</h4>
+        <div>
+          Ryd ud i de upassende billeder og halvkriminelle venner på facebook. Din opførsel på nettet kan nemlig snart afgøre, om du kan låne penge eller ej.Alt data er kreditdata: Hidtil har lønsedler og forbrug været udslagsgivende, når banken skal afgøre, hvor meget du kan låne til et nyt hus eller bil, men den teknologiske udvikling betyder nu, at en lang række andre oplysninger kan få betydning, når du skal kreditvurderes.I USA er flere udlånsvirksomheder som ZestFinance og LendUp begyndt at bruge såkaldt big data til at vurdere, om deres potentielle låntagere er kreditværdige. Ved hjælp af avancerede algoritmer vurderer selskaberne, om din opførsel skaber et billede af en god betaler.Et eksempel kan være, om du har en tendens til ikke at betale dine elregninger til tiden, eller om du ofte skifter telefonnummer. Gør du det, kan det være en indikator på, at du bruger taletidskort uden at forny det, hvilket kan få de røde advarselslamper til at lyse hos udlånsvirksomheder.Også dine profiler på sociale netværk som Facebook kan få en afgørende betydning for, om du kan få et lån.Dine venner på Facebook, samt de sider du følger og synes godt om, siger nemlig ikke alene noget om dig som person - det siger også, om du er tilbøjelig til at tilbagebetale dit lån. Senest har Facebook taget patent på en teknologi, der skal bruges til kreditvurdering.
+        </div>
+        <footer>
+          <em>Penge.dk</em>
+          &nbsp;·&nbsp; 2015-10-12
+          &nbsp;·&nbsp; e5421f5d
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.731</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan får du igen lokale nyheder på Facebook</h4>
+        <div>
+          En ændring i Facebook betyder, at de seneste nyheder fra Dagbladet ikke længere popper automatisk op i dit nyhedsfeed. Men heldigvis er der gode råd, at hente...vestjyllandMåske har du allerede undret dig, måske har du slet ikke lagt mærke til, at der er sket noget.Men er du én af de mange vestjyder, der dagligt tjekker din Facebook-profil, er der alligevel sket noget. I slutningen af juni offentliggjorde det sociale netværk nemlig, at det havde ændret på den algoritme, der bestemmer hvilke nyheder og opslag, der er synlige i hver enkelt brugers personlige nyhedsoversigt.En ændring, der opprioritere opslag fra venner og familie, mens du sjældnere og sjældnere vil se artikler, billeder og videoer fra professionelle medier, heriblandt Dagbladet.Gode råd at henteMen bare rolig, det betyder ikke at du i fremtiden må undvære at få de lokale nyheder serveret, når du surfer rundt på Facebook.Det kræver bare, at du selv går ind og aktivt tilvælger, at få nyheder fra Dagbladet. Her kommer en trin for trin guide til, hvordan du gør:1. Gå ind på Dagbladet Holstebro-Struers Facebook-side, som kan søges frem i søgefeltet, eller ved at skrive https://www.facebook.com/netavisen/ i din internetbrowser.2. Tjek først, at du allerede har klikket på knappen »Synes godt om«. Det er den første forudsætning for overhovedet at få nyheder fra Dagbladet.facebook_guideFoto: Morten Strægaard3. Dernæst skal du klikke på »Synes godt om«-knappen (hvis du sidder ved en computer skal du bare holde musen henover den), og klikke der, hvor der står»Se først«.Nu skulle du igen få dine nyheder direkte ind i din nyhedsstrøm på Facebook sammen med naboens feriebilleder og onkel Gerts opslag om hans fatale besøg hos tandlægen. God fornøjelse!
+        </div>
+        <footer>
+          <em>Dagbladet-Holstebro-Struer.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-07-12
+          &nbsp;·&nbsp; e5cc5164
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.823</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.848</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.719</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tag med din mobil på ferie</h4>
+        <div>
+          Her er 12 gratis apps til iPhone og Android, som gør sommeren nemmere og sjovere.Alle apps i guiden er gratis og findes både til Android og iOS. Find dem i App Store eller på Google Play ved at søge på navnet.PackPointAndroid/iOSADVERTISINGKan du aldrig overskue, hvad du skal have med i bagagen, når du tager på ferie? Så kommer PackPoint til undsætning. Du vælger din destination og tidspunktet for rejsen i app-en, hvorefter du bliver spurgt, hvilke aktiviteter du planlægger. På den baggrund foreslår app-en en liste med ting, som passer til netop din rejse. Du kan så vælge til og fra, og derefter uploade en færdig pakkeliste til f.eks. Evernote eller Facebook. Eller du kan sende den til dig selv som mail.Field TripAndroid/iOSHvis du har denne app installeret på din mobil, får du automatisk besked, når der er en interessant attraktion i nærheden. Det kan være alt lige fra butikker og restauranter til museer og historiske mindesmærker. App-en indeholder korte beskrivelser af de forskellige attraktioner, som man ovenikøbet kan få læst op, hvis man har et par hovedtelefoner eller et Bluetooth headset koblet til mobilen.LÆS OGSÅ:10 ting, Apple ikke fortalteGetMyBoatAndroid/iOSDer er ikke noget så skønt som at komme ud på vandet på en varm sommerdag. Men hvis du ikke lige har din egen båd, kano eller lignende, kan det være lidt svært. Eller  det kan også være let, for med GetMyBoat får du lynhurtigt overblik over, hvor der er både til leje i nærheden.GetMyBoat er simpelthen Airbnb for bådejere og for dem, der gerne vil leje en båd for en time, en dag eller en uge. App-en virker i 135 forskellige lande, så chancerne for, at den kan hjælpe dig til en tur på bølgerne, er store, næsten uanset hvor du måtte befinde dig.Bandsintown ConcertsAndroid/iOSEn fed koncert er ekstra fed, hvis den foregår udendørs om sommeren, og med Bandsintown er der nærmest statsgaranti for, at du kan finde koncerter med netop dine yndlingsbands, uanset hvor du befinder dig. App-en starter med at scanne dit musikbibliotek og dine kontakter, og du får så koncertanbefalinger i app-en baseret på din fysiske placering, din musiksmag osv. Du kan også se populære koncerter i området   eller hvilke koncerter dine venner skal til i nær fremtid.TripItAndroid/iOSHold styr på alle dine flybilletter, hotelreservationer, lejebiler, og hvad der nu ellers skal til for at få en fantastisk sommerferie. Den store fordel ved app-en er, at den samler alle disse oplysninger ét sted. Det eneste, du skal gøre, er at videresende e-mails med bekræftelser på fly, hotel osv. til én bestemt e-mail-adresse, så tager TripIt sig af resten.MomondoAndroid/iOSHvis du skal finde de bedste og billigste flybilletter til dit yndlingsferiemål, gør du klogt i at bruge en specialiseret søgemaskine. Dem findes der nogle stykker af, men den bedste er utvivlsomt Momondo. Her har du mulighed for at søge blandt stort set alle flyselskaber i hele verden og sammensætte din tur efter lige netop dine præferencer ved hjælp af en lang række filtre. Momondo kan også bruges til at finde de bedste priser på hoteller.LÆS OGSÅ:OnePlus 3 er en realitetYelpAndroid/iOSDer findes masser af apps, som kan guide dig til de bedste oplevelser på dit bestemmelsessted, men hvis du skal finde en god restaurant, bar eller café, er Yelp det bedste bud. Yelp kender stort set alle restauranter, uanset hvor du end måtte befinde dig, og app-ens største fordel er det store antal brugere. Det betyder nemlig, at selv de mindste restauranter typisk har fået mange brugeranmeldelser, hvilket gør det lettere at finde de gode steder og undgå de værste turistfælder.AirbnbAndroid/iOSHimmerige for udlejning af værelser, lejligheder og sommerhuse   uanset om du vil finde et sted at bo, mens du er på ferie, eller du vil udleje din lejlighed eller dit sommerhus til andre, mens du ikke er hjemme. Der er over 1,5 millioner opslag på Airbnb, og app-en bruges over hele verden. Den nemmeste og mest sikre måde at finde en feriebolig på, hvis du ikke gider bo på hotel!Google TranslateAndroid/iOSDet er efterhånden spild af tid at lære sprog i skolen, for apps med kunstig intelligens kan maskinoversætte mellem snart sagt alle sprog i verden. Langt den bedste er Google Translate, som ikke blot kan oversætte tekst, men også tale, hvis du taler ind i mobilens mikrofon. Du kan tilmed tage et billede af f.eks. en menu, og så kan app-en oversætte teksten fra billedet til dit eget sprog. Nærmest uundværlig på rejsen, hvis du vil undgå at kaste dig ud i alt for eksotiske retter.FoodspottingAndroid/iOSEn alternativ måde at finde gode spisesteder på rejsen. Her er fokus nemlig på konkrete retter i stedet for restauranter. App-en registrerer din placering og viser dig så billeder af lækre madretter, der kan købes i nærheden. Du kan gemme interessante retter som bogmærker og selv bidrage med billeder af mad. Det er nemlig brugerne selv   ægte foodies   der leverer indholdet til Foodspotting.LÆS OGSÅ:Netflix snar klar med offline-indholdOpenTableAndroid/iOSEn mere traditionel måde at finde en god restaurant på er med OpenTable, men denne app er ikke bare en søgemaskine for gode spisesteder, den kan også bruges til at reservere bord, hvis du finder noget, der frister. Et meget stort antal restauranter i hele verden er forbundet med OpenTable, så når du først er logget ind i app-en, kan du reservere et bord direkte fra mobilen med et enkelt tryk med fingeren.Geocaching ClassicAndroid/iOSGeocaching er en moderne form for skattejagt, hvor man ved hjælp af en GPS-modtager finder såkaldte caches, som er gemt forskellige steder over hele verden. En cache er sædvanligvis en beholder   alt fra gamle ammunitionskasser til bittesmå æsker på størrelse med et fingerbøl   indeholdende en masse småting af ringe værdi, som findere af cachen kan bytte ud med andre ting, som de selv har med. Det er en aktivitet, som børn elsker, og det eneste, du skal bruge, er en mobiltelefon og denne app!Partner:Denne artikel er blevet til i samarbejde med magasinet om forbrugerelektronik Lyd &amp; Billede.Læs flere nyheder og test om gadgets og elektronik til hjemmet på lydogbillede.dkDer findes mange apps, der kan gøre din sommerferie meget nemmere. Fotos: Screenshots.Der findes mange apps, der kan gøre din sommerferie meget nemmere. Fotos: Screenshots.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-07-02
+          &nbsp;·&nbsp; e5c90828
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.84</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.728</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Beskyt din personlige data med et &quot;USB-kondom&quot; i det offentlige rum</h4>
+        <div>
+            I dag kan man overalt ude i det offentlige rum finde USB-ladestationer. Det gælder cafeer, resturrenter, lufthavne og busser m.m. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-01-22
+          &nbsp;·&nbsp; e78c858a
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.64</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.665</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.506</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske Corti vinder fornem pris</h4>
+        <div>
+            Digitaleurope har udnævnt det danske Corti som vinderen af deres The Future Unicorn Award, skriver de i en pressemeddelelse. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-02-07
+          &nbsp;·&nbsp; e791e5c7
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.598</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.527</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Grazper Technologies solgt til Japansk selskab</h4>
+        <div>
+            Det danske AI-softwarefirma Grazper Technologies er blevet solgt det børsnoteret japanske firma Yokogawa Electric Corporation, skriver Promentum Equity Partners i en pressemeddelelse. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-03-26
+          &nbsp;·&nbsp; e7a3a74b
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.522</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.525</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Appen forudser din adfærd</h4>
+        <div>
+          Din smartphone er ikke så klog, som du tror. Jeg vil vædde på, at stort set alle de apps, du bruger, er reaktive - du kommer i tanke om noget, som appen kan hjælpe med, hvad end det er at finde vej til et møde eller slå 10 minutter ihjel i toget, og du hiver mobilen frem for at løse problemet. Det lyder mere som en dumbphone end en smartphone.Men hvad hvis din telefon vidste, hvad du har brug for, inden du selv gør? Det er en række nye apps begyndt at grave i, og en af dem hedder Agent.Agent er lidt som at have en personlig assistent, der kigger med i dine e-mails, holder øje med din kalender og ved, hvor du befinder dig og hjælper dig, uden du har bedt om det. Når først du har installeret Agent, er ideen faktisk, at du ikke har brug for at åbne den igen.Den ved, at du kører bilIndtil videre har Agent fem funktioner. Når batteriet på din telefon ryger under 10 procent, dæmper den automatisk skærmens lysstyrke og slår Bluetooth fra for at spare på strømmen. Har du en aftale i din kalender mellem kl. 8 og 18 på en hverdag, sætter den straks din telefon på lydløs, så du ikke bliver forstyrret af en skinger ringetone under et vigtigt møde.Når det er ved at være sengetid, sætter den ligeledes telefonen på lydløs, hvis du ikke har brugt den i 20 minutter, så du ikke bliver vækket af en irriterende sms fra en fordrukken ven.Og opdager appen, at du pludselig bevæger dig hurtigere end 40 km/ t., ved den, at du formentlig kører i bil og læser derfor nye sms'er højt for dig, så du ikke bliver distraheret af at kigge på skærmen.Samtidig sender den et autosvar til folk om, at du kører bil og svarer tilbage snarest. Og når du så stiger ud af bilen, noterer appen, hvor du har parkeret, så du hurtigt kan finde din bil igen.Fra manuelt til automatisk gearFunktionerne i Agent alene får dig næppe til at falde ned af stolen af ren og skær begejstring, men faktisk er den overordnede ideologi ret banebrydende - nemlig, at det er telefonen, der forudsiger, hvad du vil gøre, inden du gør det.»I det store billede handler det om, at hvis din telefon vidste, hvad du lavede, og hvem du var sammen med, burde den kunne gøre nogle ting lidt smartere,« siger Kulveer Taggar, idémanden bag Agent.Han forklarer, at smartphones i dag stadig sidder fast i manuelt gear, og Agent er et forsøg på at skifte til automatgear.»Målet med appen er at gøre folk 10 pct. mere produktive pr. dag. Der er så mange ting, vi gør hver eneste dag, som nemt kan automatiseres,« siger han.Agent er ikke den eneste, der forsøger sig med spåkoneagtige apps. Google Nu (der er en del af appen Google Søgning), Tempo AI, IFTT (der står for If This Then That) og Tasker har alle sammen lignende funktioner, der sætter sig for at automatisere nogle af dine trivielle hverdagsopgaver.Kulveer Taggar fortæller, at Agent arbejder på, at appen i fremtiden kan se, at du snart har et nyt møde og automatisk ringer efter en taxa til dig eller scanner trafikken og giver dig besked om, at du skal tage af sted en halv time tidligere end normalt for at nå din aftale, ligesom de også arbejder på at have autosvar, der fortæller din kone, at du er midt i et møde, når hun ringer, så hun ikke tror, at du ignorerer hende.På med sølvpapirshattenAgent gør brug af mange af de sensorer, de fleste smartphones allerede har indbygget - den bruger gps til at fastslå, hvor du befinder dig, og til at minde om, hvor du har parkeret. Den bruger gyroskopet til at fastslå, om du pludselig bevæger dig markant hurtigere for at konkludere, at du nok kører bil nu, og den tjekker din kalender for aftaler.Men al den overvågning er kontroversiel, og hvis man skal tage sin sølvpapirshat på, så er det værd at overveje, hvor mange oplysninger om ens liv, man er villig til at overlade til en mobiltelefon, der kan hackes og blive stjålet.Kulveer Taggar forstår den bekymring og forsikrer, at Agent beskytter brugernes oplysninger.Omvendt er han også overbevist om, at apps som Agent er fremtiden.»Jeg tror blot, at det her er begyndelsen på en ny æra, hvor apps begynder at forstå en kontekst og kan forudsige din adfærd,« siger han.tempo@jp.dk hello@solemoller.comFakta: AGENTAgent fås indtil videre kun til Android, da Apple har strenge regler for, hvor meget en app kan ændre på iPhonens indstillinger.En iOS-version skulle dog være på trapperne.Se mere på www.tryagent.com.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2014-06-27
+          &nbsp;·&nbsp; e47711a3
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.903</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.678</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.666</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Videnskabeligt selvmål i USA, en mulighed for Europa</h4>
+        <div>
+            Vi ser tilbage på ugen, der er gået. At tiltrække de rigtige talenter - til industri og universiteter - er en af de kritiske ingredienser, hvis europæiske virksomheder og forskere skal være i front på AI.Men som det ser ud i dag ender over en fjerdedel af AI-talenter uddannet i Europa med at arbejde i USA. Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-06-26
+          &nbsp;·&nbsp; e7c4cb8b
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.621</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.572</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.523</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil være din samvittighed, når du er stangstiv</h4>
+        <div>
+          Algoritmer skal skanne og genkende dine pinlige fulde-billeder på Facebook og advare dig, inden du offentliggør dem.Fadøllen svajer, dine øjne er røde og glinsende af cigaret-røg og toppen på din fjollede nissehue blinker ivrigt i natten.&quot;Klik,&quot; siger smartphonen, da du tager en selfie.Men da du efterfølgende vil uploade billedet på Facebook, får du en atypisk advarsel: &quot;Hov! Det her bliver lagt ud offentligt. Er du sikker på, at du vil have, at din mor skal se det?&quot;Facebook er allerede i stand til at genkende ansigter på billeder, ved brug af såkaldt deep learning-teknologi, så det er lettere at tagge dem. At få deep learning-teknologi til at finde ud af om folk er fulde eller sobre kan blive enormt praktisk, mener forskeren Yann Lecun, der ikke er hvem som helst. Han har ansvaret for Facebooks laboratorium for kunstig intelligens.Yann Lecun leder nu en gruppe forskere, der nu arbejder på at gøre den &quot;digitale assistent&quot;, der advarer dig om fulde-billeder, til en realitet. Det vides endnu ikke, hvor lang tid arbejdet vil tage.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2014-12-12
+          &nbsp;·&nbsp; e4b81a3e
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.726</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.724</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.511</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.619</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan renses din pc for malware</h4>
+        <div>
+          Hvis din pc opfører sig underligt, kan malware være synderen. Læs her, hvordan du med særlige programmer som HitmanPro kan rense ud i de ondsindede filer.Dine sikkerheds-programmer står altid i forreste linje, når det gælder bekæmpelsen af internet-trusler. Vira eller trojanske heste vil næsten helt sikkert blive fanget, mens mere udspekuleret malware falder gennem nettet. Vi vil normalt ikke anbefale at bruge to slags sikkerhedsprogrammer på en gang, men HitmanPro er et fantastisk værktøj, hvis du vil have en sekundær vurdering.LÆS OGSÅ Sådan overfører du filer til en ny computerHitmanPro har et adfærds-scanner-værktøj, som tjekker din computer for mistænkelige filer. Finder det filer, der er klassificeret som mistænkelige, sender programmet en anmodning til Scan Cloud, som vurderer om filerne er skadelige eller ej. Hvis filen er ukendt, uploader HitmanPro filen til Scan Cloud, hvor den skannes af antivirus-programmer fra fem forskellige leverandører.1. Start med at installereHitmanPro er gratis i en måned og kan downloades fra www.surfright.nl/en. Under installationen kan du vælge at scanne din computer ved start. Du bør benytte dig af denne mulighed. Du kan køre programmet direkte fra en USB-dongle, en cd/dvd, en lokal harddisk eller et NAS-drev. Det behøver ikke være installeret på pc'en.br/2. Automatisk fjernelseVælg knappen &quot;Next&quot; i installationsvinduet og i vinduet med licensbetingelserne. Som standard begynder en &quot;quick scan&quot;, som gennemgår din computers mapper for irriterende malware. Hvis du ser &quot;Delete failed&quot; på listen over identificerede filer, skal du lukke din webbrowser.br/LÆS OGSÅ Hold data sikre med partitioner3. Gem statusrapportenNår scanningen er færdig, vil programmet fjerne enhver browsersporingscookie og advare dig, hvis det har fundet andre trusler. Det samlede antal scannede objekter og tidspunktet for scanningen vises i bunden. Gem rapporten ved at klikke på linket &quot;Save Log&quot; i nederste venstre hjørne af vinduet. Klik til sidst på &quot;Close&quot;.br/4. Slet uønskede programmerNår scanningen er færdig, skal du vælge &quot;Settings&quot;. Her findes en indstilling, der hedder &quot;Scan for Potential Unwanted Programs (PUP)&quot;, som allerede valgt. Derunder findes en rullemenu. Vælg &quot;Delete&quot;, hvis du ønsker, at HitmanPro automatisk skal fjerne tilføjelser til browserens værktøjslinjer fra installationer af andre programmer.br/5. Vælg dine scanningspræferencerUnder fanen &quot;Scan&quot; kan du ændre, hvordan HitmanPro scanner din pc. Ud over de sædvanlige muligheder såsom udførelsen og typen af scanninger kan du forhindre scanninger af andre scanningsprogrammer. Eller du kan med &quot;Scan With HitmanPro&quot; få scannet filer og mapper iWindows Stifinder.br/LÆS OGSÅ Åbn filer i dine favoritprogrammer6. Hurtige kommandoerDu kan også bruge HitmanPro fra kommandolinjen. Klik på &quot;Start&quot;, og find kommandoprompten. Skriv &quot;C:\Program Files\HitmanPro\HitmanPro.exe&quot; efterfulgt af en kommando (såsom / scan). En nyttig kommando er / fb (Force Breach tilstand), som afslutter ikke-væsentlige processer. Find en kommandoliste på http://ss64.com/nt.br/7. Udforsk de avancerede funktionerUnder fanen &quot;Avanced&quot; ser du en indstilling kaldet &quot;Disk Mode&quot;. Ved at sætte den til &quot;Direct disk access (recommended)&quot; vil HitmanPro scanne din pc, når du starter Windows . I sektionen VirusTotal kan du vælge at bruge HitmanPros partner VirusTotal, som analyserer filer eller URL'er. Tilmeld dig i HitmanPro ved hjælp af linket.br/8. Opret en kickstarterKlik på ikonet &quot;Kickstart&quot; på hovedskærmen. Indsæt en USB-dongle, når du bliver bedt om det. Vælg fra listen, og klik på &quot;Install Kickstart&quot;. Du bliver advaret om, at USB-donglen skal formateres, før programmet kan installeres. Dette vil slette alt på USB-donglen, så sørg for at den ikke indeholder noget vigtigt.br/9. Befri din pcDu kan støde på malware, der holder din pc som gidsel ved at kryptere dine data, indtil du betaler et gebyr. Slip for det ved at indsætte USB-donglen, åbne boot-menuen i BIOS, og vælge donglen. Du har to måder at starte på. Standardindstillingen springer master boot record over, så du kan starte Windows og køre HitmanPro.br/10. En sikker fornemmelseSkal du fjerne en trussel fra din pc, må du købe det fulde produkt, men du kan stadig bruge VirusTotal. Scanning med HitmanPro kan planlægges til bestemte tidspunkter. Vil du hellere bruge WindowsOpgavestyring, skal du åbne Kontrolpanel &amp;gt, System og sikkerhed &amp;gt, Administration og dobbeltklikke på &quot;Opgavestyring&quot;.br/LÆS OGSÅ Test selv din computerOrdknuserMalwareEn fælles-betegnelse for ondsindet software. Ordet dækker enhver form for trussel, men her bruger vi det i betydningen ondartede programmer ud over vira og trojanske heste. Programmer, som primært spredes via internettet.ProxyEn server, der via nettet fungerer som &quot;mellem-mand&quot; mellem din pc og en slut-destinationsserver. Proxyservere bruges mest til at hjælpe en pc med at få adgang til servere, som den normalt ikke har adgang til.AdfærdsscanningVed hjælp af en serie smarte algoritmer (formler) er det muligt for nogle programmer at identificere filer og programmer, som udgør en trussel. Også selv om programmerne i første omgang ikke virker specielt mistænkelige.Program-indstillingerDe mest basale indstillinger. Det er her, du sætter HitmanPro til at scanne for eventuelle tilføjelses-programmer, der forsøger at installere sig selv uden din godkendelse.ScanningsindstillingerHer planlægger du en scanning for malware. Det minder om en almindelig antivirusscanning med dit sikkerhedsprogram.ScanningshistorikPotentielt skadelige elementer bliver placeret i området Quarantine under denne fane. Under fanen Log vises detaljerede oplysninger om programmets scanninger.ProxyindstillingerDu kan ændre på proxy-indstillinger for HitmanPro. Som standard bruges Internet Explorer, men bruger du forskellige muligheder, når du browser på nettet, indtaster du dem her.Advancerede indstillingerEr en fil i karantæne, kan du bruge VirusTotal at tjekke den online. Alternativt aktiverer du EWS (Early Warning System), men det er kun for eksperter og kan forstyrre din pc's opstart.Scannerværktøjet HitmanPro tjekker computeren for mistænkelige filer. Foto: Datatid.Scannerværktøjet HitmanPro tjekker computeren for mistænkelige filer. Foto: Datatid.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2014-06-08
+          &nbsp;·&nbsp; e46ff866
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.815</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.993</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Få danske virksomheder har for alvor greb om i de nyeste teknologier</h4>
+        <div>
+          Forestil dig, at varer ikke længere skal tilbringe otte uger om bord på et gigantisk forurenende containerskib, men kan blive 3D-printet til dig lige rundt om hjørnet. Eller tænk hvis du kan spore dine produkter tilbage til underleverandørne ved hjælp af blockchain-teknologi.Savner du den indsigt, der gør dig i stand til at se de nyeste teknologier i et forretningsmæssigt perspektiv? Tech Management er mediet om ledelse, forretning og teknologi for bestyrelsesmedlemmer, direktører og strategiske ledere i særligt de små- og mellemstore virksomheder.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-08-13
+          &nbsp;·&nbsp; e74ce579
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.614</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.957</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.558</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.511</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>RUC-forskning modtager 10 mio. kroner fra Carlsbergfondet</h4>
+        <div>
+            Carlsbergfondet tildeler 10 mio. kroner til et nyt Semper Ardens-projekt, der har professor Lone Simonsen fra RUC i spidsen, skriver universitetet. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-03-25
+          &nbsp;·&nbsp; e7a3563d
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.548</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Test dig selv: Se her hvad dine Facebook-likes siger om dig</h4>
+        <div>
+          Nu kan forskere definere din personlighed ud fra dine likes på Facebook. Prøv det.De har fået 58.000 frivillige Facebook-brugere til at fortælle stort set alt om sig selv i adskillige test, og samtidig har de kørt Facebook-brugernes likes igennem algoritmen.De 58.000 Facebook-brugere har så kunnet rette forkerte resultater, så algoritmen blev bedre og bedre, og til sidst kom den ud med resultater, der for nogle persondata har en træfsikkerhed på 95 procent.På andre områder er den mindre træfsikker. Når det gælder din politiske observans, er den på 85 procent. Med 95 procents sikkerhed kan den fortælle, om du er sort eller hvid, mens sandsynligheden for, at den rammer rigtigt på spørgsmålet om du er homo- eller heteroseksuel er på 88 procent.Forskerne holder ikke deres algoritme for sig selv. De har oprettet en hjemmeside, der kan analysere, hvad dine likes siger om dig. Om du er til at stole på, om du er udadvendt eller reserveret, og om du er rolig eller ligefrem neurotisk.Du skal bare gå ind på siden og så fra siden logge ind på din Facebook-konto. Det tager ingen tid, og du skal ikke besvare nogen spørgsmål. Beregningsprogrammet går selv ind på din Facebook-konto og høvler den igennem for dine likes.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2013-03-15
+          &nbsp;·&nbsp; e3b4c655
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.574</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.593</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.619</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI skal udvikles bæredygtigt for at minimere miljøaftryk</h4>
+        <div>
+          Det koster på energiregningen, når vi udvikler mere komplekse modeller for kunstig intelligens. Vi er nødt til at integrere bæredygtighed i udviklingen af AI for at sikre, at en fremtidig bred anvendelse af teknologien vil udgøre en minimal belastning for miljøet- Af Michael Birkebæk Jensen, Director og NewTech Lead i KPMG Danmark &amp; Sebastian Mira, seniorkonsulent i NewTech, KPMG Danmark. Vil du have fuld adgang til DataTech? Vi oplever i øjeblikket tekniske udfordringer. Kan du ikke læse indholdet, selvom du er logget ind, bedes du logge ud og ind igen. Ellers er du altid velkommen til at kontakte os på pro@ing.dk DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2020-06-25
+          &nbsp;·&nbsp; e7c458ef
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.795</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.614</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan får du adgang til tusindvis af skjulte serier og film på Netflix</h4>
+        <div>
+           Udbuddet af film og serier på Netflix ser enormt ud. Men det er vand ved siden af alle de serier og film, folk med Netflix-abonnementer i andre lande kan se. Forklaringen er, at Netflix tilpasser sit indhold til hvert land, og mens vi herhjemme i Danmark må nøjes med omkring 342 serier og 1.764 film, har amerikanerne hele 1.326 serier og 4.339 film til rådighed ifølge Finder.com. Heldigvis behøver du ikke tage hele vejen til USA for at se det samme som amerikanerne. Det kan, helt lovligt, klares med en såkaldt VPN. Ud over at beskytte dig mod hackere osv. får en VPN det til at se ud, som om du sidder i en andet land. Og dermed kan du omgå Netflix' geografiske begrænsninger af indholdet. Det skal understreges, at metoden er fuldt ud lovlig. Vpnxpert.com anbefaler PureVPN* til formålet. Bemærk, at dansk tale og undertekster i sagens natur ikke er tilgængelige, når du ser Netflix via VPN. Sådan ser du Netflix via VPN: Gå til PureVPN.com* Vælg &quot;Få PureVPN nu&quot;. Vælg den ønskede abonnementslængde på PureVPN. Jo længere en periode du vælger, desto billigere bliver det. Køber du eksempelvis et års abonnement, får du det til 3,33 dollars om måneden. Det svarer til omkring 22 danske kroner om måneden. Hele perioden betales på én gang. Vælg betalingsmetode, udfyld felterne og gennemfør betalingen. Download og installer PureVPN-programmet på din enhed. Åben programmet, og log ind med de tilsendte oplysninger. Vælg &quot;Stream&quot; &quot;mode&quot; og vælg det land på listen, du vil forbinde til. Vil du se amerikansk Netflix, forbinder du til en server i &quot;United States&quot;, vil du se britisk Netflix, forbinder du til &quot;United Kingdom&quot; osv. Tryk &quot;Connect&quot;. Du kan nu se Netflix, som sad du i det pågældende land. Bare log ind med din Netflix-konto, som du plejer. Hvis du får en fejlmeddelelse om, at du ikke kan se Netflix pga. VPN, kontakter du bare PureVPNs døgnåbne kundeservice via livechat. De hemmelige genrekoder Netflixs algoritmer forsøger efter bedste evne at regne ud, hvad du er interesseret i at se. Bag overfladen gemmer der sig helt ufatteligt mange timers underholdning. Netflix har opdelt al indhold i genrer, der har hver sin kode. Vpnxpert.com har herunder samlet en gigantisk søgbar oversigt over alle Netflix-genrer. Også her kan det være en fordel at eksperimentere med VPN, hvis den genre du vil se indhold fra er geografisk afgrænset.
+        </div>
+        <footer>
+          <em>Sondagsavisen.dk</em>
+          &nbsp;·&nbsp; 2019-09-10
+          &nbsp;·&nbsp; e7563682
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.756</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.684</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.565</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.632</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Overbevisningens kunst</h4>
+        <div>
+          Min seneste klumme gav anledning til mange spændende diskussioner med afsæt i pointen om, at covid-19-krisen giver mulighed for at træffe en række svære og vanskelige beslutninger, da accepten af sådanne beslutninger er større i en krisetid. Det ændrer dog ikke fundamentalt på, at du fortsat skal få overbevist dine mellemledere og medarbejdere om rigtigheden af din beslutning.Omstændighederne omkring covid-19 gør det nemmere og mere acceptabelt, at du træffer beslutningerne, men det betyder bestemt ikke, at du ikke behøver gøre dig umage med at få skabt en dybere forståelse og accept af dine beslutninger.Med andre ord skal du fortsat overbevise andre og påvirke deres grundlæggende forståelse af dine beslutninger.Hvordan lykkes du bedst med det? Det første afgørende spørgsmål, du skal stille dig selv, er, hvordan de må forventes at forholde sig til din beslutning.Vil de være positive, neutrale eller negative? Naturligvis burde der ikke være de store problemer med at overbevise de positive, og de neutrale burde du også kunne formå relativt enkelt at få overbevist, så de store udfordringer opstår typisk over for de kritisk indstillede personer.Det næste spørgsmål er derfor at vurdere, hvad der ligger bag den kritiske attitude. Her er det helt afgørende for overbevisningseffekten, at du både foretager en korrekt vurdering og derefter er indstillet på effektivt at justere din strategi i forhold hertil.Den kritiske indstilling kan inddeles i nogle hovedkategorier med dertilhørende fremgangsmåder: .Det rationelleAt den kritiske attitude er forankret i rationelle overvejelser hos den, der skal overbevises, er en grundantagelse hos rigtig mange ledere. De vælger derfor en overbevisningsstrategi, der er baseret på at bringe fakta, data og rationelle argumenter i spil. Der laves beregninger og objektive analyser, der tydeligt viser hensigtsmæssigheden i beslutningen. Det er i den situation kritisk, at du rent faktisk har styr på dine data og er i stand til at gå grundigt ind i dialogen og diskussionen. Står du over for en person, der er kritisk indstillet med afsæt i rationelle overvejelser, kan du sjældent slippe afsted med alt for generelle og overordnede argumenter og skal være i stand til at dokumentere dine påstande med grundighed og dybde. Hold dig på den rationelle bane, selvom du måtte møde modstand, da argumenter af mere emotionel karakter næppe vil have en positiv effekt på din evne til at overbevise den anden.En udfordring med den rationelle kritiske attitude er dog, at den forekommer sjældnere, end mange ledere antager, forventer og håber på. Når du selv tænker på situationer, hvor du ikke trængte igennem med dine argumenter, vil du ofte indse, at det, du troede var en rationel modstand, rent faktisk var en emotionel eller relationel kritisk attitude, og at dine argumenter derfor ikke havde den ønskede effekt.Det emotionelleDu vil ofte opleve, at en kritisk indstilling over for din beslutning mere er forankret i det emotionelle end rationelle.Du bør derfor spørge dig selv, hvordan andre må forventes at forholde sig til beslutningen ud fra en følelsesmæssig betragtning. Aspekter, der især må forventes at udløse emotionelle reaktioner, er beslutninger, som andre oplever medfører et tab af kontrol, indflydelse, sikkerhed eller prestige.De rationelle argumenter for at indføre robotteknologi, kunstig intelligens og tilsvarende teknologiske løsninger kan fremstå åbenlyse, men sådanne tiltag vil ofte udløse emotionelle reaktioner, da de skaber en usikkerhed hos de mennesker og mellemledere, hvis arbejde påvirkes eller fjernes af teknologien.At starte med en lang række af rationelle argumenter vil sjældent have stor effekt, hvis dem, du prøver at overbevise, føler grundlæggende usikkerhed i forhold til egen rolle og indflydelse fremover. Du bør derfor starte med at lytte til usikkerheden og tvivlen hos andre - og vise en reel forståelse og medfølelse for disse reaktioner samt den situation, som din beslutning stiller de berørte medarbejdere i. Hvis du formår at vise, at du virkelig interesserer dig for andres holdning og reaktioner, øger du sandsynligheden for, at de efterfølgende vil lytte til dine argumenter, herunder de rationelle af slagsen, og derved lade sig overbevise.Det relationelleUd over at vi undervurderer den emotionelle komponent, så overser vi ofte også, hvor meget relationen betyder for vores evne til at overbevise andre.Hvis du derfor forventer, at den kritiske attitude er forankret i din relation til vedkommende, vil dine argumenter, hvad enten du appellerer til det rationelle eller emotionelle, næppe have stor effekt.Hvis din relation til den, du forsøger at overbevise, er problemet, er du nødt til at forbedre relationen, inden du kan gøre dig håb om, at dine argumenter vil have den ønskede effekt. Her kan du ikke skyde genveje, men er nødt til at investere tid og ressourcer i at få skabt en tillidsbaseret relation, der vil give dig retten til at have ret, når du præsenterer dine argumenter.Sæt dig i den andens sted - og sæt dig selv i parentes.Som med så mange andre aspekter af ledelsesrollen er udgangspunktet for at kunne overbise andre, at du formår at sætte dig selv, dine idéer og dine ønsker i parentes og rette fokus mod din omverden. Du skal gøre dig umage med at forstå de mennesker, som du ønsker at overbevise, og derefter være indstillet på at påvirke dem med en fleksibilitet og lydhørhed.&quot; Hvis du formår at vise, at du virkelig interesserer dig for andres holdning og reaktioner, øger du sandsynligheden for, at de efterfølgende vil lytte til dine argumenter.Vores eksperterTue Mantoni Investor og bestyrelsesformand Kai Hammerich Direktør og headhunter Korn Ferry Mai-Britt Poulsen Global Chief of Staff Boston Consulting Group Allan Polack Adm. direktør PFA Pension Martin Lindstrøm Adm. direktør og forfatter Lindstrom Company Pernille Erichsen Chef for ledelses-og virksomhedsudvikling, Dansk Industri Mads Nipper Adm. direktør Grundfos Sune Bang Kommunikationsrådgiver Marianne Dahl VP Western Europe i rosoft Henrik Elsig Andersen Erhvervspsykolog og partner eidri k Struggles Anne-Marie Finch ief Peo le er Templafy Imran Rashid Spe iall ge og forfatter Sunddigital.dk Mie Krog Direktør og bestyrelsesformand Vimavima Fotos: Thomas Nielsen Susanne Mørch Koch Adm. direktør Danske spil.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2020-08-20
+          &nbsp;·&nbsp; e7d83de0
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.666</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>5 råd til at beskytte dit privatliv: Brug et falsk navn på sociale medier og spred dine digitale fodspor</h4>
+        <div>
+          Tænkehandletanken Data Ethics giver fem konkrete råd til, hvordan man beskytter sit privatliv i en digital verden, hvor nettjenester i vidt omfang samler oplysninger om deres brugere.Løbet er ikke kørt.Godt nok er privatlivet ifølge eksperter og aktivister på vej til at dø i en digital verden, hvor Facebook og andre nettjenester samler alverdens oplysninger om deres brugere, som vi skriver i denne artikel.Men der er stadig håb, hvis man spørger tænkehandletanken Data Ethics. Og brugerne kan selv gøre meget for at beskytte deres privatliv. Her er fem råd:1. Brug alternative tjenesterDe seneste år er der opstået alternative sociale medier og andre nettjenester, som slår sig op på ikke at registrere brugere eller tjene penge på data. For eksempel holder flere søgemaskiner, i modsætning til Google, ikke holder øje med deres brugeres færden. Tænkehandletanken Data Ethics anbefaler Startpage, Qwant, Findx og Hulbee.2. Brug et falsk navnVed at angive et falsk navn på sociale medier gør du det sværere for nettjenesternes algoritmer at gennemskue, hvem du i virkeligheden er. Brug kun dit eget navn på sociale medier, hvis du har til hensigt at skabe en professionel profil, som for eksempel arbejdsgivere skal kunne finde. Og så skal du huske ikke at dele private oplysninger, som for eksempel din fødselsdato, helbredsoplysninger eller lignende. Det kan i særlig grad udnyttes.3. Tjek indstillingerneHvis ikke du selv justerer dine privatlivsindstillinger, kan du i mange tilfælde regne med, at det meste er offentligt tilgængeligt, og at dine data bliver indsamlet. På Facebook bør du blandt andet sikre dig, at din vennekreds ikke er synlig for alle og enhver. Den siger nemlig meget om dig. Og så bør du være særlig varsom, når du henter apps til din telefon. Nogle apps beder nemlig om at få adgang til alt fra dine kontakter til din kalender. Overvej, om tjenesten er alle dine data værd, før du i en hurtig vending accepterer indstillingerne.4. Brug flere browsereI stedet for kun at gå på nettet via Googles browser Chrome bør du anvende flere forskellige browsere, for eksempel Apples Safari eller Firefox. På den måde kan du sprede dine digitale fodspor og gøre det sværere for virksomheder eller andre at udnytte din data.5. Overvej hvem du kan stole påMange nettjenester giver ifølge Data Ethics udtryk for at beskytte dit privatliv, men gør det ikke i praksis. Overvej derfor nøje, hvem du kan stole på, og vær mere varsom med at bruge tjenester fra firmaer, som er svære at komme i kontakt med, som lever af at sælge brugerdata, og som har hovedsæde i USA eller Kina. Der er datalovgivningen nemlig mildere end i EU.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2018-05-12
+          &nbsp;·&nbsp; e6bf6393
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.941</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.665</kbd>
+            <kbd data-tooltip="Big data &amp; democracy">L10_BIGDEM&nbsp;0.594</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.588</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Outlier-model spotter forsøg på snyd hos Skatteforvaltningen</h4>
+        <div>
+          Når borgere nu og fremover taster skatteoplysninger ind på Skatteforvaltningens TastSelv-tjeneste i forbindelse med årsopgørelsen, vil indtastningerne automatisk blive gennemgået af et nyt ML-baseret værktøj designet til at spotte potentielle svindelforsøg.Vil du have fuld adgang til DataTech?DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik.Har du allerede et abonnement? Log indEr dit prøveabonnement udløbet?
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-05-23
+          &nbsp;·&nbsp; e73599cc
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.613</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.553</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI-løsning til Børnetelefonen: Etisk AI er kritisk</h4>
+        <div>
+            AI skal få antallet af tabte henvendelser til Børnetelefonen til at falde. Hvert år bliver 100.000 henvendelser til Børnetelefonen aldrig besvaret. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-04-23
+          &nbsp;·&nbsp; e7ad0049
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.682</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.787</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.513</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Quiz: Hvor begejstret er du for kunstig intelligens?</h4>
+        <div>
+          Debatten om teknologiens fremtid er polariseret. Kritiserer du teknologi, bliver du afvist som reaktionær maskinstormer, men lader du dig rive med af teknologien og dens fascinerende produkter, er du afkoblet den virkelighed, hvor folk risikerer at miste deres jobs.Intet sted gælder det så meget som i udviklingen af kunstig intelligens, og så bliver det som religion og aliens   det er der, vi parkerer vores største drømme og værste mareridt.Men hvad med dig? Tror du på, at kunstig intelligens vil redde os fra os selv, eller går vi en verden med uoverstigelig ulighed og arbejdsløshed i møde? Find din position i debatten om kunstig intelligens og automatisering.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-11-17
+          &nbsp;·&nbsp; e5fcae62
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.824</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.809</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.52</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hackere kan få fingre i din pin-kode via dit smartur</h4>
+        <div>
+          IT-sikkerhedsforskere: Hackere kan finde din pinkode ud fra de bevægelser, smarturet opfanger. Men der er et enkelt modtræk.Morten BayHvis du har et smartur, hvilket håndled bærer du det så på? Samme hånd som du bruger til at taste pinkoder ind med? Dårlig idé.Ny forskning i informationssikkerhed viser, at dit smartur opfanger dine håndbevægelser så præcist, at hackere kan finde frem til din pinkode.Bevægelsesdata afslører din kodeDet er forskere fra to af New York og New Jerseys bedste universiteter, Stevens Institute of Technology og Binghamton University, der netop har publiceret en videnskabelig artikel med den noget dystre titel »Ven eller fjende? Dine wearables afslører dine pinkoder«.I artiklen forklarer forskerne ifølge Engadget, hvordan det er lykkedes dem at kombinere dit smarturs GPS-position og alle de mange data, der produceres af det indbyggede gyroskop, accelerometeret og magnetometeret.Kombinationen af disse data blev analyseret via en smart algoritme, der gættede pinkoder med 80 procents nøjagtighed.Og det er altså vel at mærke helt uden at bruge data om det pågældende nummer-tastatur. Forskernes algoritme fungerer altså i princippet lige så godt på Dankort-terminaler som på tastaturer, der sidder på en kontantautomat. Det er udelukkende håndens bevægelser, det baseres på.Hvis uret f.eks. opfatter den samme type håndbevægelse, hver gang din GPS-position viser, at du er i supermarkedet, er det højst sandsynligt din pinkode, du er i gang med at taste ind. Disse data gemmes ofte i uret eller i din smartphone af helt andre årsager, f.eks. for at tælle skridt eller aktivitetsniveau i løbet af en dag.Sådan får hackerne fat i dine dataMen for at det skal blive et rigtigt alvorligt problem, skal fremmede, ondsindede mennesker med dygtige hacker-evner jo have adgang til uret og de pågældende data.Det kan dog ske på flere måder. Hvis dit smartur bliver stjålet sammen med dit betalingskort og din smartphone, kan hackere udtrække dataene derfra og gå direkte hen i kontantautomaten og lænse dine konto.Hvad der dog er værre, er at hackerne i princippet også kan lægge malware ind på din telefon eller   afhængig af modellen - direkte på dit smartur. Denne malware kan så, ligesom det kan ske på dit computertastatur, holde øje med dine bevægelser og sende alle dataene til en hacker, der slet ikke er i nærheden af dig.Et andet, lettere skræmmende scenarie er, at hackere kan lytte ind på den Bluetooth-kommunikation, der sker mellem dit smartur og din smartphone. Hvis f.eks. de spionerer på en bestemt kontantautomat, og det lykkes dem at opfange bevægelses-dataene ad den vej, er det næste skridt blot at stjæle din pung eller taske, og så har de fri adgang til din konto.I princippet behøver der ikke engang være tale om et smartur. Nogle fitnessarmbånd er lige så gode til at opfange bevægelsesdata som smarture. Men der er naturligvis en meget enkelt løsning på problemet: Lad være med at taste pinkoder ind med den hånd, der bærer smarturet. Det er da nem IT-sikkerhed.SENSORER. Smarture som LGs Urbane LTE ovenfor er efterhånden så teknologisk avancerede, at de opfange dine håndbevægelser meget præcist. Så præcist, at hackere kan anvende urets data til at gætte din pinkode (Foto: LG)..SENSORER. Smarture som LGs Urbane LTE ovenfor er efterhånden så teknologisk avancerede, at de opfange dine håndbevægelser meget præcist. Så præcist, at hackere kan anvende urets data til at gætte din pinkode (Foto: LG)..
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2016-07-07
+          &nbsp;·&nbsp; e5cab0bf
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.993</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.945</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.618</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_112 <kbd>H_0_112</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>avancerede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nye</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ny</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilbyde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremover</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hertil</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fysiske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>design</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>introducerer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>365</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virtual</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ar</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>springet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>metal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>print</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spares</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kraftfulde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>maksimal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>drives</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kræfterne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>inkluderer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>leveres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spæde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>byde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vision</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>integrerer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>introducere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gear</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>adoptere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indstiller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eventen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_112 DESC LIMIT 50</pre>
+      <article>
+        <h4>Flash: Robotter, selvkørende biler, kunstig intelligens og anden ... (v.1)</h4>
+        <div>
+          KøbenhavnRobotter, selvkørende biler, kunstig intelligens og anden ny teknologi kan i fremtidens arbejdsmarked især gøre det svært for chauffører og operatører.Smede, mekanikere, ansatte i servicebranchen, lager- og kontormedarbejdere vil også mærke konsekvenserne ny teknologi.Det viser en ny rapport fra konsulenthuset McKinsey ifølge Berlingske.Mellem 250.000 og 300.000 personer på det danske arbejdsmarked har et job, som fremover vil blive udfordret af ny teknologi.
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-12-04
+          &nbsp;·&nbsp; e687785d
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.788</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.686</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.702</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.528</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Så er der dato på 'Metal Gear Solid 5: Ground Zeroes'</h4>
+        <div>
+          Metal Gear Solid-seriens næste skud på stammen lander i Europa 20. marts 2014. To dage efter at det er kommet ud i USA. Det bekræfter selskabet bag, Konami.'Metal Gear Solid 5: Ground Zeroes' betegnes som en prequel til 'Metal Gear Solid 5: The Phantom Pain', der endnu ikke er sat udgivelsesdato på.Serien har adskillige år på bagen, og oplevet svingende salgstal, hvor man de seneste år har haft svært ved at ramme den succes, som man blandt andet havde med 'Metal Gear Solid 2: Sons of Liberty' i 2001. Det solgte, ifølge vgchartz, i over seks millioner eksemplarer.Konami fremhæver, at der i 'Metal Gear Solid 5: Ground Zeroes' kommer et helt nyt open-world univers med afvekslende omgivelser både hvad angår nat og dag og vejrforhold samt forbedret AI.Til Xbox 360 og Xbox One kommer der en eksklusiv 'Jamais Vu'-mission med cyborg-lejesoldaten Raiden i hovedrollen.Snake er tilbage. Metal Gear Solid 5: Ground Zeroes udkommer til marts. (Foto: Konami Digital Entertainment).Snake er tilbage. Metal Gear Solid 5: Ground Zeroes udkommer til marts. (Foto: Konami Digital Entertainment).
+        </div>
+        <footer>
+          <em>EkstraBladet.dk/Ekstra</em>
+          &nbsp;·&nbsp; 2013-12-10
+          &nbsp;·&nbsp; e4236e69
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.712</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.759</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.792</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.513</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Så er der dato på 'Metal Gear Solid 5: Ground Zeroes'</h4>
+        <div>
+          Metal Gear Solid-seriens næste skud på stammen lander i Europa 20. marts 2014. To dage efter at det er kommet ud i USA. Det bekræfter selskabet bag, Konami.'Metal Gear Solid 5: Ground Zeroes' betegnes som en prequel til 'Metal Gear Solid 5: The Phantom Pain', der endnu ikke er sat udgivelsesdato på.Serien har adskillige år på bagen, og oplevet svingende salgstal, hvor man de seneste år har haft svært ved at ramme den succes, som man blandt andet havde med 'Metal Gear Solid 2: Sons of Liberty' i 2001. Det solgte, ifølge vgchartz, i over seks millioner eksemplarer.Konami fremhæver, at der i 'Metal Gear Solid 5: Ground Zeroes' kommer et helt nyt open-world univers med afvekslende omgivelser både hvad angår nat og dag og vejrforhold samt forbedret AI.Til Xbox 360 og Xbox One kommer der en eksklusiv 'Jamais Vu'-mission med cyborg-lejesoldaten Raiden i hovedrollen.Cyborgen Raiden har hovedrollen i en eksklusiv mission til Xbox-versionen af 'Metal Gear Solid 5: Ground Zeroes'.Konami har tidligere afsløret, at også PlayStation-spillerne får en eksklusiv mission. Den er døbt 'Deja Vu' og har en klassisk version af Snake i hovedrollen.Snake er tilbage. Metal Gear Solid 5: Ground Zeroes udkommer til marts. (Foto: Konami Digital Entertainment).Snake er tilbage. Metal Gear Solid 5: Ground Zeroes udkommer til marts. (Foto: Konami Digital Entertainment).
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2013-12-10
+          &nbsp;·&nbsp; e4236e5a
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.685</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.775</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.658</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.523</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bestyrelsen som krumtap i digitaliseringen</h4>
+        <div>
+          Ny teknologi er blevet et tema for bestyrelser. De nye avancerede teknologier som kunstig intelligens, 3D-print og blockchain åbner for nye forretningsmæssige muligheder. Det rejser også en masse spørgsmål.Hvilke skal man satse på? Hvordan ser markedet ud? Og hvad betyder det for ens egen organisation.På Tech Management sætter vi løbende fokus bestyrelsens rolle, når ny teknologi skal blive til forretning. Vi har samlet casehistorier, gode råd og viden til dig her.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-01-06
+          &nbsp;·&nbsp; e787668c
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.638</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.97</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.828</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.542</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Citathistorie fra Fr.Borg Amts Avis: Ny privat lægevagt på vej</h4>
+        <div>
+          Sundhed: Hillerød-læge opretter en privat vagtlægeordning, som skal dække hele Nordsjælland. Det skriver Frederiksborg Amts Avis.
+I løbet af februar næste år vil borgerne i Nordsjælland samt Lyngby-Tårbæk kunne købe et abonnement på en ny privat lægevagt
+Den ny lægevagt er et alternativ til den offentlige løsning
+- Vi opfatter regionens ny akutordning som en kvalitetsforringelse. Der vil komme et stort pres på hospitalernes akutmodtagelser
+LægeVagten-Nord er ved at indrette konsultationslokaler og undersøgelsesrum i Hillerød
+- Vi vil garantere
+Der eksisterer i forvejen to private lægevagtsordninger i Købehavn med priser på 1400 til 2500 kroner per konsultation. Det nye i LægeVagten-Nord er, at man for de samme penge vil kunne tilbyde et årsabonnement. 
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2013-12-02
+          &nbsp;·&nbsp; e41e5a51
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.956</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.722</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.664</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: Magtens matematik</h4>
+        <div>
+          Vi står på dørtrinnet til en ny verden, styret af kraftfulde ligninger og komplicerede koder, som vil få afgørende indflydelse på dit job, dine indkøb og din økonomi. Brugen af avancerede algoritmer vil ændre forudsætningerne for din hverdag, privat og professionelt, for bestandigt.Serie: Matematik styrer millioner af kunder, side 6-7 Kommentar: De ændrer dit syn på verden, side 2.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-03-26
+          &nbsp;·&nbsp; e5a1f09b
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.782</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apple indfører kønsneutrale og handicappede emojier (v.2)</h4>
+        <div>
+          CupertinoApple indfører en ny serie af emojier, der afbilleder kønsneutrale og handicappede personer samt par med forskellige hudfarver.I den nye softwareopdatering iOS 13.2, der blev sendt ud mandag, kan brugere med 60 nye emojier lave personer i kørestol, med proteser eller kønsneutrale vampyrer. Det skriver det amerikanske medie The Verge.Brugere vil også selv kunne sammensætte par med forskellige hudfarver.Apple følger dermed Google, der indførte kønsneutrale emojier i Googles Pixel-smartphones i maj.De nye emojier skal skabe større fokus på inklusion og diversitet.I 2018 bad Apple organisationen Unicode Consortium, der står for at sætte den globale standard inden for emojier, om at inkludere nogle emojier med et handicap.- Som det er nu, er der en bred vifte af muligheder, men det repræsenterer ikke dem med handicap, skrev Apple i en pressemeddelelse i 2018. Det skrev det amerikanske medie CNN.Ud over de nye emojier har Apple i softwareopdateringen tilføjet kamerafunktionen &quot;deep fusion&quot; til telefonerne iPhone 11 og 11 Pro.Funktionen lader kunstig intelligens automatisk forbedre billedkvaliteten.Ud over en ny softwareopdatering lancerede Apple mandag nye trådløse bluetooth-høretelefoner med navnet Airpods Pro.De nye høretelefoner er en efterfølger af Apples oprindelige og populære trådløse høretelefoner, Airpods, der blev lanceret i 2016.De nye Airpods Pro er støjreducerende, hvilket mange fans har sukket efter. /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-10-29
+          &nbsp;·&nbsp; e76a6dc8
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.937</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.566</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.692</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apple indfører kønsneutrale og handicappede emojier</h4>
+        <div>
+          60 nye emojier i Apples produkter skal skabe større fokus på inklusion og diversitet. Apple indfører en ny serie af emojier, der afbilleder kønsneutrale og handicappede personer samt par med forskellige hudfarver. I den nye softwareopdatering iOS 13.2, der blev sendt ud mandag, kan brugere med 61 nye emojier indsætte personer i kørestol, med proteser eller kønsneutrale vampyrer i tekstbeskeder. Det skriver det amerikanske medie The Verge. Brugere vil også selv kunne sammensætte par med forskellige hudfarver. Med alle kombinationer taget i betragtning er der 398 nye emojier i Apples nye opdatering. Apple følger dermed Google, der indførte kønsneutrale emojier i Googles Pixel-smartphones i maj. De nye emojier skal skabe større fokus på inklusion og diversitet. I 2018 bad Apple organisationen Unicode Consortium, der står for at sætte den globale standard inden for emojier, om at inkludere nogle emojier med et handicap. - Som det er nu, er der en bred vifte af muligheder, men det repræsenterer ikke dem med handicap, skrev Apple i en pressemeddelelse i 2018. Det skrev det amerikanske medie CNN. Ud over de nye emojier har Apple i softwareopdateringen tilføjet kamerafunktionen &quot;deep fusion&quot; til telefonerne iPhone 11 og 11 Pro. Funktionen lader kunstig intelligens automatisk forbedre billedkvaliteten. Ud over en ny softwareopdatering lancerede Apple mandag nye trådløse bluetooth-høretelefoner med navnet Airpods Pro. De nye høretelefoner er en efterfølger af Apples oprindelige og populære trådløse høretelefoner, Airpods, der blev lanceret i 2016. De nye Airpods Pro er støjreducerende, hvilket mange fans har sukket efter. Kønsneutralitet har vundet frem hos flere virksomheder. Virksomheden Always, der producerer hygiejneprodukter, har for nylig fjernet et kvindesymbol fra sine pakker med hygiejnebind efter flere opfordringer fra rettighedsgrupper, der repræsenterer transkønnedes interesser. Den globale legetøjsproducent Mattel har også lanceret kønsneutrale dukker. /ritzau/
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2019-10-29
+          &nbsp;·&nbsp; e76a6dc1
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.977</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.597</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Peter Engbergs truende usikkerhed</h4>
+        <div>
+          Der er en risiko for, at de nye ejendomsvurderinger bliver en maskine til udskrivning af nye skatterArkivfoto: Chr. Liliendahl/ScanpixEjendomsvurderinger kan ikke bare baseres på algoritmer. Usikkerheden må klart fremEn ekspertgruppe ledet af den tidligere direktør i Nykredit, Peter Engberg, er i gang med...Læs resten af artiklenFår du avisen?
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2014-06-12
+          &nbsp;·&nbsp; e4719549
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.557</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.562</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Derfor vinder vi over robotterne</h4>
+        <div>
+          KøbenhavnOptimisterne mener, at mere avancerede robotter og kunstig intelligens vil skabe velstand uden at gøre folk arbejdsløse. Her argumenterne om hvorfor:* Vi har gjort det før: Teknologi har mange gange før truet med at gøre mennesker arbejdsløse. Det troede man også med alt fra dampmaskiner til de første computere i sidste århundrede, men det holdt ikke stik.* Nye job opstår: I kølvandet på ny teknologi opstår nye brancher, som vi ofte slet ikke har tænkt på. Eksempelvis havde ingen for blot få år siden hørt om en smartphone eller en app.* Nye teknologi vil skabe velstand: Selv hvis nogle opgaver bliver overflødige, så vil robotterne producere og skabe penge til at betale for eksempel borgerløn og opretholde vores samfund./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-04-30
+          &nbsp;·&nbsp; e63c0a61
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.949</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.676</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>De­bat | Ado­be-di­rek­tør: 5G åb­ner for nye mu­lig­he­der i re­tail­bran­chen</h4>
+        <div>
+            Det er netop blevet offentliggjort, at Apples iPhone 12 vil understøtte 5G. TDC har allerede rullet sit 5G-netværk ud, og Telia og Telenor tænder deres net i skrivende stund.Danmark er med andre ord blevet et 5G-land, og for retailbrands er spørgsmålet nu: Hvordan kan vi anvende den nye teknologi til at skabe nye og forbedrede oplevelser for vores kunder? For 5G betyder nemlig ikke kun hurtigere og mere pålidelig mobilsurfing. Den massive båndbredde og hastighed vil gøre AI og andre nye teknologier endnu mere tilgængelige - og dét er en stor fordel for detailhandelen. Herunder kommer jeg med mit bud på tre områder, hvor 5G kan blive afgørende for retailbrands. Med 5G er det muligt at tilbyde VR og AR til mobile enheder i realtid. Det betyder, at forbrugerne inden længe kan prøve en brille, se, hvordan et par sneakers ser ud på deres fødder eller vha. AI-teknologi finde ud af, om størrelsen passer - hjemme i sofaen. Det giver retailbrands mulighed for at tilbyde forbrugerne en dybt personaliseret oplevelse - uden at skulle besøge en fysisk butik. Med 5G vil det være muligt at skabe en helt ny, digital og personaliseret shoppingoplevelse - i både fysiske butikker og derhjemme. Her bliver det muligt at målrette reklamer til hver enkelt kunde via f.eks. &quot;magiske&quot; spejle i prøverummene og endda i private hjem, der gennem AI-teknologi viser produktinformation som pris, materialer, vaskeinstruktioner eller foreslår matchende produkter. Ved hjælp af berøringsskærme i spejlet kan forbrugerne anmode om produkterne eller få andre størrelser leveret til enten prøverummet eller direkte til døren uden at få hjælp af en assistent. 5G vil hjælpe retailbrands med at gøre bedre brug af de data, de allerede har, og samtidig tilbyde nye måder at indsamle data fra &quot;ikkedigitale&quot; kanaler som fysiske butikker. Den stadig mere avancerede teknologi kan hjælpe retailbrands til at forstå deres kunder langt bedre og dermed tilpasse shoppingstrategier, som er relevante for hver enkel forbruger. 5G er ikke længere kun en teoretisk idé. 5G-netværket åbner op for nye muligheder for at levere nye og endnu mere personaliserede oplevelser, der vil blive afgørende for at bevare kundernes loyalitet. Med lanceringen af 5G-kompatible smartphones fra Apple vokser konkurrencen blandt retailbrands for at være de første, der formår at udnytte den nye teknologi.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-10-24
+          &nbsp;·&nbsp; e7f4a573
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.77</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.571</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robotstøvsuger får en ny hjerne</h4>
+        <div>
+          Den populære serie af robotstøvsugere fra iRobot, Roomba, bliver fremover udstyret med kunstig intelligens.Den nye ' hjerne' kan ifølge producenten langt mere målrettet sættes ind i hjemmet og gøre rent på udvalgte overflader.For eksempel kan robotten selv vurdere, at der skal gøres rent under spisebordet efter middagen.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2020-08-26
+          &nbsp;·&nbsp; e7da7958
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.937</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.513</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.691</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apple indfører kønsneutrale og handicappede emojier</h4>
+        <div>
+          60 nye emojier i Apples produkter skal skabe større fokus på inklusion og diversitet. Apple indfører en ny serie af emojier, der afbilleder kønsneutrale og handicappede personer samt par med forskellige hudfarver. I den nye softwareopdatering iOS 13.2, der blev sendt ud mandag, kan brugere med 60 nye emojier lave personer i kørestol, med proteser eller kønsneutrale vampyrer. Det skriver det amerikanske medie The Verge. Brugere vil også selv kunne sammensætte par med forskellige hudfarver. Apple følger dermed Google, der indførte kønsneutrale emojier i Googles Pixel-smartphones i maj. De nye emojier skal skabe større fokus på inklusion og diversitet. I 2018 bad Apple organisationen Unicode Consortium, der står for at sætte den globale standard inden for emojier, om at inkludere nogle emojier med et handicap. - Som det er nu, er der en bred vifte af muligheder, men det repræsenterer ikke dem med handicap, skrev Apple i en pressemeddelelse i 2018. Det skrev det amerikanske medie CNN. Ud over de nye emojier har Apple i softwareopdateringen tilføjet kamerafunktionen &quot;deep fusion&quot; til telefonerne iPhone 11 og 11 Pro. Funktionen lader kunstig intelligens automatisk forbedre billedkvaliteten. Ud over en ny softwareopdatering lancerede Apple mandag nye trådløse bluetooth-høretelefoner med navnet Airpods Pro. De nye høretelefoner er en efterfølger af Apples oprindelige og populære trådløse høretelefoner, Airpods, der blev lanceret i 2016. De nye Airpods Pro er støjreducerende, hvilket mange fans har sukket efter. /ritzau/ Få dagens vigtigste nyheder direkte i din indbakke. Det er gratis, og du kan afmelde dig til hver en tid.
+        </div>
+        <footer>
+          <em>Faa.dk</em>
+          &nbsp;·&nbsp; 2019-10-29
+          &nbsp;·&nbsp; e76a6b3b
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.975</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.613</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk iværksætterfirma ansætter TV2-formand som ny topchef</h4>
+        <div>
+          Airhelp har ansat TV2-formand Jimmy Maymann som ny direktør. Han erstatter stifteren af selskabet.Tirsdag kan det danske iværksætterfirma Airhelp løfte sløret for tilgangen af en prominent, ny topchef.Ifølge Berlingske vil selskabet, der leverer services til flypassagerer, præsentere Jimmy Maymann som ny administrerende direktør.Jimmy Maymann er blandt andet kendt for at være bestyrelsesformand i TV2.Hos Airhelp afløser han Henrik Zillmer, der er selskabets stifter, som i stedet vil være bestyrelsesformand i Airhelp fremover.Airhelp har ved hjælp af kunstig intelligens opbygget en forretning, der hjælper med at hente erstatninger hjem til flypassagerer, som har været ude for forsinkelser eller aflysninger.
+        </div>
+        <footer>
+          <em>Faa.dk</em>
+          &nbsp;·&nbsp; 2019-10-21
+          &nbsp;·&nbsp; e767fb2b
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.739</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.527</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nvidias Tesla-GPU leverer 5,3 teraflops til kunstig intelligens</h4>
+        <div>
+          Nvidias nye Tesla P100 grafikprocessor er beregnet til at afvikle maskinlæringsalgoritmer lynhurtigt.Otte styks af Nvidias nye Tesla-processorer kan levere samme regnekraft til oplæring af deep learning-algoritmen AlexNet som 250 servere med hver to almindelige processorer. Det hævder i hvert fald Nvidia selv i forbindelse med lanceringen af den nye processor.Tesla P100 bygger på samme teknologi som Nvidias grafikkort og de deraf afledte processorer til high performance computing, HPC, men er betydeligt kraftigere end tidligere takket være både fremskridt i både fremstillingsprocessen og arkitekturen.Målgruppen for den nye chip er ikke spilentusiaster, men derimod forskere og andre, som har behov for den regnekraft til visse typer algoritmer, som processoren kan levere. Nvidia har indbygget instruktionssæt til understøttelse af visse typer machine learning inden for deep learning ind i Tesla P100.Nvidia har samtidig med lanceringen også introduceret selskabets egen computer, der benytter otte af de nye processorer, DGX-1. Også her er målgruppen dem, der arbejder med maskinlæring.Hver af de nye Tesla P100-processorer kan levere 5,3 teraflops i double precision kommatalsberegninger eller 21,1 teraflops i half precision-beregninger.Ud over Nvidias egen computer baseret på den nye processor, har blandt andre IBM også implementeret Nvidias NVLink-interconnect i Power 8-arkitekturen.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-04-07
+          &nbsp;·&nbsp; e5a67060
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.982</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.95</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.58</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Prøv et intelligent høreapparat</h4>
+        <div>
+          uforpligtende og grundig gennemgang af en ny serie høreapparater, der er mere avancerede end tidligere modeller. Audiologist Tine Petersen fra Din Hørespecialist på Taastrup Hovedgade 75, kalder høreapparaterne for 'intelligente'.- Vores vigtigste opgave er at tilbyde borgerne i Taastrup den bedst mulige høreoplevelse. Derfor skal vi altid have de nyeste og mest avancerede produkter på hylderne, og vi er naturligvis glade for, at WIDEX har valgt vores høreklinik til at introducere de intelligente høreapparater for Taastrup-borgerne, siger Tine Petersen, der er audiologist i Din Hørespecialist i Taastrup.Grundtanken bag de nye høreapparater er, at de skal vænne sig til brugerens hverdag - og ikke omvendt. Apparaterne lærer hele tiden om brugeren og bliver derfor kontinuerligt bedre til at justere sig til de mange forskellige lydmiljøer, brugerens hverdag byder på. Dermed bliver høreoplevelsen så naturlig som muligt og brugeren føler sig stort set ubesværet med sit høretab.Flere ord og detaljerI forbindelse med arrangementet er det muligt at bestille et sæt af de nye Evoke-høreapparater hjem på prøve i to uger - ganske uforpligtende. Tine Petersen anbefaler alle at prøve de nye høreapparater. Bruger man allerede høreapparater, er det oplagt at sammenligne oplevelsen.- Apparaterne giver brugeren en mere uanstrengt høreoplevelse, hvor man opfatter flere ord og detaljer og oplever større harmoni i ørerne. Simpelthen fordi høreapparaterne indstiller sig selv efter miljøet og skaber en helt personlig lydprofil, forklarer Tine PetersenAlle medarbejdere i klinikken på Taastrup Hovedgade har gennemgået et kursusforløb, så de er klædt på til at vejlede og skræddersy en løsning til alle behov.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2018-07-28
+          &nbsp;·&nbsp; e6d7030e
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.979</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.629</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>SummIT 2018 - Digitalisering: Fra forskning og udvikling til innovation og vækst</h4>
+        <div>
+          &quot;Forskningen inden for disse nye teknologier buldrer derudaf, og teknologierne ligger i toppen af Gartners Hype Cycle. På SummIT 2018 vil vi bevæge os bag om hypen og i stedet tilbyde indsigt i konkrete virksomhedscases, der har formået at omsætte den nyeste forskning til konkrete forretningstiltag.Ud over spændende keynote speakers vil dagen byde på en række temasessioner inden for IoT, cyber security, big data og machine learning. Her vil du få mulighed for at få demonstreret, hvordan teknologier er blevet bragt i anvendelse samt indgå i dialog med eksperter på området og diskutere, hvordan deres viden kan omsættes i din virksomhed.Sidst, men ikke mindst, vil vi slutte af med et kig ud i fremtiden - hvilke nye teknologier og trends vil udfordre og skabe nye potentialer for dansk erhvervsliv i de kommende år?&quot;Der er tilmeldingsfrist den 8. december 2018.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2018-11-22
+          &nbsp;·&nbsp; e6fbcd3e
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.749</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.736</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.535</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.593</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Verdenspremiere på ny Toyota Auris</h4>
+        <div>
+          BILER: En helt ny Toyota Auris ser dagens lys ved den internationale biludstilling Geneve Motor Show i Schweiz til marts. Det bekræfter Toyota og afslører samtidig, at den nye Auris bliver første Toyota-model, hvor det er muligt at vælge mellem flere forskellige hybridmotorer.Informationerne om den nye Auris er stadig sparsomme, men et gennemgribende nyt og mere sportsligt udvendigt design samt en helt ny og mere kraftfuld 2.0-liters hybridmotor i tillæg til den eksisterende 1.8-liters hybridmotor er noget af det, der venter. Meget mere vil blive afsløret ved biludstillingen i marts.Her står desuden også en helt ny konceptracerbil, som skal signalere, at Toyota vil gen-introducere sin ubetinget mest ikoniske sportsvogn. Hvornår det bliver, er endnu ikke bekræftet. En ny, forbedret og mere dristig udgave af en af de senere års mest populære bilmodeller, Toyota AYGO, pryder også Toyotas udstillingsstand og udgør mærkets tredje verdenspremiere.Under temaet &quot; Bedre mobilitet til alle&quot; viser Toyota desuden design og ingeniørkunst i højeste potens, der maksimerer potentialet for fremtidige batteridrevne elbiler, brintbiler, selvkørende biler og biler med kunstig intelligens.Konceptserien af køretøjer med navnet Toyota Concept-i er et synligt og konkret bud på, hvordan den japanske koncern ser på begrebet mobilitet i fremtiden.Konceptserien består dels af Concept-i, der er en rummelig fi-re-personers elbil, som gennem kunstig intelligens kan lære førerens adfærd at kende og derigennem forudsige, hvordan føreren vil handle i forskellige situationer.Derudover består serien af Concept-i RIDE, der er en kompakt to-personers elbil særdeles velegnet for personer med fysiske begrænsninger, samt af Concept-i WALK, der er et brugervenligt transportmiddel for bl. a. fodgængere.Sidst men ikke mindst vil Toyota gennem koncept-brintbilen TOYOTA FINE-Comfort Ride Concept give et bud på, hvordan brintteknologi kan udvikles til at passe ind i en rummelig ny form for luksus-sedan med en fleksibel indretning.
+        </div>
+        <footer>
+          <em>Haslev Posten</em>
+          &nbsp;·&nbsp; 2018-03-06
+          &nbsp;·&nbsp; e6a6ef57
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.985</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.546</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.623</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>BØRN OG SØVN</h4>
+        <div>
+          Professor MSO Anders Grøntved, Institut for Idræt og Biomekanik, Syddansk Universitet, har modtaget 2.801.190 kr. fra TrygFonden. Donationen går til et projekt, der skal skabe solide data om børn og unges fysiske aktivitet og søvn, der er grundlaget for kunne målrette og udvikle tiltag til at fremme børn og unges fysiske aktivitet og forbedre deres søvn. Der hersker usikkerhed om, hvor fysisk aktive børn og unge er, men ved hjælp af avancerede ' accelerometre' anbragt på hofte og lår på testpersonerne har forskerholdet bag projektet indsamlet objektive data om 8.800 3-17-åriges fysiske aktivitetsmønstre. Datasamlingen er formentlig den største og bedst dokumenterede på området i verden. Med den som udgangspunkt skal der udarbejdes detaljerede beskrivelser af fysiske aktivitetsmønstre i skoletiden, af total fysisk aktivitet på hverdage, weekenddage og i fritiden samt om søvn. Derudover skal forskerne udvikle algoritmer til at bestemme søvnkarakteristika hos børn og unge på baggrund af accelerometerdata. 
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2020-06-04
+          &nbsp;·&nbsp; e7bc707c
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.935</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Verdenspremiere på de første intelligente høreapparater</h4>
+        <div>
+          VEJEN: Din Hørespecialist i Vejen lancerer verdens første høreapparater med kunstig intelligens. De nye apparater tager ved lære af brugerens præferencer og omgivelser, når de løbende tilpasser lyden.Der er tale om en regulær verdenspremiere, når høreklinikken Din Hørespecialist på Nørregade fremviser en helt ny generation af høreapparater, der nu er blevet intelligente.Onsdag 15. august er alle borgere, der har problemer med hørelsen, inviteret til en informationsdag, hvor de kan få en uforpligtende og grundig gennemgang af den nye serie Evoke fra danske WIDEX.- Det er vores ambition og vigtigste opgave at levere de bedste høreoplevelser til kunder i og omkring Vejen, og derfor skal vi altid kunne tilbyde de nyeste og mest avancerede produkter. Så vi er selvfølgelig rigtig glade for og stolte over, at WIDEX har valgt vores høreklinik til at introducere de intelligente høreapparater for kunderne her i Vejen, siger Louise Svendsen, der er audiologist i Din Hørespecialist i Vejen.Grundtanken bag de nye høreapparater er, at de skal vænne sig til brugerens hverdag - og ikke omvendt. Apparaterne lærer hele tiden om brugeren og bliver derfor kontinuerligt bedre til at justere sig til de mange forskellige lydmiljøer, brugerens hverdag byder på. Dermed bliver høreoplevelsen så naturlig som muligt og brugeren føler sig stort set ubesværet med sit høretab.Flere ord og detaljerI forbindelse med arrangementet er det muligt at bestille et sæt af de nye Evokehøreapparater hjem på prøve i to uger - ganske uforpligtende.Louise Svendsen anbefaler alle at prøve de nye høreapparater. Bruger man allerede høreapparater, er det oplagt at sammenligne oplevelsen.- Fordi de nye høreapparater indstiller sig selv efter det lydmiljø, brugeren befinder sig i. Brugeren opfatter flere ord og detaljer og vil opleve større harmoni i ørerne, siger Louise Svendsen.WIDEX Evoke præsenteres onsdag 15. august kl. 12.30 på Nørregade 33. Til arrangementet vil det være muligt at se modellerne og bestille et sæt hjem til prøve i ens vante omgivelser.
+        </div>
+        <footer>
+          <em>Ugeavisen Vejen-Brørup-Holsted</em>
+          &nbsp;·&nbsp; 2018-07-31
+          &nbsp;·&nbsp; e6d7489e
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.825</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.64</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny Pytorch understøtter ærke-konkurrenten Tensorflows værktøj</h4>
+        <div>
+          Facebooks afdeling for kunstig intelligens har løftet sløret for den næste udgave af softwarebiblioteket Pytorch, som ankommer i version 1.1. Det skriver udvikler-bloggen Infoq.Den nye udgave kan byde på understøttelse af Tensorboard, der er et visualiseringsværktøj til deep learning (neurale netværk), udviklet af Google som en del af deres Tensorflow-bibliotek.Googles bibliotek er i øjeblikket et mere populært valg blandt deep learning-udviklere end Pytorch, mener Infoq, og Tensorboards visualiseringsmuligheder giver Googles platform en fordel. Pytorchs nye integration med Tensorboard kan bidrage til at lukke dette hul.Forbedret distribueret træning gør det muligt at fordele Pytorch-modeller på flere GPU'er. Det giver udviklere muligheden for at bygge modeller, der er for store til at passe ind i hukommelsen på enkelt GPU. Det er andet område, hvor Tensorflow har føringen for tiden.Relateret jobannonce: Direktør for Plan, Teknik og BeskæftigelseDer udover kan den nye udgave byde på forbedret ydeevne via distribueret træning, nye api'er og nye visualiseringmuligheder, såsom den tidligere nævnte Tensorboard-integration.En just-in-time-compiler gør det muligt at eksportere Pytorch-modeller i en form, der kan køre i forskellige produktionsmiljøer, såsom mobil eller IoT, ved hjælp af et indbygget C ++-bibliotek.En anden ny funktion er et modul, der implementerer 'multi-headed attention.'Det er en nyere deep learning-arkitektur, der opnår resultater, der kan sammenlignes med den såkaldte RNN-arkitektur (recurrent neural network) på sekventielle læringsopgaver, såsom sprogoversættelse. Multi-headed attention benytter ikke rekursion og kan derfor trænes i en brøkdel af den tid, som RNN-modeller benytter.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-05-08
+          &nbsp;·&nbsp; e7309a5d
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.841</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.796</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.684</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>United Cycling blandt finalisterne til Danish Design Award 2020</h4>
+        <div>
+           Lynge-virksomheden er finalist i kategorien 'Message Understood'Lynge-virksomheden The United Cycling Lab &amp; Store og designvirksomheden Johannes Torpe Studios er finalist i kategorien Message Understood', når Dansk Design Center og Design denmark 2. juni arrangerer prisuddelingen Danish Design Award.Kategorierne ved Danish Design Award - der fejrer den forskel, design kan gøre - spænder fra sundhed over ressourcebevidsthed til forbedring af arbejdslivet.Årets finalister afspejler de positive kræfter, der er til stede i design, og de områder vi skal fokusere på i 2020 og fremadrettet, mener juryformand Christina Halskov:&quot;Løsningerne indgyder tillid til, at positive forandringer er mulige og viser designernes gå-på-mod til at løse klimaudfordringer, konflikter mellem mennesker, tilgodese menneskers behov, skabe muligheder for inspirerende læring, bryde med vanetænkning og innovere, eksempelvis ved at bruge kunstig intelligens med mennesket og planeten i fokus.&quot;Om United Cycling - der betegnes som 'et showroom, butik og mødested for high-end professionelle racercykler'- udtaler juryen:'Dette er helt klart et sted, der løfter cyklen til et nyt niveau. Konceptet er grundigt og veludført og indrammer således produktet på en ny måde for både den professionelle og entusiastiske amatør. Det er her, man skal gå hen, hvis man vil beundre det nyeste inden for cykelløbsteknologi - det budskab går tydeligt igennem.'Alle løsningerne kan findes på Danish Design Awards hjemmeside. Her kan man desuden afgive sin stemme på den bedste designløsning i kategorien People's Choice Award.Prisuddelingen foregår i samarbejde med Dansk Industri og er planlagt til at finde sted 2. juni i Industriens Hus.mik.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2020-03-19
+          &nbsp;·&nbsp; e7a1481e
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.908</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En helt ny Auris i ærmet</h4>
+        <div>
+          DANMARK: Toyota Auris. Et mærke, der er kendt. Og nu kommer bilen i helt ny version.Det har Toyota op til den internationale biludstilling i Schweiz her i marts netop afsløret.Dermed har Toyota en verdenspremiere mere i ærmet. Tidligere har den japanske koncern fortalt om premierer på både en moderne koncept-racerbil og en ny Aygo.Den nye Auris bliver første i øvrigt en Toyota-model, hvor det er muligt at vælge mellem flere forskellige hybridmotorer.Informationerne om den nye Auris er stadig sparsomme, men et gennemgribende nyt og mere sportsligt udvendigt design samt en helt ny og mere kraftfuld 2.0-liters hybridmotor i tillæg til den eksisterende 1.8-liters hybridmotor er noget af det, der venter. Meget mere vil blive afsløret på biludstillingen.Mobilitet i fremtidenUnder temaet » Bedre mobilitet til alle « viser Toyota på udstillingen design og ingeniørkunst, der øger potentialet for fremtidige batteridrevne elbiler, brintbiler, selvkørende biler og biler med kunstig intelligens.Konceptserien af køretøjer med navnet Toyota Concept-i er et synligt og konkret bud på, hvordan den japanske koncern ser på begrebet mobilitet i fremtiden.Kunstig intelligensKonceptserien består dels af Concept-i, der er en rummelig fire-personers elbil, som gennem kunstig intelligens kan lære førerens adfærd at kende og derigennem forudsige, hvordan føreren vil handle i forskellige situationer.Derudover består serien af Concept-i Ride, der er en kompakt to-personers elbil særdeles velegnet for personer med fysiske begrænsninger, samt af Concept-i Walk, der er et brugervenligt transportmiddel for blandt andre fodgængere.Sidst men ikke mindst vil Toyota gennem koncept-brintbilen Comfort Ride Concept give et bud på, hvordan brintteknologi kan udvikles til at passe ind i en rummelig ny form for luksus-sedan med en fleksibel indretning.
+        </div>
+        <footer>
+          <em>By og Land</em>
+          &nbsp;·&nbsp; 2018-03-13
+          &nbsp;·&nbsp; e6a985ed
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.986</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.648</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook afslører nyt design i aften</h4>
+        <div>
+          Nyhedsfeed suppleres af nye feeds med musik, koncerter og Instagram-billeder.Klokken 19 i aften dansk tid vil Facebook afsløre et helt nyt design på brugernes nyhedsfeed.Det suppleres med andre selvstændige Instagram- musik- koncert og mobilopdateringsfeed samt en ny måde at filtrere nyheder på, som i følge facebook gør nyhederne mere relevante for den enkelte bruger.Flere og større reklamerDet nye design vil også give brugerne mulighed for selv at skifte mellem de nye feeds via en knap øverst i hvert feed. Det er uklart, om Facebook også vil bruge den model på de mobile enheder.Mere vigtigt for facebook end måske for brugerne vil det nye design og de nye algoritmer, der filtrerer nyhederne, også bringe mere relevante reklamer ud til den enkelte bruger.Sammen med reklamerne kommer større billeder både på web- og mobiludgaverne af Facebook.Facebook har annonceret, at ændringerne begynder at ske i dag torsdag, men hvornår de implementeres over hele verden, er ikke oplyst.Flere medier spekulerer i, at hvis det nye design virker, vil det få brugerne til at anvende mere tid på Facebook, hvor de så også ser flere reklamer.Facebook har i følge medierne i virkeligheden forsømt sine nyhedsfeeds, som har fungeret på samme måde, siden de blev introduceret i 2006 på web og i 2009 på iPhone platformen.En kolonne med venners ansigter til venstre på skærmen, deres statusopdateringer i en kolonne til højre og inde i midten en hel masse tom, hvid plads.Det kommer til at blive erstattet af blandt andet en større integration af fotodelingstjenesten Instagram end set tidligere på Facebook.Fotos har længe været Facebooks populæreste indhold uden at have en egen feed, og en sådan kan ifølge flere medier få brugerne til at glo på billeder i timevis, især hvis Facebook giver mulighed for at bladre gennem billeder i fuld skærm, som om alle billederne ligger i et og samme album.Det nye musik-feed skal vise, hvad ens venner hører og foretrækker af musik på forskellige tjenester som Spotify, men det vil også udfra den enkelte brugers musikvaner vise kommende koncerter i nærheden, nyudkommet musik og andet relevant musikstof.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2013-03-07
+          &nbsp;·&nbsp; e3b12e6b
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.692</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.647</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Leder, hvad er din risiko-appetit i den digitale revolution?</h4>
+        <div>
+          Den hastige digitale transformation og globalisering åbner op for helt nye forretningsmodeller. Men bagsiden af medaljen er et stort behov for IT-sikkerhed og databeskyttelse. For nok giver den nye teknologi nye muligheder, men teknologien fører også f.eks. privacy- og cybertrusler med sig, der igen helt forståeligt får politikerne til at indføre en masse nye love og regler, som virksomhederne skal overholde.Det stiller helt nye krav til virksomhedsledere og bestyrelser. For hvordan skal man som ledelse håndtere den nye virkelighed og den hastighed, som forandringerne sker i?Jeg vil i det følgende give nogle af de vigtigste råd. Men først en anelse baggrund. I min hverdag taler vi om &quot;Risk Management&quot; og om &quot;Compliance&quot;. Førstnævnte handler om at vurdere, forudse og håndtere virksomhedens eksisterende og nye risici. Sidstnævnte handler om at sikre, at virksomheden overholder alle de nye krav i form af love og regler, som med stor hast indføres som reaktion på den digitale virkelighed. I virkeligheden er de to temaer selvsagt nært forbundne.ØkonomistyringVisionen skal række udover profitDet måske mest kendte eksempel på nye regler indført som følge af bl.a. fremvæksten af ny teknologi er EU's persondataforordning (GDPR), som træder i kraft i maj 2018. Formålet er at understøtte det digitale indre marked med ensartede regler og samtidig sikre borgerne stærkere kontrol over egne data, som virksomhederne registrerer. Med den nye meget komplicerede og omfattende EU-forordning følger meget store bøder ved overtrædelser og dermed høj risiko.Denne overordnede trend med ny teknologi, der både giver uanede forretningsmuligheder og samtidig øger risikoen, rammer stort set alle virksomheder på tværs af brancher. Men der er ikke to virksomheder, der står med nøjagtig samme udfordring.Seks gode rådJeg vil derfor give mine helt overordnede anbefalinger til ledelser og bestyrelser:Sæt tonen helt fra toppen af virksomheden omkring tolerance og kultur i forhold til at håndtere risici.Forstå din virksomheds forretningsmodeller og de risici, de indeholder til bunds.Find ud af hvad Jeres risiko-appetit er? Hvad er Jeres risiko-tolerance? Ingen virksomheder har råd til 0-tolerance indenfor alle områder.Bryd Jeres risiko-tolerance ned, så det er muligt at bruge ressourcerne dér, hvor I ikke tolererer fejl.Led efter løsninger i teknologien   både problem og løsning findes meget ofte i den nye teknologi.Se de nye teknologier og medfølgende risici som muligheder. Hvis du anvender viden bedre end din konkurrent, så får du måske en konkurrencefordel.Når en virksomhedsledelse følger disse få råd, så kan det skabe en god portion ro i maven omkring overraskelser og desuden et forbedret beslutningsgrundlag.Der er ingen tvivl om, at ledelser og bestyrelser i både danske og internationale virksomheder i disse år står overfor et stærkt stigende pres for både at transformere forretningen til en ny digital virkelighed og samtidig navigere forretningen sikkert igennem en omstilling med nye risici. Og hastigheden synes kun at stige med fremvæksten af nye teknologier som f.eks. analytics, robotics, kunstig intelligens og Big Data.Skab værdi og fordele ud af de nye risiciØkonomistyringDigitaliseringen rusker op i økonomifunktionenSamlet set medfører det en revolution af Risk Management og Compliance-funktionerne i virksomhederne. De dygtigste vil ikke kun lykkes med at forudse og håndtere nye risici men også lykkes med at skabe værdi fra de nye risici ved f.eks. at høste first-mover-fordele gennem håndteringen.Eller ved at anvende den nye transparens og indsigt fra data til at skabe bedre kundeoplevelser og service end konkurrenterne. Samtidig med at virksomheden selvfølgelig på ansvarlig vis sikrer, at de fortrolige data beskyttes imod udefra kommende trusler.Det er virkelig store krav, der møder nutidens ledere, topledere og bestyrelser. De skal evne at håndtere forandring og usikkerhed i langt højere grad end før, og de skal konstant udvikle sig for at være relevante og bevare konkurrencedygtigheden.Alligevel vil jeg tillade mig at spørge: Kære leder, har du fundet ud af, hvor din virksomheds muligheder for værdiskabelse og konkurrencefordele gemmer sig bag alle de nye krav, reguleringer og risici i den fremadstormende digitale revolution?
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2017-09-22
+          &nbsp;·&nbsp; e66d454c
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.655</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.827</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.779</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk iværksætterfirma ansætter TV2-formand som ny topchef (v.2)</h4>
+        <div>
+          KøbenhavnTirsdag kan det danske iværksætterfirma Airhelp løfte sløret for tilgangen af en prominent, ny topchef. Ifølge Berlingske vil selskabet, der leverer services til flypassagerer, præsentere Jimmy Maymann som ny administrerende direktør. Jimmy Maymann er blandt andet kendt for at være bestyrelsesformand i TV2.Hos Airhelp afløser han Henrik Zillmer, der er selskabets stifter, som i stedet vil være bestyrelsesformand i Airhelp fremover. Airhelp har ved hjælp af kunstig intelligens opbygget en forretning, der hjælper med at hente erstatninger hjem til flypassagerer, som har været ude for forsinkelser eller aflysninger. /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-10-21
+          &nbsp;·&nbsp; e767fa6c
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.608</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.533</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.557</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nordea: Ingen nye beslutninger om fyringer i Compliance</h4>
+        <div>
+           Der er ikke truffet nye beslutninger om at skære antallet af ansatte i Nordeas compliance-afdeling.Det fastslår banken over for Ritzau Finans efter skriverier mandag hos Bloomberg News, der kunne foranledige til at tro, at der var truffet nye beslutninger om nedskæringer.I artiklen gav Mikael Bjertrup, der er chef for forebyggelse af finansiel kriminalitet i Nordea, udtryk for, at der på sigt kommer til at være færre compliance-medarbejdere.Det vil ske, i takt med at banken bliver endnu bedre til at udvikle nye teknologier og bruge algoritmer i afdelingen./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Finans.Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-07-28
+          &nbsp;·&nbsp; e7d04610
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.841</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.623</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.555</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.619</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Verdenspremiere på intelligente høreapparater</h4>
+        <div>
+          FREDERICIA: Din Hørespecialist i Fredericia lancerer verdens første høreapparater med kunstig intelligens. De nye apparater tager ved lære af brugerens præferencer og omgivelser, når de løbende tilpasser lyden.Der er tale om en regulær verdenspremiere, når høreklinikken Din Hørespecialist på Jyllandsgade fremviser en helt ny generation af høreapparater, der nu er blevet intelligente. Mandag 13.august er alle fredericianere, der har problemer med hørelsen, inviteret til en informationsdag, hvor de kan få en uforpligtende og grundig gennemgang af den nye serie Evoke fra danske WIDEX.-For at kunne tilbyde kunderne i Fredericia og omegn den bedste høreoplevelse, skal vi altid have de nyeste og mest avancerede produkter på hylderne, siger Tahereh Ghasemi, der er audiologist i Din Hørespecialist i Fredericia Grundtanken bag de nye høreapparater er, at de skal vænne sig til brugerens hverdag - og ikke omvendt. Apparaterne lærer hele tiden om brugeren og bliver derfor kontinuerligt bedre til at justere sig til de mange forskellige lydmiljøer, brugerens hverdag byder på. Dermed bliver høreoplevelsen så naturlig som muligt og brugeren føler sig stort set ubesværet med sit høretab.Flere ord og detaljerI forbindelse med arrangementet er det muligt at bestille et sæt af de nye Evokehøreapparater hjem på prøve i to uger - ganske uforpligtende.Tahereh Ghasemi anbefaler alle at prøve de nye høreapparater. Bruger man allerede høreapparater, er det oplagt at sammenligne oplevelsen.Med de avancerede apparater skal brugeren anstrenge sig langt mindre for at opfatte ord og detaljer i lyden.Fordi høreapparaterne indstiller sig selv efter miljøet og skaber en personlig lydprofil, oplever brugeren større harmoni i ørerne.Alle medarbejdere i klinikken på Jyllandsgade har gennemgået et kursusforløb, så de er klædt på til at vejlede og skræddersy en løsning til alle behov.WIDEX Evoke præsenteres mandag den 13. august klokken 13.30 på Jyllandsgade 10.Til arrangementet vil det være muligt at se modellerne og bestille et sæt hjem til prøve i ens vante omgivelser.
+        </div>
+        <footer>
+          <em>Elbo Bladet</em>
+          &nbsp;·&nbsp; 2018-08-07
+          &nbsp;·&nbsp; e6d92e31
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.813</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Erfaren iværksætter er kommet i bestyrelsen for vejlensisk software-firma</h4>
+        <div>
+          Valg: Iværksætter og it-profil Jesper Geisler, som bl.a. har været ansvarlig for forretningsudviklingen i det nordiske it-selskab Atea, er nyt medlem af bestyrelsen for software-virksomheden Dialog Data i Vejle.I november 2020 fik firmaet en ny bestyrelsesformand i form af salgs- og iværksætterprofilen Poul Bærentsen.Dialog Data skifter i marts 2021 Stimorols gamle fabrik ud med lokaler i Vejles nye digitale fyrtårn, AI Innovation House.
+        </div>
+        <footer>
+          <em>VejleAmtsFolkeblad.dk</em>
+          &nbsp;·&nbsp; 2021-01-19
+          &nbsp;·&nbsp; e8166357
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.717</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hør ugens podcast: Plastaffald graves ned. EFI-afløser kan gentage skandalen</h4>
+        <div>
+          I denne uges Transformator ser vi nærmere på plastaffald. Siden Kina for et år siden lukkede for importen af verdens plastaffald er tusinder og atter tusinder af tons plastik blevet gravet ned eller brændt af - eller sendt til andre lande, hvor lavtlønnede arbejdere nu får det beskidte arbejde med at sortere og vaske affaldet.Bagefter skal det handle om ny software til inddrivelse af skat, nemlig afløseren til det forkætrede EFI, der har det mundrette navn PSRM - Public Service Revenue Management. Det nye system giver dog desværre knas og hovedpine, især hos kommunerne.Priserne Ugens Transformer og Ugens Kortslutning handler blandt andet om GDPR-bøder og gumpetunge miljøskibe denne gang.LinksSkats it-styrelse om ny EFI: »Vi har en god mavefornemmelse« Leder: Skat har erstattet fagfolk med et it-fantomDanskere tager kontrol over Googles og Amazons AI-assistenterEfter tre år ligger Miljøstyrelsens nye miljøskibe stadig uvirksomme og gumpetunge henBeskyttelse mod radon dumper i ny testFrankrigs datatilsyn giver Google GDPR-bøde på 50 millioner euroDu kan finde flere podcasts på vores fokusside
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2019-01-25
+          &nbsp;·&nbsp; e70e66d1
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.65</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Note</h4>
+        <div>
+          &quot; Vi står kun ved den første spæde begyndelse på alt det, den kunstige intelligens vil vende op og ned på. Vi hører, at nye job opstår, hvor andre forgår, men skal den 50-årige chauffør, der bliver fortrængt af en selvkørende bil, uddanne sig til dataingeniør? Og skal han tage nye uddannelser igen og igen, fordi den kunstige intelligens vil nedlægge jobs i et stadig højere tempo? YUVAL HARARI, ISRAELSK HISTORIKER, PROFESSOR OG FORFATTER, I TALE VED WORLD ECONOMIC FORUM I DAVOS, CITERET I POLITIKEN. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-01-28
+          &nbsp;·&nbsp; e78e2d5a
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.955</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.759</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Menneske og maskine</h4>
+        <div>
+          DR2 11.15 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidne til en ny arts opståen eller er det enden på vores egen art? Den fysiske forbindelse mellem menneske og maskine er allerede almindelig. Se med, når dokumentaren &quot; Supermennesket: Den optimerede hjerne&quot; sendes. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-08-07
+          &nbsp;·&nbsp; e7d3a030
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.961</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.827</kbd>
+            <kbd data-tooltip="Humans (&amp; machines)">L80_HUMANS&nbsp;0.506</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bitcoins kræver et lands energi</h4>
+        <div>
+          Når der ' høstes' bitcoins, kræver teknologien bag så store mængder energi, at det svarer til forbruget, som et land som Irland har, skriver The Guardian.Forklaringen er, at den digitale minedrift sker ved at lave meget avancerede beregninger på den algoritme, som ligger bag valutaen. Og det kan alene ske ved at bruge kraftfulde servere i døgndrift.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2021-03-03
+          &nbsp;·&nbsp; e82644c2
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.895</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.553</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.712</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Verdenspremiere på intelligente høreapparater</h4>
+        <div>
+          VIBORG: Din Hørespecialist i Viborg lancerer verdens første høreapparater med kunstig intelligens. De nye apparater tager ved lære af brugerens præferencer og omgivelser, når de løbende tilpasser lyden.Der er tale om en regulær verdenspremiere, når høreklinikken Din Hørespecialist på Sct. Mathias Gade fremviser en helt ny generation af høreapparater, der nu er blevet intelligente. Torsdag den 23. august er alle viborgensere, der har problemer med hørelsen, inviteret til en informationsdag, hvor de kan få en uforpligtende og grundig gennemgang af den nye serie Evoke fra danske Widex.-Vores vigtigste opgave er at tilbyde viborgenserne den bedst mulige høreoplevelse.Derfor skal vi altid have de nyeste og mest avancerede produkter på hylderne, og vi er naturligvis glade for, at Widex har valgt vores høreklinik til at introducere de intelligente høreapparater for det viborgensiske publikum, siger Per Bøvling, der er audiologist i Din Hørespecialist i Viborg.Grundtanken bag de nye høreapparater er, at de skal vænne sig til brugerens hverdag - og ikke omvendt. Apparaterne lærer hele tiden om brugeren og bliver derfor kontinuerligt bedre til at justere sig til de mange forskellige lydmiljøer, brugerens hverdag byder på. Dermed bliver høreoplevelsen så naturlig som muligt og brugeren føler sig stort set ubesværet med sit høretab.Flere ord og detaljerI forbindelse med arrangementet er det muligt at bestille et sæt af de nye Evokehøreapparater hjem på prøve i to uger - ganske uforpligtende.Per Bøvling anbefaler alle at prøve de nye høreapparater.Bruger man allerede høreapparater, er det oplagt at sammenligne oplevelsen.- Apparaterne giver brugeren en mere uanstrengt høreoplevelse, hvor man opfatter flere ord og detaljer og oplever større harmoni i ørerne. Simpelthen fordi høreapparaterne indstiller sig selv efter miljøet og skaber en helt personlig lydprofil, forklarer Per Bøvling Widex Evoke præsenteres torsdag den 23. august klokken 13.30 på Sct. Mathias Gade 15. Til arrangementet vil det være muligt at se modellerne og bestille et sæt hjem til prøve i ens vante omgivelser.
+        </div>
+        <footer>
+          <em>Viborg Nyt</em>
+          &nbsp;·&nbsp; 2018-08-14
+          &nbsp;·&nbsp; e6db9721
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.981</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.526</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vestager vil sørge får, at digitalisering får topprioritet i EU</h4>
+        <div>
+          Når Margrethe Vestager overtager det overordnede ansvar for digitaliseringen i Europa, så skal digitaliseringen op i et meget højere gear.Det skal blandt andet ske ved at øge satsningen på kunstig intelligens på en tillidsfuld måde, sørge for ordentlig infrastruktur med ordentlige forbindelser, herunder den nye 5G-mobilteknologi, og ved at sikre, at digitale virksomheder betaler den skat, som de skal.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-11-06
+          &nbsp;·&nbsp; e76d6f6b
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.958</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.864</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.868</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.672</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Tre gode grunde til at implementere ny teknologi i 2018</h4>
+        <div>
+           Allerførst: Rigtig glædelig jul og godt nytår.Hermed årets første blogindlæg fra min side.Der har været lidt stille fra min side den sidste tid, men efter at den famøse julefred sænkede sig, har der været tid til at kigge frem mod 2018.I 2017 havde jeg igen fornøjelsen af at arbejde med udvikling og implementering af ny teknologi hver eneste dag.Jeg vil derfor komme med tre gode grunde til, hvorfor du skal arbejde med ny teknologi i 2018.1: Teknologi giver motivationNår ny teknologi - det kan være robotter, software, 3D-print eller noget helt andet - bliver introduceret til en organisation, er det ikke ualmindeligt, at den første reaktion er skepsis.Men efter kort tid bliver skepsis vendt til interesse. I stedet for at fokusere på det negative ved forandringerne fokuseres der i stedet på mulighederne.En produktionsmedarbejder ser muligheder for at blive robotoperatør, ingeniøren ser mulighederne i nye designs med 3D-print og produktionsplanlæggeren får bedre muligheder med ny software.Det er dybt motiverende at have muligheden for at udvikle og forme sin arbejdsplads. Jeg ser meget ofte, at introduktionen af ny teknologi udløser et helt uudnyttet potentiale ved medarbejderne, der bliver taget ejerskab, udvikling sker og det kan binde teams sammen omkring en fælles interesse.2: Teknologi giver konkurrenceevneNår den nye teknologi kommer inden for dørene, er det ofte med henblik på at øge produktiviteten, lave kostreduktion eller give mulighed for at udvikle et nyt produkt. Det er klart, at det i sig selv øger virksomhedens konkurrenceevne.I efteråret snakkede jeg med en ejerleder i en SMV, som gerne ville have fleksibel automation af to grunde, primært fordi han ville øge produktiviteten på lav-volumen produktion.Det var dog det efterfølgende argument, der fangede min opmærksomhed. Han ville gerne have robotter, fordi han vidste, hans konkurrenter ikke havde. Hvis han kunne nå at arbejde et år med robotter inden konkurrenterne, ville han have viden og erfaring, som ikke direkte kunne købes.Dermed ville ejerlederens virksomhed have et større videnniveau end konkurrenterne, altså en konkurrencefordel.3: Teknologi giver kompetencerResultatet af nysgerrigheden i forbindelse med ny teknologi er kompetencer.Den nye teknologi giver i sig selv kompetencer, fordi man arbejder med den, men det giver også grundlag for opkvalificering. Med ny teknologi tiltrækker man meget nemmere arbejdskraft. Det er en effekt, jeg selv har mærket i Technicon, men som også bliver fremhævet bredt i erhvervslivet. Ny teknologi gør arbejdspladsen spændende, og det giver mulighed for at se perspektiver, som man ikke tidligere kunne se.Min nye personlige assistent er AIBudskabet er klokkeklart: virksomheder, der introducerer ny teknologi, klarer sig bedre.Det er et budskab, som er sagt ofte, men det gør ikke budskabet mindre gyldigt. Derfor vil jeg opfordre til, at der i 2018 bliver implementeret endnu mere ny teknologi.Jeg vil vende stærkt tilbage igen inden længe, hvor jeg vil fortælle om min nye personlige assistent. Hun hedder Amy, er særdeles flittig og jeg betaler kun 17$ per måned.Amy er kunstig intelligens.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2018-01-04
+          &nbsp;·&nbsp; e690920a
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.907</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.625</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.631</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>2020 kan blive et godt år for de fysiske butikker</h4>
+        <div>
+          KALUNDBORG: Med udgangspunkt i, at flertallet af danske forbrugere -cirka 85 pct.-foretrækker at gøre deres indkøb i de fysiske butikker, er der al mulig grund til at være optimistisk omkring udviklingen for 2020. 2020 kan blive et rigtig godt år for de fysiske butikker.Behovet for at opleve kommer de fysiske butikker til gode, idet man her kan byde på de oplevelser, som forbrugerne efterspørger.Glade sælgere skaber glade kunder, der ønsker at opholde sig længere tid i butikken og derved køber mere end de oprindelig havde planlagt.Seks fokusområderDe fysiske butikker kan i 2020 øge salget ved at fokusere på følgende seks områder: -Overflødighedshorn af nye produkter der løbende udskiftes -Promotion med mulighed for altid at gøre en » god handel « -Hyggelig butiksatmosfære med varme farver og god belysning -Venlige og kompetente sælgere der ved alt om de produkter, som de sælger -Glade sælgere der evner at overføre deres begejstring til kunderne -Vareudbringning og service i verdensklasse Som ringe i vandet vil den positive udvikling sprede sig fra de større butikscentre, der for alvor vil investere i shoppingoplevelser i 2020 til butikkerne i bymidterne, og herfra ud til butikkerne i omegnsbyerne.2020 kan blive en revival for de fysiske butikker -uanset hvor i landet de ligger.I en verden med mere og mere digitalisering skal vi som mennesker på et eller andet tidspunkt gøre oprør imod de systemer og den verden, hvor vi alle styres af algoritmer. Oprøret kommer til udtryk på mange måder bl. a. ved, at vi som forbrugere erkender, at vi ikke ønsker at miste vore butikker, vor bymidte eller vore centre.-Vi vil i 2020 handle mere i de fysiske butikker.2020 bliver året, hvor det bliver festligere at være kunde i de fysiske butikker, og der hvor de sociale behov tilfredsstilles bedst, slår Bruno christensen fast.
+        </div>
+        <footer>
+          <em>Kalundborg Nyt</em>
+          &nbsp;·&nbsp; 2019-12-31
+          &nbsp;·&nbsp; e785e701
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.75</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.774</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.648</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forskning i unges aktivitet og søvn</h4>
+        <div>
+          Professor MSO Anders Grøntved, institut for idræt og biomekanik, Syddansk Universitet, har modtaget 2.801.190 kroner fra TrygFonden til et projekt, der skal indhente data om børn og unges fysiske aktivitet og søvn. Dermed kan man målrette.tiltag til at fremme børn og unges fysiske aktivitet og forbedre deres søvn.Datasamlingen bliver formentlig den største og bedst dokumenterede på området i verden. Der vil blive udarbejdet detaljerede beskrivelser af fysiske aktivitetsmønstre i skoletiden, af total fysisk aktivitet på hverdage, weekend-dage og i fritiden samt om søvn.Desuden skal der udvikles algoritmer til at bestemme søvnkarakteristika hos børn og unge. J.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-12-09
+          &nbsp;·&nbsp; e77affdd
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.578</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google fintuner brug af gyroskop og accelerometer i Virtual Reality-app</h4>
+        <div>
+          Google har integreret virtuel reality direkte i Street View via deres Cardboard app, så du kan rejse verden rundt med et par briller af pap.Fremover behøver du ikke forlade hjemmets trygge rammer, hvis du vil en tur til Times Square i New York, besøge Markuspladsen i Venedig eller tage en tur ned af Diagonalstræde fra Harry Potter-bøgerne.Google har netop opdateret deres Virtual Reality app Cardboard, så virtual reality-oplevelsen fremover er direkte integreret i Google Street View til både Android og iOS. Dermed kræver det ikke andet et billigt virtual reality-headset af pap og en smartphone at drage verden rundt.Google Cardboard app er blevet downloadet mere end 15 millioner gange, og er tilgængelig på 39 sprog i over 100 lande.Google Cardboard-oplevelsen forbedret på billigere telefonerGoogle har også været inde og opdatere nogle af de mere tekniske elementer i Cardboard   specielt er der blevet kigget på den såkaldte drift correction samt integrationen med spilteknologien Unity.»Algoritmerne der integrerer signalerne fra telefonens gyroskop og accelerometer har fået en ordentlig overhaling,« skriver Google i et blogindlæg .Forbedringerne vil ifølge Google især kunne mærkes på telefoner med sensorer af knap så god kvalitet, hvor brugerne tidligere oplevede, at den virtuelle billedside blev ved med at bevæge sig et lille stykke tid efter, de var holdt op med at bevæge hovedet.Endelig har Google Cardboard fået en langt bedre integration med Unity, så Cardboard apps fungerer med Metal rendering på iOS og multi-threaded rendering på Android.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-10-13
+          &nbsp;·&nbsp; e542835d
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.62</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.605</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Viden sælger boliger</h4>
+        <div>
+          HOLSTEBRO: Facebook, Instagram og Twitter er nye medier at sælge boliger på, og det seneste nye er brug af kunstig intelligens og Big Data. Det får boligen set og solgt. Det viser erfaringer fra Norge, som har været de første i verden til at bruge det nye system som kaldes Salesbooster.Nu følger Danmark, hvor bl. a. BoligOne, RealMæglerne og Nybolig er blandt de første som tilbyder konceptet til kunderne. Salesbooster er en søgemaskine, der sender boligerne videre til de profiler som viser interesse.»Det er helt utrolig den viden computerne i dag gemmer, og den viden bliver nu brugt til at få husene solgt. Og solgt hurtigere,« siger ejendomsmægler Mogens Kragh fra BoligOne Mogens Kragh I/ S i Holstebro.BoligOne og RealMæglerne har i små tre måneder testet Salesbooster og resultaterne er så gode, at det nu rulles ud til yderligere 30 butikker. Inden nytår forventes alle 130 forretningssteder at tilbyde den nye måde at sælge bolig på.
+        </div>
+        <footer>
+          <em>Dagbladet Struer</em>
+          &nbsp;·&nbsp; 2016-08-31
+          &nbsp;·&nbsp; e5dcbb72
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.78</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.512</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Football Manager 2013 strammer op</h4>
+        <div>
+          En ny grafikmotor skal blæse kampene igang - og det er bare en af mange fboedringer i 13-udgavenFootball Manager-spillene er kendt for at være så vanedannende, at flere ægteskaber er røget en tur, mens folk har kæmpet Brabrand og Brønshøj fra røven af femte division til Champions League-finalen. Nu får skilsmisseadvokaterne travlt igen, for Football Manager 2013 er på vej. I helt nye videoer kan du se alle de fede ting, der er på vej i den nye version.Først og fremmest tilsætter spillet en helt ny grafikmotor, så du kan se alle kampene i bedre 3D med helt ny fysik. Den kunstige intelligens er også forbedret, så det virker som ægte fodbold.Det bliver også meget sjovere at spille mod andre mennesker. I Football Manager 2013 er der bedre spil over internettet, bl.a. ved en bedre forbindelse til spiltjenesten Steam og en ny Versus-del, så du nemmere kan sætte kampe op mod vennerne.Se også: Videoblog om network modeDer kommer bedre forberedelser forud for kampene. Layoutet er blevet kønnere og mere tilgængeligt, og rådgivningen fra de øvrige ansatte kommer i en lind, Twitter-lignende strøm.Læs også: Videoblog om matchdayDu kan blære dig med dine præstationer i Leaderboards. Du samler points for at vinde kampe og trofæer, og præmierne bliver større, jo ringere hold du fører til storhed.Se også: Videoblog om LeaderboardsDu kan også hyre en ny Director of Football, som du kan sætte til at hyre og fyre folk, byde på interessante spillere og bekræfte transfers, så du nemmere kan fokusere på spillet og taktikken i kampene. Du kan selv vælge, hvad han skal lave.Se stort billede |.
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2012-09-19
+          &nbsp;·&nbsp; e3689dc5
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.859</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.582</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.655</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danmarks Frie Forskningsfond styrker ideer inden for digitale teknologier med 80 millioner</h4>
+        <div>
+          Danmarks Frie Forskningsfond igangsætter nyskabende forskning i nye digitale teknologier, som fremmer kunstig intelligens og styrkepositioner inden for bl.a. sundhed, offentlig digitalisering og computer science. Feltet styrkes med 80 millioner kroner som en del af den politiske aftale om forskningsreserven for 2019, skriver Danmarks Frie Forskningsfond i en pressemeddelelse Det er et udvalg af førende danske og internationale eksperter, der har tildelt 22 »banebrydende projekter inden for nye digitale teknologier«  80 millioner kroner til forskning i et bredt spektrum af samfundsområder, hedder det i pressemeddelelsen. Ny teknologi skal bl.a. forbedre data om klimaforandringer, offentlig digitalisering, finansielle transaktioner, fremtidens byggematerialer, kryptering, sproggenkendelse, afsløring af misinformation, satellitovervågning samt metoder til udvikling af ny medicin, stærkere kvantecomputere, højtspecialiserede materialer og kunstig intelligens til såkaldte soft robots. Redaktionen
+        </div>
+        <footer>
+          <em>Pro.ing.dk/digitech</em>
+          &nbsp;·&nbsp; 2019-10-23
+          &nbsp;·&nbsp; e768a50a
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.644</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.67</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.619</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tysk billeverandør bygger ny fabrik for at komme mikrochip-tørke til livs</h4>
+        <div>
+          Den tyske virksomhed Robert Bosch har åbnet en ny fabrik, der skal hjælpe med at komme den globale mangel på mikrochips til livs.Det skriver Bloomberg.Fabrikken er placeret i den tyske by Dresden, og den har kostet omkring én milliard euro, hvilket svarer til cirka 7,5 milliarder danske kroner.Den nye fabrik skal efter planen være med til at gøre Europa mindre afhængig af chip-import fra Asien, og de første microchips fra fabrikken ventes at skulle bruges til elektronisk værktøj og til bildele.»Der er ingen hurtige løsninger, og det tager tid at øge produktionen,« lød det fra Harald Kroeger til Bloomberg i forbindelse med åbningen af den nye fabrik, hvorefter han tilføjede:»Men den nye fabrik vil bestemt hjælpe med at frigøre kapacitet andre steder, og enhver chip er en god chip« .
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-06-08
+          &nbsp;·&nbsp; e84d9cd9
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.682</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.543</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.624</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kom op af kælderen, menneske</h4>
+        <div>
+          Uvidenhed: I stjernehistorikeren Yuval Noah Hararis seneste bog: &quot;21 ting du bør vide om det 21. århundrede&quot;, skriver han: &quot;De største forbrydelser i moderne historie er ikke resultatet af had og grådighed, men snarere af uvidenhed og ligegyldighed&quot;. De helt store spørgsmål er ifølge Yuval Noah Harari: Hvordan regulerer man ejendomsretten over data, og hvordan skal vi tackle den enorme udfordring, som den bio-informationsteknologiske revolution udgør?Jeg efterlyser, at mennesker undgår &quot;kældertilværelsen&quot;- undgår at blive ligeglade eller opgivende. I stedet gå efter en ny vision - nye modeller for et samfund. Tænke anderledes om os selv. Skabe nye fortællinger. Forfatter Carsten Jensen skriver i sin nye bog &quot;Kældermennesker&quot;: &quot;Klimaforandringerne forærer os muligheden for et helt nyt sprog og en helt anden måde at leve på&quot;.Politikerne ser ikke ud til at forholde sig til en samlet levedygtig vision for fremtiden. Eller forholder sig til Big Data - algoritmernes autoritet, der kan munde ud i et digitalt diktatur, med forskellige biologiske kaster. Jeg oplever, at vi slet ikke har tiden til at føle os overflødig og irrelevante. I stedet ind i kampen for ny status og selvfølelse og en klar forestilling om, hvad livet handler om? Finde ind til de centrale spørgsmål og hvem vi er, før end algoritmerne og klimaet bestemmer for os - afstå fra ligegyldigheds og uvidenhedens &quot;kældertilværelse&quot;.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2018-09-25
+          &nbsp;·&nbsp; e6e93768
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.962</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.694</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil afskaffe clickbait-artikler</h4>
+        <div>
+          NEWSFEED: Facebook vil sætte en stopper for opslag som » Derfor var vandet i OL-bassinet grønt « , hvor læsere er tvunget til at klikke på et link for at blive klogere -såkaldt clickbait.En ny algoritme fra Facebook vil straffe de opslag, der tilbageholder eller overdriver information fra den tilhørende artikel. Algoritmen vil også straffe den side, opslaget tilhører, så den fremover får en dårligere visning.
+        </div>
+        <footer>
+          <em>Nordvestnyt Kalundborg</em>
+          &nbsp;·&nbsp; 2016-08-25
+          &nbsp;·&nbsp; e5da6c51
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.942</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.938</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.812</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.575</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kroppens betydning</h4>
+        <div>
+          DR P1 SØNDAG 08.03 Kroppen. Hvad betyder de nye kropserfaringer, vi har fået i coronatiden? Familieterapeut Anette Due Madsen overvejer i &quot; Pilgrim&quot; kroppens betydning for, at vi kan være hinanden nær. Cand. mag.Saliha Marie Fetteh fortæller fra Jordan om kropserfaringer i islam blandt andet under ramadanen. Kunstner Cecilie Waagner Falkenstrøm fortæller om at arbejde med krop, kærlighed og kunstig intelligens. Sognepræst Morten Skovsted fortæller om nye salmer.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-05-15
+          &nbsp;·&nbsp; e7b4e299
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.936</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.529</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Disruption: Kald det lige hvad du vil - men lad være med at stikke hovedet i busken!</h4>
+        <div>
+          jeg en god debat med den altid skarpe Arriva-direktør Nikolaj Wendelboe om disruption, ligesom jeg har haft med andre direktører, investorer og iværksættere. Det er altid interessant og lad mig dele nogle af de vigtigste perspektiver:Mange er trætte af ordet Disruption. Det er et modeord, som har været brugt her, der og alle vegne. Der bliver lagt så mange betydninger ind i ordet, at det nu næsten blot betyder &quot;nyt&quot;. Der er også så mange trusler indlejret om at 'ulven kommer'eller &quot;brænd lortet ned&quot; at det skaber en mathed. Og hvad så...?Lige der har vi et problem - for måske er disruption døende retorisk - men i substansen er festen kun lige begyndt!Der er en substans, som det er vigtigt at vi ikke fejer væk som gammel mode. Der er en substans som ikke forsvinder, bare fordi vi er trætte af begrebet. Det handler om mønstre som det er værd at interessere sig for - nye teknologier, nye forretningsmodeller, nye paradigmer, nye organisationer, nye former for arbejdsmiljø og hermed nye vilkår for ledelse. Det gælder for både private-, offentlige-, interesse- og uddannelsesorganisationer.En af udfordringerne er at vi ikke oplever disruption når vi ser os omkring. Vi tænker ikke over disruption, når vi logger på netflix og børnene ser youtube fremfor tv. Vi læser gratis-aviser, kører delebil til lufthavnen, flyver med Norwegian, handler på nemlig.com, samler apps på vores telefon, booker ferien på airbnb og vælger restauranten på tripadvisor.Nej, ofte mærkes disruption ikke af forbrugeren, som bare får det nemmere. Men det er blodig alvor for virksomhederne og dem der arbejder der... MobilePay som eksempel - en lynhurtig udbredelse og vi synes bare det er et fint værktøj. Men tænk på hvor mange konkurrent-kunder Danske Bank har fat i dagligt via den app....Den vigtigste pointe er dog ikke det der sker omkring os lige nu - endnu vigtigere er det, at vi forbereder os på det, som er lige rundt om hjørnet... Og det er ikke småting. Her venter 6 teknologiske felter vi med fordel kan holde øje med, fordi de vil åbne masser af nye muligheder - det er:Droner, selvkørende, robotterAI, kunstig intelligens, machine learning, kontor-robotterVR-AR (virtual reality, augmented reality)IoT (internet of things)BigData3D printLige om hjørnet venter også nye forretningsmodeller som f.eks. platforme, deleøkonomi, affiliate marketing, communities og abonnementer. Og der venter nye paradigmer som f.eks. nej til diesel, vegetarisme, dele-alt-muligt og fra produkt til service.Alt dette vil give os nye vilkår for organisation, trivsel, motivation og ledelse. Jeg arbejdede f.eks. med en virksomhed der i dag har 300 fastansatte konsulenter - og som om 5 år ønsker udelukkende freelance-konsulenter. Fremtidens organisation er et netværk, som er nyt for de fleste medarbejdere og ledere. Fremtidens organisation adapterer nyt i et tempo som langt højere end i dag. Nye produkter, nye forretningsmodeller, nye metoder, nye teknologier. Forestil dig at gå fra én produktlancering om året, til én om måneden - eller én om ugen...Så vi skal forberede os. Vi skal forberede os som virksomheder der får nye muligheder for at anvende, effektivisere og tilbyde nyt - men også får nye konkurrenter...Vi skal forberede os som offentlige myndigheder der skal regulere, vejlede og kontrollere alt det nye - i et helt andet tempo end vi er vant til...Vi skal forberede os som individer, der skal lære og adaptere en masse nyt, for at forblive relevante i vores jobs der ændres markant...Vi skal forberede næste generation, som skal dannes og uddannes til en ret anderledes verden...Vi skal forberede os som ledere på disse nye vilkår...Derfor er det farligt blot at feje modebegrebet disruption væk. Så må vi hellere kalde det noget andet... Radikal innovation? Digitalisering? Accellereret Evolution? Future of Work?Kald det hvad som helst - men lad være at stikke hovedet i busken!
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-08-10
+          &nbsp;·&nbsp; e6daa2c9
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.513</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.578</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.582</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Chauffører, smede og mekanikere presses af ny teknologi</h4>
+        <div>
+          Politik Beskæftigelsesminister Troels Lund Poulsen (V) er klar over udfordringerne ved ny teknologi.Ny rapport fra konsulenthuset McKinsey viser, at 250.00-300.000 personer kan blive ramt hårdt i fremtiden.Robotter, selvkørende biler, kunstig intelligens og anden ny teknologi kan i fremtidens arbejdsmarked især gøre det svært for chauffører og operatører.Smede, mekanikere, ansatte i servicebranchen samt lager- og kontormedarbejdere vil også mærke konsekvenserne af ny teknologi.Det viser en ny rapport fra konsulenthuset McKinsey ifølge Berlingske.Dermed har mellem 250.000 og 300.000 personer på det danske arbejdsmarked et job, som fremover vil blive udfordret af ny teknologi.Beskæftigelsesminister Troels Lund Poulsen (V) er opmærksom på udfordringen.- Vi står med et tveægget sværd. Hvis vi griber fremtiden rigtigt, tror jeg, at vi på mange måder står over for en guldalder for det danske samfund.- Men omvendt bliver vi nødt til at tale helt åbent om, at der er en stor gruppe mennesker, som i fremtiden kan blive ramt af, at deres jobfunktioner forsvinder, siger ministeren til Berlingske.Ifølge Troels Lund Poulsen skal den enkelte selv tage et ansvar. Den mest udsatte gruppe på arbejdsmarkedet er også dem, der efteruddanner sig mindst.- Vi skal tage livtag med de her grupper, opsøge dem. Men vi må også have en offentlig debat om, at det er nødvendigt at tage et personligt ansvar for ens arbejdsliv.- Man kan ikke bare læne sig tilbage og tro, at andre tager sig af det, siger Troels Lund Poulsen.Rapporten anslår, at den nye teknologi kan løfte bruttonationalproduktet, bnp, yderligere mellem 0,8-1,4 procentpoint om året de kommende år.
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2017-12-04
+          &nbsp;·&nbsp; e687788c
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.682</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.559</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.55</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>OVERBLIK: Derfor vinder eller taber vi til robotterne (v.1)</h4>
+        <div>
+          KøbenhavnOptimisterne mener, at mere avancerede robotter og kunstig intelligens vil skabe velstand uden at gøre folk arbejdsløse. Her er hvorfor:* Vi har gjort det før: Teknologi har mange gange før truet med at gøre mennesket overflødigt. Det troede man også med alt fra dampmaskiner til de første computere og robotter i sidste århundrede, men det holdt ikke stik.* Nye job opstår: I kølvandet på ny teknologi opstår nye brancher, som vi ofte slet ikke har tænkt på. Eksempelvis havde ingen for blot for år siden hørt om en smartphone eller en app.* Nye teknologier vil skabe velstand: Selv hvis nogle opgaver bliver overflødige, så der er mindre arbejde til mennesker, vil robotterne producere og skabe penge til at betale for eksempel borgerløn og til, at vi kan opretholde vores samfund.- Pessimisterne tror, at mennesket vil få gavn af den nye teknologi og tjene penge på den. Men vi vil tabe kampen om job. Her er hvorfor:* Mennesket er ikke længere unikt: Den nye generation af robotter og kunstig intelligens vil for første gang komme helt tæt på en del af menneskets unikke egenskaber som bevægelser og tankemønstre. Det har ikke været tilfældet med tidligere teknologi, som alene har givet simpel muskel- og regnekraft.* En klasse af ubrugelige: Undersøgelser viser, at stadig flere arbejdsopgaver bliver gjort overflødige. Det er ikke kun ufaglært arbejdskraft, men også advokater og læger, som kan erstattes. * Nye job bliver taget af robotter: Mange job i følgeindustrier vil også kunne klares af robotter og kunstig intelligens. Dermed risikerer en gruppe af mennesker at blive ubrugelige./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-04-30
+          &nbsp;·&nbsp; e63c1d81
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.987</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.801</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.599</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Se Randers'udvikling i Googles nye tidsmaskine</h4>
+        <div>
+          En ny funktion i Google Earth har set dagens lys. Google Earth Engine Timelapse hedder funktionen, hvor man kan se udviklingen på hele jordkloden fra 1984 til 2016.Google presser hele tiden udviklingen af deres digitale atlas.Mens man måbede første gang, de lancerede Google Street View, hvor man kunne komme helt ned på gadeniveau de fleste steder i verden, er søgemaskinen nu klar med en ny feature.Google Earth Engine Timelapse hedder den.Det nye tiltag består af en timelapse med satellitbilleder af hele jorden, som Google har lagt sammen i en video, så man kan se udviklingen overalt gennem 32 år fra 1984 til 2016.Se Randers-timelapsen fra 1984 til 2016 nedenfor.OBS: Google har lavet den nye timelapse til desktop, og derfor kan redskabet ikke ses på mobil. Men via linket i bunden af artiklen kan du se en eksempelvisning på mobilen.Tag på tidsrejse ud i VerdenDu kan zoome rundt i resten af verden i den nye video-feature.Se flere steder i verden på Googles egen hjemmeside her.Se ogsåNy Google-smartphone er med kunstig intelligens
+        </div>
+        <footer>
+          <em>Amtsavisen.dk (Randers Amtsavis)</em>
+          &nbsp;·&nbsp; 2016-12-02
+          &nbsp;·&nbsp; e6029243
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.517</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.517</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.644</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

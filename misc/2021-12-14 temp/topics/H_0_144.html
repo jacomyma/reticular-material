@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_144 <kbd>H_0_144</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>generation</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>atter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>verden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>centrum</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indefra</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>begyndende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spirende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skabt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>1949</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kreative</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>art</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mødes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tider</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>generationer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremmeste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>temaer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tradition</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>klimaet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>løsningsorienteret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omverden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forandre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>leve</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forandret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ekstrem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overleve</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indtager</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>21.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>paradoks</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fravær</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>præget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tema</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tiders</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forstået</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fem-ti</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>optimisme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afsluttende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forgangne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tendenser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forholdet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udfolde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vor</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>koncentration</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skabelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kollektiv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>syn</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>perspektiv</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dyster</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>blikket</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>radikal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afsættet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>isolerede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>økologiske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>maskineri</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dyb</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anno</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sammensmeltning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uddannede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>allestedsnærværende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lykkeligste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>reflekterer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udvise</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>græske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eksisterede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>johannesen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>årtiers</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overdreven</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilstedeværelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fagre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vink</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bestræbelser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konstruktive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>permanente</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hverdagens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beherske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vigtighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>individet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremtidsforskning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilbagevenden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>målestok</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bønder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>handlende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>træet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>materielle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>parentes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nybrud</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>livsvilkår</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>visionær</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_144 DESC LIMIT 50</pre>
+      <article>
+        <h4>Forsidehenvisning: Magtens matematik</h4>
+        <div>
+          Vi står på dørtrinnet til en ny verden, styret af kraftfulde ligninger og komplicerede koder, som vil få afgørende indflydelse på dit job, dine indkøb og din økonomi. Brugen af avancerede algoritmer vil ændre forudsætningerne for din hverdag, privat og professionelt, for bestandigt.Serie: Matematik styrer millioner af kunder, side 6-7 Kommentar: De ændrer dit syn på verden, side 2.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-03-26
+          &nbsp;·&nbsp; e5a1f09b
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.782</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Kunstig intelligens er stadig mere ven end fjende</h4>
+        <div>
+          I takt med at teknologien viser lovende fremgang, er der en del spændstige bud på, hvordan og hvor meget kunstig intelligens vil forandre verden. En ny rapport fra Stanford University konkluderer dog, at den hverken vil udrydde eller overflødiggøre menneskeheden - inden for de næste ti år i hvert fald.
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2016-09-01
+          &nbsp;·&nbsp; e5dd4bb4
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.945</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.768</kbd>
+            <kbd data-tooltip="Year">L80_YEAR&nbsp;0.523</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fire kunstnere giver bud på en verden i forandring</h4>
+        <div>
+          Fire samtidskunstnere har skabt værker til en ny udstilling på Holstebro Kunstmuseum. En udstilling, der handler om at vores opfattelse, af at vi er verdens centrum og kan kontrollere jorden, er ved at bryde sammen.Holstebro: I midten er der mørke.I hvert fald omkring de oplyste, håndkolorerede søkort fra 1600-tallet og de 17 raderinger af kunstneren Rembrandt van Rijn, der også levede i 1600-tallet.Rummet er centralt i Holstebro Kunstmuseums nye udstilling, &quot;Navigeringer - på kanten af en verden i forandring&quot;, som er skabt i samarbejde med Vejle Kunstmuseum.Det er en forskningsbaseret udstilling, der udspringer af den måde, vi forstår os selv i verden på. Et verdenssyn, der mere eller mindre blev grundlagt i 1660-tallet, da man begyndte at kortlægge verden omkring os, blandt andet via søkort, og hvor kunstnere - med Rembrandt som foregangsmand - begyndte at afbillede mennesket som et individ med sjæl og følelser.- Men den forståelse af os selv, som centrum i en kortlagt verden, er under forandring. Klimakrisen skaber ændringer i verden, der er udenfor vores kontrol, og skabelsen af kunstig intelligens sætter de landskaber, vi er vant til at begå os i under pres, forklarer museumsinspektør og kurator ved Holstebro Kunstmuseum, Teresa Østergaard Pedersen.Museerne i Holstebro og Vejle har inviteret fire samtidskunstnere til at forholde sig til emnet om, hvilke udfordringer vi som art står overfor? Kunstnerne - Kristoffer Ørum, Rikke Benborg, Ferdinand Ahm Krag og Gry Bagøien - har skabt deres værker direkte til udstillingen.- Det er en udstilling med et stort budget, blandt andet på grund af den megen teknik, forklarer Teresa Østergaard Pedersen.Udstillingen har kostet &quot;på den gode side af millionen&quot;, men kun en lille del er betalt af museerne selv.- Langt de fleste penge kommer fra fonde. Den type udstilling kunne slet ikke realiseres, hvis ikke der var fonde, der velvilligt støttede, oplyser Teresa Østergaard Pedersen.&quot;Navigeringer - på kanten af den verden i forandring&quot; åbner på lørdag ved på Holstebro Kunstmuseum, hvor den kan opleves frem til den 17. januar 2021.- Udstillingen har været længe undervejs. Den handler om en verden i forandring og nåede lige at være åben i Vejle i fire dage - så forandrede verden sig via corona, siger Teresa Østergaard Pedersen med et lille smil.
+        </div>
+        <footer>
+          <em>Dagbladet-Holstebro-Struer.dk</em>
+          &nbsp;·&nbsp; 2020-09-23
+          &nbsp;·&nbsp; e7e781d1
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.937</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.794</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.581</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nu åbner den skæbnesvangre udstilling igen</h4>
+        <div>
+          HOLSTEBRO: Hvor kommer vi fra? Hvor er vi? Hvor skal vi hen? Det er spørgsmål, vi er vant til at stille os selv, når vi skal finde vej i verden. Det er netop kernen i den store særudstilling, &quot; Navigeringer - på kanten af en verden i forandring&quot;, der åbnede på Holstebro Kunstmuseum lørdag den 26. september.Sådan beskriver museet den nye udstilling i en pressemeddelelse.Udstillingen undersøger, hvordan den verden, vi kender, er under voldsomt pres.Mennesket er ikke længere centrum for kortlægningen af vores planet.Dette opleves særligt tydeligt i makroskala med globale klimaforandringer og masseuddøen af dyrearter, men også i mikroskala i udviklingen af kunstig intelligens og internettets parallelvirkeligheder, lyder det videre.Miljøer skabt af billedkunstnereKunstmuseerne i Holstebro og Vejle har på den baggrund inviteret fire billedkunstnere til at byde ind med kunstneriske vinkler på de forandringer, der præger os og verden i dag.Hver især har kunstnerne, Rikke Benborg, Kristoffer Ørum, Gry Bagøien og Ferdinand Ahm Krag, skabt miljøer, der skal reflektere over, hvordan vi som mennesker navigerer i dag og i en fremtid, som stadig befinder sig i mørke.Værkerne er produceret specifikt til udstillingen.&quot; Navigeringer - på kanten af en verden i forandring&quot; kan ses frem til den 17. januar 2021.Hver især har kunstnerne, Rikke Benborg, Kristoffer Ørum, Gry Bagøien og Ferdinand Ahm Krag, skabt miljøer, der skal reflektere over, hvordan vi som mennesker navigerer i dag og i en fremtid, som stadig befinder sig i mørke.HOLSTEBRO KUNSTMUSEUM &quot;.
+        </div>
+        <footer>
+          <em>Holstebro Onsdag</em>
+          &nbsp;·&nbsp; 2020-09-30
+          &nbsp;·&nbsp; e7e9e59e
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.929</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.841</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.606</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Algoritmens hemmelighed</h4>
+        <div>
+          DR 2 12.20 Vores liv berøres af algoritmer hver dag. Algoritmer kan lede kirurgens hånd og bygge kunstværker.De kontrollerer, hvad vi læser, og de produkter, vi køber. Professor Marcus du Sautoy løfter i den engelske dokumentar &quot; Den moderne verden indefra: Algoritmer&quot; sløret for de hemmelige regler, der styrer det moderne liv: algoritmer.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-09-22
+          &nbsp;·&nbsp; e66d0e04
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.785</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nu åbner den skæbnesvangre udstilling igen</h4>
+        <div>
+            Det var nærmest profetisk, da særudstillingen, &quot;Navigeringer - på kanten af en verden i forandring&quot;, nåede at åbne i marts, inden den hurtigt blev lukket igen som følge af nedlukningen i Danmark. Holstebro Kunstmuseum prøver nu igen. Holstebro: Hvor kommer vi fra? Hvor er vi? Hvor skal vi hen? Det er spørgsmål, vi er vant til at stille os selv, når vi skal finde vej i verden. Det er netop kernen i den store særudstilling, &quot;Navigeringer - på kanten af en verden i forandring&quot;, der åbnede på Holstebro Kunstmuseum lørdag den 26. september. Sådan beskriver museet den nye udstilling i en pressemeddelelse. Hver især har kunstnerne, Rikke Benborg, Kristoffer Ørum, Gry Bagøien og Ferdinand Ahm Krag, skabt miljøer, der skal reflektere over, hvordan vi som mennesker navigerer i dag og i en fremtid, som stadig befinder sig i mørke. Udstillingen undersøger, hvordan den verden, vi kender, er under voldsomt pres. Mennesket er ikke længere centrum for kortlægningen af vores planet. Dette opleves særligt tydeligt i makroskala med globale klimaforandringer og masseuddøen af dyrearter, men også i mikroskala i udviklingen af kunstig intelligens og internettets parallelvirkeligheder, lyder det videre. Miljøer skabt af billedkunstnere Kunstmuseerne i Holstebro og Vejle har på den baggrund inviteret fire billedkunstnere til at byde ind med kunstneriske vinkler på de forandringer, der præger os og verden i dag. Hver især har kunstnerne, Rikke Benborg, Kristoffer Ørum, Gry Bagøien og Ferdinand Ahm Krag, skabt miljøer, der skal reflektere over, hvordan vi som mennesker navigerer i dag og i en fremtid, som stadig befinder sig i mørke. Værkerne er produceret specifikt til udstillingen. &quot;Navigeringer - på kanten af en verden i forandring&quot; kan ses frem til den 17. januar 2021. Fra byens bedste butik til reklamebureau
+        </div>
+        <footer>
+          <em>Holstebro-onsdag.dk</em>
+          &nbsp;·&nbsp; 2020-09-23
+          &nbsp;·&nbsp; e7e77b5f
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.927</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.815</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.613</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Troldene indtager Sort/ Hvid</h4>
+        <div>
+          INDLEDNING: I teaterstykket ' The Troll Show' er det Internettets trolde, de indtager Sort/ Hvid.Den unge kunstner Sigrid Johannesen får på Teater Sort/ Hvid lov til at lukke internettroldene ud fra www og direkte ind på scenen.Sigrid Johannesen skaber en forestilling om, hvad den massive informationsforurening betyder, når vi er udsat for den i en verden, hvor det i høj grad er tech-giganternes algoritmer, der styrer, hvilken information vi ser, og hvilken vi ikke gør.Det er en verden, hvor vi drukner i information og det er umuligt at gennemskue afsenderens intentioner. Og hvem er egentlig i den anden ende af kommunikationen? Et rigtigt menneske, en robot eller en trold?.VanvidseventyrSelv kalder teatret The Troll Show for et vanvidseventyr om at finde sandheden i en verden, hvor fakta er alternativet. En verden, hvor yderligtgående holdninger klarer sig bedst i kampen om klik. De tre trolde på scenen er trådt ud af skærmens for at fortælle tilskuerne, hvem de er, hvad der har formet dem, og hvordan verden ser ud fra et troldeperspektiv.Uden at lægge fingre imellem.Mød dem allerede nuHvis du ikke kan vente til at se dem på scenen, så kan du allerede nu møde troldene i den virtuelle verden. Frem til premieren har de nemlig overtaget Sort/ Hvids Instagram-konto.Se selv på @sorthvidscene på Instagram.Desuden har troldene under navnet ' House of Trolls' holdt to aktioner i bybilledet. De højtråbende trolde har rekrutteret maskotter i niqab på Rådhuspladsen og holdt Det store folketåbevalg, hvor de hyldede politikerleden. Se videoer på www.sort-hvid, dk THE TROLL SHOW.Teater Sort/ Hvid, Staldgade 26-30, Kbh V.fra 23. marts til 13. april. Tirsdagfredag kl. 20, lørdag kl. 17
+        </div>
+        <footer>
+          <em>Vesterbro Bladet</em>
+          &nbsp;·&nbsp; 2019-03-26
+          &nbsp;·&nbsp; e721a39f
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.769</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.594</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fire kunstnere giver bud på en verden i forandring</h4>
+        <div>
+          Fire samtidskunstnere har skabt værker til en ny udstilling på Holstebro Kunstmuseum. En udstilling, der handler om at vores opfattelse, af at vi er verdens centrum og kan kontrollere jorden, er ved at bryde sammen. Holstebro: I midten er der mørke. I hvert fald omkring de oplyste, håndkolorerede søkort fra 1600-tallet og de 17 raderinger af kunstneren Rembrandt van Rijn, der også levede i 1600-tallet. Rummet er centralt i Holstebro Kunstmuseums nye udstilling, &quot;Navigeringer - på kanten af en verden i forandring&quot;, som er skabt i samarbejde med Vejle Kunstmuseum. Det er en forskningsbaseret udstilling, der udspringer af den måde, vi forstår os selv i verden på. Et verdenssyn, der mere eller mindre blev grundlagt i 1660-tallet, da man begyndte at kortlægge verden omkring os, blandt andet via søkort, og hvor kunstnere - med Rembrandt som foregangsmand - begyndte at afbillede mennesket som et individ med sjæl og følelser. - Men den forståelse af os selv, som centrum i en kortlagt verden, er under forandring. Klimakrisen skaber ændringer i verden, der er udenfor vores kontrol, og skabelsen af kunstig intelligens sætter de landskaber, vi er vant til at begå os i under pres, forklarer museumsinspektør og kurator ved Holstebro Kunstmuseum, Teresa Østergaard Pedersen. Stort budget Museerne i Holstebro og Vejle har inviteret fire samtidskunstnere til at forholde sig til emnet om, hvilke udfordringer vi som art står overfor? Kunstnerne - Kristoffer Ørum, Rikke Benborg, Ferdinand Ahm Krag og Gry Bagøien - har skabt deres værker direkte til udstillingen. - Det er en udstilling med et stort budget, blandt andet på grund af den megen teknik, forklarer Teresa Østergaard Pedersen. Den forståelse af os selv, som centrum i en kortlagt verden, er under forandring. Udstillingen har kostet &quot;på den gode side af millionen&quot;, men kun en lille del er betalt af museerne selv. - Langt de fleste penge kommer fra fonde. Den type udstilling kunne slet ikke realiseres, hvis ikke der var fonde, der velvilligt støttede, oplyser Teresa Østergaard Pedersen. En sjov detalje Museerne har valgt at udgive udstillingskataloget formet som en baedeker. Karl Baedeker var en tysk forlægger, der i 1830'erne begyndte at udgive rejseguider. Det var nyt, at rejseguider indeholdt både kort, forslag til ruter og transport samt tips om overnatningsmuligheder, restauranter, seværdigheder og priser. Rejseguiderne, der hurtigt blev så populære, at de bare blev kaldt baedekers , ændrede verden og dens tilgængelighed for de rejsende. Baedekers havde rødt omslag med guldtryk - akkurat som museernes udstillingskatalog har det. Hvis man har set den engelske film &quot;Vindue med udsigt&quot;, der blandt andet omfatter en rejse til Venedig, kan man måske huske hovedpersonerne vandre rundt i den italienske by med deres baedekers i hånden. &quot;Navigeringer - på kanten af den verden i forandring&quot; åbner på lørdag ved på Holstebro Kunstmuseum, hvor den kan opleves frem til den 17. januar 2021. - Udstillingen har været længe undervejs. Den handler om en verden i forandring og nåede lige at være åben i Vejle i fire dage - så forandrede verden sig via corona, siger Teresa Østergaard Pedersen med et lille smil.
+        </div>
+        <footer>
+          <em>Folkebladetlemvig.dk (Lemvig Folkeblad)</em>
+          &nbsp;·&nbsp; 2020-09-23
+          &nbsp;·&nbsp; e7e781c6
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.965</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.814</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.591</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Click: Klimaet og AI'en, lykke og lysårene</h4>
+        <div>
+          - Det er det første projekt i verden, hvor kunstig intelligens direkte spiller med på scenen og diskuterer med os. Forestillingen handler blandt andet om at redde klimaet, og måske er mennesket ikke det bedste til det. Måske er den kunstige intelligens bedre, forklarer Mikael Fock, leder af Kulturværftet.Nu kan du få alt vores indhold digitalt på helsingordagblad.dk 99 kr./md
+        </div>
+        <footer>
+          <em>Helsingordagblad.dk</em>
+          &nbsp;·&nbsp; 2019-04-27
+          &nbsp;·&nbsp; e72d1f1c
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.745</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.663</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mød Generation Alpha, der får et helt andet liv end deres forældre</h4>
+        <div>
+          NYET TIDER: Anna og Viktor Stær Sehested er knap to år og fire år og bor på Frederiksberg.Anna er glad for at gå i vuggestue, bruger tiden på leg - og kopierer sin storebror i stort og småt.Viktor går til fodbold, er vild med biler og elsker at være sammen med sine kammerater.Anna og Viktor er med andre ord helt almindelige børn, der bruger en stor del af deres tid på de ting, som børn nu engang altid har brugt deres tid på. Men som så mange andre børn i dag har Anna og Viktor Stær Sehested også deres egne iPad.»Dem er de rigtigt glade for. De sidder ofte og slapper lidt af med dem, når de kommer hjem fra vuggestue og børnehave og nogle gange også senere på aftenen, når vi laver mad, eller de bliver trætte,« fortæller børnenes mor, Susan Stær.Anna og Viktor tilhører den splinternye Generation Alpha, hvis første medlemmer kom til verden i 2010, samme år som iPaden blev lanceret, og Instagram blev skabt. De sidste alphaer vil blive født omkring 2025.»Generation Alpha vil opleve enorme forandringer i deres levetid, og nye teknologier vil påvirke deres livsbane, værdier og virkelighedsopfattelse i langt højere grad end hos tidligere generationer. De er sandsynligvis også den generation, der vil opleve den største kløft til den foregående generation - Generation Z - og deres livsvilkår vil adskille sig væsentligt fra deres forældre,« siger direktør og futurist Anne Lise Kjær fra den internationale virksomhed Kjaer Global, der med base i London arbejder med befolkningssegmentering, tendenser og kortlægning af fremtiden for verdens førende virksomheder og organisationer.2,5 millioner alphaerGeneration Alpha blev navngivet i 2009 af den australske demograf og fremtidsforsker Mark McCrindle, før generationens første medlem overhovedet var født. Valget faldt på det græske alpha, fordi det latinske alfabet efter Generation Z var løbet tør for bogstaver.»Noget af det, der også gør Generation Alpha interessant, er dens volumen. Prognoser peger på, at der på verdensplan vil blive født 2,5 millioner alphaer om ugen i gennemsnit, og at der vil være knap to milliarder alphaer, når de sidste er kommet til verden i 2025,« siger Anne Lise Kjær.Til den tid vil kloden ifølge FNs prognoser være befolket med cirka otte milliarder mennesker, og af dem vil i omegnen af 25 procent altså være de nye alphaer. Hastværket med at få kortlagt den dugfriske generation, hvis ældste medlemmer begynder i skole i år, skyldes ikke mindst en stor kommerciel interesse i den nye generation.Den har man også registreret i den danske virksomhed Pej Gruppen, der lever af at spotte nye trends og rådgive virksomheder, myndigheder og organisationer.Her man har zoomet ind på alphaerne for at give virksomheder en idé om, hvordan de skal henvende sig til den nye generation, som også bliver kaldt Generation Glass - glas-generationen - fordi smartphonens og iPadens glas er en del af deres verden, fra de er helt små.»De virksomheder, der er længst fremme og vil klæde sig selv på til fremtiden, er i gang med at lære om alphaerne, der især er karakteriseret ved, at de får IT og de sociale medier ind med modermælken. Teknologi vil være en fundamental dimension for både deres leg, læring og dannelse,« siger direktør Louise Byg Kongsholm, Pej Gruppen.Det gode liv - iscenesat og levetDet er selvsagt forbundet med en hel del ubekendte at karakterisere en generation, hvor kun en lille del er født. Derfor tager fremtidsforskere blandt andet udgangspunkt i de værdier og begivenheder, der præger alphaernes forældre og nutidens forventninger til, hvordan fremtiden vil forme sig.»Generation Alphas forældre arbejder benhårdt på at iscenesætte og leve det gode liv, hvor der både er plads til frihed, selvrealisering, samvær og nærvær. Alligevel har vi en forventning om, at alphaernes samvær med forældre og bedsteforældre vil være på et lavere niveau sammenlignet end tidligere generationer,« siger Louise Byg Kongsholm.Forældrene har ganske simpelt travlt i både den virkelige og virtuelle verden, og selv om bedsteforældrene fra 68-generationen forguder de små alphaer, hylder de deviser som »kvalitetstid frem for kvantitetstid«, fordi de er optaget af at udfolde deres egne liv.Men alphaerne er ønskebørn, og fra de kommer til verden, er deres værelser fyldt med legetøj og udstyr, og brands og medier har fra en tidlig alder stor betydning for de fællesskaber, de indgår i.»Alphaerne vokser op i en overflod af legetøj og forbrugsgoder. Det skaber en veludviklet kvalitetsbevidsthed og et bredt mærkevarekendskab fra en tidlig alder,« siger Louise Byg Kongsholm.Undersøgelser viser, at børn i dag allerede fra toårsalderen efterspørger specifikke produkter.Halvandet år senere kan de genkende mere end 200 varemærker.»Det vil den større digitale tilgængelighed og medieeksponering bestemt ikke ændre på,« mener Louise Byg Kongsholm og peger på, at alphaerne allerede fra en tidlig alder vil udvikle sig til at være både raffinerede forbrugere og meget selvstændige mennesker, der gennem deres digitale leg og læring - som forældrene ikke altid helt forstår - bliver trænet i at løse problemer på egen hånd.Når knap toårige Anna Stær Sehested hygger sig med sin iPad, spiller hun ofte Duplo-spil eller bruger apps med dyrelyde og børnesange med fagter til. Andre gange ser hun Netflix eller videoer på YouTube.Hjemme hos Anna og Viktor er der ikke som sådan nogen begrænsninger, der dikterer, hvor meget tid børnene må bruge med en iPad i hænderne.»De lægger dem selv fra sig, når de har siddet lidt og slappet af med dem. Jeg synes egentlig kun, at det er fint, at de kan finde ud af at håndtere iPaden. Jeg forestiller mig, at teknologi og sociale medier bliver en stor og integreret del af deres liv, så de skal kunne begå sig i den digitale verden. Jeg ser det som noget, de skal kunne, når de begynder i skole,« siger Susan Stær.I sit eget arbejde som vuggestuepædagog kan hun se, hvordan det digitale er blevet en naturlig del af den praktiske hverdag: »I dag foregår for eksempel al ind-og udtjekning og en betydelig del af kommunikationen med forældrene digitalt. Sådan var det slet ikke, da jeg begyndte at arbejde som pædagog for otte år siden. Det er gået stærkt, og jeg regner med, at udviklingen vil gå endnu stærkere i fremtiden.«.De digitale pionerer i Generation ZForgængeren til Generation Alpha, Gene ration Z, der er født mellem 1995 og 2010, bliver ofte kaldt de digitalt indfødte. Hos Kjaer Global mener direktør Anne Lise Kjær og seniorstrateg Louise Loecke Foverskov, at den betegnelse er misvisende.»Det dækker kun over, at Generation Z ikke kan huske en tid uden mobile teknologier.Det betyder ikke, at de naturligt ved, hvordan de skal navigere i et digitalt univers, som ikke er klart defineret, og hvor spillereglerne stadig er under udarbejdelse,« siger Louise Loecke Foverskov.Hun mener derfor, at rollen som pionerer i en hybrid verden, hvor grænserne mellem den fysiske, analoge verden og den digitale verden er udvisket, hviler på alphaerne.De bliver født ind i den såkaldte fjerde industrielle revolution, der buldrer derudad, og hvis byggesten blandt andet er teknologiske fremskridt som kunstig intelligens, robotter, selvkørende biler, 3D-print, kvantecomputere og nano-og bioteknologi.»Et stort og voksende antal af fremtidens job vil blive automatiseret. Det gælder ikke kun produktionsarbejde, men også job som jurist og læge. Nogle professioner vil helt forsvinde, mens andre skal genopfindes og tilpasses fremtidens samfund. Derfor vil de kompetencer, som Generation Alpha skal udvikle, være radikalt anderledes end dem, vi satser på nu,« siger Louise Loecke Foverskov.Nogle prognoser hævder, at op mod 80 procent af morgendagens job ikke er opfundet endnu. Andre er mere konservative, men der er udbredt enighed om, at omstillingsparathed er en forudsætning for succes i fremtiden.»De skal lære at lytte, samtale og forstå«Ifølge futuristerne fra Kjaer Global tilhører fremtiden de ekstreme specialister og generalister med blik for helheden, et godt analyseapparat og evnen til at få tingene til at hænge sammen.»Mit bud er, at nogle af de vigtigste egenskaber, Generation Alpha skal lære, er kreativitet, samarbejde og kulturel forståelse eller dannelse, om man vil. De skal med andre ord udvikle dyb social intelligens. De skal lære at lytte, samtale og forstå, og de skal finde begejstring ved at lære og eksperimentere gennem hele livet. I betragtning af, at de vil blive den mest overstimulerede generation til dato, kan det godt blive en udfordring at opøve de egenskaber,« siger Anne Lise Kjær, som peger på evnen til at få ideer som alphaernes mest værdifulde valuta.I de senere år er iværksætteri og innovation blevet vigtige temaer på den uddannelsesmæssige dagsorden.Politikere, erhvervsliv og uddannelsesinstitutioner har et voksende fokus på at styrke innovation, og initiativ og nye tanker vil næppe blive mindre efterspurgt i fremtiden.»Iværksætteri og betapreneur-tankegang - dvs. det at kunne få mange ideer, teste dem tidligt, tage de bedste, raffinere dem og få dem ud i verden - er noget, som skal dyrkes og kultiveres i børn og unge. De skal støttes, når de får »skøre« ideer og drømme, for det er dem, de skal leve af. Men de skal også lære at bygge bro mellem idé og handling og få projekter gennemført. Og ideer får de brug for, når de skal takle meget konkrete globale problemer som klimaforandringer, ressourceknaphed og befolkningstilvækst,« siger Anne Lise Kjær.Evnen til at balancere på en knivsæg bliver også et aktiv for Generation Alpha, der kommer til at leve med hastige forandringer, samtidig med at den digitale og teknologiske udvikling betyder, at hele verden kun er et museklik væk.»Deres liv vil blive præget af modsætninger og modsatrettede behov, herunder ikke mindst udfordringen med at balancere stigende kompleksitet i både arbejds-og privatliv med behovet for ro og simplicitet. Deres liv vil blive præget af at finde ståsteder og samtidig skulle genopfinde sig selv og kunne omstille sig gennem hele livet,« siger Louise Loecke Foverskov.Men der er også ting, som Generation Alpha ikke behøver at bekymre sig om. For eksempel kommer de sandsynligvis ikke til at svede til en køreprøve, forudser Louise Loecke Foverskov: »De bliver den første generation, som ikke skal lære at køre bil. Når de når den alder, hvor man normalt tager kørekort, vil selvkørende biler være en realitet.«.Generation Z (født 1995-2010)Karakteristika: Stiller høje krav til sig selv, højt aktivitetsniveau og dyrker mange relationer. Præget af: Aldrig at have kendt til en verden uden internet, sociale medier, finanskrisen, stor ungdomsarbejdsløshed i Europa, reality-TV, klimakrisen, regnbuefamilier, elevplaner og familiedemokrati.Generation Y (født 1980-1994)Karakteristika: Netværksorienterede, selvfremstillende, sultne på oplevelser. Præget af: Internettets gennembrud, globaliseringen, multietnicitet. boligmarkedets optur, forbrugsfest, de udvidede familier, terrorangrebene 11.september 2001, krigene i Afghanistan og Irak.Generation Alpha (født 2010-2025)Karakteristika: Overstimulerede og med et væld af muligheder. Præget af: IT og sociale medier fra fødslen, den teknologiske og digitale udvikling, globale konflikter og problemer som klimaforandringer og befolkningstæthed, travlhed i familierne og krav om omstillingsparathed.Generation FluxKarakteristika: Attitude og ikke fødselsår afgør, om man tilhører denne generation, som er innovativ, risikovillig og fremtidsorienteret.Babyboomerne (født 1946-1964)Karakteristika: Beredt til oprør og tabunedbrydende. Præget af: Kvindefrigørelsen, krigen i Vietnam, studenteroprøret, p-pillen og den fri abort, velfærdsstatens vækst og samfundsøkonomisk medvind.Generation X (født 1965-1979)Karakteristika: Skeptiske og individorienterede. Præget af: Stigning i antallet af skilsmisser, Den Kolde Krig, atomtruslen, punk og BZ-bevægelsen, fattigfirserne, AIDS-frygt og at være den første generation, som i vidt omfang har gået i daginstitutioner.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende Østjylland</em>
+          &nbsp;·&nbsp; 2016-07-31
+          &nbsp;·&nbsp; e5d1e2a3
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.724</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.606</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.655</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tema: Mig og min digitale tvilling</h4>
+        <div>
+          VEJLE: En virtuel virkelighed er nær. Men hvor nær? Det tager &quot; Art Tech Tuesday&quot; op 6. april klokken 15 til 16. Her mødes oplægsholdere fra kultur, erhverv og kirke for at udforske, hvilke muligheder der er i VR-teknologi, og hvor det stiller os.Du kan se med live via Vejle Musikteaters hjemmeside.Den teknologiske udvikling udvikler sig hastigt, og det kan begynde at udviske grænserne mellem en fysisk og digital virkelighed.Er der grund til bekymring eller begejstring? Det ser Art Tech Tuesday nærmere på 6.april, hvor temaet er ' Mig og min digitale tvilling'.Her vil Mads Troelsgaard, CEO og Partner i Unity Studios give deltagerne en fornemmelse af, hvad der egentlig er muligt med virtuel reality, nu og inden for de næste år. Bagefter fortæller kunstner Martine Jarlgaard om sin XR-kunstinstallation ' Meet Yourself' -en installation, hvor publikum på Louisiana Museum of Modern Art i 2018 kunne møde en 3D version af sig selv.Teolog og sognepræst Lars Gustav Lindstrøm Lindhardt er dagens tredje deltager.Næste Art Tech Tuesday er tirsdag 1. juni. / lasau.FAKTA ART TECH TUESDAYForedragsrækken er udviklet i et samarbejde mellem AI Innovation House, VejleMuseerne, Vejle Bibliotekerne, Vejle Musikteater og Vejle Kommune.
+        </div>
+        <footer>
+          <em>Ugeavisen Vejle</em>
+          &nbsp;·&nbsp; 2021-03-31
+          &nbsp;·&nbsp; e830b01a
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.642</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Slank elegance med stor lyd</h4>
+        <div>
+          BILLEDE &amp; LYD: Under titlen The new Art of Smart lancerer Loewe det nyeste TV i &quot; entry level&quot; klassen, som er kendetegnet med indbygget god lyd.Det nye Loewe Art TV er kvalitet i særklasse. Med et full-HD panel sikres billedvisning i 200 Hz med nøjagtige bevægelsesgengivelser, og den fyldige lyd på op til 2 x 40 watt skaber en stor lydoplevelse -der trodser TV ´ ets elegante og slanke kabinet.High-performance billedeLoewe Art er et high-performance LED TV, der sikrer en farvegengivelse så levende som i virkeligheden.Den hvide panelbelysning gør, at hver en scene opleves med perfekt kontrast, krystalklare farver og optimeret sort gengivelse.Effektive algoritmer til optimal 3D-gengivelse udstyrer billedet på Loewe Art med et ekstremt levende dybdeindtryk - og ikke kun til film, der er lavet i 3D. Den integrerede 2D-3D omformer gør det muligt at nyde alle film i tre dimensioner.Loewe brugerfladeLoewe Art er udstyret med en nye brugerflade, Assist Media, der gør det intuitivt, nemt og hurtigt at navigere og vælge mellem både TV-kanaler, digitale radiostationer, internetsider og netværksfiler (billeder, musik, videoer) via USB eller via tilkobling til hjemmenetværket.Med Loewe Assist Media App kan styring og navigation desuden foregå via en iPad.Altid up-to-dateLoewe MediaUpdate sørger for enkel og hurtig opdatering af nye funktioner.Registrering sker på Loewe Support Portal eller ved at koble Loewe Art direkte til internettet, hvor TV ´ et automatisk søger efter tilgængelige softwareopdateringer.Loewe Art har integrerede modtagere til high-definition og til samtlige antenne-, satellit-og kabelstandarder, så spares der både køb af ekstra modtageudstyr, penge til strømforbrug og ekstra kabeltræk.Loewe Art forhandles af Gert Radio &amp; Tv i Skælskør og leveres i 40, 50 og 60 tommer, og priserne begynder ved kr.10.999 kroner.
+        </div>
+        <footer>
+          <em>Næstved-Bladet</em>
+          &nbsp;·&nbsp; 2014-01-18
+          &nbsp;·&nbsp; e43720d3
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.687</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.547</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ROBOTALSK</h4>
+        <div>
+          Politiken meddeler: ' Verden står over for en ny industriel revolution, hvor robotter og kunstig intelligens vil vende op og ned på vores verden. De kan tage vores job. Og de vil have besked på, om det er bedre at køre ind i en blind mand end i en gravid kvinde.' Ville det ikke være bedre, hvis de slet ikke kørte ind i nogen?. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2016-01-26
+          &nbsp;·&nbsp; e585fe52
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.91</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.941</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.768</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dræberdukken vender tilbage</h4>
+        <div>
+          GYSER ' Child's Play' er en nytænkning af slasher-klassikeren af samme navn fra 1988 med dræberdukken Chucky.Den enlige mor Karen overrasker sin søn Andy med den populære Buddi-dukke.Det viser sig dog at være alt andet end et normalt stykke legetø j. Ny teknologi har nemlig gjort, at dukken har sin egen kunstige intelligens -og inden længe beg ynder den at udvise meget mørke og dystre tendenser.Og alle er i fare.
+        </div>
+        <footer>
+          <em>Århus Onsdag</em>
+          &nbsp;·&nbsp; 2019-07-16
+          &nbsp;·&nbsp; e7452625
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.937</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.919</kbd>
+            <kbd data-tooltip="Spoken language">L80_SPOKEN&nbsp;0.515</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nikolaj So ein ding&quot; Sonne&quot;</h4>
+        <div>
+          MODERNE TIDER: Den teknologiske virkelighed anno 2018 er på mange måder vildere, end de fleste forestiller sig - og vi er først lige begyndt.-Journalist Nikolaj Sonne kendt fra DR2-programmet &quot; So ein Ding&quot; retter - med udgangspunkt i konkrete &quot; nede-på jorden-fortællinger&quot; fra nutiden - blikket mod fantasihorisonten og beretter i Louisiana Lecture onsdag den 17. januar kl. 19.30 om kunstig intelligens, droner, internet of things, usynlige computere, digitale assistenter, vedvarende energi, firmaer uden ejer og overvågningskapi-talisme, oplyser museets Britta Schade.Museumsinspektør Mathias Ussing Seeberg byder velkommen med udgangspunkt i den aktuelle udstilling BEING THERE, der vises frem til den 25. februar 2018.Louisiana Lecture er gratis for museets gæster, men pladsreservation anbefales.
+        </div>
+        <footer>
+          <em>Lokalavisen Nordsjælland</em>
+          &nbsp;·&nbsp; 2018-01-16
+          &nbsp;·&nbsp; e6943313
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.609</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.507</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Familiedag med drama</h4>
+        <div>
+          Svendborg: I samarbejde med Naturama inviterer Baggård-Teatret til familiedag lørdag den 24. september.Større børn og deres voksne kan glæde sig til at træde ind i naturvidenskabens og teatrets forunderlige verden.Programmet omfatter Carsten Bangs anmelderroste forestilling Evolution om, hvordan alting blev til fra hulemalerier til kunstig intelligens via Darwin, Gud og Thomas Blachmann.Naturamas Simon Høegmark indleder familiedagen med at fortælle historier fra naturens verden.Dørene åbnes klokken 14.30, og programmet går i gang klokken 15.15.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2011-09-21
+          &nbsp;·&nbsp; e2e14463
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.961</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.536</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.506</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Seks unge på videnskabelig rejse</h4>
+        <div>
+          SØNDERBORG: I slutningen af april blev der holdt Europæisk Ungdomsparlament med videnskab på dagsordenen i Sønderborg.Seks unge herfra rejser i juli til &quot; finale&quot; i Manchester.De seks unge er udvalgt i klasserne gennem lodtrækning blandt de, der havde muligheden for at rejse henholdsvis i sommerferien og efter studentereksamen.Menneskets fremtidI Sønderborg drøftede 0deltagerne på blandede hold naturvidenskabelige og teknologiske problemstillinger med temaer som kost og sundhed, brug af stamceller og robotter og kunstig intelligens. Alt sammen med Menneskenes Fremtid som overordnet tema.I Manchester vil det overordnede tema være det samme. Her vil ca. 100 deltagere fra 13 lande blive blandet, og arbejdssproget vil derfor være engelsk. bec.
+        </div>
+        <footer>
+          <em>Sønderborg Ugeavis</em>
+          &nbsp;·&nbsp; 2016-06-14
+          &nbsp;·&nbsp; e5c19b9d
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.881</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.72</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sensorer og algoritmer</h4>
+        <div>
+          P1 10.03 Algoritmer, der ofte bliver brugt til at beregne på input fra verden og spytte resultatet ud i hovedet på os, er den digitale verdens arbejdsheste.Nogle gange bliver de brugt til at få hverdagens hjul til at trille nemmere, andre gange handler det om noget så eksotisk som kunst og kultur. I &quot; Harddisken: Algoritmer - fra skraldetransport til portrætmaleri&quot; ses der nærmere på, hvordan sensorer og algoritmer hjælper med alt fra affaldsindsamling til portrætmaleri.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2015-07-17
+          &nbsp;·&nbsp; e52085c5
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.95</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.526</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.625</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Slutspurt i satiretegning</h4>
+        <div>
+          VIBORG: Igennem seks år er der opbygget en tradition i Viborg for holde, hvad man kunne kalde et uofficielt &quot; VM i Satiretegning&quot;. Her dyster tegnere fra hele verden i at frembringe de bedste satiretegninger ud fra et fælles tema.I år er temaet &quot; Kunstig Intelligens&quot;.Der er indsendt over 1200 tegninger fra professionelle tegnere i hele verden til konkurrencen.Juryen har nu udvalgt 60 tegninger, der er gået videre til finalen. Her skal kåres en første-anden og tredjepladsvinder.Førstepræmien er udover hæderen 3000 Euro.Det er en international fagjury, der bedømmer de professionelle tegninger.Formanden for de danske bladtegnere, Lars Refn, står i spidsen som formand.Viborg Kommune har overtaget den internationale konkurrence, der tidligere var kendt som Niels Bugge Cartoon Award, efter Niels Bugges Kro ´ s konkurs i foråret 2018.-Viborg Kommune har i flere år forfulgt en ambition om, at vi skal være centrum for ikke mindst animation og tegning. Denne fantastiske satiretegne-konkurrence har de senere år skabt så meget positiv opmærksomhed omkring Viborg, at det ville være synd og skam at sige farvel til den. Hele grundideen i Cartoon Award understøtter jo Viborg Kommunes ambition om at satse på animation og tegning, og om dels at bruge animation og tegning til at forenkle den offentlige formidling til borgere samt at skabe vækst indenfor kreative visuelle erhverv og uddannelser i kommunen, siger Viborg Kommunes borgmester, Ulrik Wilbek.Viborg Cartoon Award uddeles ved et stort prisshow fredag 12. oktober som en del af Kulturnatten. Der er samtidig fernisering på en udstilling af de 60 finaletegninger.Ved prisfesten deltager både den internationale jury og de tre højst-placerede tegnere.Det er dermed nogle af verdens bedste satiretegnere, der gæster Viborg.Udover at videreføre Cartoon Award har Viborg Kommune også valgt at fortsætte ideen med at invitere samtlige 8.-klasser i kommunen til at levere deres fortolkninger af samme emne som de professionelle tegnere.
+        </div>
+        <footer>
+          <em>Viborg Nyt</em>
+          &nbsp;·&nbsp; 2018-09-18
+          &nbsp;·&nbsp; e6e6af7f
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.528</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.761</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.554</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          Før søndagenDR K 19.45 15. søndag efter trinitatis fortæller Johannes Møllehave om salmen &quot; Hvor er det godt i Jesu arme&quot; og om, hvorfor han elsker at blive skældt ud af salmedigteren Brorson. Cæciliakoret under Michael Deltchev synger i Vor Frue Kirke i Aarhus.Hjernekassen på P1: Kunstig intelligensDR P1 00.05 Vi mennesker smelter mere og mere sammen med vores digitale værktøj. Hvordan kan vi navigere i den fagre nye verden? Hvor kompleks en virkelighed kan vore hjerner håndtere? Hvad vil der ske i fremtiden?.TidsåndDR P1 01.03 Om historie og tro. Om hvor vi kommer fra, og hvor vi er på vej hen. Hver uge udfordrer Christoffer Emil Bruun en aktuel gæst på holdninger til og viden om værdier, idéer, historie og religion.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-09-23
+          &nbsp;·&nbsp; e66d892a
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.963</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.77</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          Brinkmanns briksDR P1 10.03 Professor i psykologi Svend Brinkmann undersøger sammen med landets fremmeste eksperter, hvorfor vi mennesker handler, som vi gør. På briksen er ikke patienter, men tendenser i samfundet, sindet og menneskelivet.Kierkegaards Kabinetdk4 10.30 Hvad er samvittighed? Hvor kommer samvittigheden fra? Er den fælles for alle, og hvordan har samvittigheden det i dagens Danmark? Sådan lyder nogle få af de centrale spørgsmål i denne udgave af &quot; Kierkegaards Kabinet&quot;.Supermennesket: Den optimerede hjerneDR 2 16.25 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidner til en ny arts opståen, eller er det enden på vores egen art?.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-04-03
+          &nbsp;·&nbsp; e72435bc
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.963</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.611</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.512</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk firma i top 100 over mest lovende AI-virksomheder i verden</h4>
+        <div>
+          Den danske virksomhed modl.ai har fået en top-100-placering på CB Insights liste over mest lovende, private AI-virksomheder i verden, skriver virksomheden i en pressemeddelelse.Firmaet laver værktøjer baseret på kunstig intelligens til spiludviklere, og den nye kåring viser vigtigheden af AI i spilindustrien, fortæller Christoffer Holmgård, CEO hos modl.ai:» At være på listen som en af de mest lovende AI-virksomheder i verden, og så den eneste, der arbejder i spilindustrien, reflekterer vigtigheden af kunstig intelligens i forskellige aspekter af moderne spiludvikling, « siger han i pressemeddelelsen.Den omkring 3 år gamle virksomhed har sat sit aftryk på mere end 30 spil og er blevet udvalgt af CB Insights blandt over 6000 andre firmaer.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-04-08
+          &nbsp;·&nbsp; e8349e86
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.659</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Kunstner sad til middag med det kinesiske kommunistparti - nu skaber hun en teaterforestilling om det</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra Sort/HvidTidligere hed det sig, at når noget sker i USA, sker det i Danmark 10 år senere - det gør sig nu gældende for Kina.&quot;Den vestlige verden sidder fast i en idé om overlegenhed. Vi er vokset op med USA som en klart defineret monopolær magt, men nu oplever vi en bevægelse mod flere magtcentre. Idéen om, at vores samfundsform er den eneste rigtige, er forældet. Vi står overfor en klimakrise, der kræver radikal, politisk handling, og lige nu er vi vidne til, at vores demokratiske system ikke kan håndtere en krise af det omfang. Det kan ikke tænke langsigtet, ikke handle effektivt. Vi skal turde at stille spørgsmålstegn ved, om vores system er det eneste rigtige,&quot; siger Sigrid Johannesen.Kina er foregangsland på en række områder: udviklingen af ny teknologi, robotter, kunstig intelligens, rumfart. I store dele af verden skyder skoler, veje og kæmpe bygningsværker op med Kina som partner. Nye hospitaler bliver bygget på få dage for at håndtere udbrud af sars og coronavirus. Kina handler med en kompromisløs effektivitet. En handlekraft, som ligger langt fra langstrakte politiske processer i vesten, hvor det har taget briterne 3,5 år at komme ud af EU.Med forestillingen MADE IN CHINA forsøger Sort/Hvid og Aarhus Teater at forstå det moderne Kina og den vestlige verdens grundlæggende afstandtagen fra landet.Vi ved for lidt om Kina&quot;Jeg rejste til Kina for at forstå vores nye fremtid. En fremtid, hvor Kina ikke længere passer i rollen som fabrik for den vestlige verden. Den negative fremstilling af Kina, der præger det danske mediebillede, er for unuanceret, for uoplyst. Hvis vi vil være en del af den nye verden, så må vi sætte os ind i Kina, forholde os nuanceret til en helt ny magtbalance, hvor vesten ikke er egenrådig længere,&quot; siger Sigrid Johannesen.Sigrid Johannesen rejste til Kina i efteråret 2019. I Danmark havde hun mødt en kinesisk kvinde, der ville lære hende at blive kineser. Kvinden inviterede Johannesen med på en handelsmesse arrangeret af kommunistpartiet - de skulle repræsentere Danmark. Her blev Johannesen introduceret for en række officielle embedsfolk, og inden kort tid sad hun til middag med kommunistpartiet.Den 27. marts er der premiere på Sort/Hvid på MADE IN CHINA. Forestillingen er en historie om den europæiske kulturs krakelerende selvfortælling om overlegenhed i en tid, hvor den globale magtbalance er tiltet mod øst. Forestillingen skabes af Sigrid Johannesen og er baseret på hendes rejse til Kina. MADE IN CHINA er skabt i samarbejde mellem Sort/Hvid og Aarhus Teater.Kontakt:Salgs- og kommunikationsansvarlig Maja Vadum Larsen tlf.: 61 70 89 79 email: maja@sort-hvid.dkSort/Hvid: Maja Vadum Larsen/ 61 70 89 79 / maja@sort-hvid.dk
+
+Aarhus Teater: 
+Mathias Wissing / 28 93 69 22 / mathias.wissing@aarhusteater.dk 
+Morten Daugbjerg / 42 13 00 47 / morten.daugbjerg@aarhusteater.dkLæs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/kunstner-sad-til-middag-med-det-kinesiske-kommunistparti---nu-skaber-hun-en-teaterforestilling-om-det?releaseId=13587975
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-02-11
+          &nbsp;·&nbsp; e792e463
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.509</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.52</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Er supermennesker rigtige mennesker?</h4>
+        <div>
+          DR 2 MANDAG 20.00 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidne til en ny arts opståen, eller er det enden på vores egen art? Den fysiske forbindelse mellem menneske og maskine er allerede almindelig. Næste generation er implantater, der i princippet skulle kunne give os overmenneskelige kræfter og højere intelligens.&quot; Supermennesket: Den optimerede hjerne&quot; er en tysk videnskabsdokumentar fra 2017.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-05
+          &nbsp;·&nbsp; e690d70a
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.9</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.799</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          PET-operationenDR P1 16.03 Den omstridte bog &quot; 7 år for PET&quot; har skabt voldsomt røre på et tidspunkt, hvor den endnu ikke er udkommet. I bogen fortæller tidligere PET chef Jacob Scharf om sin tid i PET, og der kommer også ting frem, som ikke har været fremme før.Kunstig intelligensDR 2 19.30 Kunstig intelligens stormer frem netop nu og kommer til at ændre hele verden, ligesom elektricitet ændrede hele verden. Det sker, fordi maskinerne har lært, hvordan de selv skal lære.Før søndagenDR K 19.45 Kim Sjøgren fortæller historien om, hvordan han som barn lærte at spille violin - fordi dagens tekst for ham handler om ikke at give op. Jysk Akademisk Kor synger salmen &quot; O Jesus, livsens Herre&quot; fra Gellerup Kirke i Aarhus.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2016-10-15
+          &nbsp;·&nbsp; e5ed8742
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.731</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fremtidens erhverv er kreative</h4>
+        <div>
+          Det er afgørende, at vi gør alt, hvad vi kan for at skabe endnu flere arbejdspladser i de brancher, som er nogle af de mest resistente, når vi taler outsourcing og automatisering.Vi er ude af krisen. Sådan lyder budskabet nu fra både Christiansborg og direktionsgangene overalt i landet.I takt med at opsvinget bider sig fast i Danmark, diskuterer både politikere og erhvervsledere stadigt mere intensivt, om jobskabelsen følger i kølvandet på de positive strømninger. Faktum er, at mange virksomheder gennem lavkonjunkturen har effektiviseret.Så nu, når væksten kommer, har de slet ikke brug for at ansætte på samme niveau som tidligere.Den udvikling vil fortsætte. En undersøgelse foretaget af forskere fra Oxford University konkluderer, at vi i fremtiden vil se 37 pct. af alle job erstattet af maskiner inden for de næste 10 år.Hvis ikke vi gør noget her i Danmark, risikerer vi for alvor at miste arbejdspladser, og det er ikke blot de arbejdspladser, som traditionelt er blevet outsourcet.Løsningen er at se nærmere på, hvilke job og arbejdsfunktioner der vanskeligt kan erstattes af automatisering og kunstig intelligens i den nærmeste fremtid. Svaret er job i den kreative sektor. Fremtidens erhverv er i høj grad kreative, og det er bl.a. disse arbejdspladser, Danmark skal leve af lige om lidt.Kræver en indsatsDet kræver en langt mere koordineret og strategisk indsats end det, vi hidtil har set i Danmark. Erfaringer fra særligt England og vores arbejde med Region Midtjyllands satsning på de kreative erhverv, More Creative, har vist os, at der særligt er fire områder, hvor man skal sætte ind.Data is king. I England blev de kreative industrier først taget seriøst, da de blev målt og vejet og kunne dokumentere deres størrelse. Udfordringen er, at de er vanskelige at beskrive ved hjælp af traditionelle branchekoder. Brancherne udvikler sig ekstremt hurtigt, og helt nye opstår i krydsfelterne mellem nye og traditionelle brancher. Der er behov for nye målemetoder og nuancerede tal for, hvordan vi taler om den kreative økonomi i Danmark.Organisering og sammenhæng. Hver især er de kreative brancher små, men ser vi på tværs, er de store. Sammenhæng er derfor centralt, hvis de kreative erhverv skal have samme gennemslagskraft som andre brancher. Det handler om forretnings- og kompetenceudvikling, ledelse, internationalisering og tiltrækning af kapital.Politisk platform. Der er behov for politisk fokus på barrierer for udvikling af de kreative erhverv. England har givet dem en samlet platform i form af Creative Industries Council, der består af en kombination af repræsentanter fra de kreative brancher, relevante organisationer samt repræsentanter fra det politiske system.Tilpasset erhvervsservice. Erhvervsserviceinfrastrukturen bør forankres i mindre enheder med særlige fagfokus. Der skal være en indgang til et erhvervsservicesystem, der på den kreative industris præmisser kan lette adgangen til kapital, forretningsudvikling og kobling til relevant viden og samarbejdspartnere.Råd for kreativ industriVi mener, at den kreative industri bør være et centralt indsatsområde. Det er afgørende, at vi gør alt, hvad vi kan for at skabe endnu flere arbejdspladser i de brancher, som er nogle af de mest resistente, når vi taler outsourcing og automatisering.De kreative erhverv skaber værdi   både i form af vækst og arbejdspladser og som værdiskabere i andre brancher. Et første skridt kunne være at etablere et råd for de kreative industrier efter britisk forbillede og få lagt en samlet strategi for de kreative erhverv, som er langt mere ambitiøs end det, vi hidtil har set.Indtil det er en realitet, må vi i det private erhvervsliv og i regionalt regi fortsætte med at udvikle mulighederne for de kreative erhverv. Det sker bl.a., når Region Midtjylland inviterer repræsentanter fra Storbritanniens Creative Industries Council til konferencen -A More Creative Denmark- den 10. november i Aarhus. Her vil vi lade os inspirere af den succesfulde britiske model   måske skulle de danske politikere gøre det samme.Illustration: Rasmus Sand Høyer.Illustration: Rasmus Sand Høyer.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2015-11-07
+          &nbsp;·&nbsp; e54d6855
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.524</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.739</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.674</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.631</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techtopia #17: The Copenhagen Letter, et manifest om mennesker og teknologi</h4>
+        <div>
+          Podcast: Ugen der gik på Techfestival, hvor fremtiden skulle indrettes. Vi fik et manifest for teknologisamfundet. Der var bøger til fremtidens tech-borgere. Og nye kunstige stemmer til smartphonen skabt af tech-gæsterne selv.Der har været techfestival i København, hvor der er blevet nørdet igennem om kunstig intelligens og etik, fremtidens bytransport eller undervisning - ja der er sågar blevet skrevet et manifest om forholdet mellem mennesker og teknologi set i perspektivet den nordiske model kontra Silicon Valley.Vi skal møde en kvindelig finsk programmør, som skriver børnebilledbøger, om hvordan computere fungerer. Og voksne må gerne læse med. Vi skal høre om arbejdet med en kollektiv kunstig stemme som alternativ til SIRI. Og vi skal til hemmeligt to-døgns møde om et nyt teknologimanifest: The Copenhagen Letter on Tech.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-09-11
+          &nbsp;·&nbsp; e668e954
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.853</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.65</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens kan erstatte mere end vi tror - men mindre end vi frygter</h4>
+        <div>
+          I det gamle Indien henvendte opfinderen af skakspillet sig til den lokale konge for at sælge sit spil. Kongen elskede spillet og spurgte opfinderen, hvad han skulle have i betaling. Opfinderen svarede, at han blot skulle have ét riskorn for det første felt på skakbrættet, to korn for det næste, fire for det tredje og således frem til nummer 64. Kongen slog til med det samme.Dagen efter meldte kongens skatmester sig og kunne meddele, at regenten var ruineret. Kongen skyldte opfinderen 18.446.744.073.709.551.615 riskorn.Uden at lægge mærke til det faldt han som offer for eksponentiel vækst. I starten vokser antallet af ris langsomt, men pludselig sker der et ryk som forandrer alt.Spørger man de vildeste teknologifetichister, er vi alle kongen, og kun de færreste har forstået, at virkeligheden lige om lidt vil være totalt forandret. Hvorfor? På grund af kunstig intelligens. Det kommer til at forandre vores verden.Vores abonnenter kalder os kritisk, seriøs og troværdig.Prøv en måned gratis.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2019-02-08
+          &nbsp;·&nbsp; e7131241
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.746</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.74</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.632</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DEBAT N: Teknologien skaber nye vilkår for de kreative erhverv</h4>
+        <div>
+          Jeg var inviteret til at holde et oplæg på årets udgave af Spot+ i Aarhus - som er en konference og en netværksevent i forbindelse med Spot-festivalen. Mit indspil drejede sig om kreative byer og den kreative økonomi.Efterfølgende havde jeg en dialog med nogle af deltagerne om udviklingen i teknologien, og hvad den vil betyde for musikken. Og ikke mindst, hvordan teknologi og kreativitet bliver en cocktail, der kommer til at påvirke de kreative erhverv.Det findes et antal studier, som peger på betydningen af den kreative økonomi og de kreative industrier. Bl. a.forudser World Economic Forum, at de kreative industrier vil komme til at beskæftige 30 millioner mennesker i de kommende år.Alene i Storbritannien bidrog den kreative økonomi i 2015 med 100 mio. kr.pr. time til den samlede økonomi.I Danmark omsætter de kreative erhverv for 280 mia. kr. om året ifølge More Creative. Så det er ikke underligt, at den kreative økonomi får mere og mere opmærksomhed.Men erhverv og industrier som arkitektur, bøger, musik, reklame, møbler og mode m. m. kan jo ikke leve af kreativitet alene. Også produktion, distribution og forbrug af indhold er afgørende for den økonomiske udvikling.Her står så de teknologiske fremskridt centralt.Ofte peges på fire store teknologier, som allerede er her, og som vi ikke har set det fulde potentiale af endnu: Augmented Reality (AR) - en slags udvidet virkelighed, hvor man kombinerer data fra den fysiske verden med virtuelle data, og Virtual Reality (VR) - en teknologi, hvor en bruger kan virke interaktivt med et computersimuleret miljø - er to af disse. Man finder dem allerede i f. eks. Pokémon Go og Facebook Spaces.To andre er Artificial Intelligence eller kunstig intelligens (som handler om at få maskiner til at &quot;tænke&quot;) og Blockchain. Den første har jo allerede gjort sit indtog i alt til bedre at kunne forudsige forbrugeres ønsker.Blockchain er måske ikke blevet hverdagssprog endnu, men det kommer nok, da det er et system, som muliggør direkte og sikker overførsel af værdier mellem to parter, uden at der er brug for verificering af en tredjepart.Pladeselskaber i kriseat relationen mellem artister og publikum forandres, således at artister får flere royalties end pladeselskaberne og dermed forstærker selskabernes krise? Måske vil teknologien tilføje nye lag til oplevelsen af at gå til koncert? Måske vil kunstig intelligens hjælpe mig med at finde artister, som jeg ikke vidste, at jeg søgte. Måske vil AR tilføre en spillelogik, som skaber større engagement og involvering? Og måske gør VR det muligt for mig at tage del i et andet artist-publikumforum før og efter koncerten? Det er svært at spå om fremtiden, men det er nok ikke helt forkert at sige, at meget vil ændre sig inden for musikken og de andre kreative erhverv på grund af teknologi og vores kreativitet.Meget mere, end vi forestiller os.finans@finans.dk Nu har du adgang til det nye digitale forum for erhvervsdebat på finans.dk. Følg landets skarpeste skribenter i sektionen Debat på forsiden af Finans.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-06-13
+          &nbsp;·&nbsp; e64b1e1f
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.501</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.552</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.604</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: EU-retningslinjer for kunstig intelligens</h4>
+        <div>
+          København* EU har udformet tre overordnede retningslinjer, som kunstig intelligens (AI) skal leve op til:* Den skal være lovlig og overholde alle love og bestemmelser.* Den skal være etisk og overholde etiske principper og værdier.* Den skal være robust fra både et teknisk og socialt perspektiv, da AI-systemer kan forårsage uforsætlig skade, selv med gode hensigter.Kilde: Ethics guidelines for trustworthy AI, EU-Kommissionen. /ritzau/Denne nyhed må publiceres digitalt bag paywall fra d. 18/02/2020 20:00Nyheden er på NET-tjenesten d. 19/02/2020 05:00
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-02-18
+          &nbsp;·&nbsp; e795501f
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.556</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.559</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.511</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>En storm med teknologi</h4>
+        <div>
+          HUMLEBÆK: Den teknologiske virkelighed anno 2018 er på mange måder vildere, end de fleste forestiller sig - og vi er først lige begyndt.Journalist Nikolaj Sonne kendt fra DR2-programmet »So ein Ding« retter blikket mod fantasihorisonten og beretter i Louisiana Lecture onsdag den 17. januar klokken 19.30 om en række spændende emner som kunstig intelligens, droner, internet of things, usynlige computere, digitale assistenter, vedvarende energi, firmaer uden ejer og overvågningskapitalisme.Museumsinspektør Mathias Ussing Seeberg byder velkommen med udgangspunkt i den aktuelle udstilling Being There.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2018-01-13
+          &nbsp;·&nbsp; e6936c05
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.67</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Peter Hesseldahl: Grib fremtiden</h4>
+        <div>
+          Der er uden tvivl stof til mange PowerPoint-præsentationer i Peter Hesseldahls karakteristik af vores dynamiske nutid. *Men hvad skal vi ellers bruge det til?Peter Hesseldahl:GRIB FREMTIDENSpilleregler for det 21. århundrede416 sider, 400 kr.L&amp;R BusinessEr udkommetEn yndet aktivitet for medarbejdere, der tvinges til at lytte til oplæg fra virksomhedskonsulenter eller administrerende direktører er den lille leg Bullshit Bingo. Den består i, at deltagerne forsyner sig selv med en plade, der indeholder forretningslivets mest anvendte buzzwords eller kreative metaforiske sammenstillinger.Der står gerne: feedback, videndeling (uden s), brugerdreven innovation, commitment, Key Performance Indicator, win-win med mere. Den, der først får en række fuld, kan så få lov at råbe det befriende bullshit ud i salen.En stor pærevællingHører man til de rigtigt avancerede spillere, eller har man en særlig beåndet guide udi denne verden af Web 2.0 lingo (med fokus på komplekse og systemiske processer og emergente strukturer), ja, så kan man tilføje non-liniære systemer, storytelling, experience design, narrowcasting, costumization, viral markedsføring, lag time og masser af andet godt, mens man blander kaos-, nano-, informations- , kognitions- og evolutionsteori i en stor pærevælling af indbyrdes befrugtende analogier, der ikke nødvendigvis har en pind med hinanden at gøre.På den måde kan man, som journalist Peter Hessedahl gør det i &quot;Grib fremtiden&quot;, svinge sig op på nogle ordentlige metaforiske kæmpestylter og betragte menneskelig interaktion som netværk, myretuer, komplekse systemer eller algoritmer og processerne som epidemiologiske, tipping points, flow, faseskift eller plussumsspil, når man beskriver »spillereglerne for det 21. århundrede«, som er denne bogs undertitel.Der er ingen tvivl om, at Hesseldahl har sat sig ind i en enorm mængde information og ny forskning og dygtigt har opfanget de fede tendenser og fikse ideer fra alle de andre begavelser, som mestrer at fremstille essensen af den moderne virksomhed i korte fyndige sætninger, kække ordspil eller overraskende dobbeltbetydninger.Fortænkte referencerDerfor bliver man i grunden også klogere på mangt og meget ved at læse denne lange gennemgang, men det er alligevel, som om det hele virker en anelse nyttesløst. Et langt opsamlingsheat på de sidste 10-20 års tendenser og et par velvalgte samlende begreber som deling, tilpasning og indbyrdes afhængighed, samt klassikeren, informationsteknologien, ligner den moderne virksomhedsstruktur.Men hvad i alverden skal det så bruges til i den praktiske verden? Det er vanskeligere at svare på, for bogen virker overlæsset med overflødig information og fortænkte, naturvidenskabelige referencer.&quot;Grib fremtiden&quot; er som skabt til den kreative klasse, af &quot;socialister 2.0&quot;, for her leveres en luftig tro på, at vi alle kan leve af at udveksle, være kreative og arbejde hen imod en fælles intuition med den »kollektive interesse« som ledesnor.Til forfatteren selvDet lyder som en RUC-rapport fra sidste århundrede, og meget sigende bliver der ikke talt så meget om faglige kundskaber, men mere om at forstå »sammenhænge« og deltage i tværfaglige projekter. Det lyder betragteligt som det regime, der måske gav os en bundplacering i PISA-undersøgelserne.&quot;Grib Fremtiden&quot; er en bog til folk som Peter Hesseldahl selv, der kan male med den brede pensel og skabe den summende fornemmelse af sammenhæng, der desværre bliver hængende i abstraktionernes verden, når bogen er lukket igen. Til gengæld har man fået pladen fuld.
+        </div>
+        <footer>
+          <em>Kpn.dk (Kultur På Nettet)</em>
+          &nbsp;·&nbsp; 2011-02-15
+          &nbsp;·&nbsp; e27cadaf
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.91</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.718</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.626</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techtopia #42: Dit testamente på Blockchain</h4>
+        <div>
+          Podcast: Startuppen Testaviva har skabt en livsguide, som bygger på en blockchain, der holder styr på dokumenter og samarbejdspartnere, så man altid har styr på dokumenterne - lige fra skødet på huset til ægteskabet og testamentet.Det danske firma Testaviva vil give juridisk assistance til alle danskere gennem hele livet, så man altid har styr på dokumenterne - lige fra skødet på huset til ægteskabet og testamentet. Testaviva har skabt en livsguide, som bygger på en blockchain, der holder styr på dokumenter og samarbejdspartnere. Men at bygge sådan en service med ny teknologi rummer også mange udfordringer, som KMD hjælper med at løse.Hvordan kan man samarbejde med en kunstig intelligens? Eller få to kunstige intelligenser til at samarbejde min hinanden?Det undersøger et hold forskere fra Microsoft. De bruger spiluniverset Minecraft som en legeplads, hvor man kan teste sin kunstige intelligens. Hvordan vil den samarbejde om at overleve angrebet fra en hær af zombier? Eller hvordan kan to kunstige intelligenser klare sig bedst gennem et forhindringsløb gennem at samarbejde?Minecraft fungerer som et spejl på den virkelige verden, og forskningen bruges blandt andet til at finde ud af, hvordan selvkørende biler skal opføre sig, når de indtager gader og stræder.Medvirkende:Michael Lauritzen, CEO, TestavivaKristian Kaa, CTO, TestavivaClaus Krüger, Enterprise Architect, KMDKatja Hofmann, forsker, Microsoft Research CambridgeLinks:
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2018-03-05
+          &nbsp;·&nbsp; e6a69db6
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.977</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.593</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bang-stykke tilbage på BaggårdTeatret</h4>
+        <div>
+          SVENDBORG: Menneskets udvikling er fuld af historier om slåskampe, blod og kærlighed.Hvordan fortæller vi dem? Carsten Bangs anmelderroste familieforestilling &quot; Evolution&quot; er tilbage på BaggårdTeatret den 24. september og 1. oktober.I Evolution møder vi fuldblodsnørden, der på 45 minutter fortæller historien om, hvordan alting blev skabt: Fra hulemalerier til kunstig intelligens via Darwin, Gud og Thomas Blachmann.I samarbejde med Syddansk Universitet og Center for forskning i jordens udvikling har stand-up komiker Carsten Bang trukket naturvidenskaben ind i teatrets laboratorium og skabt et hæsblæsende bud på videnskabsformidling i børnehøjde.
+        </div>
+        <footer>
+          <em>Ugeavisen Svendborg</em>
+          &nbsp;·&nbsp; 2011-09-21
+          &nbsp;·&nbsp; e2e1519c
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.969</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Deutsche Bank-formand tror banker overlever</h4>
+        <div>
+          Paul Achleitner i Deutsche Bank tror ikke, at såkaldte fintech-virksomheder og markedsbaseret långivning vil overtage for banker i fremtiden.Det siger bestyrelsesformanden i et interview med Wall Street Journal.-Ideen om, at banker bliver helt erstattet af fintech-virksomheder er et galt syn på verden. Begge industrier kræver regulering,- siger han til avisen.KausalitetPaul Achleitner henviser til, at finansiel teknologi vil spille en vigtig rolle, men de nye aktører vil også gå gennem den samme proces som banksektoren: Algoritmer kan håndtere korrelation men ikke kausalitet.-Dette er et stort tema. Bankindustrien havde rædselsvækkende erfaringer med at store for meget på modeller og algoritmer. Og nu skal man si at algoritmer vil erstatte alt   jeg ville være meget forsigtig,- siger han til Wall Street Journal.Bestyrelsesformand Paul Achleitner i Deutsche Bank. Foto: Allianz.Bestyrelsesformand Paul Achleitner i Deutsche Bank. Foto: Allianz.
+        </div>
+        <footer>
+          <em>Finans.Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-05-15
+          &nbsp;·&nbsp; e5085698
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.537</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.615</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bliv klogere på kunstig intelligens</h4>
+        <div>
+          FOREDRAG Forskeren Thomas Bolander gæster Viby Bibliotek for at fortælle om kunstig intelligens. Det sker torsdag 23. oktober klokken 16.30-18.30. Foredraget vil belyse den kunstige intelligens' historie, herunder forskellige tiders opfattelser af hvad kunstig intelligens egentlig er eller bør være. Tilmelding på bibliotekets hjemmeside. 
+        </div>
+        <footer>
+          <em>Lokalavisen Aarhus Syd</em>
+          &nbsp;·&nbsp; 2014-10-21
+          &nbsp;·&nbsp; e4a20eda
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Huawei lancerer intelligent told-løsning - skal skabe lettere og sikrere handel på tværs af landegrænser</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra HuaweiDen nye, intelligente told-løsning skal gøre handel på tværs af landegrænser nemmere og sikrere, og tilbydes derfor over hele verden. Derfor er den også designet sådan, at den kan skræddersyes til de lokale behov, der måtte være ift. varer, køretøjer, virksomheder m.m.&quot;Eftersom vi servicere 170 lande over hele verden, forstår vi her hos Huawei, hvilke udfordringer og krav der stilles til toldsystemer. For at skabe effektive vare-clearing og sikre nem deklaration er det nødvendigt at lave en gennemgribende, digital opgradering af toldsystemer, &quot; sagde York Yuekun, President for Huaweis Global Government Business Unit, ifm. med lanceringen.&quot;Som en ledende og global leverandør af telekommunikationsinfrastruktur og intelligente enheder, har vi arbejdet sammen med partnere i det globale økosystem for at bruge musklerne i cloud-computing, big data og kunstig intelligens. Ved at sammensætte disse teknologier har vi skabt en sikker, brugervenlig og effektiv toldsystemsløsning, Smart Customs Solution, &quot; fortsatte han.Løsningen lanceres på et tidspunkt, hvor en verden, der oplever stigende globalisering, hele tiden sætter nye krav til toldsystemer og handel på tværs af landegrænser bl.a. pga. stigende e-handel. Det skaber øget fokus på at skabe en digital transformation af toldsystemer verden over.Derfor har Huawei i samarbejde med flere partnere skabt en scenarie-baseret toldsystemsløsning. Ved hjælp af kunstig intelligens, big data og cloud-computing kan den intelligente toldløsning styre alt fra clearing til intelligent checkpoint-styring og intelligent styring af havne (med produktet Intelligent Cube).&quot;Smart Customs Solution vil understøtte implementeringen af self-service told-clearing i logistiksystemer, der går på tværs af landegrænser. Samtidig sikrer systemet, at hele processen sker sikkert. One-stop services så som deklarering, betaling og frigivelse af varer er nu tilgængelige [...] Løsningen sikrer også effektiv styring af varer, køretøjer, udbydere og lokationer&quot;, siger Augustine Chiew, Huaweis direktør for Global Customs and Tax Industries i en afsluttende bemærkning.Læs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/huawei-lancerer-intelligent-told-losning-skal-skabe-lettere-og-sikrere-handel-pa-tvaers-af-landegraenser?releaseId=13618873** Ovenstående pressemeddelelse er videreformidlet af Ritzau på vegne af tredjepart. Ritzau er derfor ikke ansvarlig for indholdet ** 
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2021-03-29
+          &nbsp;·&nbsp; e830a6d1
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.553</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.676</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.587</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Apps og kunstig intelligens fik den fulde opmærksomhed til Cisco Live i Barcelona</h4>
+        <div>
+            Mere end 18.000 kunder, partnere og it-professionelle fra hele verden var samlet til eventet, der løb af stablen i sidste uge. Her kunne de høre om de nyeste digitale tendenser samt omkring nye teknologier og produkter, skriver Cisco i en pressemeddelelse. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/wastetech</em>
+          &nbsp;·&nbsp; 2020-02-03
+          &nbsp;·&nbsp; e79054f4
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Hende, TV 2 21.05: Therodore er lige blevet skilt fra sin kone og arbejder for et firma, der forfatter kærlighedsbreve for dem, der ikke selv er kreative nok til den slags. Hans nysgerrighed pirres af en reklamekampagne, der omhandler det sidste nye inden for operativsystemer med kunstig intelligens. 
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2018-07-01
+          &nbsp;·&nbsp; e6cf51de
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.922</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.697</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Der var også et spørgsmål, Vestager ikke kunne svare på</h4>
+        <div>
+          Margrethe Vestager er godkendt som ny kommissær. Det mest kritiske tema under hendes høring var, hvordan hun vil undgå kasketforvirring med de mange kommende funktioner.BruxellesEr det ikke risikabelt at ville udvikle en strategi for noget så komplekst som Europas fremtidig brug af kunstig intelligens på bare 100 dage...
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2019-10-08
+          &nbsp;·&nbsp; e761d52a
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.548</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.758</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.657</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.529</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Belgier vandt satirepris</h4>
+        <div>
+          Tegninger: 1.200 tegninger fra satiretegnere fra hele verden deltog i årets konkurrence Viborg Cartoon Award, der af arrangørerne betegnes som det officielle VM i satiretegninger.60 finalister var blevet udvalgt af en international jury, inden de tre vindere blev kåret og bl. a. fejret af Viborgs borgmester, Ulrik Wilbek (V).Ligesom i 2017 blev det en belgier, der løb med førstepladsen, da juryen pegede på tegner Constantin Sunnerberg, 48 år. Ligesom de øvrige tegnere har han taget udgangspunt i årets tema, kunstig intelligens.Andenplads gik til fransk-iranske Shahrokh Heidari, 40 år, mens den 47-årige brasilianske tegner Claudio Antonio Gomes blev nummer tre. JP.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-10-16
+          &nbsp;·&nbsp; e6efcbaf
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.547</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.961</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.853</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.563</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>&quot;Ai-ai-ai!&quot;: En humoristisk forestilling om krop og teknologi</h4>
+        <div>
+           Emma Rose Haas emrha@viborgfolkeblad.dkViborg: Efterårsferien bliver på Carte Blanche indledt med tankevækkende teater for både børn (fra seks år og op) og voksne om det at være menneske, eller ikke at være det, midt i en verden fuld af teknologi.Stykket hedder &quot;Ai-ai-ai!&quot; og finder sted lørdag den 12. oktober. På scenen møder vi Folmer, Ole og Antoinette, som på en fysisk og humoristisk måde udforsker vores verden, der er fuld af skærme, kunstig intelligens og det nødvendige menneskelige nærvær.For mere information og billetter, se Carte Blanches hjemmeside.
+        </div>
+        <footer>
+          <em>Viborg-folkeblad.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-10-11
+          &nbsp;·&nbsp; e762ca0e
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.677</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Unge til international videnskabsdebat</h4>
+        <div>
+          SØNDERBORG: I slutningen af april blev der holdt Europæisk Ungdomsparlament med videnskab på dagsordenen i Sønderborg. Seks unge herfra rejser i juli til &quot; finale&quot; i Manchester.Holdet rejser med Sønderborgs uddannelsesprojekt House of Science, og ungdomsparlamentet er en slags finale, efter der i slutningen af april blev holdt tre dages Europæisk Ungdomsparlament i Sønderborg med 116 deltagere fra Sønderborgs ungdomsuddannelser og AP Møller Skolen i Sydslesvig. De seks unge er udvalgt i klasserne gennem lodtrækning blandt de, der havde muligheden for at rejse henholdsvis i sommerferien og efter studentereksamen.I Sønderborg drøftede deltagerne på blandede hold naturvidenskabelige og teknologiske problemstillinger med temaer som kost og sundhed, brug af stamceller og robotter og kunstig intelligens. Alt sammen med Menneskenes Fremtid som overordnet tema.I Manchester vil det overordnede tema være det samme. Her vil ca. 100 deltagere fra 13 lande blive blandet, og arbejdssproget vil derfor være engelsk.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Sønderborg</em>
+          &nbsp;·&nbsp; 2016-06-14
+          &nbsp;·&nbsp; e5c18124
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.933</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.571</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.639</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Uvis fremtid for VM i Satiretegning</h4>
+        <div>
+          HALD EGE: Cartoon Awards, også kendt som VM i Satiretegning, kan være holdt for sidste gang. Den lokale tegnekonkurrence står de nu forhenværende kroejere Poul og Gitte Nielsen bag.I fem år er Cartoon Awards bare vokset og vokset, men da Niels Bugges Kro og Hotel tidligere på måneden gik konkurs, opstod også en uvis situation, og den sidste satiretegning kan være sendt til Hald Ege.Mangler overblikFlere end tusinde tegninger fra hele verden er hvert år væltet ind ad brevsprækkerne hos dommerkomiteen, der blandt andet består af kendte bladtegnere.Det har de også gjort i år, hvor temaet for konkurrencen har været &quot; kunstig intelligens&quot;.Men lige nu er der altså andet at tage stilling til end at gennemgå de indsendte bidrag.Poul Nielsen fortæller, at han og de øvrige medarrangører af Cartoon Awards i fredags holdt et telefonmøde, hvor man drøftede fremtiden for initiativet, som årligt har været markeret med en storstilet og festlig afsløring på først Niels Bugges Hotel, siden på Dollerup Mølle, som kro-parret forpagtede.Tegnefesten har været velbesøgt af blandt andet kendisser, kunstnere, filmfolk og branchefolk, men hvordan det går med årets konkurrence -og fremtiden for Cartoon Awards i det hele taget -er uvist.-Vi mangler et overblik, før vi kan træffe den endelige beslutning, fortæller Poul Nielsen.-Jeg regner med, at vi kan melde noget ud om 10-14 dage.Verden rundtCartoon Awards har været holdt fem gange, og i de seneste versioner er der også tilføjet en konkurrence for 8.klasseselever med det formål at udbrede satiretegningens kvaliteter til undervisningen.For Poul Nielsen har det indtil videre været fantastisk at se den konkurrence, han selv fik idéen til, udfolde sig.Der er årligt tikket flere end tusind bidrag ind fra hele verden, og Cartoon Awardstegningerne har blandt andet udstillet i FN-bygningen i New York og i Den Sorte Diamant i København.-Det har jo været helt fantastisk at være en del af. Det har skabt et enormt fokus på Viborg og på kroen. Det har været ude i nyhedskanaler verden rundt. Det har været sjovt at være med til, og vi har mødt en masse spændende mennesker fra hele verden, siger Poul Nielsen, som for tiden &quot; har mange tråde at rede ud,&quot; som han udtrykker det.Det har været sjovt at være med til, og vi har mødt en masse spændende mennesker fra hele verden POUL NIELSEN, ARRANGØR AF CARTOON AWARDS.
+        </div>
+        <footer>
+          <em>Viborg Stifts Folkeblad</em>
+          &nbsp;·&nbsp; 2018-03-12
+          &nbsp;·&nbsp; e6a938c4
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.967</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.618</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.681</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Trailer til 'Transcendence'</h4>
+        <div>
+          Dr. Will Caster (Johnny Depp) er verdens fremmeste kapacitet inden for forskning af kunstig intelligens. Han har viet hele sin eksistens til at skabe historiens mest informationsmodtagelige computer, der er i stand til at indsamle og lagre menneskedens samlede viden, kombineret med et komplet register af menneskelige følelser.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2014-06-16
+          &nbsp;·&nbsp; e472b9c6
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.924</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.738</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens</h4>
+        <div>
+          Kunstig intelligens, machine learning og algoritmer er nemlig i fuld gang med at forandre måden, vi arbejder og driver virksomhed på. Der er mange teknologiske, forretningsmæssige, strategiske, ledelsesmæssige og organisatoriske overvejelser, der er helt nødvendige, hvis man skal have succes med kunstig intelligens.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-06-28
+          &nbsp;·&nbsp; e7410cdb
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.942</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.548</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.596</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Grab'n Go: The Big Five and the canopy effect</h4>
+        <div>
+          Body På dette morgenmøde vil Duncan Stewart fra Deloitte Canada se på de kommende tendenser indenfor teknologi, medier og telekommunikation, som Deloitte har forudsat dem i rapporten &quot;TMT Predictions 2020&quot;.På mødet vil han blandt andet komme ind på privat 5G, edge AI-chips og meget andet.Begivenheden foregår på engelsk.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-01-30
+          &nbsp;·&nbsp; e78f3a49
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.538</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Derfor bliver 2018 et sort-hvidt år i dansk erhvervsliv</h4>
+        <div>
+           På mandag vågner vi i de store kontrasters år. Prædikatet stammer fra prognoseindustrien.Det dækker over den strømning, at en stor del af klodens befolkning vil opleve, at den materielle velstand vokser samtidig med, at stigende politiske spændinger og en faretruende eksperimentel jagt på lederskab intensiveres i en verden, hvor autoriteterne er udfordrede.Så hvem ved, måske var fænomenet Donald Trump blot begyndelsen på en større trend? Vi har identificeret fem skarpe tendenser, som kommer til at præge dit liv og arbejdsliv i det nye år:Så vidt fem temaer, som vil vise sig i toppen af samfundets økonomiske dagsorden i året, der kommer. Vi kunne tilføje andre som ny, intelligent medicin, klimaforandringernes comeback, den kommende debat om moderne marxisme i forlængelse af Karl Marx- 200 års -fødselsdag- den 5. maj.Eller hvad med beskyttelse af personfølsomme data? Og udbredelse af kunstig intelligens overalt i erhvervslivet? Hvad angår de to sidstnævnte ser vi frem til at tage dem under behandling i to artikelserier straks efter årsskiftet.Indtil da: Mange ønsker herfra om et rigtig godt nytår til alle vore abonnenter - og en stor tak for opbakningen i året, der gik.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-12-30
+          &nbsp;·&nbsp; e68ff1fe
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.605</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.612</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>SKAK: Google wins</h4>
+        <div>
+          Hvad gør hvid her? Hvid trækker -ekstremt svær Sidste år efterlod Deepmind - et Google-ejet firma som specialiserer sig i AI/ Deeplearning - Go-entusiaster i chok. Med deeplearning og Artificial Intelligence blev deres GO-program - ved kun at spille med sig selv - den bedste i verden! (Go er kendt som sværere end skak). For nylig fandt Deepmind - under navnet AlphaZero - så et nyt offer, ja du gættede det: Skak! De satte programmet til at spille med sig selv i 24 timer. Bagefter spillede det en match mod Stockfish 8, som er et af de bedste skakprogrammer i verden. AlphaZero vandt nemt 64-36 uden at tabe et parti!! En smagsprøve: AlphaZero -Stockfish 8 21. Lg5!! f5 22. Df4 Sc5 23. Le7 Sd3 24. Dd6 Sxe1 25. Txe1 fxe4 26. Lxe4 Tf5 27. Lh4 Lc4 28. g4 Td5 29. Lxd5 Lxd5 30. Te8+ Lg8 31. Lg3 c5 32. Dd5 d6 33. Dxa8 Sd7 34. De4 Sf6 35. Dxh7+ Kxh7 36. Te7 Sxg4 37. Txa7 Sf6 38. Lxd6 og hvid vandt i træk 117 1- 0. skak@jppol.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-12-09
+          &nbsp;·&nbsp; e6895c01
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.921</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.765</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Afblæs alarmen: Unge er ikke ukritiske mediebrugere</h4>
+        <div>
+          Vi har bedt dem om at komme med nye vinkler på forholdet til de sociale medier og de redigerede medier. Eleverne kommer med deres input til, hvordan de forholder sig til moderne medier - og måske kan vi alle hente inspiration til, hvordan vi forholder os til de sociale og de redigerede medier.Velkommen til 2019, kære læser! Året hvor clickbaits, influencere, skjulte reklamer og højtråbende politikere kæmper om din opmærksomhed på de sociale medier.Her må du gerne have mobilen på lyd, og du skal endelig tage billeder og videoer til eventuelle blogposts eller Instagram-opslag. Del gerne din lokation, og husk at vi har vores helt eget hashtag: #2019letsbereal. Så spænd sikkerhedsselen - and be aware of fake news!Okay, let's be real - lad os snakke om den'farlige SoMe-jungle' og dens 'dumme, naive SoMe-indfødte', som vi alt for ofte bliver kaldt. Der er ikke meget tiltro til os millennials og den såkaldte Generation Z.For Generation Voksen har travlt med at fortælle os, at vi ikke skal tro på alt, hvad vi læser, og at vi skal tage os i agt for fake news og skjulte reklamer. Vi får tit skudt i skoene, at vi er alt for ukritiske, når det gælder de sociale medier, og at vi fravælger den demokratiske samtale, når vi afholder os fra at tage diskussioner i Facebooks kommentarspor.Rapport efter rapport viser, at vi unge i stigende grad får vores daglige nyheder gennem sociale medier.Desuden er vores generation mere illoyal over for forskellige typer medier end ældre generationer, konkluderer undersøgelser. Men er det et problem? Vi er hverken mere eller mindre ukritiske overfor nyheder end andre generationer. Modsat ældre generationers monogame forhold til medierne er vi polygame elskere, som troløst orienterer os i et bredt udsnit af de etablerede nyhedsmedier, hvilket sikrer, at vi får et bredere perspektiv på de forskellige historier, fordi vi læser om historierne flere gange på forskellige medier.Og skal vi ikke lige blive enige om, at vi unge faktisk er de indfødte i den her digitale verden?Det er os, der er vokset op i en ekspanderende teknologisk tid, hvor mobilen og online-universet er blevet en uadskillelig del af vores hverdag. Vi har ingen problemer med at navigere i de mørkeste afkroge af internettet eller orientere os bredt i det store nyhedslandskab, som vi hver dag møder i vores newsfeed. Vores generation har i langt højere grad levet online-livet end offline-livet, og vi er flasket op med jungleloven i den kaotiske SoMe-verden.Det betyder, at vi kender spillets regler, og at vi er helt trygge, når vi surfer rundt på SoMe-bølgerne og nyhedsstrømmen - så let a girl live and have some faith!
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2019-05-02
+          &nbsp;·&nbsp; e72ea116
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.672</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.666</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

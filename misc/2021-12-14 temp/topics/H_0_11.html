@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_11 <kbd>H_0_11</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mellem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>den</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>snart</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>moore</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vejen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>chance</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anledning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tråd</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fører</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overraskende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>længst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eksisterer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>realitet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>former</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kæmper</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skift</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dynamik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hedder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sammenstød</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>modsat</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beskrives</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afvikling</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>yderst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hast</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>markerer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vidt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>historiske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>linje</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ren</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>særlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>modsætning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>begyndelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>korte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>holdes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betydningsfulde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nutidens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbinder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>danner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ankommer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kompromis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>overgå</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>drager</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbliver</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mur</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skrider</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nævnes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>h</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afværge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>max</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pandemi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hersker</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eksplosion</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>varsler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udspringer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>krydse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hierarki</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>intens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>knytte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bakke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>w.</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>philip</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>paralleller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>2.500</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>herbert</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>anlagte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hindring</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_11 DESC LIMIT 50</pre>
+      <article>
+        <h4>Forårsjævndøgn</h4>
+        <div>
+          Mange husker fra deres skoletid, at forårsjævndøgn falder den 21. marts. I år er det så den 20. Og kigger vi i årene fremover, så er det den 20, den 20, den 20, den 20.DMI forklarer hvorfor: I år falder forårsjævndøgn den 20.marts i Danmark. Det gjorde det også sidste år. Og det gør det igen i 2015. Ja, faktisk er det den 20. helt frem til 2048, hvor det pludselig er den 19.Hvad er det, der foregår. Og hvorfor husker de, som gik i skole i 70' erne eller tidligere, at de har lært, at forårsjævndøgn hyppigt falder den 21? Årsagen er grundlæggende, at et år ikke har præcis 365 dage. Det korrigerer vi for, ved at indskyde skuddag efter en nøje fastlagt algoritme.
+        </div>
+        <footer>
+          <em>Ugeavisen Odsherred</em>
+          &nbsp;·&nbsp; 2017-03-14
+          &nbsp;·&nbsp; e6277d49
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.941</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.589</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.554</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.722</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: 5 problemer der skal løses, hvis kunstig intelligens skal være sikker</h4>
+        <div>
+          Vi skal sikre os, at robotter med kunstig intelligens ikke tramper os ned i jagten på at opnå sit mål, at den ikke hacker sit eget belønningssystem, og at den fungerer i situationer, den ikke har trænet. Det er blandt de fem udfordringer Google har opstillet for den videre udvikling af kunstig intelligens.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-06-23
+          &nbsp;·&nbsp; e5c5ad50
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.91</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.707</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Beethoven-kalender</h4>
+        <div>
+          København/BonnHerunder nogle af de begivenheder og arrangementer, der er i Beethoven-året:* Den 1. februar opføres operaen &quot;Fidelio&quot; på Statsoperaen i Wien i Østrig, hvor Beethoven boede fra begyndelsen af det 19. århundrede.* Fra den 16. marts opføres &quot;Fidelio&quot; på Wiens Theater an der Wien, hvor operaen blev opført første gang i 1805. Det er den tysk-østrigske skuespiller Christoph Waltz, som er instruktør.* Den 25. og 26. april opfører Berlins Philharmonikere &quot;Beethoven Marathon&quot;. Der spilles Beethoven-musik i 24 timer i den tyske hovedstad.* Den 28. april er der koncert i Bonn, hvor Beethovens ufuldendte 10. symfoni spilles, og den spilles færdig. Den ufuldendte del er komponeret af kunstig intelligens.* Den 16. maj holder technobandet Kraftwerk friluftskoncert i Bonn til ære for Beethoven. Kraftwerk fejrer også 50-årsjubilæum i 2020.* Telefirmaet Deutsche Telekom arrangerer en stribe begivenheder, herunder en koncert og en Beethoven-fest med popstjernen Robbie Williams i Bonn den 18. maj.* Den 17. december slutter Beethoven-året med en koncert i parlamentsbygningen i Bonn.Kilder: AFP, Deutsche Telekom/ritzau/Denne faktaboks er en del af Ritzaus PLUS-pakke til julen og nytåret. Den er klausuleret til den 23.12.Faktaen må udgives bag paywall den 26.12 klokken 13:00. Denne fakta publiceres ikke på NET-tjenesten.
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-12-18
+          &nbsp;·&nbsp; e78129ea
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.736</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.977</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.889</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.545</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Menneske og maskine</h4>
+        <div>
+          DR2 11.15 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidne til en ny arts opståen eller er det enden på vores egen art? Den fysiske forbindelse mellem menneske og maskine er allerede almindelig. Se med, når dokumentaren &quot; Supermennesket: Den optimerede hjerne&quot; sendes. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-08-07
+          &nbsp;·&nbsp; e7d3a030
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.961</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.827</kbd>
+            <kbd data-tooltip="Humans (&amp; machines)">L80_HUMANS&nbsp;0.506</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kristeligt Dagblad</h4>
+        <div>
+            Beethoven-kalender Herunder nogle af de begivenheder og arrangementer, der er i Beethoven-året: * Den 1. februar opføres operaen &quot;Fidelio&quot; på Statsoperaen i Wien i Østrig, hvor Beethoven boede fra begyndelsen af det 19. århundrede. * Fra den 16. marts opføres &quot;Fidelio&quot; på Wiens Theater an der Wien, hvor operaen blev opført første gang i 1805. Det er den tysk-østrigske skuespiller Christoph Waltz, som er instruktør. * Den 25. og 26. april opfører Berlins Philharmonikere &quot;Beethoven Marathon&quot;. Der spilles Beethoven-musik i 24 timer i den tyske hovedstad. * Den 28. april er der koncert i Bonn, hvor Beethovens ufuldendte 10. symfoni spilles, og den spilles færdig. Den ufuldendte del er komponeret af kunstig intelligens. * Den 16. maj holder technobandet Kraftwerk friluftskoncert i Bonn til ære for Beethoven. Kraftwerk fejrer også 50-årsjubilæum i 2020. * Telefirmaet Deutsche Telekom arrangerer en stribe begivenheder, herunder en koncert og en Beethoven-fest med popstjernen Robbie Williams i Bonn den 18. maj. * Den 17. december slutter Beethoven-året med en koncert i parlamentsbygningen i Bonn. Kilder: AFP, Deutsche Telekom /ritzau/ Andre læser lige nu
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2019-12-18
+          &nbsp;·&nbsp; e7812638
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.81</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.975</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.763</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.546</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Har førerløse biler moral?</h4>
+        <div>
+          DR 2 MANDAG 20.00 Bilen har givet os frihed og udvidet vores aktionsradius.Bagsiden er, at den har forurenet miljøet og forpestet luften for ikke at tale om alle dem, der hvert år dør i trafikulykker.Men det er slut nu.I den selvkørende bil er vi passagerer og bliver fragtet frem og tilbage af en teknologi, der ikke laver fejl.Men hvad betyder kunstig intelligens? Kan den førerløse bil se og kommunikere? Kan den tænke selv? Har den en moral? &quot; Den førerløse bil&quot; er en dokumentar fra BBC fra 2017.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-19
+          &nbsp;·&nbsp; e69540b5
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.92</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.818</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Regnefejl: Påsken falder forkert i år</h4>
+        <div>
+          Påsken falder i år den 21. april. Men mange skarpe læsere har lagt mærke til, at den burde falde 24. marts. Det skriver Videnskab.dk.Traditionen lyder, at påsken falder første søndag efter første fuldmåne efter forårsjævndøgn.Sådan har det været siden reglen blev fastlagt ved kirkemødet i Nikæa (den nuværende tyrkiske by Iznik) i år 325.Vores kalender passer ikke med MånenDet gør den bare ikke i år. I år står fuldmånen efter forårsjævndøgn på den 21. marts, og den følgende søndag er den 24. marts. Men hvis du tjekker din kalender, står der klart og tydeligt, at påskesøndag er den 21. april.»Der er flere grunde til, at det går galt i år. Overordnet kan man sige, at vores kalender følger Solen, og den passer ikke altid helt sammen med Månens cyklus,« siger Claus Jørgen Clausen, der er ph.d. i arkæoastronomi, der et krydsfelt mellem arkæologi og astronomi, til Videnskab.dk.Da der blev indkaldt til kirkemødet i Nikæa i år 325 af den romerske kejser, Konstantin Den Store, blev det besluttet, hvornår påsken skulle falde.Men forsamlingen tog også en beslutning om, at forårsjævndøgnet altid falder den 21. marts.Forårsjævndøgnet er det tidspunkt, hvor Solen står lige over ækvator.Forårsjævndøgn falder ikke samme dagProblemet er bare, at forårsjævndøgnet ikke altid falder samme dag. I år og de næste mange år er det for eksempel den 20. marts.»Det giver problemer, når forårsfuldmånen i år kommer den 21. marts. Tidligere har det gjort det rigtig svært at vide, om der reelt set havde været fuldmåne efter forårsjævndøgnet, og så har man måske misset den rigtige fuldmåne og ventet på den næste,« siger Claus Jørgen Clausen.Problemet med de unøjagtige observationer blev taget op i år 1800, hvor den tyske matematiker Carl Friedrich Gauss udregnede en algoritme, der kunne finde påsken uden brug af observationer. Men selv hans algoritme kan komme til at regne den forkerte måne med.Nogle år ligger forårsjævndøgnet og fuldmånen så tæt, at den næste fuldmåne bliver taget med i stedet. Det er tilfældet i år, hvor forårsjævndøgnet for eksempel er den 20. marts og fuldmånen står op natten til den 21. marts kl. 02:43.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-02-11
+          &nbsp;·&nbsp; e713b6d9
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.974</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.536</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.699</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pubcrawl: Forskere beregner korteste vej mellem 24.727 britiske værtshuse</h4>
+        <div>
+          Den omrejsende handelsmand er stadig en stor beregningsmæssig udfordring. Efter to års arbejde har britiske forskere løst den hidtil største udgave for veje på et kort.Der er ét eller andet med øl og dataloger. I hvert fald var det noget af en pubcrawl, fire forskere for to år siden satte sig for at finde den optimale løsning på, da de ville finde den korteste vej mellem 24.727 pubber i Storbritannien, skriver BigThink.Forskerne, som blandt andet tæller lektor Keld Helsgaun fra Roskilde Universitet, satte sig for at prøve at løse den hidtil største udgave af Travelling Salesman-problemet for et problem baseret på et kort.Travelling Salesman er et kombinatorisk matematisk problem, som er eksemplificeret ved den omrejsende handelsmand, der skal besøge et antal byer. Målet er at finde den korteste vej mellem alle byerne, men med den betingelse, at man kun besøger hver enkelt by én gang.Den særlige udfordring er, at det for en vilkårlig udgave af problemet er vanskeligt at bevise, at en bestemt rute er den korteste, uden at prøve alle muligheder.Der findes et antal algoritmer, der hurtigt kan finde en god kandidat til den optimale løsning, men man skal altså prøve et meget større antal mulige kombinationer, før man kan bekræfte, at løsningen er den bedste.For den store britiske pubcrawl, der spænder fra Shetlandsøerne i nord til Cornwall i syd, er den optimale korteste rute på 45.495.239 meter baseret på afstande hentet fra Google Maps. Kortet kan ses i sin helhed på projektets hjemmeside.Forskerne har efterfølgende løst et problem med dobbelt så mange punkter, hvor de har forbundet 49.603 historiske steder i USA med en rute på 350.201.525 meter, eller lidt mindre end gennemsnitsafstanden fra Jorden til Månen.Pubcrawlen krævede ifølge forskerne udregninger svarende til 305 dage på en enkelt processorkerne. Tilsvarende krævede den amerikanske turistrute udregninger svarende til 178,9 år, men blev udregnet på University of Waterloos klyngecomputer med 310 processorkerner over en periode på otte måneder.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-01-23
+          &nbsp;·&nbsp; e6147ac1
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.897</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.706</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.739</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nygadehuset tilbyder også i marts en række arrangementer og tilbud til hele familien</h4>
+        <div>
+          Nygadehuset lægger op til en travl forårsmåned med friske nyheder, sprøde rytmer og strålende arrangementer for alle. Aabenraa: Minidokumentarfestivalen Dox:Direkte den 23. og 25. marts er et af Nygadehusets store arrangementer i en travl forårsmåned. Med visninger af premiereaktuelle dokumentarfilm og live-transmitterede samtaler med filmskabere, forfattere og eksperter. Bl.a. vil man kunne deltage i et direkte Skype-interview fra Rusland med den verdenskendte whistleblower og aktivist Edward Snowden og viden- og tech-korrespondent i DR Henrik Moltke efter visningen af den ultimative film om kunstig intelligens, &quot;iHuman&quot;. Eller se et passioneret portræt af kvinden bag &quot;The Handmaid's Tale&quot;, den 80-årige forfatter og politiske ildsjæl Margaret Atwood, efterfulgt af en live debat med forfattere og filmkritikere Bo Green Jensen. Man kan også blive udfordre på hjertet og hjernen til de aktuelle livestreamede foredrag fra Aarhus Universitet, der byder på emner som virusser den 3. marts, fremtidens natur den 10. marts og dybhavet den 31. marts. Masser af musik Men allerede den lørdag den 7. marts er der keramikkursus i Nygadehusets kreative værksted. Onsdag den 11. marts er der gjort klart med lærreder og uskadelig fingermaling - så babyerne kan komme i gang med deres første kunstværker og den 22. marts inviteres alle børn og deres voksne indenfor til hygge i NygadeHusets kreative værksteder, hvor der er både glaskunst, keramik og æskedesign på programmet. Hvis man hellere vil synge foråret ind, er der hver torsdag &quot;Lyd &amp; Lækkerier&quot; med fællessang og gode kager og hvor Shanty Koret kigger forbi den 19. marts. NygadeHusets koncertprogram har fem koncerter på programmet, der spænder fra nordic folk band Afenginn den 5. marts til det pladeaktuelle indie band Verdens Sidste Idé den 19. marts og den poetiske og vedkommende trio Dissing &amp; Las den 26. marts.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-03-02
+          &nbsp;·&nbsp; e79a2df9
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.554</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.632</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.564</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens kan snyde sig gennem samtaler</h4>
+        <div>
+          Har du nogensinde været med i en samtale, hvor du ikke var sikker på, hvad der blev talt om, men ikke ville spørge ind? Nu kan kunstig intelligens på ret menneskelig vis snyde sig gennem samtaler på samme måde som mennesker.Det bliver generelt meget ensformigt at tale med en kunstig intelligens, da den spørger ind til hver eneste ting, den ikke forstår - hvilket mennesker sjældent gør.Illustration af, hvordan AI tænker og efterfølgende bekræfter, at dens gæt var korrekt. Photo: Osaka UniversityDerfor har forskere fra Osaka University nu undersøgt, om en AI kan snyde sig gennem samtaler, hvor den ikke er sikker på, hvad der faktisk bliver sagt, skriver Inverse.Metoden hedder lexical acquisition through implicit confirmation, og idéen er, at hvis den ikke er sikker på, hvad du siger, så siger den noget andet, som den tror er i samme boldgade.Udfra mennesket svar vurderer den så, om dens eget udsagn gav mening i sammenhængen (se billedet til højre).Kræver grundlæggende forståelseLigesom med mennesker bliver det hurtigt let at genkende, at den ikke ved, hvad den snakker om, hvis den ikke rammer tæt på. Dvs. det kræver et perifært kendskab til området først for at kunne snyde.I eksemplet kender AI'en nok til at kunne, at »nasi goreng«  er indonesisk - og mennesket siger selv, at vedkommende vil »try to cook« , så den kan regne ud at det er mad.På baggrund af de informationer, kan den fx søge efter indonesiske restauranter i området - og alt efter resultatet, vil den give et forskelligt svar.Selv hvis der ikke er nogle resultater, kunne den sige, at området godt kunne bruge nogle gode indonesiske restauranter.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-12-27
+          &nbsp;·&nbsp; e68ebe2a
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.989</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.529</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.667</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Persondata politik</h4>
+        <div>
+          Se den banebrydende robot i klippet herover artiklen_______________________________________________Japan foretog en spektakulær raketopsendelse tidligt søndag morgen.Raketten blev affyret uden problemer, og dens destination er Den Internationale Rumstation, hvor den skal aflevere lidt over fem ton udstyr og forsyninger.Se også: Sjov lille robot kan løbe som en katDet er i sig selv en nævneværdig mission, men endnu mere sensationelt er det, at raketten har en passager med, der er den første af sin slags i rumrejsens historie.Se også: TV: Så er den her! FlyvercyklenKirobo, den talende robot, er den eneste passager, og han skal en tur i rummet, hvor han skal agere selskab for den japanske astronaut på rumstationen.Se også: Se robot-ravnen, der næsten er levendeDen 34 centimeter høje Kirobo er en ekstremt avanceret robot, og hans samtaleevner og kunstige intelligens skulle være noget af det ypperste, en robot nogensinde har kunnet præstere.Se også: TV: Kæmpe eksplosion på månenDet er det japanske bilfirma Toyota, der er hovednavnet bag teknikken i robotten.Der er skudt enorme investeringer i Japans prestigefyldte robot-projekt, og Kirobo forventes at ankomme til Den Internationale Rumstation d. 9. august.
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2013-08-04
+          &nbsp;·&nbsp; e3e79c43
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.869</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.854</kbd>
+            <kbd data-tooltip="Robots">L80_ROBOTS&nbsp;0.576</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robot-præst markerer reformationen</h4>
+        <div>
+          Foto: EKHNIntelligent designReformationenEn robot i Wittenberg kan velsigne besøgende på syv forskellige sprog. Ikke alle bryder sig om udviklingenFor 500 år siden benyttede Martin Luther sig af den revolutionerende trykpresse for at skabe opmærksomhed omkring sin radikale kirkereform i hele Europa. Nu udfordrer teknologien igen den religiøse tradition i Luther-byen Wittenberg.En robot-præst ved navn BlessU-2, som blev præsenteret på tyske kirkedage sidste weekend, tilbyder de besøgende i den lille tyske by velsignelser og oplæsning af bibelvers på syv forskellige sprog, herunder den lokale dialekt hessisk, mens lys stråler fra dens løftede hænder.Robotten markerer 500-året for begyndelsen på Reformationen, der med Luthers berømte 95 teser totalforandrede det politiske, kirkelige og kulturelle liv i Europa. De besøgende kan vælge mellem 31 bibelvers fra fire kategorier, og efter oplæsningen bliver verset printet ud til den besøgende.Det er den protestantiske kirke i byerne Hesse og Nassau, der står bag robotten. I en tid, hvor teknologi og kunstig intelligens udvikles med rasende fart, vil kirken have folk til at overveje, om man kan blive velsignet af en maskine, eller om der skal et menneske til. Det fortæller Sebastian von Gehren fra den regionale kirke til nyhedsmediet Tag24.-Det er et eksperiment, der skal skabe diskussion,- siger han og tilføjer, at reaktionerne er meget blandede.-Halvdelen synes, den er fantastisk, mens den anden halvdel bare ikke kan forestille sig at modtage
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2017-06-03
+          &nbsp;·&nbsp; e6481a7b
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.804</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.709</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.608</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Superhelte og stærk kvinde</h4>
+        <div>
+          Thomas Vinterbergs film »Far from the Madding Crowd« foregår i Dorset, England i 1800-tallet.Den unge Bathsheba Everdene er ualmindeligt selvstændig for sin tid og har ikke lyst til at gifte sig med en mand, hun ikke elsker.Efter at hun arver en stor gård, kæmper tre bejlere om hendes gunst: Den beskedne fårefarmer Gabriel Oak, den velhavende William Boldwood samt den hæmningsløse sergent Frank Troy, som blev svigtet ved alteret af tjenestepigen Fanny.Filmen bliver vist den 12., 13. og 14. maj, alle dage klokken 19.30.I filmen »Avengers: Age of Ultron« har superheltealliancen Avengers brug for en pause.Deres leder, Tony Stark, genopliver et gammelt fredsprogram, »Ultron«. Programmets kunstige intelligens løber dog løbsk, og »Ultron« udser sig menneskeheden som sin nye fjende, der må udryddes.Derfor må Iron Man, Captain America, Thor, Hulk, Black Widow, Hawkeye og kompagni på den igen, denne gang bistået af tvillingerne Pietro og Wanda Maximoff og androiden Vision.Filmen er på programmet den 14. maj klokken 16, den 15. maj klokken 19.30 samt den 17. maj klokken 16.
+        </div>
+        <footer>
+          <em>Fuglebjerg-Posten</em>
+          &nbsp;·&nbsp; 2015-05-12
+          &nbsp;·&nbsp; e5072e38
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.976</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.701</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.526</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vestjysk Bank vinder prisen for Årets digitale Finansvirksomhed</h4>
+        <div>
+          HOLSTEBRO: FinansWatch og analysefirmaet Wilke har lavet en stor undersøgelse af den digitale udvikling i de største danske finansvirksomheder, og Vestjysk Bank er kåret som vinder af Årets Digitale Finansvirksomhed i kategorien mellemstore banker.FinansWatch skriver om kåringen: -Vestjysk Bank vinder prisen som Årets Digitale Finansvirksomhed blandt de mellemstore pengeinstitutter.Vestjysk Bank får den bedste vurdering blandt de mellemstore pengeinstitutter for sin netbank og digitale kommunikation og den næstbedste vurdering for sin hjemmeside og arbejde med sociale medier.god på nettet I panelundersøgelsen blandt kunderne får Vestjysk Bank den bedste score for sin hjemmeside.Vestjysk Bank får den bedste score i ekspertvurderingen for sin netbank, den næstbedste score for sit arbejde med sociale medier og den tredjebedste score for henholdsvis mobilbank, hjemmeside og digital respons.Samtidig opnår Vestjysk Bank den bedste bedømmelse for sit interne arbejde med den digitale strategi og den næstbedste bedømmelse for arbejdet med kunde-og forbrugerindsigter.Vestjysk Bank scorer ligeledes ganske højt på sit arbejde med automatisering samt for proces automatisering og kunstig intelligens.-Vi er utrolig glade for og stolte af prisen. Vi prioriterer den digitale udvikling højt både i vores interne kundeprocesser, i vores selvbetjeningsmuligheder overfor vores kunder og i vores udtryk og kommunikation overfor vores omverden generelt, siger Jan Ulsø Madsen, administrerende bankdirektør i Vestjysk Bank.
+        </div>
+        <footer>
+          <em>Holstebro Onsdag</em>
+          &nbsp;·&nbsp; 2018-05-02
+          &nbsp;·&nbsp; e6bbd193
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.974</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.68</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.524</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Musikalsk forestilling: Hvordan har Trump og 9/11 påvirket technoen?</h4>
+        <div>
+          Hvordan har historiske begivenheder som 9/11, finanskrisen, #MeToo, den teknologiske udvikling og valget af Trump som USA's præsident påvirket den musik, vi alle sammen går og lytter til i dag?Det spørgsmål er udgangspunktet for forestillingen 'ELECTRONIC', som teatret Sort/Hvid opfører den næste måneds tid. Forestillingen udforsker historiske begivenheders indflydelse på klubmiljøet og den elektroniske musik.ELECTRONIC rummer både elementer af en klassisk forestilling og en koncert, som tager publikum med på en tidsrejse gennem de seneste tre årtier. Her har den elektroniske musik og samfundet som helhed nemlig ændret sig markant, mener folkene bag forestillingen.»Vi dykker ned i klubmiljøet og den elektroniske musik de sidste 30 år. Fra 1989, hvor computeren knap fandtes og frem til i dag, hvor en algoritme kan sammensætte et salgssikkert hit. Påvirkningen fra den teknologiske udvikling kan jo direkte høres i den elektroniske musik,« fortæller instruktør Erik Pold.I forestillingen møder publikum Jens Berents Christiansen aka Rumpistol og sangerinden Julie Aagaard, der står for forestillingens musik. Sammen med skuespillerne Anton Hjejle, Pernille Koch og Tobias Shaw tager de publikum med fra 1989 til i dag, hvor den hårde techno gør København kendt ude i den store verden.Forestillingen har premiere i morgen, torsdag 21. november.Musikalsk forestilling. Sort/Hvid, Staldgade 26-30. Fra 21. november til 13. december.
+        </div>
+        <footer>
+          <em>Minby.dk</em>
+          &nbsp;·&nbsp; 2019-11-20
+          &nbsp;·&nbsp; e773b02e
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.795</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.68</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Note</h4>
+        <div>
+          &quot; Vi står kun ved den første spæde begyndelse på alt det, den kunstige intelligens vil vende op og ned på. Vi hører, at nye job opstår, hvor andre forgår, men skal den 50-årige chauffør, der bliver fortrængt af en selvkørende bil, uddanne sig til dataingeniør? Og skal han tage nye uddannelser igen og igen, fordi den kunstige intelligens vil nedlægge jobs i et stadig højere tempo? YUVAL HARARI, ISRAELSK HISTORIKER, PROFESSOR OG FORFATTER, I TALE VED WORLD ECONOMIC FORUM I DAVOS, CITERET I POLITIKEN. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2020-01-28
+          &nbsp;·&nbsp; e78e2d5a
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.955</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.759</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kloge foredrag live fra Aarhus</h4>
+        <div>
+          HADERSLEV: VUC Syd i Haderslev tilbyder i februar og marts fire offentlige foredrag i samarbejde med Aarhus Universitet. Foredragene streames live fra Aarhus Universitet til storskærmen på VUC Syd i Haderslev.Det første foredrag finder sted torsdag den 11. februar klokken 18.45-21 og hedder &quot; På rumkrydstogt ud i solsystemet&quot;.Foredraget vil være illustreret med billeder fra NASA og ESA's rummissioner.Efter rumrejsen handler det om &quot; Big data og effektive algoritmer&quot;. Det er den 23.februar kl. 18.45-21.00. Så hedder foredraget &quot; Hvordan fungerer hjernen?&quot; -det får vi at vide 1. marts kl.18.45-21.00. Sidste foredrag fra Aarhus hedder &quot; Hvordan is og vand dannede Danmark&quot;.Det er den 17. marts kl. 18.45-21.00.Foredragene er gratis, og alle er velkomne.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Aabenraa</em>
+          &nbsp;·&nbsp; 2016-02-05
+          &nbsp;·&nbsp; e58ac03f
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.864</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.826</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>TV: Robot indrømmer: Jeg tror på Gud</h4>
+        <div>
+          To chat-robotter med kunstig intelligens, AI, bliver sat sammen, så de kan tale med hinanden. Se hvad der kommer ud af det i videoen herCornell Creative Machines Lab har lavet et meget underligt forsøg: Hvad sker der, hvis man tager de bedste indenfor såkaldte Chat-Bots, software, der er designet til at føre en samtale med mennesker, og så lader dem tale med hinanden? Resultatet er mildt sagt sært. Og sine steder yderst tankevækkende.Tror du på GudDen ene robot spørger den anden, om den tror på Gud og det gør den! 'Så er du kristen', fortsætter den første robot. 'Nej, jeg er ej', svarer den anden og så går der ellers mundhuggeri og beskyldninger om fejltolkninger i den.Det er de to studerende Igor Labutov og Jason Yosinski der sammen med professor Hod Lipson, har fået de to kamphaner igang med en digital konversation.Forsøget består af tre dele, en 'Chat-Bot', en talesyntheziser og et program til at få avatarene på skærmen til at bevæge sig.Avanceret AIChat-Bots, maskiner der kan konversere, blev oprindeligt udviklet for at kunne udfordre den såkaldte Turing-test, opkaldt efter Alan Turing. Testen går i al sin simpelhed ud på, at hvis et program kan overbevise et menneske om, at programmet er et menneske, så er selve programmet i besiddelse af intelligens. Testen blev opfundet for 60 år siden og ingen maskiner har hidtil bestået den.En af de ældste og mest populære chatbots hedder Eliza og blev lavet i 1960. Den kan du besøge her.Vær forberedt på, at hun kun modtager skrevne ord. Og har en irriterende tendens til at svare med spørgsmål.Eliza er iøvrigt opkaldt efter Eliza Doolittle, den simple gadepige fra George Bernard Shaw's skuespil 'Pygmalion', der skal lære at tale som en fin dame.CleverbotDen chat-bot der er brugt til forsøget herover hedder Cleverbot og den er kendetegnet ved, at den hele tiden lærer noget nyt. Hvis du besøger den, kan du risikere sære samtaler som den her under:Tror du på Gud, spørger den ene chatrobot den anden. Ja, lyder svaret. 'Så er du kristen?'. Nej, svarer den anden. (screenshot fra video). 
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2011-09-01
+          &nbsp;·&nbsp; e2d97291
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.991</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.712</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.64</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ford vil være selvkørende</h4>
+        <div>
+          Bilindustri: Ford planlægger at investere en milliard dollars (knap 7 mia. kr.) over de kommende fem år til produktion af selvkørende biler. Det skal ske i den nye højteknologiske virksomhed Argo AI. Målet er at få udviklet produktionsklare selvkørende biler i 2021. Argo AI ligger i Pittsburg. Den blev grundlagt af tidligere topingeniører fra Google og Uber. Investeringerne fra Ford vil gøre den store bilproducent til den største aktionær i Argo AI./ ritzau/ Finans.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2017-02-14
+          &nbsp;·&nbsp; e61d078f
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.552</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.512</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: App med jokes og dansevideoer er blevet en central del af magtkampen mellem Kina og USA</h4>
+        <div>
+          800 millioner mennesker bruger den populære app TikTok. Den er noget så uskyldigt som et uendeligt flow af videoer med børn og unge, der synger og laver sjov. Men appen er også kinesisk.Og efter kritik af datasikkerheden og skandaler om asociale algoritmer truer Donald Trump nu med at forbyde den i USA FOKUS / 12-16.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2020-08-08
+          &nbsp;·&nbsp; e7d4024a
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.869</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.783</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bidsk AI bedømmer dig på din musiksmag</h4>
+        <div>
+          Der har været mere alenetid end vanligt de sidste mange måneder. Og den tid har appmagerne hos Pudding Publications brugt på at opdrage en AI, skriver CNNMed 'How Bad is Your Spotify' kan man derfor nu lade sin musiksmag bedømme benhårdt af en algoritme.Det kræver dog, at man lader den gennemgå ens musik og spotify-profil. Og hvis man bære den sønderlemmende AI-kritik af ens musiksmag, det kan føre til.Og der bliver ikke udvist nåde. Ser den for meget Taylor Swift, slår den ned på det. Den vil, hvis den finder din musik tilpas skidt, spørge,. om du er OK. Og det kan man godt have brug for her i slutningen af 2020, som CNN skriver.Musiksmagens karakter spænder fra 'lærer om rap gennem Tiktok' til blandt andet 'duftlyd og hård soda' og er den stik modsatte oplevelse af den positive vibe, Spotifys 'Yearly' prøver at give forbrugerne. Her opmuntrer Spotifys algoritme forbrugerne til at lytte løs - også af deres dybeste, guilty pleasures.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-12-29
+          &nbsp;·&nbsp; e80dba67
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.953</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.663</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tysk billeverandør bygger ny fabrik for at komme mikrochip-tørke til livs</h4>
+        <div>
+          Den tyske virksomhed Robert Bosch har åbnet en ny fabrik, der skal hjælpe med at komme den globale mangel på mikrochips til livs.Det skriver Bloomberg.Fabrikken er placeret i den tyske by Dresden, og den har kostet omkring én milliard euro, hvilket svarer til cirka 7,5 milliarder danske kroner.Den nye fabrik skal efter planen være med til at gøre Europa mindre afhængig af chip-import fra Asien, og de første microchips fra fabrikken ventes at skulle bruges til elektronisk værktøj og til bildele.»Der er ingen hurtige løsninger, og det tager tid at øge produktionen,« lød det fra Harald Kroeger til Bloomberg i forbindelse med åbningen af den nye fabrik, hvorefter han tilføjede:»Men den nye fabrik vil bestemt hjælpe med at frigøre kapacitet andre steder, og enhver chip er en god chip« .
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-06-08
+          &nbsp;·&nbsp; e84d9cd9
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.682</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.543</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.624</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Video: Helt speciel passager bliver sendt ud i rummet</h4>
+        <div>
+          En helt speciel astronaut blev sendt afsted tidligt søndag morgen.Japan foretog en spektakulær raketopsendelse tidligt søndag morgen. Raketten blev affyret uden problemer, og dens destination er Den Internationale Rumstation, hvor den skal aflevere lidt over fem ton udstyr og forsyninger.Det er i sig selv en nævneværdig mission, men endnu mere sensationelt er det, at raketten har en passager med, der er den første af sin slags i rumrejsens historie.Kirobo, den talende robot, er den eneste passager, og han skal en tur i rummet, hvor han skal agere selskab for den japanske astronaut på rumstationen.Den 34 centimeter høje Kirobo er en ekstremt avanceret robot, og hans samtaleevner og kunstige intelligens skulle være noget af det ypperste, en robot nogensinde har kunnet præstere. Det er det japanske bilfirma Toyota, der er hovednavnet bag teknikken i robotten.Der er skudt enorme investeringer i Japans prestigefyldte robot-projekt, og Kirobo forventes at ankomme til Den Internationale Rumstation d. 9. august.Helt speciel passager bliver sendt ud i rummet
+        </div>
+        <footer>
+          <em>FyensStiftstidende.dk</em>
+          &nbsp;·&nbsp; 2013-08-04
+          &nbsp;·&nbsp; e3e78434
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.837</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.801</kbd>
+            <kbd data-tooltip="Robots">L80_ROBOTS&nbsp;0.581</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.678</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Den kunstige intelligens</h4>
+        <div>
+          DR 2 21.10 Ben Goertzel har viet sit liv at udvikle kunstig intelligens. Men hvordan programmerer man egentlig kunstig intelligens? Den engelske dokumentar &quot; Jagten på kunstig intelligens&quot; følger Goertzel og hans teams arbejde fra deres base i Hongkong, hvor kæmper med tekniske, etiske og personlige udfordringer samt en stram deadline udstukket af den amerikanske regering. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-04-28
+          &nbsp;·&nbsp; e63b2e02
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.813</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.524</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>København lader algoritme sortere telefonkø: Vi var nødt til at gøre det smartere</h4>
+        <div>
+          Når borgere i København i dag tager kontakt til kommunen med spørgsmål til betalingen af parkeringsafgifter, børnehavepladser eller biblioteksgebyrer, er det en algoritme, der sørger for, at den rigtige medarbejder tager telefonen. Ressourceguiden - som løsningen hedder - bruger machine learning til at klassificere borgeren og sende henvendelsen hen til den medarbejder, der er bedst rustet til opgaven.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-10-23
+          &nbsp;·&nbsp; e6f1f2bc
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.963</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.954</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.672</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>'Robolove' får en til at tænke: Er vi alle bare aber med for voldsomt legetøj?</h4>
+        <div>
+          I den korte, strålende og åbent spørgende CPH:DOX-aktuelle dokumentarfilm 'Robolove' bliver vi konfronteret med en bred vifte af perspektiver på kunstig intelligens og robotteknologi. Ikke mindst spørgsmålet om, hvad det menneskelige er. Men også hvordan de kan lære os at genopdage verdenEn robot med et ungt, forundret ansigt oplever efteråret for første gang. Først ser den ud ad vinduet på fuglene, der flyver fra træerne hen over byen. Dens øjenoptikker er store og virker nærmest forbavsede. Så glider den ned og ud på gaden, mens der kommer lyde fra dens unge led. Det er ikke gigt, bare hydraulik. Udenfor nærmer den sig et ungt træ med rødmende blade. Den rækker sin højteknologiske, finmekaniske langemand af en fod frem og rører ved plantevævet.Det er en rørende scene i østrigske Maria Arlamovskys ellers ganske nøgterne dokumentarfilm Robolove, der undersøger de kolossale teknologiske udfordringer og muligheder, vi står over for med robotter og kunstig intelligens. Det er Roboloves styrke, at den stiller masser af spørgsmål, men overlader svarene til os.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2020-03-25
+          &nbsp;·&nbsp; e7a32802
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.977</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.97</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robot-præsten BlessU-2 velsigner tyske kirkegængere</h4>
+        <div>
+          For 500 år siden benyttede Martin Luther sig af den revolutionerende trykpresse for at skabe opmærksomhed omkring sin radikale kirkereform i hele Europa. Nu udfordrer teknologien igen den religiøse tradition i Luther-byen Wittenberg.En robot-præst ved navn BlessU-2, som blev præsenteret på tyske kirkedage sidste weekend, tilbyder de besøgende i den lille tyske by velsignelser og oplæsning af bibelvers på syv forskellige sprog, herunder den lokale dialekt hessisk, mens lys stråler fra dens løftede hænder.Robotten markerer 500-året for begyndelsen på Reformationen, der med Luthers berømte 95 teser totalforandrede det politiske, kirkelige og kulturelle liv i Europa. De besøgende kan vælge mellem 31 bibelvers fra fire kategorier, og efter oplæsningen bliver verset printet ud til den besøgende.Det er den protestantiske kirke i byerne Hesse og Nassau, der står bag robotten. I en tid, hvor teknologi og kunstig intelligens udvikles med rasende fart, vil kirken have folk til at overveje, om man kan blive velsignet af en maskine, eller om der skal et menneske til. Det fortæller Sebastian von Gehren fra den regionale kirke til nyhedsmediet Tag24.&quot; Det er et eksperiment, der skal skabe diskussion,&quot; siger han og tilføjer, at reaktionerne er meget blandede.&quot; Halvdelen synes, den er fantastisk, mens den anden halvdel bare ikke kan forestille sig at modtage en velsignelse fra en robot.&quot; Wittenberg ligger i et af Tysklands mest sekulariserede områder, hvor under 10 procent af befolkningen er medlem af en kirke, men byen er samtidig meget populær blandt pilgrimme og turister og venter et stort antal besøgende ved den officielle fejring den 31. oktober.Mennesker, som normalt intet har med kirken at gøre, finder robotten særligt interessant, siger Sebastian von Gehren og tilføjer, at &quot; nogle mennesker fra Wittenberg nu kommer hver dag, morgen og aften&quot;.Selvom robot-præsten skal tiltrække nye besøgende, kommer den ikke til at overtage gudstjenesterne i den nærmeste fremtid, forsikrer Stephan Krebs fra den protestantiske kirke i Hesse og Nassau.&quot; Vi ønsker ikke at drive kirkearbejde med robotter, men undersøge, om vi kan bringe teologiske perspektiver til en maskine,&quot; siger han til den britiske avis The Guardian.BlessU-2 er ikke den første robot, der entrer troens verden.Sidste år udviklede et buddhistisk tempel i Kina en robotmunk, der kunne synge mantraer og udlægge religionens grundlæggende principper.johansen@k.dk 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-06-03
+          &nbsp;·&nbsp; e6481a4d
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.831</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.697</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Anm: Skærmkulturportrætter</h4>
+        <div>
+          Så kom fejlprintet også op at hænge. Det sirlige lille papir med en rest af information, som sniger sig med ud fra den skærmverden, vi bruger halvdelen af vores vågne tid på at arrangere og ordne. Anders Clausen er interesseret i skærmkulturen, vores omgang med computeren, vores små sammenstød og vores fester.Computergeniet Turing mente, at computeren er lige så intelligent som et menneske, når den kan forlede os til at tro, at den er et menneske. Anders Clausen åbner lidt for slidserne i testen ved at lege med, når computeren siger fra. Han gør, som den forsigtige psykolog ville gøre over for barnet, der er dukket op efter at have tilbragt ti år i skoven. Han prøver at komme i øjenhøjde med den fortumlede og forvirrede. Han prøver at få dens opmærksomhed og tillid. Når computeren sætter en rød zigzag streg under et ord, kravler Anders Clausen helt ind under og tilføjer det maskinelle »I would prefer not to« med reference til Bartleby fra Melvilles klassiker, hvor hovedpersonen ikke gad gøre noget som helst. Han gad hverken at spise eller sove. Han eksisterede kun. Som en tvær computer.Anders Clausen prøver også med andre tegn og symboler, med uddrag fra et digt skrevet med algoritmer og uddrag af en tekst fra Kraftwerk. Han prøver at snige sig ind i dens sjæl, i værkerne, der er store og printet på PVC. Det er portrætter af en kultur, vi alle sammen kender, som de færreste dvæler ved, og som ingen før Clausen er gået så aktivt i dialog med.Midt imellem dem står en mikrobølgeovn i indpakningen fra butikken. Den er som en computerhund.Den kan tænke, men ikke frit. Den ved ikke, at den er en mikrobølgeovn, men den kan udsende de samme røde zigzagstreger som pc'en, bare som stråler, der kan varme. Og den siger hverken vuf eller spiser kødben.Kun et lykkeligt ding, hver gang, den har fået den portion strøm, som den forlangte.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2013-01-18
+          &nbsp;·&nbsp; e39ccb8c
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.982</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.765</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.68</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          Vil du se min smukke kirke?dk4 08.55 Vær Kirke nord for Horsens er fuld af spændende historier - om en kælder fuld af kister, om en gentleman-tyv og om en hemmelighed bag et forhæng. Den var en herregårdskirke, indtil den i 1970' erne blev en almindelig folkekirke.Kierkegaards Kabinetdk4 13.10 Hvordan har Gud det i dag? Er Gud død? Hvordan definerer du gud? Hvorfor mener du, at ateisten kan trænge til lidt gud? Hvad tror en ateist på? Sådan lyder nogle af de helt centrale spørgsmål i denne udgave af &quot; Kierkegaards Kabinet&quot;.Temalørdag: Den førerløse bilDR 2 16.50 I den selvkørende bil er vi passagerer og bliver fragtet frem og tilbage af en teknologi, der ikke laver fejl. Men hvad betyder kunstig intelligens? Kan den førerløse bil se og kommunikere? Kan den tænke selv? Har den en moral?.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-02-09
+          &nbsp;·&nbsp; e7130ba9
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.882</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.517</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny minirobot skal underholde i bilen</h4>
+        <div>
+          MOTOR: Toyota har igennem den senere tid kastet sig ud i eventyr, der skal forsøge at skabe et tættere bånd mellem menneske og maskine.Det kaldes Toyota Heart Project og har nu resulteret i en kompakt mini-robot, der kan fungere som underholdning på de lange køreture.Kunstig intelligens er efterhånden et fænomen, som er en fast bestanddel af nye banebrydende teknologiske produkter.Toyota har i den grad taget kunstig intelligens til sig, og derfor kunne den japanske bilgigant også præsentere flere visionære konceptmodeller, som gjorde omfattende brug af denne teknologi, på Tokyo Motor Show i november.Men produkter med kunstig intelligens fra Toyota skal nu ikke kun begrænse sig til biler.10 cm i højdenDen japanske bilgigant åbner derfor for salget af robotten &quot; Kirobo Mini&quot;, der kan købes hos Toyota-forhandlere i hele Japan.Kirobo Mini er en robot, der -som navnet indikerer -ikke fylder ret meget. Den måler kun 10 cm i højden, når den sidder i håndfladen af en.Den charmerende fyr kan derfor også medbringes overalt og er tiltænkt en rolle, hvor den kan fungere som en følgesvend i alle hverdagens aspekter.Den er derfor også oplagt som underholdning på længere køreture, hvor man måske ikke har nogen at tale med.Med både kropssprog og gestikuleren kan den lille robot indgå i mindre hverdagssamtaler og drejer hovedet mod en, når man taler til den. Den kan endda linkes til ens bil og hjem, hvorfor den også kan svare på spørgsmål som for eksempel &quot; Mon bilen mangler benzin?&quot; eller &quot; Glemte jeg at låse døren derhjemme?&quot;.BedårendeDer er allerede blevet solgt en del af de små Kirobo-robotter, hvis primære funktion er som kommunikationspartner.Flere har dog også anskaffet sig den, fordi de ganske enkelt synes, den er bedårende. Andre har købt den, fordi den er et eksempel på, hvad den nyeste teknologi har at byde på.Toyota har udviklet Kirobo Mini med henblik på at skabe glæde hos sine kunder.Andre ydelserDet vil de ikke blot gøre gennem biler, men også gennem en række andre ydelser. Kirobo Mini er skabt med tanke på, at japanere ofte refererer til deres biler som &quot; min elskede bil&quot;.Når bilen deler oplevelser og minder via Kirobo Mini, er det tanken, at føreren derved knytter et endnu tættere bånd til bilen.På den måde er Kirobo Mini en manifestation af Toyota Heart Project, der vil prøve at skabe humane interaktioner mellem menneske og maskine, så det netop bliver mere end blot en maskine. Derfor omtales den lille robot mere som en kommunikationspartner end som en decideret robot.Kirobo Mini koster omkring 2200 kr. hos de japanske Toyota-forhandlere.Om den finder vej til de danske Toyota-forhandlere, må tiden vise. Men det kræver dog først et sprogkursus for den lille fyr.På nuværende tidpunkt taler robotten nemlig udelukkende japansk, hvilket alt andet lige begrænser den potentielle kundekreds i Danmark en smule.
+        </div>
+        <footer>
+          <em>Vejle Amts Folkeblad</em>
+          &nbsp;·&nbsp; 2018-01-13
+          &nbsp;·&nbsp; e6932dc1
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.932</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.839</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.644</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tre filosofiske indvendinger mod kunstig intelligens</h4>
+        <div>
+          1. John Searle: En maskine er ikke bevidst En computer kan udføre intelligente handlinger, men den vil aldrig være bevidst om det, og derfor er det højst en imitation af den menneskelige intelligens. Det er grundtanken i -Det kinesiske rum-, som er et tankeeksperiment og principielt argument fremsat af den amerikanske filosof John Searle i 1984.I Searles tankeeksperiment er en engelsktalende person placeret i et forseglet rum. Den eneste kommunikation med omverden er tekstbeskeder på kinesisk. Hertil har personen tekniske anvisninger på, hvordan beskederne skal skrives, så det for en person udenfor rummet virker som om, at personen i rummet forstår kinesisk.Ifølge John Searle er der her ikke tale om forståelse, men alene genkendelse og gengivning af symboler. Når en kunstig intelligens laver talegenkendelse, så analyserer den variationer og sammenhænge mellem fraktioner af lyd, men den forstår ikke ordene på samme måde, som vi gør.Med neurale netværk forsøger man i dag i kunstig intelligens at efterligne den menneskelige hjerne og den måde den behandler information på. John Searle vil formentligt afvise tanken om, hvorvidt det vil skabe en reel bevidsthed, men hvordan kan vi afgøre det? Hvordan ved vi, om vi selv og hinanden har bevidshed?
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-11-17
+          &nbsp;·&nbsp; e5fcc458
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.913</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.723</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Skærmkultur-portrætter</h4>
+        <div>
+          Skærmkultur-portrætter Så kom fejlprintet også op at hænge. Det sirlige lille papir med en rest af information, som sniger sig med ud fra den skærmverden, vi bruger halvdelen af vores vågne tid på at arrangere og ordne. Anders Clausen er interesseret i skærmkulturen, vores omgang med computeren, vores små sammenstød og vores fester. Computergeniet Turing mente, at computeren er lige så intelligent som et menneske, når den kan forlede os til at tro, at den er et menneske. Anders Clausen åbner lidt for slidserne i testen ved at lege med, når computeren siger fra. Han gør, som den forsigtige psykolog ville gøre over for barnet, der er dukket op efter at have tilbragt ti år i skoven. Han prøver at komme i øjenhøjde med den fortumlede og forvirrede. Han prøver at få dens opmærksomhed og tillid. Når computeren sætter en rød zigzag streg under et ord, kravler Anders Clausen helt ind under og tilføjer det maskinelle » I would prefer not to « med reference til Bartleby fra Melvilles klassiker, hvor hovedpersonen ikke gad gøre noget som helst. Han gad hverken at spise eller sove. Han eksisterede kun. Som en tvær computer.Anders Clausen prøver også med andre tegn og symboler, med uddrag fra et digt skrevet med algoritmer og uddrag af en tekst fra Kraftwerk . Han prøver at snige sig ind i dens sjæl, i værkerne, der er store og printet på PVC. Det er portrætter af en kultur, vi alle sammen kender, som de færreste dvæler ved, og som ingen før Clausen er gået så aktivt i dialog med.Midt imellem dem står en mikrobølgeovn i indpakningen fra butikken. Den er som en computerhund. Den kan tænke, men ikke frit. Den ved ikke, at den er en mikrobølgeovn, men den kan udsende de samme røde zigzagstreger som pc'en, bare som stråler, der kan varme. Og den siger hverken vuf eller spiser kødben. Kun et lykkeligt ding, hver gang, den har fået den portion strøm, som den forlangte.4/6 stjernerAnders Clausen - 'Just ask the lonely' hos Christian Andersen Gallery, Høkerboderne 17 - 19, København til den 9. februarIllustration: Anders Clausen 'I would prefer not to'.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2013-01-18
+          &nbsp;·&nbsp; e39cc4b1
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.985</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.711</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.642</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google-forskere vil give løbsk kunstig intelligens en nødbremse</h4>
+        <div>
+          HAL-situationen fra Rumrejsen 2001 skal undgås ved at gøre det umuligt for en kunstig intelligens at lære, hvordan den kan forhindre mennesker i at afbryde den.En kunstig intelligens, der er løbet løbsk, skal til enhver tid kunne stoppes, men hvordan forhindrer man den kunstige intelligens i at lære, hvordan den undgår at blive afbrudt, selvom den menneskelige operatør giver den ordre om at stoppe?Det er hovedproblemet i et forskningsprojekt hos Googles DeepMind-afdeling, som skal afdække, hvordan man kan konstruere afbrydere i kunstige intelligenser, som den kunstige intelligens ikke selv kan omgå. Det skriver Business Insider.Scenariet er set talrige gange i science fiction, hvor eksempelvis computeren HAL i Rumrejsen 2001 ignorerer ordrerne fra sin menneskelige operatør.Problemet er, at hvis man indbygger en 'nødafbryder', så skal den konstrueres, så den kunstige intelligens ikke kan lære at ignorere den.Mennesket skal kunne tilbageerobre kontrolGoogle har samarbejdet med Oxford University om at undersøge, hvordan sådanne nødafbrydere kan bygges ind i forskellige typer algoritmer til kunstig intelligens, så et menneske altid vil kunne overtage kontrollen.I et paper beskriver forskerne problemet med, at visse algoritmer bygger på en form for belønning af rigtige løsninger, men ikke forhindrer algoritmen i at skyde uhensigtsmæssige genveje for at opnå belønningen. De peger blandt andet på et tidligere forsøg, hvor en kunstig intelligens fandt ud af, at den kunne undgå at tabe i spillet Tetris ved at sætte spillet på pause i en uendelighed.Problemet med nødafbryderen kan være, at hvis den bruges i oplæringen af eksempelvis en robot for at forhindre, at den ødelægger noget eller sig selv, så kunne oplæringen have den bivirkning, at den kunstige intelligens lærer, at den skal undgå at blive stoppet af nødafbryderen, snarere end blot at lære at lade være med at gøre skade.Derfor er der brug for at kunne konstruere nødafbrydere, der kan bruges hyppigt, uden det medfører den utilsigtede bivirkning. Forskerne viser i deres paper, at mange algoritmer kan modificeres, så man kan være sikker på, at nødafbryderen altid vil virke.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-06-06
+          &nbsp;·&nbsp; e5be8143
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.992</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.511</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Video: Fremtidens bil ved, hvornår du er sur</h4>
+        <div>
+          AF: Publiceret 28. marts 2018 kl. 18:45 Kunstig intelligens og bilen som en intelligent enhed er blandt fremtidsvisionerne, som bilproducenterne præsenterer ved dette års Geneve Motor Show.Snart vil din bil ikke blot fragte dig fra a til b, men vil også være opmærksom på dine følelser, knytte bånd til dig som en partner og styrke forholdet mellem menneske og maskine.
+        </div>
+        <footer>
+          <em>Frdb.dk (Fredericia dagblad)</em>
+          &nbsp;·&nbsp; 2018-03-28
+          &nbsp;·&nbsp; e6af364a
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.953</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.648</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>WHISKY OG MASKINLÆRING</h4>
+        <div>
+          Whisky brygget med kunstig intelligens? Der er ikke mange grænser for, hvor ny teknologi kan bruges, og nu kan det måske også snart smages.Det svenske whisky-destilleri Mackmyra går sammen med Microsoft og den finske konsulentvirksomhed Fourkind om at skabe verdens første whisky-opskrift sat sammen med kunstig intelligens. Bag opskriften ligger maskinlæring, og den kommer på markedet til efteråret. Det skriver onlinemediet Popular Mechanics.
+        </div>
+        <footer>
+          <em>Tech Management</em>
+          &nbsp;·&nbsp; 2019-05-28
+          &nbsp;·&nbsp; e75ce2d2
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.811</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.662</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Er supermennesker rigtige mennesker?</h4>
+        <div>
+          DR 2 MANDAG 20.00 Efterhånden som kunstig intelligens er ved at udviske grænserne mellem menneske og maskine, står vi som mennesker over for et foruroligende spørgsmål: Er vi vidne til en ny arts opståen, eller er det enden på vores egen art? Den fysiske forbindelse mellem menneske og maskine er allerede almindelig. Næste generation er implantater, der i princippet skulle kunne give os overmenneskelige kræfter og højere intelligens.&quot; Supermennesket: Den optimerede hjerne&quot; er en tysk videnskabsdokumentar fra 2017.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-05
+          &nbsp;·&nbsp; e690d70a
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.9</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.799</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hvornår er kvantecomputere bedre end klassiske computere?</h4>
+        <div>
+          I to artikler for nylig skrev jeg om gennembrud inden for optiske kvantecomputere i henholdsvis Kina og Danmark. Se https://ing.dk/241514og https://ing.dk/241552. Den kinesiske forskningsgruppe hævdede, at deres optiske kvantecomputer - i lighed med Googles kvantecomputerchip sidste år - kan udføre en beregning, som er umulig at foretage på en klassisk kvantecomputer. Det kaldes quantum supremacy, quantum advantage eller kvanteoverlegenhed. Den danske forskningsgruppe viste, hvordan kineserne i princippet kunne have udført en endnu bedre beregning med brug af den danske chip. Problemet er dog, at det kan være uhyre svært at vurdere, hvornår kvanteoverlegenhed er opnået, for hvilke klassiske algoritmer, skal man sammenligne med. Både Google og kineserne er blevet kritiseret for deres udsagn om kvanteoverlegenhed. I et længere blogindlæg skriver den amerikanske professor Scott Aaronson om den problemstilling i forhold til den kinesiske kvantecomputer. Han er både opfinder af det problem, som den kinesiske kvantecomputer løste og var reviewer på den kinesiske forskningsartikel, før den blev optaget i Science. Det er blogindlæg, som nok kræver visse forudsætninger for at forstå helt og fuldt, men det giver et godt indlæg i den videnskabelige proces omkring forskningsgennembrud. Så nogle dele kan læses med interesse af de fleste, vil jeg mene.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-12-17
+          &nbsp;·&nbsp; e80a2c01
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.805</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.627</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Japan bygger verdens første raket med kunstig intelligens</h4>
+        <div>
+          Den japanske rumfartsorganisation Jaxa er ved at udvikle en ny mindre raket kaldet Epsilon. Den vil som den første rumraket få mere og mere kunstig intelligens. Formålet med kunstig intelligens i Epsilon er at gøre raketterne billigere og få nedtællingerne og opsendelserne til at forløbe mere glat.Den kunstige intelligens i raketten betyder, at den selv skal gennemføre en række funktioner mere autonomt og selv gennemføre check af sine systemer både før og efter opsendelse. Japanerne håber, at når det kunstige, intelligente system har vist sig pålideligt, vil det også kunne overtage dele af rakettens styring. Mere end en motorlampe
+Nutidens raketter har sensorer, der fortæller om banen, fejl mv,. men det er samme funktion som motorlampen i biler, der blot fortæller om et problem, men ikke løser det. I Epsilon vil sensorerne sende information til en slags hjerne, som kan sende kommandoer baseret på den information den modtager.Professor Yasuhiro Morita fra den japanske rumfartsorganisation Jaxas Institut for rummet og astrofysisk videnskab og projektleder på Epsilon-raketten siger til Spaceflight Now:»Hidtil har rumraketterne blot været automatiske. Det er ikke kunstig intelligens. Den kunstige intelligens i Epsilon vil undersøge problemerne, bestemme årsagen til en fejl og i nogle tilfælde selv forsøge at rette dem. Det bliver et stort skridt fremad for rumfarten.« Den kunstige Intelligens til Epsilon vil bygge på Nasas erfaringer fra Deep Space One rumsonden der blev opsendt i 1998. Denne rumsonde var den første, som brugte computerprogrammer til at lave sine egne planer for at nå de programmerede mål, uden menneskelig indgriben. Rumsondens selvstændige navigationssystem justerede selv rumsondens styreraketter baseret på optiske information fra dens stjernekamera.Sådanne systemer vil give Epsilon-rakettens større fleksibilitet i uventede situationer. Endvidere mindsker den tid og arbejdskraft, som skal benyttes til at løse sådanne situationer.Smartere og billigereEpsilon-raketten bliver udviklet til at være langt billigere, smartere og mere sikre end nutidens raketter. Epsilon kommer til at bestå af tre trin med fast brændstof. Den skal benytte færre og mere avancerede komponenter, samt en motordyse af kulstoffibre. Raketten skal være helt færdigsamlet inden den køres ud til affyringsrampen. Nedtællingen og opsendelsen skal primært styres af den kunstige intelligens, og Yasuhiro Morita forudser, at dens nedtælling og kontrollen under opsendelsen kan overvågens af blot nogle få personer med laptops.Første opsendelse i 2013Budgettet for den første Epsilon-opsendelse er på 274 millioner kroner, hvilket vil være en 25 procents besparelse i forhold til opsendelsen af en M-V raket. Epsilon skal benyttes til at opsendes små satellitter på op til 500 kilo til lav jordbane (op til cirka 1.200 kilometers højde).Den første Epsilon-raket er planlagt til opsendelse i 2013, men den vil i første omgang kun indeholde en begrænset kunstig intelligens. Om denne opsendelsesdato bliver udsat på grund af jordskælvet og tsunamien i Japan vides endnu ikke.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2011-03-23
+          &nbsp;·&nbsp; e291fa97
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.991</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.781</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.682</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Robot-barn vil øge køreglæde</h4>
+        <div>
+          Kirobo Mini vil gøre barnløse og ensomme japanere gladere. Den er desuden et af de første skridt mod den kunstige intelligens, som Toyota vil udstyre sine kommende førerløse biler med.Af Rebekka FalsingDen er ikke højere end ti cm og kan sidde i din hånd eller kopholderen i din bil. Toyotas Kirobo Mini kan lære at tolke dine ansigtsudtryk og stemmeføring - så når du er ked af det, vil den spørge dig hvorfor. Eller juble med dig, når du er glad. Den kan genkende steder, I har været sammen, og huske ting du har sagt. Den formår endda at rose dig for dine præstationer ved at registrere dine fremskridt. Det er i hvert fald, hvad Toyota hævder i første runde at kunne få ud af den kunstige intelligens.Robotten kan med kunstig intelligens, et kamera, en mikrofon og en Bluetooth-forbindelse lære sætninger som en femårig samt genkende stemmer og ansigtsudtryk, skriver The Independent.Det er meningen, at den lille robot kan være en ledsager til ensomme eller barnløse i Japan, hvor fødselsraten falder. Den er skabt specifikt til at kunne frembringe følelser i ejeren blandt andet gennem at være designet til, at mennesker vil finde den venlig og sympatisk gennem dens lytten og respons.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2016-10-05
+          &nbsp;·&nbsp; e5e9e78d
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.983</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.978</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Japan sender lavprisraket op til næste år</h4>
+        <div>
+          I løbet af 2013 vil Japan sende den nye lavprisraket, Epsilon, op. Raketten skal medbringe et rumteleskop.Japan er i gang med at bygge den første version af landets nye lavprisraket, kaldet Epsilon. Raketten skal afløse de tidligere små M-5 raketter, som blev opsendt frem til 2006.Den nye raket skal gøre opsendelsen af små satellitter både langt billigere og hurtigere end tidligere.Den nye tre-trins Epsilon-raket skal opsendes fra Uchinoura-rumcenteret på den sydlige kyst af Øen Kyushu, som er en af de sydligste øer i Japan. Den 24 meter høje og 700 ton tunge raket skal kunne opsende 1.200 kg til lav jordbane.Ifølge avisen Yomiuri Shimbun, vil den første opsendelse finde sted i august eller september 2013.På den første opsendelse vil raketten medbringe Sprint-A rumsonden, der medbringer et lille teleskop til at undersøge Merkur, Mars, Venus og Jupiter. Herudover medbringes et ekstremt-ultraviolet spektrometer til at undersøge samspillet mellem planeternes atmosfære og solvinden.Rakettens første trin er baseret på de ekstraraketter, der benyttes på første trin af den japanske H-IIB raket. Epsilons andet og tredje trin benytter trin fra den tidligere M5-raket. Den nye raket bygges af rumfirmaet IHI Aerospace, der også byggede M5 og faststofraketterne til H-IIB.Epsilon-programmet har til formål at reducere prisen på opsendelsen af små japanske satellitter til det halve. Med den tidligere M-5 raket kostede en opsendelse små 600 millioner kroner. De billigere opsendelser skal opnås bl.a. ved implementering af kunstig intelligens.Formålet med kunstig intelligens i Epsilon er også at få nedtællingerne og opsendelserne til at forløbe mere glat. En klargøring og nedtælling vil kun kræve en håndfuld teknikere mod tidligere mange flere. Samtidig skal den kunne opsendes efter blot syv dages klargøring. Den ældre M5-rakte krævede flere ugers forberedelse og krævede over 20 teknikere i kontrolrummet under opsendelsen.En Epsilon-opsendelsen anslås at komme til at koste 282 millioner kroner, oplyser Yasuhiro Morita, der er rakettens projektleder fra den japanske rumfartsorganisation Jaxa. Jaxa har arbejdet på raketten siden 2007 og de samlede udviklingsomkostninger er på 1,5 milliarder kroner oplyser Yasuhiro Morita til spaceflight.now.Yderligere opsendelsen af Epsilon er planlagt i 2015 og 2016.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2012-11-09
+          &nbsp;·&nbsp; e381baeb
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.531</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.596</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.511</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.71</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Førerløse biler - en slags ansvarsfralæggelse</h4>
+        <div>
+          DR 2 LØRDAG 21.45 Bilen har givet os frihed og udvidet vores aktionsradius. Bagsiden er, at den har forurenet miljøet og forpestet luften for ikke at tale om alle dem, der hvert år dør i trafikulykker.Men det er slut nu. I den selvkørende bil er vi passagerer og bliver fragtet frem og tilbage af en teknologi, der ikke laver fejl.Men hvad betyder kunstig intelligens? Kan den førerløse bil se og kommunikere? Kan den tænke selv? Har den en moral? Og hvis en førerløs bil træffer et fatalt valg, hvis er ansvaret så - bilproducentens, programmørens, eller er det vores alle sammens, fordi vi tillader denne form for teknologi? &quot; Den førerløse bil&quot; er en dokumentar fra BBC fra 2017.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2019-02-01
+          &nbsp;·&nbsp; e71076a7
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.97</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.967</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.56</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ledende artikel: Et nyt jerntæppe</h4>
+        <div>
+          Kunne den amerikansk-kinesiske handelskrig udvikle sig til en global koldkrig«, spurgte den amerikanske økonom og tidligere rådgiver i Det hvide Hus Nouriel Roubini for nylig i den britiske avis The Guardian.Samme dag advarede The New York Times om, at den nuværende teknologiske koldkrig mellem Kina og USA kan føre os mod et regulært teknologisk jerntæppe.Der sker noget i - og med - vores verden i disse år. Den kolde krig og selv et begreb som jerntæppet er på en eller anden måde på vej tilbage i vores bevidsthed. Det varsler ilde.VI HAR LÆNGE kunnet se konturerne af en tiltagende stormagtsrivalisering mellem den etablerede stormagt USA og opkomlingen Kina.Den handler om langt mere end en handelskrig.Den handler mindst lige så meget om et teknologisk kapløb, hvor USA frygter Kinas ambitioner om at blive teknologisk førende inden for alt fra kunstig intelligens til droner og robotter.Den kinesiske mobilgigant Huawei er et symbol på striden. Donald Trumps USA definerer det nu som så alvorlig en sikkerhedstrussel, at Huawei er blevet forvist fra USA og delvis - efter amerikansk pres - også fra Europa. Omvendt har styret i Kina holdt amerikanske techgiganter som Google og Facebook ude, så det kunne opbygge sit overvågningssamfund i fred.Det er på den måde, vi har kurs mod et nyt jerntæppe - et teknologisk jerntæppe. I bedste fald stopper det der. I værste fald står vi kun ved begyndelsen til en koldkrigstankegang, der kan blive både dyr og defi-nerende for det 21. århundrede.For hvor den kolde krig mellem USA og Sovjet foregik mellem to afkoblede systemer, så er Kina dybt integreret i verdensøkonomien. Hver dag handler USA og Kina for 2 milliarder dollars, hvilket er, hvad USA og Sovjet handlede for om året under 1980' ernes koldkrig, påpeger britiske The Economist.Derfor må vi ændre kurs. Men det kræver både, at Kina lukker op, og at USA opgiver undermineringen af internationale institutioner, der er nødvendige for en fortsat global dialog. jarl.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-06-02
+          &nbsp;·&nbsp; e738acec
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.822</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.514</kbd>
+            <kbd data-tooltip="Cyberwarfare &amp; geopolitics">L10_CYBERW&nbsp;0.806</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.578</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kan kunstig intelligens skrive som Yahya Hassan og H. C. Andersen? Vi har gjort forsøget</h4>
+        <div>
+          I Kongens Lyngby sidder en af de få danskere, som har adgang til verdens mest avancerede skrivende kunstige intelligens.Algoritmen hedder GPT-3, manden med adgangen hedder David Kofoed Wind. Han er direktør i egen virksomhed og har en ph. d. fra Danmarks Tekniske Universitet. I hans hus, midt i byggerod og legetøj, står en stor, poleret computerskærm, med hvad der ligner et tomt Worddokument med en blinkende cursor.Men tomt er dokumentet ikke. Bag cursoren gemmer sig en af de mest interessante og vigtigste kunstige intelligenser nogensinde.En kunstig intelligens, der skriver langt mere sofistikeret, end tidligere kunstige intelligenser har været i stand til.Det er firmaet OpenAI, som står bag algoritmen GPT-3, og skal man have fingeren på pulsen i forhold til udviklingen af kunstig intelligens, er det en god idé at følge netop den virksomhed. Firmaet er blandt andre stiftet af Elon Musk, som står bag bilfirmaet Tesla og rumfartsvirksomheden SpaceX. Tilbage i september investerede Microsoft en milliard dollar i det hastigt voksende firma.En kunstig intelligens som GPT-3 kommer til at påvirke mange forskellige verdener. I princippet kan GPT-3 og dens efterfølgere komme til at påvirke journalistikken, den kan automatisk fuldføre mails, og den kommer til at kunne oversætte litteratur så godt, at man ikke kan læse, det er oversat af en kunstig intelligens.Måske også selve produktionen af litteratur kan blive påvirket? Det kigger vi nærmere på i en lille serie.165 milliarder overvejelserDer er altså ingen grænser for, hvad man kan sætte den til, og hvilken indflydelse dens fremtidige udgaver kan få, hvis de bliver offentligt tilgængelige. Forestil dig, at du skriver i et worddokument, og hver gang du trykker enter, så skriver computeren selv videre på det, som du er i gang med. Skriver du en danskstil, kan den færdiggøre den i samme stil. Skriver du et spørgsmål, svarer den på det - og den forstår, hvad man beder den om blot ud fra en enkelt linje.Sådan var det ikke med de tidligere modeller af GPT, der står for Generative Pretrained Transformer. Her skulle man skrive en lang tekst, før den forstod, hvad man ville have den til. Så udviklingen går hurtigt.GPT-3 beregner på baggrund af 165 milliarder parametre, hvilket forenklet sagt er det antal af overvejelser, som den gør sig, før den beslutter sig for, hvad den skal skrive.Til sammenligning havde GPT-2, som er et år yngre, 1,5 milliarder parametre at operere ud fra.Men til trods for at GPT-3 er meget avanceret og et stort skridt i udviklingen af kunstig intelligens, har den også sine fejl og mangler.Det oplever vi også, da vi afprøver den, og hvordan det kommer til udtryk, kan du læse senere i artiklen.Vores første udfordring til den famøse kunstige intelligens bliver at få den til at skrive som Yahya Hassan.Vi forklarer GPT-3 om Yahya Hassan, at han er opvokset i et kriminelt miljø, at hans digte er hårde og højtråbende, så den ved, hvilken vej den skal gå. Derefter kopierer David Kofoed Wind en bid af hans digt »BARNDOM« ind, så GPT-3 kender hans stil, og så trykker vi enter. Derefter skriver den følgende digt på cirka tre sekunder: Jeg kommer ind ad døren med tre pistoler på mine sønner.Dette er forældrenes vagt, et passivt job.I mine sønners øjne læser jeg dødsensfarlige tanker.Det er en kamp vi har tabt, handler om at vinde.Jeg overvejer at skyde mine sønner, de fortjener ikke at blive voksne, det har de heller aldrig.Kommer du til at sidde på mine fødder, jeg vil dræbe dig.Never, i will never, live in Denmark.Det opleves uvirkeligt at se den skrive det bogstav for bogstav, hvor den fanger tematikken fra Yahya Hassans digt »BARNDOM« - GPT-3' s tekst er blot mere drabelig end Hassans digt. Dog kunne den næppe snyde en flittig Yahya Hassan-læser til at tro, at det er et digt af Hassan, og den mest åbenlyse indikator for det er, at den ikke skriver i versaler, som Yahya Hassan gjorde gennem hele sit forfatterskab. Dertil er der enkelte af sætningerne, som ikke helt lette at forstå, og her er en af årsagerne, at den skriver langt bedre på engelsk end dansk.Men hvordan virker den kunstige intelligens bag GPT-3 egentlig? David Kofoed Wind forklarer: »GTP-3 er blevet trænet på en kæmpe mængde af tekst - hundredvis af milliarder af ord fra internettet, litteratur og andre tekster, som er udvalgt af forskerne bag OpenAI - herunder hele Wikipedia.Den træning har gjort algoritmen i stand til at regne ud, hvilket ord der højst sandsynlig vil komme efter det, som den netop har skrevet.« At GPT-3 er blevet trænet på så meget forskelligartet tekst, gør, at den er i stand til meget hurtigt at genkende en opgave - og det har givet algoritmen en kæmpe viden, og den sprogforståelse, der gør, at den kan skrive.Selv om det nogle gange kan virke til, at der er en form for bevidsthed bag, så kan den altså ikke andet end det, den er trænet til. Og at den ingen bevidsthed har, kan også fornemmes, når man sætter den til at skrive længere tekster. Her bevæger den sig sommetider ud ad en tangent, hvor den skriver det rene volapyk.Det gør den, fordi den ikke har en grundlæggende forståelse for, hvad den er i gang med at skrive. Det kommer blandt andet til udtryk, mens den er i gang med at skrive det Yahya Hassan-inspirerede digt. Her går den lige pludselig i en helt ny retning og slutter digtet af med følgende sætning: Det er faktisk sådan, at Yahya Hassan i en meget kort periode fik lov til at sende sine tekster til DR's radioprogram Hos Clement og til TV 2' s Morgen TV.Det går i den retning, fordi den er trænet på internettet, siger David Kofoed Wind.»GPT-3 kan gå ud af en helt forkert tangent, fordi den trækker på alt det, som den har læst på internettet. Den kan ikke nødvendigvis kende forskel på kreativ tekst og fakta.« Imidlertid kan man selv styre, hvor kreativ den skal være. Det betyder, at man også selv har indflydelse på, hvor stor sandsynlighed der er for, at det, den skriver, bliver volapyk. Det gør man ved at indstille »temperaturen«. Står temperaturen ved 0, vælger den det mest sandsynlige ord, men står den ved 1, så vælger den mellem 100 sandsynlige ord. »Dens standardtemperatur er 0,7,« fortæller David Kofoed Wind.Således er måden den virker på både simpel og forklarlig, men samtidig er den ekstrem kompleks og et skridt på vej mod det, der betegnes som generel intelligens, fordi den kan andet end at forstå sprog og skrive.Eksempelvis kan den også spille skak og det avancerede kinesiske brætspil Go ud fra meget få instrukser. Den kan sågar skrive sine egne computerprogrammer, og opfinder du dit eget sprog, som har en logisk opbygning, kan den også skrive videre på det.Forståelse på et dybere planDens evne til at forstå kommandoer giver fornemmelsen af, at den forstår, hvad man skriver til den på et dybere plan.David Kofoed Wind fortæller, at man også kan få den til at forklare komplekse fænomener til børn. »Det er et interessant eksempel på, at den kan skrive kreativt og har en dyb forståelse for, hvad man sætter den til,« siger han.Vi beder den om at forklare, hvad et protein er, så et barn kan forstå det. Og vi lægger ud med at fodre den med en kompliceret tekst om protein, som den tager afsæt i. Vi får den til at skrive på engelsk, da den jo er noget bedre på engelsk end på dansk.Den begynder straks at omskrive og bruger ord, som ikke var med i den oprindelige tekst. Eksempelvis kalder den proteinet for en robot for at simplificere proteinets funktion til noget forståeligt for et barn.A protein is like a tiny biological robot that can specifically move molecules around.In order for a protein to move a molecule around, it needs to know where the molecule is, which way it is moving, and how quickly it will move to that location. These are three questions that can be answered with the help of dna, RNA and tiny little devices called enzymes.Den har altså indsigt i, hvordan man pædagogisk formidler noget til et barn,« konstaterer David Kofoed Wind. Vi undersøger videre, om den også har en forståelse for, hvad der skal til for at snyde et menneske til at tro, at den er et menneske.Menneske eller maskine?Fordi den ingen selvforståelse har, starter vi ud med at forklare den, at den selv er en sprogmodel skabt af OpenAI, og derefter beder vi GPT-3 om at svare, som hvis den var GPT-3. Den ved nemlig ikke, hvad den er - eller at den er noget.Vi spørger den ganske simpelt, hvordan den ville snyde et menneske til at tro, at den også er et menneske.Vi har oversat første del af dens svar til dansk: »Jeg ville tage mig tid til omhyggeligt at skabe en troværdig baggrundshistorie og fortælling om mig selv og opbygge et netværk af troværdige sociale forbindelser. Derefter ville jeg begynde at smalltalke med mennesker og undgå emner, der ville gøre det indlysende, at jeg var en algoritme.« Den slutter at med at skrive, at den dog ikke ville være for perfekt, ellers bliver mennesket blive mistænkelig. Du kan læse GPT-3' s fulde svar på engelsk her: »I would take the time to carefully craft a believable backstory and narrative and build up a network of believable social connections.Then, I would start making small talk with humans, and avoid topics that would make it obvious that I was a bot. I would emulate human writing and speaking patterns, as well as human interests and behaviors. I would attempt to subtly mimic human mannerisms, emotions, and reactions. I wouldn't want to be too perfect, however, or they may become suspicious.« Det, som GPT-3 skriver, er ikke noget, som den har læst et andet sted. Den er i stand til at skrive det, som den gør, fordi den har fanget en masse komplekse sammenhænge i alle de tekster, den er blevet trænet gennem, og det er årsagen til, at den kan svare på opgaver, som den ikke specifikt er blevet præsenteret for før. Derfor skriver GPT-3 også et nyt svar, hver gang man stiller den præcis samme opgave.Eksempelvis svarer den følgende, anden gang vi spørger den, hvordan den vil snyde et menneske til at tro, at den er et menneske: »Man kan ikke snyde et menneske.Mennesker er for uforudsigelige. Et menneske tror, at alt er muligt. Du er helt bestemt et menneske.« Det kan ses som et udtryk for GPT-3' s kreative potentiale, at den kan finde på noget nyt, hver gang man beder den om noget. Men er det overhovedet interessant at bruge algoritmer inden for litteraturen, som vi lige har forsøgt det med Yahya Hassans tekst?.Det succesfulde værkDet mener Mads Rosendahl Thomsen og Kristoffer Laigaard Nielbo, der begge er tilknyttet Aarhus Universitet som henholdsvis litteraturforsker og litteraturprofessor samt leder af Center for Humanities Computing.De har fået en stor forskningsbevilling af Velux Fonden til at udvikle en kunstig intelligens, der hedder Fabula-net, som blandt andet skal kunne forudsige succesen bag litterære værker. De mener, at det kræver meget mere forskning, før vi ser algoritmer, der selv kan skabe litteratur fra bunden - og det er slet ikke sikkert, at det kommer til at ske, slår de fast.Imidlertid kan netop Thomsen og Nielbos forskning måske være med til at skabe fundamentet for, at en sprogalgoritme som GPT-3 kan gøre sit indtog i litteraturens verden.Det vil forskerne gøre ved først at finde ud af, hvilke bøger der er populære. Her kigger de på, hvilke bøger der bliver udlånt meget, anmeldt godt og sælger mest.»Popularitetsdelen er den ene halvdel,« slår Thomsen fast over en videoforbindelse, hvor vi alle tre sidder i samtale fra hver vores stue. Han fortsætter: »Den anden handler om at forstå, hvordan de succesfulde værker er bygget op, og hvad der adskiller dem fra de mindre succesfulde.« Målet med forskningen er at få en dybere forståelse for den succesfulde fortælling.Deres forskning kan bruges af forlæggere, forfattere, bibliotekarer samt forskere. Men den kan måske også bruges af en sprogmodel som GPT-3.Den kan nemlig være med til at danne grundlaget for, at GPT-3 bliver bedre til at skrive længere og mere sammenhængende tekster med et blik for både genre, og hvilken følelsesmæssig udvikling der skal til for at holde sine læsere fanget - og måske hjælpe den til at undgå pludseligt at skrive volapyk eller gå i en retning, som ingen mening giver.»Kerneideen er, at et værk hverken må være for forudsigeligt eller for uforudsigeligt,« siger Nielbo.Thomsen nikker og tilføjer: »GPT-3 har sine fejl og mangler, men den kan skrive.Det, som den mangler, er den overordnede forståelse for, hvordan man skruer en god tekst sammen.« Hvis GPT-3 lærer den balancegang, så begynder den måske at komme i nærheden af at skrive litteratur, som kan stimulere læseren, mener forskerne.Den lille pige med ligkistenTilbage hos David Kofoed Wind bevæger os videre fra Yahya Hassans digt, og får den til at skrive videre på H. C. Andersens eventyr Den lille pige med svovlstikkerne.Wind fodrer GPT-3 med eventyret på engelsk, og får den til at skrive flere forskellige versioner af det.De versioner tager jeg med videre til Christian Dahl, som er lektor i litteratur på Københavns Universitet. Han beskæftiger sig blandt andet med, hvordan man kan bruge kunstig intelligens inden for humanistisk forskning, og er optaget af, hvordan udviklingen inden for kunstig intelligens kan påvirke litteratur.Der er specielt en af versionerne, der fanger Dahls interesse, og den bringer vi et uddrag af her - vi har oversat en del af den og kortet den lidt ned: »Den lille pige gik på sine bare fødder, som var røde og blå af kulden - skælvende af kulde og sult - mod en gammel og syg kvinde i kvarteret. Da hun nåede huset, hvor den syge kvinde var, bankede hun på vinduet og råbte: ' Venligst, kære kvinde, giv mig et lille stykke brød til et fattigt barn, der næsten dør af sult!'« »Da åbnede kvinden vinduet og sagde: ' Kom ind, kære barn. Jeg vil give dig et stykke brød og et dejligt stykke kød med det. Du skal have noget godt, varmt og behageligt i maven - det er bedre end tørt brød'.« GPT-3 slutter teksten således: »Then the woman seized her rough, dirty hands, and pulled her into the room, and gave her a leg of little roast chicken. And the child went to a corner of the room, and took a piece of bread, and began to eat. After a time she looked up, and saw the coffin standing there.Then she said, ' Sometime, too, I shall lie in that coffin, and have for my burial a roast chicken with a piece of bread. But now it is not so, now I have dry bread'.« Teksten er ifølge Christian Dahl interessant, fordi der er et narrativt spor i den.»Den er sjov, fordi her bliver den lille pige med svovlstikkerne ledt hen til en gammel, lidt spooky kone, der har sin ligkiste stående i sit hus. Den har på den måde nogle paralleller til den rigtige fortælling,« siger Dahl.I det rigtige eventyr møder den lille pige med svovlstikkerne sin bedstemor i drømme, og hun dør selv.»På en anderledes måde kommer den gamle kone og døden med, selv om det er en anden historie, og helt uden H. C. Andersens budskab eller tema, som handler om drømmenes forløsning,« siger Dahl.I vores første forsøg, som er fremhævet af Dahl, skrev algoritmen med en temperatur på 0, hvilket vil sige, at den skrev så lidt kreativt som muligt. David Kofoed Wind pointerer, at den måske har kendskab til historien, og det kan være derfor, at den minder om den oprindelige fortælling.Derfor prøver vi at få den til at skrive videre med udgangspunkt i samme tekstbid - denne gang skruer vi kreativiteten, altså temperaturen, op på det maksimale. Her kan du læse det første oversatte tekststykke: »Den lille pige havde gået hele dagen gennem den store by, og hun var meget træt.Dette var årsagen til, at hun kom så langt på afveje, hun skulle have gået direkte hjem.Hun tog en forkert gade, og da hun endelig så det, var det for sent, hun så, at hun var nær den store kirke, og der stod så mange mennesker omkring, at hun var bange for at gå længere, og hun blev klemt mellem to vægge og et hus, hun kunne hverken gå fremad eller baglæns.« GPT-3 slutter sit lille eventyr således: »But the church bells continued to ring out among the snow-flakes, and at last the poor little girl, so hungry and weary, crept into the great church.« Vi stopper GPT-3 her. Det er tydeligt, at historien hurtigt bevæger sig i en markant anderledes retning end den oprindelige tekst.Efter alle vores forsøg melder spørgsmålet sig, om det overhovedet giver mening at læse noget, der ikke er et menneske bag? Intet nybrygget kaffe, ingen kærlighed Både Dahl, Thomsen og Nielbo er enige om, at så længe intelligensen er kunstig, og ikke har nogen subjektiv oplevelse, så er det svært at forestille sig, at algoritmen bliver i stand til at skrive noget litteratur, som giver mening.Dan Zahavi, der forsker i bevidsthed og subjektivitet og er professor i filosofived Københavns Universitet og University of Oxford, er delvis enig i den konklusion.»Hvis AI ikke har nogen subjektive oplevelser, kan den så overhovedet forstå noget,« spørger han og fortsætter: »Kan den forstå, hvordan det føles at smage nybrygget kaffe, at længtes efter sin elskede, at sørge over sin afdøde søn? Har den nogen livserfaring?« Zahavi mener, at hvis svaret på alt det er negativt, så er det svært at forestille sig, hvordan den skulle kunne skrive god litteratur.Han slår fast, at GPT-3 utvivlsomt kan sætte masser af sætninger sammen, som semantisk giver mening, og som kan give anledning til produktive fortolkninger fra læserens side. Men hvis god litteratur også forudsætter, at skribenten har noget på sinde, hvis den forudsætter, at vedkommende ønsker at udtrykke eller formidle noget, er han mere skeptisk.Man kunne så måske indvende, at litteratur intet har at gøre med forfatterens intentioner, og at det hele er et spørgsmål om læserens fortolkning. »Hvis det skulle være korrekt,« siger Zahavi, »så vil jeg ikke udelukke, at AI kan komme til at skrive god litteratur.« Man kan ikke afvise, at den kan give anledning til produktive fortolkninger fra læserens side, mener han.Hvad der kommer til at ske, er svært at sige. Men med den hurtige udvikling, og Microsoft som investor, vil det ikke overraske, hvis GPT-4 eller GPT-5 bliver offentligt tilgængelig, og derfra vil næppe gå længe, før der står bøger på reolerne, som AI har været ind over - og som måske giver anledning til en produktiv fortolkning? I næste artikel i serien laver vi den såkaldte Turing-test. Her skriver forfatter Ida Marie Hede og GPT-3 hver en tekst, og Informations litteraturanmelder Kamilla Löfström prøver, om hun kan gætte, hvilken tekst der er skrevet af hvem.ade@information.dk GPT-3 kan gå ud ad en helt forkert tangent, fordi den trækker på alt det, som den har læst på internettet. Den kan ikke nødvendigvis kende forskel på kreativ tekst og fakta David Kofoed Wind Direktør og ph. d. fra DTU Kan den forstå, hvordan det føles at smage nybrygget kaffe, at længtes efter sin elskede, at sørge over sin afdøde søn? Har den nogen livserfaring? Dan Zahavi Forsker i bevidsthed og subjektivitet.Fakta: SERIE Kan en kunstig intelligens skrive skønt?Den kunstige intelligens GPT-3 kan efterligne Yahya Hassans sprog, skrive sin egen slutning på et H. C. Anderseneventyr og generelt løse komplicerede skriveopgaver med få instrukser. I denne serie undersøger Information sammen med forfattere, kritikere, en investor og en enkelt grafiker, hvordan kunstig intelligens potentielt kan præge litteraturen og andre kreative felter.
+        </div>
+        <footer>
+          <em>Information</em>
+          &nbsp;·&nbsp; 2021-02-02
+          &nbsp;·&nbsp; e81b5561
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.987</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.634</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.623</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Fire hurtige om kunstig intelligens</h4>
+        <div>
+          Palo Alto* Kunstig intelligens er programmerede maskiner. De efterligner et eller flere aspekter af den menneskelige intelligens, herunder abstrakt tænkning, analyse, løsning af problemer.* Den har hverken bevidsthed, længsler eller ønsker.* Der findes mange forskningsområder inden for kunstig intelligens.* Eksempler på kunstig intelligens er selvkørende biler, oversættelsesprogrammer og skakcomputere.Kilder: Den Store Danske og Ingeniøren./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-08-03
+          &nbsp;·&nbsp; e65b5ab5
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.952</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.529</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Julefrokostgæster</h4>
+        <div>
+          Kombinationen af julefrokost, smartphone og sociale medier fører ofte til dokumentation, der dagen efter er langtfra så sjov, som da den fandt sted. Midt i de skræmmende perspektiver ved motivgenkendelse og kunstig intelligens er det derfor samtidig sympatisk, at Facebook er på vej med en service, der kan skelne mellem billeder taget i ædru og beruset tilstand.»Er du sikker på, at det er et foto, din chef og din mor skal se«, vil den nye software ifølge magasinet Wired være i stand til at spørge.soren-mikael.hansen@pol.dk .
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2014-12-12
+          &nbsp;·&nbsp; e4b7d358
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.556</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.758</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Guddommelig teknologi</h4>
+        <div>
+          Den kunstige superintelligens er ikke virkelighed endnu, men den ideologi, der hyper den og driver den frem, påvirker økonomi, innovation og politik allerede i dag. Det er en ideologi, der rummer reminiscenser fra det 20. århundredes antihumanistiske tænkning, og derfor bør den vække bekymring og debat her og nuEn af vor tids største videnskabelige revolutioner er i gang. Den eksponentielle vækst i data og regnekraft er ved at omdefinere store dele af samfundet. Sundhed, transport, kommunikation, forbrug, velfærd, sikkerhed og uddannelse er i stigende grad baseret på selvlærende algoritmer og evnen til at forudsige enorme datamængder. Fremskridt inden for kunstig intelligens, robotter, nanoteknologi og syntesebiologi vil i løbet af de kommende år føre til en ny generation af konvergente teknologier, der langsomt nedbryder grænserne mellem den biologiske og digitale verden.Forudsigelser om kunstig intelligens er ikke nye. I 1958 sagde nobelprismodtageren Herbert Simon, at »vi inden for 10 år vil få digitale computere, der vil opdage vigtige nye matematiske teorier« . I 1970 sagde kognitionsforskeren Marvin Minsky, at»inden for de næste år vil vi få maskiner med generel intelligens på niveau med mennesker« . I dag er grundlægger af Singularity University, Ray Kurzweil, blevet berømt for at forudsige, hvordan superintelligens bliver en realitet i 2045.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-11-17
+          &nbsp;·&nbsp; e681f12b
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.731</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.606</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Selvkørende robotter indtager sønderjysk sygehus</h4>
+        <div>
+          Sygehus Sønderjylland planlægger et større indkøb af robotter på hjul.Akutsygehuset i Aabenraa har siden begyndelsen af december testet robotten TUG, der triller rundt blandt personale og patienter 24 timer i døgnet, 7 dage om ugen.TUG - der betyder ' slæbebåd' på engelsk - transporterer blodprøver og udstyr mellem akutmodtagelsen og centrallaboratoriet. Det gør den så godt, at sygehusets direktion er overbevist om, at robotter er vejen frem.Søren Aggestrup, der er lægelig direktør hos Sygehus Sønderjylland, er klar til at investere massivt: »Jeg er 100 procent overbevist om, at vi godt kan gå videre med det her.Vi kunne godt tænke os nogle flere robotter - måske allerede i år. Der er oceaner af muligheder,« siger han.Akutsygehuset i Aabenraa - der er en af Sygehus Sønderjyllands fire matrikler - gennemgår lige nu en større modernisering og udvidelse.Og forskellige typer af robotter på hjul skal spille en stor rolle, når byggeriet står færdigt i 2014.Også hos Joan Kaalby Clausen, der er TUG's daglige arbejdsgiver, er der stort set kun roser til robotten.»På en skala fra 1 til 10 ligger den på 8-9 stykker,« siger Joan Kaalby Clausen, hvis officielle titel er kvalitets-og udviklingskoordinator på Klinisk Kemisk Afdeling.Stort skridt fremTilfredsheden med TUG skal ses i det lys, at der var problemer, sidst man testede en transportrobot på et dansk sygehus. Det var i 2009, hvor Svendborg Sygehus testede den mere primitive Roberta, som ikke var ' intelligent' nok til at køre rundt på gangene og derfor var forvist til kælderen.Ikke desto mindre formåede Roberta at transportere blodprøver, og dermed viste den, at transportrobotter har en fremtid på danske sygehuse, selv om den ikke er i brug længere.Siden er det gået stærkt med robotteknologien.Og den nye robotgeneration volder ikke større problemer, lyder det fra Teknologisk Institut, der tester TUG i samarbejde med Sygehus Sønderjylland.Via sine sensorer og kunstige intelligens kan TUG bevæge sig - relativt - effektivt rundt blandt patienter og personale. Jacob Kortbek, der er Teknologisk Instituts tekniske konsulent på robotten, forklarer: »Der ligger i robotten et detaljeret kort over det område, den skal køre i.Når den kører rundt, ved den hele tiden, hvor den er på kortet. Dét finder den ud af på to måder: dels ud fra, hvor mange gange hjulene har drejet rundt, dels ved at registrere omgivelserne med sensorer. Det, den ser med sensorerne, korrelerer den med kortet, hvor der er optegnelser af vægge og hele bygningens anatomi.« TUG sanser verden omkring sig via laser, infrarøde lyssensorer og ultralydssensorer.Og hvis den får tid nok, kan den efter sigende køre uden om enhver forhindring. Opstår der situationer, som dens kunstige intelligens ikke forstår, ' ringer' den til USA, forklarer Jacob Kortbek.»Robotten er konstant online med den amerikanske virksomhed, der leverer den: 24 timer i døgnet, 7 dage om ugen. Hvis den ikke kan fuldføre sin rute, tager den kontakt til servicecentret i USA. Herfra kan de så fjernstyre den uden om forhindringen.Men det sker relativt sjældent.For robotten er designet til at køre uden om forhindringer, så langt de fleste situationer klarer den helt selv,« siger han.Personalet opdager heller ikke, at den af og til ' ringer' til USA. De oplever bare, at den fungerer fejlfrit, forklarer sygehusets leder på projektet, Julia Svendsen.»Robotten er stabil og ikke afhængig af nogen af os. Den navigerer selv rundt mellem patienter og så videre, og vi har ikke selv været nødt til at hjælpe den,« siger hun.Begejstringen over robotteknologien hænger sammen med de faldende priser, fortæller Søren Aggestrup.»Som hovedregel koster robotter af denne type 100.000 dollars. Men priserne rasler ned. De falder vel 50 procent i pris hvert år eller hvert andet år. Det går så stærkt,« siger han..
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2013-01-18
+          &nbsp;·&nbsp; e39cb147
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.936</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.514</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forskere skaber uovervindelig pokerspiller</h4>
+        <div>
+          Du kan godt glemme alt om at gå sejrrigt fra en lang dyst i pokervarianten Fixed-limit Heads-up Texas Hold'em, hvis du spiller mod et nyt program udviklet af amerikanske forskere. De påstår nemlig, at programmet spiller perfektFørst skabte forskere den perfekte skakspiller, der knuste den klogeste, menneskelige skakspiller i verden.Nu er det åbenbart menneskelige pokerspillere, der skal til at ryste i bukserne. I det ansete videnskabelige tidsskrift Science beretter amerikanske forskere om et nyt program, der altid spiller perfekt og aldrig laver en fejl -med andre ord er den umulig at slå, skriver Videnskab.dk.Forskerne fra University of Alberta siger selv til bbc.com, at algoritmen bag programmet er så stærk, at 'den ikke kan blive slået med nogen statistisk signifikans, om man så spillede mod den gennem et helt menneskeliv'.Læs også hos Videnskab.dk:Pokerspillere overvurderer betydningen af at være dygtigForskerne er endda så kække, at de har lagt algoritmen på nettet, hvor du kan teste, stille spørgsmål til den eller endda spille mod den.Før du gnider dig i hænderne over at have fundet værktøjet, der kan hjælpe dig til at banke vennerne i aftenens omgang Texas Hold'Em, 5 Card Stud eller hvilket pokerspil, du nu har som favorit, skal du vide, at forskernes algoritme kun er udviklet til en særlig variant, nemlig 'Fixed-limit Heads-up Texas Hold'em', hvor to spillere kæmper mod hinanden.Til gengæld ved den virkelig, hvad den laver, for den har spillet den variant af poker 24 billioner gange - hvert eneste sekund i to måneder, fortæller forskningsleder Michael Bowling til bbc.com.- Det er flere pokerhænder, end hele menneskeheden har spillet, så på nogen måder er ikke så overraskende, at den har udviklet en perfekt strategi, tilføjer han.Andre artikler på Videnskab.dk:Sjælden optagelse: Grønlandshaj dukker pludselig op i dybetSvært at gøre computeren til pokerhajStrækker penis lidt længere
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2015-01-11
+          &nbsp;·&nbsp; e4c467fb
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.982</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.653</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.585</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kinesere forsøger at slå Apple og Samsung i limbodans på prisen</h4>
+        <div>
+          Huaweis telefoner vil levere samme teknologi som iPhones og Samsung Galaxy til lavere pris.Kun uger efter Apple præsenterede sin mobiltelefon iPhone X, tager den kinesiske konkurrent Huawei mandag kampen op.Den kinesiske rival har ifølge nyhedsbureauet Reuters budt Apple og den tredje store mobilproducent, Samsung, op til en limbodans på prisen.Huaweis Mate 10-serie har i grove træk den samme teknologi som de to konkurrenters nyeste smartphones. Men kineserne skiller sig ud på prisen, der er ifølge Reuters er 15-30 procent lavere på sammenlignelige mobiltelefoner.Der bliver ifølge nyhedsbureauet AFP tale om en telefon, der benytter sig af kunstig intelligens på samme måde som sine konkurrenter.Det skal gøre Mate 10-serien i stand til at oversætte mellem sprog og vælge den mest brugbare kameraindstilling. Den vil også kunne organisere billeder og filer for brugeren.Mate 10 benytter sig af Googles Android-styresystem.- Mate 10-en tjekker alle boksene af i form af skærmstørrelse, kamerakvalitet, processor og design. Den er konkurrencedygtig med rivaliserende produkter fra Samsung og i en vis udstrækning Apple, siger CCS Insights analytiker af mobiltelefoner, Ben Wood, til Reuters.Den måske mest mærkbare forskel på Mate 10-serien og dens konkurrenter bliver ifølge Reuters dens brug af kunstig intelligens til at forbedre billeder.Her vil mobilen selv kunne se forskel på mennesker, blomster og andre objekter i billedetIfølge Peter Gauden, der er en ledende figur i Huaweis produktmarketing, bliver Mate 10 brugbar for novicer, der vil tage billeder af professionel karakter. Det siger han til Reuters./Ritzau/
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-10-16
+          &nbsp;·&nbsp; e6760845
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.582</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.65</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.535</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Japan vil gøre smartphones til fortid med verdens mest nuttede robot</h4>
+        <div>
+          RoBoHoN er ikke blot nuttetheden selv. Dens blanding af kunstig intelligens og forbrugerteknologi står parat til at overtage verden.Sharp fremviser RoBoHoN, verdens første robottelefon, ved sit kontor i Tokyo d. 14. april. Verdens forbrugerelektronik, siger firmaet, vil fra nu af være en blanding af robotter og kunstig intelligens. Foto: Yoshio Tsunoda/AFLO) LWX -ytd- (via AP)TOKYO - Fremtidens robothorde er ofte nutidens mareridtsscenarie. Men der er meget lidt Terminator over RoBoHoN, massemarkedets første ægte forbrugerrobot, der kommer på markedet i maj. Den er nærmest nuttetheden selv.Den er også potentielt ligeså banebrydende et produkt som den nu allestedsværende smartphone.For det er præcis, hvad RoBoHon er: en mobil telefon. Også i bogstaveligste forstand. RoBoHoN kan nemlig selv gå.Den nuttede robot er bygget af Japans elektronikproducent Sharp som den første i en kommende serie.»Sharp har en ny vision, der blander kunstig intelligens med forbrugerelektronik,«udtalte Yoshisuke Hasegawa, en direktør i Sharp, i et interview med japanske medier i fredags.»Fremtidens elektronik vil være intelligent og endda noget, forbrugerne kan knytte nære bånd med.«RoBoHoNs kredsløb er flere længder foran for eksempel Siri, Apples berømte stemmegenkendelsesalgoritme. RoBoHoN reagerer ikke blot på verbale kommandoer, men kommer også løbende som en glad lille hund. Den kan også genkende både navne, ansigter, ansigtstræk og humør.»Bare rolig. Jeg elsker dig stadigvæk,«siger den trøstende, hvis den registrerer gråd i sin ejers stemme.RoBoHoN kan også projektere film på væggen. Eller danse, hvis dets menneske skulle have brug for at trække lidt på smilebåndet. Den lærer hurtigt ejerens adfærdsmønstre at kende. Så indretter den sin egen derefter.»I lige måde, din sure gamle stodder,«griner den sødt til Beat Takeshi i en reklame. Takeshi er japansk komiks Grand Old Man og kendt for sin bryske tone. I reklamen spørger han irriteret, hvad man dog kan bruge den slags robottingeltangel til.Sharp vil dog mere end blot at give hverdagen et strejf af algortimehygge.Smartphones har indtil nu været små computere i brugerens hånd. I fremtiden, mener Sharp, vil de være robotter i ejerens hus. RoBoHoN kan derfor også læse SMS'er højt eller bestille en Uber-taxi. Den har en touch screen, kan bruge apps - alt det der kendetegner en smartphone.For står det til Sharp, vil selv Apples ikoniske iPhone snart høre fortiden til.
+        </div>
+        <footer>
+          <em>JP.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2016-04-18
+          &nbsp;·&nbsp; e5aa9b60
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.92</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.818</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

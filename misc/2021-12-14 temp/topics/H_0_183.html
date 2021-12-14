@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_183 <kbd>H_0_183</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>company</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>apparater</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>installere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>software</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>computing</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>office</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>måler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>microsoft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>leverandør</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>communications</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>meddelelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>devices</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>solutions</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>redmond</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>styresystemer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>widex</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>processering</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>experience</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udligne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>softwarefirma</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>høreapparaterne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eliminerer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>suite</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>faarth</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_183 DESC LIMIT 50</pre>
+      <article>
+        <h4>Microsoft køber BrightBytes DataSense</h4>
+        <div>
+          Det oplyser Microsoft selv i en pressemeddelelse.»We want to help every school find this same success, using data to gain insights and tailor their learning experience,« skriver Microsoft i pressemeddelelsen.BrightBytes, der er en virksomhed, der arbejder med undervisnings datanalyse har desuden udviklet en platform, der bruger machine learning og predictive analytics.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-02-05
+          &nbsp;·&nbsp; e711b4bf
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.554</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.544</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft advarer mod Gmail</h4>
+        <div>
+          Google læser dine e-mails, så du får annoncer om produkter, der kan kurere din kløe i skidtet, advarer Microsoft i video for Office 365Er du iværksætter eller en mindre virksomhed, så virker det oplagt at bruge tjenester som Gmail og Google Apps, der giver dig kalender og e-mail i skyen, men i en ny reklamevideo advarer Microsoft mod at kaste dig i armene på Google.Microsoft mere end antyder, at det er dårlig stil, at Google læser dine mails for at kunne vise annoncer, der er relevante for dig. I videoen introducerer Microsoft os for Gmail Man, der både virker kikset og ubehagelig klam. Han prøver blandt andet at vise en annonce baseret på ordenen 'burning' og 'sensation,' men det viser sig, at han er helt galt på den.Microsoft prøver med videoen at eksponere sin egen løsning til kalender, kontakter og e-mails i skyen, Office 365.Hvordan har du det egentlig med Googles algoritme, der kigger dig over skulderen og leder efter nøgleord i dine e-mails?Microsoft introducerer Gmail Man, der kigger dine e-mails igennem. Stoler du på ham? (Foto: Microsoft). 
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2011-08-01
+          &nbsp;·&nbsp; e2cd7242
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.765</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.512</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.56</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mi­cro­soft præ­sen­te­rer kæm­pe­op­køb: Slu­ger børsno­te­ret it-sel­skab for 19,7 mia. dol­lar</h4>
+        <div>
+          Microsoft her indgået aftale om køb af Nuance Communications, som blandt andet arbejder med kunstig intelligens og avanceret taleteknologi, for 19,7 mia. dollar.Det bekræfter selskabet mandag eftermiddag, efter at der på forhånd havde været flere rygter om, at en transaktion var under opsejling.Aktionærerne i Nuance Communications tilbydes 56 dollar pr. aktie kontant, hvilket udgør en præmie på 23 pct. i forhold til fredagens lukkekurs for aktien.I formarkedet stiger Nuance-aktien netop 23 pct. til kurs 56 dollar, mens aktien i Microsoft ligger 0,1 pct. lavere i 255,66 dollar. /ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2021-04-12
+          &nbsp;·&nbsp; e835eca9
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.967</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.537</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.686</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft gør værktøj til machine learning tilgængelig på GitHub</h4>
+        <div>
+          It-giganten gør sit såkaldte deep learning-værktøj open source under MIT-licens.Microsoft frigav mandag et værktøj, der er blevet brugt internt i it-selskabet til machine learning. Det såkaldte Computational Network Toolkit ligger nu på GitHub under MIT-licens.Det skriver amerikanske Computerworld .Computational Network Toolkit - eller bare CNTK - er blandt andet blevet brugt til at forbedre stemmegenkendelse som i Windows-assistenten Cortana, men kan ifølge Microsoft tages i brug af alle, der skal behandle store mængder data i real tid.Softwaren er - ifølge Microsoft selv - mere effektiv end Googles konkurrerende TensorFlow-platform.Frigivelsen af CNTK kommer i kølvandet på, at Microsoft i november gjorde det beslægtede stykke software Distributed Machine Learning Toolkit tilgængelig for alle. Både Google og IBM har taget lignende beslutninger og open sourcet henholdvis TensorFlow-platformen og SystemML.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-01-26
+          &nbsp;·&nbsp; e5861df0
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.58</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.55</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.536</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nye funktioner på vej til Office</h4>
+        <div>
+          Microsoft arbejder på helt nye funktioner til Word, Excel og PowerPoint. Programmerne skal ikke bare understøtte touch, men også helt nye måder at navigere og arbejde på.Microsofts Office 2013 (billedet) skiller sig ud fra de tidligere versioner ved blandt andet at have en langt bedre understøttelse af touch-navigation .Ifølge vores kolleger på det amerikanske Infoworld er det kun begyndelsen på en række nye måder, vi vil navigere og arbejde på i Office fremadrettet, når vi taler de touch-first-udgaver af Office , Microsoft arbejder på.Konkret vil Microsoft implementere blandt andet talegenkendelse, stemmekommandoer og bevægelses-funktioner, ligesom understøttelsen af giga-skærme med virtual reality-lignende muligheder også skal styrkes.Microsoft arbejder på detDet fortalte Sanjay Manchanda, Office product marketing director, på Microsoft Dynamics Convergence 2014-konference, skriver Infoworld.&quot;Vi tænker produktivitet som det, at man er i stand til at skabe indhold, foretage handlinger, og for at gøre det har du brug for at bringe andre former for naturlig interaktion i spil: stemme-aktiverede kommandoer og bevægelser kommer til at spille en stor rolle, når vi ser på, hvordan produktivitetsværktøjer vil udvikle sig,&quot; udtalte han i en præsentation på konferencen.&quot;I vil se mere fra Microsoft, der arbejder på at kunne levere disse ting.&quot;I oktober sidste år afslørede den daværende Microsoft-CEO, Steve Ballmer, lidt om, hvordan Microsoft forestiller sig, at fremtidens Office-applikationer kan fungere på de rene touch-enheder - eksempelvis iPad.&quot;Word, PowerPoint og Excel er alle værktøjer til at producere med. De er optimeret til at blive brugt med tastatur og mus ... iPad vil komme med, når vi laver det, jeg vil kalde ikke bare et touch-understøttende, men touch-first interface. Det er under udvikling ... til både Windows 8 og andre platforme,&quot; lød det fra Ballmer.Læs også:Sådan laver man intelligent software uden at begå brølereHer kan vi få store problemer med kunstig intelligensFoto: AP.Foto: AP.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2014-03-06
+          &nbsp;·&nbsp; e44bd2e3
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.699</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Widex skruer op for hastigheden i Evokes kunstige intelligens</h4>
+        <div>
+          Gennem anonyme tilbagemeldinger fra brugerne af Evoke, der er blevet lagret i et cloudbaseret økosystem, har Widex kunnet finindstille motoren bag Widex Evoke-teknologien, Soundsense Learn, så indstillingen af den foretrukne opsætning nu går 25 pct. hurtigere.Med i den nye løsning er også en timer, der i realtid viser brugeren, hvor hurtigt den optimale indstilling findes.- Blot ni måneder efter lanceringen af Widex Evoke har vores fokus på at levere innovation i Widex Evoke vist stærke resultater. I dag foretrækker 94 pct, af brugerne allerede Widex Evoke-lyden i udfordrende miljøer - og nu sikrer vi, at Soundsense Learn-brugere kan opnå deres personlige lydoplevelse endnu hurtigere og mere effektivt, siger Jørgen Jensen, der er administrerende direktør hos Widex, i en meddelelse.- Og det er alt sammen takket være Soundsense Learn-brugerne rundt omkring i verden, fortsætter han.Widex Evokes machine learning-teknologi fungerer ved, at brugerne via den medfølgende applikation vælger mellem foretrukne lydindstillinger på baggrund af genererede forslag, og de data kan høreapparatet så senere bruge til at forbedre lydoplevelsen i alle typer situationer.Dermed bliver høreapparatet altså klogere, hver gang brugerne giver tilbagemeldinger. Det betyder, at brugerne ikke selv behøver huske udfordringerne fra de enkelte situationer for så senere at få høreapparatet justeret hos en audiolog.Over tid indsamles alle data fra høreapparaterne anonymt i et stort økosystem. På den måde kan Widex lade Evoke-apparaterne &quot;lære af hinanden&quot; og selv få adgang til brugernes behov.Widex regner selv med, at introduktionen af Evoke også vil være med til at skære ned på antallet af brugernes genbesøg hos audiologer for at finindstille høreapparatet.Produktet blev i første omgang lanceret i forbindelse med branchemessen hos den amerikanske audiologforening, American Academy of Audiology (AAA), i Nashville, Tennessee, sidste år./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2019-02-05
+          &nbsp;·&nbsp; e7119e30
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.524</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.668</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft: Kunstig intelligens kræver ny lovgivning</h4>
+        <div>
+          IT-virksomheder der udvikler og sælger software med kunstig intelligens skal være juridisk ansvarlige for uheld på grund af teknologien. Sådan lyder opfordringen fra Microsoft i en ny bogHvem har egentlig ansvaret hvis en selvkørende bil installeres forkert eller kunstig intelligent software udpeger den forkerte diagnose og behandling til en kræftramt?Hvis det står til Microsoft skal det i fremtiden ikke være muligt for it-virksomheder at sende aben videre med sætningen: »Vi har jo bare udviklet den teknologiske platform,« når der sker uheld på grund af forkert brug af kunstig intelligens.I en ny bog med titlen 'The Future Computed' foreslår Microsoft, at der indføres ny lovgivning, der giver it-virksomheder et større ansvar for konsekvenserne af uheld der sker på grund af software baseret på kunstig intelligens.Det skriver Bloomberg.I løbet af de kommende to år skal Microsoft arbejde med sine egne etisk designregler for kunstig intelligens.Medarbejdere skal beskyttes bedreDet er ikke kun brugere af kunstig intelligens der skal have gavn af en opdatering af lovgivning.Også de mange lønmodtagere hvis arbejdsliv forandres radikalt på grund af kunstig intelligens skal stilles bedre, så eksempelvis Uber-chauffører eksempelvis får adgang til sundhedsforsikring og pension.Det kræver ifølge Microsoft at it-virksomhederne selv aktivt tager ansvar, for den type beskæftigede der hverken er klassiske lønmodtagere eller uafhængige underleverandører.»Teknologi-industrien er nødt til at ændre udgangspunkt, at fordelene ved den teknologiske fremskridt sker på bekostning af de medarbejdere der fyres eller efterlades uden beskyttelse eller fordele« , skriver Microsoft i den nye bog og fortsætter:»Virksomheder der ikke anerkender vigtigheden af lønmodtagerrettigheder risikerer at skade deres brand og at lovgiverne og domstolene vil indføre regulering.« 
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-01-19
+          &nbsp;·&nbsp; e6958ae1
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.605</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.598</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt samarbejde mellem Microsoft og SAS skal integrere SAS-værktøjer i Office 365, Azure og Dynamics</h4>
+        <div>
+          SAS Institute's AI og analyseværktøjer integreres tættere med Microsoft Azure, og Microsoft gør de cloudbaserede SAS industriløsninger tilgængelige for sine kunder Microsoft Corp. og SAS offentliggjorde i dag et partnerskab, der skal gøre Microsoft Azure som den foretrukne cloududbyder for SAS Cloud, og samtidig lave SAS-integrationer på tværs af Microsoft cloudløsninger til Azure, Dynamics 365, Microsoft 365 og Power Platform. »Gennem dette partnerskab vil Microsoft og SAS hjælpe vores kunder med at fremskynde væksten og finde nye måder at drive innovation på med et bredt sæt SAS Analytics-tilbud på Microsoft Azure,«  udtaler Scott Guthrie, Microsoft Executive Vice President for Cloud og AI, i en meddelelse. Han supleres af Oliver Schabenberger, SAS Chief Technology Officer og Chief Operating Officer. »SAS og Microsoft har en fælles vision om at hjælpe kunderne med at fremskynde deres digitale transformationsinitiativer. Begge parter har forståelse for, at det handler om berigelse af data og forbedring af liv gennem bedre beslutninger,«  siger han. »Samarbejdet med Microsoft giver kunderne en mere smidig adgang til skyen, hvilket giver hurtigere, mere kraftfuld og lettere adgang til SAS-løsninger og muliggør pålidelige beslutninger med analyser, som alle - uanset færdighedsniveau - kan forstå.«  Konkret betyder samarbejdet, at SAS® Viya vil blive optimeret til Azure samt at SAS' portefølje af brancheløsninger, fra svindel til risiko til detailhandel, bliver integreret i Azure Marketplace rettet mod at give forbedret produktivitet og forbedrede forretningsresultater for kunderne. Derudover vil Microsoft og SAS gennem partnerskabet undersøge mulighederne for at integrere SAS' analysefunktioner, herunder branche-specifikke modeller, inden for Azure og Dynamics 365 og bygge nye løsninger, der er integreret med SAS-tjenester på tværs af flere vertikale brancher. Henrik Ernlund, der er administrerende direktør for SAS Institute Danmark, vurderer at flere virksomheder nu kan få adgang til AI-værktøjer: »Norden er kendetegnet ved et højt niveau af innovation og teknologisk modenhed. Sammen med Microsoft kan vi nu tilbyde nye muligheder rettet mod virksomheder og organisationer, uanset størrelse. Det giver enorme muligheder i udnyttelsen af AI/analyse-kapacitet inden for dataanalyse, og det vil sætte retning og hastighed på udviklingen,«  udtaler Henrik Ernlund Pedersen. Yderligere SAS-produkter og -løsninger vil blive tilgængelige senere på året. Dette gør det muligt for SAS- og Microsoft-kunder at takle nogle af deres mest kritiske og komplekse analytiske udfordringer, mens de fremmer kontinuerlig innovation. SAS er også forpligtet til at bruge Microsoft 365 og Dynamics 365 til at drive sine interne operationer. Dagens melding kommer i forbindelse med SAS Global Forum 2020 , som på grund af COVID-19-pandemien afholdes virtuelt. Author
+        </div>
+        <footer>
+          <em>Pro.ing.dk/wastetech</em>
+          &nbsp;·&nbsp; 2020-06-15
+          &nbsp;·&nbsp; e7c0aa72
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.728</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.571</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft bruger antispam-tricks til at bekæmpe HIV</h4>
+        <div>
+          Microsoft finder ny viden om HIV-virusset med hjælp fra sine egne spam-værktøjer.Af Mikkel Meister'Virusser' og 'orme' har i flere år været næsten lige så faste medlemmer af de it-professionelles ordforråd som af lægernes.Nu viser det sig, at den forbindelse måske ikke er så tilfældig endda.I hvert fald har Microsoft haft held med at bruge dele af sine egne anti-spamværktøjer til at kortlægge mutationer af HIV-virus, skriver selskabet på Technet-bloggen .»Vi havde tilfældigvis den rette algoritme til opgaven og en stor samling computere hos Microsoft, der kunne udføre den gigantiske mængde beregninger. Vi fik problemet en fredag. Om mandagen havde vi gennemført analysen,« siger David Heckerman fra Microsoft Research.Kompliceret mønstergenkendelseFolkene hos Microsoft Research har benyttet biologi-softwaren Microsoft PhyloD til at gennemføre den komplicerede analyse og mønstergenkendelse, der kræves for at afdække virusmønstrene til videre analyse.PhyloD-softwaren bygger på nogle af de samme metoder, som Microsoft bruger til at slå ned på spam-emails i Hotmail og Outlook.Ved at afvikle Phylod-softwaren på Microsofts supercomputer-cluster er det lykkedes forskerne at nå resultater, der normalt ville tage år, på ganske få timer.I alt er det lykkedes forskerne at finde seks gange så mange angrebspunkter for HIV-virusset, som man hidtil har kendt, skriver Microsoft på Technet-bloggen.»Alt, vi lærer her, kan bruges ikke bare mod HIV, men også mod bryst- og prostatakræft. Det vil i sidste ende forandre den måde, medicin praktiseres på,« siger Bruce Walker fra Ragon Institutr på Massachusetts General Hospital, MIT, der også har deltaget i projektet.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-12-06
+          &nbsp;·&nbsp; e2ffab0b
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.708</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.73</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.663</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft på vej med modspil til Apples Siri</h4>
+        <div>
+          Rygter på nettet spår, at Microsoft er i gang med at udvikle deres egen virtuelle assistent til smartphones, PC og Xbox. Microsoft kridter således endnu engang banen op over for Apple, der indtil nu har imponeret med deres iOS-butler Siri.Læs også: Kolort møder landmand i ny spilreklameAssistenten har fået navnet Cortana, og er opkaldt efter Master Chiefs blå AI-hjælper fra Halo.ZDNet beretter, at Cortana-projektet har været omtalt flere gange i den senere tid. Navnet dukkede første gang op i juni på en lækket udvikler-telefon fra Windows. Det skete igen i denne uge med informationer, der peger på, at Cortana skal erstatte Microsofts eksisterende TellMe-service.Cortana forventes også at blive lanceret til styresystemer på både PC og Xbox One.Nyt spil: To brødre skal redde deres syge far. Har du lommetørklæderne klar?Microsoft har tidligere nævnt udviklingen af en Siri-konkurrent, men har ikke villet gå i detaljer, før de havde noget 'mere revolutionært end evolutionært' at vise.- Vi kunne udgive et produkt som ligner deres (Apple), men det ville ikke være den førende teknologi, sagde Microsoft Bings chef Stefan Weitz til CNET i juli.- Vi har udviklerhold i gang, der arbejder benhårdt på projektet.Læs også: Microsoft sikrer sig X-BONE domænet alligevelTeknologien forventes at kunne kombinere Bing-søgning, TellMe-stemmegenkendelse og avanceret 'social graph'-data.Xbox One har allerede simpel stemme-kontrol indbygget ved hjælp af den nye generation af Kinect-sensorer, som Microsoft har valgt at gøre til en obligatorisk del af konsollen.Cortana fra Halo kommer snart til en telefon nær dig. (Foto: Microsoft).
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2013-09-16
+          &nbsp;·&nbsp; e3f9b8ad
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.616</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft køber Swiftkey for at score AI-ekspertise</h4>
+        <div>
+          Swiftkey-tastaturet til Android og iOS bliver nu en del af Microsoft. Måske mest for at få fat på firmaets eksperter, lyder vurderingen.Microsoft har netop lanceret selskabets Word Flow-tastatur til Apples iOS. Derfor kan det lyde besynderligt, at Microsoft nu annoncerer, at Microsoft køber Swiftkey .Britiske Swiftkey har udviklet et populært tastatur til Android og iOS, og der er ingen planer om at droppe de produkter .Microsoft kan derimod være interesserede i at få fat i den ekspertise, der Swiftkey har opbygget inden for maskinlæring til at forbedre tastaturinput på touchskærme. Flere andre medier lægger vægt på udtalelsen fra Microsofts chef for Technology and Research, Harry Schum:»Vi elsker Swiftkeys teknologi, og vi elsker det hold, Jon og Ben (stifterne af Swiftkey, red.) har opbygget. Derfor er jeg glad for at kunne byde firmaets medarbejdere velkommen hos Microsoft,« skriver Harry Schum i sit blogindlæg.Machine learning er højprofileringHan påpeger samtidig, at Microsoft udover det fortsatte arbejde med Swiftkeys tastaturer, så vil Microsoft også arbejde på at finde nye anvendelsesområder inden for Microsofts eksisterende produkter.Financial Times påpeger , at opkøbet kan ses som det seneste inden for en tendens til, at de store softwarefirmaer investerer i kunstig intelligens og maskinlæring gennem opkøb.Det er en del af et større spil i branchen, hvor netop dette felt er blevet et område, hvor virksomhederne forsøger at skille sig ud. Det gælder eksempelvis IBM, som i øjeblikket markedsfører sig massivt på Watson-teknologien. Samtidig frigiver både Microsoft, Google og flere andre dele af deres teknologier som open source.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-02-03
+          &nbsp;·&nbsp; e58a0680
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.614</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft bringer robotstyresystem til Windows 10</h4>
+        <div>
+          Microsoft arbejder på en eksperimentel udgivelse af Robots Operating System (ROS) til Windows 10.Det skriver All About Microsoft.Systemet er rettet mod robotter i hjemmet og indenfor uddannelse, forretning og industri.ROS findes allerede til Linux og er et sæt af biblioteker og værktøjer til bygning af komplekse robotter.»Med ROS til Windows kan udviklere bruge Visual Studios velkendte værktøjssæt sammen med fyldige AI- og cloud-funktioner,« skriver Microsofts ledende IoT-udvikler Lou Amadio blandt andet i et blogindlæg.Microsoft har tiltrådt ROS Industrial Consortium, som fokuserer på at udvide ROS til fremstilling til industrielle robot-applikationer. Microsoft arbejder med Open Robotics og ROS Industrial Consortium for at bringe ROS til Windows.På konferencen ROSCon 2018 i Madrid, Spanien, der blev afholdt i weekenden, demonstrerede Microsoft en ROBOTIS Turtlebot 3 robot, der kører ROS, og som kan genkende og styre mod den person, der er tættest på robotten. Robotten kører Windows 10 IoT Enterprise på en Intel Coffee Lake NUC, der udnytter hardwareaccelereret Windows Machine Learning.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-10-02
+          &nbsp;·&nbsp; e6eba2d0
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.801</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.576</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens debuterer som vejrpige</h4>
+        <div>
+          Chatbot udviklet af Microsoft lander praktikantjob på kinesisk tv-stationSeerne på den kinesiske tv-station Dragon TVs morgennyheder kunne i sidste uge stifte bekendtskab med en ny vejrpige   Xiaoice. Det er næppe usædvanligt med nye værter i sendefladen, men til forskel fra sine forgængere består Xiaoice udelukkende af bit og bytes.Xiaoice er en kunstig intelligens udviklet af programmørerne hos Microsoft asiatiske afdeling, og oprindeligt tiltænkt en rolle som chatrobot tilknyttet tjenester som WeChat og Weibo. Men et samarbejde mellem Microsoft og Shanghai Media Group har landet Xiaoice et job som praktikant på tv-stationen.Ifølge Microsofts pressemeddelelse er det første gang en kunstig intelligens har påtaget sig sådan et job, og at det overhovedet kan lade sig gøre, siger Microsoft, er blandt andet, at Xiaoice stemme lyder langt mere naturlig end andre stykker software med kunstige intelligens.Xiaoice benytter machine learning og big data til at levere vejrrapporter i realtid, og skulle endda, takket være et kunstigt følelsesregister, være i stand til at kommentere på nyhederne.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-12-30
+          &nbsp;·&nbsp; e56eb4dd
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.72</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft frigiver machine learning bag forbedret talegenkendelse som open source</h4>
+        <div>
+          Microsoft kunne for nylig præsentere talegenkendelse, der kan måle sig med et menneske, og nu bliver det samme machine learning-værktøj frigivet som open source.Forskere hos Microsoft kunne for nylig præsentere resultatet af et projekt med brug af machine learning til talegenkendelse, som nu i præcision var på niveau med et menneske for optagede stumper af en samtale. Nu kan andre arbejde videre på det samme værktøj.Microsoft har nemlig frigivet en opdateret udgave af selskabets machine learning-værktøjer som open source, og værktøjerne skifter samtidig navn til Microsoft Cognitive Toolkit, skriver selskabet i et blogindlæg.Det nye navn skal signalere, at det især er velegnet til discipliner som billedanalyse og talegenkendelse, men der er stadig tale om et værktøj, Microsoft oprindeligt har udviklet til brug for søgemaskinen Bing - ligesom Google har udviklet Tensorflow.Derfor er én af de fordele ved den nye version, som Microsoft fremhæver, at det fortsat er udviklet til at skalere til meget store datasæt og distribueret databehandling på mange enheder med udnyttelse af blandt andet Nvidias grafikprocessorer. Ifølge Microsoft vil værktøjet dog også kunne bruges på en enkelt bærbar pc.Der er samtidig også kommet yderligere understøttelse for at arbejde med værktøjerne i Python og C++, og overordnet set skulle ydelsen været forbedret ifølge Microsoft. Der er også tilføjet et nyt sæt algoritmer inden for reinforcement learning.Lidt i samme kategori, og så alligevel ikke, så har Microsoft åbnet for betatest af selskabets nye udgave af analyseværktøjer-som-en-tjeneste på cloud-platformen Azure. Det er en anden type big data, disse værktøjer er beregnet til, og værktøjerne var i første udgave målrettet blandt andet de mest hårdkogte Excel-brugere, som kunne lave BI-funktioner ved hjælp af tjenesten.Den nye udgave af Azure Analysis Services er rettet mere mod udviklere og knyttet tæt til SQL Server, som Microsoft de sidste par år har arbejdet på at bygge flere værktøjer ind i til BI-analyse. Man vil dog også kunne bruge andre databaser sammen med Azure-tjenesterne.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-10-26
+          &nbsp;·&nbsp; e5f1e374
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.623</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.661</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.658</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft lancerer ny platform for big data-analyse</h4>
+        <div>
+          I kølvandet på Microsofts overtagelse af det californiske statistical computing-selskab Revolution Analytics, lancerer Microsoft nu en big data-platform.Microsoft er gået et skridt videre i understøttelsen af big data-anvendelsen med lanceringen af en avanceret business analytics-platform, som er baseret på open source programmeringssproget R.Skridtet følger i kølvandet på Microsofts overtagelse af selskabet Revolution Analytics, et it-selskab i Californien, der leverer software og services inden for statistical computing.Det skriver flere medier, herunder Computerworld.com og Zdnet.com.Den nye Microsoft R Server platform fungerer med Windows, Linux, Hadoop og Teradata-software og er gjort tilgængelig på Microsoft Developer Network og via Microsofts Dreamspark uddannelsesprogram.R platformen understøtter en bred vifte af moduler inden for big data-statistik, prædiktiv modellering og machine learning, som alle er kompatible med R programmeringssproget.R er ikke et særligt effektivt programmeringssprog»Det er et godt træk fra Microsoft, men jeg håber bestemt ikke, de lægger alle deres æg i R-kurven,« siger Mike Gualtieri, som analytiker hos Forrester Research.»R er populær blandt dataloger, men jeg tror også, de fleste erkender, at det ikke er et meget elegant, effektivt eller højtydende programmeringssprog til ethvert formål,« sagde han og tilføjer:»R ligner Cobol til sofistikerede udviklere.«Andre mere moderne programmeringssprog som Python er i stigende grad populære.R er et fortolket sprog, som især kan anvendes til matematik og specifikt statistik, og både Oracle, IBM, MATLAB og SAS tilbyder i forskelligt omfang understøttelse for R til big data.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-01-07
+          &nbsp;·&nbsp; e571110b
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.625</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.51</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.618</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Widex udskyder lancering af brændselscelleprojekt</h4>
+        <div>
+          Men nu er forventningen, at produktet, der tillader brugeren at lade batteriet på sit høreapparat op på under et minut, først kommer på markedet i starten af næste år.&quot;Vil gerne lave en global udrulning, og vi mangler stadig den endelige godkendelse i USA,&quot; siger Jørgen Jensen, der er administrerende direktør hos Widex, som forklaring på udskydelsen.Derudover leverer Widex lige nu stor vækst på bagkant af lanceringen af Widex Evoke, der er baseret på machine learning, i foråret.Og den lancering kan der stadig klemmes mere ud af, før det er nødvendigt at lancere endnu et nyt produkt.&quot;Vil gerne have en fuld udrulning af Widex Evoke først. Vi skal passe på ikke at køre lancering på lancering, så vi ikke får det fulde ud af vores lanceringer,&quot; forklarer Jørgen Jensen.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-09-26
+          &nbsp;·&nbsp; e6e9a508
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.521</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.615</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.667</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft stopper investeringer i ansigtsgenkendelses-firmaer efter kontrovers</h4>
+        <div>
+          Microsoft har stoppet investeringer i virksomheder, der udvikler ansigtsgenkendelse. Det sker efter kritik af virksomheden AnyVision og dennes forhold til den israelske regering. Microsoft vil ikke længere investere i tredjeparts virksomheder, der arbejder med ansigtsgenkendelse. Det sker på baggrund af kritik af den israelske startup AnyVision , som Microsoft har investeret i, der angiveligt har været med til at drive et overvågningsprogram på Vestbredden i Israel. Det skriver The Verge Kritikken opstod på baggrund af en rapport fra NBC News , der viser AnyVisions forhold til den israelske regering. Microsoft melder nu, at en afhængig undersøgelse af sagen viser, at startuppen ikke er med til masseovervågning, og at hvis man havde gjort det, havde man overtrådt den indgåede aftale om 'etisk brug af ansigtsgenkendelse'. Men uanset hvad, har man altså nu meldt ud, at man ikke længere vil investere i tredjepartsvirksomheder, der beskæftiger sig med ansigtsgenkendelse. Microsoft har stadig Azures FaceAPI Det betyder dog ikke, at Microsoft ikke har stadig beskæftiger sig med ansigtsgenkendelse. Man har nemlig stadig FaceAPI , der er en del af Azure cloudcomputing-programmet. AnyVision er ikke den eneste ansigtsgenkendelsesvirksomhed, der har været i stormvejr her på det sidste. Startuppen Clearview AI har også mødt bred kritik for sin brug af billeder fra sociale medier til at udvikle en ansigtgenkendelsessoftware.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-03-30
+          &nbsp;·&nbsp; e7a50700
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.872</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.686</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>16 Microsoft-forudsigelser for 2016</h4>
+        <div>
+          Hvad ser nogle af verdens førende tænkere inden for teknologi og forskning, når de kigger i glaskuglen for 2016. Microsofts har spurgt 16 af deres forskere.Hvad vil blive det største teknologiske gennembrud i 2016, lyder spørgsmålet fra Microsoft til 16 af deres førende tænkere inden for teknologi og forskning.Chris BishopMicrosoft Distinguished ScientistI løbet af 2016 vil vi se nye silicium arkitekturer, der vil boost hastigheden på GPU'er.Doug BurgerDirector of Hardware, Devices, and Experiences, Microsoft Research NExTVellykket og storstilet inddragelse af specialiserede beregnere til acceleration af data i skyen, hvilket vil gøre det muligt at hente store gevinster indenfor arbejdet med big data såsom bioinformatik og high-performance computing.Bill BuxtonPrincipal Researcher, Microsoft ResearchTablets vil omsider vinde bred opbakning som notesbog og finde sin passende plads i mosaikken af, hvordan vi interagerer med digitale enheder.Lili ChengDistinguished Engineer &amp; General Manager, Microsoft Research NExTVores online-samtaler vil i stigende grad være medieret af samtale assistenter, der vil hjælpe os med at grine og være mere produktive. Dette vil få os til at sætte spørgsmålstegn ved og sløre den måde vi opfatter computere, telefoner og husker relationer på.Kate CrawfordPrincipal Researcher, Microsoft ResearchDet centrale gennembrud vil være, at alt data forskning vil have en data-etik, hvilket giver større forståelse af de menneskelige konsekvenser af storstilet indsamling og eksperimenter med data (og ideelt skabe større retfærdighed og beskyttelse mod data-diskriminering).Li DengPartner Research Manager, Microsoft Research NExTDer vil være et fortsat fremskridt i behandling af sprog baseret på dybe læringsmetoder og state-of-the-art maskinoversættelse. Teknikker baseret på dyb læring og opmærksomhed-baserede sekvens learning vil bestemme ydeevnen.Jasmin FisherSenior Researcher, Microsoft Research Cambridge, UKEt af de vigtigste fremskridt, som vi vil se inden for sundhed og trivsel i 2016 vil være brugen af innovative tværfaglige teknologier designet til at forlænge og forbedre livet for patienter med komplicerede sygdomme.Hsiao-Wuen HonCorporate Vice President, Microsoft Research Asia, and Microsoft-s Asia-Pacific R&amp;D GroupBetydelig implementering af kunstig intelligens og hjælp fra et netværk af personlige assistenter, vil give fordele som: Stor inddragelse af informationsplatforme, billigere arbejdskraft og adgang til varere og tjenester elektronisk.Eric HorvitzTechnical Fellow &amp; Managing Director, Microsoft Research Redmond LabEt tydeligt fremskridt i beregningsmæssige intelligens vil være udviklingen af flydende flertrins kommunikation med maskiner, som vil være mærkbart mere naturlig og kompetent, end den tale interaktioner vi har haft med computere og smartphones indtil nu.Lucas JoppaConservation Scientist, Microsoft ResearchBillige langtrækkende og energibesparende sensorer og radioer vil muliggøre en eksponentiel acceleration af miljøovervågning og skabe grundlaget for enestående adgang til oplysninger om planeten.Brian LaMacchiaDirector, Security &amp; Cryptography, Microsoft ResearchNøglen kryptografiske fremskridt i 2016 vil være præsentationen af en end-to-end krypteret TLS-forbindelse baseret på kvante sikre offentlig-nøgle algoritmer til brug ved fortroligheds data og digitale signaturer som godkendelse. Implementering af kvantecomputere i løbet af de næste 15 år vil nødvendiggøre opgradering af alle vores eksisterende offentlige-nøgle krypteringssystemer til nye kvante-resistente algoritmer, og en kvante-resistent TLS til alle https:(sikre webforbindelse) er første skridt.Preston McAfeeChief Economist, MicrosoftØkonomer har svært ved at forstå, hvorfor den nuværende vej ud af finanskrisen indebærer lave produktivitetsstigninger sammenlignet med tidligere tiders kriser og tænker derfor, om en lavere produktivitet er den ny normal. Jeg forventer, at denne gåde vil blive besvaret i 2016. Svaret kan få stor betydning for regeringens politik for at sætte gang i væksten. Det kan selvfølgelig vise sig, at problemet ligger i målefejl, og at vi vokser normalt.Sriram RajamaniAssistant Managing Director, Microsoft Research IndiaVi vil se starten på en ny generation af systemløsninger, der garanterer sikkerhed, selv om deres operativsystemer eller anden infrastruktur bliver udfordret af hackere.Krysta SvoreSenior Researcher, Microsoft Research NExTLanceringen af en topologisk qubi t vil blive et nøgleteknologi gennembrud for kvantecomputere i 2016.Chandu ThekkathManaging Director, Microsoft Research IndiaPrisbillige adgangs teknologier, så som TV white spaces og overkommelige mobile enheder, vil gøre internettet mere udbredt i Indien.Jeannette WingCorporate Vice President, Microsoft ResearchVidenskabeligt gennembrud: László Babai vil offentliggøre sit bevis for, at grafen isomorfi vil gå fra næsten-eksponentiel til næsten-polynomiel, hvilket vil styrke forskning i algoritmer og kompleksitetsteori.Informationsteknologi: Vi vil se flere sensorer og enheder til overvågning af metaboliske tilstande, så privatpersoner i større omfang kan måle deres egen sundhed og velvære ud over blot hjertefrekvens..
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-12-09
+          &nbsp;·&nbsp; e5674109
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.567</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Harry Shum forlader Microsoft efter 23 år</h4>
+        <div>
+            Efter 23 år hos Microsoft fratræder Harry Shum sin stilling som Executive Vice President for Artificial Intelligence &amp; Research hos Microsoft. Han afløses af Microsofts nuværende teknologichef, Kevin Scott, som tiltræder sin nye stilling i begyndelsen af 2020. I 2016 blev Harry Shum udnævnt til chef for Microsofts 'Artificial Intelligence and Research group'. Det er endnu uklart, hvad Harry Shum skal foretage sig i fremtiden. Det skriver CNBC Redaktionen
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-11-14
+          &nbsp;·&nbsp; e77021a8
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.74</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.767</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft i stort opkøb: Overtager leverandør til hospitaler</h4>
+        <div>
+          Nuance hjælper mange hospitaler i USA med journalføring. Nu køber Microsoft Nuance for over 100 milliarder.I sin næststørste handel nogensinde overtager Microsoft selskabet Nuance, der er en teknologivirksomhed specialiseret i kunstig intelligens.Overtagelsen sker for en samlet pris på cirka 123 milliarder kroner. Betalingen sker kontant. Det oplyser Microsoft i en pressemeddelelse mandag.Nuance står bag en teknologi, der i stor grad bliver anvendt af hospitaler til at lave journalføring på patienter. I USA anvendes teknologien på mere end tre ud af fire hospitaler, står der i pressemeddelelsen.Med overtagelsen styrker Microsoft sig gevaldigt på sundhedsområdet. Faktisk regner it-giganten selv med, at den fordobler sit potentielle sundhedsmarked til over 3000 milliarder kroner.Forud for overtagelsen har Microsoft og Nuance samarbejdet siden 2019. I den periode har de samarbejdet om diverse digitale sundhedsløsninger.Blandt andet har de to virksomheder samarbejdet om løsninger, der har skullet løfte kommunikationsmulighederne mellem sundhedsfolk og patienter.Den slags muligheder har været i ekstra høj kurs under coronapandemien./ritzau/Få dagens vigtigste nyheder fra erhvervplus.dk direkte i din indbakke. Du kan til hver en tid afmelde dig igen.
+        </div>
+        <footer>
+          <em>Erhvervplus.dk</em>
+          &nbsp;·&nbsp; 2021-04-12
+          &nbsp;·&nbsp; e8360288
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.855</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.512</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.585</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft investerer over 1 mia. dollar i Elon Musk-selskab</h4>
+        <div>
+          Det skriver Bloomberg News.Microsoft har med investeringen sikret sig, at Open AI vil anvende it-kæmpens Cloud program, Azure, når det skal træne og udvikle den kunstige intelligens-software.De to selskaber vil med tiden udvikle nye supercomputer-teknologier, og Microsoft vil med investeringen være forskningsselskabets foretrukne partner, når dets produkter på et tidspunkt skal på markedet.Open AI blev stiftet i 2014, hvor Elon Musk og Peter Thiel, der er stifter af Paypal, smed 1 mia. dollar i selskabet. Det var for at matche eller forbedre teknologierne, der blev udviklet af kæmperne Google, Apple og Microsoft.Elon Musk forlod bestyrelsen sidste år på grund uenigheder om selskabets fremtidsplaner.
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2019-07-22
+          &nbsp;·&nbsp; e746e9b5
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.543</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.588</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.559</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft finder software-fejl med kunstig intelligens</h4>
+        <div>
+            Model kan genkende sikkerhedsfejl i 99 procent af tilfældende. Microsoft har indsamlet 13 millioner arbejdsopgaver og fejl siden 2001 og har brugt disse data til at oprette en maskinlæringsmodel til at få has på softwarebugs.Ifølge virksomheden kan modellen udpege fejl, som har at gøre med sikkerhed i 99 procent af tilfældene. Tillige identificeres de vigtigste fejl 97 procent af tiden. Det skriver SD Times »Hos Microsoft skaber 47.000 udviklere næsten 30.000 fejl om måneden. De gemmes på over 100 AzureDevOps- og Github-lagre. For bedre at opmærke og prioritere programfejl i den skala kunne vi ikke bare anvende flere mennesker til problemet. Store mængder af semi-kuraterede data er perfekte til maskinlæring,«  skriver Microsoft i et blogindlæg
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-04-21
+          &nbsp;·&nbsp; e7ac5530
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.538</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.612</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.563</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mere hjemmearbejde giver Microsoft medvind i regnskab</h4>
+        <div>
+          Microsoft har klaret det bedre end ventet, viser softwaregigantens regnskab fra årets første tre måneder.Microsoft slår analytikernes forventninger i det kvartalsregnskab, som it-giganten fremlagde tirsdag.Det er især den større efterspørgsel på cloud-baserede løsninger, der giver softwaregiganten medvind. De er blevet brugt mere under pandemien, hvor flere har arbejdet hjemme eller fået virtuel undervisning.De samlede indtægter i Microsofts afdeling for cloud-baserede løsninger var 15,1 milliard dollar. Analytikerne havde regnet med, at afdelingen ville have indtægter på 14,92 milliarder dollar.Regnskabet omhandler selskabets tredje kvartal, der dækker januar til og med marts.Ifølge softwarefirmaet voksede cloud-løsningen Azure, der konkurrerer med løsninger fra både Amazon og Google, med 50 procent i kvartalet. Det er en smule lavere end kvartalet forinden, men stadig bedre end ventet.Microsoft, der har base i Redmond, Washington i USA, er et af verdens mest værdifulde selskaber med en værdi omkring 12 billioner danske kroner. En billion er en million millioner.Selskabet fortsætter med at øge sit fokus på cloud-baseret software.Tidligere på måneden meddelte Microsoft, at det i sin næststørste handel nogensinde ville overtage selskabet Nuance, der er en teknologivirksomhed specialiseret i kunstig intelligens.Overtagelsen sker for en samlet pris på cirka 123 milliarder kroner. Betalingen sker kontant.Microsoft og Nuance har samarbejdet siden 2019. I den periode har de samarbejdet om diverse digitale sundhedsløsninger.Blandt andet har de to virksomheder samarbejdet om løsninger, der har skullet løfte kommunikationsmulighederne mellem sundhedsansatte og patienter.Den slags muligheder har været i ekstra høj kurs under coronapandemien./ritzau/Reuters
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2021-04-27
+          &nbsp;·&nbsp; e83d6972
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.954</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.581</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft investerer 1 milliard dollar i kunstig intelligens</h4>
+        <div>
+          Microsoft investerer én milliard dollar i AI-udviklingsvirksomheden OpenAI, som er stiftet af Elon Musk og Sam Altman.Samarbejdet mellem Microsoft og OpenAI er ifølge en pressemeddelelse et flerårigt og eksklusivt partnerskab.Målet er at tilføje nye teknologier med kunstig intelligens til Microsofts cloud-platform, Azure, og OpenAI vil samtidig åbne for at eksisterende tjenester kan fungere på Azure.Relateret jobannonce: Associate/Assistant ProfessorOpenAI blev etableret med det formål at udvikle »venligere« kunstig intelligens, idet Elon Musk ser det som en potentiel trussel, hvis teknologien ikke udvikles ansvarligt.Microsoft vil nu også være »OpenAIs foretrukne partner« , når det kommer til kommercialisering af nye AI-teknologier, som selskabet udvikler i fremtiden.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-07-23
+          &nbsp;·&nbsp; e74707d2
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.56</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.533</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft: Vi fanger 10 millioner login-angreb om dagen</h4>
+        <div>
+          Data fra Microsoft Azure Active Directory viser, at millioner af Office 360-brugere udelukkende reddes af to-faktor-autentifikationMicrosoft har netop udsendt seneste udgave af deres halvårlige Security Intelligence Report, der kigger på sikkerhedslandskabet og it-trusler. Det fortæller webmediet Ars Technica.For første gang indeholder rapporten også data som Microsoft har indsamlet via deres Azure Active Directory, der håndterer logins for Office 360-virksomhedskunder. I alt 550 millioner brugere, fordelt på 8,24 millioner kunder, som foretager 1,3 milliarder logins dagligt.Til sammenligning håndterer Microsofts login-system for private kunder 13 milliarder logins om dagen.Ifølge Ars Technica genererer disse mange logins en meget stor datamængde, som Microsoft benytter i et machine learning-system til at lave modeller for typisk brugeradfærd. Noget der igen benyttes til at opdage, om uønskede gæster forsøger at få adgang til en brugers konti   atypisk adfærd som usædvanligt tidspunkt på døgnet eller geografisk placering kan sætte alarmklokkerne i gang.Sker dette tvinges brugeren til at foretage en to-faktor-autentifikation. Ifølge Microsoft fanger selskabet op imod 10 millioner sådanne login-forsøg om dagen. En overvejende stor del af disse forsøg benytter både det rette brugernavn og kodeord, og fejler udelukkende på netop to-faktor-autentifikationen.De IP-adresser, hvorfra der foretages hyppige forsøg på sådanne falske logins, blokeres naturligvis. Ifølge Microsoft befinder 49 procent af de nuværende blokerede IP-adresser sig i Asien, mens Syd Amerika ligger på en andenplads med 20 procent.Seks år gammel sårbarhed spøger stadigArs Technica fortæller, at en af de mere pudsige ting, der kan læses ud af Microsofts rapport, er, at den anden mest almindelige Malware-familie, som Microsofts systemer støder på, udnytter en sårbarhed i Windows kendt som CplLnk   som også blev benyttet af Stuxnet.Fejlen blev fikset af Microsoft i 2010, og har aldrig været en del af hverken Windows 8 eller Windows 10, så som sådan burde der ikke være særlig mange sårbare systemer tilbage. Alligevel er CplLnk åbenbart stadig populært blandt Malware-programmører.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-05-06
+          &nbsp;·&nbsp; e5b25fff
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.733</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Minus blev større: Whaii ApS får nyt millionminus</h4>
+        <div>
+          Underskuddet i selskabet Whaii ApS i Nr Bjert voksede sidste år. Det fremgår af det nye regnskab for 2020, som selskabet netop har offentliggjort hos Erhvervsstyrelsen. I det seneste regnskabsår er underskuddet steget fra -601.218 til -1,5 millioner kroner før skat.Antallet af ansatte var i gennemsnit på 1 i 2020, når man regner om til fuldtidsmedarbejdere. Året før blev tallet ikke oplyst.Selskabets bruttotab er gået den forkerte vej - fra -516.848 kroner til -599.360 kroner i det seneste regnskab.Bruttofortjeneste eller bruttotab viser det samlede salg, efter udgifter til blandt andet varer og produktion er trukket fra. Tallet fortæller om aktiviteten i virksomheden, og det har især interesse, når firmaet som her ikke oplyser størrelsen på dets omsætning.Egenkapitalen faldt fra -422.259 til -1,5 millioner kroner og er dermed stadig negativ.Firmaet ledes af en direktion, der består af Michael Skovsgaard og Morten Kongsbak. I første omgang er det MICHAEL SKOVSGAARD ApS,MISKO Holding ApS,Friis K. A/S,StartupBoost A/S, der står som ejere. I sidste ende er Michael Skovsgaard den dominerende ejer.Whaii ApS har oplyst, at man arbejder inden for branchen &quot;Anden udgivelse af software.&quot; Selskabets formål er beskrevet således: &quot;Selskabets formål er at udvikle, markedsføre og sælge online platforme&quot;I regnskabet knytter virksomhedens ledelse selv følgende ord til tallene:&quot;Development in activities and financesThe annual result shows a loss of DKK 1,7 mill, which is in line with management expectations considering that this is the company's start-up phase. The company has invested heavily in the development of the company's digital recruitment solutions, which are listed as development projects under construction. Management expects that the company's equity will be re-established by future positive development of the company's operations derived from the posted development projects. During the first half of 2020, the company completed developing the primary platform of an intelligent recruitment and screening solution based on an artificial intelligence platform. Thus, in March 2020, the company began sales and marketing primarily at the current stage focused on the UK local market. The company's sales and market activities and results have been affected by the COVID-19 situation. However, during spring 2020, the company has succeeded in entering into agreements with investors and the Danish Growth Fund to secure financing of the planned increase of company sales, market and development activities. The company has thus built up a growing pipeline of leads. The company has simultaneously improved the primary platform, including developing an integration platform for other HR systems, a Spanish version and other features to optimize customers' user value and user experience. By the end of 2020, the company has introduced two solutions in the market based on the primary platform. Those two solutions cater to a wide range of companies and industries, primarily in the native English-speaking markets, to help companies making better hiring decisions and reduce resource consumption in the recruitment process with this new and digitized approach. We refer to note 1 regarding going concern.&quot;Hjemsted: Nr BjertCVR-nummer: 39871769Branche: Anden udgivelse af softwareDirektion: Michael Skovsgaard og Morten KongsbakEjer: Michael SkovsgaardRegnskabstal for 2020 (Tal for forrige regnskabsår i parentes):Brutto-fortjeneste/-tab: -599.360 kr. (-516.848 kr.)Resultat før skat: -1,5 millioner kr. (-601.218 kr.)Resultat efter skat: -1,7 millioner kr. (-472.259 kr.)Egenkapital: -1,5 millioner kr. (-422.259 kr.)Antal ansatte: 1 (0)
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2021-05-03
+          &nbsp;·&nbsp; e83f4b9a
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.618</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.905</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hardware i hverdagen</h4>
+        <div>
+          P1 10.03 Software og algoritmer spiller naturligvis en helt central rolle i vores hverdag, men alskens former for hardware fylder stadig en masse. Det gælder både computere og andre tilsvarende mobile apparater og så særligt udviklede dimser, der for eksempel kan spille musik, samle data fra vores kroppe eller hjælpe os, når vi skal lave mad. Hør meget mere om alle tre dele i &quot; Harddisken: Dimser der hjælper med musik, måling og madlavning&quot;. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2015-07-31
+          &nbsp;·&nbsp; e524cee1
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.97</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.59</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Gigant handel af Microsoft: Betaler kontant</h4>
+        <div>
+          I sin næststørste handel nogensinde overtager Microsoft selskabet Nuance, der er en teknologivirksomhed specialiseret i kunstig intelligens. Overtagelsen sker for en samlet pris på cirka 123 milliarder kroner.Betalingen sker kontant. Det oplyser Microsoft i en pressemeddelelse mandag.Nuance står bag en teknologi, der i stor grad bliver anvendt af hospitaler til at lave journalføring på patienter. I USA anvendes teknologien på mere end tre ud af fire hospitaler, står der i pressemeddelelsen.Opdateres ...
+        </div>
+        <footer>
+          <em>EkstraBladet.dk</em>
+          &nbsp;·&nbsp; 2021-04-12
+          &nbsp;·&nbsp; e836012c
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.758</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.55</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.59</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Widex har allerede glæde af data fra intelligent høreapparat</h4>
+        <div>
+          Det skal via såkaldt &quot;machine learning&quot; forbedre brugerens oplevelse på baggrund af tilbagemeldinger fra brugeren selv.Og allerede nu har det også kastet en stor mængde anonyme data af sig, som Widex kan bruge i den videre produktudvikling.- Vi kan nu se, at Evoke-brugerne har taget muligheden for at gøre det til sig, og i processen hjælper de os med at forstå mere om dem. Den information vil hjælpe os til at lave Evoke og fremtidige høreapparater endnu bedre, siger Jens Brehm Nielsen, der er produktarkitekt i Widex' forsknings- og udviklingsafdeling og har været med i udviklingen af teknologien bag Widex Evoke, i en meddelelse.Blandt andet kan Widex ud fra de første vurderinger se, at mange brugere har valgt at &quot;tagge&quot; en given indstilling med eksempelvis &quot;arbejde&quot; eller &quot;hjemme&quot;, og det giver nys om, at i hvert fald den funktion er populær.Widex Evokes machine learning-teknologi fungerer ved, at brugerne via den medfølgende applikation vælger mellem foretrukne lydindstillinger på baggrund af genererede forslag, og de data kan høreapparatet så senere bruge til at forbedre lydoplevelsen i alle typer situationer.Dermed bliver høreapparatet altså klogere, hver gang brugerne giver tilbagemeldinger. Det betyder, at brugerne ikke selv behøver huske udfordringerne fra de enkelte situationer for så senere at få høreapparatet justeret hos en audiolog.Over tid indsamles alle data fra høreapparaterne anonymt i et stort økosystem. På den måde kan Widex lade Evoke-apparaterne &quot;lære af hinanden&quot; og selv få adgang til brugernes behov.Widex regner selv med, at introduktionen af Evoke også vil være med til at skære ned på antallet af brugernes genbesøg hos audiologer for at finindstille høreapparatet./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Penge.Børsen.dk</em>
+          &nbsp;·&nbsp; 2018-08-28
+          &nbsp;·&nbsp; e6dfce41
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.767</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.94</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Mere hjemmearbejde giver Microsoft medvind i regnskab</h4>
+        <div>
+          Microsoft har klaret det bedre end ventet, viser softwaregigantens regnskab fra årets første tre måneder.Microsoft slår analytikernes forventninger i det kvartalsregnskab, som it-giganten fremlagde tirsdag.Det er især den større efterspørgsel på cloud-baserede løsninger, der giver softwaregiganten medvind. De er blevet brugt mere under pandemien, hvor flere har arbejdet hjemme eller fået virtuel undervisning.De samlede indtægter i Microsofts afdeling for cloud-baserede løsninger var 15,1 milliard dollar. Analytikerne havde regnet med, at afdelingen ville have indtægter på 14,92 milliarder dollar.Regnskabet omhandler selskabets tredje kvartal, der dækker januar til og med marts.Ifølge softwarefirmaet voksede cloud-løsningen Azure, der konkurrerer med løsninger fra både Amazon og Google, med 50 procent i kvartalet. Det er en smule lavere end kvartalet forinden, men stadig bedre end ventet.Selskabets afdeling for softwareudvikling, der blandt andet omfatter programmerne Office og Teams, som mange formentlig har stiftet bekendtskab med under pandemien, klarer det også bedre end ventet.Salget her var i kvartalet 13,6 milliarder dollar. Forventningen lød på 13,49 milliarder dollar i årets tre første måneder.Microsoft, der har base i Redmond, Washington i USA, er et af verdens mest værdifulde selskaber med en værdi omkring 12 billioner danske kroner. En billion er en million millioner.Selskabet fortsætter med at øge sit fokus på cloud-baseret software.Tidligere på måneden meddelte Microsoft, at det i sin næststørste handel nogensinde ville overtage selskabet Nuance, der er en teknologivirksomhed specialiseret i kunstig intelligens.Overtagelsen sker for en samlet pris på cirka 123 milliarder kroner. Betalingen sker kontant.Microsoft og Nuance har samarbejdet siden 2019. I den periode har de samarbejdet om diverse digitale sundhedsløsninger.Blandt andet har de to virksomheder samarbejdet om løsninger, der har skullet løfte kommunikationsmulighederne mellem sundhedsansatte og patienter.Den slags muligheder har været i ekstra høj kurs under coronapandemien./ritzau/reutersOpdateret 27. april 2021 kl. 23:23
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2021-04-28
+          &nbsp;·&nbsp; e83d70fe
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.958</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.649</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.574</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.572</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft taber terræn i AI-ræs: Tredjepart-udvikling til Cortana udskudt uden forklaring</h4>
+        <div>
+          Microsofts digitale assistent Cortana skulle i februar være udvidet med et såkaldt skill kit, der gør det muligt for tredjeparts-virksomheder at udvikle nye evner til AI'en.Men her i slutningen af marts har Microsoft hverken udsendt skill kit eller en forklaring på forsinkelsen, skriver CIO.Cortana Skill Kit, der fortsat er i en privat beta, er en kritisk komponent, hvis Cortana skal konkurrere med assistenter som Apples Siri og Amazons Alexa. Sidstnævnte kan pt. bryste sig af over 10.000 integrationer med eksterne tjenester som banker, butikker og rejsebureauer.Microsoft bagud med tredjepartsappsNår det kommer til at understøtte interaktionen med tredjeparter er Microsoft ved at flade bagud, siger forskningsleder hos IDC Jonathan Gaw.»Udfordringen er, at med hver dag der går, falder de en smule længere bagud i forhold til Amazon,«siger han.Forsinkelsen bliver dog ikke nødvendigvis katastrofal for Cortana. Ifølge Microsoft bliver det nemt for udviklere at portere skills fra fx Alexa til Cortana. Hvis det viser sig at holde stik, kan Microsoft indhente konkurrenterne på kortere tid, end det har taget for Amazon at opbygge skill-kataloget til Alexa.CIO vurderer, at forsinkelsen kan hænge sammen med en større opdatering til Windows 10, som selskabet lige nu arbejder på.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-03-27
+          &nbsp;·&nbsp; e62f47cd
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.858</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.588</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny fejl i Azure Active Directory holdt Microsoft-kunder logget ud i 14 timer</h4>
+        <div>
+          Microsoft undskylder mange gange over for sine kunder, som på tværs af alle firmaets platforme oplevede store problemer med at logge ind først på ugen.Hvad end du bruger Microsofts produkter i dit daglige arbejde, Office 365 i din husstand eller om du spiller over X-Box Live, oplevede du givetvis udfald og problemer med at logge ind d. 15 og 16 marts.Den fulde liste over påvirkede Microsoft-produkter omfatter, udover ovenstående, alt fra Microsoft Teams, Exchange Online, Forms, Xbox Live, Intune, Outlook.com, Office Web, SharePoint Online, OneDrive for Business til Yammer, samt andre.»Vi forstår hvor umådeligt hårdt det her rammer og hvor uacceptabelt, det er. Vi fortsætter med at gøre tiltag, der skal forbedre Microsoft Azure-platformen og vores processer for at undgå, at lignende sker igen i fremtiden,«  skriver Microsoft i en redegørelse for hændelsenNøgle-signering slog fejl igen og igenKonkret var det en fejl i nøgle-rotationen, når der skulle signeres nøgler til at understøtte Azure Active Directory's brug af Microsofts Identitets-platform, OpenID.»Når systemet fungerer, sørger et automatiseret system, af sikkerhedshensyn, for at fjerne nøgler, der ikke længere er i brug ud fra en tidsbetragtning,«  skriver Microsoft.Problemet var ifølge Microsoft, at man fra firmaets side havde brug for at beholde en specifik nøgle i forbindelse med en stor cloud-migrering, hvor mange servere skulle flyttes.Man ændrede derfor i tidsindstillingerne for den algoritme, der sletter nøgler. Det førte til en række fejl, der betød, at nøgler, der stadig var i brug, blev slettet. Det første til ovenstående, globale problemer med ikke at kunne logge ind eller forblive logget ind.Måtte panik-tilbagerulleMicrosoft indså hurtigt, at man måtte gøre noget og rullede tilbage til versionen inden man ændrede nøgle-signeringen, men det var for sent.Cloud-migreringen var nået så langt, at man nu havde to forskellige server-versioner, der ikke håndterede caching ens. Det skabte nye problemer, selvom tilbagerulningen hovedsagelig løste problemerne.Det er ikke første gang det sidste år, Microsofts cloudservices skranter. Tilbage i september oplevede Office 365-kunder i hele verden, at platformen og de Microsoft-tjenester, der er afhængige af den, gik i knæ.Dengang var det også i en Azure Active Domain-service, den var gal.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2021-03-19
+          &nbsp;·&nbsp; e82ce84d
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.764</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.696</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft i stort opkøb: Overtager leverandør til hospitaler</h4>
+        <div>
+          Nuance hjælper mange hospitaler i USA med journalføring. Nu køber Microsoft Nuance for over 100 milliarder.I sin næststørste handel nogensinde overtager Microsoft selskabet Nuance, der er en teknologivirksomhed specialiseret i kunstig intelligens.Overtagelsen sker for en samlet pris på cirka 123 milliarder kroner. Betalingen sker kontant. Det oplyser Microsoft i en pressemeddelelse mandag.Nuance står bag en teknologi, der i stor grad bliver anvendt af hospitaler til at lave journalføring på patienter. I USA anvendes teknologien på mere end tre ud af fire hospitaler, står der i pressemeddelelsen.Med overtagelsen styrker Microsoft sig gevaldigt på sundhedsområdet. Faktisk regner it-giganten selv med, at den fordobler sit potentielle sundhedsmarked til over 3000 milliarder kroner.- Kunstig intelligens er lige nu den vigtigste prioritet indenfor teknologi, og sundhedspleje er dens mest presserende anvendelse, siger Satya Nadella, der er administrerende direktør i Microsoft, i pressemeddelelsen.Forud for overtagelsen har Microsoft og Nuance samarbejdet siden 2019. I den periode har de samarbejdet om diverse digitale sundhedsløsninger.Blandt andet har de to virksomheder samarbejdet om løsninger, der har skullet løfte kommunikationsmulighederne mellem sundhedsfolk og patienter.Den slags muligheder har været i ekstra høj kurs under coronapandemien.- Sammen med partnere vil vi bringe løsninger indenfor kunstig intelligens til professionelle rundt om i hele verden for at kunne hjælpe til med at skabe bedre beslutninger og mere meningsfulde forbindelser, siger Satya Nadella.Overtagelsen af Nuance er Microsofts næststørste nogensinde. Den største er stadig overtagelsen af det sociale netværk LinkedIn i 2016. I den handel skulle Microsoft betale cirka 169 milliarder kroner.Nuance blev etableret i 1992 og kan dermed fejre 30 års jubilæum til næste år. Ved udgangen af september sidste år havde selskabet mere end 7100 ansatte.Til sammenligning havde Microsoft ved udgangen af juni samme år i omegnen af 163.000 ansatte. Det vil sige mere end 20 gange så mange. /ritzau/Eksternt indhold kan ikke vises på grund af manglende samtykke til marketing cookies.
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2021-04-12
+          &nbsp;·&nbsp; e836029b
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.832</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.563</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Efter Twitter-bot-ballade: Microsoft frigiver værktøj til at bygge chatrobotter</h4>
+        <div>
+          Microsofts open source bot-værktøj indeholder maskinoversættelse og forbindelser til Skype og Office 365.Microsoft blev nødt til at lukke munden på Twitter-robotten Tay, efter den blev godt og grundigt 'trollet' og fodret med data, der fik den til at udtale sig groft om feminister og positivt om nazismen. Tay skulle have demonstreret, hvor langt Microsoft var nået med chatrobotter kombineret med machine learning.Nu får alle mulighed for at bruge i hvert fald den ene halvdel af Microsofts værktøjskasse til at bygge chatrobotter. Oplæring af robotterne ved at lytte til 4chan-brugere er næppe tilrådeligt, men man kan bygge mere simple robotter ved hjælp af et nyt open source-værktøj, Microsoft Bot Framework .Værktøjet er beregnet til udviklere, som gerne vil lave en chatrobot, men gerne vil kunne udnytte eksisterende funktionalitet såsom maskinoversættelse fra 30 sprog og forbindelsesled til eksempelvis Skype eller Office 365.En bot kan skrives i enten Node.js eller C# og forbinder så via et REST API med Microsofts kanaler til brugeren på eksempelvis en hjemmeside.Fordelen er, at man kan bruge den samme bot-kode til flere kanaler, så når man har sin pizzabestillings-bot til Skype, kan den også bruges via sms.Man vil også kunne bruge en række af de værktøjer, Microsoft har frigivet til eksempelvis kunstig intelligens, Microsoft Cognitive Services . Det kunne eksempelvis være Microsofts API til kundeanbefalinger , så hvis man bestiller en burger, vil robotten kunne foreslå, at man også bestiller pommes frites. Eller det kunne være API'et til at vurdere, om kunden er utilfreds .
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-03-31
+          &nbsp;·&nbsp; e5a3afe1
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.769</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.659</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.672</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft indgår trecifret millionaftale med Københavns Universitet om kvantecomputere</h4>
+        <div>
+          Professor Charles Marcus, der her ses i laboratoriet ved Center for Quantum Devices på Niels Bohr Institutet, bliver nu også faglig direktør for Microsoft Station Q, Copenhagen.Den længe ventede aftale mellem Microsoft og Københavns Universitet er nu underskrevet. Forskningssamarbejdet styrkes, og Microsoft opretter egen udviklingafdelling tæt på universitetsforskerne.Af Jens Ramskov 6. sep 2017 kl. 21:04For ti måneder siden kunne Ingeniøren som de første berette, at en stor samarbejdsaftale mellem Microsoft og Københavns Universitet omkring kvantecomputere var tæt på at være på plads, og at Microsoft i den forbindelse ville oprette egen udviklingsafdeling i København.På daværende tidspunkt forventede universitetets prorektor Thomas Bjørnholm, at en formel aftale kunne være klar allerede i begyndelsen af 2017:Så hurtigt gik det ikke. Aftalen blev underskrevet 6. september i et tætpakket auditorium 1 på H.C. Ørsted Instituttet af rektor Henrik Wegener, institutleder for Niels Bohr Institutet Jan W. Thomsen og David Pritchard, COO for AI and Research ved Microsoft under overværelse af forskere, studerende og uddannelses- og forskningsminister Søren Pind.Der er ingen tvivl om, at Københavns Universitet med denne store og omfattende aftale træder på jomfruelig grund, og det nok forklaringen på, at det har taget så lang tid at få den formelle aftale på plads.Få faktaDet er ikke mange detaljer i aftaleteksten, som er kendt, eller som Københavns Universitet ønsker at oplyse.Microsofts investering angives at være et trecifret millionbeløb i udstyr og faciliteter over en periode på fem år. Andre har oplyst, at aftalen i omfang svarer til tre grundforskningscentre - og så vil beløbet være omkring 200 mio. kr eller noget mere.Det er også oplyst, at godt et dusin Microsoft-medarbejdere i form af ingeniører og udviklere nu arbejder på Københavns Universitet. Microsoft-medarbejdere vil senere flytte ind i en egen bygning ved Universitetsparken.De skal bl.a. arbejde med de tilknyttede ingeniørmæssige discipliner omkring kvantecomputere som eksempelvis kølesystemer, der skal udvikles sideløbende med den fundamentale forskning i kvantebit, som holder universitetsforskerne travlt beskæftiget.Vent-og-se-holdning hos mange forskereOmkring rettighederne til forskningsresultater oplyses det blot, at -aftalen afspejler parternes interesser og tilgodeser gældende lovgivning og retningslinjer på området-.Disse vage formuleringer bekymrer enkelte forskere på Niels Bohr Institutet uden for forskningsgruppen ved Center for Quantum Devices, som er omfattet af aftalen, da de bekymrede forskere mener, det kan gå ud over den frie ret til frit at publicere.To højtprofilerede kvanteforskere på Niels Bohr Institutet, som ikke er omfattet af aftalen med Microsoft og heller ikke kender aftalen i detaljer, er dog ikke umiddelbart bekymret for forskningsfriheden.De ser først og fremmest aftalen som en styrkelse af Københavns Universitets generelle anseelse, som også indirekte kan være til gavn for dem og deres forskningsgrupper.Hovedholdningen hos de fleste forskere Ingeniøren talte med ved underskrivelsen af samarbejdsaftalen er, at nu må man vente og se, hvordan det kommer til at fungere i praksis.Langvarigt samarbejde med MicrosoftCenter for Quantum Devices ledes af professor Charles Marcus, der for næsten seks år siden blev hentet til Københavns Universitet fra Harvard University i Boston. Han havde allerede kontakt til Microsoft, inden han kom til København..Center for Quantum Devices er støttet med store bevillinger af både Grundforskningsfonden, Innovationsfonden og Villum Fonden. Microsoft har også støttet forskningen i alle årene.Den nye aftale er en konsekvens af, at Microsoft sidste år erklærede, at nu gik man all-in for at bygge en kvantecomputere så hurtigt som muligt. Det sker i skarp konkurrence med andre store teknologivirksomheder og ikke mindst Google, der både organisatorisk og teknologisk har valgt en anden tilgang, Læs også: Hvem kommer først med kvantecomputeren? Microsoft eller Google?Microsofts aktiviteter inden for kvantecomputere foregår rundt omkring i verden under betegnelsen Station Q.David Pritchard forklarede Ingeniøren, at Microsoft havde valgt denne politik med at samarbejde med de bedste i verden, hvor de måtte være, frem for at hyre den til at arbejde i hovedkontoret i Redmond ved Seattle i USA., fordi han mener, at det er den måde, forskningen hurtigst kan gøre fremskridt.De øvrige afdelinger af Station Q findes i Delft i Holland, Sydney i Australien og ved Purdue University i USA.Andre peger på, at Microsofts politik med et verdensomspændende samarbejde også kan give et fortrin i forbindelse med rekruttering den dag, kvantecomputeren måtte blive til virkelighed.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-09-06
+          &nbsp;·&nbsp; e66778ab
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.72</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.668</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft sætter rekord i talegenkendelse</h4>
+        <div>
+          Microsofts engelske talegenkendelses-AI har rekordlav fejlprocent.Microsoft har lagt sig i førertrøjen i kampen med Google og IBM om at udvikle den bedste talegenkendelses AI.De præsenterede nemlig en fejlprocent på 5,1 procent i Switchboard-testen i søndags. Den test går ud på, at transskribere forskellige telefonsamtaler mellem fremmede mennesker om alt fra sport til politik, og er blevet brugt som benchmark indenfor feltet i 20 år.Microsoft rammer dermed den fejlprocent, som IBM mener man kan forvente, når en person transskriberer.Deep-learning driver feltet fremadMicrosoft krediterer deres succes til deres egen deep-learning software, Microsoft Cognition Toolkit, der er brugt til at optimere både systemets arkitektur og hyperparametre. Det hele er drevet er Azure-s GPU cloud.Google bruger også machine-learning til at optimere deres talegenkendelses-artkitektur. De præsenterede i maj en fejlmargin på 4,9 procent, men har ikke offentliggjort hvilken test de anvender. IBM præsenterede i marts en fejlprocent på 5,5 procent.Hvis du vil læse mere om Microsofts arbejde med talegenkendelse har de udgivet et research-paper i forbindelse med annonceringen her.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-08-23
+          &nbsp;·&nbsp; e6622fc1
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.682</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.623</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Høreapparater med intelligens</h4>
+        <div>
+          ROSKILDE: Høreklinikken Din Hørespecialist i Gullandsstræde 9 i Roskilde har mandag den 20. august på verdens første høreapparater med kunstig intelligens.Grundtanken bag de nye Evoke-høreapparater fra danske Widex er, at de hele tiden lærer om brugeren og derfor bliver kontinuerligt bedre til at justere sig til de mange forskellige lydmiljøer, brugerens hverdag byder på.Widex Evoke præsenteres mandag klokken 13. Til arrangementet vil det være muligt at se modellerne og bestille et sæt hjem til prøve i ens vante omgivelser. Man kan tilmelde sig på www.dinhs.dk/ infodag.
+        </div>
+        <footer>
+          <em>Dagbladet Roskilde</em>
+          &nbsp;·&nbsp; 2018-08-18
+          &nbsp;·&nbsp; e6dcf9d8
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.712</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.546</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vinder stor bevilling: Sådan vil dansk professor bruge 18 millioner kroner</h4>
+        <div>
+          Professor Kim Guldstrand Larsen fra Aalborg Universitet vinder stor pris fra europæisk forskningsråd på 18 millioner. Pengene skal blandt andet bruges på forskning i algoritmer til kritisk software inden for sundheds- og transportsektoren.Af Henrik Nordstrøm Mortensen Mandag, 6. juli 2015 - 11:20Vi får langt mere sikkerhedskritisk software i fremtiden til at styre alt fra vores biler til pacemakere. Derfor er der brug for langt bedre forskning i at sikre, at forstå og forbedre de algoritmer og den software, som ligger bag det.Men Danmark er allerede godt med, og derfor løb professor Kim Guldstrand Larsen fra Aalborg Universitets Institut for Datalogi også med Det Europæiske Forskningsråds (ERC) hæderkronede pris for netop forskningen inden for de områder. Bevillingen er godt 18 millioner kroner værd.Professor Kim Guldstrand Larsen fra Aalborg Universitet. Foto: Aalborg UniversitetKim Guldstrand Larsen er glad for anerkendelsen og vil fortsætte sin forskning inden for blandt andet matematiske modeller.»Vi er omgivet af så meget it og software, der også i stigende grad sikrer, at vores biler er sikrere og mere selvkørende, og at vores kunstige organer fungerer. Men vi har brug at forstå kompleksiteten i den type software endnu bedre. Især i udviklingsfasen,« siger Kim Guldstrand Larsen til Version2.Professoren har i flere år forsket i indlejrede systemer, model checking og machine learning. Hvis man skal udnytte og forstå kompleksiteten i fremtidens kritisk software, så er det vigtigt at kombinere grundlæggende modeller, man beregner software ud fra, og så lære af maskinintelligens.»Modeller er tidskrævende og har for lidt fokus på tidsaspektet. Altså det med, at store software- og it-systemer virker til tiden. Omvendt kan meget automatiseres, når softwaren kører. Det kender vi fra autofunktioner. Så det handler om at lave en god og fleksibel model for den software og så udnytte machine learning efterfølgende,« forklarer Aalborg-professoren.Han ser også energiforsyningen som et felt, der inden for hans forskning vil komme til at fylde mere.»Som samfund er vi i Danmark også temmelig afhængig it, når vi driver vores energiforsyning. Tænk på smart grids til overvågning og registrering af energiforbrug ude i de private hjem. Det er blot et af flere eksempler,« siger Kim Guldstrand Larsen.Læs ogsåEksperter er enige: Så usikkert er det intelligente elnetDanske ingeniører skal tilbage på skolebænken og lære om indlejret softwareNordjyder får 17 millioner til intelligent software
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-07-06
+          &nbsp;·&nbsp; e51cbdc2
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.839</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.544</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Århusiansk AI startup solgt til Indien for tocifret millionbeløb</h4>
+        <div>
+          Cactus Communications overtager dansk softwarevirksomhed, der udvikler kunstig intelligens for at understøtte sin teknologiske platform. Business: Indiske Cactus Communications, der er leverandør af videnskabelig kommunikation, har købt Unsilo, der er en århusiansk softwarevirksomhed med services indenfor kunstig intelligens (AI) og Natural Language Processing (NLP) med speciale i text mining, lingvistik og datascience. Unsilo er stiftet af Mads Rydahl og Thomas Laursen. Det oplyses i en pressemeddelelse, at der er tale om en handel til et tocifret millionbeløb. Medstifter Mads Rydahl var ansvarlig for produktdesignet af Siri, før det blev købt af Apple, og Thomas Laursen, medstifter og administrerende direktør for Unsilo udtaler i en pressemeddelelse: - Ved at kombinere Cactus' størrelse og rækkevidde indenfor forlags- og pharmaindustrierne med Unsilo's tekniske platform, kan vi forbedre både kvalitet og time-to-publication til fordel for alle vores kunder. 3000 eksperter Cactus Communications blev grundlagt i 2002 og er en ledende leverandør af videnskabelig kommunikation, der samarbejder med forskere på tværs af akademiske discipliner, universiteter, akademiske forlag, faglige sammenslutninger, og organisationer for at fremskynde forskningseffekten. Cactus er en international virksomhed med kontorer i London, Princeton, Singapore, Beijing, Shanghai, Tokyo, Seoul, Bengaluru og Mumbai. Der er en global arbejdsstyrke med over 3000 eksperter og kunder i 173 lande.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2020-01-29
+          &nbsp;·&nbsp; e78ec8d0
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.603</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.626</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.524</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk Microsoft-boss forlader job: Rykker op i global organisation og får ansvaret for Vesteuropa</h4>
+        <div>
+          &quot;Det er en spændende og stor opgave, som jeg nu kaster mig over. Vesteuropa er den næststørste region i Microsoft og dækker over 14 af verdens mest digitale og hurtigst voksende markeder. Sammen med dygtige kollegaer, skal vi finde nye måder at levere innovative AI-baserede løsninger til vores kunder og sikre yderligere tempo på Microsofts kultur-transformation i Europa. Her tager jeg mange, gode erfaringer med mig fra min tid i Microsoft Danmark og den udvikling, som organisationen har været igennem de sidste fire år,&quot; siger Marianne Dahl.Før hun kom til Microsoft i 2014 var Marianne Dahl Steensen landedirektør for forsikringsselskabet Codan. Derudover har hun været underdirektør i TDC og konsulent i Accenture.Skiftet betyder, at Nana Bule, der har været i Microsoft siden 2010 og siden 2016 har været ansvarlig for marketing og drift i Danmark, bliver ny adm. direktør for den danske del af forretningen.Nana Bule kalder det et fantastisk tidspunkt at overtage ansvaret for den danske Microsoft-forretning:&quot;Vores fortsatte succes ligger alene i evnen til at omsætte teknologi til værdi for vores kunders forretning, og i takt med digitaliseringen på tværs af industrier, ser vi en øget interesse for vores platform og løsninger. Med det for øje, bliver det min og den øvrige ledelses opgave at udvide vores stærke økosystem af partnere, og ikke mindst fortsætte transformationen af vores organisation og kulturen i Microsoft, for bedst muligt at kunne hjælpe vores kunder med at nå deres mål.&quot;Siden 1989 har Microsoft haft et dansk forretningsben, der lige nu beskæftiger mere end 500 medarbejdere.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-06-26
+          &nbsp;·&nbsp; e7402d56
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.879</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.808</kbd>
+            <kbd data-tooltip="Business &amp; innovation">L80_BUSINN&nbsp;0.519</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.63</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft: Google har lokket os i snydefælde</h4>
+        <div>
+          Af DAN JENSEN, Computerworld Offentliggjort 03.02.11 kl. 16:39Google har med en lige lovlig smart fidus fået sværtet Microsofts Bing til som snydepels og en billig kopi, mener Microsoft.Microsoft vil ikke finde sig i, at Google beskylder selskabet for at kopiere Googles søgeresulater direkte over i Bing, som Google mener at have fundet ud af via en smart stikprøvekontrol.Som svar på tiltale beskylder Microsoft nu Google for at have bedrevet en form for klik-svindel i et forsøg på at stemple Microsoft som snyder.Beskyldningen kommer fra Yusuf Mehdi, vice president for Microsofts Online Services Division.&quot;Kontrollen var manipuleret&quot;Han mener, at Googles stikprøvekontrol var &quot;tilrettelagt med henblik på at manipulere Bings søgeresultater&quot; ved hjælp af kliksvindel.Kliksvindlen har ifølge Yusuf Mehdi fungeret efter samme metoder, der anvendes af svindlere, der bevidst pumper klikraterne op ved hjælp af falske klik på webannoncer.Microsoft kipper med flaget og kalder Google-tricket for 'godt fundet på' - men dog løgn.Ændret algoritmeIfølge Microsofts Stefan Weitz, direktør for Bing, tog Google en række meningsløse ord som eksempelvis xlgr493 og modificerede sin egen algoritme til at pege på søgeresultatet for det pågældende mærkelige ord over mod et rigtigt site.Det betød, at en søgning på xlgr493 ville give søgeresultatet 'kittycat.com'.Dernæst søgte Google-folkene ifølge Microsoft på Google via Bing på en række af de mærkelige søgeord - som eksempelvis xlgr493 - ind i Bing og vupti, næste dag fremkom de samme søgeresultater, som Google-folkene havde programmeret Googles søgemaskine til at lande på.Søgte på Google - men gennem BingStefan Weitz og Microsoft mener, at kæden ryger af for Google, fordi Google først søgte på eksempelvis 'Google og xlgr493' på Bing. Og først dernæst søgte på 'xlgr493' på Bing.&quot;De havde allerede tunet Googles søgemaskine til at vise et bestemt link, når det så det mærkelige søgeord. Ved at anvende Bing og så klikke videre på dette link, har data flydt gennem vores normale processer tilbage til Microsoft,&quot; siger han til den amerikanske avis USA Today.Google fastholder anklagerneHan peger på, at Google via dette trick kunstigt har skabt en association. &quot;Vi trak dette ene signal, som altså var det falske fra Google,&quot; siger han.Google fastholder dog sine beskyldninger om, at Bing blot kopierer Googles søgeresulater.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2011-02-03
+          &nbsp;·&nbsp; e27816d0
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.98</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.535</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.638</kbd>
+            <kbd data-tooltip="Google &amp; YouTube">L80_GOOGYT&nbsp;0.535</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.58</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft blokerer for links sendt via Messenger</h4>
+        <div>
+          Af KIM STENSDAL, Computerworld Offentliggjort 27.03.12 kl. 10:11Microsoft overvåger og blokerer for links til The Pirate Bay, som brugerne af chat-tjenesten Live Messenger forsøger at sende til hinanden.Microsoft oplyser over for The Register, at selskabet blokerer for links til The Pirate Bay, der sendes via Microsofts egen Live Messenger-chat.&quot;Vi blokerer for chat-beskeder, hvis de indeholder ondsindede eller spam-baserede URL'er baseret på intelligente algoritmer, tredjepartskilder og/eller bruger-klager. Pirate Bay URL'er er blevet markeret som en eller flere af disse og derfor konsekvent blokeret,&quot; skriver Microsoft i en mail til The Register.Tech-siden har forsøgt at få Microsoft til at svare på, hvorfor netop Pirate Bay er blokeret frem for så mange andre sider, der også kan indeholde en ondsindet kode, som Microsoft ønsker at blokere for.Microsoft har dog afvist at give yderligere detaljer.Kontroversiel pirat-sideMicrosoft har en pointe i, at malware kan være et problem på sider som the Pirate Bay, og at chat-programmer kan være vejen ind på brugerens maskiner for de it-kriminelle.Det er imidlertid også værd at bemærke, at Microsoft er et af de software-firmaer, der i en årrække har kæmpet mod pirateri, ikke mindst på sider som The Pirate Bay.Vi har forsøgt at teste, om det passer, at der er blokeret for links til The Pirate Bay via Messenger og kan faktisk ikke umiddelbart konstatere, at det skulle være tilfældet.Om det skyldes, at det kun er i bestemte lande, Microsoft spærrer, eller om det kun er bestemte links til The Pirate Bay, der blokeres for, har vi ikke umiddelbart kunne finde et svar på.The Pirate Bay blev i 2008 spærret i Danmark efter en fogedretssag, hvor en række rettighedshavere krævede, at teleselskaberne spærrede kundernes adgang til den svenske fildelingsside.Det førte til en længere sag, fordi teleselskaberne opfattede spærrings-kravet som principielt.I sidste ende vandt rettighedshaverne dog sagen i Højesteret.Læs også på Computerworld:
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2012-03-27
+          &nbsp;·&nbsp; e3297ed1
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.515</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.503</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bing har kostet Microsoft 30 milliarder kroner - og tabene fortsætter</h4>
+        <div>
+          Microsofts søgemaskine Bing styrtbløder, med tab på næsten én milliard dollars hvert kvartal, uden at det er lykkedes at rykke ved Googles helt dominerende søgeposition.Af Jesper KildebogaardGoogle sad solidt på markedet for internetsøgning, da Microsoft lancerede konkurrenten Bing i juni 2009.Og det gør Google stadigvæk, med 64,8 procent af markedet, kun 0,2 procentpoint mindre end da Bing gik i luften.I mellemtiden har Microsoft tabt over 30 milliarder kroner på divisionen Online Services, der i dag primært handler om Bing-satsningen. Det skriver CNN Money.Selvom Microsoft kan prale af, at Bings markedsandel er steget 27 måneder i træk, er det Yahoo og nogle mindre, ubetydelige konkurrenter, der er gået ud over. Og da Yahoo har et partnerskab med Microsoft og bruger Bing-søgemaskinen, er det altså primært kannibalisme, som har fået Bing til at vokse.Underskuddet det seneste kvartal var på 728 millioner dollars, altså omkring 4 milliarder kroner, og der er ingen udsigt til, at det bliver forbedret de kommende kvartaler.Læs også: Microsoft taber milliarder på søgemaskinen BingDa Microsoft blev grillet af analytikere for nyligt om de store underskud og fremtiden for Bing, nævnte chefen for Online Services de store muligheder, der venter.Microsoft har udover Yahoo-partnerskabet også aftaler med Facebook og Nokia om at bruge Bing-søgeteknologi. Og denne adgang til både et stort mobilmarked og verdens førende sociale netværk skulle gerne give Bing nogle gode kort på hånden, nemlig en bedre forståelse af, hvad der rør sig på nettet, lød det.Samtidig har Microsoft travlt med at binde Bing op til forskellige tjenester, så man for eksempel kan bestille billetter til en fodboldkamp med det samme, man søger, eller få vist relevante flyafgange og priser direkte i søgemaskinen. Disse funktioner er i dag primært tilstede på det amerikanske marked.Bing kan også bedre tillade sig at eksperimentere end Google, lød forklaringen på, hvordan Bing skal blive en succes. Ændrer Google bare en anelse på algoritmerne bag, kan det vende op og ned på en websides placering blandt søgeresultaterne og føre til ramaskrig fra hele branchen. Men Bing har ikke samme opmærksomhed og er altså mindre låst.Via: CNN
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-09-26
+          &nbsp;·&nbsp; e2e3650f
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.986</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>IBM investerer milliarder i ny strategi</h4>
+        <div>
+          IBM kaster nu milliarder efter &quot;kognitiv computing&quot;, der skal give virksomheder bedre muligheder for at analysere data i alle former. Virksomheden melder om en ny strategisk position, der skal lægge afstand til konkurrenterne.IBM lancerer med kognitiv computing et system med fokus på to ting. Et system, der kan håndtere data i alle former , strukturerede og ustrukturerede. Og et system, som er bygget på algoritmer, som lærer og udvikler sig, jo mere de anvendes.&quot;Kunderne ved, at de samler og analyserer flere data end nogensinde før, men 80 pct. af alle de tilgængelige data - billeder, lyd, litteratur, kemiske formler, sociale udtryk - er stadig uden for rækkevidde for de traditionelle computersystemer. Vi skalerer ekspertise til at lukke det hul, og hjælper vores kunder med at blive kognitive banker, detailhandlere, bilproducenter, forsikringsselskaber eller leverandører af sundhedsydelser, &quot; siger Birgitta van Kralingen, senior vice president, IBM Global Business Services i en kommentar til lanceringen.Watson og de 25.000 IBM-konsulenterIBM's supercomputer Watson spiller en afgørende rolle i IBM's kognitive fremtidsplaner. I dag bruges den til databehandlingsopgaver, som kræver ekstraordinær stor regnekraft, men en investering på 1 mia. dollar, svarende til 6,6 mia. kr., skal løfte barren for kognitiv innovation på tværs af brancher.Til at hjælpe Watson, uddanner IBM 25.000 konsulenter og praktikere inden for kognitiv computing i efteråret.Industrianalytiker fra markedsanalysevirksomheden IDC forudser, at halvdelen af alle forbrugere vil interagere regelmæssigt med tjenester baseret på kognitiv computing i 2018, og det er også det, IBM's undersøgelser har vist.&quot;Vores arbejde med klienter på tværs af mange brancher viser, at kognitiv computing er vejen til de næste store muligheder inden for forretning,&quot; siger Birgitta van Kralingen.I alt har 2000 fagfolk været inde over udviklingen af den nye praksis.Kognitiv computing er IBM Foto: Scanpix.Kognitiv computing er IBM Foto: Scanpix.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-10-06
+          &nbsp;·&nbsp; e53fa4cc
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.603</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft vil i 2030 fjerne mere CO2 end der udledes</h4>
+        <div>
+          I 2050 vil Microsoft helt have fjernet det CO2-aftryk, som selskabet har udledt siden starten i 1975. 16 jan. 2020 kl. 19:05Del med andre: I 2030 har Microsoft en plan om at fjerne mere CO2, end virksomheden selv udleder - med andre ord være CO2-negativ. Planen skal hjælpe til med, at den amerikanske it-gigant i 2050 helt har fjernet det CO2-aftryk, som den har udledt direkte og gennem sit strømforbrug siden grundlæggelsen i 1975. Det oplyser Microsoft i en pressemeddelelse. - Verden over arbejdes der på at nå et mål om at være &quot;net zero&quot; (at fjerne den tilsvarende mængde CO2, som man udleder, red.). - Men de af os, der har mulighed for at rykke endnu hurtigere og længere skal gøre det. - Derfor præsenterer vi i dag et ambitiøst mål og en ny plan for, hvordan vi reducerer og ultimativt fjerner Microsofts CO2-aftryk, fortæller Brad Smith, direktør i Microsoft, i pressemeddelelsen. Ud over målet om selv at blive CO2-negativ i 2030 har Microsoft søsat et nyt initiativ, der skal hjælpe virksomhedens leverandører og kunder verden over med at bruge Microsofts teknologi til at reducere deres egen CO2-belastning. Derudover har Microsoft etableret en ny klimainnovationsfond på en milliard dollar, som skal fremskynde den globale udvikling af ny teknologi, der reducerer, indfanger og helt fjerner CO2-udledning. Fra næste år vil Microsoft også tilføje CO2-reduktion som en eksplicit del af indkøbsprocessen til virksomhedens værdikæde. I Microsofts danske afdeling kommer man særligt til at bidrage til den globale klimaplan igennem den teknologi, man anvender på det danske marked. - I samarbejdet med vores kunder bruger vi mange løsninger, hvor vi blandt andet benytter kunstig intelligens for at kunne optimere energiforbruget og på den måde markant reducere CO2-udledningen, siger Nana Bule, der er administrerende direktør for Microsoft Danmark. Microsoft er langtfra den eneste virksomhed, som går med planer i forhold til sit eget klimaaftryk. Herhjemme har Vestas annonceret en plan om at være CO2-neutral i 2030, mens at Novo Nordisk sigter efter at være klimaneutral på drift og transport i 2030. Derudover har Arla, Danish Crown og Mærsk planer om at være CO2-neutral i 2050. I Folketinget blev der før jul indgået en bred politisk aftale om at skære Danmarks udledning af CO2 med 70 procent i 2030 sammenlignet med 1990. Samtidig er der en målsætning om, at Danmark skal være CO2-neutral i 2050. /ritzau/
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2020-01-16
+          &nbsp;·&nbsp; e78acd79
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.782</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.615</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>&quot;Honeypot&quot; afslører Googles søgeresultater i Microsoft Bing</h4>
+        <div>
+          Et eksperiment hos Google viser angiveligt, at Microsoft bruger Googles søgemaskine til at forbedre sin egen søgetjeneste Bing. Det skriver bloggen Search Engine Land. Google opdagede sidste efterår, at det var et stort sammenfald mellem resultaterne i de to søgemaskiner.Det fik Google til at starte et forsøg med en såkaldt &quot;honeypot,&quot; , hvor man manipulerede resultaterne for en række meningsløse søgeforespørgsler som &quot;mbzrxpgjys&quot;. Efter to uger viste Bing de samme resultater når man søgte efter f.eks. &quot;mbzrxpgjys&quot; og &quot;hiybbprqag&quot; som Google.Det skriver ComON.Nu mener Google, at Microsoft bruger Internet Explorer og Bing-toolbar til at samle informationer om søgeforespørgsler og de resultater, som brugerne klikker på, og herefter sender disse informationer videre til Microsoft, som så bruger dem til at optimere sin søge-algoritme. Google betegner det som snyd.
+        </div>
+        <footer>
+          <em>Penge.dk</em>
+          &nbsp;·&nbsp; 2011-02-02
+          &nbsp;·&nbsp; e277355f
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.822</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.659</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Støtte</h4>
+        <div>
+          Anders Møller, lektor og leder af Center for Advanced Software Analysis, CASA, på Institut for Datalogi, Aarhus Universitet, har fået et ERC Consolidator Grant på to mio. euro til at udvikle nyskabende algoritmer til automatisk fejlfinding og effektivisering af avancerede web-applikationer.Projektet skal forbedre internet-software.
+        </div>
+        <footer>
+          <em>Vejle Amts Folkeblad</em>
+          &nbsp;·&nbsp; 2015-04-10
+          &nbsp;·&nbsp; e4f382b7
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.878</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Århusiansk AI startup solgt til Indien for tocifret millionbeløb</h4>
+        <div>
+           Cactus Communications overtager dansk softwarevirksomhed, der udvikler kunstig intelligens for at understøtte sin teknologiske platform.Business: Indiske Cactus Communications, der er leverandør af videnskabelig kommunikation, har købt Unsilo, der er en århusiansk softwarevirksomhed med services indenfor kunstig intelligens (AI) og Natural Language Processing (NLP) med speciale i text mining, lingvistik og datascience. Unsilo er stiftet af Mads Rydahl og Thomas Laursen. Det oplyses i en pressemeddelelse, at der er tale om en handel til et tocifret millionbeløb.Medstifter Mads Rydahl var ansvarlig for produktdesignet af Siri, før det blev købt af Apple, og Thomas Laursen, medstifter og administrerende direktør for Unsilo udtaler i en pressemeddelelse:- Ved at kombinere Cactus' størrelse og rækkevidde indenfor forlags- og pharmaindustrierne med Unsilo's tekniske platform, kan vi forbedre både kvalitet og time-to-publication til fordel for alle vores kunder.
+        </div>
+        <footer>
+          <em>Hsfo.dk (Horsens Folkeblad)</em>
+          &nbsp;·&nbsp; 2020-01-29
+          &nbsp;·&nbsp; e78ec8fb
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.546</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.55</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.51</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsofts panoramatjeneste kan nu importere videostilbilleder</h4>
+        <div>
+          Microsofts gratis software Image Composite Editor understøtter nu importering af videoer til panoramabilleder. Af Christian LoiborgImage Composite Editor (ICE) understøtter nu import af videoer til kreering af de populære panoramabilleder, som ICE er særligt kendt for. Den gratis software fra Microsoft Research er tilgængelig i dag.Med ICE kan man nemt lave gigapixelbilleder, ved at samle en række billeder. Det betyder, at du kan få imponerende panoramabilleder med helt utrolige detaljer. Panoramabillederne, du skaber, kan bl.a. ses i 3D, når man bruger fototjenesten Photosynth.Når du laver panoramaer fra flere billeder, kan du komme ud for, at noget af baggrunden mangler på grund af forskellige kameravinkler. Ved hjælp af en algoritme udfylder programmet selv den manglende del af billedet, på samme måde som Adobe Photoshops content aware fill fungerer på.Med ICE 2 kan man nu importere videoer og bruge stilbillederne til at lave panoramaer. I videoen kan du vælge, hvilke elementer, der skal bruges i det endelige billede - eksempelvis en person, der er i bevægelse, så de fremkommer flere gange. Du kan se, hvordan det helt præcist foregår i videoen herunder.Du kan hente ICE 2 gratis hos Microsoft Research
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2015-02-09
+          &nbsp;·&nbsp; e4cfeb1f
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.686</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.808</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.68</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Paven maner til etik ved brug af algoritmer</h4>
+        <div>
+          Vatikanet har slået sig sammen med techgiganterne Microsoft og IBM for at promovere etisk forsvarlig udvikling af kunstig intelligens og regulering på bl. a.ansigtsgodkendelse.Det kom frem på en konference fredag, hvor en tale af paven blev læst højt, da pave Frans selv var syg. I talen manede paven til etisk udvikling af algoritmer. Her advarede han om faren ved at bruge kunstig intelligens til at hente data til kommercielt eller politisk formål uden at have det enkelte individ in mente.»Denne asymmetri, der er ved, at nogle få ved alt om os, mens vi ikke ved noget om dem, dæmmer kritisk tænkning og den bevidste udøvelse af egen frihed.Forskellene udvides, viden og velstand samles i et par hænder med alvorlige risici for det demokratiske samfund,« lød meddelelsen fra pave Frans. I meddelelsen, der var udarbejdet sammen med IBM og Microsoft, blev der også lavet en specifik reference til netop ansigtsgodkendelse.»Nye former for regulering skal tilskyndes til at fremme gennemsigtighed og overholdelse af etiske principper, især for avancerede teknologier, der har en højere risiko for at påvirke menneskerettighederne, såsom ansigtsgenkendelse.« Pave Frans har tidligere omtalt behov for etik omkring robotteknologi og teknologisk udvikling. Filbert.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-03-02
+          &nbsp;·&nbsp; e799f6c7
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.806</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.683</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.608</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

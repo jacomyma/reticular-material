@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_152 <kbd>H_0_152</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>banebrydende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ansvarlig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udvikle</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>koncepter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>problemstillinger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udarbejdes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>designe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>internationalt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sdu</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pressemeddelelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>viden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbedrer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udvikles</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>centeret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremskynde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>videnskaber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>dtu</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rikke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>innovationsfonden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teoretisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilegne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>email</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>virksomhedsledelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningscenter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>projektets</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>summit</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afdække</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>håndkraft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>midtjylland</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>midtjyllands</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konferencen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>belyse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>medicinsk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omhandler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>carlsbergfondet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>informatik</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>specialisering</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tredjepart</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samfundsvidenskabelige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pressemeddelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afhandling</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>+45</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningsministeriet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afprøves</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>bornholmsk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>centre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stimulere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>universiteters</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uddannelses-</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>inviteres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fagfæller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>læreanstalter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kurset</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>universiteternes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>horizon</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningsmidler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>winther</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>støttes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningscentre</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afdelingerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>datalogiske</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>systemernes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nobelpriser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>itu's</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>velfunderet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningsområdet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>olieindustrien</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>karrierevej</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beløber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>integrated</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>driven</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>serge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forskningsindsats</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>klarlægge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>population</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>datapult</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>randomiserede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kommercialiseres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>områdets</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tvedebrink</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_152 DESC LIMIT 50</pre>
+      <article>
+        <h4>NAVNE I NOTER</h4>
+        <div>
+          Ole Winther er tiltrådt et professorat i genomisk bioinformatik.Professoratet er et samarbejde mellem Genomisk Medicin på Rigshospitalet og Sektion for Bioinformatik og RNA Biologi på Biologisk Institut, Københavns Universitet.Ole Winther skal forsætte sin forskning i datavidenskab og kunstig intelligens ved genomisk diagnostik.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-12-04
+          &nbsp;·&nbsp; e6ff6a1c
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.929</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.898</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny professor forsker i at forbedre genundersøgelser med kunstig intelligens</h4>
+        <div>
+          Ole Winther er nyudnævnt professor i genomisk bioinformatik ved Rigshospitalet og Københavns Universitet, skriver Rigshospitalet. Ole Winther skal forske i, hvordan maskinlæring og kunstig intelligens kan bruges til at forbedre tolkningen af store datamængder ved genundersøgelser. star Log ind eller prøv 3 ugers gratis prøveabonnement for at læse videre
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2018-11-13
+          &nbsp;·&nbsp; e6f8bbdd
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.942</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.551</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NAVNE I NOTER: Millioner til udvikling af nye datalogiske metoder</h4>
+        <div>
+          Jan Baumbach, lektor, Institut for Matematik og Datalogi, har modtaget 6,4 mio. kr. fra Villum Fondens Young Investigator Programme til at udvikle nye datalogiske metoder til at bearbejde store datasæt under systembiologi.Målet med projektet er at udvikle nye algoritmer, der kan angribe datamængderne og afdække, hvilke signalsystemer der er ansvarlige for at regulere den måde, som for eksempel celler, væv og organer bliver udviklet på, eller hvordan sygdomme som kræft opstår. Den formelle hæder blev uddelt ved Villum Fondens årlige uddeling af Villum Kann Rasmussens Årslegat til Teknisk og Naturvidenskabelig forskning.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2016-02-17
+          &nbsp;·&nbsp; e5925ebb
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.783</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.716</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NYE CENTRE FORSKER I AI 1 mia. kr.</h4>
+        <div>
+          Midler fra Danmarks Grundforskningsfond, Lundbeckfonden, Novo Nordisk Fonden, Villum Fonden og Carlsbergfondet udgør finansieringen af nye pionércentre på universiteterne.Centrenes formål bliver at bedrive forskning i verdensklasse i store samfundsmæssige udfordringer som kunstig intelligens, klima og energi.
+        </div>
+        <footer>
+          <em>Tech Management</em>
+          &nbsp;·&nbsp; 2019-05-28
+          &nbsp;·&nbsp; e75ce2cf
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.885</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.919</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.91</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Professor i Machine Learning modtager hæderslegat</h4>
+        <div>
+          Professor Morten Mørup fra DTU Compute modtager Ingeborg og Leo Dannins Legat for Videnskabelig Forskning for sit arbejde med kombinationen af kunstig intelligens og Life-Siecne. Det skriver DTU i en meddelse.Morten Mørup forsker i, hvordan man ved hjælp af kunstig intelligens kan trække mest muligt viden ud af data fra blandt andet hjerneskanninger. Det er på bagrund af den forskning, at han modtager legatet som er på 350.000 kroner.»Det er en meget stor ære, og jeg er utrolig taknemmelig for at få legatet. Legatet vil bruges til at forske i machine learning-metoder, der kan integrere data fra forskellige målemodaliteter for dermed at få et mere komplet billede samt fremme vores forståelse af, hvordan mønstre er relateret på tværs af målemodaliteter,« fortæller Morten Mørup i meddelsen.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-03-24
+          &nbsp;·&nbsp; e82ebf69
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.78</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.643</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Trekantområdet med i ambitiøst projekt om programmering i skolen</h4>
+        <div>
+          I løbet af skoleåret 2018-19 skal lærerne gennem et online interaktivt undervisningsforløb, hvor såkaldt machine learning sørger for at analysere lærerens interaktion og sammensætte en skræddersyet lektionsplan.- Det er ofte en stor udfordring for lærere at skulle tilegne sig ny teknisk viden og derefter omsætte denne til et undervisningsforløb. Projektets formål er at springe mellemleddet over og give lærerne en større tryghed og didaktisk overskud i de nye teknologier. Et overskud og en viden, de kan tage med ud til flere tusinde elever, siger Morten Barfod Søegaard, App Academy, i en pressemeddelelse.Undervisningsforløbet er støttet af Google, der hvert år uddeler midler, som skal understøtte udviklingen af elevernes digitale evner.
+        </div>
+        <footer>
+          <em>Ugeavisen.dk</em>
+          &nbsp;·&nbsp; 2018-06-29
+          &nbsp;·&nbsp; e6cf08fe
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.72</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.548</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rolf Fagerberg er udnævnt til professor i datalogi på SDU</h4>
+        <div>
+            Rolf Fagerberg er udnævnt til professor i datalogi på Institut for Matematik og Datalogi på SDU. Rolf Fagerbergs speciale er algoritmer og datastrukturer.Senest har han, sammen med en gruppe medforfattere, modtaget prisen for bedste videnskabelige artikel på konferencen Annual Symposium on Algorithms 2019 for en artikel, der for første gang vurderer sorteringsalgoritmer ud fra, hvor mange sammenligninger, hvert enkelt element kan udsættes for. Udover forskning og undervisning er Rolf Fagerberg optaget af at udvikle SDUs datalogi-uddannelse og at tiltrække unge mennesker til uddannelsen.
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2019-10-30
+          &nbsp;·&nbsp; e76b1738
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.962</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.506</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.533</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Folketinget tredobler beløb til forskning</h4>
+        <div>
+          KøbenhavnHele Folketinget blev fredag enig om at fordele knap 1,4 milliarder kroner til især teknologisk forskning. - Det er fremragende, at den her aftale er med til at styrke Danmarks fremtid. Vi sætter for alvor skub i forskningen i kunstig intelligens.- Vi prioriterer miljø- og klimaforskningen, der kan være med til at løse nogle af fremtidens store udfordringer, siger uddannelses- og forskningsminister Tommy Ahlers (V) i en pressemeddelelse.Det er ting som grøn teknologi, fri forskning og energiteknologi, der står til at blive prioriteret.For to år siden var beløbet 555 millioner kroner, og dermed er det næsten en tredobling i forhold til da, fremgår det./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-11-02
+          &nbsp;·&nbsp; e6f57e86
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.601</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.71</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.72</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.595</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Intelligent Systems Programming</h4>
+        <div>
+          Få tilsendt alle informationer om kurset, herunder kursus sted, udbyder mm. på emailIntelligent Systems ProgrammingIntroduktion til kursetKurset introducerer til de vigtigste teknikker til problemløsning og understøttelse af beslutninger inden for AI og optimering. Du bliver kvalificeret til at arbejde med business intelligence og optimering på internationalt niveau og til at arbejde med intelligente applikationer i udviklingsafdelinger. Kurset foregår på engelsk og udbydes på kandidatuddannelsen: Software Development.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-01-16
+          &nbsp;·&nbsp; e61192c0
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.922</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.728</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ITU-forsker får 6 mio. kroner til forskning i algoritmers bias</h4>
+        <div>
+          Villum Fonden har tildelt lektor på IT-Universitetet Roberta Sinatra en bevilling på 6 mio kroner. Pengene skal gå til forskning i diskriminerende algoritmer, skriver universitetet i en pressemeddelelse.Forskningsprojektet har fået navnet Bias Explained: Pushing Algorithmic Fairness with Models and Experiments. I projektet vil Roberta Sinatra forsøge at afdække de matematiske biasmekanismer, som skaber misvisende rangeringer samt udvikle nogle mere retvisende algoritmer, der skal tage del i kampen mod diskriminerende algoritmer.Projektet tager afsæt i, hvordan algoritmer favoriserer videnskabelige udgivelser ud fra forfatterens køn, universitet og etnicitet.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-01-29
+          &nbsp;·&nbsp; e81a62b4
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.754</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.515</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Radiobotics får penge fra Innovationsfonden</h4>
+        <div>
+          Det er 3. gang at Radiobotics modtager økonomisk støtte fra Innovationsfonden.Radiobotics skal videreudvikle deres fungerende teknologi frem mod en fuldautomatiseret, skalerbar og markedsklar løsning til rutinebaserede røntgenbilleder. Dette projekt har Innovationsfonden bevilliget 2,1 millioner kroner til.»Vi er enormt taknemmelige for, at Innovationsfonden vælger at investere iRadiobotics, og vi er meget privilegerede over, at vi igen at få opbakning og anerkendelse for det arbejde vi laver, samt konkret hjælp til at løse de kliniske udfordringer som verden står overfor,« skriver Mads Jarner, CEO &amp; Co-founder afRadiobotics, i en pressemeddelelse.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-09-10
+          &nbsp;·&nbsp; e75626de
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.622</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.506</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Chancen for bevillinger øges, hvis man faktisk søger</h4>
+        <div>
+          UNDER OVERSKRIFTEN ' Danmark sjofler forskningen i Arktis' argumenterer forskergruppen i Hindsgavl-processen 24.1.for, at Danmark ikke prioriterer arktisk forskning. Kronikkens forfattere påstår ydermere, at Innovationsfonden ikke finansierer forskning, og at fokus næsten udelukkende er på innovation og produktudvikling.Det er ikke korrekt.Fondens bevilling til investeringer i 2019 er ca. 1,5 mia. kr. Heraf er godt 723 mio. kr. afsat til strategisk og udfordringsdrevet forskning, og ca. 765 mio.kr. var afsat til teknologiudvikling og innovation.Kronikkens forfattere ser gerne, at Danmark genoptager sin position som ledende inden for forskning og udvikling i Arktis.Uden at vurdere, hvorvidt Danmark er eller ikke er ledende i øjeblikket, vil jeg understrege, at Innovationsfonden er sat i verden for at investere i at opdyrke ideer, viden og teknologi til værdi for Danmark.Der kan være mange gode grunde til at investere offentlige forsknings-og innovationsmidler i Arktis. Så længe projekterne har udsigt til gennem forskning, nye teknologier og innovative løsninger at løse konkrete samfundsudfordringer og/eller skabe vækst og beskæftigelse, ser Innovationsfonden meget gerne ansøgninger, der har det arktiske område som fokus.Men vi har gennem årene faktisk allerede fået en del ansøgninger på det arktiske område. Alene de senere år har Innovationsfonden bevilliget 43 mio. kr. til projekter, der vedrører Grønland og Arktis.Interessant nok har disse ansøgninger samme succesrate som ansøgninger på andre områder.Hvad enten det drejer sig om udvikling af kunstig intelligens til lokalisering af råstoffer i det grønlandske undergrund, en ny turismestrategi, ubemandede droner til overvågning af gletsjere eller om satellitbaserede løsninger til overvågning af issituationen på land og til vands, har Innovationsfondens midler styrket forskning til gavn for både Danmark og Grønland.Det arktiske områdes rolle i fremtiden er uden tvivl af stor betydning for Danmark og Rigsfællesskabet. Forskning og Innovation er, som forfatterne selv påpeger, »en fredelig måde at markere sig på, som også har et samfundsnyttigt afkast i form af større viden og forståelse«. Innovationsfonden ser i evalueringen af ansøgninger på ansøgningernes forskningskvalitet, den værdi, projektet tilfører Danmark, og projektets mulighed for succes. Derved vil jeg opfordre forskerne bag Hindsgavl-processen om at tage en dialog med os. Muligheden for at få bevilling fra os øges nemlig ved at søge.Alene de senere år har Innovationsfonden bevilliget 43 mio. kr. til projekter, der vedrører Grønland og Arktis.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-01-29
+          &nbsp;·&nbsp; e70f3802
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.662</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.912</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.56</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.574</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Så højt ligger DTU på ny rangliste over universitetet</h4>
+        <div>
+          På den nye rangliste World University Research Rankings 2020, der fokuserer på tre kerneområder af universiteternes forskning, kommer DTU ind som nummer to i verden og nummer et i Europa.Nordsjælland: En ny rangliste evaluerer forskningen ved verdens universiteter baseret på dens effekt, excellence samt universiteternes evne til at samarbejde internationalt, med virksomheder og på tværs af discipliner. Og her kommer DTU ind på en andenplads efter det amerikanske topuniversitet Massachusetts Insitute of Technology (MIT).I World University Research Rankings måles universiteterne på syv indikatorer fordelt på tre kategorier, der alle er relateret til forskning: Forsknings multi-disciplinaritet, forskningseffekt eller -gennemslagskraft samt samarbejdsevne (collaborative-ness). Alle indikatorer er baseret på universiteternes publikationer i Web of Science/InCites i perioden 2009-2018.DTU scorer især højt på kategorierne multi-disciplinarity og collaborative-ness, hvilket netop ifølge DTU's prorektor Rasmus Larsen er forudsætningen for, at universitetets forskning omsættes til gavn for samfundet:- DTU Sundhedsteknologi kan for eksempel kun lykkes med sin teknologiske topforskning i samarbejde med kliniske forskere. På samme måde skabes der banebrydende resultater på tværs af de tekniske videnskaber, når materialeforskere og elektroingeniører arbejder sammen om mikroantenner, og AI-forskere går sammen med biotek-ingeniører om at finde enzymer med nye egenskaber, siger han.Rasmus Larsen siger, at samarbejde er dybt integreret i DTU's dna.- Vores mål er at skabe en bæredygtig fremtid for mennesker, og for at nå det arbejder vi sammen på tværs af fagligheder og kulturer og har altid en dør åben til samfundet. Det glæder mig, at det målrettede arbejde nu afspejler sig i den fine placering på World University Research Rankings 2020. Og vi er ekstra stolte over resultatet, fordi vores økonomiske forudsætninger adskiller sig markant fra universiteter som MIT's, siger han.« Ranglisten af universiteterne foretages af World Scientific Publishing Co Pte Ltd, med hovedkontor i Singapore, der er en af Asiens helt store udgivere af akademisk- og faglitteratur.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2021-04-12
+          &nbsp;·&nbsp; e835cad5
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.771</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.521</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny professor ved Rigshospitalet</h4>
+        <div>
+          Ole Winther er nyudnævnt professor i genomisk bioinformatik.Han skal blandt andet forske i, hvordan maskinlæring og kunstig intelligens kan forbedre tolkningen af store datamængder ved genundersøgelser.Professoratet er et samarbejde mellem genomisk medicin på Rigshospitalet og sektion for bioinformatik og rna-biologi på biologisk institut, Københavns Universitet.Diagnostik baseret på helgenom-og rna-sekventering er i de seneste år gået fra at være forskningsteknikker til at være rutine i klinikken, og de kan ifølge den nyudnævnte professor hjælpe den diagnostiske udredning af for eksempel sjældne sygdomme eller kræft.Ole Winther kommer fra et professorat i datavidenskab fra DTU og har igennem en årrække samarbejdet med genomisk medicin og bioinformatik, KU, om klinisk bioinformatiske problemstillinger.Ole Winther og hans forskningsgruppe har fokus på at bruge teknikker inden for kunstig intelligens til at skabe en bedre karakteristik af for eksempel kræftog koble denne karakteristik med diagnostik og behandling.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-11-23
+          &nbsp;·&nbsp; e6fbf847
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.97</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Regeringen har fire fokuspunkter for kunstig intelligens</h4>
+        <div>
+          KøbenhavnDer er afsat 60 millioner kroner til de nye initiativer i regeringens strategi for kunstig intelligens.Her er regeringens sigtelinjer for den danske udvikling og anvendelse af kunstig intelligens:1. Danmark skal have et fælles etisk grundlag for kunstig intelligens med mennesket i centrum.- Virksomheder og offentlige myndigheder skal have et stærkt fokus på dataetik. Det skal omfatte ansvarlighed, sikkerhed og gennemsigtighed i brugen af kunstig intelligens. 2. Danske forskere skal forske i og udvikle kunstig intelligens.- Forskere i Danmark skal forske i kunstig intelligens - både grundforskning og mere anvendelsesorienteret forskning. Det skal bane vejen for, at der udvikles brugbare teknologiske løsninger til den enkelte, virksomhederne og den offentlige sektor.3. Danske virksomheder skal opnå vækst ved at udvikle og anvende kunstig intelligens.- Det er ambitionen, at danske virksomheder udnytter strategiens fokus på ansvarlig anvendelse af kunstig intelligens i deres forretningsmodel, så det kan blive et konkurrenceparameter, såvel nationalt som internationalt. 4. Den offentlige sektor skal anvende kunstig intelligens til at tilbyde service i verdensklasse.- Kunstig intelligens skal anvendes til at forbedre den offentlige service med udgangspunkt i borgernes behov.Kilder: National strategi for kunstig intelligens. /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-03-14
+          &nbsp;·&nbsp; e71dc14f
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.573</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.966</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.819</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.546</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forskningens Døgn: Sådan kan du opleve DTU på egen hånd</h4>
+        <div>
+          DTU tilbyder mange forskellige muligheder for at opleve universitet på egen hånd gennem bl.a. en kunst-, arkitektur- og videnskabs rute, gennem podcast og beregningsopgaver.Vidste du, at du har mulighed for at besøge DTU på egen hånd på flere forskellige måder? - Hvis ikke er det måske en oplagt mulighed under videnskabsfestivalen Forskningens Døgn at stifte bekendtskab med de mange muligheder.Kunst og arkitektur spiller en central rolle for campusmiljøet på DTU i Lyngby. Derfor har DTU etableret en kunstrute og en arkitekturrute og udviklet en tilhørende app, DTU Plus, som guider besøgende rundt på campus og præsenterer et udvalg af kunstværker og arkitektur.I anledning af 200-året for H.C. Ørsteds opdagelse af elektromagnetismen i 1820, har DTU, i samarbejde med Lydpol, også udviklet en lydvandring om H.C. Ørsted. Her kan man blive klogere på H.C. Ørsted og hans opdagelse i et videnskabeligt, historisk og kunstnerisk perspektiv.DTU tilbyder mange forskellige podcast, der giver indblik i alt fra ansvarlig teknologi og etik til sundhed og kunstig intelligens. Der er også udviklet podcast for børn, hvor de i børnehøjde kan få viden om f.eks. hvordan et tv virker, hvor internettet kommer fra og få svar på spørgsmålet om, hvorfor vi ikke falder ned, når jorden drejer rundt. Det er DTU's forskere, der medvirker i de forskellige podcast, der henvender sig til både voksne og børn mellem 4-10 år.SupercomputereSupercomputere har mange anvendelser. På DTU Energi anvender de dem til at opdage og udvikle nye materialer til konvertering og lagring af energi. DTU tilbyder alle interesserede en unik mulighed for at få hands-on erfaring med den type materialemodellering, som anvendes i DTU's daglige forskning gennem forskellige beregningsopgaver.FAKTA Hvornår: Når du har tid, lyst og lejlighed.Hvor: Online (få links og en samlet oversigt over de mange muligheder på visitlyngby.dk)
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2021-04-25
+          &nbsp;·&nbsp; e83c770c
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.991</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.701</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.652</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Deep blue</h4>
+        <div>
+          22.03 Da skakcomputeren Deep Blue i 1997 slog den russiske stormester Garry Kasparov, var det intet mindre end en sensation. I dag ved at computeren ikke var klogere end Kasparov, den var bare bedre til regne. Men forskningen i kunstig intelligens stræber stadig efter at efterligne den menneskelige hjerne give robotter situationsfornemmelse og evner til at tænke selv. Hør lektor Thomas Bolander fra DTU Informatik i &quot; Danskernes Akademi&quot;. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2011-04-08
+          &nbsp;·&nbsp; e29d9e27
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.527</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Algoritmer i bioinformatik</h4>
+        <div>
+          Få tilsendt alle informationer om kurset, herunder kursus sted, udbyder mm. på emailKurset dækker de mest brugte algoritmer i bioinformatics. Vægten vil blive lagt på den præcise matematiske implementering af algoritmerne in form af computerprogrammer. I løbet af kurset vil forskellige biologiske problemer blive introduceret og analyseret med det formål at belyse styrker og svagheder ved de forskellige algoritmer. Følgende emner bliver dækket i kurset:Dynamic programming: Needleman-Wunsch, Smith-Waterman, og alignment heuristicsData redundancy og homology reduction: Hobohm og andre clustering algoritmerWeight matrices: Sequence weighting, pseudo count correction for low counts, Gibbs sampling, og Psi-BlastHidden Markov Models: Model construction, Viterbi decoding, posterior decoding, og Baum-Welsh HMM learningArtificial neural networks: Architectures and sequence encoding, feed-forward algorithm, og back propagationKurset består af forelæsninger, diskussioner, computerøvelser hvor de studerende bliver introduceret til de forskellige algoritmer, deres implementation, og brug i analysen af biologiske problemer. Kurset afsluttes med et gruppeprojekt hvor en eller flere af algoritmerne introduceret på kurset anvendes til at analysere et biologisk problem. Projektet skal dokumenteres med en rapport skrevet som en videnskabelig artikel indeholdende et dybdegående review af det felt projektet dækker.Metode: Forelæsninger, diskussioner, øvelser og projektFå tilsendt alle informationer om kurset, herunder kursus sted, udbyder mm. på email
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2015-10-09
+          &nbsp;·&nbsp; e54137f5
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.958</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.868</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ITU-forsker modtager Amazon Research Award</h4>
+        <div>
+          Det skriver ITU i en pressemeddelelse.Barbara Planks forskning fokuserer på deep learning-metoder til sprogteknologi. I Amazon-projektet skal hun udvikle algoritmer til at gøre produkter som kan gøre Amazonas digitale assistent Alexa bedre til at forstå brugernes kommandoer.Projektet udføres i samarbejde med Amazon Alexa AI i Aachen, Tyskland. Målet er at anvende transfer learning til at udbygge mulighederne ved automatisk sprogforståelse, for eksempel i forhold til at udvide til nye sprog.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-03-20
+          &nbsp;·&nbsp; e71fd0a8
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.698</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.761</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kunstig intelligens kortlægger danskernes stamtræ i nyt forskningsprojekt</h4>
+        <div>
+          Et multigenerationsregister over danskernes familierelationer siden 1920. Det er målet for et nyt projekt som Rigsarkivet har igangsat, skriver de i en pressemeddelelse.Som en del af projektet udvikler Rigsarkivet i samarbejde med forskere fra Aarhus Universitet, Københavns Universitet og Det Koordinerende Organ for Registerforskning (KOR) nye algoritmer for en kunstig intelligens, der skal læse håndskrevne kirkebøger fra de sidste 100 år.Projektet skal blandt andet bidrage til forskning i arvelige og familiære forhold, og hvordan de påvirker sundhed og den sociale livsbane. Et område, som dansk forskning er internationalt førende og anerkendt for at kunne analyse. I dag kan man dog kun undersøge få generationer tilbage, da CPR-registret ikke har fødselsregistreringer fra før 1960.Målet er desuden at projektets algoritmer for den kunstige intelligens kan anvendes på andre historiske datakilder i fremtiden.Multigenerationsregistret støttes af en bevilling på 38 mio. kroner fra Novo Nordisk Fonden.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-11-26
+          &nbsp;·&nbsp; e8022b10
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.822</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.612</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Regeringen: Flere forskere skal vinde nobelpriser</h4>
+        <div>
+          Regeringen præsenterer tirsdag ny strategi for forskning. Målet er at skærpe dansk forskning internationalt.Regeringen vil have mere forskning på nobelprisniveau. Og det skal på sigt resultere i flere nobelpriser til Danmark.Det er et af målene i den strategi for forskning og innovation, som regeringen præsenterer på et pressemøde tirsdag.- Danske forskere er i dag blandt de mest citerede i verden. Men den internationale konkurrence er benhård, og hvis Danmark skal være en forskningsnation i den absolutte verdenselite, skal vi blive endnu bedre, end vi er i dag, hedder det i strategien.Det er regeringen og partierne i Folketinget, der sidder på pengekassen, og den bliver umiddelbart ikke åbnet mere på klem i forhold til målsætningen fra 2006 om, at der årligt skal afsættes mindst 1 procent af bruttonationalproduktet (bnp) til forskning og udvikling.På grund af væksten i samfundet er beløbet dog i kroner og øre vokset fra 15 milliarder i 2006 til 22,2 milliarder i 2018, selv om procenten af bnp er uforandret.Forskningsmiljøerne nyder ifølge regeringen samtidig gavn af, at de private fondes øger deres finansiering af forskning.- Det giver fantastiske muligheder for at udføre mere forskning af højeste kvalitet, men det stiller også universiteterne og samfundet over for nye strategiske valg.- Investeringerne giver samlet set et solidt fundament for dansk forskning og innovation. Et ambitiøst investeringsniveau kan imidlertid ikke stå alene.- Derfor lancerer regeringen denne strategi, der opstiller to overordnede mål for forsknings- og innovationspolitikken: Dansk forskning skal være af højeste internationale kvalitet. Og forskningen skal gøre mest mulig gavn i samfundet, hedder det i udspillet.Her opstiller regeringen den ambition, at &quot;hele bredden i dansk forskning skal være af høj international kvalitet, samt at de bedste af vores forskere og universiteter skal udføre forskning i en kvalitet, der kan måle sig med de allerbedste i verden&quot;.- Toppen af dansk forskning skal med andre ord op på Nobelpris-niveau. Vi skal arbejde for, at flere forskere i fremtiden kan hente Nobelpriser hjem til Danmark, hedder det i udspillet.Regeringen vil samtidig styrke indsatsen for, at forskningen kan gøre mest mulig gavn i samfundet. Her vil regeringen blandt andet styrke den teknologiske forskning i Danmark.Det fokus er vigtigere end nobelpriser, mener Thomas Damkjær Petersen, der er formand for Ingeniørforeningen, IDA.- Det er fint, hvis Danmark vinder en Nobelpris, men en klarere prioritering af forskning i fremtidens udfordringer og løsninger giver for mig mest mening. Ikke mindst så de mindre virksomheder også kan nyde godt af det.- Robotteknologi, kunstig intelligens og øget brug af data har enorme vækstpotentialer, og derfor vil et øget forskningsfokus på disse felter uden tvivl være godt købmandskab, siger Thomas Damkjær Petersen.Han mener også, at der kan være vækst og arbejdspladser i strategiens fokus på forskning i klima, energi og miljø.Den nye strategi for forskning og innovation bliver præsenteret på et pressemøde i Rebild Bakker tirsdag.Regeringen vil &quot;inden for den nærmeste fremtid&quot; følge strategien op med en strategi for Danmarks digitale vækst og en vækstplan for life science./Ritzau/
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-12-05
+          &nbsp;·&nbsp; e687e9fa
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.695</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.908</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.854</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.596</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Aftale sætter flere penge af til klimaforskning</h4>
+        <div>
+           Alle Folketingets partier har onsdag aftalt fordelingen af penge til forskning fra forskningsreserven.Danske forskere skal forske mere i grøn omstilling. Det er den centrale del af den aftale om fordelingen af forskningsreserven, som alle partier i Folketinget onsdag har indgået.Sådan bliver pengene fordelt:* Grøn omstilling: I alt 1542 millioner kroner.- Danmarks Frie Forskningsfond: 340 millioner kroner.- Danmarks Innovationsfond: 629 millioner kroner.- Klimaforskning og CO2-lagring i regi af DMI og GEUS: 40 millioner kroner.- Energiteknologisk Udviklings- og Demonstrationsprogram: 336 millioner kroner.- Miljøteknologisk Udviklings- og Demonstrationsprogram: 111 millioner kroner.- Grønt Udviklings- og Demonstrationsprogram: 78 millioner kroner.- Pilotprojekter inden for bæredygtigt design og arkitektur: Seks millioner kroner.- Videnskab.dk: To millioner kroner.* En &quot;balanceret forskningsindsats&quot;: I alt 383 millioner kroner.- Danmarks Frie Forskningsfond: 236 millioner kroner.- Fri forskning: 109 millioner kroner.- Fremtidens topforskere: 76 millioner kroner.- Effekter af tidlige indsatser og arbejdet med udvikling af de økonomiske regneprincipper: 51 millioner kroner.- Danmarks Innovationsfond: 137 millioner kroner.- Nye teknologiske muligheder, herunder kunstig intelligens: 70 millioner kroner.- Bedre sundhed, herunder klinisk forskning: 67 millioner kroner.- Grundtvig Centeret: Ti millioner kroner.Kilder: Uddannelses- og forskningsministeriet.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2019-11-06
+          &nbsp;·&nbsp; e76d6a95
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.985</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.758</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.704</kbd>
+            <kbd data-tooltip="Million DKK &amp; taxes">L80_DKKTAX&nbsp;0.587</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Topforsker skal lede nyt center for kunstig intelligens på KU</h4>
+        <div>
+          Med en financiering på 350 millioner kroner i ryggen skal den amerikanske AI-forsker, Serge Belongie, lede et nyt center for kunstig intelligens på Københavns Universitet. Det skriver Københavns Universitet i en pressemeddelse.''Danmark har en fantastisk velordnet dataindsamling på tværs af offentlige institutioner - data, som gør det muligt at udnytte mulighederne i kunstig intelligens og fx forudsige de tidligste stadier af brystkræft, overvåge truede dyrearter eller gøre byplanlægning smartere,'' siger professor Serge Belongie.Centeres forskning skal fokusere på, hvordan kunstig intelligens kan bruges til at løse 10 af de væsentligste samfundsudfordringer. Det gælder blandt andet forudsigelse og forebyggelse af sygdomme, overvågning af klimaforandringer og biodiversitet samt energi og infrastruktur.Også Aalborg Universitet, Aarhus Universitet, DTU og IT-Universitetet skal være en del af det nye center, der støttes af Danmarks Grundforskningsfond, Carlsbergfondet, Novo Nordisk Fonden, Lundbeckfonden og VILLUM FONDEN.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-04-07
+          &nbsp;·&nbsp; e8340f64
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.836</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.534</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.506</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Trekantområdet med i ambitiøst projekt om programmering i skolen</h4>
+        <div>
+          KOLDING: Lærerne i Trekantområdet skal klædes bedre på til at undervise i fremtidens teknologier. Det er ambitionen for et nyt projekt, som kursusvirksomheden App Academy og Trekantområdet netop er gået i gang med at bygge op til 150 af områdets dansk-, matematik-og naturfagslærere.I løbet af skoleåret 2018-19 skal lærerne gennem et online interaktivt undervisningsforløb, hvor såkaldt machine learning sørger for at analysere lærerens interaktion og sammensætte en skræddersyet lektionsplan.-Det er ofte en stor udfordring for lærere at skulle tilegne sig ny teknisk viden og derefter omsætte denne til et undervisningsforløb. Projektets formål er at springe mellemleddet over og give lærerne en større tryghed og didaktisk overskud i de nye teknologier. Et overskud og en viden, de kan tage med ud til flere tusinde elever, siger Morten Barfod Søegaard, App Academy, i en pressemeddelelse.Undervisningsforløbet er støttet af Google, der hvert år uddeler midler, som skal understøtte udviklingen af elevernes digitale evner.
+        </div>
+        <footer>
+          <em>Egtved Posten</em>
+          &nbsp;·&nbsp; 2018-06-26
+          &nbsp;·&nbsp; e6cd8a21
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.837</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.613</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Trailer til 'Transcendence'</h4>
+        <div>
+          Dr. Will Caster (Johnny Depp) er verdens fremmeste kapacitet inden for forskning af kunstig intelligens. Han har viet hele sin eksistens til at skabe historiens mest informationsmodtagelige computer, der er i stand til at indsamle og lagre menneskedens samlede viden, kombineret med et komplet register af menneskelige følelser.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2014-06-16
+          &nbsp;·&nbsp; e472b9c6
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.924</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.738</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Penge til kunstig intelligens og selvkørende biler: Gaveregn fra Danfoss-fond til SDU Sønderborg</h4>
+        <div>
+          Det bliver også en god jul for SDU Sønderborg på Alsion med penge fra Fabrikant Mads Clausen Fond. Arkivfoto: SDU SønderborgFabrikant Mads Clausen Fonden har ladet en sand regn af bevillinger drysse ned over Syddansk Universitet Sønderborg. Det kommer både forskning og uddannelserne på SDU i Sønderborg til gode.Henrik Rath hpo@jv.dkAnnonceSønderborg: Med i alt otte bevillinger til at samlet beløb på over én million kroner muliggør donationer fra Fabrikant Mads Clausen Fonden, at SDU kan indkøbe nyt udstyr til gavn for forskning og uddannelse på universitetet.Der er bevilget penge til indkøb af blandt andet en vindtunnel, en særlig 3D-printer, et testsystem til strømmoduler og en 3D-printer til metal. Gældende for alle bevillingerne er ikke blot, at udstyret underbygger vigtig forskning, men også kommer til at blive en integreret del af undervisningen. Udstyret gør således de studerende i stand til at få praktisk erfaring med eksperimentalt arbejde inden for blandt andet kunstig intelligens.Rebecca Adam, som er videnskabelig assistent ved Center for Industriel Elektronik, har modtaget 56.000 kr. til indkøb af en såkaldt3D LIDARS-sensorer.
+        </div>
+        <footer>
+          <em>Ugeavisen-soenderborg.dk</em>
+          &nbsp;·&nbsp; 2020-12-23
+          &nbsp;·&nbsp; e80c48e9
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.867</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.694</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>HÆDER - NAVNENYT</h4>
+        <div>
+          Kasper Green LarsenAarhus UniversitetAdjunktKasper Green Larsen, adjunkt ved institut for datalogi på Aarhus Universitet, har modtaget Hartmann Diplomprisen. Prisen er på 150.000 kr. og tildeles hvert år en yngre person, der inden for det danske samfund forventes at ville præstere en værdifuld indsats, og som har vist lovende resultater af almindelig samfundsmæssig værdi inden for sociale humanitære, videnskabelige eller kulturelle områder. Kasper Green Larsen modtog prisen på baggrund af sin indsats inden for forskningsområdet algoritmik og nedregrænser, som er den del af teoretisk datalogi, der omhandler, hvor effektivt beregningsproblemer kan løses på en computer. Derudover har han begået en række fundamentale og internationalt anerkendte bidrag og har publiceret 30 artikler, heraf over 20 ved de absolut højest rangerede konferencer indenfor teoretisk datalogi.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-05-07
+          &nbsp;·&nbsp; e63eb401
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.572</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.721</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.599</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DTU åbner nyt center til dataanalyse</h4>
+        <div>
+          DTU har i samarbejde med KU og MAX VI etableret et nyt center kaldet Center for Quantification of Imaging Data (QIM), som skal hjælpe og vejlede brugere af et nyt dataanalyseværktøj, skriver universitetet på sin hjemmeside.Forskere fra DTU er tilknyttet projektet MAX4Imagers, der har haft held med at undersøge hjernevæv på en ny måde ved hjælpe af 3D billeder, som giver resultater med en hidtil uset høj detaljeringsgrad.Ifølge forskerne kan resultaterne føre til bedre forståelse af sygdomme som Alzheimers, ALS og multipel sklerose, men værktøjet kræver eksperter i databehandling. Hvert 3D-billede fylder 32 GB, og den nødvendige dataanalyse er meget kompleks. Derfor skal det nye center hjælpe for eksempel hospitaler med at analysere data.» Vi har gjort alle big-synkrotron-data og resultater frit tilgængelige. Og gennem QIM arbejder DTU på at lægge alle algoritmer samt værktøjer til billedanalyser af synkrotron-billederne frit frem, så andre forskere kan lære teknikken at kende og selv trække viden ud af big data og 3D-billeder, « siger Mariam Andersson, ph.d.-studerende fra DTU Compute og DRCMR, Danish Research Centre for Magnetic Resonance, på Amager og Hvidovre Hospital, til DTU
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-02-17
+          &nbsp;·&nbsp; e821705a
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.952</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.987</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Regeringen vil investere i kunstig intelligens</h4>
+        <div>
+          300 mio. kr. af forskningsreserven skal afsættes til forskning i digital udvikling med særlig fokus på kunstig intelligens, mener uddannelses- og forskningsminister Tommy Ahlers (V)Det skriver BT.Tommy Ahlers fortæller, at Danmark skal være helt fremme på området.»Kunstig intelligens giver så mange muligheder for at gøre både offentlige serviceydelser og private virksomheder bedre og smartere,« siger han.Mens den foreslåede investering ikke udgør nogen væsentlig andel af de globale private investeringer på området, så kan den gøre en forskel, ved at vi fokuserer på at udvikle teknologien i en 'etisk ansvarlig retning,'mener Tommy Ahlers.»Vi skal insistere på at udvikle en dansk måde, hvor borgerne altid, når vi overlader beslutninger til en computer, kan få indsigt i, hvordan den beslutning blev truffet af computeren,« siger ministeren.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-10-11
+          &nbsp;·&nbsp; e6ee73b6
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.558</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.801</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.708</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.572</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FOSS og DTU skal forske sammen</h4>
+        <div>
+          DTU, Danmarks Tekniske Universitet, og hillerødvirksomheden FOSS har indledt et strategisk samarbejde.&quot;Formålet er at skabe en platform for fælles projekter og mål samt at sikre et langsigtet samarbejde. Fokusområder bliver kunstig intelligens, analyse af fødevarekvalitet og -sikkerhed samt sensorer og måleteknologier inden for fødevareområdet,&quot; skriver FOSS i en pressemeddelelse om samarbejdet.&quot;Innovation er en del af vores dna hos FOSS, og nye idéer trives vældig godt i et læringsmiljø, hvor man kan sparre, udfordre og udvikle sammen. Stærke og strategiske samarbejder med innovative institutioner såsom DTU er helt sikkert en katalysator for nyudvikling her hos FOSS, og det håber jeg også, det er for vores partner,&quot;siger Tommy Bysted, der er udviklingsdirektør hos FOSS, i pressemeddelelsen.Forske sammenPå DTU glæder man sig også over det nye samarbejde.&quot;DTU har en lang tradition for at samarbejde med erhvervsliv og beslutningstagere. I mødet mellem forskere, studerende og virksomheder opstår ny innovation, som kan føre til nye arbejdspladser,&quot; siger Marianne Thellersen, der er koncerndirektør for innovation og entrepreneurskab på DTU.&quot;Rammeaftalen bidrager positivt til, at forskere og studerende på DTU får mulighed for at forske sammen med FOSS. Dermed håber jeg, at vi sammen kan udvikle bæredygtige løsninger til gavn for samfundet,&quot; tilføjer Marianne Thellersen.Fremme videnskabDet strategiske samarbejde er fokuseret på fire områder, hvor FOSS og DTU har fælles og kompatible interesser, nemlig kunstig intelligens i forhold til fødevarer og landbrug, fødevareanalyse, fødevaresikkerhed samt sensorer og måleteknologier.Samarbejdet vil tage form af fælles forskningsprojekter, seminarer, workshops, symposier og forløb for studerende, og målet er blandt andet at opbygge kapacitet og kompetencer hos både FOSS og DTU og at fremme videnskab, teknologier og nytænkning.Endvidere er målet at give studerende og nyuddannede kendskab til karrieremulighederne inden for de fire fokusområder, skriver FOSS i pressemeddelelsen.mw
+        </div>
+        <footer>
+          <em>Hilleroed.lokalavisen.dk</em>
+          &nbsp;·&nbsp; 2019-09-12
+          &nbsp;·&nbsp; e7572ba3
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.942</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.556</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.577</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rolf Fagerberg er udnævnt til professor i datalogi på SDU</h4>
+        <div>
+            Rolf Fagerberg er udnævnt til professor i datalogi på Institut for Matematik og Datalogi på SDU. Rolf Fagerbergs speciale er algoritmer og datastrukturer.Senest har han, sammen med en gruppe medforfattere, modtaget prisen for bedste videnskabelige artikel på konferencen Annual Symposium on Algorithms 2019 for en artikel, der for første gang vurderer sorteringsalgoritmer ud fra, hvor mange sammenligninger, hvert enkelt element kan udsættes for. Udover forskning og undervisning er Rolf Fagerberg optaget af at udvikle SDUs datalogi-uddannelse og at tiltrække unge mennesker til uddannelsen. Få dagens vigtigste nyheder direkte i din indbakke. Det er gratis, og du kan afmelde dig til hver en tid.
+        </div>
+        <footer>
+          <em>Faa.dk</em>
+          &nbsp;·&nbsp; 2019-10-30
+          &nbsp;·&nbsp; e76b1729
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.8</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.575</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forskning. Universiteterne bidrager til løsning af store samfundsudfordringer</h4>
+        <div>
+          Dekan Lars Bo Nielsen (AU), prorektor Peter Kjær (RUC), dekan Jacob GraffNielsen (KU), dekan Henrik Bindslev (SDU), dekan Mogens Rysholt Poulsen (AAU), forskningsdekan Katrine Krogh Andersen (DTU), forskningsdekan Søren Hvidkjær (CBS) og prorektor Jens Christian Godskesen (ITU), medlemmer af Danske Universiteters Forsknings-og Innovationspolitiske Udvalg læserbrev: Forskning og innovation fylder ikke meget i den politiske debat - hverken på Christiansborg eller i de mange andre sammenhænge, hvor folk mødes og diskuterer, hvilket samfund vi gerne ville have, og hvordan vi skal prioritere de fælles ressourcer.Her er det temaer som sundhed, regionalisering, migration, miljø og klima, som interesserer de fleste danske borgere og politikere. Det er nærværende problemer, som er til at tage og føle på.Desværre kan man i kampen om de politiske dagsordener komme til at overse, at vi ikke kan løse samfundets store udfordringer uden ny viden, nye indsigter og nye forskningsresultater. Stigende vandstande og ekstreme vejrsituationer, demografiske udfordringer i Europa, Asien og Afrika, plastikfrie oceaner, overvægt og diabetes, regional beskæftigelse og udvikling, digitale forretningsmodeller og brugen af kunstig intelligens. Disse udfordringer kan ikke løses uden ny og banebrydende forskning.Behovet for investeringer i forskning er derfor større end nogensinde før. Universiteterne kan og vil bidrage til løsningen af lokale, nationale og globale problemer.Vi leverer forskning og uddannelse i verdensklasse.Vi er aktive medspillere, når det kommer til at løse de store samfundsudfordringer, styrke de danske virksomheders innovationsevne og understøtte den økonomiske udvikling og beskæftigelse i hele landet nu og de næste mange årtier.Vi skaber viden, som vil hjælpe med at klimasikre nationalt og internationalt, reducere CO2-udledningen, rydde verdens have for plastik, udvikle nye behandlinger til de store folkesygdomme og levere løsninger på ændringer i alderssammensætningen i samfundet. Men som universiteter skal vi være bedre til at synliggøre og diskutere værdien og betydningen af vores forskning - også på det lokale plan.For vi kan ikke løfte vores samfundsansvar og opgaver optimalt uden en politisk håndsrækning og et større fokus på vilkårene for vores arbejde. Og det kræver en bred forståelse af, at investeringer i forskning kan betale sig for alle i Danmark.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende</em>
+          &nbsp;·&nbsp; 2019-03-27
+          &nbsp;·&nbsp; e721e12c
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.526</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.915</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.742</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.528</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI-teknologi, der skaber værdi i dag</h4>
+        <div>
+          BodyPå konferencen vil et udvalg af de fremmeste danske AI-virksomheder vise, hvordan deres banebrydende teknologier skaber værdi i dag. Temaet er ikke fremtiden, hypen, buzzwords og trends, men reelle og håndgribelige eksempler på dansk AI-teknologi, der virker nu og her.Konferencen henvender sig til beslutningstagere, der overvejer at implementere AI-teknologi i organisationen for at forbedre en eller flere processer, men mangler konkret input og eksempler på teknologier der virker i dag - ikke først i morgen.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2019-11-28
+          &nbsp;·&nbsp; e7771090
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.874</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.595</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.659</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt dansk AI-forskningscenter til 350 mio. kr. får verdensførende forsker i spidsen</h4>
+        <div>
+          Nyt forskningscenter i Danmark om kunstig intelligens bliver det hidtil største. Centeret åbner i slutningen af 2021.Danmarks Grundforskningsfond, Carlsbergfondet, Novo Nordisk Fonden, Lundbeckfonden og Villum Fonden går nu i kontraktforhandlinger med danske universiteter om etableringen af det hidtil største forskningscenter i Danmark om kunstig intelligens.Det skriver Københavns Universitet i en meddelelseMed en finansiering på godt 350 millioner kroner fra fondene samt deltagelse fra Aalborg Universitet, Aarhus Universitet, DTU, IT-Universitetet og Københavns Universitet, vil centeret blive den mest ambitiøse satsning på forskning i kunstig intelligens i Danmark.»Jeg er glad og stolt over, at Københavns Universitet forventes at skulle være vært for pionercentret. Det er et helt unikt samarbejde mellem fonde og universiteter som her vil pulje kræfterne for at forske i en af vor tids helt store teknologier. En teknologi, som har potentiale til at løse en lang række samfundsudfordringer,«  siger Katrine Krogh Andersen, dekan på det Natur- og Biovidenskabelige Fakultet på Københavns Universitet, ifølge meddelelsen.Danmark har fantastisk dataindsamlingCentret skal efter planen ledes af Københavns Universitet med forankring i Datalogisk Institut (DIKU) og af en verdensførende amerikansk forsker på området, Serge Belongie, som i dag er professor og prodekan på Universitetet Cornell Tech i USA.Han ansættes som professor på DIKU.»Danmark har en fantastisk velordnet dataindsamling på tværs af offentlige institutioner - data, som gør det muligt at udnytte mulighederne i kunstig intelligens og fx forudsige de tidligste stadier af brystkræft, overvåge truede dyrearter eller gøre byplanlægning smartere,«  siger Serge Belongie i meddelelsen.Centeret vil sigte efter at skabe samfundsmæssige påvirkninger inden for ti områder: Biotech, life- og sundhedsvidenskab, overvågning af klima og biodiversitet, lighed i sundhedsvæsnet, uddannelse, økonomisk vækst og entreprenørskab, krisehjælp, verifikation og validering af informationer, energi og infrastruktur, sikkerhed, etik og retssikkerhed, den offentlige sektor og det sociale område.»Hvis vi for alvor lykkes med vores mål i centret, så vil der opstå et helt brand omkring kunstig intelligens og Danmark, som resten af verden har set det med fx møbeldesign og arkitektur,«  mener Serge Belongie.Centeret åbner i slutningen af 2021.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2021-04-09
+          &nbsp;·&nbsp; e834e9c8
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.619</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.523</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.528</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Big data giver ny indsigt i livets gåder</h4>
+        <div>
+          Når man skal forstå, hvordan menneskekroppen er bygget op og fungerer, er det nødvendigt at forstå de enkelte bygningsdele som celler, dna og proteiner. Men det er ikke nok, det er lige så vigtigt at forstå, hvordan de enkelte bygningsdele påvirker og regulerer hinanden via biokemiske signalsystemer.Dette forskningsfelt kaldes systembiologi, og det er et forskningsfelt, der ofte genererer datasæt af enorme størrelser.Lektor Jan Baumbach, Institut for Matematik og Datalogi, Syddansk Universitet, har fået en bevilling på 6,4 millioner kroner fra Villum Fonden Young Investigator Programme til at udvikle nye datalogiske metoder til bearbejdning af disse enorme datasæt.Målet er at udvikle nye algoritmer, der kan angribe datamængderne og afdække, hvilke signalsystemer der er ansvarlige for at regulere den måde, for eksempel celler, væv og organer udvikles på.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2016-01-28
+          &nbsp;·&nbsp; e5870a86
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.942</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.899</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.629</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Startups og iværksætteri er krumtapperne på DTU</h4>
+        <div>
+          DTU et af de mest veludbyggede økosystemer for iværksætteri blandt tekniske universiteter i Europa.Det kommende DTU High Tech Summit sætter spotlight på, hvad forskerne og de studerende DTU er gode til, og den internationalt anerkendte konference fokuserer på, hvilke teknologiske fremskridt der er vigtige for fremtiden.&quot; DTU High Tech Summit er en gylden chance for et brush-up på alt det nyeste inden for moderne teknologi og digitalisering, og det er et godt netværk med de dygtigste folk fra virksomhederne og forskningen. Sammen kigger vi i krystalkuglen og kommer med kvalificerede bud på, hvad der vil ske i fremtiden. Er det rigtigt, at mange job vil forsvinde i fremtiden? Eller vil den nye teknologi blot skabe andre job,&quot; spørger Anders Bjarklev, der er rektor på DTU og uddannet cand. polyt., Ph. d.og dr. techn.&quot; På DTU er vi førende i Danmark inden for tech-startups. Vi er langt fremme inden for bæredygtige teknologier, og vi har klare bud på, hvordan vi tackler de grønne udfordringer, som blandt andet regeringen har peget på med et markant CO2-mål. Vi kommer med relevante løsninger, så der er gode grunde til at komme forbi DTU High Tech Summit,&quot; fastslår rektor.Han understreger, at DTU er et af Europas førende tekniske universiteter og blandt andet toneangivende inden for kunstig intelligens.&quot; Vi har en stor koncentration af viden om digitalisering, og vi uddanner 50 pct. af alle ingeniører i Danmark. Vi er kendetegnet ved en massiv gearing af vores økonomi takket været en lang række eksterne projekter sammen med små og store virksomheder, klynger og brancher, samarbejder, der er med til at sikre os en placering i toppen af de bedste tekniske universiteter.&quot; .Fokus på entrepreneurshipAnders Bjarklev pointerer, at DTU skal fokusere på startups og entrepreneurship, &quot; fordi teknologi indgår som et væsentligt element i alle brancher, fra sundhed over uddannelse til velfærd. Som universitet er vi forpligtet til konstant at blive dygtigere til at starte nye virksomheder.Derfor skabte vi for seks år siden DTU Skylab, og initiativet er blevet en kolossal succes.&quot; DTU har altid skabt virksomheder, men antallet og succeserne er forøget markant de senere år, og det skyldes ifølge rektor en målrettet indsats.&quot; DTU har behov for den innovative kraft og de vigtige kompetencer, som vi fostrer her på DTU, og vi har en forpligtelse til at være med til at skabe morgendagens nye, store industrisuccesser,&quot; siger Anders Bjarklev.Han bakkes op af Marianne Thellersen, der er cand. polyt., eMBA og koncerndirektør for innovation og entrepreneurskab.Hun peger på, at DTU som universitet er unikt med de mange studerende og forskere, der interesserer sig for iværksætteri.&quot; Vi har et udbredt samarbejde med kompetente folk fra industrien, folk der hjælper som mentorer uden betaling.Advokater, revisorer og direktører, som gerne vil give noget tilbage til samfundet, og det er god støtte til tekniske folk, som ikke nødvendigvis ved noget om, hvordan man opbygger og driver en forretning,&quot; siger Marianne Thellersen.Unikt miljøHun fortæller, at DTU er karakteriseret ved et unikt miljø, et solidt community.&quot; Vi er dygtige til at introducere iværksætteri til de studerende. DTU Skylab blev etableret for seks år siden og er på kort tid blevet en kæmpe succes, et fysisk samlingssted og et læringsmiljø, hvor målet er at lære, at blive klogere og samtidig blive dygtigere til at etablere en startup. Sidste år havde vi 87 startups fra DTU, og hele 52 var udsprunget fra de studerende.Et tilsvarende tal fra 2014 er 21, altså langt mere en fordobling på bare fem år,&quot; siger Marianne Thellersen, som også påpeger, at kvaliteten også er øget markant.Hun slår fast, at det blandt forskerne er vigtigt, at rektor bliver ved med at understrege, at al forskning dokumenterer, at succes med startups begynder med, at topledelsen bakker op.&quot; Iværksætteri for forskere er en ekstra opgave ved siden af deres travle arbejdsdag. Vi skal derfor skabe transparens om mulighederne blandt andet ved at etablere guidelines. Vi er gode til at åbne for værdifulde kontakter til virksomheder. På DTU High Tech Summit samler vi alle på et unikt mødested for teknologi, her møder man top-ofmind, topforskere og topstuderende,&quot; siger en forventningsfuld Marianne Thellersen. Rektor Anders Bjarklev glæder sig tilsvarende.&quot; Husk på, Google kunne lige så godt være skabt her i Danmark. Vi har alt, hvad der skal til for at skabe den næste Google, for os her på DTU er værdiskabelse altafgørende, vi skal være til gavn for samfundet.&quot; Derfor etablerede DTU for et år siden center for entrepreneurship som en inspirator og en integrator mellem de studerende og de ansatte på tværs af alle studieretninger. Alle skal vide noget om entrepreneurship, og centeret skal ifølge rektor &quot; være en krumtap på DTU sammen med Skylab.&quot; Professor Jes Broeng er leder af DTU Entrepreneurship. Han fortæller, at målet er at bidrage til Europas bedste ingeniøruddannelse.&quot; Vi har den dybe faglighed. Vi har fokus på entrepreneurship, og nu skal vi dokumentere, at vi kan bruge vores viden og evner inden for innovation til at skabe nye virksomheder. Udgangspunkt skal være de teknologiske færdigheder, og vi skal med vores åbne center rykke tættere på erhvervslivet, industrien og eksterne iværksættere, som kan hjælpe os med forretningsudvikling, team-dannelse og viden om eksempelvis brugerinddragelse,&quot; siger Jes Broeng.Læs også: Reportage fra Skylab .FAKTA DTU High Tech SummitDTU HIGH TECH Summit finder sted 30. -31. oktober i Lyngby.KONFERENCEN SAMLER INDUSTRI, forskere og startups inden for teknologi og digitalisering, og de vil diskutere emner som kunstig intelligens, Internet of Things og Industry 4.0.I ÅR ER der særligt fokus på klima, miljø og bæredygtighed.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2019-10-28
+          &nbsp;·&nbsp; e76a018a
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.755</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.563</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forskningsreserve giver 1,5 milliard til grøn forskning</h4>
+        <div>
+          Partierne i Folketinget er blevet enige om at fordele knap to milliarder kroner i forskningsreserven for 2020. 1,925 milliarder kroner. Så mange penge er Folketingets partier blevet enige om at fordele i forskningsreserven for 2020. Cirka 1,5 milliarder kroner går til grøn forskning. - Vi sætter en ny grøn retning for udviklingen af Danmark med den her aftale, siger uddannelses- og forskningsminister Ane Halsboe-Jørgensen (S) i en pressemeddelelse. - Forskningen er helt afgørende for at nå vores ambitiøse mål for den grønne omstilling, derfor giver vi den grønne forskning et markant løft. - Så vi kan udvikle et mere klimavenligt landbrug, så vi kan rejse med en mindre belastning af kloden, og så vi kan få endnu mere grøn energi. Og vi sætter penge af til pilotprojekter inden for bæredygtig arkitektur og design, siger hun. Ministeren tilføjer, at de grønne forskningsmilliarder både skal gå til at udvikle nye idéer og mere færdige løsninger, som hurtigt kan gennemføres. Aftale sætter flere penge af til klimaforskning Danske forskere skal forske mere i grøn omstilling. Det er den centrale del af den aftale om fordelingen af forskningsreserven, som alle partier i Folketinget onsdag har indgået. Sådan bliver pengene fordelt: Grøn omstilling: I alt 1542 millioner kroner. - Danmarks Frie Forskningsfond: 340 millioner kroner. - Danmarks Innovationsfond: 629 millioner kroner. - Klimaforskning og CO2-lagring i regi af DMI og GEUS: 40 millioner kroner. - Energiteknologisk Udviklings- og Demonstrationsprogram: 336 millioner kroner. - Miljøteknologisk Udviklings- og Demonstrationsprogram: 111 millioner kroner. - Grønt Udviklings- og Demonstrationsprogram: 78 millioner kroner. - Pilotprojekter inden for bæredygtigt design og arkitektur: Seks millioner kroner. Videnskab.dk : To millioner kroner. En &quot;balanceret forskningsindsats&quot;: I alt 383 millioner kroner. - Danmarks Frie Forskningsfond: 236 millioner kroner. - Fri forskning: 109 millioner kroner. - Fremtidens topforskere: 76 millioner kroner. - Effekter af tidlige indsatser og arbejdet med udvikling af de økonomiske regneprincipper: 51 millioner kroner. - Danmarks Innovationsfond: 137 millioner kroner. - Nye teknologiske muligheder, herunder kunstig intelligens: 70 millioner kroner. - Bedre sundhed, herunder klinisk forskning: 67 millioner kroner. - Grundtvig Centeret: Ti millioner kroner. Kilder: Uddannelses- og forskningsministeriet. De Radikales forskningsordfører, Stinus Lindgreen, siger: - Vi er særligt glade for den markante styrkelse af den frie forskning, initiativet til at sikre bedre kønsfordeling indenfor forskningsverdenen, og fokus på formidling af, hvorfor forskning er så vigtigt - både generelt og specifikt for den grønne omstilling. Hos Venstre er forskningsordfører Ulla Tørnæs tilfreds med, at der bliver penge til forskning, som kan komme landbruget til gode. - Forskning i landbrugets bidrag til den grønne omstilling er en hovedprioritet for Venstre. Fødevaresektoren er en dansk styrkeposition, der årligt eksporterer for milliarder. - Derfor skal vi satse på bæredygtig fødevareproduktion og landbruget som grøn energileverandør, siger hun. /ritzau/
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-11-06
+          &nbsp;·&nbsp; e76d6b88
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.971</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.533</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.537</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Folketinget sender 80 mio. efter forskning i AI, big data, IoT og it-sikkerhed</h4>
+        <div>
+          Et flertal i Folketinget er i dag blevet enige om at afsætte 80 mio. kr. til forskning i 2019 i digitale teknologier som kunstig intelligens (AI), big data, Internet of Things, it-sikkerhed mv.Fokus er kapacitetsopbygning af den danske talentmasse, som er afgørende for at understøtte og udbygge Danmarks position som digitalt foregangsland, lydet det fra Forskningsministeriet.Pengene skal forvaltes af Danmarks Frie Forskningsfond.Det fremgår af en pressemeddelelse fra Forskningsminsteriet og en aftale om fordelingen af forskningsreserven for 2019.»Det er fremragende, at den her aftale er med til at styrke Danmarks fremtid. Vi sætter for alvor skub i forskningen i kunstig intelligens. Vi prioriterer miljø- og klimaforskningen, der kan være med til at løse nogle af fremtidens store udfordringer. Og så glæder jeg mig over, at alle partier står bag at sætte 180 millioner af til de nye pionercentre, så vi skaber flere enestående forskningsmiljøer i verdensklasse,« siger uddannelses- og forskningsminister Tommy Ahlers, ifølge meddelelsen.Forskning i digitale teknologier kan blandt andet understøtte verdensmål 8, lyder det.'Skal skabe vækst'Mette Reismann fra Socialdemokratiet siger, at det vigtigt, at vi får prioriteret den tekniske forskning, så vores virksomheder hele tiden kan udvikle produktionen med smartere tekniske løsninger og viden fra den nyeste forskning.»Sådan hjælper vi virksomhederne i Danmark til at skabe vækst og arbejdspladser i hele landet.« Aftalen er indgået af Regeringen, Socialdemokratiet, Dansk Folkeparti, Radikale Venstre, Socialistisk Folkeparti, Alternativet og Enhedslisten.Den samlede aftale omhandler udmøntning af 1.394 millioner kroner til forskning og udvikling i 2019.Forskningsreserven er på 958 millioner kroner, som stammer fra provenuet fra aftalen om reform af førtidspension og fleksjob. Derudover er der i finanslovsforslaget for 2019 afsat i alt 436 millioner kroner til videreførelse af eksisterende forskningsinitiativer og igangsættelse af nye initiativer. Dermed fordeler aftalen næsten 400 millioner kroner mere end sidste år.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-11-02
+          &nbsp;·&nbsp; e6f57d42
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.698</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.756</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.583</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.555</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>It-virksomhed og Roskilde Universitet får legat til AI-projekt</h4>
+        <div>
+          It-virksomheden Duuoo og Centre for Big Data på Roskilde Universitet har sammen modtaget et legat fra Innovationsfonden til et projekt, hvor man vil forbedre trivsel arbejdspladser, skriver ITWatch.Forskere fra Centre for Big Data vil analysere anonyme data fra Duuoo's digitale ledelsesplatform med kunstig intelligens og machine learning.Ifølge Magnus Stawicki Blak, adm. direktør i Duuoo, er nutidens måde at involvere medarbejdere på forældet, og i fremtiden skal der mere til for at sikre ansattes trivsel på arbejdspladsen.» Det er langt fra alle ledere, der er klædt på til denne opgave, og det vil vi gerne hjælpe med. Med dette nye samarbejde vil vi indføre kunstig intelligens og machine learning i vores digitale ledelsesplatform, « siger han til ITWatch.Samarbejdspartnerne har fået 800.000 kroner fra Innovationsfonden, så nu er projektets budget på 2,4 millioner kroner.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-03-11
+          &nbsp;·&nbsp; e829eb25
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.642</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.559</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Erhvervslivet til politikerne: Prioriter nu den tekniske forskning</h4>
+        <div>
+          Dansk Metal, Ingeniørforeningen og stærke, forskningstunge virksomheder som Novo Nordisk, Siemens og Haldor Topsøe frygter konsekvenserne af regeringens finanslovsforslag og partiernes forskellige 2025-planer. Politikernes planer medfører alle et tilbageslag for den tekniske forskning, som er en af forudsætningerne for at transformere Danmark til &quot; at vinde fremtiden&quot;, sådan som temaet på gårsdagens DI Topmøde lød.I dag er digitalisering, automatisering, robotter, kunstig intelligens, førerløse biler og droner fremtidens stærkeste kort i den globale konkurrence. Men det kan ikke ses i de politiske prioriteringer, hverken i 2025-planerne, som de forskellige partier præsenterede tidligere på måneden, eller i finanslovsforslaget for 2017.Tværtimod.Forskningen i nye teknologier er ikke blevet opprioriteret gennem årtier. Teknisk forskning lægger beslag på 12-15 procent af forskningsinvesteringerne, og niveauet har ikke rykket sig siden 1970' erne, bortset fra enkelte år i 1980' erne, hvor niveauet var lidt højere. I den seneste OECD-sammenligning af landenes investeringer i teknisk forskning var Danmark nr. 23 ud af 28 lande. De seneste par år er teknisk forskning ifølge Ingeniørforeningen i Danmark (IDA) i realiteten blevet beskåret.Endnu færre midlerFælles for virksomhederne og organisationerne bag opråbet er, at de ønsker, at teknisk forskning bliver prioriteret højere end tilfældet er i dag, og at politikerne generelt øger de offentlige investeringer i forskning fra de nuværende 1,03 pct. af BNP til 1,5 pct. af BNP.Bliver regeringens Finanslov for 2017 vedtaget som fremlagt, vil der ifølge ingeniørforeningen blive endnu færre midler til teknisk forskning: - Det tekniske område er blevet beskåret uforholdsmæssigt meget de senere år, og det burde man rette op på, siger Thomas Damkjær Petersen, formand for IDA, og han bakkes op af kollegerne i Dansk Metal: - Lønandelen i den danske produktion skal ned, hvis vi skal bevare lønniveau og velfærd. Og det sker kun ved at få flere maskiner til at arbejde for os. Derfor skal vi have teknisk viden og forskning af høj kvalitet i Danmark. Ellers vil den produktion, vi ser begynde at rykke hjem til Danmark, rykke ud igen til de steder, hvor de har satset på teknisk forskning, siger Claus Jensen, formand for Dansk Metal.Succes kræver videnDe to fagforeninger står ikke alene. Store danske virksomheder som Novo Nordisk, Siemens, Vestas og Haldor Topsøe bakker også op om forsøget på at få politikerne i tale.- Danmark halter efter vækstregioner i Tyskland, USA og Asien, når det gælder investering i forskning i naturvidenskab og teknologi, og det er et problem, for teknologisk udvikling er grundstenen i det moderne samfund og for virksomhederne, hvis de skal kunne klare sig i den globale konkurrence. Den teknologiske udvikling går stadig hurtigere. Hvis Danmark skal følge med, kræver det nye ideer, forskning og nye teknologier, siger Jukka Pertula, administrerende direktør i Siemens Danmark.Han går ind i debatten fordi emnet er vigtigt både for samfundsudviklingen og for Siemens. Ifølge Jukka Pertula er Siemens meget afhængig af teknisk forskning, når selskabet skal udvikle nye produkter, og med en satsning på forskning følger dygtige studerende.- Det har vi brug for, og derfor vil vi gerne have styrket forskningen, siger Jukka Pertula, som beskæftiger 8500 ansatte i Danmark, primært inden for udvikling og fremstilling af vindmøller.Øgede offentlige investeringer Novo Nordisk er lige som Siemens en af landets største eksportvirksomheder.Selskabet har i de senere år haft glæde af øgede offentlige investeringer i sundhedsforskning og af, at Novo Nordisk Fonden har doneret store beløb til forskning. Men virksomheden har også et stort behov for at kunne trække på teknisk forskning af højeste kvalitet.&quot; Novo Nordisks succes er baseret på viden, innovation og dygtige medarbejdere.I Novo Nordisk er der tæt sammenhæng mellem forskning, udvikling og højteknologisk produktion&quot;, skriver Søren Bregenholt, chef for External Relations, Sourcing &amp; Strategy i Novo Nordisks forsknings-og udviklingsafdeling i en mail til Berlingske.&quot; Derfor er vores samarbejde med den offentlige sundhedsforskning, den naturvidenskabelige forskning og i høj grad også den tekniske forskning afgørende for, at vi løbende kan blive endnu dygtigere.Stærke forskningsmiljøer er samtidig en forudsætning for, at vi som land kan uddanne den arbejdskraft, virksomhederne har brug for&quot;, fortsætter han.Uddannelse-og forskningsminister Ulla Tørnæs (V) synes, at ønsket om at prioritere teknisk forskning højere lyder fornuftigt og vil gerne se nærmere på at målrette forskningsmidlerne, men som hun siger: - Det er noget, der skal drøftes med de andre partier.Den teknologiske udvikling går stadig hurtigere. Hvis Danmark skal følge med, kræver det nye ideer, forskning og nye teknologier.JUKKA PERTULA ADMINISTRERENDE DIREKTØR I SIEMENS DANMARK .V I D E N T E K N I S K FORS K N I N GTeknisk forskning eller de tekniske videnskaber dækker over en række områder, som de senere år har fået stadig større betydning for virksomhederne og danskerne i det hele taget.Teknisk forskning omfatter blandt andet forskning i informations-og kommunikationsteknologi, energiteknologi, fremtidens materialer, fremstillingsteknologier, maskinkonstruktion og produktionsteknologi og elektronik.Teknisk forskning er forudsætningen for udviklingen af mange af de nye teknologier, der dukker op i disse år - blandt andet droner, førerløse biler, robotter, automatisering, supercomputere, energieffektiv elektronik, 3D-print i avancerede materialer og sensorer, der forbinder produkter til internet-skyen.VISIONER HVAD MENER POLITIKERNERegeringens 2025-plan: &quot; Globalisering, digitalisering og ny teknologi ændrer vores liv og samfund. Aldrig er det gået så stærkt. Aldrig har mulighederne været så mange. Og aldrig har kravene føltes så store.&quot; .Det vil regeringen:Regeringen vil indføre fradrag for merinvesteringer i forskning og udvikling og bruge en del af SU-omlægningen til at oprette en såkaldt kompetencepulje på en milliard kroner om året fra 2019.Den skal løfte danskernes kompetencer, skabe mere kvalitet i uddannelserne og styrke erhvervslivets forskning og kompetencer inden for digitalisering.Det vil Socialdemokratiet:Socialdemokratiet mener, at den tekniske forskning, der understøtter udviklingen af produktion i Danmark, skal styrkes og udgøre 20 pct. af de samlede offentlige udgifter til forskning og udvikling. Det gælder for eksempel forskning i ny og smartere produktion, digitalisering af processer, produkter, services og materialer.Det vil Det Radikale Venstre:Det Radikale Venstre mener, at der skal investeres ni milliarder kroner i børn, uddannelse og forskning i forhold til regeringens 2025-plan. Danmark skal blandt andet gennem målrettet forskning være verdensmestre i cirkulær økonomi og anvendelse og udbredelse af de mange nye teknologier, som den fjerde industrielle revolution byder på.Udsigt til færre forskningsmidler ..Så meget vil bevillingen af konkurrenceudsatte forskningsmidler falde fra 2015 til 2017, hvis regeringens finanslovsforslag 2017 bliver vedtaget. Fald i procent.... og færre basismidler til teknisk forskningUdviklingen i den del af universiteternes basismidler, der bliver øremærket til teknisk forskning (ekskl. sundhedsforskning) Indeks 100 = 2010.
+        </div>
+        <footer>
+          <em>JydskeVestkysten</em>
+          &nbsp;·&nbsp; 2016-09-28
+          &nbsp;·&nbsp; e5e6f8a4
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.551</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.964</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.643</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Kristian Kidholm er ansat som innovationsprofessor ved Klinisk Institut på Syddansk Universitet med tilknytning til Center for Innovativ Medicinsk Teknologi, CIMT på Odense Universitetshospital.Hans forskning har pt. fokus på effekterne af Region Syddanmarks kommende EPJ-system, metoder til bedre implementering af digitale teknologier i kliniske afdelinger og retningslinjer for vurdering af værdien af kunstig intelligens i sundhedsvæsenet.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-11-24
+          &nbsp;·&nbsp; e77576c6
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>ITU og Alexandra Instituttet bliver en vigtig del af nyt nationalt forskningscenter for kunstig intelligens og Big Data</h4>
+        <div>
+          Et nyt nationalt forskningscenter har set dagens lys. Center for Forskning i Digitale Teknologier - DIREC - er et samarbejde mellem Alexandra Instituttet og syv danske universiteter, heriblandt IT-Universitetet i København. Det skriver Alexandra Instituttet i en pressemeddelelse.» Danmark er i front inden for en række 'klassiske' it-teknologier, men der er mangel på specialister. Det er derfor nødvendigt med en styrket indsats og dermed sikring af, at Danmark fortsat er i front og ikke mindst i forhold til nye teknologier som f.eks. kunstig intelligens, big data og internet-of things, « skriver instituttet.Konsortiet bag DIREC består af de datalogiske institutter på Danmarks Tekniske Universitet, Københavns Universitet, Copenhagen Business School, IT-Universitetet, Syddansk Universitet, Aarhus Universitet og Aalborg Universitet.Det er første gang, at de datalogiske forskningsmiljøer fra så mange danske universiteter er gået sammen om at stifte et forskningscenter. Innovationsfonden har desuden bevilget 100 mio. kroner til projektet - den største bevilling i fondens historie.DIREC's bestyrelse har ansat Thomas Riisgaard Hansen som direktør med virkning fra 1. januar 2021. Han har en ph.d. i datalogi fra Aarhus Universitet og har været gæsteforsker på UC Berkeley i Californien.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-11-26
+          &nbsp;·&nbsp; e8022601
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.749</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.548</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Aftale sætter flere penge af til klimaforskning</h4>
+        <div>
+          Alle Folketingets partier har onsdag aftalt fordelingen af penge til forskning fra forskningsreserven. Danske forskere skal forske mere i grøn omstilling. Det er den centrale del af den aftale om fordelingen af forskningsreserven, som alle partier i Folketinget onsdag har indgået. Sådan bliver pengene fordelt: * Grøn omstilling: I alt 1542 millioner kroner. - Danmarks Frie Forskningsfond: 340 millioner kroner. - Danmarks Innovationsfond: 629 millioner kroner. - Klimaforskning og CO2-lagring i regi af DMI og GEUS: 40 millioner kroner. - Energiteknologisk Udviklings- og Demonstrationsprogram: 336 millioner kroner. - Miljøteknologisk Udviklings- og Demonstrationsprogram: 111 millioner kroner. - Grønt Udviklings- og Demonstrationsprogram: 78 millioner kroner. - Pilotprojekter inden for bæredygtigt design og arkitektur: Seks millioner kroner. - Videnskab.dk: To millioner kroner. * En &quot;balanceret forskningsindsats&quot;: I alt 383 millioner kroner. - Danmarks Frie Forskningsfond: 236 millioner kroner. - Fri forskning: 109 millioner kroner. - Fremtidens topforskere: 76 millioner kroner. - Effekter af tidlige indsatser og arbejdet med udvikling af de økonomiske regneprincipper: 51 millioner kroner. - Danmarks Innovationsfond: 137 millioner kroner. - Nye teknologiske muligheder, herunder kunstig intelligens: 70 millioner kroner. - Bedre sundhed, herunder klinisk forskning: 67 millioner kroner. - Grundtvig Centeret: Ti millioner kroner. Kilder: Uddannelses- og forskningsministeriet. /ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt-Dagblad.dk</em>
+          &nbsp;·&nbsp; 2019-11-06
+          &nbsp;·&nbsp; e76d6bcd
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.985</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.763</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.705</kbd>
+            <kbd data-tooltip="Million DKK &amp; taxes">L80_DKKTAX&nbsp;0.578</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Danske ambassadører på skolebænken på DTU</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra UdenrigsministerietNår ca. 80 danske ambassadører på onsdag den 21 august sætter sig til rette iundervisningslokalerne på Danmark Tekniske Universitet, DTU i Lyngby, er detfor at blive klogere på de danske styrkepositioner på forsknings- oginnovationsområdet og blive inspireret af danske iværksættere. Danmarkligger nemlig helt i top, når det kommer til at udvikle nye ideer og skabe nyviden. DTU er et teknisk eliteuniversitet med international rækkevidde, der udover uddannelse, forskning og innovation også har fokus på samarbejde medmyndigheder og virksomheder, og som de seneste år haft stor succes med atudklække iværksættere.&quot;Danmark ligger konsekvent i toppen, når globale rangeringer måleriværksætter- og innovationslande. Men den placering kommer ikke af sig selv.Vi har opbygget stærke forskningsmiljøer, gode rammevilkår og en åbentilgang til innovation. Det skaber et stærkt fundament for Danmarks evne til atspille en aktiv rolle i at løse verdenens udfordringer, og dermed bidrage tilverdensmålene, som er en høj prioritet for S-regeringen&quot;, sigerUdenrigsminister Jeppe Kofod.Besøget på DTU bringer ambassadørerne i direkte kontakt med forskere ogiværksættere, der arbejder med alt fra konvertering og lagring af energi,anvendelse af big data og kunstig intelligens, og til hvordan lys kan anvendes ifremtidens kommunikationsteknologi. Dén indsigt i det innovative Danmarkkan ambassadørerne tage med sig ud i verden, hvor de til dagligt arbejdermed at fremme danske interesser og er i tæt kontakt med både myndighederog virksomheder i udlandet. &quot;DTU er et dansk universitet med et globalt udsyn og da forskning per naturer international, er det nærmest en selvfølge, at det samme gør sig gældendefor den forskningsbaserede innovation, som foregår på DTU. Vi ser os selv sommedspiller og bidragyder til at opfylde FN's verdensmål og styrke Danmarksinternationale relationer og position - bl.a. via vores partnere, ambassaderneog innovationscentrene rundt omkring i verden. Vi indgår i flere alliancer mednogle af verdens bedste tekniske universiteter - og deltager også ienkeltprojekter, hvoraf en del er blevet til i tæt samarbejde medUdenrigsministeriet. Det drejer sig bl.a. om vindprojekter i Mexico og Sydafrika, vand- og energiprojekter i Indien og fødevaresikkerhed i Saudi Arabien,&quot; siger Rektor på DTU Anders Bjarklev.Besøget starter med velkomst hos DTU Skylab efterfulgt af keynote tale vedLars Fruergaard Jørgensen, CEO Novo Nordisk, hvorefter ambassadørernefordeler sig på fire forskellige institutter på DTU, Energi, Fotonik, Compute ogFødevareinstituttet.Efter besøget på DTU, er ambassadørerne inviteret tilmøde med erhvervsorganisationerne, Dansk Industri, Dansk Erhverv, DanskeRederier og Landbrug &amp; Fødevarer.Program på DTU:9.00-9.30 Velkomst ved Rektor Anders O. Bjarklev9.30-10.30 Keynote-tale ved Lars Fruergaard Jørgensen, CEO Novo Nordisk:Innovationens DNA i Novo Nordisk10.45-11.45 Besøg på fire institutter:DTU Energi og PowerlabDKDTU FotonikDTU ComputeDTU Fødevarer12.30-13.00 Præsentation af DTU Skylab ved Mikkel Sørensen, chef for DTUSkylab16.15-19.00 Arrangement hos erhvervsorganisationerneLandbrug og Fødevarer, Danske Rederier, Dansk Erhverv og Dansk IndustriAdresse DTU Skylab: Diplomvej, Bygning 373A, 2800 LyngbyPresse:Pressen er velkommen på både DTU og i Erhvervsorganisationerne. Venligstkontakt journalist i Udenrigsministeriet, Anja Solvang, for tilmelding.Kontakt: anjsol@um.dk eller mobil: 4186 5908Læs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/danske-ambassadorer-pa-skolebaenken-pa-dtu?releaseId=13577877
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-08-20
+          &nbsp;·&nbsp; e74ef7c6
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.683</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.516</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>1,8 mio. kr til forsker</h4>
+        <div>
+          SØNDERBORG: Lektor Jonas Bloch Thorlund fra SDU har været med til at påvise, at meniskoperationer ofte ikke virker. Det får han nu 1.875.000 kr. fra Det Frie Forskningsråd for Sundhed og Sygdom til at gå videre med. Bevillingen går til konkret at identificere dem, som med størst sandsynlighed kan få glæde af meniskkirurgi. Denne viden skal anvendes til at udvikle et beslutningsværktøj (algoritme), så de rigtige patienter får tilbudt denne behandling.Resultaterne kan få stor betydning på verdensplan, både menneskeligt og økonomisk.Alene i USA gennemføres 700.000 meniskoperationer - hvert år.Jonas Bloch Thorlund, 38 år, er vokset op i Sønderborg og nu ansat på SDU Institut for Idræt og Biomekanik.
+        </div>
+        <footer>
+          <em>JydskeVestkysten Sønderborg</em>
+          &nbsp;·&nbsp; 2016-07-14
+          &nbsp;·&nbsp; e5ccc4a3
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.757</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.615</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.642</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Læserbrev: Universiteterne bidrager til løsningen af de store samfundsudfordringer</h4>
+        <div>
+          Forskning og innovation fylder ikke meget i den politiske debat - hverken på Christiansborg eller i de mange andre sammenhænge, hvor folk mødes og diskuterer, hvilket samfund vi gerne ville have, og hvordan vi skal prioritere de fælles ressourcer. Her er det temaer som sundhed, regionalisering, migration, miljø og klima, som interesserer de fleste danske borgere og politikere. Det er nærværende problemer, som er til at tage og føle på.Desværre kan man i kampen om de politiske dagsordener komme til at overse, at vi ikke kan løse samfundets store udfordringer uden ny viden, nye indsigter og nye forskningsresultater. Stigende vandstande og ekstreme vejrsituationer, demografiske udfordringer i Europa, Asien og Afrika, plastikfrie oceaner, overvægt og diabetes, regional beskæftigelse og udvikling, digitale forretningsmodeller og brugen af kunstig intelligens. Disse udfordringer kan ikke løses uden ny og banebrydende forskning.Behovet for investeringer i forskning er derfor større end nogensinde før. Universiteterne kan og vil bidrage til løsningen af lokale, nationale og globale problemer. Vi leverer forskning og uddannelse i verdensklasse. Vi er aktive medspillere, når det kommer til at løse de store samfundsudfordringer, styrke de danske virksomheders innovationsevne og understøtte den økonomiske udvikling og beskæftigelse i hele landet nu og de næste mange årtier.Vi skaber viden, som vil hjælpe med at klimasikre nationalt og internationalt, reducere CO2-udledningen, rydde verdens have for plastik, udvikle nye behandlinger til de store folkesygdomme og levere løsninger på ændringer i alderssammensætningen i samfundet. Men som universiteter skal vi være bedre til at synliggøre og diskutere værdien og betydningen af vores forskning - også på det lokale plan.For vi kan ikke løfte vores samfundsansvar og opgaver optimalt uden en politisk håndsrækning og et større fokus på vilkårene for vores arbejde. Og det kræver en bred forståelse af, at investeringer i forskning kan betale sig for alle i Danmark.
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2019-03-27
+          &nbsp;·&nbsp; e72207cd
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.6</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.99</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.926</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.598</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Den frie forskning i Danmark får 950 mio. kr.</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra Danmarks Frie ForskningsfondForskere i hele landet kan søge om at forske i internationale elitemiljøer som DFF-International Postdoc, gå karrierevejen som Sapere Aude: DFF-Forskningsleder eller afprøve banebrydende idéer gennem programmerne DFF-Forskningsprojekt 1 og det lidt større DFF-Forskningsprojekt 2 eller søge en række mindre virkemidler, som Danmarks Frie Forskningsfond uddeler gennem de faglige forskningsråd.Se frister og muligheder for at få støtte: Frie forskningsmidler E2020 og F2021.David Dreyer Lasssen, bestyrelsesformand for Danmarks Frie Forskningsfond, siger:&quot;Forskere er samfundets seismografer - de er blandt de første til at stille nye spørgsmål til os selv og til verden omkring os. Nogle projekter giver bud på samfundsløsningerne her og nu, andre bliver inputs til forskning og udvikling om fem, 10 og 20 år. Dansk forskning er i forvejen i verdensklasse og for den enkelte forsker kan støtte fra fonden betyde et rygstød i retning af den absolutte verdenselite.&quot;Forskning, der flytter både samfund og individDanmarks Frie Forskningsfond kan virke som en katapult for den enkelte forsker, der kan fortsætte perspektivrig forskning af høj kvalitet. Blandt andet ser vi, at forskere, der har fået en eller flere bevillinger fra Danmarks Frie Forskningsfond, kommer igennem nåleøjet og modtager bevillinger fx fra det prestigefyldte Europæiske Forskningsråd (ERC) eller Danmarks Grundforskningsfond.Hvert år uddeler fonden bevillinger, der giver mulighed for risikovillig forskningsfinansiering og skaber rum til at afprøve nye forskningsspørgsmål eller forfølge nye spor. Tidligere år er forskningskronerne fx gået til:391 forskere fik bevillinger i 2019I 2019 fik 391 forskere bevillinger til ny og banebrydende forskning. I 2020 forventer fonden nogenlunde samme antal bevillinger. Den gennemsnitlige bevilling er på ca. 3 millioner kr.Danmarks Frie Forskningsfond modtager årligt mellem 2.000-4.000 ansøgninger. Det drejer sig om en bred vifte af emner som fx forskning i klimaforandringer, miljø, i kroppens og planters enzymer, sygdomsmekanismer, cellebiologi, bioteknologi, intelligent velfærdsteknologi, kvanteteknologi, kunstig intelligens, digitalisering, forholdet mellem teknologi, samfund og menneske, internationale kapitalstrømme, jura og politik.Beløbet opslås, forudsat at fonden fortsat får denne bevilling på finansloven 2021.Læs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/den-frie-forskning-i-danmark-far-950-mio-kr?releaseId=13594460** Ovenstående pressemeddelelse er videreformidlet af Ritzau på vegne af tredjepart. Ritzau er derfor ikke ansvarlig for indholdet ** 
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-06-04
+          &nbsp;·&nbsp; e7bc8a00
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.518</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.508</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.544</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Mads Thomassen professor i genetik</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra Syddansk UniversitetSiden 2002 har Mads Thomassen forsket i molekylærgenetik af cancer især brystkræft, først som ph.d.-studerende og siden som molekylærbiolog på Klinisk Genetisk Afdeling på OUH og adjunkt/lektor på Klinisk Institut, SDU. Han har desuden lavet klinisk arbejde med fokus på arvelig bryst- og æggestokkræft men også andre cancerformer.Målet med Mads Thomassens forskning er at udvikle bedre molekylære markører til at forudse sygdomsrisiko eller til at forudse, hvilken behandling den enkelte patient vil have mest gavn af. Hans forskning gør brug af avancerede molekylærbiologiske metoder til at undersøge genetiske variationer eller genaktivitet fra hele arvemassen. Det er således forskning der genererer store mængder data, der kan give detaljerede &quot;fingeraftryk&quot;, som er karakteristisk for det væv, der undersøges. Data analyseres med avancerede metoder så som kunstig intelligens og machine learning.Hans forskergruppe bruger bl.a. disse metoder hos brystkræftpatienter til at finde genmønstre i tumor, der kan afsløre, hvilke mekanismer der er årsag til sygdommen eller kan gøre, at sygdommen spreder sig til andre organer.  Mads Thomassen har et stort internationalt netværk specielt i forskning af arvelig bryst- og æggestokkræft, hvor han deltager i flere store forskningsgrupper og leder adskillige projekter.Mads Thomassen er meget aktiv i Klinisk Genom Center, der er et ressourcecenter for forskere, der ønsker at anvende moderne metoder til molekylær profilering i deres kliniske forskning. Centret spiller således en central rolle i en lang række forskningsprojekter og bidrager til uddannelse af forskere og udbredelse af viden om genomisk medicin til mange lægelige specialer.Mads Thomassen (49) er oprindeligt uddannet fra Aarhus Universitet i kemi og bioteknologi. Han har arbejdet på Aarhus Universitet med miljø- og arbejdsmedicin og derefter i et privat firma, DNA-Technology, hvor han udviklede metoder til cancerdiagnostik.Mads Thomassen er gift med Annie, der er præst i Stenstrup/ Lunde, og de har sammen 4 børn. Han prioriterer familielivet højt og er desuden en meget aktiv motionist.Kontakt:Til navneredaktionen:
+Mads Thomassen
+Født 12/5-1971 i Odense
+Privatadresse: Hundstrupvej 1
+
+
+Kontakt:
+Leder af SUND-Kommunikation Tomas Homburg
+Mail: thomburg@health.sdu.dk
+Mobil: +45 6011 3059
+Syddansk Universitet
+Det Sundhedsvidenskabelige Fakultet
+www.sdu.dkLæs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/mads-thomassen-professor-i-genetik?releaseId=13599262** Ovenstående pressemeddelelse er videreformidlet af Ritzau på vegne af tredjepart. Ritzau er derfor ikke ansvarlig for indholdet ** 
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-09-03
+          &nbsp;·&nbsp; e7def3e3
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.989</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.578</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>BEVILLING</h4>
+        <div>
+          Anders Møller, lektor og leder af Center for Advanced Software Analysis, Casa, ved Institut for Datalogi, Aarhus Universitet, har modtaget det prestigefyldte ERC Consolidator Grant på 14,7 mio. kr. fra The European Research Council (ERC).ERC Consolidator Grants har til formål at styrke fremragende og nyskabende forskning og er målrettet erfarne forskere, som står over for at konsolidere deres forskning og forskningskarriere.Målet med Anders Møllers nye projekt &quot;Automated Program Analysis for Advanced Web Applications&quot; er at udvikle nyskabende algoritmer til automatisk fejlfinding og effektivisering af avancerede web-applikationer.
+        </div>
+        <footer>
+          <em>JP Aarhus</em>
+          &nbsp;·&nbsp; 2015-04-10
+          &nbsp;·&nbsp; e4f338b8
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.841</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.68</kbd>
+            <kbd data-tooltip="Universities">L80_UNIVTY&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Foss og DTU i rammeaftale om innovation</h4>
+        <div>
+          NORDSJÆLLAND: Et nyt strategisk samarbejde mellem Danmarks Tekniske Universitet (DTU) og Foss skal styrke det allerede eksisterende samarbejde inden for forskning, udvikling og uddannelse.Formålet er at skabe en platform for fælles projekter og mål -samt at sikre et langsigtet samarbejde. Fokusområder bliver kunstig intelligens, analyse af fødevarekvalitet og -sikkerhed samt sensorer og måleteknologier inden for fødevareområdet.-Innovation er en del af vores dna hos Foss, og nye idéer trives vældig godt i et læringsmiljø, hvor man kan sparre, udfordre og udvikle sammen. Stærke og strategiske samarbejder med innovative institutioner såsom DTU er helt sikkert en katalysator for nyudvikling her hos Foss, og det håber jeg også, d. at det er for vores partner, siger Tommy Bysted, udviklingsdirektør hos Foss.Samarbejdet vil tage form af fælles forskningsprojekter, seminarer, workshops, symposier og forløb for studerende.Målet er at opbygge kapacitet og kompetencer hos både Foss og DTU og at fremme videnskab, teknologier og nytænkning. Målet er også at give studerende og nyuddannede kendskab til karrieremulighederne inden for de fire fokusområder.Samarbejdet kommer til at køre over flere år. I den nære fremtid vil Foss være til stede ved High Tech Summit, en tech-konference, DTU afholder til oktober, og relevante institutter hos DTU vil blive inviteret til Prize Talks hos Foss i forbindelse med uddelingen af forskerprisen »Nils Foss Excellence Prize« til november.Innovation er en del af vores dna hos Foss, og nye idéer trives vældig godt i et læringsmiljø, hvor man kan sparre, udfordre og udvikle sammen.Tommy Bysted, udviklingsdirektør hos Foss.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2019-09-12
+          &nbsp;·&nbsp; e756e6a8
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.856</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.702</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.569</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

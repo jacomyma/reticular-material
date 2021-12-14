@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>L10_SOMEWB <kbd>L10_SOMEWB</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:60.78pt; padding:0px 12px"><strong>facebook</strong>&nbsp;<span style="font-size:.5em">24780</span></span>
+        <span style="font-size:36.42pt; padding:0px 12px"><strong>sociale</strong>&nbsp;<span style="font-size:.5em">6461</span></span>
+        <span style="font-size:31.20pt; padding:0px 12px"><strong>facebooks</strong>&nbsp;<span style="font-size:.5em">4082</span></span>
+        <span style="font-size:31.05pt; padding:0px 12px"><strong>siger</strong>&nbsp;<span style="font-size:.5em">4019</span></span>
+        <span style="font-size:30.03pt; padding:0px 12px"><strong>medier</strong>&nbsp;<span style="font-size:.5em">3622</span></span>
+        <span style="font-size:29.89pt; padding:0px 12px"><strong>opslag</strong>&nbsp;<span style="font-size:.5em">3568</span></span>
+        <span style="font-size:29.81pt; padding:0px 12px"><strong>robotter</strong>&nbsp;<span style="font-size:.5em">3538</span></span>
+        <span style="font-size:28.93pt; padding:0px 12px"><strong>indhold</strong>&nbsp;<span style="font-size:.5em">3213</span></span>
+        <span style="font-size:28.81pt; padding:0px 12px"><strong>robot</strong>&nbsp;<span style="font-size:.5em">3170</span></span>
+        <span style="font-size:28.44pt; padding:0px 12px"><strong>robotterne</strong>&nbsp;<span style="font-size:.5em">3040</span></span>
+        <span style="font-size:28.30pt; padding:0px 12px"><strong>zuckerberg</strong>&nbsp;<span style="font-size:.5em">2992</span></span>
+        <span style="font-size:28.28pt; padding:0px 12px"><strong>brugere</strong>&nbsp;<span style="font-size:.5em">2986</span></span>
+        <span style="font-size:28.15pt; padding:0px 12px"><strong>robotten</strong>&nbsp;<span style="font-size:.5em">2943</span></span>
+        <span style="font-size:28.05pt; padding:0px 12px"><strong>medie</strong>&nbsp;<span style="font-size:.5em">2905</span></span>
+        <span style="font-size:27.97pt; padding:0px 12px"><strong>instagram</strong>&nbsp;<span style="font-size:.5em">2880</span></span>
+        <span style="font-size:27.08pt; padding:0px 12px"><strong>mark</strong>&nbsp;<span style="font-size:.5em">2584</span></span>
+        <span style="font-size:25.87pt; padding:0px 12px"><strong>mennesker</strong>&nbsp;<span style="font-size:.5em">2210</span></span>
+        <span style="font-size:25.33pt; padding:0px 12px"><strong>videoer</strong>&nbsp;<span style="font-size:.5em">2054</span></span>
+        <span style="font-size:24.56pt; padding:0px 12px"><strong>twitter</strong>&nbsp;<span style="font-size:.5em">1839</span></span>
+        <span style="font-size:24.28pt; padding:0px 12px"><strong>brugerne</strong>&nbsp;<span style="font-size:.5em">1764</span></span>
+        <span style="font-size:23.84pt; padding:0px 12px"><strong>folk</strong>&nbsp;<span style="font-size:.5em">1649</span></span>
+        <span style="font-size:23.70pt; padding:0px 12px"><strong>falske</strong>&nbsp;<span style="font-size:.5em">1614</span></span>
+        <span style="font-size:23.36pt; padding:0px 12px"><strong>billeder</strong>&nbsp;<span style="font-size:.5em">1527</span></span>
+        <span style="font-size:23.14pt; padding:0px 12px"><strong>venner</strong>&nbsp;<span style="font-size:.5em">1473</span></span>
+        <span style="font-size:22.71pt; padding:0px 12px"><strong>millioner</strong>&nbsp;<span style="font-size:.5em">1371</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY L10_SOMEWB DESC LIMIT 50</pre>
+      <article>
+        <h4>Facebook vil gøre dig glad i 2020</h4>
+        <div>
+          Tophistorien er skrevet og udgivet af Politiken. Ritzau må ikke krediteres.INFO: Anvendelse forudsætter accept af vilkårene i bunden.**** RITZAUS TOPHISTORIETJENESTE ****Det sociale medie Facebook, der også ejer Instagram, vil ændre på algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på deres platforme. Det fortæller to nordiske topchefer fra Facebook i et interview med Politiken.»Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber«, siger Martin Ruby, der er politisk chef for Facebook i Norden, til Politiken.Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. Enkelte brugere har sågar transmitteret live, når de enten har slået andre eller sig selv ihjel. Derfor vil Facebook optimere måden, hvorpå mediet sammensætter brugernes nyhedsfeed. I 2020 vil man derfor i højere grad præsentere opslag, billeder og videoer, brugerne kunne være interesserede i at engagere sig i. Fortrinsvis fra deres nære venner og familie.»Vi kan se, at det har en lille negativ effekt på folks humør, hvis de udelukkende læser andre menneskers opslag uden at interagere med dem. Det, der derimod virkelig betyder noget positivt, er, når man modtager kommentarer fra sine venner, og især fra ens nærmeste. Tilfredsheden med ens eget liv stiger, ens humør bliver bedre, og følelsen af ensomhed bliver mindre«, siger kommunikationschef i Norden Peter Münster til Politiken.Facebooks nye tiltag er et udtryk for, at der begynder at være en folkestemning af, at sociale medier »ikke er Guds gave til mennesker«, vurderer Vincent Hendricks, der er professor i formel filosofi ved Københavns Universitet, over for Politiken:»Det har nogle sociale og psykologiske slagsider, og dem vil man se, om man kan gøre noget ved. Om man så kan regulere sig ud af det algoritmisk, det har jeg min stærke tvivl om«.Redaktionel kontakt:Jeppe Dong Abrahamsentlf.: e-mail: jeppe.d.abrahamsen@pol.dk**** DENNE ARTIKEL OG BILLEDMATERIALE ER VIDEREFORMIDLET AF RITZAUS BUREAU PÅ VEGNE AF Politiken ****Betingelser for brug af materiale fra Ritzaus Tophistorietjeneste:- Forkortelser kan foretages i overensstemmelse med god citatskik.- En artikel må forkortes, men ikke tilføjes stramninger eller udtryk, som afsenderen ikke kan stå inde for.- Det skal tydeligt fremgå, hvilket medie artiklen kommer fra. Ansvaret herfor ligger hos mediet, der videreudnytter indholdet - også hvor afsenderen måtte have glemt at inkludere kildehenvisning ved udsendelse.- Ritzau må ikke krediteres for artiklen eller angives som kilde.- Materialet må ikke videreudnyttes kommercielt andet end i egne udgivelser.- Hvis afsenderen har indsat link i artiklen, opfordres der til altid at publicere dette ved videreudnyttelse.VIGTIGT VEDR. BRUG AF BILLEDE:- Hvis der er tilknyttet billedmateriale til artiklen må dette anvendes i forbindelse med publicering.- Rettigheden til anvendelse af billedet er dog udelukkende til brug i sammenhæng med nærværende tophistorie, og må således ikke arkiveres med henblik på genanvendelse i andre sammenhænge.- Anvendelse skal altid ske med angivelse af den oplyste billedbyline (fotograf og medie)
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-01-16
+          &nbsp;·&nbsp; e78ad974
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.828</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.947</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.992</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.538</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nye algoritmer skal gøre Facebook og Instagram mindre deprimerende</h4>
+        <div>
+          Algoritmer skal promovere indhold fra venner og familie, som brugerne bedre kan engagere sig positivt i. Det skal være en rar oplevelse at være på Facebook og Instagram, når Facebook introducerer nye algoritmer designet til at promovere indhold fra familie, venner og bekendte. Det skriver Politiken.dk (artiklen er bag betalingsmur). Facebooks kommunikationschef i Norden, Peter Münster, vurderer, at det kan være deprimerende at færdes på de sociale medier, hvis man udelukkende læser andre folks indhold uden at interagere med det. Fremtidige algoritmer skal derfor fokusere på indhold fra venner, familie og bekendte, fordi der netop hos dem er større chance for, at den enkelte bruger har lyst til at interagere med indholdet i stedet for at være passiv tilskuer til andre folks liv.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-01-17
+          &nbsp;·&nbsp; e78b1115
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.909</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.979</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.977</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.6</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil gøre brugerne mere glade</h4>
+        <div>
+          København Facebook, der også ejer Instagram, vil ændre på algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på deres platforme. Det fortalte de to nordiske chefer fra Facebook til Politiken torsdag.- Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber, sagde Martin Ruby, der er politisk chef for Facebook i Norden.Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold.  I 2020 vil man derfor i højere grad vise opslag, billeder og videoer, som brugerne kunne tænkes at ville engagere sig i./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-01-17
+          &nbsp;·&nbsp; e78b2029
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.891</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.89</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.977</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.629</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil have gladere brugere</h4>
+        <div>
+          Sociale medier: Facebook, der også ejer Instagram, vil ændre på algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på deres platforme. Det fortalte de to nordiske chefer fra Facebook til Politiken torsdag.Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. I 2020 vil man derfor i højere grad vise opslag, billeder og videoer, som brugerne kunne tænkes at ville engagere sig i/ ritzau/.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-01-18
+          &nbsp;·&nbsp; e78b3160
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.971</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.968</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.7</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook ændrer algoritmer - vil gøre brugerne mere glade</h4>
+        <div>
+          Man vil i højere grad se opslag fra nære venner og familie på Facebook og Instagram i fremtiden. 16 jan. 2020 kl. 22:20Del med andre: Facebook, der også ejer Instagram, vil ændre på algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på deres platforme. Det fortæller to nordiske chefer fra Facebook til Politiken. - Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber, siger Martin Ruby, der er politisk chef for Facebook i Norden, til Politiken. Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. Enkelte brugere har sågar transmitteret live, når de enten har slået andre eller sig selv ihjel. Derfor vil Facebook optimere måden, hvorpå mediet skaber brugernes nyhedsfeed. I 2020 vil man derfor i højere grad vise opslag, billeder og videoer, som brugerne kunne tænkes at ville engagere sig i. Det vil især være fra deres nære venner og familie. - Vi kan se, at det har en lille negativ effekt på folks humør, hvis de udelukkende læser andre menneskers opslag uden at interagere med dem, siger Facebooks kommunikationschef i Norden, Peter Münster. - Det, der derimod virkelig betyder noget positivt, er, når man modtager kommentarer fra sine venner, og især fra ens nærmeste. Tilfredsheden med ens eget liv stiger, ens humør bliver bedre, og følelsen af ensomhed bliver mindre, siger han til Politiken. Facebooks nye tiltag er et udtryk for, at der begynder at være en folkestemning af, at sociale medier &quot;ikke er Guds gave til mennesker&quot;. Det vurderer Vincent Hendricks, der er professor i formel filosofi ved Københavns Universitet. - Det har nogle sociale og psykologiske slagsider, og dem vil man se, om man kan gøre noget ved. Om man så kan regulere sig ud af det algoritmisk, det har jeg min stærke tvivl om, siger han til Politiken. /ritzau/
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2020-01-16
+          &nbsp;·&nbsp; e78ada14
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.843</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.856</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.931</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rådgiver: Facebook har magt til at ændre vores humør</h4>
+        <div>
+          Når Facebook vil gøre os mere glade med nyt tiltag, kan det give et nyt perspektiv på det sociale medie. Selv om Facebook forsøger at imødegå kritik ved at ændre algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på techgigantens platforme, så kan det have en negativ bagside. Det vurderer Benjamin Rud Elberth, rådgiver i digitale og sociale medier. - Vi kan ikke lide, når Facebook leger Gud. Hverken når de gør os sure eller glade. - Hvis de selv viser, at de har en altoverskyggende magt ved at kunne dreje på nogle algoritmer og faktisk gøre mennesker gladere, så begynder vi at forstå, hvad for en kæmpemaskine Facebook egentlig er, og hvad de gør. - Og det er ikke nødvendigvis en god historie for Facebook, siger Benjamin Rud Elberth. Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. Derfor vil Facebook optimere måden, hvorpå mediet skaber brugernes nyhedsfeed. I 2020 vil man derfor i højere grad vise opslag, billeder og videoer, som brugerne kunne tænkes at ville engagere sig i. Det vil især være fra deres nære venner og familie. Ifølge Benjamin Rud Elberth forsøger Facebook med det nye tiltag netop at komme den omfattende kritik til livs. Han vurderer, at det reelt bør være muligt for Facebook, som også ejer Instagram, at gøre brugerne mere glade. - Vi ved, at Facebook har kunnet gøre os surere med de ting, der er kommet i vores nyhedsstrøm. Så der er også en reel mulighed for, at de kan gøre os gladere igen ved at lade os se flere positive ting, siger Benjamin Rud Elberth. /ritzau/ Jacob Nybroe
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2020-01-17
+          &nbsp;·&nbsp; e78afb0d
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.989</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.926</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.618</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EKSPERT: Facebook kan ændre dit humør</h4>
+        <div>
+          Nu vil Facebook gøre os mere glade! Det skal ske ved at ændre algoritmerne, så vi brugere i højere grad bliver præsenteret for nyheder fra venner om familie.Men selvom Facebook forsøger at imødegå kritik på den måde, så brugerne får en mere positiv oplevelse af at være på det sociale medie, så kan det give bagslag, vurderer Benjamin Rud Elberth, rådgiver i digitale og sociale medier.- Vi kan ikke lide, når Facebook leger Gud. Hverken når de gør os sure eller glade.- Hvis de selv viser, at de har en altoverskyggende magt ved at kunne dreje på nogle algoritmer og faktisk gøre mennesker gladere, så begynder vi at forstå, hvad for en kæmpemaskine Facebook egentlig er, og hvad de gør. Og det er ikke nødvendigvis en god historie for Facebook, siger Benjamin Rud Elberth.Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. Derfor vil Facebook nu optimere måden, hvorpå mediet fylder brugernes nyhedsfeed.Så i 2020 vil man derfor i højere grad vise opslag, billeder og videoer, som brugerne kunne tænkes at ville engagere sig i. Det vil især være fra deres nære venner og familie.Ifølge Lisbeth Klastrup, forsker i sociale medier og digital kultur ved IT-Universitetet i København, er der dog ingen garanti for, at brugerne bliver mere glade med de nye algoritmer.- Man kan ikke bare dreje på en knap og skrue op og ned for folks følelser. Men der er studier, der har vist, at følelser kan smitte. Så hvis du ser meget positivt indhold, vil du også have tendens til at poste mere positivt indhold selv, siger hun.Facebook forsøger med de nye tiltag at fastholde folk, vurderer Lisbeth Klastrup.- Forskningen viser en tendens til, at folk er mindre aktive på Facebook end før.Det her kan være en måde at få folk til at interagere mere og dermed være længere tid på tjenesten end i dag, siger hun.Ritzau.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2020-01-18
+          &nbsp;·&nbsp; e78b302a
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.926</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.991</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.922</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.529</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook: Vi begrænser falske nyheder</h4>
+        <div>
+          Tjenesten ændrer sine algoritmer for at fremme »pålideligt«indholdFor at begrænse omfanget af falske nyheder i brugernes nyhedsfeed har Facebook lavet en ny algoritme, så tjenesten bliver bedre til at opfange og begrænse falske nyheder og fremme de pålidelige nyheder.Det skriver Facebook i en nyhedsopdatering.Tjenesten vil opprioritere pålideligt indhold ved at ændre placerings-algoritmen, så den finder og fremmer indhold, folk opfatter som ægte, og ikke som vildledende eller spam, hedder det i opdateringen.Efter det amerikansk præsidentvalg blev Facebook og en række andre sociale medier beskyldt for at sprede misinformation i form af falske nyheder, der måske har påvirket udfaldet af valget.Pålidelige sider kommer højere opFacebook har derfor kategoriseret en lang række sider, der ofte deler falske opdateringer eller opfordrer til likes, kommentarer og delinger udelukkende for at øge udbredelsen.Lige som de har set på, om sider ofte bliver skjult, fordi det kan være udtryk for, at de ikke er pålidelige. På den baggrund har de trænet deres algoritme i at identificere lignende sider og opdateringer.»Hvis en opdatering ser ud til at være pålidelig baseret på de nye signaler, vi kigger på, vil den formentlig komme højere op i dit feed«, skriver Facebook.Samtidig vil tjenesten også blive bedre til i realtid at fremme historier, der går viralt og får stor opmærksomhed. Den slags vil også komme højere op i nyhedsfeedet, når opmærksomheden er stor.Facebook er for eksempel blevet beskyldt for at underprioritere de store Women's March-demonstrationer hos mange facebook-brugere.Facebook forsøger nu at fremme pålidelige nyheder og få falske nyheder længere ned i nyhedsfeedet på din facebookside. Facebook forsøger nu at fremme pålidelige nyheder og få falske nyheder længere ned i nyhedsfeedet på din facebookside. Foto: Chiu Jeff.Facebook forsøger nu at fremme pålidelige nyheder og få falske nyheder længere ned i nyhedsfeedet på din facebookside. Facebook forsøger nu at fremme pålidelige nyheder og få falske nyheder længere ned i nyhedsfeedet på din facebookside. Foto: Chiu Jeff.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2017-02-01
+          &nbsp;·&nbsp; e6181c45
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.991</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.903</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.642</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Rådgiver: Facebook har magt til at ændre vores humør</h4>
+        <div>
+          Når Facebook vil gøre os mere glade med nyt tiltag, kan det give et nyt perspektiv på det sociale medie. 17 jan. 2020 kl. 08:25Del med andre: Selv om Facebook forsøger at imødegå kritik ved at ændre algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på techgigantens platforme, så kan det have en negativ bagside. Det vurderer Benjamin Rud Elberth, rådgiver i digitale og sociale medier. - Vi kan ikke lide, når Facebook leger Gud. Hverken når de gør os sure eller glade. - Hvis de selv viser, at de har en altoverskyggende magt ved at kunne dreje på nogle algoritmer og faktisk gøre mennesker gladere, så begynder vi at forstå, hvad for en kæmpemaskine Facebook egentlig er, og hvad de gør. - Og det er ikke nødvendigvis en god historie for Facebook, siger Benjamin Rud Elberth. Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. Derfor vil Facebook optimere måden, hvorpå mediet skaber brugernes nyhedsfeed. I 2020 vil man derfor i højere grad vise opslag, billeder og videoer, som brugerne kunne tænkes at ville engagere sig i. Det vil især være fra deres nære venner og familie. Ifølge Benjamin Rud Elberth forsøger Facebook med det nye tiltag netop at komme den omfattende kritik til livs. Han vurderer, at det reelt bør være muligt for Facebook, som også ejer Instagram, at gøre brugerne mere glade. - Vi ved, at Facebook har kunnet gøre os surere med de ting, der er kommet i vores nyhedsstrøm. Så der er også en reel mulighed for, at de kan gøre os gladere igen ved at lade os se flere positive ting, siger Benjamin Rud Elberth. Ifølge Lisbeth Klastrup, forsker i sociale medier og digital kultur ved IT-Universitetet i København, er der ingen garanti for, at brugerne bliver mere glade med de nye algoritmer. - Man kan ikke bare dreje på en knap og skrue op og ned for folks følelser. Men der er studier, der har vist, at følelser kan smitte. - Så hvis du ser meget positivt indhold, vil du også have tendens til at poste mere positivt indhold selv, siger hun. Facebook forsøger sig med de nye algoritmer for at fastholde folk på en anden måde end hidtil, vurderer Lisbeth Klastrup. - Jeg ser i forskningen en tendens til, at folk er mindre aktive på Facebook end før. - De poster mindre og læser mere. Det her kan være en måde at få folk til at interagere mere og dermed være længere tid på tjenesten end i dag, siger hun. /ritzau/
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2020-01-17
+          &nbsp;·&nbsp; e78afadd
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.94</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.962</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.885</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.531</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.634</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tillader alligevel ikonisk foto fra Vietnamkrigen</h4>
+        <div>
+          Det sociale medie har lavet en kovending efter kritik over censur af billede af nøgen pige fra VietnamkrigenUSA: Facebook vil alligevel tillade det verdensberømte foto af Phan Thi Phuc, den vietnamesiske pige, som løber nøgen med ryggen i brand efter et amerikansk napalmangreb under Vietnamkrigen. Det skriver nyhedsbureauet AFP.- Grundet dets status som et ikonisk billede af historisk betydning overtrumfer værdien af at tillade deling af billedet værdien af at beskytte fællesskabet ved at fjerne det.- Så vi har besluttet at genindsætte billedet på Facebook de steder, vi ved, det er blevet fjernet, skriver en talsperson for Facebook i en mail til bureauet.Sagen begyndte i august, da den norske forfatter og journalist Tome Egelang lagde billedet op for at teste Facebooks håndhævning af det sociale medies regler for nøgenhed. Billedet blev slettet, og det fik flere norske medier til at dele det på Facebook.Internationale medier fik for alvor øjnene op for sagen, efter at den norske avis Aftenposten ryddede fredagens forside med et personligt brev fra chefredaktør Espen Egil Hansen til Facebook-stifteren Mark Zuckerberg.Her opfordrede chefredaktøren Mark Zuckerberg til at indse, at han i dag er &quot;verdens mægtigste mand&quot;, og at han misbruger sin magt.Senere fredag lagde Norges statsminister, Erna Solberg, også billedet på sin Facebook-profil. Også her blev det fjernet.Solberg betonede i en kommentar, at billeder i dag er en så vigtig del af formidling, at man forandrer historien og ændrer virkeligheden, hvis man bortredigerer hændelser og personer.Den norske statsminister hilste fredag aften Facebooks kovending velkommen.- Jeg håber, at Facebook har lært, at de er nødt til at have metoder til at skære igennem, der hvor maskinerne og algoritmerne styrer, siger Erna Solberg til Aftenposten.Hun understreger, at det er prisværdigt, at Facebook søger at hindre udbredelsen af porno og børneporno.- Men det må være muligt at have en dialog med Facebook, hvis de mener, at noget er så stødende, at det ikke kan offentliggøres.Danmarks statsminister bakkede tidligere fredag aften sin norske kollega op. I en statusopdatering på Facebook delte han Solbergs opdatering med teksten:- Helt enig med min norske kollega. Vi må hverken gemme eller glemme historien. På godt og ondt er Facebook blevet en af verdens vigtigste formidlingskanaler - det forpligter! (ritzau/NTB)Det berømte billede, som Facebook i første omgang fjernede, men nu har tilladt. Foto: AP Photo/Nick Ut Foto: Nick Ut/ASSOCIATED PRESS.Det berømte billede, som Facebook i første omgang fjernede, men nu har tilladt. Foto: AP Photo/Nick Ut Foto: Nick Ut/ASSOCIATED PRESS.Det berømte billede, som Facebook i første omgang fjernede, men nu har tilladt. Foto: AP Photo/Nick Ut Foto: Nick Ut/ASSOCIATED PRESS.Det berømte billede, som Facebook i første omgang fjernede, men nu har tilladt. Foto: AP Photo/Nick Ut Foto: Nick Ut/ASSOCIATED PRESS.
+        </div>
+        <footer>
+          <em>Mitfyn.dk</em>
+          &nbsp;·&nbsp; 2016-09-10
+          &nbsp;·&nbsp; e5e0d18e
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.947</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.927</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.883</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.584</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Brugere slukker for Facebook efter algoritme-ændringer</h4>
+        <div>
+          Erhverv Mark Zuckerberg er på en mission for at &quot;fikse&quot; Facebook. Også selv om det betyder, at brugerne er mindre tid på Facebook, siger han.Facebooks brugere har været på 50 millioner timer mindre hver dag i fjerde kvartal, oplyser Facebook-chef.Brugerne af Facebook bruger mindre tid på det sociale medie, efter at der er blevet lavet mindre ændringer i de algoritmer, der styrer, hvad der kommer op i brugernes nyhedsstrøm.Det oplyser Facebooks topchef, Mark Zuckerberg, i forbindelse med et regnskab.Helt præcist har Facebook mistet sine brugeres opmærksomhed i 50 millioner timer hver dag.Opgørelsen stammer fra de sidste tre måneder af 2017. Zuckerberg tilskriver faldet, at Facebook allerede i efteråret begyndte at ændre i algoritmerne.- Allerede sidste kvartal lavede vi ændringer, der viser færre virale videoer (videoer, der deles meget mellem brugerne, red.), for at sikre at folk bruger deres tid godt, skriver Zuckerberg i en meddelelse.- I alt har vi lavet ændringer, der har nedbragt tiden brugt på Facebook med omkring 50 millioner timer hver dag.I samme kvartal er antallet af brugere steget - omend med mindre end det var forventet.- Ved at fokusere på det meningsfulde indhold vil vores fællesskab og forretning blive stærkere på den lange bange, skriver Zuckerberg videre.I april sidste år optog en Facebook-bruger en video af sig selv, da han slog en ældre mand ihjel. Derefter lagde han videoen op på Facebook. Videoen skærpede kritikken af Facebooks indhold.Facebook har allerede sat flere ændring i søen, siden årsskiftet og planlægger at komme med flere. Det skriver nyhedsbureauet Reuters.Fremover vil andre Facebook-brugeres opdateringer fylde mere i forhold til reklamer, offentlige profiler og mediers opslag.Så sent som denne uge, har Facebook annonceret, at lokale nyheder vil fylde mere hos brugere i USA.Mark Zuckerberg har gjort det til sit erklærede mål at &quot;fikse&quot; Facebook. Han har fremhævet indsatsen for at slå ned på chikane og had på platformen.
+        </div>
+        <footer>
+          <em>Folkebladetlemvig.dk (Lemvig Folkeblad)</em>
+          &nbsp;·&nbsp; 2018-02-01
+          &nbsp;·&nbsp; e699caf8
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.994</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.992</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.859</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.67</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebooks nye algoritme skal fordømme sider der spreder løgnagtigt indhold</h4>
+        <div>
+          Det skal være slut med løgne og halve sandheder på Facebook, lyder det.Som en reaktion på stadig flere falske nyheder, der florerer på Facebook, har mediegiganten nu ændret i dens feed-algoritme, så indhold fra utroværdige kilder rangeres lavere i brugernes nyheds-feeds. Det skriver techcrunch.com.Facebook skriver selv, at den nye algoritme vil opdage, når brugere over hele verden finder indhold -som de ikke finder misledende, sentationsbåret eller virker som spam-.Mediegiganten vurderer ikke, at den nye algoritme vil kunne mærkes for almindelige sider, der blot fortsat -poster indhold, der er relevant for deres modtagere-.Kategoriserer alle siderDa Facebook skulle lave opdateringen lavede de en kategorisering af alle sider, der løbende deler indhold md clickbait-overskrifter, der ikke lever op til brugernes forventning om, hvad de nu skal til at læse samt sider, facebookbrugere ofte skjuler i deres feed.Vil du skade en sides omdømme i Facebook-algoritmen for måske at skåne dine venner for samme dårlige indhold, er det altså fremover en god ide at skjule de sider, du mener leverer dårligt indhold i din Facebook-feed.Vil opprioritere live eventsFacebook skriver ligeledes, at algoritmen vil prioritere nyheder, der -sker lige nu-. På den måde håber giganten sandsynligvis at kunne konkurrere bedre med medier som Twitter.Det vil Facebook gøre ved bedre at vise emner, mange mennesker omtaler eller historier og opslag, mange mennesker interagerer med.Hvordan ovenstående adskiller sig fra indhold der er -sensationsbåret-, og som derfor bliver nedprioriteret af algoritmen, fremgår ikke af Facebooks nyhedsopslag.Vigtigt for Facebooks forretnignsmodelDette tiltag er blot det seneste af en række, der ifølge Facebook selv skal hjælpe brugeren med at skelne mellem rigtigt og forkert indhold og på den måde skabe en bedre oplevelser, når brugeren bevæger sig rundt på det sociale medie. Den seneste tid er Facebook blevet kritiseret for netop at fungere som medie for falske nyheder og historier.Ifølge Techcrunch har Facebook selv dog også en interesse i at hjælpe brugeren med at skelne, for hvis det først for alvot bliver svært at skelne mellem sandt og falskt i Facebooks nyheds-feed, vil folk sandsynligvis helt holde op med at klikke på forskelligt indhold, hvilket vil skade Facebooks omsætning.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-02-01
+          &nbsp;·&nbsp; e617cdc2
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.979</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.902</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.854</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tillader alligevel ikonisk foto fra Vietnamkrigen</h4>
+        <div>
+          Det berømte billede, som Facebook i første omgang fjernede, men nu har tilladt. Foto: AP Photo/Nick Ut Foto: Nick Ut/ASSOCIATED PRESS 1/1Det sociale medie har lavet en kovending efter kritik over censur af billede af nøgen pige fra VietnamkrigenArtiklen fortsætter under annoncen...USA: Facebook vil alligevel tillade det verdensberømte foto af Phan Thi Phuc, den vietnamesiske pige, som løber nøgen med ryggen i brand efter et amerikansk napalmangreb under Vietnamkrigen. Det skriver nyhedsbureauet AFP.- Grundet dets status som et ikonisk billede af historisk betydning overtrumfer værdien af at tillade deling af billedet værdien af at beskytte fællesskabet ved at fjerne det.- Så vi har besluttet at genindsætte billedet på Facebook de steder, vi ved, det er blevet fjernet, skriver en talsperson for Facebook i en mail til bureauet.Sagen begyndte i august, da den norske forfatter og journalist Tome Egelang lagde billedet op for at teste Facebooks håndhævning af det sociale medies regler for nøgenhed. Billedet blev slettet, og det fik flere norske medier til at dele det på Facebook.Internationale medier fik for alvor øjnene op for sagen, efter at den norske avis Aftenposten ryddede fredagens forside med et personligt brev fra chefredaktør Espen Egil Hansen til Facebook-stifteren Mark Zuckerberg.Her opfordrede chefredaktøren Mark Zuckerberg til at indse, at han i dag er &quot;verdens mægtigste mand&quot;, og at han misbruger sin magt.Senere fredag lagde Norges statsminister, Erna Solberg, også billedet på sin Facebook-profil. Også her blev det fjernet.Solberg betonede i en kommentar, at billeder i dag er en så vigtig del af formidling, at man forandrer historien og ændrer virkeligheden, hvis man bortredigerer hændelser og personer.Den norske statsminister hilste fredag aften Facebooks kovending velkommen.- Jeg håber, at Facebook har lært, at de er nødt til at have metoder til at skære igennem, der hvor maskinerne og algoritmerne styrer, siger Erna Solberg til Aftenposten.Hun understreger, at det er prisværdigt, at Facebook søger at hindre udbredelsen af porno og børneporno.- Men det må være muligt at have en dialog med Facebook, hvis de mener, at noget er så stødende, at det ikke kan offentliggøres.Danmarks statsminister bakkede tidligere fredag aften sin norske kollega op. I en statusopdatering på Facebook delte han Solbergs opdatering med teksten:- Helt enig med min norske kollega. Vi må hverken gemme eller glemme historien. På godt og ondt er Facebook blevet en af verdens vigtigste formidlingskanaler - det forpligter! (ritzau/NTB)
+        </div>
+        <footer>
+          <em>Fyens.dk</em>
+          &nbsp;·&nbsp; 2016-09-10
+          &nbsp;·&nbsp; e5e0b1ab
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.983</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.96</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.852</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.589</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebooks rapporterer om forbedring af &quot;hate speech&quot; algoritmer</h4>
+        <div>
+          Selvom der er sket en forbedring, er det stadig uklart, hvor effektivt Facebooks værktøj til at fjerne &quot;hate speech&quot; egentlig er. Der er sket en forbedring af den kunstige intelligens, som skal opporer indhold, der bryder med Facebooks retningslinjer for &quot;hate speech&quot;. Det skriver Wired Forbedringen blev synlig i tirsdags, hvor Facebook rapporterede om en stor stigning i indhold, som blev fjernet for at bryde retningslinjerne. Ifølge Facebook opdager algoritmerne opslag med &quot;hate speech&quot;, før brugere anmelder opslaget i 88,8 procent af tilfældene. Ingen, ikke engang Facebook selv, ved dog hvor mange af den type opslag, der reelt findes på platformen. Det betyder at præcisionen bag værktøjets reelt er ukendt.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-05-13
+          &nbsp;·&nbsp; e7b4a1d2
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.864</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.839</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.848</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.666</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forbud mod manipulerede videoer</h4>
+        <div>
+          Facebook forbyder manipulering med videoer - såkaldte deepfakes. Det oplyser koncernen i en pressemeddelelse.Forbuddet gælder dog ikke videoer, som skal være parodier eller satire. Det gælder heller ikke videoer, som er blevet redigeret udelukkende for at undlade eller ændre ordenes rækkefølge. De såkaldte deepfakes kan i dag laves med simpel teknologi som Photoshop eller via værktøjer, som bruger kunstig intelligens.Med sin nye politik vil Facebook fjerne de videoer, som lever op til nogle kriterier om, at de manipulerer, ved eksempelvis at få det til at se ud, som om at nogen siger noget, som de ikke har sagt.Facebook har tidligere fået kritik for ikke at fjerne en manipuleret video af lederen af Repræsentanternes Hus, demokraten Nancy Pelosi. Videoen var manipuleret, så den gav indtryk af, at Pelosi var fuld eller dårlig tilpas.Ritzau.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2020-01-08
+          &nbsp;·&nbsp; e787e8ee
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.792</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.846</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.647</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil bruge skældsord til at opsnappe hævnporno</h4>
+        <div>
+          KøbenhavnFremover vil skældsord i samspil med intime billeder få advarselslamperne i Facebooks maskinrum til at blinke. Det sociale medie sætter ind med ny teknologi, i kampen mod at intime billeder bliver spredt uden samtykke eller brugt som hævnporno.Det gælder både på Facebook og Instagram.Når et billede bliver delt uden tilladelse, kan det være meget ødelæggende, siger Antigone Davis, der er global chef for sikkerhed i Facebook.- Vi har virkelig opdaget den ødelæggende effekt, som de her billeder har, og vi vil gøre noget mere for at være proaktive over for det her problem, siger hun.Et billede kan nå vidt omkring på Facebook eller Instagram, inden det bliver anmeldt.Men med en ny såkaldt Al-algoritme bliver Facebook i stand til i højere grad at opfange undertøjsbilleder, nøgenbilleder eller videoer, inden det bliver rapporteret.- Ofte når vi ser, at folk deler på en hævngerrig måde, bruger de skældsord eller forsøger at bringe skam over offeret, siger Antigone Davis.Derfor vil systemet fremover alarmere et operationshold, hvis eksempelvis ord som luder, so eller truende vendinger bliver brugt. - Disse sprogmønstre vil hjælpe os med at finde frem til de billeder, som bliver spredt på denne her måde, siger sikkerhedschefen. Vurderer teamet bag, at billedet er delt uden samtykke eller bliver brugt som hævnporno, slettes både indholdet og brugeren.Brugerne har efterfølgende mulighed for at klage, hvis de føler sig forkert behandlet.Tidligere har det været sådan, at brugere både på Instagram og Facebook har kunnet anmelde indhold på de sociale medier. Men målet med den nye teknologi er, at Facebook kan komme brugerne i forkøbet og opsnappe sagerne, inden de får alt for meget opmærksomhed.Derudover lancerer Facebook også et fora for personer, som har været udsat for hævnporno. Her kan ofre få råd og vejledning i forhold til, hvordan man skal reagere i lignende sager./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-03-15
+          &nbsp;·&nbsp; e71e50ad
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.971</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.651</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.844</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Højreorienterede raser: Facebook censurerer vores nyheder</h4>
+        <div>
+          Tidligere ansatte hos Facebook beskylder firmaet for at fuske med nyhedsstrømmen på det sociale medieKan man regne med, at en populær historie i Facebooks nyhedsfeed også er populær?Nej, fortæller flere tidligere ansatte i firmaet nu til det amerikansketechsite Gizmondo.For hvis de populære historier kommer fra højreorienterede hjemmesider - og Facebook selv vil fremme eller undertrykke en historie - så bliver der fusket med rækkefølgen i Facebooks liste over nyhedshistorier.Og listen er vigtig. Den bruges nemlig til at afgøre, hvis nyhedshistorier der dukker op i dit Facebook-feed.- Facebook påstår, at deres algoritme meget simpelt finder ting, der trender og bare er populære.- Nu ved vi, at det ikke er sandt, siger nyhedschefen på det konservative nyhedsmedieBreitbart News, Alex Marlow,til Guardian.Se også: Vilde tal - Så meget bliver Snapchat brugtSyrien og sorte skulle øverstMen det er ikke alene historier fra konservative medier, der undertrykkes.I nogle tilfælde bruger Facebook sit nyhedsfeed til at fremme historier, der politisk passer det sociale netværk, påstår de tidligere ansatte.Artiklen fortsætter under annoncenEt eksempel er historier om Syrien, fortæller en tidligere ansat, der ikke ønsker sit navn frem af frygt for konsekvenser fra Facebook:- Folk holdt fx op med at interessere sig for Syrien.- Men hvis Syrien-historier ikke 'trendede' på Facebook, ville det få Facebook til at se dårligt ud. Derfor blev Syrien-historier skubbet højere op på listen.Se også: Digital ulvetime - Træk stikket lynhurtigt til børnenes computerFacebook er i en evig kamp om at være størst - også på nyhedsformidlingen, hvor Twitter i dag dominerer.Derfor kunne historier om de sortes rettigheder på samme måde pludselig blive skubbet op i nyhedsrækkefølgen - alene for at få Facebook til 'at se pænere ud'. Det er et emne, som Facebooks stifter, Mark Zuckerberg, er meget interesseret i.Ifølge medarbejderne, derarbejdede som underleverandørertil Facebook, forlangte ledelsen i det sociale netværk samtidig, at historier om Facebook blev holdt helt ude af listen.Se også: Google går i sort - Ændrer farven på linksFacebook: Meget alvorlige anklagerGuardiandækker også historien- og her har man talt med andre ansatte, der ikke kan genkende billedet af intern censur:- Jeg var der kun fire-fem måneder, men jeg så aldrig de ting ske, forklarer en tidligere ansat.Og hos Facebook lyder det officielle svar på kritikken på samme måde:- Vi tager beskyldningerne meget alvorligt.- Der findes meget klare regler for, hvordan vores nyhedsstrøm skal styres ensartet og neutralt.Facebook afviser dog ikke i sin udtalelse, at censuren faktisk kan være sket. De nægter samtidig at lade sig interviewe af Gizmondo, der oprindeligt breakede historien.Se også: Kendt magasin - iPhone er verdens vigtigste gadgetIfølge de tidligere ansatte har chefen for Facebook, Mark Zuckerberg, en politisk dagsorden, der også styrer, hvordan nyhedsstrømmen skabes på det sociale netværk. Facebook afviser kritikken og siger, at de har meget strenge regler for neutralitet. (Foto: Facebook).Ifølge de tidligere ansatte har chefen for Facebook, Mark Zuckerberg, en politisk dagsorden, der også styrer, hvordan nyhedsstrømmen skabes på det sociale netværk. Facebook afviser kritikken og siger, at de har meget strenge regler for neutralitet. (Foto: Facebook).
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2016-05-10
+          &nbsp;·&nbsp; e5b387db
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.975</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.994</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.84</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.615</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil ændre algoritmerne og gøre dig glad i 2020</h4>
+        <div>
+          Utallige undersøgelser påviser, at du bliver depressiv af at være på sociale medier. Det vil Facebook nu gøre op med. Det giver mening, men virkningen er tvivlsom, mener eksperter.D et sociale medie Facebook, der også ejer Instagram, vil ændre på algoritmerne i 2020, så brugerne får en mere positiv oplevelse af at være på deres platforme.Det fortæller to nordiske topchefer fra Facebook i et interview med Politiken.»Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber« , siger Martin Ruby, der er politisk chef for Facebook i Norden.Eksperter og store forskningsprojekter har i årevis kritiseret det sociale medie for at gøre brugerne depressive og videreformidle problematisk indhold. Enkelte brugere har sågar transmitteret live, når de enten har slået andre eller sig selv ihjel. Herhjemme har diskussionen kørt så sent som i efteråret sidste år, hvor den danske influencer og realitystjerne Fie Laursens mere end 300.000 følgere kunne læse et selvmordsbrev fra hende på Instagram inden et selvmordsforsøg, som hun overlevede.Facebooks egen forskning viser, at det påvirker folk negativt, hvis de ser meget fra nogen, de kender mindre godt, mens oplevelsen af direkte kommunikation betyder noget positivt. Derfor vil Facebook optimere måden, hvorpå mediet sammensætter brugernes nyhedsfeed.»Vi kan se, at det har en lille negativ effekt på folks humør, hvis de udelukkende læser andre menneskers opslag uden at interagere med dem. Det, der derimod virkelig betyder noget positivt, er, når man modtager kommentarer fra sine venner, og især fra ens nærmeste. Tilfredsheden med ens eget liv stiger, ens humør bliver bedre, og følelsen af ensomhed bliver mindre« , siger kommunikationschef i Norden Peter Münster.I 2020 vil man derfor i højere grad præsentere opslag, billeder og videoer, brugerne kunne være interesserede i at engagere sig i. Fortrinsvis fra deres nære venner og familie.Derudover vil man give brugerne informationer om, hvornår de er ajourført, så de kan vælge ikke at scrolle videre. En funktion, man allerede eksperimenterer med på Instagram.Men det handler vel om, at folk skal blive på platformen, så I kan tjene penge?»Det er rigtigt, at vi tjener penge på, at folk ser annoncer på platformen. Men hvis ikke vi ændrer os, mister Facebook sin værdi inden for kort tid. Både for os, men også for brugerne« , siger Martin Ruby.Facebook er ikke bedst til at samleAnja Bechmann, der er professor i Medievidenskab ved Aarhus Universitet, mener, »at det giver god mening« i højere grad at præsentere brugere for indhold fra deres nære kontakter og i mindre grad indhold fra medier og andre institutioner, hvis målet er at skabe positiv interaktion.International forskning viser, at nære kontakter er vigtige for at skabe tillid og tilknytning, påpeger Anja Bechmann, der forsker i sociale medier og kollektiv adfærd:»Omvendt har vores studier vist, at det, der skaber sammenhængskraft, hovedsageligt er det indhold, der kommer fra eksempelvis medier. Det åbner en god samfundsmæssig diskussion om, hvorvidt Facebook skal være et sådant medie eller ej, fordi de så skal reguleres som sådan, hvilket de ikke ønsker« , siger hun og forklarer, at det vil kræve en langt mere manuel indsats med at moderere indholdet, og derved vil det økonomisk ikke være en gevinst for Facebook.Facebooks nye tiltag er et udtryk for, at der begynder at være en folkestemning af, at sociale medier »ikke er Guds gave til mennesker« , vurderer Vincent Hendricks, der er professor i formel filosofi ved Københavns Universitet:»Det har nogle sociale og psykologiske slagsider, og dem vil man se, om man kan gøre noget ved. Om man så kan regulere sig ud af det algoritmisk, det har jeg min stærke tvivl om« .
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2020-01-16
+          &nbsp;·&nbsp; e78ad637
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.863</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.863</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.833</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebooks algoritme får massiv kritik</h4>
+        <div>
+          Facebooks algoritme er under heftig kritik efter en amerikansk valgkamp, hvor det sociale medie har spredt falske nyheder til vælgerne. For eksempel den opdigtede nyhed om, at paven støttede Donald Trump som præsident. En historie, der ifølge mediet Slate blev delt op mod 1 million gange af det sociale medies brugere.Populært sagt kan man kalde den spillereglerneAlgoritmen bliver kaldt hovedskurken i skandalen, fordi den er med til at skabe ekkokamre på det sociale medie, hvor falske nyheder trives. Ifølge kritikere var algoritmen ligefrem med til at skaffe Trump præsidentembedet.Den anklage hænger sammen med, at det er algoritmen, der udvælger de billeder, videoklip og nyheder, som bliver vist til brugerne. Den sorterer i mange tusinde mulige opslag og designer en personligt tilpasset nyhedsvæg til hver enkelt besøgende bruger.En algoritme er en formel med en række indlagte forudsætninger. Målet med Facebooks algoritme er at udvælge det indhold, som passer bedst til brugerne og får dem til at like, kommentere og dele mest muligt.Grafik: Mads PedersenPopulært sagt kan man kalde den spillereglerne. Hvis du spiller inden for algoritmens kridtstreger, vil dine opslag blive set af flere brugere, hvilket en stribe falske nyhedssider har gjort til deres speciale.»Dine forbindelser og aktiviteter på Facebook påvirker de historier, der bliver vist på din nyhedsvæg. Det hjælper dig til at se flere historier, der interesserer dig, fra de venner, du interagerer mest med«, skriver Facebook selv på deres hjemmeside.LÆS OGSÅ Løgnehistorier stortrives på FacebookAlgoritmens præcise funktion er en forretningshemmelighed, men Facebook indrømmer offentligt, at de fra tid til anden justerer algoritmen med dertil hørende hovedpine for de medier og virksomheder, som gerne vil have deres indhold ud til flest mulige brugere. Indtil videre har Facebook ikke meldt ud, om virksomheden planlægger at justere algoritmen for at modarbejde spredningen af falske nyheder.Teknologimediet Techcrunch har interviewet og researchet sig frem til fire faktorer, som er med til at afgøre, hvad du ser, når du logger ind på Facebook. Se dem i grafikken ovenfor.Facebook. Sociale medier spreder falske nyheder til pressen. Foto: Thomas Borberg Facebook. Sociale medier spreder falske nyheder til pressen. Foto: Thomas Borberg.Facebook. Sociale medier spreder falske nyheder til pressen. Foto: Thomas Borberg Facebook. Sociale medier spreder falske nyheder til pressen. Foto: Thomas Borberg.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2016-11-19
+          &nbsp;·&nbsp; e5fd78a7
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.912</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.827</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.566</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook sorterer i opdateringer</h4>
+        <div>
+          NÅR EN GENNEMSNITLIG bruger af Facebook klikker ind på det sociale netværk, er det nøje udvalgte opdateringer, der kommer frem. Det sociale medie vælger nemlig, hvilke venneopdateringer brugeren ser.Ved at benytte en såkaldt algoritme fremhæver Facebook de venners statusopdateringer, som brugerne kommunikerer mest med. Det forklarede Facebook forleden, da de lod offentligheden få indsigt i deres styring af brugernes indhold.»Det er en meget personfokuseret styring af indholdet, der afhænger af dit forhold til personer, og hvilke ting du har ' liket' tidligere«, siger Lars Backstrom fra Facebook til teknologisitet cnet. com.Facebook begrunder sorteringen med, at en gennemsnitsbruger får omkring 1.500 opdateringer i døgnet, og det ikke er muligt at følge med i så mange nyheder. Sorteringen betyder, at der ofte ligger ældre nyheder højt blandt de cirka 300 opdateringer, Facebook viser en bruger på en dag.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2013-08-17
+          &nbsp;·&nbsp; e3ec02fa
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.975</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.888</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.824</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt tiltag i Facebook: Mere fokus på venner frem for nyheder</h4>
+        <div>
+          Den sociale mediegigant ændrer i sin algoritmer, så din venners statusopdateringer vil fylde mere i dit sociale feed.Dine venners statusopdateringer vil i fremtiden fylde mere i dit Facebook-feed. Det er en af de tre store ændringer i det sociale medies nye algoritme der trådte i kraft denne uge.Dine Facebook-venners fotos af fødselsdagslagkager, vigtige begivenheder eller bare de sidste selfies vil derfor fortrænge kommenterede eller -likede- nyhedsopslag - en type opslag som Facebook-brugerne mener fylder for meget.Et ønske fra brugerne selvÆndringerne i Facebooks prioritering er baserede på feedback fra brugerne selv. Produkt manager Max Eulenstein og Lauren Scissors forklarer idéerne bag skiftet i Facebooks nyhedsblog :Partner mobilsiden_logo_med_hymanoid (1).pngDenne artikel er blevet til i samarbejde med Mobilsiden.Læs test af alle mobiler og nyheder om telefoni og gadgets på mobilsiden.dk&quot;Vi lærte, at mange brugere frygter at gå glip af vigtige opdateringer fra venner og bekendtskaber de holder af. Derfor opprioriterer vi indhold som nære venner deler, som fotos, videoer, statusopdateringer og links. -Facebooks to talspersoner pointerer desuden hvilket indhold der fremover vil få mindre spalteplads i nyhedsstrømmen:-Mange brugere fortalte os, at de ikke bryder sig om at hvad Facebook-vennerne har liket eller kommenteret. Disse opdateringer vil derfor vægtes lavere, eller slet ikke optræde, i nyhedsstrømmen-Sidste Facebook-tiltag er tiltænkt de brugere med få forbindelser, eller dem uden meget socialt indhold. For at gøre deres Facebook-oplevelse rigere, vil flere nyhedskilder fylde i feedet, selv hvis nogle nyheder derfor vil optræde to eller flere gange.En ændring i Facebooks algoritmer skal sørge for,at der vil blive vist flere statusopdateringer fra vennerne, end nyhedsopslag. Foto: AP/Daniel Reinhardt.En ændring i Facebooks algoritmer skal sørge for,at der vil blive vist flere statusopdateringer fra vennerne, end nyhedsopslag. Foto: AP/Daniel Reinhardt.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2015-04-28
+          &nbsp;·&nbsp; e501b0b9
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.985</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.899</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.823</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.627</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.569</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Kunstig intelligens skal opdage cyberangreb</h4>
+        <div>
+          På Nyhedsbloggen finder du links til historier fra hjemlige og internationale medier og blogs. Historier, som vi mener er relevante eller underholdende, og som fortjener at blive videregivet i sin originalform. Historierne er fortrinsvis på dansk, tysk eller engelsk.PS: At vi lægger en historie på Nyhedsbloggen betyder ikke vi deler de synspunkter, som kommer til udtryk.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2016-04-19
+          &nbsp;·&nbsp; e5aadd8a
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.911</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.937</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.818</kbd>
+            <kbd data-tooltip="Music, Art &amp; Culture">L80_ARTCLT&nbsp;0.685</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.538</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Dansk opfindelse kan gøre Facebook mindre ond</h4>
+        <div>
+          Hør dagens afsnit af 'Du lytter til Politiken'. Du lytter til PolitikenDagens gæst: Kristian Corfixen journalist på Politiken.Dagens vært: Bo Søndergaard.En dansk algoritme kan rydde op i alle de hadske kommentarer på Facebook. Politikens journalist Kristian Corfixen fortæller om algoritmen og hvad, der gør danskerne så vrede. Hvem bliver hadet rettet mod, og hvorfor sletter vi ikke bare Facebook?Vi hører gerne fra dig, skriv til: dulyttertilpolitiken@pol.dkDu lytter til PolitikenDagens gæst: Kristian Corfixen journalist på Politiken.Dagens vært: Bo Søndergaard.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2021-05-28
+          &nbsp;·&nbsp; e8492ea8
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.935</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.937</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.817</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Algoritmerne glemmer aldrig</h4>
+        <div>
+          Lauren Goode besluttede i 2019 at aflyse det planlagte bryllup. Men de algoritmer som driver Facebook, Pinterest eller som styrer annoncevisningerne på Instagram, sørger for konstante påmindelser om 'det forestående bryllup'På Nyhedsbloggen finder du links til historier fra hjemlige og internationale medier og blogs. Historier, som vi mener er relevante eller underholdende, og som fortjener at blive videregivet i sin originalform. Historierne er fortrinsvis på dansk, tysk eller engelsk.PS: At vi lægger en historie på Nyhedsbloggen betyder ikke vi deler de synspunkter, som kommer til udtryk.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2021-04-07
+          &nbsp;·&nbsp; e8340fcb
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.954</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.954</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.814</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.521</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook vil afskaffe clickbait-artikler</h4>
+        <div>
+          NEWSFEED: Facebook vil sætte en stopper for opslag som » Derfor var vandet i OL-bassinet grønt « , hvor læsere er tvunget til at klikke på et link for at blive klogere -såkaldt clickbait.En ny algoritme fra Facebook vil straffe de opslag, der tilbageholder eller overdriver information fra den tilhørende artikel. Algoritmen vil også straffe den side, opslaget tilhører, så den fremover får en dårligere visning.
+        </div>
+        <footer>
+          <em>Nordvestnyt Kalundborg</em>
+          &nbsp;·&nbsp; 2016-08-25
+          &nbsp;·&nbsp; e5da6c51
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.942</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.938</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.812</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.575</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Slet din facebookprofil, og giv din tid og dine data til nogle andre</h4>
+        <div>
+          Det er foruroligende, at Facebook, en enkelt amerikansk virksomhed, kan manipulere med en tredjedel af verdens befolknings humør ved at pille ved nogle algoritmer, som er utilgængelige for alle os andre2020 skal være året, hvor Facebook gør sine 2,3 milliarder brugere glade.»Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber,« siger Martin Ruby, der er politisk chef for Facebook i Norden, til Politiken.Facebook har fundet ud af, at det har en negativ effekt på folks humør, hvis de bare sidder og læser andre folks opslag uden at interagere med dem. Modsat forholder det sig, hvis man interagerer og kommenterer på billeder og opslag fra nære venner og familie - så det skal der til at være mere af.Samtidig skal brugerne gøres opmærksomme på, når de har set alt indhold for de seneste dage, så de forhåbentlig kan blive vækket fra zombietilstanden efter flere timers tilfældig scrollen-rundt. Der skal mere »kvalitetstid« på platformen, som der står i overskriften i Politiken.Vores abonnenter kalder os kritisk, seriøs og troværdig.Prøv en måned gratis.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2020-01-19
+          &nbsp;·&nbsp; e78b8b83
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.879</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.885</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.81</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.663</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Massiv kritik af Facebooks algoritme</h4>
+        <div>
+          Facebooks algoritme er under heftig kritik efter en amerikansk valgkamp, hvor det sociale medie har spredt falske nyheder til vælgerne. For eksempel den opdigtede nyhed om, at paven støttede Donald Trump som præsident.En historie, der ifølge mediet Slate blev delt op mod 1 million gange af det sociale medies brugere.Algoritmen bliver kaldt hovedskurken i skandalen, fordi den er med til at skabe ekkokamre på det sociale medie, hvor falske nyheder trives. Ifølge kritikere var algoritmen ligefrem med til at skaffe Trump præsidentembedet. Den anklage hænger sammen med, at det er algoritmen, der udvælger de billeder, videoklip og nyheder, som bliver vist til brugerne. Den sorterer i mange tusinde mulige opslag og designer en personligt tilpasset nyhedsvæg til hver enkelt besøgende bruger.En algoritme er en formel med en række indlagte forudsætninger. Målet med Facebooks algoritme er at udvælge det indhold, som passer bedst til brugerne og får dem til at like, kommentere og dele mest muligt. Populært sagt kan man kalde den spillereglerne.Hvis du spiller inden for algoritmens kridtstreger, vil dine opslag blive set af flere brugere, hvilket en stribe falske nyhedssider har gjort til deres speciale.»Dine forbindelser og aktiviteter på Facebook påvirker de historier, der bliver vist på din nyhedsvæg. Det hjælper dig til at se flere historier, der interesserer dig, fra de venner, du interagerer mest med«, skriver Facebook selv på deres hjemmeside.Algoritmens præcise funktion er en forretningshemmelighed, men Facebook indrømmer offentligt, at de fra tid til anden justerer algoritmen med dertil hørende hovedpine for de medier og virksomheder, som gerne vil have deres indhold ud til flest mulige brugere. Indtil videre har Facebook ikke meldt ud, om virksomheden planlægger at justere algoritmen for at modarbejde spredningen af falske nyheder.Teknologimediet Techcrunch har interviewet og researchet sig frem til fire faktorer, som er med til at afgøre, hvad du ser, når du logger ind på Facebook.Se dem i grafikken ovenfor.jmf@pol.dk Fakta: Facebooks algoritmerDin interesse i brugerenFacebook antager, at jo mere du før har været i kontakt med en anden bruger, jo større er chancen for, at du vil like, dele eller kommentere den næste opdatering fra personen.Derfor ser du sjældent opdateringer fra gamle venner eller sider, som du ikke har interageret med i lang tid på det sociale medie.Andre brugeres interesse i opslagetFacebooks algoritme lægger vægt på, hvordan andre brugere har reageret på et opslag, når den skal afgøre, om du også skal have opslaget at se. Hvis andre brugere tidligere har liket, delt og kommenteret et billede af en baby, er sandsynligheden større for, at du også vil kunne lide billedet.Tidspunktet for opslagetTiden spiller også en rolle. Opdateringer fra de tidlige morgentimer er mindre tilbøjelige til at dukke op på din nyhedsvæg, som dagen skrider frem. Omvendt sørger algoritmen for at opdatere dig med de store nyheder, som du er gået glip af, hvis du har været på afstand af det sociale medie i et stykke tid.For eksempel at din gode ven har fået/født en datter.Opslagets karakterVi har alle forskellige præferencer.Nogle er vilde med videoklip, andre er mere til nyheder fra de store nyhedsmedier.Facebooks algoritme lytter til dine vaner og tager hensyn til, hvilke typer opslag du oftest interagerer med, når du boltrer dig på det sociale medie.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2016-11-19
+          &nbsp;·&nbsp; e5fd3e75
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.993</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.901</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.795</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.631</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook begrænser valgindhold og fjerner kontroversiel gruppe</h4>
+        <div>
+          Poli­tik Facebook har torsdag skruet op for indsatsen mod delingen af falsk og potentielt farligt valgindhold på sine sociale platforme.Det har blandt andet resulteret i nedlæggelsen af en Facebook-gruppe, som udbredte forestillingen om, at der fuskes med stemmeoptællingen.Det skriver Wall Street Journal.Facebooks skærpede indsats sker i et forsøg på at begrænse den allerede voksende uro på tværs af USA i forbindelse med valget.Helt konkret har selskabet tilpasset platformens bagvedliggende algoritmer, som inddeler og ranglister indhold. Samtidig tvinges brugere nu til at klikke sig igennem en notits med henvisning til Facebooks valginformation, når man ønsker at dele indhold relateret til præsidentvalget.&quot;Selv om mange falske påstande får begrænset opmærksomhed på vores platform, tager vi nye og midlertidige skridt for at holde dem væk fra større befolkningsgrupper. Det dækker blandt andet over deklassering af indhold på Facebook og Instagram, som vores systemer identificerer som misinformation. Vi begrænser også delingen af live-videoer som omhandler valget,&quot; skriver Facebook ifølge Wall Street Journal i en meddelelse.Det sociale medies arbejde resulterede torsdag i nedlæggelsen af gruppen &quot;Stop the Steal&quot;. Gruppen, der var en af de hurtigst voksende i Facebooks historie, organiserede protester på tværs af USA mod påstået valgsnyd.På blot 24 timer fik gruppen en tilknytning på 361.000 brugere, hvorefter Facebook greb ind.Nedlæggelsen af gruppen har mødt stor kritik fra flere republikanere om, at Facebook aktivt begrænser konservative stemmer, skriver avisen./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Borsenpro.dk/finans</em>
+          &nbsp;·&nbsp; 2020-11-06
+          &nbsp;·&nbsp; e7fa21cf
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.986</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.936</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.792</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.545</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook er blevet ligegyldig, onkelagtig og præget af midtvejskriser</h4>
+        <div>
+          Hver uge fortæller min smartphone mig, hvor mange timer jeg har brugt på hvad, og jeg kan konstatere, at jeg bruger mindre og mindre tid på Facebook.Det toppede sidste år, hvor jeg sammenlagt brugte mere end fire timer om ugen. Nu er jeg nede på under det halve. Jeg er blevet træt af det. Og tallene viser, at jeg ikke er alene.I takt med, at Facebook i et forsøg på at dæmme op for falske nyheder har ændret sine algoritmer for at fremme den personlige kommunikation mellem venner og familie, er det sociale medies indhold blevet mere og mere ligegyldigt.Heldigvis, kan man sige, hvis det altså rent faktisk begrænser omfanget af løgne og misinformation. Det ved vi endnu ikke nok om. Men det er tydeligt, at Facebook står i et klassisk dilemma: Hvordan balancerer man kravet om profit med risikoen for fake news?Selvforskyldt kriseDet, vi ved, er, at milliardgiganten Facebook er i en absolut selvforskyldt krise, som har skåret milliarder af virksomhedens værdi og forstærket debatten om, hvordan man regulerer foretagendet og får dem til at betale skat.
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2019-01-15
+          &nbsp;·&nbsp; e70b51c8
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.978</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.939</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.787</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.636</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hemmelig gruppe af facebookansatte vil stoppe falske nyheder</h4>
+        <div>
+          Via en hemmelig arbejdsgruppe vil flere af Facebooks ansatte kræve flere redskaber i brug for at forhindre falske nyheder på mediet.Ansatte på Facebook har skabt en uofficiel og indtil videre hemmelig gruppe, som vil modarbejde den spredning af falske nyheder, som ifølge de ansatte prægede mediet under den nyligt overståede amerikanske valgkamp. Den store sociale medieplatform bærer et medansvar for spredningen, mener de.Det skriver onlinemediet Buzzfeed, som citerer en håndfuld anonyme Facebook-ansatte for at bekræfte gruppens eksistens. Ifølge kilderne tæller gruppen af ansatte »mere end flere dusin«ansatte på forskellige niveauer i selskabet.I modsætning til Facebooks topchef, Mark Zuckerberg, som i sidste uge kaldte det »en ret skør tanke«, at falske nyheder på Facebook skulle have påvirket præsidentvalget, der førte til Donald Trumps sejr.»Det er ikke en skør tanke. Skørt er det derimod, at han på den måde går ud og afviser det, når han ved, og vi andre i selskabet ved, at falske nyheder løb som en ild på vores platform gennem hele valgkampen«, siger en af de ansatte til Buzzfeed.Vil have flere værktøjer i brugDe ansatte begrunder deres anonymitet med det forbud mod at tale med pressen, de angiveligt skulle være blevet pålagt af deres foresatte. Arbejdsgruppen vil, oplyser de, arbejde på en række opfordringer til selskabets topledelse om, hvordan spredningen af falske nyhedshistorier kan begrænses. Selskabet kan her blandt andet bruge værktøjer, som allerede findes og i dag bruges til at begrænse andre typer af indhold, som selskabet finder skadelige, lyder det.»Vi gør meget for at forhindre folk i at dele opslag med nøgenhed eller vold - fra automatisk markering af visse sider til advarsler til folk - der offentliggør indhold, der ikke stemmer overens med vores fællesskabsregler«, siger en anden ansat til Buzzfeed og fortsætter:»Hvis nogen skriver en falsk nyhedsartikel, som påstår at Clinton-familien har illegale immigranter ansat og som ophidser folk til vold mod illegale immigranter, er det så ikke også farligt? Er det ikke også en overtrædelse af vores fællesskabsregler?«.LÆS OGSÅ Facebook nægter at have hjulpet Trump, men vil rydde op i falske nyhederFacebook lancerede i 2015 nye redskaber, som brugere kan bruge til at markere falske historier med.I maj fyrede selskabet hele den afdeling, der før var ansvarlig for de såkaldte trending topics, efter at tidligere ansatte havde kritiseret, at udvælgelsen af de mest populære emner blev præget i en venstreorienteret retning af de ansatte. I stedet satte selskabet en ny algoritme, som flere eksperter dog kritiserede for at øge risikoen for spredningen af falske nyhedshistorier yderligere.Trending topics er ikke en del af de fleste danskeres Facebook-strøm.Facebook: Blot en af mange kilderFacebook har ikke ønsket at udtale sig til Buzzfeeds artikel, men en talsperson fra selskabet afviste i sidste uge, at platformen havde haft en afgørende indflydelse på valget.»Facebook spillede en rolle ved dette valg, men blot som en af mange måder, folk fik deres information på - og en af mange måder, folk kom i kontakt med deres ledere på, engagerede sig i den politiske proces og gav udtryk for deres holdninger«.LÆS OGSÅ Makedonske teenagere spammer Facebook med falske nyheder om Trump og ClintonMens den indtil videre hemmelige arbejdsgruppe af Facebook-ansatte altså kalder på en mere offensiv brug af også automatiserede værktøjer til at opsnappe de falske historier med, har selskabet de sidste år primært mødt kritik for at bruge tilsvarende værktøjer for flittigt. Dermed har Facebook ifølge kritikere bragt sig på kant af ytringsfriheden.Det var blandt andet tilfældet, da det historiske, prisvindende pressebillede af en nøgen vietnamesisk pige på flugt fra de amerikanske napalmbombardementer under Vietnamkrigen blev fjernet fra Facebook med henvisning til fællesskabsreglernes forbud mod nøgenhed.Efter heftig kritik fra blandt andre Norges statsminister, Erna Solberg, der selv havde fået billedet fjernet fra sin side, valgte Facebook her at genoprette de slettede indlæg, ligesom selskabet meddelte, at krigsbilledet for fremtiden kunne deles på mediet.Afvisning. At falske nyheder på Facebook skulle have påvirket udfaldet af den amerikanske valgkamp kaldte selskabets stifter, Mark Zuckerberg, forleden »en skør tanke«. Foto: Eric Risberg/AP Afvisning. At falske nyheder på Facebook skulle have påvirket udfaldet af den amerikanske valgkamp kaldte selskabets stifter, Mark Zuckerberg, forleden»en skør tanke«. Foto: Eric Risberg/AP.Afvisning. At falske nyheder på Facebook skulle have påvirket udfaldet af den amerikanske valgkamp kaldte selskabets stifter, Mark Zuckerberg, forleden »en skør tanke«. Foto: Eric Risberg/AP Afvisning. At falske nyheder på Facebook skulle have påvirket udfaldet af den amerikanske valgkamp kaldte selskabets stifter, Mark Zuckerberg, forleden»en skør tanke«. Foto: Eric Risberg/AP.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2016-11-15
+          &nbsp;·&nbsp; e5fbbf23
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.996</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.859</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.776</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.58</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tager machine learning i brug: Clickbait-opslag skal ud af nyhedsstrømmen</h4>
+        <div>
+          Det sociale medie vil have fokus tilbage på almindelige opdateringer mellem venner og familie - dog er der stadig plads til kommercielle nyheder.Facebook tager nu machine learning i brug for at fjerne clickbait-indlæg, fordi de stjæler billedet fra Facebooks oprindelig formål, nemlig opdatering af dagligdags begivenheder mellem familie og venner.Ifølge et blogindlæg fra Facebook udruller man i denne uge en feature, som betyder, at brugerne vil se 'færre clickbait stories', skriver PC Mag.Systemet identificerer og fjerner indlæg med clickbait-overskrifter, altså udsagn der kun kommer med halve oplysninger og/eller skaber en forkert forventning til indholdet.Ifølge Facebook har man trænet IT-systemet med et team af brugere, der er præsenteret for tusindvis af overskrifter inden for de to uønskede kategorier.Typen af overskrifter, som man vil luge ud i er f.eks.: 'Da hun kiggede under sofapuderne og fandt dette.. Jeg er chokeret!','Han lagde hvidløg i skoene før han gik i seng og og hvad der skete derefter er svært at tro', eller 'Hunden gøede af postbudet - se den vilde reaktion.'Bloggen oplyser ikke noget om, hvad man vil erstatte et fjernet indlæg med. Kun at man ønsker 'autentiske' historier i stedet for clickbait-overskrifter.»Et af vores nyhedskriterier er at udgive autentisk kommunikation,«skriver Facebook.»Folk fortæller os, at de bedst kan lide autentiske historier. Derfor arbejder vi hårdt på at forstå, hvilken type historier og indlæg, som vores brugere mener er ægte, så vi kan vise flere af dem i nyhedsstrømmen.«Det nye clickbait undertrykkende system er del af en større trend på Facebook, hvor man stoler mindre på antallet af likes, klik, kommentarer og delinger, der ellers hidtil har været bestemmende for placeringen af historier i folks nyhedsfeeds.Den sociale mediegigant begyndte f.eks. i december at teste nye emne-baserede feeds, der fokuserer på indhold som stil eller mad.Selv om Facebook angiver, at man vil styrke den oprindelig ide med at forbinde venner og familie, er der stadig palds til kommercielt indhold og nyheder, så længe de ikke omfatter clickbait.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-08-08
+          &nbsp;·&nbsp; e5d46f2e
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.791</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.786</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.775</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.615</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tyske socialdemokrater vil straffe Facebook for falske nyheder med millionbøder</h4>
+        <div>
+          Tiltagende problemer med falske nyheder på Facebook har nu startet en debat om store bøder til Facebook i Tyskland. Politikere frygter, at falske nyheder kan påvirke det kommende parlamentsvalg.Kampen mod de falske nyheder på Facebook spreder sig i denne tid lige så hurtigt, som de falske nyheder blevet delt på Facebook....Mens Facebook har udtalt, at virksomheden ikke vil filtrere falske historier gennem justering af sin algoritme eller ved at ansætte redaktører, har virksomheden lavet et samarbejde med medier som Snopes, Washington Post og PoltiFact, som skal afhjælpe problemet ved at overvåge nyhedsstrømmen på Facebook. Foto: Matt Rourke/AP.Mens Facebook har udtalt, at virksomheden ikke vil filtrere falske historier gennem justering af sin algoritme eller ved at ansætte redaktører, har virksomheden lavet et samarbejde med medier som Snopes, Washington Post og PoltiFact, som skal afhjælpe problemet ved at overvåge nyhedsstrømmen på Facebook. Foto: Matt Rourke/AP.
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2016-12-25
+          &nbsp;·&nbsp; e60ae9ae
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.987</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.857</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.772</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.531</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Her er Facebooks nye stemme</h4>
+        <div>
+          Den verdenskendte skuespiller Morgan Freeman lægger stemme til den nye Facebook-robot, JarvisDen amerikanske kendis Morgan Freeman er ikke kun kendt for sit skuespil, men også for sin smørbløde stemme, der blandt andet bliver anvendt i Googles navigationsapp, Waze.Forretningsmanden Mark Zuckerberg, der står bag det populære medie Facebook, har nu også opdaget Morgan Freemans behagelige røst.79-årige Morgan Freeman skal nemlig lægge stemme til det seneste tiltag på Facebook, den stemmestyrede husrobot Jarvis.Det skriver Mark Zuckerberg på sin profil på det sociale medie.Forud for sin beslutning havde Mark Zuckerberg holdt en afstemning på Facebook, hvor offentligheden kunne afgøre, hvilken stemme der skulle kendetegne den nylancerede robot. Det skriver det amerikanske medie USA Today.Morgan Freeman vandt afstemningen med en overbevisende sejr, og efter et telefonopkald fra Mark Zuckerberg indvilgede skuespilleren i at være Facebooks nye stemme.Husrobotten Jarvis har kunstig intelligens og kan styre elektriske anordninger i hjemmet.Ideen om den nye Facebook-robot blev allerede præsenteret i starten af 2016. Det er dog endnu usikkert, hvorvidt Mark Zuckerberg vil gøre Jarvis tilgængelig for alle Facebook-brugere.Se Mark Zuckerbergs Facebook-opslagher.Foto: AP.Foto: AP.
+        </div>
+        <footer>
+          <em>Ekstrabladet.dk</em>
+          &nbsp;·&nbsp; 2016-12-22
+          &nbsp;·&nbsp; e60a1e33
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.866</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.819</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.763</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.53</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.593</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook har et nyt våben i krigen mod falske profiler</h4>
+        <div>
+          En ny algoritme kan hjælpe Facebook med at analyserer brugernes opførsel og samspil med andre brugere, og på den måde finde frem til falske profiler. Facebook har udviklet en spritny og effektiv algoritme til at slå ned på falske profiler. Værktøjet har allerede hjulpet Facebook til at lukke 6,6 milliarder falske profiler, og så er de mange millioner forsøg på at oprette falske profiler, som Facebook dagligt blokerer ikke talt med. Det skriver ZD Net Teknologien, der hjælper Facebook i deres kamp imod falske profiler, hedder Deep Entity Classification (DEC). Ved hjælp af maskinlæring kan værktøjer analysere de mange brugeres konti, men også hvordan de forskellige profiler interagerer med omverden. »Det handler ikke så meget om det indhold som en profil deler, men hvordan profilen interagerer med andre på platformen, « siger Daniel Bernhard, engineering manager hos Facebook, til ZD Net. Selv med det nye værktøj, er Facebook usikre på, om de nogensinde kan vinde i kampen mod de falske profiler.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-03-06
+          &nbsp;·&nbsp; e79befa3
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.915</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.68</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.762</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.611</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebooks 'venneforslag'virker, i hvert fald for ISIS-terrorister</h4>
+        <div>
+          Facebooks'venneforslag' har ifølge ny rapport hjulpet ekstremister med at finde hinanden på Facebook. Af de 1.000 profiler tilhørende ISIS-sympatisører, som rapporten undersøgte, har Facebook kun slettet halvdelen.Facebooks 'venneforslag'har ifølge ny rapport hjulpet ekstremister med at finde hinanden på det sociale medie. Blandt 1.000 Facebook-profiler på ISIS-sympatisører, som en forskergruppe har undersøgt, har Facebook kun opsporet og slettet halvdelen.Det skriver The TelegraphForskere fra Counter Extremism Project har undersøgt 1.000 Facebook-profiler på tværs af 96 lande. Undersøgelsen viste, at brugere med radikale, islamistiske sympatier regelmæssigt blev introduceret for hinanden af den populære 'venneforslag'-funktion på Facebook.Facebooks algoritme kan forbinde ekstremister, men Facebook smider dem ikke af tjenestenVed at klikke på ISIS-medlemmernes profiler kunne Robert Postings, som er medforfatter på rapporten, se, at han begyndte at få 'venneforslag'til en lang række radikaliserede islamister. Mange af disse var meget pro-ISIS.Facebooks algoritme kan med ret stor præcision identificere pro-ISIS-brugere.»Det er vigtigt at fjerne profiler, som spreder ISIS-propaganda, tilskynder til angreb og i øvrigt støtter gruppen. Det faktum, at størstedelen af pro-ISIS-profiler i den her database fortsat ikke er blevet fjernet, er exceptionelt ildevarslende,« siger Robert Postings til The Telegraph.Rapporten fra Counter Extremism Project vil blive offentliggjort i sin fulde længde senere på måneden.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-05-08
+          &nbsp;·&nbsp; e6be0a43
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.939</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.9</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.76</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.599</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook forbyder manipulerede videoer - men satire er okay</h4>
+        <div>
+          De såkaldte deepfakes bliver nu forbudt på Facebook, som dog tillader videoer, der er satire. Facebook forbyder manipulering med videoer - såkaldte deepfakes. Det oplyser koncernen i en pressemeddelelse tirsdag. Forbuddet gælder dog ikke videoer, som skal være parodier eller satire. Det gælder heller ikke videoer, som er blevet redigeret udelukkende for at undlade eller ændre ordenes rækkefølge. De såkaldte deepfakes kan i dag laves med simpel teknologi som Photoshop eller via værktøjer, som bruger kunstig intelligens. Med sin nye politik vil Facebook fjerne de videoer, som lever op til nogle kriterier om, at de manipulerer, ved eksempelvis at få det til at se ud som om, at nogen siger noget, som de ikke har sagt. Ifølge Facebook er videoerne stadig sjældne på nettet, men de repræsenterer alligevel en betydelig udfordring for Facebook, eftersom de ses oftere. Facebook har tidligere fået kritik for ikke at fjerne en manipuleret video af lederen af Repræsentanternes Hus, demokraten Nancy Pelosi. Videoen var blevet sat ned i tempo, så den gav indtryk af, at Pelosi var fuld eller dårlig tilpas. Amerikanske medier mener dog ifølge nyhedsbureauet AFP, at de nye regler ikke vil dække videoer som den med Nancy Pelosi, da den ikke var en deepfake. Facebook har ikke sagt noget om, hvor mange ansatte der skal identificere og tage videoerne, som overtræder reglerne, ned. Techgiganten oplyser dog, at indhold, som tages ned, kan blive genset af et hold af tredjepart-faktatjekkere. Heriblandt er ansatte fra nyhedsbureauet AFP, som er blevet betalt af Facebook for at faktatjekke indhold. Indhold, som markeres som falsk, vil dog ikke altid blive helt fjernet, men vil blive nedprioriteret i brugernes nyhedsstrøm, så færre ser det, og desuden vil det blive fulgt af en advarsel om, at opslaget er misledende. Den tilgang skyldes, at Facebook gerne vil informere om, hvilket indhold der er falsk, i stedet for bare at fjerne det. /ritzau/ Få dagens vigtigste nyheder fra folkebladetlemvig.dk direkte i din indbakke. Du kan til hver en tid afmelde dig igen.
+        </div>
+        <footer>
+          <em>Folkebladetlemvig.dk (Lemvig Folkeblad)</em>
+          &nbsp;·&nbsp; 2020-01-07
+          &nbsp;·&nbsp; e787d4c3
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.992</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.889</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.76</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.677</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>3 gode råd om Facebook - synlighed fra Thomas Bigum</h4>
+        <div>
+          Publicer ofte end du tror, du kan tillade digFacebook -algoritmen hjælper og vil fordele dine historier, så de ikke føles som støj for brugerne.Lav indhold, som folk klikker påIndhold spredes, når modtagere interagerer. Billeder med detaljer, som folk vil se forstørret, er et godt trick.Samarbejd med andreAt administrator tagger en anden side i opslaget, giver stor chance for visning hos dem, der liker begge parter.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2014-08-12
+          &nbsp;·&nbsp; e48712db
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.65</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.708</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.757</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.667</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tager nyt skridt i kampen mod selvmordsopslag</h4>
+        <div>
+          Ny teknologi skal sikre, at flere opslag, der tilskynder selvskade og selvmord, bliver opdaget på Instagram.I denne uge tager Facebook, der ejer Instagram, ny teknologi i brug i Danmark.Teknologien, som selskabet allerede bruger udenfor EU, skal finde frem til flere opslag som opildner til selvskade og selvmord på specielt det sociale medie Instagram.Læs også: FAKTA: Facebook, selvskader og selvmord- Den nye AI teknologi (kunstig intelligens red.) kan finde flere ting, end den teknologi vi har brugt indtil nu.- Det har krævet nogle diskussioner med datatilsynene i Europa at få opbakning til at rulle teknologien ud, siger Martin Ruby, der er politisk chef for Facebook i Norden.Den nye teknologi kigger ikke kun på et billede eller video, men også på tekst og kommentarer til et opslag.På den måde kan en bro eller et højhus, der i sig selv ikke signalerer selvskade, få lamperne til at blinke, hvis teksten eller kommentarerne signalerer noget med selvmord.- Vi tager ikke alt indhold med selvskade og selvmord ned. Det skal være muligt for mennesker, at snakke om svære emner på sociale medier.- Det skal ligeledes være muligt at lave støttende fællesskaber, hvor man kan bakke op af hinanden, siger Martin Ruby.Den kunstige intelligens vil, hvis den finder et opslag, der bryder med Facebooks regler om selvskade og selvmord, gøre opslaget mindre synligt.Blandt andet ved at fjerne det fra Instagram Explore, hvor Instagram anbefaler indhold til brugerne.I situationer, hvor teknologien er &quot;yderst sikker på&quot;, at et opslag bryder reglerne, vil opslaget blive fjernet efter 24 timer.De 24 timer giver familie og venner tid til at reagere på et selvmordsbrev eller lignende, før opslaget forsvinder.Facebook har ikke hidtil måtte anvende teknologien i Europa, men får nu lov, efter diskussion med datatilsynet i Irland som Facebook juridisk hører under i Europa.Facebook oplyser, at man ikke skanner beskeder for selvmord eller selvskadende indhold af hensyn til privatlivetI februar viste dokumentaren &quot;Døde pigers dagbog&quot; på DR, hvordan især unge sårbare kvinder i et lukket netværk på Instagram deler billeder af selvskade og selvmordsrelaterede opslag.Dengang sagde Instagram, at det ville blive bedre til at fjerne opslag med selvskade.I august kunne DR dog dokumentere, at der forsat var selvmordsindhold på Instagram, og at der stadig blev lagt nyt skadeligt indhold op.
+        </div>
+        <footer>
+          <em>Sn.dk (Sjællands Nyheder)</em>
+          &nbsp;·&nbsp; 2020-11-11
+          &nbsp;·&nbsp; e7fbb040
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.827</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.74</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.757</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>YouTube bandlyser indhold fra Holocaust-benægtere og nazister</h4>
+        <div>
+          Efter længere tids kritik af passiv tilgang til fascistisk og racistisk indhold på deres platform har YouTube nu valgt, at man vil bandlyse indhold, der promoverer denne type ideologier.Det skriver The GuardianFascistisk og racistisk indhold indebærer i denne sammenhæng ifølge YouTube ideologier og ytringer, der udtrykker, at en folkegruppe er overlegen i forhold til andre baseret på kriterier som eksempelvis race, køn, religion og seksuel orientering.Udover ideologiske ytringer vil YouTube også fjerne videoer, der benægter, at folkedrabet Holocaust under andens verdenskrig fandt sted. Kanaler, der benægter at veldokumenterede skoleskyderier, som eksempelvis skyderiet ved Sandy Hook Elementary School i Newton, U.S.A, vil også få dette indhold fjernet.Relateret jobannonce: Fullstack udvikler til innovativ virksomhedAlgoritmer til etablerede kanalerDerudover har YouTube siden januar i år ændret algoritmen for, hvilke videoer og kanaler, de enkelte brugere anbefales baseret på deres præferencer og historik på platformen.Tidligere har YouTube været kritiseret for, at deres algoritmebaserede anbefalingstjeneste for ofte og for nemt introducerede brugere til mere og mere ekstremistisk, fascistisk og konspiratorisk indhold, men det skal ændringen i algoritmen sætte en stopper for.Ændringen i algoritmen for anbefalet indhold har ifølge YouTube mere end halveret foreslag af indhold, der misinformerer og spreder hadefuld retorik. Det indebærer eksempelvis indhold, der benægter folkedrabet Holocaust, eller indhold, der &quot;beviser&quot; at jorden er flad.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-06-06
+          &nbsp;·&nbsp; e73a1f60
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.902</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.795</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.75</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.593</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Slet din facebookprofil, og giv din tid og dine data til nogle andre</h4>
+        <div>
+          Det er foruroligende, at Facebook, en enkelt amerikansk virksomhed, kan manipulere med en tredjedel af verdens befolknings humør ved at pille ved nogle algoritmer, som er utilgængelige for alle os andre2020 skal være året, hvor Facebook gør sine 2,3 milliarder brugere glade.»Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber,« siger Martin Ruby, der er politisk chef for Facebook i Norden, til Politiken.Facebook har fundet ud af, at det har en negativ effekt på folks humør, hvis de bare sidder og læser andre folks opslag uden at interagere med dem. Modsat forholder det sig, hvis man interagerer og kommenterer på billeder og opslag fra nære venner og familie - så det skal der til at være mere af.Samtidig skal brugerne gøres opmærksomme på, når de har set alt indhold for de seneste dage, så de forhåbentlig kan blive vækket fra zombietilstanden efter flere timers tilfældig scrollen-rundt. Der skal mere »kvalitetstid« på platformen, som der står i overskriften i Politiken.Initiativet er der som sådan ikke noget galt med. Det er fint, at en virksomhed som Facebook, der i så mange år har forsøgt at undgå at blive gjort ansvarlige for, hvad der foregår på platformen, gør sig nogle tanker om, hvilken adfærd og debat den fremmer.Men man kan alligevel ikke lade være med at blive foruroliget, når man overvejer følgerne. For hvordan er vi endt der, hvor en enkelt amerikansk virksomhed kan manipulere en tredjedel af verdens befolknings humør ved at pille ved nogle algoritmer? Og det er vel at mærke algoritmer, som er komplet uigennemskuelige for alle andre.I 2014 fik Facebook kritik for at eksperimentere med netop folks følelser. Her eksponerede man én gruppe for flere positive opslag og en anden gruppe for flere negative opslag for at undersøge, hvordan det efterfølgende påvirkede brugernes adfærd på det sociale medie. Facebook endte med at måtte undskylde for eksperimentet.I 2017 besluttede Facebook sig for at eksperimentere med et nyt News Feed i lande som Serbien, Guatemala og Cambodia. I processen fjernede de fuldstændig mange uafhængige mediers mulighed for at nå deres publikum.»Mark Zuckerberg, mit demokrati er ikke dit laboratorie,« skrev en serbisk redaktør i The New York Times.Det samme kan siges om verdensbefolkningens humør.En bedre løsning til øget kvalitetstid i 2020 kunne lyde: Log af, slet din profil, og giv din tid og dine data til nogle andre end Facebook. Hvis 2,3 milliarder mennesker gjorde det, ville verden med al sandsynlighed blive både gladere og bedre.
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-01-19
+          &nbsp;·&nbsp; e78b8bf1
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.872</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.927</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.75</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.652</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook sætter fokus på brugerne</h4>
+        <div>
+          Manden bag Facebook, Mark Zuckerberg, har annonceret, at Facebook er kommet for langt væk fra sine rødder, fordi brugernes nyhedsstrøm domineres af professionelt produceret indhold fra virksomheder og medier. Det vil han ændre på ved at give verdens største sociale medie og dets brugere mere relevant indhold.Brugeren skal igen være i centrum. Familie og venner samt lokalt indhold skal trækkes frem i den aldrig sluttende strøm af opdateringer.Men hvad betyder dette omfattende indgreb i Facebooks nuværende form? Hvem bliver vinder, og hvem taber i kampen om at høste likes og kliks, når denne ændring har slået igennem verden over? .Holder det private tilbageVirksomheden bag Facebook har konstateret, at brugernes private statusopdateringer er gået væsentligt tilbage. Denne adfærd smitter af på andre brugere, som også bliver mere tilbageholdne med at delagtiggøre andre om deres eget liv.For at motivere brugerne til at fortsætte med at udgive egne billeder og historier på Facebook har det sociale medie valgt at gennemføre en omfattende tilpasning af brugernes nyheds s t røm.Vinderne efter denne ændring bliver brugerne, der vil opleve Facebooksiden med et overvægt af » relevante « opslag fra venner og familie.Interaktion belønnesFor eksempel vil opslag fra nyhedsmedier, som brugerne ivrigt kommenterer, blive fremmet, hvorimod opslag med mangel på interaktion nedgraderes. Det har allerede fået alarmklokkerne til at ringe hos de store mediekonc e r n e r , som beny t t e r sig af Facebook til at nå ud til mange mennesker.Guatemala er et af de lande, som er b l e v e t valgt som prøveklud for Facebooks ændring. Og resultatet har været nedslående set fra medievirksomhedernes side, der kan konstatere op til 50 procent tab af kliks og dermed læsere. Mangel på klik er lig med tab af fortjeneste.Virksomheder og nyheds -medier, der deri m o d kan få b r u -gerne til at i n -teragere i f o rm af del i n g o g k omm e n -t a r e r til indholdet , vil blive vinderne, og blandt de seneste udmeldinger er, at lokale nyhedssite vil blive favoriseret fremfor nationale og internationale nyheder.Hvad kan der gøres? Hvad kan virksomheder gøre, når trafikken fra Facebook aftager? Ifølge Mark Zuckerberg er der kun en løsning: at involvere brugerene så meget, så de vælger at kommentere opslagene, for når man ser vennernes kommentar til et opslag, er man selv mere tilbøjelig at bidrage i samme stil. Men også et større engagement igennem Facebook-grupper, indhold af høj kvalitet samt brug af livevideo vil bringe opslagene højere op i brugerne nyhedsfeed.Derudover er Facebook også en meget rentabel forretning og naturligvis vil man også igennem placering af bannerreklame komme i brugernes synsfelt igen.For nogle virksomheders og mediers vedkommende betyder det en forøgelse af reklamebudgettet.Ændringen til Facebooks algoritme er ved at blive rullet ud verden over.
+        </div>
+        <footer>
+          <em>Dagbladet Køge</em>
+          &nbsp;·&nbsp; 2018-02-22
+          &nbsp;·&nbsp; e6a130a8
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.993</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.992</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.742</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.528</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook sætter ind mod lokkemad</h4>
+        <div>
+          Mediegiganten vil fremover nedprioritere historier med overskrifter, som er misvisende eller lokkende.Kampen om læserne på de sociale medier får nyhedsmedier til at lokke med fængende overskrifter, der næsten virker for gode til at være sande. Og ofte ender med at skuffe læserne, fordi de ikke kan holde, hvad de lover.Men den disciplin, som også kaldes clickbait, bryder Facebook sig ikke om. Mediegiganten vil fremover i endnu højere grad end i dag nedprioritere historier med overskrifter, som er misvisende eller lokkende, skriver Mediawatch.Det betyder, at algoritmen, som bestemmer rækkevidden af et opslag på det sociale medie, indstilles, så færre mennesker ser de lokkende overskrifter. Dermed skal det blive mindre interessant for medier at skrive de lokkende overskrifter, som har til hensigt at generere kliks og annonceindtægter.»Udgivere, der bygger på clickbait-overskrifter, bør forvente, at deres distribution falder«, skriver Facebook i en pressemeddelelse.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2017-05-22
+          &nbsp;·&nbsp; e643c557
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.79</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.88</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.742</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>&quot;Du gætter aldrig, hvilke chokerende ændringer Facebook lige har lavet&quot;</h4>
+        <div>
+          Hvis du er træt af denne type overskrifter, har Facebook gode nyheder til dig.Ja, snart er det slut med overskrifter som den ovenstående på Facebook.Det sker, efter at det sociale netværk har besluttet at lave en opdatering af algoritmen bag sit &quot;news feed.&quot; Det vil sige den nyhedsstrøm, som brugerne bliver mødt af, når de logger ind på Facebook.Det fremgår af en blog , som Facebook har offentliggjort.Opdateringeren er designet til at straffe såkaldte &quot;click baiting-artikler&quot;. Det er artikler, der er designet til bevidst at lokke folk til at klikke på et link uden at informere læserne om, hvad det er, de klikker på.Velkendt praksisDet er formodentlig en praksis, som de fleste læsere af netmedier er bekendt med. Og ja, indrømmet: Denne type overskrifter er du fra tid til anden også blevet mødt af her på Computerworld.Ifølge Facebook skal ændringerne sikre, at brugerne bliver mødt af færre indlæg, som har karakter af spam, og i stedet bliver præsenteret for flere indlæg, der reelt er interessante og relevante for dem.En brugerundersøgelse blandt Facebooks brugere har angiveligt vist, at 80 procent af brugerne foretrækker overskrifter, der hjælper dem med at afgøre, om det er en artikel, som de ønsker at klikke på.Sådan straffer Facebook &quot;click-baiting&quot;I bestræbelserne på at gennemføre ændringerne vil Facebook anvende målinger, der viser, hvor lang tid brugerne spenderer på en artikel. Hvis folk hurtigt vender ti bage til Facebook efter at have klikket på et link, antyder det, at artiklen har lav værdi for brugeren, og derfor vil den i fremtiden blive nedprioriteret i Facebooks news feed.Artikler, som brugerne derimod bruger lang tid på at læse, vil til gengæld blive prioriteret højere i newsfeedet.Derudover vil Facebook bruge forholdet mellem på den ene side klik og på den anden side kommentarer og &quot;likes&quot; til at afgøre, om en artikel har værdi. Hvis en artikel eksempelvis får mange klik, men meget få &quot;likes&quot; eller &quot;kommentarer&quot;, kan det antyde, at artiklen er udstyret med en såkaldt &quot;click-baiting&quot; overskrift.Facebook skal være verdens bedste avisÆndringer af denne type er helt i tråd med ambitioner, som Facebooks stifter Mark Zuckerberg tidligere har givet udtryk for.Han har tidligt proklameret, at Facebook ønsker at skabe de bedst mulige rammer for, at Facebooks brugere kan opdage nye artikler, som de finder interessante. I forbindelse med en række ændringer af newsfeedet sidste år sagde Facebook-stifteren:&quot;Jeg ønsker, at Facebook skal være den bedste personaliserede avis i verden.&quot;Læs også på Computerworld:Med denne nye app vil Facebook genopfinde avisen - og måske sig selvNy app skal forvandle Facebook til &quot;fremtidens avis&quot;Foto: Joerg Koch/AP.Foto: Joerg Koch/AP.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2014-08-27
+          &nbsp;·&nbsp; e48ca3f8
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.983</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.787</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.74</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.613</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tager nyt skridt i kamp mod selvmordsopslag</h4>
+        <div>
+          Ny teknologi skal sikre, at flere opslag, der tilskynder til selvskade og selvmord, bliver opdaget på Instagram.I denne uge tager Facebook, der ejer Instagram, ny teknologi i brug i Danmark.Teknologien, som selskabet allerede bruger uden for EU, skal finde frem til flere opslag som opildner til selvskade og selvmord på specielt det sociale medie Instagram.»Den nye AI-teknologi (kunstig intelligens, red.) kan finde flere ting, end den teknologi vi har brugt indtil nu.Det har krævet nogle diskussioner med datatilsynene i Europa at få opbakning til at rulle teknologien ud,« siger Martin Ruby, der er politisk chef for Facebook i Norden.Den nye teknologi kigger ikke kun på et billede eller video, men også på tekst og kommentarer til et opslag.På den måde kan en bro eller et højhus, der i sig selv ikke signalerer selvskade, få lamperne til at blinke, hvis teksten eller kommentarerne signalerer noget med selvmord.Fjerner opslagetDen kunstige intelligens vil, hvis den finder et opslag, der bryder med Facebooks regler om selvskade og selvmord, gøre opslaget mindre synligt, bl. a. ved at fjerne det fra Instagram Explore, hvor Instagram anbefaler indhold til brugerne.I situationer, hvor teknologien er &quot;yderst sikker på&quot;, at et opslag bryder reglerne, vil opslaget blive fjernet efter 24 timer.De 24 timer giver familie og venner tid til at reagere på et selvmordsbrev eller lignende, før opslaget forsvinder.I februar viste dokumentaren &quot;Døde pigers dagbog&quot; på DR, hvordan især unge sårbare kvinder i et lukket netværk på Instagram deler billeder af selvskade og selvmordsrelaterede opslag.Dengang sagde Instagram, at det ville blive bedre til at fjerne opslag med selvskade.I august kunne DR dog dokumentere, at der forsat var selvmordsindhold på Instagram, og at der stadig blev lagt nyt skadeligt indhold op./Ritzau/
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2020-11-12
+          &nbsp;·&nbsp; e7fc0f35
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.811</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.713</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.738</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook har fjernet 73 procent mere terrorpropaganda</h4>
+        <div>
+          Det oplyser selskabet bag det sociale medie.De sidste tre måneder af 2017 var mængden af terrorrelateret materiale, der blev slået op på Facebook 1,1 millioner. Dermed er mængden steget med 73 procent.Det er dog ikke ens betydning med, at der er mere terrorrelateret materiale på Facebook.I Facebooks egen forklaring på, hvorfor selskabet har ageret over for så meget mere materiale, kan man læse, at det skyldes bedre overvågnings- og søgemekanismer.Det har gjort, at Facebook kunne gå tilbage og finde gamle opslag, der har ligget på Facebook i op til flere år.Tidligere har Facebook i højere grad været afhængig af, at andre brugere anmeldte materiale, som blev lagt op på Facebook.Med brug af kunstig intelligens har Facebook ifølge deres egen analyse fået bedre søgemetoder, der også tillader mediet at opsnuse materiale i eksempelvis lukkede grupper, hvor medlemmerne ikke melder hinandens opslag.Af det materiale, som Facebook har handlet på, blev 99,5 procent af materialet fundet, før en bruger anmeldte det.Mængden af opslag relateret til terror er dog ikke i nærheden af mængden, som Facebook fjerner for &quot;nøgenhed eller seksuel aktivitet&quot;.Her har 21 millioner billeder, video og opslag udløst en eller anden handling fra Facebook.Facebook måler også, hvor mange gange et opslag, billede eller video er blevet set, før Facebook har fjernet det.For hvert 10.000 opslag, billede og video, der er blevet set på Facebook, har syv til ni ifølge det sociale medie selv indeholdt nøgenhed eller sex.Facebook har tidligere oplyst, hvor mange gange myndighederne i de forskellige lande har ansøgt om oplysninger fra Facebook. Denne oplysning er endnu ikke oplyst for 2017.2,5 millioner opslag, billeder og videoer er blevet fjernet, fordi Facebook kategoriserer det som hadefulde ytringer.Begrebet dækker over &quot;direkte angreb på personer baseret på race, etnicitet, seksualitet, sex, køn, kønsorientering eller handicap&quot;.Også det er et udtryk for en mere aktiv linje fra Facebook. Det er 56 procent mere end de sidste tre måneder sidste år./Ritzau/
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2018-05-16
+          &nbsp;·&nbsp; e6c06a78
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.993</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.828</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.737</kbd>
+            <kbd data-tooltip="Facebook">L80_FCBOOK&nbsp;0.504</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.634</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: Der er for mange ulykkelige brugere på Facebo k. I 2020 skal vi have mere kvalitetstid, lover chefer på verdens største sociale medie</h4>
+        <div>
+          Adskillige undersøgelser har siden 2014 påvist, at for meget tid på sociale medier som Facebook og Instagram langtfra er godt for brugernes helbred.Tværtimod gør sociale medier mennesker depressive.Når de er online, men også når de logger af. At scrolle rundt på platformen giver ganske enkelt dårligt humør.Man oplever nemlig, at andre brugere har et bedre liv end en selv.Folk taler vanvittig grimt til hinanden.Truer hinanden. Selvmordsbreve bliver lagt op og delt sammen med andre ulykkelige opdateringer, og enkelte har sågar transmitteret live, når de enten har slået andre eller sig selv ihjel.Men den negative spiral vil Facebook bryde i 2020, hvor tiden på det sociale medie skal blive kvalitetstid. De ændrer nemlig kurs, i forhold til hvordan det skal opleves at bruge det sociale medie.Det siger kommunikationschef for Facebook i Norden Peter Münster og politisk chef i Norden og Benelux Martin Ruby. De to topchefer er stillet op til interview for at forklare, hvorfor 2020 bliver året, hvor brugerne skal blive i bedre humør på Facebook og i livet generelt. For indtil nu har målet - når de skal være ærlige - været at bruge algoritmer til at få folk til at bruge mest mulig tid på deres platform.»Når vi kan se en risiko for, at folk kan få det skidt af at bruge vores platform på en bestemt måde, føler vi selvfølgelig et ansvar for at se nærmere på det«, siger Peter Münster.Facebooks egen undersøgelse af folks oplevelse af at bruge det sociale medie viser blandt andet, at det påvirker folk negativt, hvis de scroller passivt. Deres humør bliver dårligere, og de mister generelt humøret i livet. De hurtige likes betyder heller ikke så meget, mens oplevelsen af 1: 1-kommunikation betyder noget positivt. Derfor forklarer de to topchefer, at Facebook vil optimere måden, de sammensætter brugernes nyhedsfeed på, så den form for interaktion bliver tydeligere.»Vi kan se, at det har en lille, negativ effekt på folks humør, hvis de udelukkende sidder og læser andre menneskers opslag uden at interagere med dem. Det, der derimod virkelig betyder noget positivt, er, når man modtager kommentarer fra sine venner, og især fra ens nærmeste. Tilfredsheden med ens eget liv stiger, ens humør bliver bedre, følelsen af ensomhed bliver mindre, og følelsen af at være en del af et fællesskab stiger«, siger kommunikationschef Peter Münster.I 2020 vil det sociale medie derfor i højere grad præsentere brugerne for opslag, billeder og videoer, de kunne være interesserede i at kommentere på eller indgå i en eller anden samtale omkring.Fortrinsvis fra deres nære venner og familie.»Hvis vores kerneprodukt - den sociale platform - kan blive bedre, må det være ved at understøtte det«, siger han.Derudover vil Facebook fortsætte deres eksperimenter med at fjerne likes på Instagram, og de vil lave funktioner, der fortæller brugerne, hvornår de er opdateret på indhold. På den måde kan man med ro i sjælen stoppe med at scrolle.Mange eksperter har kritiseret det sociale medie, og tidligere ansatte fra teknologivirksomheden har fortalt, hvorledes Facebook gik mere op i brugernes pengepung end deres velbefindende.Men ifølge chefen Martin Ruby, der er politisk chef i Norden, er der sket et fundamentalt skift i måden, hvorpå Facebook opfatter sig selv og arbejder.Det afspejler de nye tiltag.»Vi har været en techvirksomhed, der gik op i at bygge teknologi og se, hvor langt man kunne drive det. Man har jo bygget en infrastruktur, der binder en stor del af verden sammen - og skaber relationer mellem mennesker og de sager, de interesserer sig for. Men særligt efter det amerikanske valg i 2016 og sagen med Cam- Fortsættes side 2 bridge Analytica i 2018 gik det op for os, at det ikke bare handler om at bygge en fed teknologisk infrastruktur. Vi har et bredere ansvar end det«. Men i sidste ende handler det vel stadig om, at I skal have folk til at være på platformen, så I kan tjene penge? »Mange har det indtryk, at vi bare smider selvmordsvideoer og terroraktioner op i toppen af folks feeds, så det kan generere en masse opmærksomhed. Det gør vi ikke. Og det ville heller ikke gavne os på den lange bane. For det er rigtigt, at vi tjener penge på, at folk ser annoncer på platformen.Men hvis ikke vi ændrer os, mister Facebook sin værdi inden for kort tid.Både for os, men også for brugerne«, siger Martin Ruby.Dansk opslag diskuteres interntDiskussionen om, hvordan Facebooks nyhedsalgoritmer skabte dårlige stemning på sociale medier, var i kog så sent som sidste efterår. Her lagde den danske in-fluencer og realitystjerne Fie Laursen sit eget selvmordsbrev på Instagram til sine mere end 300.000 følgere.Facebook modtog hård kritik for at lade selvmordsbrevet ligge på Instagram i næsten to døgn, før de slørede det, og Fie Laursen selv slettede opslaget.»Der er en svær balance mellem nødråbet og smittefaren. For det var samtidig et andet af hendes opslag på Instagram, der gjorde det muligt for hendes familie at finde hende. Selvmordsbreve vil ofte være kulminationen på en længere række depressive beskeder. Så nødråb på sociale medier kan for den normale bruger have rigtig høj værdi. Der er altid smittefare, men den var så bare meget større med Fie Laursen, og vi fik rigtig meget kritik, men jeg synes, virkeligheden var mere kompleks, end den blev fremstillet«, siger Martin Ruby.Og lige netop eksemplet med Fie Laursen indgår nu i Facebooks globale interne diskussioner om, hvor grænserne går mellem negativt og positivt indhold på platformen.Burde I ikke gentænke hele måden, I præsenterer indholdet på? »Instagram har netop fået de her stopklodser, hvor der står, at man har set alt for i dag, eller at du nu er ajourført i forhold til de sidste 2 eller 3 dage. Det er en måde at fortælle folk, at nu er der ikke mere at komme efter. Så kan folk træffe informerede valg«, siger Peter Münster.Facebook skal ikke bestemme, hvor meget tid folk bruger på det sociale medier, mener de. Et forhold, der også kan variere alt efter den konkrete situation, brugeren befinder sig i. Derfor mener Facebook, at det må handle om, hvad man gør med den skærmtid, man vælger at bruge.»Hvis folk bruger sociale medier passivt i timevis, tilfører det ikke noget til livslykken.Interagerer man omvendt og engagerer sig, giver det noget, ligesom alle mulige andre sociale interaktioner gør«, siger Martin Ruby.Brugerne har et ansvarMan skal dog også huske på alt det gode, som Facebook og Instagram faciliterer, siger Martin Ruby.»Der er en reel grund til, at flere milliarder mennesker bruger sociale medier.Min gamle mor følger med i alle mulige menneskers liv og levned på en helt anden måde end tidligere. Man kunne ringe til folk, ja, men det gjorde man bare ikke på samme måde. Vi ønsker ikke at skabe en maskine, der fanger unge mennesker i en negativ spiral. Vi vil gerne skabe positive fællesskaber«, siger han.Han sammenligner det med at bygge en motorvej. Facebook har bygget vejen og optimeret den, så folk kan ræse problemfrit afsted. Nu er det så gået op for virksomheden, at de nok er nødt til at sætte nogle skilte med trafikregler op, for at der ikke sker uheld. Folk skal føle sig trygge, når de kører på motorvejen.Et sådan vejskilt kunne f. eks. være det, de nu eksperimenterer med: at fjerne tallet, der viser, hvor mange andre der har liket et billede på Instagram.»Likes er helt centralt på Instagram.Det er den måde, man fortæller instagram-ranking-algoritmen, at man gerne vil have flere lignende opslag. Når vi fjerner tallet, der viser, hvor mange likes et opslag har fået, er det for at undgå det sociale pres, der uundgåeligt opstår ved at se folk få masser af likes, når man ikke selv gør«, siger Peter Münster.Men det er svært, for uanset hvor mange skilte de sætter op, er det stadig ikke Facebook selv, der kører bilerne.Af samme grund har han planlagt et hav af foredrag på skoler og uddannelsesinstitutioner for at tale om særligt de unges digitale vaner. På den måde håber han, at man kan nedbringe tilfælde af hævnporno, krænkende billeder og online mobning.»Så de, der bruger platformen, skal også skrue ned for det med at dele alt muligt grimt indhold. Brugerne må også gerne kigge sig selv i øjnene i 2020«, siger Martin Ruby.simon.roliggaard@pol.dk Når vi fjerner tallet, der viser, hvor mange likes et opslag har fået, er det for at undgå det sociale pres, der uundgåeligt opstår ved at se folk få masser af likes, når man ikke selv gør Peter Münster, kommunikationschef for Facebook i Norden.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2020-01-17
+          &nbsp;·&nbsp; e78ad3fa
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.784</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.783</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.73</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.668</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan får du igen lokale nyheder på Dagbladets Facebook-side</h4>
+        <div>
+          VESTJYLLAND: Måske har du allerede undret dig, måske har du slet ikke lagt mærke til, at der er sket noget.Men er du én af de mange vestjyder, der dagligt tjekker din Facebook-profil, er der alligevel sket noget. I slutningen af juni offentliggjorde det sociale netværk nemlig, at det havde ændret på den algoritme, der bestemmer hvilke nyheder og opslag, der er synlige i hver enkelt brugers personlige nyhedsoversigt.En ændring, der opprioritere opslag fra venner og familie, mens du sjældnere og sjældnere vil se artikler, billeder og videoer fra professionelle medier, heriblandt Dagbladet.Gode råd at henteMen bare rolig, det betyder ikke at du i fremtiden må undvære at få de lokale nyheder serveret, når du surfer rundt på Facebook.Det kræver bare, at du selv går ind og aktivt tilvælger, at få nyheder fra Dagbladet. Her kommer en trin for trin guide til, hvordan du gør: 1. Gå ind på Dagbladet Ringkøbing- Skjerns Facebook-side, som kan søges frem i søgefeltet, eller ved at skrive https:// www.facebook.com/ dagbladetRS/ i din internetbrowser.2. Tjek først, at du allerede har klikket på knappen » Synes godt om « . Det er den første forudsætning for overhovedet at få nyheder fra Dagbladet.3. Dernæst skal du klikke på » Synes godt om « -knappen (hvis du sidder ved en computer skal du bare holde musen henover den), og klikke der, hvor der står » Se først « . Nu skulle du igen få dine nyheder direkte ind i din nyhedsstrøm på Facebook sammen med naboens feriebilleder og onkel Gerts opslag om hans besøg hos tandlægen.
+        </div>
+        <footer>
+          <em>Ugeavisen Ringkøbing</em>
+          &nbsp;·&nbsp; 2016-07-20
+          &nbsp;·&nbsp; e5ce5085
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.796</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.807</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.728</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.625</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook tager nyt skridt i kampen mod selvmord</h4>
+        <div>
+          KØBENHAVN: I denne uge tager Facebook, der ejer Instagram, ny teknologi i brug i Danmark.Teknologien, som selskabet allerede bruger udenfor EU, skal finde frem til flere opslag som opildner til selvskade og selvmord på specielt det sociale medie Instagram.-Den nye AI teknologi (kunstig intelligens red.) kan finde flere ting, end den teknologi vi har brugt indtil nu.-Det har krævet nogle diskussioner med datatilsynene i Europa at få opbakning til at rulle teknologien ud, siger Martin Ruby, der er politisk chef for Facebook i Norden.Den nye teknologi kigger ikke kun på et billede eller video, men også på tekst og kommentarer til et opslag.På den måde kan en bro eller et højhus, der i sig selv ikke signalerer selvskade, få lamperne til at blinke, hvis teksten eller kommentarerne signalerer noget med selvmord.-Vi tager ikke alt indhold med selvskade og selvmord ned. Det skal være muligt for mennesker, at snakke om svære emner på sociale medier.-Det skal ligeledes være muligt at lave støttende fællesskaber, hvor man kan bakke op af hinanden, siger Martin Ruby.Den kunstige intelligens vil, hvis den finder et opslag, der bryder med Facebooks regler om selvskade og selvmord, gøre opslaget mindre synligt.Blandt andet ved at fjerne det fra Instagram Explore, hvor Instagram anbefaler indhold til brugerne.I situationer, hvor teknologien er yderst sikker på, at et opslag bryder reglerne, vil opslaget blive fjernet efter 24 timer.De 24 timer giver familie og venner tid til at reagere på et selvmordsbrev eller lignende, før opslaget forsvinder.Facebook har ikke hidtil måtte anvende teknologien i Europa, men får nu lov, efter diskussion med datatilsynet i Irland som Facebook juridisk hører under i Europa.Facebook oplyser, at man ikke skanner beskeder for selvmord eller selvskadende indhold af hensyn til privatlivet I februar viste dokumentaren »Døde pigers dagbog« på DR, hvordan især unge sårbare kvinder i et lukket netværk på Instagram deler billeder af selvskade og selvmordsrelaterede opslag.Dengang sagde Instagram, at det ville blive bedre til at fjerne opslag med selvskade.I august kunne DR dog dokumentere, at der forsat var selvmordsindhold på Instagram, og at der stadig blev lagt nyt skadeligt indhold op./Ritzau/Facebook, selvskader og selvmordFacebooks retningslinjer forbyder opslag der promoverer, tilskynder til, koordinerer, eller giver vejledning til selvmord, selvskade eller spiseforstyrrelser.Ifølge Facebook har selskabet over 35.000 mennesker i sit sikkerhedsteam, hvoraf 15.000 er indholdsmoderatorer.I fjerde kvartal af 2019 fjernede Facebook knap 876.000 stykker indhold på Instagram, der relaterede sig til selvmord og selvskade.I de første tre måneder af 2020 var det tal steget 1,3 millioner stykker indhold. I andet kvartal af 2020 faldt antallet af fjernet indhold drastisk til 275.000, da mange moderatorer var hjemsendt på grund af corona.Fra andet kvartal 2019 til andet kvartal 2020 steg andelen af fjernet indhold, der blev fundet af teknologi, fra 77,5 procent til 93,8 procent.Resten af de fjernede indhold er indhold, der bliver anmeldt af andre brugere.Kilde: Facebook Transparency Report.
+        </div>
+        <footer>
+          <em>Frederiksborg Amts Avis</em>
+          &nbsp;·&nbsp; 2020-11-12
+          &nbsp;·&nbsp; e7fc20dc
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.897</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.716</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.727</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.606</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook undskylder for at give humørsvingninger</h4>
+        <div>
+          700.000 blev manipuleret til at være enten gladere eller mere trist.I juni offentliggjorde Facebook resultaterne af en undersøgelse, man havde lavet. 700.000 Facebook-brugere havde enten fået vist mange glade historier eller mange triste historier.Undersøgelsen viste, at det påvirkede brugernes humør, og dem, som fik vist mange triste opslag på deres Facebook, skrev selv flere triste opdateringer. Forsøgskaninerne vidste ikke, at de var forsøgskaniner.Facebooks it-chef, Mike Schroepfer, indrømmer nu, at eksperimentet med uvidende Facebook-brugere ikke var særlig hensigtmæssig.&quot;Det er klart nu, at vi skulle have gjort nogle ting anderledes. F. eks. skulle vi have overvejet andre ikke-eksperimenterende måder at lave undersøgelsen på,&quot; skriver Mike Schroepfer på sin blog .LÆS OGSÅ Facebook forudser forelskelseHan skriver, at Facebook fremadrettet vil have en anden tilgang til at lave undersøgelser.Hvis man vil lave undersøgelser, som går på meget private ting som følelser, skal projektet igennem en længere godkendelsesproces.&quot;Vi har lavet en panel, der består af vores erfarne researchere sammen med ingeniører, jurister og folk fra privatliv- og politikafdelingen. De skal gennemgå at undersøgelser overholder vores retningslinjer,&quot; skriver Mike Schroepfer.LÆS OGSÅ Facebook i modvind efter profil-sletningFacebook mener, at det er vigtigt at undersøge forskellige områder inden for brugeroplevelser, kunstig intelligens og social videnskab. Man er bare blevet bevidst om, at det ikke må gå ud over brugerne.&quot;Vi ønsker at lave de her undersøgelser på måder, som er i tråd med den tillid, brugerne har til Facebook. Vi er nødt til at lave undersøgelser, så vi kan lave Facebook endnu bedre. Vi skal bare gøre det på den mest ansvarlige måde,&quot; skriver Mike Schroepfer.Facebook behøver ikke at spørge brugerne om lov, før man udfører eksperimenter med dem. Når man opretter en bruger på Facebook, accepterer man vilkår og betingelser, og deri giver man sin overordnede tilladelse til eksperimenter og undersøgelser.Facebook offentliggør deres materiale, og du kan se deres undersøgelser her. Facebook offentligjorde i juni en undersøgelse, hvor man havde prøvet at påvirke 700.000 brugeres humør ved at vise mange gode opdateringer eller mange negative opdateringer. Nu siger man undskyld. Foto: Paul Sakuma/AP. Facebook offentligjorde i juni en undersøgelse, hvor man havde prøvet at påvirke 700.000 brugeres humør ved at vise mange gode opdateringer eller mange negative opdateringer. Nu siger man undskyld. Foto: Paul Sakuma/AP.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2014-10-02
+          &nbsp;·&nbsp; e49b150f
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.81</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.721</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.727</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.656</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Facebook justerer for at bremse klik-lokkemad og fake news</h4>
+        <div>
+          Det amerikanske medie Facebook vil begrænse udbredelsen af delinger fra en lille gruppe meget aktive brugere.Facebook ændrer igen algoritmen bag det sociale medies nyhedsrulle, så enkelte personer, der står bag et højt antal delinger af lokkende historier og falsk information, ikke kommer så bredt ud.Det amerikanske medie, som har to milliarder brugere, har i flere år forsøgt at begrænse historier og opslag, som det store flertal ikke ønsker.Bestræbelserne tog fart, da en sværm af falske nyheder blev spredt under præsidentvalgkampen i USA sidste år.De seneste ændringer kommer til at begrænse opslag fra &quot;en lille gruppe&quot; mennesker. Disse personer har ifølge Facebook stået bag et stort antal daglige opslag af lav kvalitet.Kun 0,1 procent af de brugere, som deler flere end 50 oplæg dagligt, bliver berørt af ændringen.Ændringen retter sig alene mod deling af links. Det vil sige, at deres foto og andre opslag ikke begrænses, meddeler mediet.- Vores undersøgelse viser, at der på Facebook er en lille gruppe mennesker, som af rutine deler store mængder hver dag. Derved spammer de folks nyhedsruller, siger Adam Mosseri, som er vicechef for nyhedsrullen.Algoritmen bestemmer, hvordan historier fra venner og annoncører udvælges til brugernes forsider.Den bestemmer også, i hvilken rækkefølge historier optræder.I august foretog Facebook en anden ændring. Den skulle begrænse udbredelsen af historier med lokkende overskrifter./ritzau/reuters
+        </div>
+        <footer>
+          <em>Information.dk</em>
+          &nbsp;·&nbsp; 2017-06-30
+          &nbsp;·&nbsp; e651bb94
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.987</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.987</kbd>
+            <kbd data-tooltip="Social media &amp; well being">L10_SOMEWB&nbsp;0.723</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.621</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

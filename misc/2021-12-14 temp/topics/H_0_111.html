@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_111 <kbd>H_0_111</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fokus</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skaber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forandring</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>future</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremdrift</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teknologi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teknologiens</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afgørende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fundament</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nødvendig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skabe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fokusere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>organisation</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aspekt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fundamentet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>muligheder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udvikling</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kvalificerede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>arbejdsmetoder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teknologivirksomheder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tilpasse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skabes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forandrer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gavn</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremadstormende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>blomstrende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ressourcer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fremtidige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>medfører</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forudsætning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udfordringerne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>igangsætte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>oplæg</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>visioner</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkurrere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>paradigme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>panelet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forrest</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>jette</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rustet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skolebænken</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kendetegnet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fleksibilitet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>præsentationer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>faktabaseret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>balancere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>succesfulde</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>velfungerende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fåtal</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eksperimentere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forkant</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tankegang</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omfavne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>niveauer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ejerskab</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forudsætninger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>målbare</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samspillet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>væsentlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nytænkning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>prioriterer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>prioritering</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>materiel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>visionære</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>varetage</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>inklusion</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>agenda</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nytte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hvorledes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>imødekomme</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sammenhængende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>purpose</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>realiseres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forankring</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opstiller</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>styrker</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rivende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>benet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>altafgørende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>motivere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>præge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>tankegangen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>omdrejningspunkt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forandringen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udbydes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kompetente</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>løft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>organisering</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbruge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>thinking</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>konkurrencefordele</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>digitaliseres</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indsigter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>modne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>samspil</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>begreberne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>programchef</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>berører</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>raketfart</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nødvendighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>entreprenør</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gearet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>succesfuldt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opfyldes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>millennials</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forløst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemsyrer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>komfortable</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>grobund</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vante</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gentænke</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>badevandet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ingeniørernes</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udviklingstrin</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>struktureret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>selvstændighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vorden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>moe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>miljømæssige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>soft</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>systematiseret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>boards</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>holistisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>karakteriserer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mangelvare</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>herpå</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>scenarierne</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>disrupted</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teknologi-</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ledelsesadfærd</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>proaktive</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betingelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>imagination</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rygrad</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>reeves</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>adgangsbillet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gamechanger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>befolkningstilvækst</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>generationers</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>beck</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gavnlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afsatte</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udviklingsmuligheder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_111 DESC LIMIT 50</pre>
+      <article>
+        <h4>Mere om Digitalisering</h4>
+        <div>
+          Hvorfor bliver vi angste for ny teknologi i stedet for at glæde os til, at teknologien kan hjælpe os?«  spørger Hanne With-Hansbøl. Steffan Skoubo Elcer 10. dec 06:00 »I Odense er Smart City et værktøj, der med data skaber værdifulde indsigter og hjælper os med at løse opgaver i byen - gennem teknologi der forbinder og skaber data, samt gennem ny brug af eksisterende data,«  fortæller Steffan Skoubo Elcer, der er digitaliseringskonsulent i Odense Kommune.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/Gridtech</em>
+          &nbsp;·&nbsp; 2019-06-19
+          &nbsp;·&nbsp; e73de872
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.66</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.537</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Bestyrelsen som krumtap i digitaliseringen</h4>
+        <div>
+          Ny teknologi er blevet et tema for bestyrelser. De nye avancerede teknologier som kunstig intelligens, 3D-print og blockchain åbner for nye forretningsmæssige muligheder. Det rejser også en masse spørgsmål.Hvilke skal man satse på? Hvordan ser markedet ud? Og hvad betyder det for ens egen organisation.På Tech Management sætter vi løbende fokus bestyrelsens rolle, når ny teknologi skal blive til forretning. Vi har samlet casehistorier, gode råd og viden til dig her.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-01-06
+          &nbsp;·&nbsp; e787668c
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.638</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.97</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.828</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.542</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nvidia samarbejder med Uber og Volkswagen om selvkørende biler</h4>
+        <div>
+          Af 8. jan 2018 kl. 07:56 Nvidia tager endnu et skridt ind i den opblomstrende industri for udviklingen af selvkørende teknologi til køretøjer. Oven på eksisterende samarbejder med Tesla og kinesiske Baidu, har de meldt ud, at Uber bruger deres teknologi, mens de implementerer deres kunstige intelligens i Volkswagens fremtidige udbud af biler.nyheder om teknologi og naturvidenskab for fagfolk og interesserede, artikler, blogs, debat, infografik, video.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2018-01-05
+          &nbsp;·&nbsp; e6919b7e
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.587</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.503</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.548</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Derfor vinder vi over robotterne</h4>
+        <div>
+          KøbenhavnOptimisterne mener, at mere avancerede robotter og kunstig intelligens vil skabe velstand uden at gøre folk arbejdsløse. Her argumenterne om hvorfor:* Vi har gjort det før: Teknologi har mange gange før truet med at gøre mennesker arbejdsløse. Det troede man også med alt fra dampmaskiner til de første computere i sidste århundrede, men det holdt ikke stik.* Nye job opstår: I kølvandet på ny teknologi opstår nye brancher, som vi ofte slet ikke har tænkt på. Eksempelvis havde ingen for blot få år siden hørt om en smartphone eller en app.* Nye teknologi vil skabe velstand: Selv hvis nogle opgaver bliver overflødige, så vil robotterne producere og skabe penge til at betale for eksempel borgerløn og opretholde vores samfund./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-04-30
+          &nbsp;·&nbsp; e63c0a61
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.949</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.676</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Flash: Robotter, selvkørende biler, kunstig intelligens og anden ... (v.1)</h4>
+        <div>
+          KøbenhavnRobotter, selvkørende biler, kunstig intelligens og anden ny teknologi kan i fremtidens arbejdsmarked især gøre det svært for chauffører og operatører.Smede, mekanikere, ansatte i servicebranchen, lager- og kontormedarbejdere vil også mærke konsekvenserne ny teknologi.Det viser en ny rapport fra konsulenthuset McKinsey ifølge Berlingske.Mellem 250.000 og 300.000 personer på det danske arbejdsmarked har et job, som fremover vil blive udfordret af ny teknologi.
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-12-04
+          &nbsp;·&nbsp; e687785d
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.788</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.686</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.702</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.528</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI: Fra teknologi til etik</h4>
+        <div>
+          Body Kunstig intelligens og machine learning åbner op for utallige nye muligheder for virksomheder, borgere og samfund - men hvordan udnytter man teknologien til at skabe konkurrencefordele, og hvordan sikrer man sig, at teknologien udnyttes etisk ansvarligt?Det er fokuspunkterne, når BrainsBusiness og it-forum den 25. august byder indenfor til en konference, hvor de både sætter spot på de forretningsmæssige potentialer og de etiske aspekter af kunstig intelligens.
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2020-05-19
+          &nbsp;·&nbsp; e7b6cebc
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.907</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.799</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.79</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.542</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Succeser skal fejres og dyrkes</h4>
+        <div>
+          FOREDRAG: Der er stadig få ledige pladser tilbage, når Lasse Ahm fra firmaet Lasse Ahm Consult på Solbakkevej i Vordingborg onsdag 6. marts inviterer til inspirationsaften.Temaet er denne gang » Appreciative Inquiry « -at værdsætte det bedste i medarbejderne og undersøge, hvordan man skaber endnu mere af det, man er god til.-Grundtanken bag Appreciative Inquiry - også kaldet AI - er, at forandringer og udvikling i en organisation bedst skabes ved at engagere medarbejderne ved at lære af deres succeser. Med andre ord ved systematisk at sætte fokus på de positive oplevelser, fortæller Lasse Ahm og fortsætter: -Fokus på styrkerne i stedet for svaghederne skaber positive fremtidsbilleder.Det, vi vælger at fokusere på, bliver vores virkelighed, og positive spørgsmål fører til positive forandringer. Det er videnskabeligt bevist.Til inspirationsaftenen har Lasse Ahm inviteret Mille Themsen Duvander fra Neder Vindingen, der har speciale i Appreciative Inquiry. Hun vil fortælle om tankegangen bag AI, om styrkebaseret ledelse og ikke mindst om, hvad man med fordel kan begynde med at fokusere, så man hurtigt opnår positive effekter.Der vil også være lejlighed til at stille spørgsmål, så deltagerne kan få afklaret, hvordan Appreciative Inquiry passer ind i deres virksomhed.Arrangementet, der er gratis, varer fra klokken 16 til 19.
+        </div>
+        <footer>
+          <em>Sjællandske Næstved</em>
+          &nbsp;·&nbsp; 2013-03-01
+          &nbsp;·&nbsp; e3ae3e03
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.751</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Tre gode grunde til at implementere ny teknologi i 2018</h4>
+        <div>
+           Allerførst: Rigtig glædelig jul og godt nytår.Hermed årets første blogindlæg fra min side.Der har været lidt stille fra min side den sidste tid, men efter at den famøse julefred sænkede sig, har der været tid til at kigge frem mod 2018.I 2017 havde jeg igen fornøjelsen af at arbejde med udvikling og implementering af ny teknologi hver eneste dag.Jeg vil derfor komme med tre gode grunde til, hvorfor du skal arbejde med ny teknologi i 2018.1: Teknologi giver motivationNår ny teknologi - det kan være robotter, software, 3D-print eller noget helt andet - bliver introduceret til en organisation, er det ikke ualmindeligt, at den første reaktion er skepsis.Men efter kort tid bliver skepsis vendt til interesse. I stedet for at fokusere på det negative ved forandringerne fokuseres der i stedet på mulighederne.En produktionsmedarbejder ser muligheder for at blive robotoperatør, ingeniøren ser mulighederne i nye designs med 3D-print og produktionsplanlæggeren får bedre muligheder med ny software.Det er dybt motiverende at have muligheden for at udvikle og forme sin arbejdsplads. Jeg ser meget ofte, at introduktionen af ny teknologi udløser et helt uudnyttet potentiale ved medarbejderne, der bliver taget ejerskab, udvikling sker og det kan binde teams sammen omkring en fælles interesse.2: Teknologi giver konkurrenceevneNår den nye teknologi kommer inden for dørene, er det ofte med henblik på at øge produktiviteten, lave kostreduktion eller give mulighed for at udvikle et nyt produkt. Det er klart, at det i sig selv øger virksomhedens konkurrenceevne.I efteråret snakkede jeg med en ejerleder i en SMV, som gerne ville have fleksibel automation af to grunde, primært fordi han ville øge produktiviteten på lav-volumen produktion.Det var dog det efterfølgende argument, der fangede min opmærksomhed. Han ville gerne have robotter, fordi han vidste, hans konkurrenter ikke havde. Hvis han kunne nå at arbejde et år med robotter inden konkurrenterne, ville han have viden og erfaring, som ikke direkte kunne købes.Dermed ville ejerlederens virksomhed have et større videnniveau end konkurrenterne, altså en konkurrencefordel.3: Teknologi giver kompetencerResultatet af nysgerrigheden i forbindelse med ny teknologi er kompetencer.Den nye teknologi giver i sig selv kompetencer, fordi man arbejder med den, men det giver også grundlag for opkvalificering. Med ny teknologi tiltrækker man meget nemmere arbejdskraft. Det er en effekt, jeg selv har mærket i Technicon, men som også bliver fremhævet bredt i erhvervslivet. Ny teknologi gør arbejdspladsen spændende, og det giver mulighed for at se perspektiver, som man ikke tidligere kunne se.Min nye personlige assistent er AIBudskabet er klokkeklart: virksomheder, der introducerer ny teknologi, klarer sig bedre.Det er et budskab, som er sagt ofte, men det gør ikke budskabet mindre gyldigt. Derfor vil jeg opfordre til, at der i 2018 bliver implementeret endnu mere ny teknologi.Jeg vil vende stærkt tilbage igen inden længe, hvor jeg vil fortælle om min nye personlige assistent. Hun hedder Amy, er særdeles flittig og jeg betaler kun 17$ per måned.Amy er kunstig intelligens.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2018-01-04
+          &nbsp;·&nbsp; e690920a
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.907</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.625</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.631</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>OVERBLIK: Det skal Samuelsen i Silicon Valley</h4>
+        <div>
+          KøbenhavnUdenrigsminister Anders Samuelsen (LA) er onsdag til fredag på besøg i Silicon Valley i Californien.Her er nogle af punkterne på turen:* Wake-up call - så hurtigt går den teknologiske udvikling. - Oplæg fra tænketanken Singularity University, der også har deltaget i statsminister Lars Løkke Rasmussens (V) møder på Marienborg om den teknologiske udvikling. * Iværksætteri i Silicon Valley - hvad skaber start-up miljøet?  - Møde med iværksættere og deltagelse i såkaldt pitch-træning af unge danske iværksættere. * Digitalisering og data - alt det vi tror fortsat er fremtid, men som for længst er nutid.- Oplæg fra Danny Lange fra Unity (tidligere Über og Amazon) om, hvad machine learning, artificial intelligence og virtual reality allerede bruges til. * Møder på Stanford-universitetet om samspil mellem stater og teknologivirksomheder og anvendelse af nye teknologier i udenrigspolitikken. - Den danske udenrigsminister skal møde forskere fra Stanford samt repræsentanter fra State Department, Pentagon, Department of Homeland Security og USAid.* De store tech-virksomheders rolle som partnere for nationalstater.  - Apples værdiansættelse er højere end Agentinas BNP, men hvilken gensidig samfundsværdi kan skabes ud af styrket dialog mellem stater og virksomheder? /ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-02-22
+          &nbsp;·&nbsp; e6202cfd
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.508</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.629</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Computer-piraterne rykker ind</h4>
+        <div>
+          Aarhus: Teknologi påvirker os alle sammen, og der er brug for, at børn interesserer sig for teknologi og kan skabe med teknologi. Derfor holder Coding Pirates børn IT-konferencen &quot;Robotterne kommer!&quot;, hvor der er robotteknologi, kunstig intelligens samt sikkerhed og privacy på programmet - alt sammen i børnehøjde.På dagen får børnene en introduktion til robotter, kunstig intelligens og privacy-problematikker.Konferencen finder sted lørdag 22. april fra kl. 10-14, når borgmester Jacob Bundsgaard byder velkommen sammen med humanoidrobotten Norma. Der er plads til 200 børn og der er entre, som inkluderer en sandwich.pcb
+        </div>
+        <footer>
+          <em>Stiften.dk (Århus Stiftstidende)</em>
+          &nbsp;·&nbsp; 2017-04-19
+          &nbsp;·&nbsp; e637a4cf
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.978</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.565</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.569</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forsidehenvisning: KRISTELIGT DAGBLAD: Jeg og min robot-tvilling</h4>
+        <div>
+          DR 2 MANDAG 20.00 Skuespilleren Gemma Chan er blevet rost for sin medvirken i science fiction-dramet &quot; Humans&quot;. Her udforsker hun den avancerede forskning i kunstig intelligens, der er et forskningsområde i rivende udvikling, og får bygget en robotkopi af sig selv. Kan robotkopien af Gemma overbevise en gruppe journalister?. 
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-02-09
+          &nbsp;·&nbsp; e69c8241
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.781</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.707</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Er din virksomhed klar til at vinde 2020'erne?</h4>
+        <div>
+          Jeg er netop vendt hjem fra Seattle, hvor BCG's 1200 partnere var samlet til strategimøde. Microsofts CEO, Satya Nadella, deltog og delte sine tanker om, hvad virksomhedsledere bør fokusere på de kommende år.Han understregede bl.a. vigtigheden af fleksible organisationer, mangfoldighed og inklusion samt vigtigheden af at skabe værdi for både ejere og samfund. Meget af det vækkede genklang.I BCG har vi identificeret fem nøgleparametre for at vinde 2020'erne - et årti, der vil byde på enorme omvæltninger i form af bl.a. kunstig intelligens på den helt store skala, et Kina i fortsat fremgang, lavvækstprognoser samt slørede grænser mellem forbrugere og producenter samt konkurrenter og samarbejdspartnere. De kommer her:1. Forbered dig på et nyt konkurrencebilledeTidligere var stordriftsfordele, kvalitet og kompetencer vigtige i forhold til konkurrenceevnen. I fremtiden vil den udgøres af flere faktorer og særligt organisationers læringsrate, dvs. evne til at omsætte store datamængder til indsigter og aktiviteter, der hele tiden optimerer produkter og løsninger.Samtidig vil de traditionelle sektorer forandre sig: frem for at konkurrere på et afgrænset marked med spillere, der ligner en selv, kommer konkurrencen til at foregå i og mellem sektorer med flydende grænseflader. Fleksibilitet og robusthed bliver derfor afgørende parametre.2. Design din organisation i realtidData i realtid og nye teknologier vil gøre det muligt (og nødvendigt) for organisationer at tilpasse sig nye muligheder hurtigere end før. For at forløse det kæmpe potentiale skal rollefordelingen mellem teknologi og menneske optimeres.Algoritmer bør f.eks. bruges til at identificere mønstre i data, mens mennesker skal tænke kreativt og træffe beslutninger. Mange traditionelle virksomheder er desuden begyndt at se på platformsmodeller, og flere overvejer at indgå i et økosystem med forskellige partnere. Det stiller nye krav til organisationsstrukturer og kompetencer, der skal imødekommes.3. Udnyt videnskaben bag forandringsledelseAt skabe fremtidens organisation er en kompleks opgave, og den traditionelle &quot;one size fits all&quot;-tilgang til forandringsledelse er ikke tilstrækkelig i det næste årti.BCG's research viser, at kun en ud af fire transformationer lykkes i dag på både kort og langt sigt. Når hastigheden stiger, vil oddsene kun blive værre, hvis ikke tilgangen ændres.Fremadrettet bliver det vigtigt at bygge forandringsledelse på empiri, analyser samt teknologi. Forandringstiltag skal tilpasses de enkelte funktioner og opgaver og justeres undervejs. Endelig bør ledere tænke i at engagere medarbejdere på nye måder, f.eks. via crowd sourcing.4. Få styr på mangfoldighed og inklusionMangfoldighed er ikke blot et moralsk imperativ, men en forudsætning for at indfri kravene om innovation og robusthed fra det høje forandringstryk. Mangfoldighed styrker innovations-evnen, da forskellige perspektiver resulterer i flere idéer.Mangfoldighed resulterer samtidig i øget modstandskraft, da det styrker evnen til at opfange og tilpasse sig pludselige chok. Har du ikke allerede styr på mangfoldigheden, er tiden altså for alvor inde.5. Fokus på økonomisk og samfundsmæssig værdiVerden står over for store fælles udfordringer inklusive klimaforandringer, mistillid til teknologi og globaliseringen samt øget ulighed. Flere og flere stiller spørgsmålstegn ved kapitalismen og virksomhedernes rolle.Samtidig står den offentlige sektor i visse lande over for massive udfordringer i form af migration, integration, gæld osv. Fremtidens virksomheder bør bidrage til at løse disse udfordringer ved at fokusere på &quot;total societal impact&quot; dvs. den økonomiske værdi for ejere og den overordnede værdi for samfundet, som de skaber.Der er kort sagt nok at tage fat på. Og som Satya Nadella fra Microsoft fortalte, så starter det hele med en fokuseret, energisk og vedholdende leder.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2019-06-20
+          &nbsp;·&nbsp; e73e544c
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.608</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.823</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.797</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          KlimaforskningDR P1 13.33 For mere end 100 år siden var der forskere, som spekulerede på, om den menneskeskabte ophobning af CO2 i atmosfæren kunne føre til en stigning af den globale temperatur, fortæller videnskabshistoriker Kristian Hvidtfeldt Nielsen.Teknologi som forandrer (3: 4)DR 2 14.30 Vi elsker vores skærme, og de får stor opmærksomhed, selv når vi skal dele gode stunder med vores nærmeste. Det kan skade vore børn, men hvis fremtidens teknologi spiller sammen med menneskets krop og hjerne, findes der håb.Teknologi som forandrer (4: 4)DR 2 15.00 Robotter og kunstig intelligens vil med stor sandsynlighed overtage dit arbejde i løbet af de næste 10 år, men hvad betyder det egentlig? Er det virkelig nødvendigt at arbejde, hvis maskinerne kan gøre arbejdet?.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-08-01
+          &nbsp;·&nbsp; e65a6d45
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.865</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>10. marts 2017</h4>
+        <div>
+          I denne uge bringer vi et særtillæg om teknologi og kulturVed at vende blikket mod kulturen og kunsten forsøger vi at forstå de udfordringer og muligheder, der opstår i forbindelse med tidens teknologiske fremskridt. Vi lader blandt andet den amerikanske romanforfatter Jonathan Safran Foer skrive essay om teknologiens påvirkning af vores liv. Vi spørger den italienske stjerneforsker og Google-rådgiver Luciano Floridi, hvordan vi tøjler algoritmernes stigende magt. Vi genbesøger computerspiluniverset Second Life og konsulterer filmhistoriens blik på kunstig intelligens.Du kan læse hele tillægget her
+        </div>
+        <footer>
+          <em>Information.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-03-10
+          &nbsp;·&nbsp; e6268dd3
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.755</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.751</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fuldført Master</h4>
+        <div>
+          EKSAMEN: Kenneth Lodahl Nielsen, opvokset i Harboøre og i dag studiekoordinator ved Erhvervsakademi Dania i Grenaa, har netop fuldført uddannelsen til Master i it, linjen i softwarekonstruktion.Uddannelsen udbydes af It-vest-samarbejdet mellem Aarhus Universitet, Aalborg Universitet og Syddansk Universitet.Kenneth Lodahl Nielsen har sammensat sin uddannelse af fagene Data Science og Big Data, Computerspilsteori og Database design, udvikling og optimering. Han har afsluttet uddannelsen med et masterprojekt ved Aalborg Universitet med titlen: Future Failing -Prediction Of Student Drop-Outs Through Machine Learning.
+        </div>
+        <footer>
+          <em>Lokalavisen Lemvig</em>
+          &nbsp;·&nbsp; 2020-09-29
+          &nbsp;·&nbsp; e7e9e38f
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.766</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Østrigsk ministerium nedsætter robotråd</h4>
+        <div>
+          ØSTRIG I Østrig tager man den gryende mulighed for kunstig intelligens så alvorligt, at ministeriet for teknologi og innovation har oprettet et såkaldt robotråd. Det skriver filosofimediet Philosophynow.org.Det østrigske ministerium mener, at ændringerne i menneskers liv vil være så omfattende, både hvad angår privat-og arbejdsliv, at man vil have førende filosofi-og teknologieksperter til at overveje, hvordan robotter vil være en hjælp i stedet for en trussel, og hvordan man skal varetage muligheder for, at der kan fremstilles menneskelignende intelligens.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2017-11-09
+          &nbsp;·&nbsp; e67e806c
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.944</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.547</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.659</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fredagspodcast: Togsignal-kaos, droner og kunstig intelligens</h4>
+        <div>
+          Ingeniørens ugentlige podcast, Transformator, sætter fokus på det forsinkede signalsystem, derI denne episode af Transformator har vi først korte nyheder blandt andet om luftforurening og droner, og bagefter sætter vi fokus på både signalkaos og kunstig intelligens i Ugens Temaer.Desuden uddeler vi to priser: -Ugens Transformer-, der går til en person, institution, forsker, organisation, som har gjort noget godt, der peger fremad inden for videnskab eller teknologi. Og vi udnævner -Ugens Kortslutning- til en person, et firma, en trend eller noget helt fjerde, som vi helst var fri for.Hør tidligere afsnit af Transformator HEREller besøg vores fokusside, hvor du finder flere podcast
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2017-10-27
+          &nbsp;·&nbsp; e679fff0
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.789</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.894</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Overblik: Det skal Samuelsen i Silicon Valley</h4>
+        <div>
+          LA-lederens første besøg i USA som udenrigsminister går til verdens teknologiske centrum, Silicon Valley.Udenrigsminister Anders Samuelsen (LA) er onsdag til fredag på besøg i Silicon Valley i Californien.Her er nogle af punkterne på turen:Wake-up call - så hurtigt går den teknologiske udvikling.- Oplæg fra tænketanken Singularity University, der også har deltaget i statsminister Lars Løkke Rasmussens (V) møder på Marienborg om den teknologiske udvikling.Iværksætteri i Silicon Valley   hvad skaber start-up miljøet?- Møde med iværksættere og deltagelse i såkaldt pitch-træning af unge danske iværksættere.ADVERTISINGDigitalisering og data - alt det vi tror fortsat er fremtid, men som for længst er nutid.- Oplæg fra Danny Lange fra Unity (tidligere Über og Amazon) om, hvad machine learning, artificial intelligence og virtual reality allerede bruges til.Møder på Stanford-universitetet om samspil mellem stater og teknologivirksomheder og anvendelse af nye teknologier i udenrigspolitikken.- Den danske udenrigsminister skal møde forskere fra Stanford samt repræsentanter fra State Department, Pentagon, Department of Homeland Security og USAid.De store tech-virksomheders rolle som partnere for nationalstater.- Apples værdiansættelse er højere end Agentina-s BNP, men hvilken gensidig samfundsværdi kan skabes ud af styrket dialog mellem stater og virksomheder?
+        </div>
+        <footer>
+          <em>Jyllands-posten.dk</em>
+          &nbsp;·&nbsp; 2017-02-22
+          &nbsp;·&nbsp; e6203922
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.501</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.592</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>NYT JOB</h4>
+        <div>
+          Softwarevirksomheden d60 med hovedsæde i Aarhus har ansat to nye system udviklere.Radoslaw Lech Mielko, 29 år, Fyn, skal primært arbejde med udvikling med fokus på Silverlight og WPF.Radoslaw Lech Mielko er uddannet civilingeniør inden for kunstig intelligens på Wroclaw's University of Technology i Polen. Hans store interesse er teknologi, hvorfor han også har taget en B. Eng. inden for System Integration på SDU i Odense.Radoslaw Lech Mielko har tidligere arbejdet først som udvikler til Critical Power Solutions Industrien, her udviklede han software til FW ingeniører. Siden har han arbejdet med medicinsk teknologi, hvor han har udviklet et laboratoriesystem til sundhedssektoren.Radoslaw Lech Mielko kommer fra det Sydvestlige Polen, men han har boet i Danmark siden 2005.Ian Verona Andersen, 33 år og fra Horsens, får fokus på udvikling af løsninger inden for. Net teknologierne: WPF og WCF.Ian Verona Andersen er uddannet datamatiker fra Aarhus Købmandsskole i 2001 og har, hvad teknologier angår, været rundt omkring.Han har arbejdet som systemudvikler hos en finansiel virksomhed i Horsens og som programmør hos en virksomhed i sundhedssektoren.
+        </div>
+        <footer>
+          <em>Århus Stiftstidende</em>
+          &nbsp;·&nbsp; 2011-11-28
+          &nbsp;·&nbsp; e2fc4e88
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.953</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.592</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.532</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techtopia #125: Velkommen til det automatiserede arbejdsmarked</h4>
+        <div>
+          Teknologien kan ikke forandre samfundet alene. Økonomi, love og hensynet til social stabilitet har siden oldtiden spillet en væsentlig rolle og sågar bremset ny teknologi i fremdrift.Derfor skal vi være forberedt på, hvad robotter og AI kan komme til at betyde for jobs, samfundsmodeller, uddannelse og ledelse. Det kigger rapporten &quot;The Future of Work&quot; på.Den er lavet af Innovation Centre Denmark i Silicon Valley, der på godt og ondt er et laboratorium for et samfund, som i ekstrem grad styres af teknologiens muligheder og faldgruber.Medvirkende:Link:Fik du hørt: Techtopia #124: Oprør mod techgiganterNæste episode af Techtopia kommer mandag den 7. oktober.Kom gerne med dine bud på, hvilke emner vi skal tage op.Du kan finde alle episoder af Techtopia og Ingeniørens øvrige podcastsHER.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2019-09-27
+          &nbsp;·&nbsp; e75d4e32
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.741</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.602</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.562</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nye kræfter er klar til spilindustrien</h4>
+        <div>
+          GRENAA Erhvervsakademi Dania i Grenaa har udklækket 15 nye datamatikere til spilindustrien.EksamensbeviserAfdelingschef Jonatan Yde overrakte eksamensbeviserne til de 15 datamatikere, som i fremtiden vil stå bag design, programmering og udvikling af de mange spil, som kendetegner en branche i vækst.De studerende er gennem uddannelsens 2 ½ år blevet undervist i programmering, game engines, kunstig intelligens, netværk, udvikling og databaser.Alt sammen kompetencer og læring som er essentielle, når det drejer sig om at skabe nyheder til et vækstmarked.
+        </div>
+        <footer>
+          <em>Lokalavisen Norddjurs</em>
+          &nbsp;·&nbsp; 2014-02-25
+          &nbsp;·&nbsp; e4476ec2
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.72</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.66</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.534</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Note</h4>
+        <div>
+          Kristian Kidholm er ansat som innovationsprofessor ved Klinisk Institut på Syddansk Universitet med tilknytning til Center for Innovativ Medicinsk Teknologi, CIMT på Odense Universitetshospital.Hans forskning har pt. fokus på effekterne af Region Syddanmarks kommende EPJ-system, metoder til bedre implementering af digitale teknologier i kliniske afdelinger og retningslinjer for vurdering af værdien af kunstig intelligens i sundhedsvæsenet.
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2019-11-24
+          &nbsp;·&nbsp; e77576c6
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.954</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>DAGENS OPLEVELSE</h4>
+        <div>
+          Robotterne kommer! Hvor bruges robotter i dag og, ikke mindst, hvor kommer vi til at finde dem i fremtiden? Kom forbi Maker City Festival og hør robotforsker Søren Tranberg Hansen fortælle, hvordan robotter og brugen af kunstig intelligens både åbner op for nye muligheder, men også skaber en række dilemmaer.Hovedbiblioteket kl. 10.30-12.
+        </div>
+        <footer>
+          <em>Fyens Stiftstidende</em>
+          &nbsp;·&nbsp; 2016-05-25
+          &nbsp;·&nbsp; e5b97ea9
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.973</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.556</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.567</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tønder sætter fokus på at forstå fremtiden</h4>
+        <div>
+          I uge 12 er den teknologiske udvikling og vores fælles fremtid på dagordenen i Tønder. Den kendte foredragsholder og forfatter til bogen Forstå Fremtiden Anders Hvid gæster byen.Tønder: Mere end nogensinde er det den teknologiske udvikling, der skaber fundamentet for forandringer i vores verden.I uge 12 stilles foredragsholder og forfatter Anders Hvid skarpt på den teknologiske udvikling med tre foredrag. - Anders Hvid har forstået fremtiden og ved om nogen herhjemme, hvordan teknologier som bioteknologi, robotter, kunstig intelligens og 3D print udvikler sig, og hvad der skal til for at forstå og udnytte den teknologiske udvikling, udtaler Anne-Sofie Dideriksen fra Mind Facotory by Ecco, der sammen med flere parter i byen står bag arrangementerne.Forstå udviklingens betydningDe tre arrangementer finder sted over to dage. I et arrangement d. 21. marts i Mind Factory by Ecco får byens borgere mulighed for at forstå snakken om de nye teknologier med Anders Hvids fængende fremstilling af dem. Dagen efter har medlemmer af Erhvervsklubben under Tønder Erhvervsråd mulighed for at møde Anders Hvid til et morgenarrangement. Her er der fokus på, hvordan den teknologiske udvikling vil påvirke forskellige industrier. Arrangementet finder ligeledes sted i Mind Factory by Ecco. Senere samme dag får også cirka 150 elever fra Tønder Gymnasium og Det Blå Gymnasium mulighed for at forstå deres og samfundets fremtid med Anders Hvid. Det finder sted i aulaen på Det Blå Gymnasium.
+        </div>
+        <footer>
+          <em>Ugeavisen.dk</em>
+          &nbsp;·&nbsp; 2017-03-09
+          &nbsp;·&nbsp; e6263259
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.99</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.715</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.537</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Greater Spaces: Mød de mennesker og den teknologi, der former vores liv</h4>
+        <div>
+          Velkommen til Greater Spaces, en blog af Majken Overgaard og Vanessa Julia Carpenter, hvor vi udvider fortællingen om, hvad teknologi er, og hvem der skaber den. Vi taler med danske og internationale kvindelige rollemodeller inden for teknologi og indimellem disse interviews deler vi info om de mest interessante ting, der sker omkring os - med fokus på diversitet. Det er 2020 - et nyt årti er ankommet! Teknologi er en stor del vores liv, hvad enten det er derhjemme, på arbejdet, i relation til vores transport eller endda på/i vores kroppe. Som en del af dette skifte til et teknologibaseret samfund ønsker vi at øge fokus på inklusivitet og mangfoldighed i teknologi, da det er nødvendigt at den teknologi vi udvikler, som i så høj grad former vores liv, tager udgangspunkt i flest mulige mennesker. Kvinder der arbejder tværfagligt med teknologi For at udvide den nuværende fortælling om teknologi og inspirere en udvikling mod ikke-binære værdier, taler vi med kvinder, der arbejder tværfagligt med teknologi inden for hardware, software, kunst, kultur og design og deler info om deres praksis her på bloggen. Carpenter og Overgaard har skabt kunst, teknologi, virksomheder og begivenheder sammen i mere end et årti. Vi har lært hinanden at kende, fordi vi ofte var de eneste kvinder i de netværk, vi var en del af. Gennem årene har vi selv bidraget til at skabe nye netværk med fokus på at ændre teknologiens til det bedre. I denne første blogpost interviewer vi hinanden og stiller de samme spørgsmål til os selv, som vi vil stille til de kvinder, vi interviewer. Det er ikke ligegyldigt, hvilke data vi anvender Hvad finder du spændende ved teknologi lige nu? Majken: »Lige nu er jeg optaget af, hvad kunstig intelligens kommer til at betyde og hvordan mange nye algoritmer udvikles. Maskiner, der skal trænes, skal bruge en masse data. Her er det væsentligt, at vi har fokus på, at det ikke er ligegyldigt, hvilken data vi anvender. Vi bliver nødt til at gøre os overvejelser om, hvad vi gerne vil have maskiner lærer. Også i forhold til køn og diversitet.«  Vanessa: »Jeg er enig i dine betragtninger om AI. Vi bliver nødt til at have en bevidsthed om, at alle mennesker skal repræsenteres i den teknologi, der skabes. Det er præcis det, vi gør, når vi designer med henblik på diversitet og inklusion - vi har en bevidsthed om, at teknologi, skal repræsentere den verden, vi rent faktisk lever i.«  Hvorfor eller hvordan valgte du den her vej? Vanessa: »Muligheden for at kombinere det kunstneriske element med udvikling af teknologi, har været min primære interesse. Hvordan man kan formidle teknologiske muligheder via. kunst. Senere fik jeg også et mere forretningsmæssigt fokus med i mit arbejde, dvs. jeg begyndte at reflektere over, hvordan vi kan designe teknologier, der hjælper mennesker med at leve mere meningsfulde liv.«  Majken: »Det kan jeg godt relatere til. Jeg startede med at studere kunsthistorie på universitetet fordi jeg troede, det var via kunsten, at vi ville kunne skabe ændringer. På nogenlunde samme tid fik jeg smag for computere og software, blandt andet fordi det var her at man rent faktisk udviklede teknologier, der revolutionerede verden. Kombinationen af de to er for mig ideel, fordi det giver mulighed for både at være visionær og påvirke samfundets udvikling.«  Man kommer let til at jagte den næste teknologi Hvad har været din største fejltagelse det seneste år og hvad lærte du af det? Vanessa: »Sidste år sagde jeg mit job op til fordel for en ny stilling inden for IoT. Jeg brugte en hel masse tid og energi på at køre alt i stilling bare for til slut at indse at virksomheden i virkeligheden slet ikke var noget for mig og jeg ikke bare ville jagte den seneste bølge inden for teknologi.«  »Nu har jeg i stedet startet min egen virksomhed hvor jeg er begejstret for at arbejde med mennesker og fremtidens teknologier.«  Majken: »Man kommer meget let til at jagte den næste nye teknologi i det her felt. Det er i høj grad også en af mine store og konstante fejltagelser. Det kendetegner den måde vi forstår teknologi på i dag, at der altid er fokus vækst og udvikling. Ofte i forhold til eksponentiel, økonomisk vækst frem for vækst og udvikling af diversitet og ligestilling via teknologi. «  Hvad er din største daglige teknologiske udfordring? Majken: »Det er, at det ofte er vanskeligt at gennemskue digitale produkter. Hvordan anvender de mine data, hvad er det præcist, jeg giver ret til ved at bruge eller købe en ny app eller en ny telefon?«  Vanessa: »For mit vedkommende designer jeg lige nu nye produkter med mennesker, der ikke er vant til at arbejde med hardware. Og det er en stor udfordring at kommunikere de mange forskellige muligheder for dem. Mit mål er at åbne deres tanker for, hvad der rent faktisk er muligt! Det er en sjov udfordring, men også én jeg altid har kæmpet med i mit arbejde.«  Digitale rettigheder og teknologi, der gør os effektive Hvad forestiller du dig sker inden for teknologi de kommende fem år og det næste årti? Majken: »Om fem år håber jeg på, at vi er blevet mere bevidste teknologiske forbrugere. At vi har udviklet love, der kan beskytte vores privatliv online og at vi ihvertfald inden for ti år har fået skabt et charter for digitale rettigheder, hvor de rettigheder, vi har opnået i relation til afskaffelse af diskrimination også håndhæves på internettet.«  Vanessa: »Jeg forestiller mig, at der de kommende fem år vil komme fokus på at udvikle meningsfulde teknologier. Lige nu er der en tendens til at vi ikke udvikler teknologi, der gør os mere effektive eller produktive, men snarere hvordan vi kan blive bedre mennesker. Det håber jeg vil være fuldt realiseret inden for de næste fem år. Og jeg håber, at vi i løbet af de kommende ti år bruger teknologien til at passe bedre på os selv. I stedet for at være slaver af den.«  Hvad har været dit favorit-projekt indtil nu og hvorfor? Vanessa: Min PhD-afhandling. Fordi den i så høj grad relaterer til alt det arbejde, jeg har udført gennem tiden. Både den kunstneriske og aktivistiske indsats og den måde, jeg forener det i mine designs. Majken: »Det har helt klart været realiseringen af Catch, fordi det er en platform, der forener min viden om kunst og teknologi samt interesse for at se initiativer og individer vokse og indfri både et menneskeligt og bæredygtigt forretningsmæssigt potentiale.«  Hvad skal vi holde øje med i fremtiden? Vanessa: »Os!«  Majken: »Ha, det er rigtigt. Det er vigtigt at skabe forståelse om, at hele verden bruger teknologi og det ikke kun silicon valley, der skal sætte dagsordenen for hvad der udvikles og hvilke forretningsmodeller, der trækkes ned over internettet og alle vores devices.«  Tak for at læse med så langt :) Vi glæder os til at blogge de næste mange måneder og fortælle om de nogle af de mange kvinder i vores netværk, som vi synes arbejder på nye og anderledes måder med teknologi. Vores første interview er med Paula Petcu, der bygger sine egne humanoide robotter. Så stay tuned!
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-03-09
+          &nbsp;·&nbsp; e79ce757
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.926</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.513</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Tønder sætter fokus på at forstå fremtiden</h4>
+        <div>
+          Tønder: Mere end nogensinde er det den teknologiske udvikling, der skaber fundamentet for forandringer i vores verden.I uge 12 stilles foredragsholder og forfatter Anders Hvid skarpt på den teknologiske udvikling med tre foredrag. - Anders Hvid har forstået fremtiden og ved om nogen herhjemme, hvordan teknologier som bioteknologi, robotter, kunstig intelligens og 3D print udvikler sig, og hvad der skal til for at forstå og udnytte den teknologiske udvikling, udtaler Anne-Sofie Dideriksen fra Mind Facotory by Ecco, der sammen med flere parter i byen står bag arrangementerne.Forstå udviklingens betydningDe tre arrangementer finder sted over to dage. I et arrangement d. 21. marts i Mind Factory by Ecco får byens borgere mulighed for at forstå snakken om de nye teknologier med Anders Hvids fængende fremstilling af dem. Dagen efter har medlemmer af Erhvervsklubben under Tønder Erhvervsråd mulighed for at møde Anders Hvid til et morgenarrangement. Her er der fokus på, hvordan den teknologiske udvikling vil påvirke forskellige industrier. Arrangementet finder ligeledes sted i Mind Factory by Ecco. Senere samme dag får også cirka 150 elever fra Tønder Gymnasium og Det Blå Gymnasium mulighed for at forstå deres og samfundets fremtid med Anders Hvid. Det finder sted i aulaen på Det Blå Gymnasium.
+        </div>
+        <footer>
+          <em>Jv.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-03-09
+          &nbsp;·&nbsp; e6262c5c
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.988</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.658</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.544</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan skal mit Disruptionråd arbejde</h4>
+        <div>
+          DEBAT - Danmark er mulighedernes land, og den teknologiske udvikling giver os nye muligheder. Men det kræver, at vi er klar til at gribe dem. Så hvordan ruster vi bedst danskerne og danske virksomheder til fremtiden - med mere digitalisering, flere robotter og mere kunstig intelligens?De spørgsmål har regeringen sat på dagsordenen, og vi henter hjælp til både at stille de rigtige spørgsmål og til at få de rigtige svar hos Disruptionrådet. Disruptionrådet er bredt sammensat af arbejdsmarkedets parter, erhvervsledere, iværksættere, akademiske kapaciteter og repræsentanter fra det øvrige samfundsliv.Vi skal sammen arbejde for, at danskerne trygt kan gå fremtiden i møde, at vi skaber gode arbejdspladser, og at vi fremmer et dynamisk erhvervsliv, der kan blive ved med at skabe vækst og velstand i Danmark.En oplagt gevinst er, at digitalisering og robotter kan styrke Danmark som produktionsland. Det giver os mulighed for lettere at konkurrere med lande, der har lavere lønomkostninger end os.Mulighederne er mangeEt fleksibelt arbejdsmarked kan sikre, at vi hurtigt kan omstille os og udnytte de muligheder, som ny teknologi giver. Nye og flere job kan opstå i både gamle og nye brancher. Og nye måder at være beskæftiget på kan give større fleksibilitet og flere muligheder i arbejdslivet. Mulighederne er mange, hvis vi griber dem.En ting er i hvert fald sikker: Historisk set har vi været dygtige til at bruge de nye muligheder, der hele tiden dukker op. Det skal vi også være i fremtiden, og vi har et rigtigt godt afsæt. Vi har et omstillingsparat erhvervsliv og et fleksibelt arbejdsmarked. Vi er det mest digitaliserede land i EU, og danske virksomheder tager mere og mere robotterne og de nye teknologiske muligheder til sig. Lige så vigtigt er det, at danskerne har tiltro til fremtiden.Vi har mod på forandring. Undersøgelser viser, at mere end ni ud af ti danskere ikke frygter, at deres arbejdsplads nedlægges som følge af den teknologiske udvikling.Danmark er også det land i EU, hvor flest borgere har et positivt syn på globaliseringen. Tre ud af fire danskere mener, at globaliseringen giver mulighed for øget vækst. Men skal vi have det fulde udbytte af de teknologiske muligheder, og skal vi have alle med, så skal danskerne og dansk erhvervsliv være rustet til fremtiden. Vi ved, at den teknologiske udvikling stryger afsted og udfordrer os på flere områder.Debatten angår os alleVækst kræver flere investeringer. Det gælder særligt i de små og mellemstore virksomheder. Kravene til vores kompetencer og uddannelser ændres. Flere skal lære gennem hele livet. Og vi skal uddanne de unge til en ukendt fremtid - til jobfunktioner, der måske ikke eksisterer endnu.Derfor bliver det rette valg af uddannelse, opkvalificering og omskoling endnu mere afgørende. Jeg ser meget frem til arbejdet i Disruptionrådet og ikke mindst til at komme rundt i Danmark sammen med medlemmerne af rådet det næste halvandet år. Vi skal drøfte både muligheder og udfordringer med danskerne og danske virksomheder. Debatten angår os alle - det handler om vores fælles fremtid.
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2017-06-07
+          &nbsp;·&nbsp; e64987a1
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.516</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.75</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.896</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.633</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Skal blå blok have patent på tech og iværksætteri?: Den nye regering må overkomme frygten og prioritere teknologi</h4>
+        <div>
+           Klimaet får tilsyneladende et skud vitaminer med et ambitiøst 2030-mål. Og velfærden vil med garanti også blive prioriteret. Men hvad vil en ny S-regering, når det kommer til ny teknologi og iværksætteri? I de seneste år har hypen om ny teknologi, kunstig intelligens og iværksættere været massiv. I den afgående regerings Disruptionråd var alle - også vennerne i fagbevægelsen - enige om, at ny teknologi er helt afgørende for fremtidens jobs, vækst og konkurrenceevne. Derimod har de teknologiske ambitioner fra Socialdemokratiet været fraværende. Hvilket er spøjst, da partiet som bevægelse er vokset ud af den industrielle revolution som svar på epokegørende teknologier som dampmaskine og samlebånd. Men som en S-rådgiver fortalte mig, er ny teknologi og digitalisering ikke noget, der vinder næste valg. Hvilket kynisk betragtet nok er korrekt. Hvis vi skal udnytte de mange teknologiske muligheder, må en ny regering sætte sig i førersædet Det er måske forståeligt, at Socialdemokratiet har gemt sig i forhold til ny teknologi. For digitalisering og industrialisering 4.0 er komplekst og stiller nye forventninger og krav til arbejderpartiet, ikke mindst fordi nye teknologier og digitale platforme udfordrer arbejdsmarkedet, jobfunktioner, uddannelsesområdet m.m. Heldigvis er udgangspunktet godt. Danmark har historisk set været god til at omstille sig og omfavne ny teknologi. Ikke mindst pga. en arbejdsmarkedsmodel, som opkvalificerer og finder nyt arbejde til mennesker, der rammes af konjunkturer og teknologiudvikling. Måske som afledt positiv konsekvens er danskerne generelt positive over for både globalisering og ny teknologi. Spørgsmålet, som Socialdemokratiet burde stille sig selv, er, hvorfor blå blok skal have patent på tech og iværksætteri? Dagsordener, der kun vil vokse i en tid, hvor tech er gud, og hvor det er super cool at satse og starte noget selv. Se bare Tommy Ahlers, der på rekordtid har opnået stjernestatus og fik femteflest personlige stemmer ved folketingsvalget. Hvordan skal Mette Frederiksen så forholde sig til de nye dagsordener? Groft sagt er der en offensiv og en defensiv teknologidagsorden. Den offensive ser vækst, jobs og enorme muligheder og vil omfavne digitalisering og kunstig intelligens, næsten koste hvad det vil. Den defensive fokuserer på, hvordan vi kan dæmme op for de mange negative konsekvenser og beskytte den danske model og danske lønmodtagere. Hidtil har Socialdemokratiet og venstrefløjen stort set kun været optaget af den defensive og har glemt at definere, hvordan ny teknologi og innovation skaber velstand og vil løfte fremtidens samfund. Men de røde må overkomme frygten og komme med deres visioner. For uanset hvordan Socialdemokratiet og fagbevægelsen ser det, vil arbejdsmarkedet og fremtidens jobfunktioner ændre sig radikalt. Selv om gigaøkonomien eller prekariatet er reelle trusler, må Socialdemokratiet blive bedre til at navigere i og afkode, hvordan danskerne bedst kan udnytte fremtidens digitale krav og muligheder. En ny S-regering har en glimrende mulighed for udvikle en positiv og stærk techvision. Vi hverken kan eller skal være Silicon Valley - dertil har vi hverken den nødvendige koncentration af talent, kapital eller markedsstørrelse. Udfordringen er at finde vores egen vej, værdier og plads i fremtidens teknologiske værdikæder, hvis vi skal fastholde det høje velstands- og velfærdsniveau. I Japan har man opfundet begrebet samfund 5.0, der fokuserer på, hvordan ny teknologi kan målrette offentlige ydelser og frigøre ressourcer til gavn for den enkelte og for samfundet. Her kan Mette Frederiksen og co. med fordel tage ved lære af Japans tilgang. Hvis vi skal udnytte de mange teknologiske muligheder, må en ny regering sætte sig i førersædet og forsøge at drive udviklingen og bygge videre på erfaringerne fra Disruptionrådet. Her kan den f.eks. sætte ind på fem områder: Udvikle strategiske forsøgsområder inden for ny teknologi og forretningsmodeller. Styrke GDPR, etik og forbrugerbeskyttelse som konkurrenceparametre. Lade det offentlige gå forrest og sikre, at offentlige indkøb leverer offentlig innovation og understøtter den grønne omstilling. Udnytte vores tillidssamfund til at udvikle en ny reguleringskultur, hvor myndigheder åbner sig og aktivt samarbejder med universiteter, techmiljøer, fonde og nye økosystemer. Sikre afgrænsede eksperimenter i væsentlige politiske initiativer, hvor ny teknologi kan testes og afprøves inden for bl.a. sundhedsdata og transport. Lykkes det at styrke nogle af disse konkurrenceparametre, kan vi blive teknologisk førende uden at smide hverken værdier eller den danske model ud med badevandet. 2 kommentarer Jo fuld skrue på .........Hvor er det bare op ad bakkeHvis vi antager , at problemet er sandtSå må man overveje , om samme vej , er falsk Fuldstændig aldeles enig i dette indlæg. Det ville klæde centrum venstre at omfavne teknologi- og udviklingsdagsordenen og skabe sin egen offensive og socialt bevidste udgave af den. Det ville også være et kærkomment alternativ til den uambitiøse og introverte værdipolitik der desværre har præget det borgerlige Danmark i 2 årtier. Tænker også der kan gøres et pragmatisk og kommunikationsmæssigt effektivt projekt ud af det, ved netop at give det offentlige og EU en toneangivende rolle. Og det går jo hånd i hånd med valgkampens helt store hookline: den grønne omstilling.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2019-06-28
+          &nbsp;·&nbsp; e7410d16
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.619</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.891</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.915</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.569</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Koder og algoritmer indtager folkeskolen</h4>
+        <div>
+          HERNING: Regeringen vil skabe øget forståelse for teknologiens muligheder blandt de danske børn og unge.Det står klart, efter regeringen tirsdag fremlagde sin strategi for digital vækst i Danmark.Syv større initiativer udgør strategien, og et af dem er et ønske om at øge den yngre generations digitale kompetencer.-Alle børn skal lære at kode, men ikke sådan at alle skal være teknologiudviklere.Men man skal have en forståelse for teknologien.-Ikke kun kodning, men også algoritmer og teknologi som infrastruktur, værktøj og kommunikation, sagde undervisningsminister Merete Riisager (LA) ved præsentationen.Regeringen vil i første omgang ruste de unge gennem en fireårig forsøgsordning med cirka 40-50 folkeskoler.Ordningen skal skabe viden om, hvordan man bedst muligt styrker teknologiforståelsen hos den enkelte elev og gør temaet til en obligatorisk del af undervisningen i folkeskolen.Samtidig er der fra det nuværende skoleår indført et valgfag i teknologiforståelse i folkeskolens udskoling, ligesom der er implementeret et nyt valgfrit it-fag på de gymnasiale uddannelser.Regeringens planer vækker glæde hos Dansk Industri.-Vi skal alle blive dygtigere digitalt -fra første skoledag til sidste dag på arbejdsmarkedet.-Dem, der vinder de digitale talenter, har en god chance for at vinde den digitale fremtid, siger administrerende direktør Karsten Dybvad.Målet om at gøre folkeskoleelever klogere på den teknologiske udvikling er en del af regeringens nye strategi for Danmarks digitale vækst.I alt er der afsat en milliard kroner til strategiens syv større initiativer frem mod 2025.-Vi har en ambition om, at Danmark skal være digital frontløber.-Vi skal være det vigtigste land i Europa med hensyn til digital teknologi, fordi det giver bedre vilkår for borgerne, skaber bedre muligheder for virksomhederne og gør samfundet rigere, siger erhvervs-og vækstminister Brian Mikkelsen (K).Han præsenterede tirsdag regeringens strategi sammen med statsminister Lars Løkke Rasmussen (V) og Merete Riisager/ ritzau/.
+        </div>
+        <footer>
+          <em>Sjællandske Slagelse</em>
+          &nbsp;·&nbsp; 2018-01-31
+          &nbsp;·&nbsp; e6996198
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.844</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.896</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.72</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.554</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Toyota går ind i kunstig intelligens</h4>
+        <div>
+          Biler. Synergieffekterne mellem autobranchen og Silicon Valley fortsætter med at blive større. Toyota har ladet sig inspirere af Tesla og vil nu udnytte Silicon Valleys gode hjerner til at udvikle teknologi til biler. De har langt fra Japan, men tæt på Stanford Universitet i Silicon Valley grundlagt Toyota Research Institute, som skal fokusere på udvikling af kunstig intelligens og robotteknologi.Toyota vil over de næste 5 år pumpe 6,9 milliarder kroner i projektet, som ifølge en udmelding fra bilgiganten har til formål »at møde samfundets store udfordringer«.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2015-11-11
+          &nbsp;·&nbsp; e54ec312
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.574</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.826</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Debat: Ny regering skal prioritere teknologi</h4>
+        <div>
+          KLIMAET FÅR tilsyneladende et skud vitaminer med et ambitiøst 2030-mål. Og velfærden vil med garanti også blive prioriteret. Men hvad vil en ny S-regering, når det kommer til ny teknologi og iværksætteri? I de seneste år har hypen om ny teknologi, kunstig intelligens og iværksættere været massiv. I den afgående regerings Disruptionråd var alle - også vennerne i fagbevægelsen - enige om, at ny teknologi er helt afgørende for fremtidens jobs, vækst og konkurrenceevne.Derimod har de teknologiske ambitioner fra Socialdemokratiet været fraværende. Hvilket er spøjst, da partiet som bevægelse er vokset ud af den industrielle revolution som svar på epokegørende teknologier som dampmaskine og samlebånd. Men som en S-rådgiver fortalte mig, er ny teknologi og digitalisering ikke noget, der vinder næste valg.Hvilket kynisk betragtet nok er korrekt.Det er måske forståeligt, at Socialdemokratiet har gemt sig i forhold til ny teknologi. For digitalisering og industrialisering 4.0 er komplekst og stiller nye forventninger og krav til arbejderpartiet, ikke mindst fordi nye teknologier og digitale platforme udfordrer arbejdsmarkedet, jobfunktioner, uddannelsesområdet m. m.Heldigvis er udgangspunktet godt. Danmark har historisk set været god til at omstille sig og omfavne ny teknologi.Ikke mindst pga. en arbejdsmarkedsmodel, som opkvalificerer og finder nyt arbejde til mennesker, der rammes af konjunkturer og teknologiudvikling. Måske som afledt positiv konsekvens er danskerne generelt positive over for både globalisering og ny teknologi.SPØRGSMÅLET, som Socialdemokratiet burde stille sig selv, er, hvorfor blå blok skal have patent på tech og iværksætteri? Dagsordener, der kun vil vokse i en tid, hvor tech er gud, og hvor det er super cool at satse og starte noget selv. Se bare Tommy Ahlers, der på rekordtid har opnået stjernestatus og fik femte-flest personlige stemmer ved folketingsvalget.Hvordan skal Mette Frederiksen så forholde sig til de nye dagsordener? Groft sagt er der en offensiv og en defensiv teknologidagsorden. Den offensive ser vækst, jobs og enorme muligheder og vil omfavne digitalisering og kunstig intelligens, næsten koste hvad det vil. Den defensive fokuserer på, hvordan vi kan dæmme op for de mange negative konsekvenser og beskytte den danske model og danske lønmodtagere.Hidtil har Socialdemokratiet og venstrefløjen stort set kun været optaget af den defensive og har glemt at definere, hvordan ny teknologi og innovation skaber velstand og vil løfte fremtidens samfund.Men de røde må overkomme frygten og komme med deres visioner. For uanset hvordan Socialdemokratiet og fagbevægelsen ser det, vil arbejdsmarkedet og fremtidens jobfunktioner ændre sig radikalt.Selv om gigaøkonomien eller prekariatet er reelle trusler, må Socialdemokratiet blive bedre til at navigere i og afkode, hvordan danskerne bedst kan udnytte fremtidens digitale krav og muligheder.En ny S-regering har en glimrende mulighed for udvikle en positiv og stærk techvision. Vi hverken kan eller skal være Silicon Valley - dertil har vi hverken den nødvendige koncentration af talent, kapital eller markedsstørrelse. Udfordringen er at finde vores egen vej, værdier og plads i fremtidens teknologiske værdikæder, hvis vi skal fastholde det høje velstands-og velfærdsniveau.I Japan har man opfundet begrebet samfund 5.0, der fokuserer på, hvordan ny teknologi kan målrette offentlige ydelser og frigøre ressourcer til gavn for den enkelte og for samfundet. Her kan Mette Frederiksen og co. med fordel tage ved lære af Japans tilgang.HVIS VI SKAL udnytte de mange teknologiske muligheder, må en ny regering sætte sig i førersædet og forsøge at drive udviklingen og bygge videre på erfaringerne fra Disruptionrådet. Her kan den f. eks.sætte ind på fem områder: 1. Udvikle strategiske forsøgsområder inden for ny teknologi og forretningsmodeller.2. Styrke GDPR, etik og forbrugerbeskyttelse som konkurrenceparametre. 3. Lade det offentlige gå forrest og sikre, at offentlige indkøb leverer offentlig innovation og understøtter den grønne omstilling. 4. Udnytte vores tillidssamfund til at udvikle en ny reguleringskultur, hvor myndigheder åbner sig og aktivt samarbejder med universiteter, techmiljøer, fonde og nye økosystemer. 5. Sikre afgrænsede eksperimenter i væsentlige politiske initiativer, hvor ny teknologi kan testes og afprøves inden for bl. a. sundhedsdata og transport. Lykkes det at styrke nogle af disse konkurrenceparametre, kan vi blive teknologisk førende uden at smide hverken værdier eller den danske model ud med badevandet.Spørgsmålet, som Socialdemokratiet burde stille sig selv, er, hvorfor blå blok skal have patent på tech og iværksætteri?.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-06-26
+          &nbsp;·&nbsp; e73ff9b8
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.635</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.894</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.935</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.563</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FAKTA: Danmark skal sætte fart på digitaliseringen</h4>
+        <div>
+          KøbenhavnDigitalt Vækstpanel blev nedsat sidste år for at give regeringen råd og anbefalinger til digital omstilling.Her kan du se et uddrag af de 33 anbefalinger til regeringen, som er opdelt i fire overskrifter:* Digitale kompetencer til alle:Regeringen skal sætte sig i spidsen for en teknologipagt. Den skal få virksomheder og uddannelser til at imødekomme behovene for digitale kompetencer og efterspørgsler fra erhvervslivet.Der skal udvikles digitale kompetencer fra folkeskoleniveau og op. Informatik skal være et obligatorisk fag i folkeskolen og på de treårige videregående uddannelser.Der skal være et tættere samarbejde mellem skoler og virksomheder og et øget optag på digitale og tekniske uddannelser.Panelet anbefaler mere fleksibel voksen- og efteruddannelse med fokus på virksomhedernes behov samt større økonomiske incitamenter til digital opkvalificering.* Attraktivt digitalt vækstmiljø:København skal være førende inden for teknologier som &quot;internet of things&quot;, kunstig intelligens og &quot;big data&quot;.Danmark skal være et attraktivt land for internationale digitale talenter, og de skal målrettet trækkes hertil. Der skal være gode rammer for højtkvalificeret udenlandsk arbejdskraft inden for teknologi.Små og mellemstore virksomheder skal lettere kunne rekruttere højtkvalificeret udenlandsk arbejdskraft.Det vil medføre en styrket digital forskning. Små- og mellemstore virksomheder skal have bedre adgang til testfaciliteter.* Proaktive rammer for digitalisering:Der skal være bedre og mere smidige rammer for nye digitale teknologier, produkter og forretningsmodeller.Det betyder lovgivning, som i højere grad er rustet til udfordringerne for digitalisering.Panelet anbefaler mere ambitiøse 2025-mål for den digitale infrastruktur, herunder udrulning af 5G-internet.Der skal være en handlingsplan for test og udbredelse af førerløse fartøjer.Danske virksomheder skal være blandt de førende i Europa inden for it-sikkerhed. Der skal være styrkede rammer for en konkurrencedygtig e-handel.* Digital ansvarlighed og begejstring:Regeringen anbefales et årligt digitaliserings-topmøde med køreplan for Danmarks digitale udvikling.Det vil medføre en udbredelse af kendskabet til de digitale muligheder.Det kan for eksempelvis betyde en digitaliserings-uge og en bred informationskampagne med fokus på mulighederne ved digitalisering.Kilde: Digitalt Vækstpanel./ritzau/
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2017-05-09
+          &nbsp;·&nbsp; e63f696c
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.869</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.992</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.965</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.57</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Koder og algoritmer indtager folkeskolen</h4>
+        <div>
+          Regeringen vil skabe øget forståelse for teknologiens muligheder blandt de danske børn og unge. Det står klart, efter at den i går fremlagde sin strategi for digital vækst i Danmark. Syv større initiativer udgør strategien, og en af dem er et ønske om at øge den yngre generations digitale kompetencer. &quot; Alle børn skal lære at kode, men ikke sådan at alle skal være teknologiudviklere.Men man skal have en forståelse for teknologien. Ikke kun kodning, men også algoritmer og teknologi som infrastruktur, værktøj og kommunikation,&quot; sagde undervisningsminister Merete Riisager (LA) ved præsentationen. Regeringen vil i første omgang ruste de unge gennem en fireårig forsøgsordning med cirka 40-50 folkeskoler. / ritzau/
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2018-01-31
+          &nbsp;·&nbsp; e6995535
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.652</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.664</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.523</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.583</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt data science akademi modtager bevilling på 184 millioner</h4>
+        <div>
+          I løbet af 2021 skal der opbygges et nationalt akademi for data science på DTU. Akadamiet vil få en national bestyrrelsen og bliver støttet af Novo Nordisk Fonden og VILLUM FONDEN, som har bevilget i alt 184,3 kroner. Det oplyser universitetet i en pressemeddelelse.Akadamiet skal støtte og igangsætte nye initiativer for danske forskningsinstitutioner og virksomheder og på den måde styrke Danmarks konkurrencedygtighed inden for områder som kunstig intelligens og internet of things.»Der er et enormt behov for data science-eksperter i alle dele af det danske samfund. Akademiet vil give enestående muligheder for at støtte uddannelse og træning af de nye generationer af data science-eksperter og skabe et unikt dansk data science-miljø, der kan konkurrere internationalt og tiltrække talent,« siger formanden for akadamiet, professor Lars Kai Hansen.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-05-05
+          &nbsp;·&nbsp; e8406a1f
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.674</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.515</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Landets nye digitale strategi bør indeholde disse tre indsatsområder</h4>
+        <div>
+          DEBAT Danmarks nye digitaliseringspartnerskab er et af de vigtigste initiativer i årevis målt på betydningen for Danmarks fremtidige udvikling, og partnerskabet har fået alt for lidt opmærksomhed.Som Danmarks nationale vidensog erhvervsklynge inden for digitalisering hilser vi initiativet velkomment.Danmarks nuværende digitale strategi er for længst udløbet, og der er behov for et nyt, ambitiøst fundament for digitaliseringen af Danmark.Derfor optræder vi gerne som både forskernes og virksomhedernes stemme ind i Digitaliseringspartnerskabet.Her ser vi foreløbig tre vigtige indsatsområder.1. De rigtige teknologier IoT, AR, AI, Edge, 5G, ML er alle teknologier, som kommer til at spille en afgørende rolle i den globale udvikling.Men hvad skal Danmark satse på forsknings-, uddannelses-og erhvervsmæssigt? Vi kan, skal og bør ikke satse på alt, men på de teknologier, som har mest potentiale.Qua vores meget tætte relation til både de danske forskningsinstitutioner og erhvervslivet kan vi i Digitallead kvalificere og prioritere bedst muligt.2. Fokusér på at øge innovationskraften hos smv'erne. Fremtidens udfordringer løses ikke med nutidens teknologier, og derfor har vi mere end nogensinde brug for at styrke innovationskraften. De store teknologivirksomheder er frontløbere, men de små og mellemstore virksomheder er drivkraften. Digitallead er smv'ernes one-pointof entry med vores store erfaring i at facilitere konsortiedannelse.Lad os løfte opgaven med at øge innovationskraften.3. Mere fokus på klynge. Fremtidens økonomiske vækstmotorer skal skabes på et fundament af accelereret transformation og innovation i meget større skala. Udvikling og vækst sker i samskabelse, og samskabelse er jo netop Digitalleads eksistensgrundlag. Undersøgelser har vist, at virksomheder, der deltager i klynger, er fire gange så innovative som lignende virksomheder, som ikke deltager. Med Digitaliseringspartnerskabet har vi alle fået en platform at arbejde ud fra. Men partnerskabet er ikke ansvarsfraskrivende for alle os andre - snarere tværtimod. Det er ansvarspådragende.
+        </div>
+        <footer>
+          <em>Børsen</em>
+          &nbsp;·&nbsp; 2021-06-02
+          &nbsp;·&nbsp; e84af63b
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.758</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.886</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.814</kbd>
+            <kbd data-tooltip="Business &amp; innovation">L80_BUSINN&nbsp;0.655</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.597</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / En fremtid med kunstig intelligens, vi kan have tillid til</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra Alexandra InstituttetMeld dig til konferencen som presse ved at tage fat i Troels Rud, kommunikationskonsulent ved ATV, på tlf.: 51854250 eller mail: tr@atv.dkVi vil stille skarpt på forklarlig kunstig intelligens med perspektiver på teknologikompleksitet, etik, forretning, brugere og samfund. Ved på bedste tværfaglige vis at koble alle disse blikke på udviklingen af forklarlig kunstig intelligens håber vi at nå frem til en fælles forståelse af best practice - med fokus på practice.&quot;Forklarlig kunstig intelligens er et fænomen, vi ofte taler luftigt om, fordi det er svært at blive konkret, når det handler om, hvordan vi skaber tillid til teknologien. Tilliden ligger nemlig ikke i den teknologiske løsning, men hos brugeren af løsningen&quot;,fortæller Marie Rørdam Fenger fra Alexandra Instituttet, en af arrangørerne bag konferencen. &quot;Men vi kan skabe forudsætningen for, at der er tillid til teknologien, og det handler blandt andet om at teknologien skal tilpasse sig brugeren - ikke omvendt. Det går så hurtigt med udviklingen af kunstig intelligens, at vi skal have de forudsætninger ned på et operationelt niveau nu.&quot;Til at igangsætte diskussionen vil vi præsentere en række ekspertoplæg samt spændende danske cases, der illustrerer, hvordan virksomheder og organisationer bruger forklarlig kunstig intelligens. Casene har fokus på udfordringer og muligheder samt hvilke skridt der er nødvendige for at implementere kunstig intelligens, og som er gennemsigtige og kan forklares.Du kan bl.a. møde:Head of Development Peter Christian Damm, Centre for Applied AI, KMDCTO Lars Maaløe, CortiProfessor Anders Kofod-Petersen, Head of Data Science and Engineering Lab, vicedirektør, Alexandra InstituttetProfessor Thomas Moeslund, Det Tekniske Fakultet for IT og Design, Aalborg UniversitetProfessor Thomas Ploug, PhD. Vicehead of Department. Aalborg UniversitetKommunikations- og videnschef Kim Stensdal, Dansk IT (ordstyrer for dagen)Professor Brit Ross Winthereik, ITU, Digital Vismand i ATVOm eftermiddagen faciliterer vi en workshop, som har fokus på muligheder og udfordringer for udvikling og brug af forklarlig kunstig intelligens. Vi samler også de vigtige aktører på området til en skarp paneldebat om, hvordan vi realiserer de danske muligheder, og hvad behovet for viden er hos virksomheder og forskere.Kontakt:Communications Specialist Lisa Lorentzen tlf.: +45 93 52 17 64 email: lisa.lorentzen@alexandra.dkLæs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/en-fremtid-med-kunstig-intelligens-vi-kan-have-tillid-til?releaseId=13588848
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-02-26
+          &nbsp;·&nbsp; e7985852
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.816</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.693</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Vi skal styrke det politiske fokus på teknologien</h4>
+        <div>
+          Uanset om det handler om at stimulere udvikling af grønne teknologier, eller om sikkerhed, etik og internationalt samarbejde, så har vi brug for styrket fokus og stærke tech-kompetencer i dansk politik.Danmark er i gang med en digital omstilling. En digital omstilling af vores måde at kommunikere og arbejde på, af sundhedssektoren, af energisektoren og på transportområdet. Bare for at nævne nogle af de helt fundamentale dele af vores samfund, der er under en strengt nødvendig digital teknologisk forandring.Strengt nødvendig, fordi det gælder for alle de ovennævnte områder, at vi hverken kan nå vores politiske målsætninger eller for den sags skyld skabe det fremtidige samfund, vi ønsker os, uden en hurtig og effektiv digital og teknologisk omstilling. Og når det kommer til områder som sundhed og klima, er det ikke blot vores visioner for fremtiden - men også liv og livskvalitet - for os selv, for det globale samfund og for fremtidige generationer, der er på spil.I teknologisk forskning handler digital omstilling både om at styrke de digitale kerneteknologier i sig selv og om at styrke alle de teknologier, hvor udviklingen accelereres til warp-speed takket været digitale teknologier.Ny teknologi er motoren i den nødvendige udvikling på en lang række områder i samfundet, og jo bedre motoren fungerer des hurtigere og sikrere kommer vi frem. Alle de steder, hvor vi bruger den. Derfor skal vi også have fokus på teknologien i sig selv og ikke kun de steder, den kan bruges. Sådan er det i forskningsverdenen og i industrien, men ikke nødvendigvis i politik.Og det kan undre, for om noget kræver den teknologiske udvikling, vi ønsker os, et selvstændigt politisk fokus og detailviden inden for teknologi i det politiske system. Og det kan vi kun opnå ved at samle teknologien under ét ministerium - med tilhørende rådgivende institutioner og embedsmænd med indsigt i centrale teknologiske spørgsmål.Uanset om det handler om at stimulere den teknologiske udvikling, eller om at tage stilling til spørgsmål om sikkerhed, etik og internationalt samarbejde vil denne politiske opgradering af teknologiens rolle gøre det muligt at løfte den store politiske opgave, som det bliver at imødekomme samfundets største udfordringer med ny, sikker og bæredygtig teknologi for mennesker.Et stærkt ønske fra teknologi-DanmarkForslaget om at samle teknologien under et ministerium er faktisk hverken nyt, eller noget jeg står alene med.Vores nabolande Norge og Sverige har allerede henholdsvis en d istrikts- og digitaliseringsminister og en minister for energi og digital udvikling, og ved Akademiet for de Tekniske Videnskabers seneste topmøde i november var ønsket om at samle politisk ekspertise og gennemslagskraft en rød tråd gennem mange oplæg, diskussioner og afstemninger. Rektor for DTU og præsident for ATV Anders Bjarklev har desuden senere i debatindlæg luftet tanken om, at man kan gøre det teknologiske fokus til en del af Statsministeriet på samme måde som i f.eks. Singapore.Der er mange måder at gøre det på. Og så længe vi får muligheden for at tage grundlæggende, omfattende og sammenhængende fat i de teknologiske udfordringer og muligheder, Danmark står over for lige nu, vil det være et stort skridt fremad - for teknologien, for alle de områder, der berøres af den og for de politiske mål, der er afhængige af teknologisk udvikling.Danmark har i et internationalt perspektiv ikke haltet efter på det teknologiske område indtil nu, og skiftende regeringer og ministre har set og erkendt behovet for at stimulere den teknologiske udvikling og omstilling.Vi står dog efter min mening endnu en gang ved en skillevej, og det er igen tid til at træffe den rigtige politiske beslutning. Danmarks teknologiske styrkepositioner er under pres, og det gælder særligt de digitale (jf. ATV rapport fra august 2020: Verdens førende Tech-Regioner. Danmarks styrkeposition i et internationalt perspektiv). Danmark har en målsætning om at blive én af de fem førende science- og engineering-regioner i verden - til gavn for kommende generationer, og dét kræver en politisk organisering og et politisk fokus, der understøtter den målsætning. Der er brug for at samle kræfterne og øge fokus og sammenhængskraften på teknologiområdet.Samfund 5.0Chefredaktør for Mandag Morgen Lisbeth Knudsen har, også i regi af ATV, italesat en spændende vision for et ''Samfund 5.0'' - som en udvidelse af begrebet ''Industri 5.0''.Et samfund med et helt nyt digitalt mindset og baseret på den helhedstænkning, der er nødvendig for at løse de fem store kriser, som Danmark i lighed med resten af verden står i lige nu: sundhedskrisen, klimakrisen, den økonomisk krise, et metaltræt velfærdssamfund og en langsommelig digital omstilling.Jeg er enig i såvel udfordringerne, som at de skal imødegås med digitalt mindset og helhedstænkning. Og så fristes jeg til at tilføje et punkt til listen af store og vigtige udfordringer, som vi er nødt til at håndtere: friheds-/demokrati-krisen og behovet for at skabe et samfund, hvor mennesker og teknologi er i stærkere samspil, og hvor det fysiske og virtuelle rum spiller tættere og stærkere sammen.Klimaet - den grønne omstillingEU-Kommissionen har for længst konstateret, at der ikke bliver nogen grøn omstilling uden et digitalt fundament. Og det tror jeg egentligt efterhånden er en bred almen forståelse. Alligevel kan man godt drømme om en lidt større fokus på vigtigheden af investeringer også i de grundlæggende digitale 'enabling technologies'- vi kommer ikke i mål ved blot at høste af den nuværende viden.Og de digitale teknologier giver os mulighed for 'at vende ishockeystaven om'- men vi behøver ikke alene basere os på forhåbninger til fremtidig teknologi - der er masser vi kan gøre allerede nu, som professor Henrik Madsen (DTU) uddyber det i ING/FacilityTech den 28/1:Digitalisering er nøglen til vækst og effektiv grøn omstilling i Danmark. Det er konklusionen efter et af de mest profilerede grønne forskningsprojekter, CITIES, hvor fokus har været på, hvordan nyeste, men dog eksisterende, teknologi inden for blandt andet kunstig intelligens kan fremme den grønne omstilling på energiområdet.Safe AI, Computing Continuum og Cyber SecurityBlandt flere nøgleteknologier lige nu har vi f.eks. Safe AI, Computing Continuum og Cyber Security. Ansvarlig, gennemskuelig og etisk acceptabel brug af data, algoritmer, kunstig intelligens - 'digital artificials'er og bliver en forudsætning for Samfund 5.0. Grundforskningen i disse emner er først nu i sin vorden.Ligeså er forskningen i, hvorledes vi indsamler og lagrer data og gennemfører de livsvigtige beregninger - ''the computing continuum'' - lokalt og i kombination med edge, fog, skyen. Og intet af alt dette kan virkeliggøres, hvis ikke vi bredt set får styr på cybersikkerheden.Og for alle disse teknologier gælder det, at vi kan få langt mere gevinst og værdi for mennesker, samfund og erhverv, hvis vi forsker og investerer i teknologierne med et positivt og innovationsorienteret fremtidssikret Samfund 5.0 digital mindset frem for et måske lidt metaltræt, defensivt og frygtsomt Industri 5.0-mindset.Uddannelse gennem hele livet for alleFredag 5/2 var der en (online)høring om den netop udkomne rapport: Gap-analyse af teknologiforståelse i det danske uddannelsessystem fra grundskole til ungdomsuddannelser. I rapporten og ved høringen står det klart, at Danmark har brug for en stor og sammenhængende satsning på uddannelse i digitale teknologier. Og det haster, for der er en naturlig forsinkelse i forbindelse med uddannelsessatsninger, og kompetencerne efterspørges voldsomt allerede i dag.På DTU gør vi alt, hvad vi kan for at lukke hullet. Vi optager flere almindelige studerende på uddannelser med digitalt fokus, og vi tilbyder nu også efteruddannelse i den nyeste forskning og viden på området. Både til virksomheder og til offentlige myndigheder som en del af DTU Computes nye såkaldte Tech4Civ strategi. Men igen gælder det, at opgaven ikke kan løses og løftes decentralt alene. Der er behov for en stærkt og samlet politisk fokus på udfordringen.Universiteterne er i gangMen det er ikke kun på uddannelsesområdet, at vi på DTU og DTU Compute, DTU's digitale og matematiske forskningsinstitut, kæmper for at gøre teknologi og teknologiforståelse til en del af løsningen på samfundets store udfordringer. Vi forsker intensivt i nye teknologier i samarbejde med alle vores gode kolleger på resten af DTU, de andre syv danske universiteter samt forskere i hele verden.Vi kommunikerer og rådgiver tusindvis af mennesker, virksomheder og organisationer. Vi understøtter innovationen i danske virksomheder, og vi udvikler og støtter de danske startups og entrepreneurship-økosystemer og genererer masser af egentlige startups fra nuværende og tidligere studerende og ansatte, herunder unicorns (som 3shape) og awarded future unicorns (som Corti og Radiobotics).Og vi indgår helhjertet i og interagerer positivt med alle de gode nationale og internationale initiativer, der søsættes fra forskellige ministerier og fondsbestyrelseskontorer i Danmark samt kontorer i Bruxelles: Horizon Europe, Digital Europe (European Digital Innovation Hubs), Digital Hub Denmark, DIREC, DigitalLead, Danish Data Science Academy, AI Pionercenter, AI Danmark.Vi arrangerer konferencer som High Tech Summit og planlægger netop nu på tværs af universiteter et helt nyt Digital Tech Summit til november 2021. Initiativer, der bringer politikere, forskere og erhvervsliv sammen. Men fokus, kompetencer og interesser inden for den teknologiske udvikling skal ikke kun mødes ved særlige lejligheder. De skal gøre det hele året og gerne i et ministerium
+        </div>
+        <footer>
+          <em>Techmanagement.dk</em>
+          &nbsp;·&nbsp; 2021-02-25
+          &nbsp;·&nbsp; e8245958
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.544</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.785</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.786</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.599</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Et kig i krystalkuglen</h4>
+        <div>
+          FREMTID En af Danmarks mest efterspurgte talere inden for teknologisk udvikling, Anders Hvid, gæster Vidensbyen til et medlemsarrangement den 29. oktober. Anders Hvid vil levere sine spændende bud på, hvordan den teknologiske udvikling tegner vores fremtid, fx hvordan vores biler om få år vil styre sig selv gennem morgentrafikken, og hvordan vores læge og vores bankrådgiver vil være en kunstig intelligens. 
+        </div>
+        <footer>
+          <em>Det Grønne Område</em>
+          &nbsp;·&nbsp; 2015-10-20
+          &nbsp;·&nbsp; e5453204
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.967</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.573</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.788</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>WHISKY OG MASKINLÆRING</h4>
+        <div>
+          Whisky brygget med kunstig intelligens? Der er ikke mange grænser for, hvor ny teknologi kan bruges, og nu kan det måske også snart smages.Det svenske whisky-destilleri Mackmyra går sammen med Microsoft og den finske konsulentvirksomhed Fourkind om at skabe verdens første whisky-opskrift sat sammen med kunstig intelligens. Bag opskriften ligger maskinlæring, og den kommer på markedet til efteråret. Det skriver onlinemediet Popular Mechanics.
+        </div>
+        <footer>
+          <em>Tech Management</em>
+          &nbsp;·&nbsp; 2019-05-28
+          &nbsp;·&nbsp; e75ce2d2
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.811</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.662</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Digitale følelser - Artificial Mindsets</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra MindFuture ApSMindFuture, som initiativet hedder, er startet af AI-kunstner Cecilie Waagner Falkenstrøm og serieiværksætter Niels Zibrandtsen i samarbejde med tech-filosof Carsten Corneliussen. Initiativet vil udvikle kunstværker og provokationer, som sætter kunstig intelligens i perspektiv til mennesket og vil udstille glæden, frygten, mulighederne og udfordringerne ved den eksponentielle vækst i indsamling og udnyttelse af data om alt.Ambitionen er at skabe debat omkring den næste generation af kunstig intelligens, som initiativet kalder Artificial Mindsets, hvor kombinationen af algoritmer kan udvikle personligheder og menneskelige træk såsom følelser, holdninger og irrationalitet. Ved brug af machine learning vil initiativet udvikle en række Artificial Mindset-kunstværker, som tager udgangspunkt i store datasæt, disses fremskrivninger og kombinationer, som præsenteres uden menneskelig holdningsindblanding.&quot;Gennem kunsten kan vi undersøge fremtidige potentielle Artificial Mindsets med henblik på at skabe debat om de etiske og eksistentielle muligheder og dilemmaer, som kunstig intelligens, der kan simulere menneskelighed, medfører&quot;, siger kunstner Cecilie Waagner Falkenstrøm.Debatten bliver underbygget med et koncept om en brugerdreven fortælling i form af &quot;The Book of Mindsets&quot;, der hele tiden udvikler sig og ikke har en afslutning. Den digitale fortælling produceres dels af Artificial Mindsets og dels af mennesker, der skaber deres egne kapitler til fortællingen.MindFuture arbejder med tre primære begreber:-  MindtheFuture vil se på, hvordan fremtiden kunne udfolde sig for mennesker og Artificial Mindsets, så vi husker at passe på fremtiden.-  MinetheFuture vil bruge data og teknologi til at skabe indsigt i udvikling af menneskelignende teknologi i fremtiden.-  MindtheGap vil vække nysgerrighed og udfordre den traditionelle tankegang om forholdet mellem menneske og maskine for at skabe debat i nutiden om fremtiden.Der er allerede stor interesse for initiativet, som er i færd med at samle internationale kunstnere og forskere fra DTU, Stanford University og Berkeley University samt folk fra kunstverdenen bl.a. Victoria and Albert Museum og The Lumen Prize. En række danske og internationale profiler deltager i bestyrelsen og advisory board, som blandt andre tæller Erlend Høyersten, Per Falholt, Michael Moesgaard Andersen, Michael Potter, Marc Barto, Carla Rapoport og Pontus Lidberg. Som en del af initiativet udvikles en række interaktive digitale kunstværker, som vil sætte menneskeheden i perspektiv - set fra et Artificial Mindset's synspunkt.Kontakt:Cecilie Waagner Falkenstrøm / Kunstner og direktør i MindFuture / cwf@mindfuture.ai / Mobil: +45 60600645 / www.mindfuture.aiLæs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/digitale-folelser-artificial-mindsets?releaseId=13592550** Ovenstående pressemeddelelse er videreformidlet af Ritzau på vegne af tredjepart. Ritzau er derfor ikke ansvarlig for indholdet ** 
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2020-04-30
+          &nbsp;·&nbsp; e7afdba1
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.815</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.527</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Erhvervsledere: Kunstig intelligens-teknologi er mere værdifuld for virksomheder end ansatte</h4>
+        <div>
+          Op til 60 procent af virksomhedernes strategiske fokus, investeringer og tid går til ny teknologi - på bekostning af antallet af ansatte.Kunstig intelligens (AI), robotteknologi og andre nye teknologier overflødiggør menneskelig arbejdskraft.Sådan lyder konklusionen i en global undersøgelse blandt administrerende direktører ifølgeBetannews.com. Cheferne anser samtidig teknologiske ressourcer som mere værdifulde end menneskelige.Undersøgelsen er gennemført af det Los Angeles-baserede konsulenthus Korn Ferry, der har interviewet 800 erhvervsledere fra et bredt udvalg af globale multi-million og multi-milliard dollar organisationer.Ifølge undersøgelsen svarer 44 procent af de adspurgte direktører, at robotteknologi, automatisering og AI vil forandre fremtidens arbejdspladser og gøre folk &quot;stort set unødvendige&quot;.Global managing director of solutions hos Korn Ferry, Jean-Marc Laouchez, forklarer den kontroversielle holdning med, at usikkerhed får lederne til at kaste sig over ny håndgribelig teknologi, uanset at konsekvenserne for samfundet kan være store.Ifølge Korn Ferry-undersøgelsen optager ny teknologi mellem 40 til 60 procent af de adspurgte virksomheders strategiske fokus, investeringer og tid.Jean-Marc Laouchez forklarer, hvorfor menneskeligt talent ikke på samme måde betragtes som et:»Det er meget sværere at sætte en præcis værdi på ansatte, også selv om de har direkte indflydelse på værdien af teknologi, innovation og produkter.«Korn Ferry-konsulenterne opfordrer dog direktører til ikke at undervurdere den kreativitet og det positive bidrag, som mennesker kan bringe til en virksomhed.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-12-06
+          &nbsp;·&nbsp; e603e172
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.6</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.671</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.531</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Blogindlæg: Spørg ikke Google - Spørg mig</h4>
+        <div>
+          Ordene er ikke mine. Opfordringen stod på en menneskehøj papfigur på mit lokale bibliotek. Jeg blev faktisk bekymret og harm. Jeg så nemlig et kæmpe ledelsessvigt af medarbejdere. Faglig kamp handler i dag ikke om retten til at være mod, men mulighed for at være med.Folk er modstandere af forandring, hører jeg så ofte. Jeg er ikke enig. Vi mennesker er grundlæggende indstillet på forandring. Under forudsætning af, at vi forstår nødvendigheden og har mulighed for at arbejde med at tilpasse os det nye.Derfor bliver jeg både bekymret og harm over se en stor papfigur af en (i øvrigt karikeret) bibliotekar, som opfordrer bibliotekets brugere til at kontakte biblioteksvagten frem for at google.Hvem bevilliger dog penge til at opretholde en illusion hos de medarbejdere, der er så dybt afhængige af følge den faglige udvikling? Hvorfor tillader faglige organisationer dog denne udstilling af kollektiv afmagt over for udvikling i teknologi og brugeradfærd? Papfiguren signalerer det stik modsatte af, hvad medarbejdere har behov for, hvis de skal sikre deres jobs og faglighed.Tænk, hvis ledelsen i Unibank og Landmandsbanken i midt-firserne havde tilladt opstilling af en papfigur i bankfilialerne med budskabet: -Brug ikke Dankortet. Stå i kø til kassen efter fedtede kontanter-. Jamen, som om...!Nej, det er et kæmpe ledelsessvigt ikke at sikre konstant og kollektiv faglig indsigt i teknologisk udvikling og ændringer i brugeradfærd. Ledere er i så fald med-ansvarlige for modstand mod udvikling på arbejdspladsen, og de faglige organisationer har et medansvar for ikke at kæmpe den rette kamp.Kæmp med, ikke modFakta er, at vi alle bruger Google og andre søgemaskiner. På et splitsekund får vi adgang til ufattelige mængder information, der er nøje udvalgt til netop hver enkelt af os. Der sørger algoritmer nemlig for. Avanceret matematik, der skræddersyer resultater ud fra vores færden på nettet.Et kvantespring i informationssøgning. Derfor oplever bibliotekarer naturligvis drastisk fald i efterspørgslen, for det er både hurtigere og giver med sikkerhed resultater, når vi selv søger information.At kæmpe imod er forgæves. En ledelse kan ikke beskytte sine medarbejdere. Fagforeninger kan højst forsinke konsekvenserne, men ikke forhindre. Kampen skal handle om retten til at være med i udviklingen.Vor tids typografer?Er bibliotekarer vores tids typografer? Dem, der bliver overflødige af den teknologiske udvikling. Det kan ikke udelukkes. Sandsynligheden øges, hvis man dagligt går op og ned af en papfigur, der hepper på en illusion om, at kunderne kan overtales til at skrue tiden tilbage til -før-Google-.Men det er ikke givet, at bibliotekarer bliver overflødige. Det ville da være paradoksalt, at netop denne faglighed bliver overflødig i en tid, hvor samfundet oplever en eksplosion i udbud og efterspørgsel på information og behov for kvalitetssikring af viden. Bibliotekarer jo uomtvisteligt ekspertise her.Et fags skæbne afhænger af, om udøvere magter at redefinere arbejdsmetoder og udvikle nye services på grundlag af fagligheden. Det gælder for bibliotekarer og for mange andre faggrupper, hvor teknologisk udvikling og brugeradfærd på få år har ændret arbejdsopgaverne.Men den faglige udvikling kan den enkelte medarbejder kun bidrage til og arbejde med, hvis rammerne er på plads, og der er kollektiv forståelse af nødvendig forandring.Derfor bliver jeg harm over så destruktivt et forsøg på at fastholde fortiden. Det efterlader fagets medarbejdere i en håbløs faglig situation, der kan sætte dem ud af spillet på sigt. En helt anden arbejdskamp end det historiske fokus på løn og frihed. Fagforeninger har masser af plads til at komme på banen her.Tænk, hvis de tror på pap-figuren!Ledelsen kan næppe være overraskede, hvis nogle medarbejdere opfatter, at papfiguren legitimerer modstand mod de forandringer, som jo uvægerligt kommer.Jeg opfordrer til protest mod illusionen om at kunne skrue tiden tilbage. Ingen kan stoppe teknologisk udvikling. Men alle bør have mulighed for at få indsigt i og indflydelse på at dygtiggøre sig fagligt for at kunne arbejde i denne udvikling. Det handler den faglige kamp om i dag.Faglig udvikling forudsætter solid indsigt i teknologi og samfundsudviklingen. I dette tilfælde indebærer det blandt andet erkendelse af, at vi alle har højere uddannelsesniveau og derfor ikke har brug for samme bibliotekarhjælp som Maren i Kæret for 25 år siden. Og at vi elsker Google, som er kommet for at blive.Derfor hepper jeg på, at bibliotekarer stiller krav om at blive involveret i faglig udvikling og kræver de nødvendige kompetencer til arbejde med denne udvikling.Det gælder sådan set for alle faggrupper. Der er en Google i vente til os alle. Og det bliver vanvittigt spændende og konstruktivt. Under forudsætning af, at vi er kvalificerede til at bidrage til denne faglige udvikling, og ledelsen skaber rammerne. Gerne i samarbejde med de faglige organisationer, der har masser af plads til at komme på banen.
+        </div>
+        <footer>
+          <em>Børsen.dk</em>
+          &nbsp;·&nbsp; 2017-02-02
+          &nbsp;·&nbsp; e6188e6a
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.659</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.604</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.594</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.627</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Regeringen: Vi skal være med til at præge udviklingen af kunstig intelligens</h4>
+        <div>
+          I Danmark oplever vi, ligesom i resten af verden, at den digitale udvikling går hurtigere og hurtigere, og den både fører nye muligheder og udfordringer med sig.Og i dag møder mange danskere nye teknologier, som for eksempel kunstig intelligens i dagligdagen uden at tænke over det. Vi får for eksempel hjælp af mobilen til at finde vej i trafikken, får forslag til at høre ny musik af computeren eller bruger teknologiske hjælpemidler til at oversætte fra et sprog til et andet eller læse tekst op.Hvis vi i Danmark skal følge med den teknologiske udvikling, så skal vi op i omdrejninger. Netop derfor har regeringen lanceret en ny national strategi for kunstig intelligens med 24 initiativer.Strategien skal på den ene side sikre, at vi bruger de nye muligheder til at skabe nye innovative løsninger for vores samfund. Og med seks nye etiske principper skal strategien sikre, at vi bruger teknologien på en etisk forsvarlig måde.Samtidig opretter vi i regeringen også et dataetisk råd, der skal sætte fokus på dataetik i den offentlige debat. Kunstig intelligens er en af de nye teknologier, der rummer store potentialer, som kan gavne vores samfund og forbedre den offentlige sektor.Teknologien kan for eksempel hjælpe sagsbehandlere på jobcenteret med at klare rutineopgaver eller læger med at sikre mere præcise diagnoser til patienterne. Hvis vi skal understøtte udviklingen, så kræver det også, at vi har gode sprogdata.Den teknologiske udvikling rummer udfordringer og etiske dilemmaer. Derfor er det afgørende, at virksomheder, forskere og myndigheder bruger de nye etiske principper som en etisk rettesnor, når de udvikler nye løsninger.Regeringen afsætter derfor 30 millioner kroner til at udvikle en sprogbank, der skal klæde de digitale stemmer i vores hverdag på til bedre at forstå og tale dansk.Den kan eksempelvis bruges til at udvikle services, hvor svagtseende kan få læst kommunens hjemmeside højt eller til at udvikle bedre journalredskaber til lægerne, så de kan diktere direkte til en robot.Men den teknologiske udvikling rummer også udfordringer og etiske dilemmaer. Derfor er det afgørende, at virksomheder, forskere og myndigheder bruger de nye etiske principper som en etisk rettesnor, når de udvikler nye løsninger.For borgerne skal også i fremtiden være trygge ved den teknologiske udvikling. Det er samtidig afgørende, at danske forskere er med helt i front, så den nye teknologi er bygget på danske værdier som gennemsigtighed og respekt for privatlivets fred.Læs også:Hjortdal:Vi skal have fokus på de etiske udfordringer i digitaliseringenHvis vi opruster på forskningen, kan Danmark være med til at præge udviklingen af kunstig intelligens på langt sigt. Dermed er vi med til at skabe løsninger, der også er attraktive for andre åbne og tillidsfulde demokratier.Da der stadig er masser af ting, der skal udvikles, kan vi sagtens nå at være med i Danmark, hvis vi fortsætter med at investere i forskning.Udviklingen er allerede i fuld gang. Derfor er det ikke et spørgsmål om, vi vil være med, men snarere hvordan. Vi kan ikke konkurrere med Kina og USA på pengepungen.Derfor er det afgørende, at vi i Danmark i stedet erobrer førertrøjen i ansvarlig brug af kunstig intelligens. Og med vores nye strategi er vi godt på vej.Skriv kommentar
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2019-03-24
+          &nbsp;·&nbsp; e7211c2b
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.62</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.803</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.791</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.602</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Klumme: Refleksioner på bagkanten af 2019 og blikket rettet mod 2020</h4>
+        <div>
+          Mindre fokus på hvad jeg alligevel ikke kan påvirke. Mere fokus på hvad jeg reelt kan ændre.Mindre kemikaliefyldt make-up. Mere naturlighed/dig.Mindre fokus på religion. Mere fokus på spiritualitet.Mindre &quot;voksenbekymring&quot;. Mere barnlig tilgang til verdens udfordringer.Mindre opfarenhed. Mere pyt.Mindre Faxe Kondi. Mere rigtig kondi.Mindre indtagelse af sodavand. Mere kandevand.Mindre fast food. Mere slow food.Mindre slikforbrug. Mere frugt og grønt.Mindre &quot;true crime&quot;. Mere &quot;comedy&quot;.Mindre sex i tv. Mere sex i den virkelige verden.Mindre ensomhed. Mere tosomhed.Mindre &quot;dem&quot;. Mere &quot;os&quot;.Mindre digitalt. Mere analogt.Mindre monolog. Mere dialog.Mindre &quot;kigge ned i mobilen&quot;. Mere &quot;møde mennesker i øjenhøjde&quot;.Mindre Spotify. Mere koncert.Mindre wifi. Mere &quot;high five&quot;.Mindre blå. Mere rød(lig).Mindre Trump. Mere fornuft.Mindre kunstig intelligens. Mere rigtig intelligens.Mindre privatskole. Mere folkeskole.Mindre fokus på andenhåndskrænkethed. Mere fokus på fornuft og overbærenhed.Mindre diktatur. Mere demokrati.Mindre kinesisk statsstøtte til Huawei. Mere reel konkurrence.Mindre overvågning. Mere tillid.Mindre politikerlede. Mere kompetente politikere med hjerte.Mindre statsstyring. Mere selvansvarlighed.Mindre betting. Mere petting.Mindre Ekstra Blad/had. Mere dagblad/glad.Mindre 'enøjethed&quot;. Mere nysgerrighed.Mindre afvikling. Mere udvikling.Mindre sofa. Mere idræt.Mindre udbredelse af diabetes. Mere fokus på kost og motion.Mindre Wish.com. Mere ShopLokaltIHelsingørogOmegn.dk.Mindre globalt. Mere lokalt.Mindre snyd. Mere respekt og interesse for at bidrage til fælleskassen.Mindre tid med overgearede P3-værter. Mere tid med intellektuelt guf på P1 og fra podcasts.Mindre fokus på ny-køb. Mere fokus på genbrug.Mindre &quot;mig, mig, mig&quot;-kultur. Mere &quot;vi&quot;-kultur.Mindre pjat med Skat. Mere ansvarsfuld ledelse (før sammenhængskraften brister helt).Mindre diesel. Mere el.Mindre bilkørsel. Mere kollektiv trafik til tiden (og som er til at betale).Mindre brug af snus. Mere oplysning om kræft og evnen til at gøre det &quot;uncool&quot;/ulækkert.Mindre e-rygning. Mere fokus på at man dør i samme grad, som hvis der ikke er &quot;e&quot; foran.Mindre &quot;langsom forgiftning&quot;. Mere økologi.
+        </div>
+        <footer>
+          <em>Helsingordagblad.dk</em>
+          &nbsp;·&nbsp; 2019-12-28
+          &nbsp;·&nbsp; e7855b23
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.837</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.648</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.678</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.543</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny podcast: Hvor bliver mennesket af, når vi opgraderer kroppen med teknologi?</h4>
+        <div>
+          Leder af Catch i Helsingør, Majken Overgaard, taler om mennesker og teknologi og ikke mindst teknologi i mennesker med programchef Peter Bjerregaard fra Danmarks Teknisk Museum i den nye podcast i serien Teknolo-gi-mig-en-chance. Foto: Jesper Munch NielsenPODCAST: Nogle påstår, at menneskeracen, som vi kender den, homo sapiens, vil forsvinde i løbet af måske 100 år. Ikke udslettet af pandemier eller den slags. Nej, vi forsvinder som race på grund af den teknologiske udvikling!Meget tyder nemlig på, at vi mennesker vil opgradere vores kroppe og hjerner med kunstig intelligens og bioteknologi i så høj grad, at vi ikke længere er homo sapiens, men bliver noget nyt, noget andet. Men hvad vil det sige at være menneske?Når teknologien bliver en del af vores kroppe, hvor stopper mennesket, og hvor starter teknologien? Podcast-serien ''Teknolo-gi-mig-en-chance'' handler i dette afsnit om teknologi i mennesker, og om hvordan vi bruger teknologien til at overskride vores fysiske begrænsninger for at gøre ting, vi ellers ikke ville kunne.Bag mikrofonerne i denne udgave af Danmarks rareste podcast om teknologi og mennesker sidder programleder på Catch, Majken Overgaard, programchef ved Danmarks Tekniske Museum, Peter Bjerregaard og politisk redaktør Jesper Munch Nielsen fra Helsingør Dagblad.I en afslappet stemning reflekterer eksperterne over teknologiens betydning på menneskets krop og bevidsthed. Og som altid bringes forskellige eksempler i spil om både fremtidens og fortidens teknologier - lige fra en smart-stok til blinde mennesker til computerchip-implantater i hjernen.
+        </div>
+        <footer>
+          <em>Helsingordagblad.dk</em>
+          &nbsp;·&nbsp; 2021-02-04
+          &nbsp;·&nbsp; e81c94e4
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.986</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.654</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.513</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Hver tredje nye løsning i det offentlige er teknologisk</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra Center for Offentlig InnovationKunstig intelligens, virtual reality, brug af sensorer: Mange forskellige teknologier tages i brug, når offentlige arbejdspladser udvikler nye løsninger.Én ud af tre af de offentlige innovationer er teknologiske. Enten ved at innovationen i sig selv er en teknologisk løsning, eller ved at teknologi er en vigtig del af innovationen.Det viser helt nye tal fra Innovationsbarometeret - den officielle statistik over offentlig innovation, som Center for Offentlig Innovation (COI) udarbejder sammen med Danmarks Statistik.Innovationer, der bygger på teknologi, skaber oftere højere effektivitet. De er også oftere skabt i samarbejde med andre uden for arbejdspladsen, viser de nye tal.&quot;Tallene viser, at offentlig innovation er meget andet end teknologi - men også at der er godt gang i digitalisering og teknologi ude på de offentlige arbejdspladser. Det er godt nyt. For teknologiske innovationer kan forbedre opgaveløsningen og gøre den mere effektiv. Det er blot vigtigt, at man husker - hvis borgerne er slutbrugerne af løsningen - at involvere borgerne i udvikling og test af løsningen,&quot; siger Majken Præstbro, relationschef i COI.Et eksempel på en teknologisk innovation, som skaber værdi, er Aarhus Universitetshospitals brug af iPads med augmented reality-spil. Spillene afleder børns opmærksomhed fra hospitalssituationer, der kan være forbundet med angst eller smerte.Et andet eksempel er Vallensbæk Kommune, som anvender GPS-signaler fra køretøjer til fleksibel styring af trafiksignaler - hvilket skaber bedre flow, mindsker ventetid og bidrager til at nedbringe den trafikale udledning af CO2.Begge eksempler, den nye statistik samt gode råd kan findes i udgivelsen 'Teknologi i borgernes tjeneste - Innovationsbarometeret', som udkommer i dag.&quot;Vi ved, at andre lande kigger til os, når de vil innovere med teknologi, for vi har mange års erfaring med at indhente og bruge data til at bygge systemer, som borgerne finder relevante og har tillid til. Men vi skal ikke hvile på laurbærrene. Det er helt nødvendigt, at borgerne fortsat er i centrum i udviklingen og implementeringen af digitale og teknologiske innovationer, og at offentlige arbejdspladser samarbejder med private virksomheder og andre, som kan bidrage med nyeste viden og teknologier,&quot; siger Majken Præstbro, relationschef i COI.FEM HURTIGE OM TEKNOLOGI OG OFFENTLIG INNOVATIONDet er første gang, der i Innovationsbarometeret spørges til brugen af teknologi i innovationsarbejdet:1. Én ud af tre (34 procent) af de offentlige innovationer består enten af teknologi eller har teknologi som en vigtig del.2. Helt ny teknologi indgår i én ud af ti (10 procent) af de offentlige innovationer.3. Når offentlig innovation indeholder teknologi, skaber seks ud af ti innovationer øget kvalitet (60 procent).4. Næsten halvdelen af de teknologiske innovationer (47 procent) øger effektiviteten.5. Lederne af otte ud af ti offentlige arbejdspladser (79 procent) oplever, at de og medarbejderne er nysgerrige på nye teknologiske løsninger og muligheder.Kilde: Teknologi i borgernes tjeneste - InnovationsbarometeretOM OFFENTLIG INNOVATION- Offentlig innovation er at gøre noget nyt i den offentlige sektor, som skaber værdi. Innovationen skal være ny for arbejdspladsen selv, men kan være brugt af andre.- Innovation kan være nye eller væsentligt ændrede serviceydelser, produkter, organisationsformer og processer eller måder at kommunikere med omverdenen på.- Værdien af offentlig innovation kan have flere former: indfrielse af politiske mål, stigende effektivitet, højere kvalitet, styrket demokrati eller øget medarbejdertilfredshed.- Otte ud af ti offentlige arbejdspladser har indført mindst én innovation i perioden 2018-2019, viser Innovationsbarometeret.- Innovationsbarometeret er den officielle statistik over offentlig innovation. Statistikken bliver lavet i samarbejde mellem Center for Offentlig Innovation og Danmarks Statistik.&amp;rarr, Læs mere om offentlig innovationKontakt:Analysechef Ole Bech Lykkebo tlf.: 61813102 email: obl@coi.dkRelationschef Majken Præstbro tlf.: 61813104 email: mmp@coi.dkKommunikationsansvarlig Paul Sauer tlf.: 61813103 email: ps@coi.dkLæs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/hver-tredje-nye-losning-i-det-offentlige-er-teknologisk?releaseId=13623145** Ovenstående pressemeddelelse er videreformidlet af Ritzau på vegne af tredjepart. Ritzau er derfor ikke ansvarlig for indholdet ** 
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2021-06-02
+          &nbsp;·&nbsp; e84b15b8
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.739</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.99</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.748</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.555</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>KL vil sætte teknologiforståelse på skoleskemaet</h4>
+        <div>
+          Teknologiforståelse skal gøres til et decideret fag i folkeskolen, mener KL. Det bør være obligatorisk at have et fag om teknologiforståelse på skoleskemaet i folkeskolen, mener Kommunernes Landsforening (KL).Det skriver SkolemonitorHvis forslaget bliver til virkelighed, vil det være første gang i flere årtier, at der bliver tilføjet en helt ny faglighed til skoleskemaet i alle landets folkeskoler.Ifølge Thomas Gyldal Petersen (S), der er formand for KL's børne- og undervisningsudvalg og borgmester i Herlev Kommune, er der god grund til, at man i skolesammenhæng begynder at fokusere mere på teknologiforståelse.»Teknologi er en helt afgørende del af børn og unges liv i dag. Vi skaber relationer til hinanden via teknologi, og det er en demokratisk opgave, at vi bliver bevidste og kritiske anvendere af teknologi. Vi er alle underlagt techgiganters algoritmer, og vi giver vores private data videre til virksomheder. Det kan være fint, men vi skal være bevidste om det,«  siger Thomas Gyldal Petersen til Skolemonitor.Det er ikke kun KL, der ønsker mere fokus på teknologi i undervisningen. Også Radikale Venstre har for nyligt foreslået, at teknologiforståelse bliver til et decideret fag. Partiet har stillet et forslag om, at afsætte 750 millioner kroner over de næste ti år til at indføre faget og til at integrere faget i andre fag.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-12-01
+          &nbsp;·&nbsp; e803cfc3
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.68</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.58</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Teknologi skal også være socialt bæredygtig</h4>
+        <div>
+          Det er efterhånden gået op for os, at vi i vores iver efter at opfinde smart teknologi kan komme til at overforbruge de ressourcer, der er til rådighed på denne planet, ligesom vi kan skabe nye problemer for miljø og klima, hvis vi udelukkende går efter en økonomisk gevinst. Men der er et tredje aspekt, som jeg mener, vi skal være mindst lige så opmærksomme på: Den teknologiske udvikling skal også være socialt bæredygtig.Hvis vi glemmer at inddrage og tilgodese den brede befolknings behov, er jeg bange for, at vi vil opleve flere tilfælde af folkelig modstand og øget opbakning til politikere, der ikke nødvendigvis har fokus på klima og miljø.Det ser vi blandt andet i USA, hvor de økonomiske problemer for mange amerikanere overtrumfer klimaproblemerne.Som rektor for Danmarks Tekniske Universitet og præsident for Akademiet for de Tekniske Videnskaber er jeg selvfølgelig overbevist om, at der ligger store muligheder for at løse de klimamæssige udfordringer, vi står med, i teknologien. Men teknologi og naturvidenskab kan ikke stå alene, det må kobles med en bredere forståelse for samfundsforhold, ligestilling og etik.Et sted, hvor teknologi og etik i særlig grad smelter sammen, er inden for udviklingen af algoritmer (opskrifter til at løse et problem af en bestemt type, red.) og kunstig intelligens. Når forskere f. eks. skaber avancerede diagnostiske værktøjer, er det utroligt vigtigt, at de gør sig klart, hvilke forudsætninger, de lægger til grund for algoritmerne, så eventuelle fordomme og stereotyper i samfundet ikke spejles i det færdige værktøj. Vi skal i det hele taget være opmærksomme på ikke kun at udvikle teknologi til de mest ressourcestærke, men også til dem med særlige behov, som samfundet ikke dækker i tilstrækkelig grad.Løsninger og hjælpemidlerI et frit samfund må vi alle forvente at blive taget alvorligt, uagtet hvilken uddannelse eller baggrund vi har. Og teknologien har en unik mulighed for at udvikle løsninger og hjælpemidler til folk, der er svækkede, det være sig af alderdom eller forskellige handicap.Teknologien kan således være med til at skabe en bedre version af verden og sørge for, at samfundet ikke oplever en masse vrede og tiloversblevne eller nedslidte personer.Vi taler så meget om Arne og hans ret til pension, men jeg tror, mange Arner ville foretrække ikke at få ondt i ryggen og så blive de fem år mere på arbejdsmarkedet. Det kunne måske lade sig gøre, hvis Arne fik et teknologisk redskab, som kunne spare ham for det tungeste arbejde. Ligeledes kunne man måske hjælpe flere unge mennesker med læsevanskeligheder ind på arbejdsmarkedet ved at udvikle visuelle i stedet for skrevne manualer.På DTU har vi gennem projektet » Technology leaving no one behind « i samarbejde med Bevica Fonden og Danske Handicaporganisationer særlig fokus på at få ingeniørstuderende til at arbejde med inklusion og tilgængelighed i forbindelse med udviklingen af nye teknologiske løsninger.Nogle gange er det måske ikke den bedste forretning eller den grønneste løsning, der skal vinde, men den, der tilgodeser et socialt bæredygtigt behov. Teknologi skal også være med til at skabe et bedre liv, hvor alle kan bidrage til samfundet efter deres formåen.Hvis vi kan følge den vej og indprente den tankegang hos vores studerende, så vil vi i sandhed leve op til grundlæggeren af DTU, H. C. Ørsteds mission: Teknisk videnskab til gavn for samfundet -eller dens mere nutidige variant: Teknologi for mennesker.I et frit samfund må vi alle forvente at blive taget alvorligt, uagtet hvilken uddannelse eller baggrund vi har. Og teknologien har en unik mulighed for at udvikle løsninger og hjælpemidler til folk, der er svækkede, det være sig af alderdom eller forskellige handicap.
+        </div>
+        <footer>
+          <em>Sjællandske Næstved</em>
+          &nbsp;·&nbsp; 2020-10-16
+          &nbsp;·&nbsp; e7f14ac2
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.931</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.537</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.622</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Computere træffer flere væsentlige beslutninger</h4>
+        <div>
+          Forandring: Big data skaber en ny type leder, der skal acceptere, at computerdatabaser er med til at træffe beslutningerne.I hvert fald ikke, hvis man vil udnytte det potentiale, som Erhvervsstyrelsen og Dansk Erhverv ser i begrebet big data, som drejer sig om at skabe et billigere, bedre og mere målrettet produkt ved hjælp af datamateriale. For i fremtiden er det klogere for lederen at få hjælp af algoritmer, der popper op på computerskærmen end blot at lytte til sin egen fornemmelse fo...Foto: Colourbox.Foto: Colourbox.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten) (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2014-03-12
+          &nbsp;·&nbsp; e44e24e6
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.965</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.845</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.63</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ritzau Plus: Så udbredt er ny teknologi i Danmark</h4>
+        <div>
+          København*Over halvdelen af danske virksomheder bruger avanceret teknologi såsom internetforbundne sensorer, satellittjenester og robotter. *Mest udbredt er det inden for handels- og transportsektoren, hvor 22 procent af virksomhederne har taget moderne teknologi - primært sensorer og satellittjenester - til sig.*Robotter er mest udbredt i de store industrivirksomheder med mindst 250 medarbejdere. 65 procent af disse har implementeret moderne maskiner.*Nutidens måske mest kontroversielle teknologi, kunstig intelligens, anvendes endnu kun af omkring 5 procent af alle danske virksomheder.Kilde: Danmarks Statistik. /ritzau/Denne nyhed må publiceres digitalt bag paywall fra d. 21/09/2018 13:30Denne nyhed publiceres ikke på NET-tjenesten
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2018-09-21
+          &nbsp;·&nbsp; e6e82e2c
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.559</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.673</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

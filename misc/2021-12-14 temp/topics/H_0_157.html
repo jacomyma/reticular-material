@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomedia Articles</title>
+    <style type="text/css">
+/*!
+ * Pico.css v1.3.3 (https://picocss.com)
+ * Copyright 2019-2021 - Licensed under MIT
+ */:root{--font-family:system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--line-height:1.5;--font-weight:400;--font-size:16px;--border-radius:.25rem;--border-width:1px;--outline-width:3px;--spacing:1rem;--typography-spacing-vertical:1.5rem;--block-spacing-vertical:calc(var(--spacing) * 2);--block-spacing-horizontal:var(--spacing);--grid-spacing-vertical:0;--grid-spacing-horizontal:var(--spacing);--form-element-spacing-vertical:.75rem;--form-element-spacing-horizontal:1rem;--transition:.2s ease-in-out}@media (min-width:576px){:root{--font-size:17px}}@media (min-width:768px){:root{--font-size:18px}}@media (min-width:992px){:root{--font-size:19px}}@media (min-width:1200px){:root{--font-size:20px}}@media (min-width:576px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 2.5)}}@media (min-width:768px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3)}}@media (min-width:992px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 3.5)}}@media (min-width:1200px){body>footer,body>header,body>main,section{--block-spacing-vertical:calc(var(--spacing) * 4)}}@media (min-width:576px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.25)}}@media (min-width:768px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.5)}}@media (min-width:992px){article{--block-spacing-horizontal:calc(var(--spacing) * 1.75)}}@media (min-width:1200px){article{--block-spacing-horizontal:calc(var(--spacing) * 2)}}a{--text-decoration:none}a.contrast,a.secondary{--text-decoration:underline}small{--font-size:0.875em}h1,h2,h3,h4,h5,h6{--font-weight:700}h1{--font-size:2rem;--typography-spacing-vertical:3rem}h2{--font-size:1.75rem;--typography-spacing-vertical:2.625rem}h3{--font-size:1.5rem;--typography-spacing-vertical:2.25rem}h4{--font-size:1.25rem;--typography-spacing-vertical:1.874rem}h5{--font-size:1.125rem;--typography-spacing-vertical:1.6875rem}[type=checkbox],[type=radio]{--border-width:2px}[type=checkbox][role=switch]{--border-width:3px}thead td,thead th{--border-width:3px}:not(thead)>*>td{--font-size:0.875em}code,kbd,pre,samp{--font-family:"Menlo","Consolas","Roboto Mono","Ubuntu Monospace","Noto Mono","Oxygen Mono","Liberation Mono",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}kbd{--font-weight:bolder}:root:not([data-theme=dark]),[data-theme=light]{color-scheme:light;--background-color:#FFF;--color:#415462;--h1-color:#1b2832;--h2-color:#23333e;--h3-color:#2c3d49;--h4-color:#374956;--h5-color:#415462;--h6-color:#4d606d;--muted-color:#73828c;--muted-border-color:#edf0f3;--primary:#1095c1;--primary-hover:#08769b;--primary-focus:rgba(16,149,193,0.125);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#415462;--secondary-focus:rgba(89,107,120,0.125);--secondary-inverse:#FFF;--contrast:#1b2832;--contrast-hover:#000;--contrast-focus:rgba(89,107,120,0.125);--contrast-inverse:#FFF;--mark-background-color:#fff2ca;--mark-color:#543a25;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:transparent;--form-element-border-color:#a2afb9;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:transparent;--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#d5dce2;--form-element-disabled-border-color:#a2afb9;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#C62828;--form-element-invalid-active-border-color:#B71C1C;--form-element-valid-border-color:#388E3C;--form-element-valid-active-border-color:#2E7D32;--switch-background-color:#bbc6ce;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#d5dce2;--range-active-border-color:#bbc6ce;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:#f6f8f9;--code-background-color:#edf0f3;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#b34d80;--code-property-color:#3d888f;--code-value-color:#998866;--code-comment-color:#a2afb9;--accordion-border-color:var(--muted-border-color);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:var(--background-color);--card-border-color:var(--muted-border-color);--card-box-shadow:0 0.125rem 1rem rgba(27,40,50,0.04),0 0.125rem 2rem rgba(27,40,50,0.08),0 0 0 0.0625rem rgba(27,40,50,0.024);--card-sectionning-background-color:#fafbfc;--progress-background-color:#d5dce2;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(56, 142, 60, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(198, 40, 40, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}@media only screen and (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}}[data-theme=dark]{color-scheme:dark;--background-color:#11191f;--color:#bbc6ce;--h1-color:#edf0f3;--h2-color:#e1e6ea;--h3-color:#d5dce2;--h4-color:#c8d1d8;--h5-color:#bbc6ce;--h6-color:#aebbc3;--muted-color:#73828c;--muted-border-color:#1f2d38;--primary:#1095c1;--primary-hover:#1ab3e6;--primary-focus:rgba(16,149,193,0.25);--primary-inverse:#FFF;--secondary:#596b78;--secondary-hover:#73828c;--secondary-focus:rgba(115,130,140,0.25);--secondary-inverse:#FFF;--contrast:#edf0f3;--contrast-hover:#FFF;--contrast-focus:rgba(115,130,140,0.25);--contrast-inverse:#000;--mark-background-color:#d0c284;--mark-color:#11191f;--ins-color:#388E3C;--del-color:#C62828;--blockquote-border-color:var(--muted-border-color);--blockquote-footer-color:var(--muted-color);--button-box-shadow:0 0 0 rgba(0,0,0,0);--button-hover-box-shadow:0 0 0 rgba(0,0,0,0);--form-element-background-color:#11191f;--form-element-border-color:#374956;--form-element-color:var(--color);--form-element-placeholder-color:var(--muted-color);--form-element-active-background-color:var(--form-element-background-color);--form-element-active-border-color:var(--primary);--form-element-focus-color:var(--primary-focus);--form-element-disabled-background-color:#2c3d49;--form-element-disabled-border-color:#415462;--form-element-disabled-opacity:.5;--form-element-invalid-border-color:#B71C1C;--form-element-invalid-active-border-color:#C62828;--form-element-valid-border-color:#2E7D32;--form-element-valid-active-border-color:#388E3C;--switch-background-color:#374956;--switch-color:var(--primary-inverse);--switch-checked-background-color:var(--primary);--range-border-color:#23333e;--range-active-border-color:#2c3d49;--range-thumb-border-color:var(--background-color);--range-thumb-color:var(--secondary);--range-thumb-hover-color:var(--secondary-hover);--range-thumb-active-color:var(--primary);--table-border-color:var(--muted-border-color);--table-row-stripped-background-color:rgba(115,130,140,0.05);--code-background-color:#17232c;--code-color:var(--muted-color);--code-kbd-background-color:var(--contrast);--code-kbd-color:var(--contrast-inverse);--code-tag-color:#a65980;--code-property-color:#599fa6;--code-value-color:#8c8473;--code-comment-color:#4d606d;--accordion-border-color:var(--muted-border-color);--accordion-active-summary-color:var(--primary);--accordion-close-summary-color:var(--color);--accordion-open-summary-color:var(--muted-color);--card-background-color:#141e25;--card-border-color:#11191f;--card-box-shadow:0 0.125rem 1rem rgba(0,0,0,0.06),0 0.125rem 2rem rgba(0,0,0,0.12),0 0 0 0.0625rem rgba(0,0,0,0.036);--card-sectionning-background-color:#17232c;--progress-background-color:#23333e;--progress-color:var(--primary);--loading-spinner-opacity:.5;--tooltip-background-color:var(--contrast);--tooltip-color:var(--contrast-inverse);--icon-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");--icon-date:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");--icon-time:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");--icon-search:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(162, 175, 185, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");--icon-checkbox:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-minus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");--icon-valid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(46, 125, 50, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");--icon-invalid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(183, 28, 28, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E")}*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tab-size:4;-ms-text-size-adjust:100%;background-color:var(--background-color);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight);line-height:var(--line-height);text-rendering:optimizeLegibility;cursor:default}main{display:block}body{width:100%;margin:0}body>footer,body>header,body>main{width:100%;margin-right:auto;margin-left:auto;padding:var(--block-spacing-vertical) 0}.container,.container-fluid{width:100%;margin-right:auto;margin-left:auto;padding-right:var(--spacing);padding-left:var(--spacing)}@media (min-width:576px){.container{max-width:510px;padding-right:0;padding-left:0}}@media (min-width:768px){.container{max-width:700px}}@media (min-width:992px){.container{max-width:920px}}@media (min-width:1200px){.container{max-width:1130px}}section{margin-bottom:var(--block-spacing-vertical)}.grid{grid-column-gap:var(--grid-spacing-horizontal);grid-row-gap:var(--grid-spacing-vertical);display:grid;grid-template-columns:1fr;margin:0}@media (min-width:992px){.grid{grid-template-columns:repeat(auto-fit,minmax(0%,1fr))}}.grid>*{min-width:0}figure{display:block;margin:0;padding:0;overflow-x:auto}figure figcaption{padding:calc(var(--spacing) / 2) 0;color:var(--muted-color)}b,strong{font-weight:bolder}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}address,blockquote,dl,figure,form,ol,p,pre,table,ul{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-size:1rem;font-style:normal}a{--color:var(--primary);--background-color:transparent;outline:none;background-color:var(--background-color);color:var(--color);text-decoration:var(--text-decoration);transition:background-color var(--transition),color var(--transition),text-decoration var(--transition),box-shadow var(--transition)}a:active,a:focus,a:hover{--color:var(--primary-hover);--text-decoration:underline}a:focus{--background-color:var(--primary-focus)}a.secondary{--color:var(--secondary)}a.secondary:active,a.secondary:focus,a.secondary:hover{--color:var(--secondary-hover)}a.secondary:focus{--background-color:var(--secondary-focus)}a.contrast{--color:var(--contrast)}a.contrast:active,a.contrast:focus,a.contrast:hover{--color:var(--contrast-hover)}a.contrast:focus{--background-color:var(--contrast-focus)}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:var(--typography-spacing-vertical);color:var(--color);font-family:var(--font-family);font-size:var(--font-size);font-weight:var(--font-weight)}h1{--color:var(--h1-color)}h2{--color:var(--h2-color)}h3{--color:var(--h3-color)}h4{--color:var(--h4-color)}h5{--color:var(--h5-color)}h6{--color:var(--h6-color)}address~h1,address~h2,address~h3,address~h4,address~h5,address~h6,blockquote~h1,blockquote~h2,blockquote~h3,blockquote~h4,blockquote~h5,blockquote~h6,dl~h1,dl~h2,dl~h3,dl~h4,dl~h5,dl~h6,figure~h1,figure~h2,figure~h3,figure~h4,figure~h5,figure~h6,form~h1,form~h2,form~h3,form~h4,form~h5,form~h6,ol~h1,ol~h2,ol~h3,ol~h4,ol~h5,ol~h6,pre~h1,pre~h2,pre~h3,pre~h4,pre~h5,pre~h6,p~h1,p~h2,p~h3,p~h4,p~h5,p~h6,table~h1,table~h2,table~h3,table~h4,table~h5,table~h6,ul~h1,ul~h2,ul~h3,ul~h4,ul~h5,ul~h6{margin-top:var(--typography-spacing-vertical)}hgroup{margin-bottom:var(--typography-spacing-vertical)}hgroup>*{margin-bottom:0}hgroup>:last-child{--color:var(--muted-color);--font-weight:unset;font-family:unset;font-size:1rem}p{margin-bottom:var(--typography-spacing-vertical)}small{font-size:var(--font-size)}ol,ul{padding-left:var(--spacing)}ol li,ul li{margin-bottom:calc(var(--typography-spacing-vertical) / 4)}ul li{list-style:square}mark{padding:.125rem .25rem;background-color:var(--mark-background-color);color:var(--mark-color);vertical-align:middle}blockquote{display:block;margin:var(--typography-spacing-vertical) 0;padding:var(--spacing);border-left:0.25rem solid var(--blockquote-border-color)}blockquote footer{margin-top:calc(var(--typography-spacing-vertical) / 2);color:var(--blockquote-footer-color)}abbr[title]{border-bottom:1px dotted;text-decoration:none;cursor:help}ins{color:var(--ins-color);text-decoration:none}del{color:var(--del-color)}::selection{background-color:var(--primary-focus)}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}iframe{border-style:none}img{max-width:100%;height:auto;border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button{margin:0;overflow:visible;font-family:inherit;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}button{display:block;width:100%;margin-bottom:var(--spacing)}a[role=button]{display:inline-block;text-decoration:none}a[role=button],button,input[type=button],input[type=reset],input[type=submit]{--background-color:var(--primary);--border-color:var(--primary);--color:var(--primary-inverse);--box-shadow:var(--button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}a[role=button]:active,a[role=button]:focus,a[role=button]:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover{--background-color:var(--primary-hover);--border-color:var(--primary-hover);--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0))}a[role=button]:focus,button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--primary-focus)}input[type=reset]{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}input[type=reset]:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].secondary,button.secondary,input[type=button].secondary,input[type=reset].secondary,input[type=submit].secondary{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);cursor:pointer}a[role=button].secondary:active,a[role=button].secondary:focus,a[role=button].secondary:hover,button.secondary:active,button.secondary:focus,button.secondary:hover,input[type=button].secondary:active,input[type=button].secondary:focus,input[type=button].secondary:hover,input[type=reset].secondary:active,input[type=reset].secondary:focus,input[type=reset].secondary:hover,input[type=submit].secondary:active,input[type=submit].secondary:focus,input[type=submit].secondary:hover{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}a[role=button].secondary:focus,button.secondary:focus,input[type=button].secondary:focus,input[type=reset].secondary:focus,input[type=submit].secondary:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--secondary-focus)}a[role=button].contrast,button.contrast,input[type=button].contrast,input[type=reset].contrast,input[type=submit].contrast{--background-color:var(--contrast);--border-color:var(--contrast);--color:var(--contrast-inverse)}a[role=button].contrast:active,a[role=button].contrast:focus,a[role=button].contrast:hover,button.contrast:active,button.contrast:focus,button.contrast:hover,input[type=button].contrast:active,input[type=button].contrast:focus,input[type=button].contrast:hover,input[type=reset].contrast:active,input[type=reset].contrast:focus,input[type=reset].contrast:hover,input[type=submit].contrast:active,input[type=submit].contrast:focus,input[type=submit].contrast:hover{--background-color:var(--contrast-hover);--border-color:var(--contrast-hover)}a[role=button].contrast:focus,button.contrast:focus,input[type=button].contrast:focus,input[type=reset].contrast:focus,input[type=submit].contrast:focus{--box-shadow:var(--button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--outline-width) var(--contrast-focus)}a[role=button].outline,button.outline,input[type=button].outline,input[type=reset].outline,input[type=submit].outline{--background-color:transparent;--color:var(--primary)}a[role=button].outline:active,a[role=button].outline:focus,a[role=button].outline:hover,button.outline:active,button.outline:focus,button.outline:hover,input[type=button].outline:active,input[type=button].outline:focus,input[type=button].outline:hover,input[type=reset].outline:active,input[type=reset].outline:focus,input[type=reset].outline:hover,input[type=submit].outline:active,input[type=submit].outline:focus,input[type=submit].outline:hover{--background-color:transparent;--color:var(--primary-hover)}a[role=button].outline.secondary,button.outline.secondary,input[type=button].outline.secondary,input[type=reset].outline.secondary,input[type=submit].outline.secondary{--color:var(--secondary)}a[role=button].outline.secondary:active,a[role=button].outline.secondary:focus,a[role=button].outline.secondary:hover,button.outline.secondary:active,button.outline.secondary:focus,button.outline.secondary:hover,input[type=button].outline.secondary:active,input[type=button].outline.secondary:focus,input[type=button].outline.secondary:hover,input[type=reset].outline.secondary:active,input[type=reset].outline.secondary:focus,input[type=reset].outline.secondary:hover,input[type=submit].outline.secondary:active,input[type=submit].outline.secondary:focus,input[type=submit].outline.secondary:hover{--color:var(--secondary-hover)}a[role=button].outline.contrast,button.outline.contrast,input[type=button].outline.contrast,input[type=reset].outline.contrast,input[type=submit].outline.contrast{--color:var(--contrast)}a[role=button].outline.contrast:active,a[role=button].outline.contrast:focus,a[role=button].outline.contrast:hover,button.outline.contrast:active,button.outline.contrast:focus,button.outline.contrast:hover,input[type=button].outline.contrast:active,input[type=button].outline.contrast:focus,input[type=button].outline.contrast:hover,input[type=reset].outline.contrast:active,input[type=reset].outline.contrast:focus,input[type=reset].outline.contrast:hover,input[type=submit].outline.contrast:active,input[type=submit].outline.contrast:focus,input[type=submit].outline.contrast:hover{--color:var(--contrast-hover)}a[role=button][disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;pointer-events:none}input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:1rem;letter-spacing:inherit;line-height:var(--line-height)}input{overflow:visible}select{text-transform:none}legend{max-width:100%;padding:0;color:inherit;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:none}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}[type=file],[type=range]{padding:0;border-width:0}input:not([type=checkbox]):not([type=radio]):not([type=range]){height:calc((1rem * var(--line-height)) + (var(--form-element-spacing-vertical) * 2) + (var(--border-width) * 2))}fieldset{margin:0;margin-bottom:var(--spacing);padding:0;border:0}fieldset legend,label{display:block;margin-bottom:calc(var(--spacing) / 4);vertical-align:middle}input:not([type=checkbox]):not([type=radio]),select,textarea{display:block;width:100%}input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);vertical-align:middle}input,select,textarea{--background-color:var(--form-element-background-color);--border-color:var(--form-element-border-color);--color:var(--form-element-color);--box-shadow:none;border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-weight:var(--font-weight);transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([type=checkbox]):not([type=radio]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--background-color:var(--form-element-active-background-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):active,input:not([type=submit]):not([type=button]):not([type=reset]):not([role=switch]):not([readonly]):focus,select:active,select:focus,textarea:active,textarea:focus{--border-color:var(--form-element-active-border-color)}input:not([type=submit]):not([type=button]):not([type=reset]):not([type=range]):not([type=file]):not([readonly]):focus,select:focus,textarea:focus{--box-shadow:0 0 0 var(--outline-width) var(--form-element-focus-color)}input:not([type=submit]):not([type=button]):not([type=reset])[disabled],select[disabled],textarea[disabled]{--background-color:var(--form-element-disabled-background-color);--border-color:var(--form-element-disabled-border-color);opacity:var(--form-element-disabled-opacity)}input[aria-invalid],select[aria-invalid],textarea[aria-invalid]{padding-right:2rem;background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input[aria-invalid=false],select[aria-invalid=false],textarea[aria-invalid=false]{--border-color:var(--form-element-valid-border-color);background-image:var(--icon-valid)}input[aria-invalid=false]:active,input[aria-invalid=false]:focus,select[aria-invalid=false]:active,select[aria-invalid=false]:focus,textarea[aria-invalid=false]:active,textarea[aria-invalid=false]:focus{--border-color:var(--form-element-valid-active-border-color)!important}input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{--border-color:var(--form-element-invalid-border-color);background-image:var(--icon-invalid)}input[aria-invalid=true]:active,input[aria-invalid=true]:focus,select[aria-invalid=true]:active,select[aria-invalid=true]:focus,textarea[aria-invalid=true]:active,textarea[aria-invalid=true]:focus{--border-color:var(--form-element-invalid-active-border-color)!important}input::-webkit-input-placeholder,input::placeholder,select:invalid,textarea::-webkit-input-placeholder,textarea::placeholder{color:var(--form-element-placeholder-color);opacity:1}input:not([type=checkbox]):not([type=radio]),select,textarea{margin-bottom:var(--spacing)}select::-ms-expand{border:0;background-color:transparent}select:not([multiple]):not([size]){padding-right:calc(var(--form-element-spacing-horizontal) + 1.5rem);background-image:var(--icon-chevron);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}input+small,select+small,textarea+small{display:block;width:100%;margin-top:calc(var(--spacing) * -0.75);margin-bottom:var(--spacing);color:var(--muted-color)}label>input,label>select,label>textarea{margin-top:calc(var(--spacing) / 4)}[type=checkbox],[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:1.25em;height:1.25em;margin-top:-.125em;margin-right:.375em;border-width:var(--border-width);vertical-align:middle;cursor:pointer}[type=checkbox]::-ms-check,[type=radio]::-ms-check{display:none}[type=checkbox]:checked,[type=checkbox]:checked:active,[type=checkbox]:checked:focus,[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-checkbox);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=checkbox]~label,[type=radio]~label{display:inline-block;margin-right:.375em;margin-bottom:0;cursor:pointer}[type=checkbox]:indeterminate{--background-color:var(--primary);--border-color:var(--primary);background-image:var(--icon-minus);background-position:center;background-repeat:no-repeat;background-size:.75em auto}[type=radio]{border-radius:50%}[type=radio]:checked,[type=radio]:checked:active,[type=radio]:checked:focus{--background-color:var(--primary-inverse);border-width:.35em;background-image:none}[type=checkbox][role=switch]{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color);--color:var(--switch-color);width:2.25em;height:1.25em;border:var(--border-width) solid var(--border-color);border-radius:1.25em;background-color:var(--background-color);line-height:1.25em}[type=checkbox][role=switch]:focus{--background-color:var(--switch-background-color);--border-color:var(--switch-background-color)}[type=checkbox][role=switch]:checked{--background-color:var(--switch-checked-background-color);--border-color:var(--switch-checked-background-color)}[type=checkbox][role=switch]:before{display:block;width:calc(1.25em - (var(--border-width) * 2));height:100%;border-radius:50%;background-color:var(--color);content:'';transition:margin 0.1s ease-in-out}[type=checkbox][role=switch]:checked{background-image:none}[type=checkbox][role=switch]:checked:before{margin-right:0;margin-left:calc(1.125em - var(--border-width))}[type=color]::-webkit-color-swatch-wrapper{padding:0}[type=color]::-moz-focus-inner{padding:0}[type=color]::-webkit-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=color]::-moz-color-swatch{border:none;border-radius:calc(var(--border-radius) / 2)}[type=date],[type=datetime-local],[type=month],[type=time],[type=week]{background-image:var(--icon-date);background-position:center right .75rem;background-repeat:no-repeat;background-size:1rem auto}[type=date]::-webkit-calendar-picker-indicator,[type=datetime-local]::-webkit-calendar-picker-indicator,[type=month]::-webkit-calendar-picker-indicator,[type=time]::-webkit-calendar-picker-indicator,[type=week]::-webkit-calendar-picker-indicator{opacity:0}[type=time]{background-image:var(--icon-time)}[type=file]{--color:var(--muted-color);padding:calc(var(--form-element-spacing-vertical)/2) 0;border:none;border-radius:0;background:none}[type=file]::-webkit-file-upload-button{--background-color:var(--secondary);--border-color:var(--secondary);--color:var(--secondary-inverse);margin-right:calc(var(--spacing) / 2);padding:calc(var(--form-element-spacing-vertical) / 2) calc(var(--form-element-spacing-horizontal) / 2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);outline:none;background-color:var(--background-color);box-shadow:var(--box-shadow);color:var(--color);font-size:1rem;font-weight:var(--font-weight);line-height:var(--line-height);text-align:center;cursor:pointer;transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)}[type=file]:active,[type=file]:focus,[type=file]:hover{--color:var(--color);border:none;background:none}[type=file]:active::-webkit-file-upload-button,[type=file]:focus::-webkit-file-upload-button,[type=file]:hover::-webkit-file-upload-button{--background-color:var(--secondary-hover);--border-color:var(--secondary-hover)}[type=range]{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:1.25rem;background:transparent}[type=range]::-webkit-slider-runnable-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-moz-range-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-track{width:100%;height:0.25rem;border-radius:var(--border-radius);background-color:var(--range-border-color);transition:background-color var(--transition),box-shadow var(--transition)}[type=range]::-ms-fill-lower{background-color:var(--border-radius)}[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-moz-range-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]::-ms-thumb{-webkit-appearance:none;width:1.25rem;height:1.25rem;margin-top:-0.5rem;border:2px solid var(--range-thumb-border-color);border-radius:50%;background-color:var(--range-thumb-color);cursor:pointer;transition:background-color var(--transition),transform var(--transition)}[type=range]:focus,[type=range]:hover{--range-border-color:var(--range-active-border-color);--range-thumb-color:var(--range-thumb-hover-color)}[type=range]:active{--range-thumb-color:var(--range-thumb-active-color)}[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}[type=range]:active::-moz-range-thumb{transform:scale(1.25)}[type=range]:active::-ms-thumb{transform:scale(1.25)}[type=search]{border-radius:5rem;padding-left:calc(var(--form-element-spacing-horizontal) + 1.75rem)!important;background-image:var(--icon-search);background-position:center left 1.125rem;background-repeat:no-repeat;background-size:1rem auto}[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}table{width:100%;border-color:inherit;border-collapse:collapse;border-spacing:0;text-indent:0}td,th{padding:calc(var(--spacing) / 2) var(--spacing);border-bottom:var(--border-width) solid var(--table-border-color);color:var(--color);font-size:var(--font-size);font-weight:var(--font-weight);text-align:left}tr{background-color:var(--background-color)}table[role=grid] tbody tr:nth-child(odd){--background-color:var(--table-row-stripped-background-color)}code,kbd,pre,samp{font-family:var(--font-family);font-size:.875rem}pre{-ms-overflow-style:scrollbar;overflow:auto}code,kbd,pre{background:var(--code-background-color);color:var(--code-color);font-weight:var(--font-weight);line-height:initial}code,kbd{display:inline-block;padding:.375rem .5rem;border-radius:var(--border-radius)}pre{display:block;margin-bottom:var(--spacing);padding:var(--spacing);overflow-x:auto;background:var(--code-background-color)}pre>code{display:block;padding:0;background:transparent;font-size:14px;line-height:var(--line-height)}code b{color:var(--code-tag-color);font-weight:var(--font-weight)}code i{color:var(--code-property-color);font-style:normal}code u{color:var(--code-value-color);text-decoration:none}code em{color:var(--code-comment-color);font-style:normal}kbd{background-color:var(--code-kbd-background-color);color:var(--code-kbd-color);vertical-align:middle}hr{box-sizing:content-box;height:0;overflow:visible;border:none;border-top:1px solid var(--muted-border-color)}[hidden],template{display:none}dialog{display:block;position:absolute;right:0;left:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;margin:auto;padding:1em;border:solid;background-color:white;color:black}dialog:not([open]){display:none}canvas{display:inline-block}details{display:block;margin-bottom:var(--spacing);padding-bottom:calc(var(--spacing) / 2);border-bottom:var(--border-width) solid var(--accordion-border-color)}details summary{color:var(--accordion-close-summary-color);line-height:1rem;list-style-type:none;list-style-type:none;cursor:pointer;transition:color var(--transition)}details summary::-webkit-details-marker{display:none}details summary::marker{display:none}details summary::-moz-list-bullet{list-style-type:none}details summary:after{display:inline-block;width:1rem;height:1rem;float:right;transform:rotate(-90deg);background-image:var(--icon-chevron);background-position:center;background-repeat:no-repeat;background-size:1rem auto;content:'';transition:transform var(--transition)}details summary:focus{outline:none;color:var(--accordion-active-summary-color)}details summary~*{margin-top:calc(var(--spacing) / 2)}details summary~*~*{margin-top:0}details[open]>summary{margin-bottom:calc(var(--spacing) / 4)}details[open]>summary:not(:focus){color:var(--accordion-open-summary-color)}details[open]>summary:after{transform:rotate(0)}article{margin:var(--block-spacing-vertical) 0;padding:var(--block-spacing-vertical) var(--block-spacing-horizontal);overflow:hidden;border-radius:var(--border-radius);background:var(--card-background-color);box-shadow:var(--card-box-shadow)}article>footer,article>header,article>pre{margin-right:calc(var(--block-spacing-horizontal) * -1);margin-left:calc(var(--block-spacing-horizontal) * -1);padding:calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);background-color:var(--card-sectionning-background-color)}article>header{margin-top:calc(var(--block-spacing-vertical) * -1);margin-bottom:var(--block-spacing-vertical);border-bottom:var(--border-width) solid var(--card-border-color)}article>footer,article>pre{margin-top:var(--block-spacing-vertical);margin-bottom:calc(var(--block-spacing-vertical) * -1);border-top:var(--border-width) solid var(--card-border-color)}nav,nav ul{display:flex}nav{justify-content:space-between}nav ol,nav ul{align-items:center;margin-bottom:0;padding:0;list-style:none}nav ol:first-of-type,nav ul:first-of-type{margin-left:calc(var(--spacing) * -0.5)}nav ol:last-of-type,nav ul:last-of-type{margin-right:calc(var(--spacing) * -0.5)}nav li{display:inline-block;margin:0;padding:var(--spacing) calc(var(--spacing) / 2)}nav li>*,nav li>input:not([type=checkbox]):not([type=radio]){margin-bottom:0}nav a{display:block;margin:calc(var(--spacing) * -1) calc(var(--spacing) * -0.5);padding:var(--spacing) calc(var(--spacing) / 2);border-radius:var(--border-radius);text-decoration:none}nav a:active,nav a:focus,nav a:hover{text-decoration:none}aside li,aside nav,aside ol,aside ul{display:block}aside li{padding:calc(var(--spacing) / 2)}aside li a{margin:calc(var(--spacing) * -0.5);padding:calc(var(--spacing) / 2)}progress{display:inline-block;vertical-align:baseline}progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:inline-block;width:100%;height:.5rem;margin-bottom:calc(var(--spacing) / 2);overflow:hidden;border:0;border-radius:var(--border-radius);background-color:var(--progress-background-color);color:var(--progress-color)}progress::-webkit-progress-bar{border-radius:var(--border-radius);background:transparent}progress[value]::-webkit-progress-value{background-color:var(--progress-color)}progress::-moz-progress-bar{background-color:var(--progress-color)}@media (prefers-reduced-motion:no-preference){progress:indeterminate{background:var(--progress-background-color) linear-gradient(to right,var(--progress-color) 30%,var(--progress-background-color) 30%) top left/150% 150% no-repeat;animation:progressIndeterminate 1s linear infinite}progress:indeterminate[value]::-webkit-progress-value{background-color:transparent}progress:indeterminate::-moz-progress-bar{background-color:transparent}}@keyframes progressIndeterminate{0%{background-position:200% 0}to{background-position:-200% 0}}[aria-busy=true]{cursor:progress}[aria-busy=true]:not(input):not(select):not(textarea):before{display:inline-block;width:1em;height:1em;border:0.1875em solid currentColor;border-radius:1em;border-right-color:transparent;vertical-align:text-bottom;vertical-align:-.125em;animation:spinner 0.75s linear infinite;content:'';opacity:var(--loading-spinner-opacity)}[aria-busy=true]:not(input):not(select):not(textarea):not(:empty):before{margin-right:calc(var(--spacing) / 2)}[aria-busy=true]:not(input):not(select):not(textarea):empty{text-align:center}a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true]{pointer-events:none}@keyframes spinner{to{transform:rotate(360deg)}}[data-tooltip]{position:relative}[data-tooltip]:not(a):not(button):not(input){border-bottom:1px dotted;text-decoration:none;cursor:help}[data-tooltip]:after,[data-tooltip]:before{display:block;z-index:99;position:absolute;bottom:100%;left:50%;padding:.25rem .5rem;overflow:hidden;transform:translate(-50%,-0.25rem);border-radius:var(--border-radius);background:var(--tooltip-background-color);color:var(--tooltip-color);font-size:.875rem;font-style:normal;font-weight:var(--font-weight);text-decoration:none;text-overflow:ellipsis;white-space:nowrap;content:attr(data-tooltip);opacity:0;pointer-events:none}[data-tooltip]:after{padding:0;transform:translate(-50%,0rem);border-top:.3rem solid;border-right:.3rem solid transparent;border-left:.3rem solid transparent;border-radius:0;background-color:transparent;color:var(--tooltip-background-color);content:''}[data-tooltip]:focus:after,[data-tooltip]:focus:before,[data-tooltip]:hover:after,[data-tooltip]:hover:before{opacity:1;animation-name:slide;animation-duration:.2s}[data-tooltip]:focus:after,[data-tooltip]:hover:after{animation-name:slideCaret}@keyframes slide{0%{transform:translate(-50%,0.75rem);opacity:0}to{transform:translate(-50%,-0.25rem);opacity:1}}@keyframes slideCaret{0%{opacity:0}50%{transform:translate(-50%,-0.25rem);opacity:0}to{transform:translate(-50%,0rem);opacity:1}}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}[tabindex],a,area,button,input,label,select,summary,textarea{-ms-touch-action:manipulation}@media (prefers-reduced-motion:reduce){:not([aria-busy=true]),:not([aria-busy=true]):after,:not([aria-busy=true]):before{background-attachment:initial!important;animation-duration:1ms!important;animation-delay:-1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-delay:0s!important;transition-duration:0s!important}}
+    </style>
+    <style type="text/css">
+      article div {
+        font-size: 1.15em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9fafb;">
+    <main class="container">
+      <nav>
+        <ul>
+          <li><a href="../index.html">← Topic list</a></li>
+        </ul>
+      </nav>
+      <!-- <h1>Infomedia Articles Selection: 50 articles</h1> -->
+      <h1>H_0_157 <kbd>H_0_157</kbd></h1>
+      <h3>Words (top 25)</h3>
+      <div style="margin:0px -12px">
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indsamlingen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lovligt</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indblandet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mail</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>skjule</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>teleselskaber</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>pet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>interpol</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>eu-domstolen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ansigtsgenkendelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hemmelig</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>misbruge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uforvarende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>register</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>henvendelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stjålet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>afgørelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>legitime</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lagret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mærkning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>board</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udlevere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>firewall</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>verificere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>database</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>snyd</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>cnet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>angreb</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>henviste</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>mobildata</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lokationsdata</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sårbarhed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ansigtsgenkendelsesteknologi</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>indlægget</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opdrag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>privacy</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>aflyttet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uddybe</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>formodede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>postnummer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>gennemskuelighed</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>csis</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>&quot;dem</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>besiddelse</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>critical</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>læk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>opretter</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rigspolitiet</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sikkerhedsforanstaltning</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>box'</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ansøger</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>advarsler</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>enkeltpersoners</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>påvirkningen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sikkerheds</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>oregon</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vilkårlige</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>.ifølge</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>vogel</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>forbryder</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>efterforskningen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>hændelsen</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>datamæglere</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>betjentene</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>lau</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nemid</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>nøden</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>it-sikkerhedsfolk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rails</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ping</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>it-politisk</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>fyldestgørende</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>ag</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>id-nummer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sikkerhedsproblemer</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>kriminelles</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>adresser</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>rotterdam</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>keith</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>sløset</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>matchede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spærret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>videresender</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>stiften</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>wu</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>threat</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>spærrede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>uautoriserede</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>udskrift</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>banneret</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>specialkonsulent</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+        <span style="font-size:11.32pt; padding:0px 12px"><strong>respondable</strong>&nbsp;<span style="font-size:.5em">1</span></span>
+      </div>
+      <br><br>
+      <h3>Articles (top 50)</h3>
+      Query:
+      <pre>SELECT * FROM articles WHERE articles.dupeKeep=1 AND articles.sizeKeep=1 ORDER BY H_0_157 DESC LIMIT 50</pre>
+      <article>
+        <h4>Kina vil skanne mobilbrugeres ansigt</h4>
+        <div>
+          Kina. Kinas myndighed for informationsteknologi oplyste søndag, at teleselskaber i Kina fra nu af skal skanne folks ansigter, når nye telefonbrugere registreres i butikker. Det har tidligere fremgået, at teleselskaber skal bruge »kunstig intelligens og andre teknologier« til at verificere folks identitet, når de får et nyt telefonnummer.Ritzau/AFP.
+        </div>
+        <footer>
+          <em>Politiken</em>
+          &nbsp;·&nbsp; 2019-12-02
+          &nbsp;·&nbsp; e77836a2
+          &nbsp;·&nbsp; #0
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.822</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.634</kbd>
+            <kbd data-tooltip="DK innovation &amp; AI">L10_DKINNO&nbsp;0.526</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>AI-projekt forudsiger, om du får svar på dine mails</h4>
+        <div>
+          Det AI-baserede Respondable skal forudsige om din mail er skrevet på en måde, der giver bedste chancer for et svar.Mailstyringssystemet Boomerang har lanceret det AI-baserede Respondable, der kan foreslå, hvordan en mail kan blive bedre, hvis du håber på et svar.Det skriver Venture Beat.Boomerang Respondable giver forslag i realtid til mail-skribenten, hvis mailen bliver for lang, kompliceret eller sågar uhøflig.Hvis mail-teksten klarer sig dårligt på et af de parametre, som Respondable bruger til at forudsige, om en mail får et svar, foreslår systemet en forbedring.Boomerang har brugt machine learning til at analysere sprogbruget i 40.000 mails sammenkoblet med, hvorvidt en given mail har fået et svar. I første omgang blev dataen brugt i et blogindlæg, men nu er erfaringerne altså direkte implementeret i systemet.»Historisk set har forfattere til skriveguides ikke haft adgang til store datamængder om hvilken slags skrivning, der er effektiv,«forklarer Aye Moah, der er chef for virksomheden Baydin, der står bag projektet.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-08-23
+          &nbsp;·&nbsp; e5d9ba60
+          &nbsp;·&nbsp; #1
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.983</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.661</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kina vil skanne mobilbrugeres ansigt</h4>
+        <div>
+          BeijingKinas myndighed for informationsteknologi oplyste søndag, at teleselskaber fra nu af skal indsamler skanninger af ansigter, når nye telefonbrugere registreres i butikker.Det har tidligere fremgået, at teleselskaber skal bruge &quot;kunstig intelligens og andre teknologier&quot; til at verificere folks identitet når de får et nyt telefonnummer.Teknologien med ansigtsgenkendelse bruges i forvejen i landet ved alt fra indkøb i supermarkeder til overvågning. ID-kort er også koblet til telefonnumre. Kinesiske brugere på sociale medier har reageret med et miks af støtte og bekymring over det nye tiltag./ritzau/AFP
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-12-01
+          &nbsp;·&nbsp; e7782c9e
+          &nbsp;·&nbsp; #2
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.809</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.537</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.553</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Svensk ingeniør vinder over Oregon: Må gerne bruge sin titel</h4>
+        <div>
+          Det var i strid med ytringsfriheden, da den amerikanske stat Oregon gav en bøde til den svenske ingeniør Mats Järlström for at benytte sig af sin ingeniørtitel. Sådan lyder afgørelsen fra en føderal domstol i USA. Det skriver flere amerikanskemedier, blandt andre Oregon Live.Afgørelsen kommer efter, at Oregon State Board of Examiners for Engineering and Land Surveying tidligere har givet Mats Järlström en bøde på 500 amerikanske dollars for at bruge vendingen »jeg er ingeniør« i en korrespondance med styrelsen om nye algoritmer i statens trafiklys.Begrundelsen for bøden var, at den svenske ingeniør ikke havde en certificering fra Oregon. På trods af, at Mats Järlström var uddannet elektroingeniør i Sverige, mente styrelsen, at han havde forbrudt sig mod Oregons &quot;titel-lovgivning&quot;, og at han ulovligt havde praktiseret ingeniørarbejde i staten.Ifølge styrelsen var det altså kun ingeniører, der var certificerede i Oregon, som havde ret til at kalde sig selv for ingeniør.Med afgørelsen i retssagen er Oregon State Board of Examiners for Engineering and Land Surveying blevet pålagt at præcisere forbuddet til kun at omhandle folk, det kalder sig for &quot;professionelle ingeniører&quot;.Ville undersøge trafiklysSagen startede helt tilbage i 2013. Mats Järlströms og hans kone var bosat i Oregon, og hustruen modtog en bøde på 500 amerikanske dollars for at køre over for rødt.Den svenske ingeniør begyndte at undersøge trafiklysene, og her fandt han ud af, at algoritmen bag stammer fra 1959 og er baseret på trafikanter, der kører lige ud. De bilister, som skal dreje og dermed sætter farten ned frem til krydset, blev ikke tilgodeset.Han begyndte at udvikle en ny algoritme, som kunne tage højde for svingende bilister, og det var i den forbindelse at han skrev til styrelsen i Oregon.Styrelsen kommenterede i den forbindelse ikke på hans forslag, men begyndte derimod en undersøgelse af, om den svenske ingeniør var certificeret i Oregon.Ifølge mediet Motherboard er sagen om Mats Järlströms ret til at kalde sig ingeniør blot er én ud af flere eksempler, der har fundet sted i Oregon i løbet af de senere år.
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2019-01-09
+          &nbsp;·&nbsp; e7094cf6
+          &nbsp;·&nbsp; #3
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.615</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.616</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nets har fundet erstatning for sårbarhedsramt NemID-hardware</h4>
+        <div>
+          NemID på hardware bliver fremover i form af en Feitian ePass2003.Nets har fundet en erstatning for den hardware-løsning med NemID, som blev suspenderet i oktober 2017 som følge af en sårbarhed. Det fremgår af en mail, Nets har udsendt 12. januar.»Som du blev informeret om pr. e-mail den 24. oktober 2017, spærrede vi dit NemID på Hardware, da vi blev bekendt med, at der var en sårbarhed på nogle eksemplarer af Gemaltos IDPrime.Net hardware, som anvendes til NemID på Hardware,« står der i mailen, som Version2 har fået tilsendt en kopi af.Roca-angrebetForskere har fundet frem til en sårbarhed i en nøgle-genererings-algoritme, som bliver anvendt i chips fra Infineon Technologies AG. Sårbarheden kaldes Roca (The Return of Coppersmith's Attack), og den gør det reelt set muligt at regne sig frem til et offers private nøgle ud fra kendskabet til den offentlige nøgle.Roca-angrebet kan lade sig gøre i praksis for nøgler med en længde på op til 2048 bits. Der ligger flere værktøjer online, som gør det muligt at teste, om en nøgle er sårbar over for Roca-angrebet.Forskerne vurderer, at det vil koste op til 40.000 dollars i Amazons skytjeneste at knække en 2048-bits nøgle, mens prisen for en 1024-bits nøgle er op til 76 dollars.Systemet med offentlige og private nøgler gør det blandt andet muligt for at verificere, hvorvidt en person er i besiddelse af en privat nøgle, alene ud fra kendskabet til den offentlige nøgle.Kilde:https://crocs.fi.muni.cz/public/papers/rsa_ccs17 mfl.I oktober spærrede Nets certifikater knyttet til NemID på hardware efter virksomheden havde testet sig frem til, at løsningen var sårbarhed i forhold til det, der har fået navnet Roca-angrebet.Dette angreb går ud på, at det er muligt at regne sig frem til en persons private nøgle alene på baggrund af den offentlige nøgle.Da den offentlige nøgle i sagens natur er kendt, så kan det være et ganske stort problem.Såfremt det lykkedes en angriber at regne sig frem til et offers private nøgle, så kan angribere give sig ud for at være offeret - eksempelvis i forbindelse med digitale underskrifter.NemID på hardware vil sige, at borgeren selv ligger inde med sin private nøgle, modsat den mere udbredte løsning, hvor den private nøgle er lagret centralt i Nets-regí.Skal tilbyde hardware-løsningHardware-løsningen er efter alt at dømme ikke været særlig udbredt. Nets oplyste således tilbage i oktober til Version2, at under 200 certifikater blev spærret i forbindelse med nedlukningen. Altså relativt få ud af den samlede NemID-brugerskare.Ikke desto mindre, så går en del af aftalen mellem Nets og Digitaliseringsstyrelsen i forhold til NemID ud på, at det skal være muligt for borgeren at opbevare sin egen private nøgle.Og nu er der altså fundet en erstatning for Gemalto-produktet. I skrivelsen fra 12. januar oplyser Nets videre, at det nye hardware-produkt er en ePass2003 fra Feitian.»Vi planlægger at åbne for bestilling af NemID på hardware den 25. januar 2018. Vi opdaterer denne side med links til vejledninger om, hvordan man gør sin hardware klar til brug,« fremgår det af Nets' hjemmeside på nets.eu.I en opfølgende mail forklarer pressemedarbejder hos Nets Mads Allingstrup, at NemID Nøglefilsprogram v1.7 bliver frigivet 25. januar, og at det skal bruges i forbindelse med opsætningen.»Derudover er alt, som det plejer at være,« står der i mailen.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-01-16
+          &nbsp;·&nbsp; e6946313
+          &nbsp;·&nbsp; #4
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.706</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.675</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ansigtsgenkendelse kan afløse boardingpass: Sammenligner billede i gaten med database</h4>
+        <div>
+          Flyselskaber eksperimenterer med at bruge ansigtsgenkendelse i stedet for papirlapper i lufthavnens gates.Amerikanske flyselskaber tester muligheden for at droppe idéen om boardingpasses i fremtiden. I stedet skal ansigtsgenkendelse sørge for, at de rigtige passagerer havner ombord på de rigtige fly.Både flyselskaberne JetBlue og Delta Airlines har allerede ansigtsgenkendelse på prøve, skriver CBS News.Det er tager ikke mange sekunder for en algoritme at sammenligne et billede, der tages af passageren ved gaten med myndighedernes database af pasfotos.Smart - men lovligt?To amerikanske senatorer sætter dog midlertidigt en stopper for udviklingen, da de beder Customs and Border Protection om ikke at udvide forsøgene, før de er sikre på, at alt foregår efter bogen.Og de to senatorer er ikke de eneste, der løfter et øjenbryn over udviklingen. For udover loven handler det også folks privatliv og datasikkerhed.»I takt med at vi i højere grad smider biometrisk data ind i store databaser, så vil de blive oplagte mål, og risikoen for et datalæk stiger voldsomt,« siger Jeramie Scott fra the Electronic Privacy Information Center.Udover ansigtsgenkendelse arbejdes der også med fingeraftryk, der skal kunne verificere dig, så du kan gå ombord på et fly uden at interagere med et eneste menneske på vejen.Ansigtsgenkendelse har tidligere vist sig sårbart på en række områder, hvor algoritmer ikke kan skelne mellem familiemedlemmer.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-12-29
+          &nbsp;·&nbsp; e68f4a7c
+          &nbsp;·&nbsp; #5
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.826</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.653</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Javascript genkender ansigter i browseren</h4>
+        <div>
+          Nu kan Javascript-udviklere bygge ansigtsgenkendelse i webapps. Face-api.js er et Javascript-api til ansigtsgenkendelse i browseren implementeret oven på Googles Tensorflow.js, som er en Javascript-implementering af firmaets populære machine learning teknologi til browsere og Node.js-miljøet.Til teknologibloggen Infoq forklarer Vincent Mühler, som er skaberen af Face-api.js motivationen bag:»Jeg havde et andet bibliotek, som var i stand til at detektere ansigter og udføre ansigtsgenkendelse med Node.js. På et tidspunkt opdagede jeg Tensorflow.js og blev interesseret i maskinlæring i browseren. Jeg var nysgerrig på, om det var muligt at flytte eksisterende modeller til ansigtsgenkendelse og ansigtsgenkendelse til Tensorflow.js, og det fungerede ganske godt.« Face-api.js kommer med tre modeller: SSD Mobilenet V1, Tiny Face Detector og MTCNN.Tiny Face Detector er trænet på et brugerdefineret datasæt med 14.000 billeder. Apps med begrænsede resurser bør bruge denne model.Til ansigtsgenkendelse benyttes en model baseret på en ResNet-34-lignende arkitektur, til at beregne en ansigtsbeskrivelse ud fra et billede. Denne model er ikke begrænset til det sæt ansigter, der bruges til træning, hvilket betyder, at udviklere kan bruge det til genkendelse af alle personernes ansigter. Det er muligt at bestemme ligheden mellem to vilkårlige ansigter, ved at sammenligne deres ansigtsbeskrivelser.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-11-14
+          &nbsp;·&nbsp; e6f8ed73
+          &nbsp;·&nbsp; #6
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.977</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.912</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.665</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Forvirrende pop-up på Windows 10 forsinker relancering af NemID på hardware</h4>
+        <div>
+          Problemer med brugeroplevelsen forsinker ny løsning med NemID på hardware.En mindre forsinkelse har ramt re-lanceringen af NemID på hardware. Den tidligere hardwareløsning viste sig tilbage i oktober at indeholde en sårbarhed. I den forbindelse spærrede Nets, der driver NemID, for certifikater knyttet til løsningen.NemID på hardware vil sige, at borgeren selv ligger inde med sin private nøgle, modsat den mere udbredte løsning, hvor den private nøgle er lagret centralt i Nets-regí. En del af aftalen om NemID mellem Nets og Digitaliseringsstyrelsen går ud på, at det skal være muligt for borgeren at opbevare sin egen private nøgle.Erstatning for den sårbarhedsramte hardwareløsning er en ePass2003 fra Feitian.Roca-angrebetForskere offentliggjorde i efteråret en sårbarhed i den nøglegenererings-algoritme, som bliver anvendt i chips fra Infineon Technologies AG. Sårbarheden kaldes Roca (The Return of Coppersmith's Attack), og den gør det reelt muligt at regne sig frem til et offers private nøgle ud fra kendskabet til den offentlige nøgle.Roca-angrebet kan lade sig gøre i praksis for nøgler med en længde på op til 2048 bits. Der ligger flere værktøjer online, som gør det muligt at teste, om en nøgle er sårbar over for Roca-angrebet.Forskerne vurderer, at det vil koste op til 40.000 dollars i Amazons skytjeneste at knække en 2048-bits nøgle, mens prisen for en 1024-bits nøgle er op til 76 dollars.Systemet med offentlige og private nøgler gør det blandt andet muligt for at verificere, hvorvidt en person er i besiddelse af en privat nøgle, alene ud fra kendskabet til den offentlige nøgle.Kilde:https://crocs.fi.muni.cz/public/papers/rsa_ccs17 mfl.Egentlig var det meningen, at denne løsning skulle kunne bestilles fra 25. januar. Men en pop-up på Windows 10 har bevirket, at lanceringen er udskudt til starten af februar.»Vi har arbejdet med at rette en uhensigtsmæssig brugeroplevelse på Windows 10, som bestod I, at brugerne i nogle tilfælde kunne få en popup-besked, der ikke giver mening. Produktet virker fint, men beskeden kan være forvirrende for de brugere, der bliver udsat for den,« oplyser chef for NemID-medarbejdersignatur hos Nets Thomas Sølling i mail-svar sendt via virksomhedens presseafdeling.Nets orienterer løbende om forløbet her på denne side.I oktober 2017 spærrede Nets certifikater knyttet til NemID på hardware, efter virksomheden havde testet sig frem til, at løsningen var sårbarhed over for det, der har fået navnet Roca-angrebet.Dette angreb går ud på, at det er muligt at regne sig frem til en persons private nøgle alene på baggrund af den offentlige nøgle.Da den offentlige nøgle i sagens natur er kendt, kan det være et ganske stort problem.Såfremt det lykkes en angriber at regne sig frem til et offers private nøgle, så kan angribere give sig ud for at være offeret - eksempelvis i forbindelse med digitale underskrifter.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2018-01-30
+          &nbsp;·&nbsp; e698f7c0
+          &nbsp;·&nbsp; #7
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.64</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.589</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.671</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techtopia #152: Skal vi indføre ansigtsgenkendelse i Danmark?</h4>
+        <div>
+          Brugen af kameraer med ansigtsgenkendelse i det offentlige rum har siden regeringsskiftet været et politisk diskussionsemne. Af Det sker i kølvandet på, at dansk politi af flere omgange har fremhævet ansigtsgenkendelse som &quot;en kæmpe fordel&quot; i kampen mod kriminalitet. Ideen om kameraer med ansigtsgenkendelse baseret på kunstig intelligens har fået opbakning fra begge politiske fløje, hvor både Socialdemokratiet og Venstre er positivt stemt for muligheden for at bruge kamerateknologi til ansigtsgenkendelse med henblik på at skabe øget tryghed og sikkerhed for danskerne. Teknologien er også blevet debatteret grundigt blandt europaparlamentarikere og tech-virksomheder, blandt andre Facebook, Google og Microsoft. Sammen ønsker Europa at skabe et fælles afsæt for implementering og brug af ansigtsgenkendelsesteknologi på tværs af medlemslandene, for at sikre, at teknologien benyttes ud fra nogle fælles principper om privacy og sikkerhed. Drøftelserne afspejles i EU-kommissionens hvidbog for kunstig intelligens, der udkom den 19. februar 2020, og som i første omgang lægger op til yderligere debat om behovet for og brugen af ansigtsgenkendelse. Medvirkende: Kristian Hegaard, MF RV Peter Skaarup, MF DF Marya Akhtar, Institut for Menneskerettigheder Kom gerne med dine bud på , hvilke emner vi skal tage op. Du kan finde alle episoder af Techtopia og Ingeniørens øvrige podcasts Næste afsnit af Techtopia udkommer 8. juni. sort
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2020-05-25
+          &nbsp;·&nbsp; e7b9b39b
+          &nbsp;·&nbsp; #8
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.726</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.638</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.589</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>FBI køber ansigtsgenkendelse for 5,8 milliarder</h4>
+        <div>
+          Et nyt projekt skal gøre det nemmere for det amerikanske forbundspoliti FBI at lokalisere og identificere forbrydere.Det amerikanske forbundspoliti, FBI, er i fuld gang med at søsætte et nyt ambitiøst ansigtsgenkendelsessystem, som i 2014 skal finde forbrydere over hele USA. Projektet går under navnet Next Generation Idenfication (NGI) programme og koster ikke mindre end én milliard dollar eller 5,8 milliarder kroner.Med billeder af kriminelle i politiets database er det meningen, at det nye system skal kunne registrere en mistænkt, når han eller hun bevæger sig ind i synsfeltet af et sikkerhedskamera. Omvendt kan det også bruges til at finde en forbryder i databasen, hvis forbrydelsen er fanget på kamera.FBI har endnu ikke frigivet nogen detaljer om den algoritme, NGI bruger, men tidligere tests viser, at moderne algoritmer til ansigtsgenkendelse kan identificere en person med 92 procent sikkerhed i en database med 1,6 millioner billeder. Selv hvis personen er optaget på en skæv vinkel kan algoritmer generere en 3D-version af ansigtet og dreje det op til 70 grader, så det matcher billeder i databasen.Ud over ansigtsgenkendelse vil NGI også indeholde DNA-analyser, stemmegenkendelse og iris-scanner.Pilotprojektet kan kun søge efter tidligere kriminelle, men det er ukendt om FBI også vil tilføje billeder af andre, som ellers ikke har været i politiets søgelys.Moderne algoritmer til ansigtsgenkendelse kan identificere en person med 92 procent sikkerhed i en database med 1,6 millioner billeder..
+        </div>
+        <footer>
+          <em>Ing.dk (Ingeniøren)</em>
+          &nbsp;·&nbsp; 2012-09-14
+          &nbsp;·&nbsp; e367038c
+          &nbsp;·&nbsp; #9
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.614</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.647</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Her er NemID-trojaneren: Usynlig for antivirus</h4>
+        <div>
+          Det ondsindede spionprogram, som blev brugt til at stjæle i alt 700.000 kroner fra otte kunder hos Danske Bank, kom fra en legitim hjemmeside og slap forbi brugernes antivirus. Se om du har fået trojaneren med navnet Banktexeasy.Af Jesper Stein Sandal Mandag, 20. februar 2012 - 11:02Antivirussoftware var ikke til megen hjælp for de otte kunder hos Danske Bank, som tilsammen fik stjålet 700.000 kroner i det angreb, som blev afsløret den 10. februar.Læs også: Netbanktyve bryder gennem NemID igen: Stjæler 700.000Ifølge sikkerhedsfirmaet CSIS var der nemlig tale om en helt ny variant af en trojaner, som var lavet specifikt til at angribe de danske kunder og login-løsningen NemID.Det betød ifølge CSIS, at selvom de ramte brugere havde installeret antivirussoftware, så var ingen af programmerne i stand til at opdage den ondsindede trojanske bagdør, før angrebet var gennemført. CSIS har nu givet trojaneren navnet Banktexeasy.Selvom antivirusfirmaerne forsøger at have algoritmer, som kan opdage hidtil ukendte varianter af ondsindede programmer, så sørger de kriminelle også for at afprøve deres nye varianter mod antivirussoftwaren.Flere af de bagmænd, som udvikler de trojanske bagdøre for de kriminelle bag selve svindlen, giver ligefrem garanti mod, at antivirusprogrammerne kan opdage trojanerne.Brugerne blev heller ikke inficeret med trojaneren, fordi de bevægede sig ud på mere lyssky dele af internettet ifølge CSIS. I stedet blev trojanerne spredt fra en legitim hjemmeside, som var blevet hacket.Det sker ofte, at helt legitime hjemmesider bliver brugt til at sprede malware på grund af sikkerhedshuller i webapplikationerne.Sikkerhedskonsulent Peter Kruse fra CSIS beskriver på Facebook trojaneren som den absolut værste malware, han har set det sidste år. Programmet er ifølge Peter Kruse udviklet specifikt for at angribe de danske netbanker, som benytter NemID.NemID øger ellers sikkerheden i forhold til flere af de tidligere netbankløsninger, fordi der er tale om såkaldt to-faktor-autentificering, som ikke blot kræver et brugernavn og et kodeord, men også en ekstra kode fra et papkort.I angrebet mod Danske Bank-kunderne lykkedes det imidlertid de kriminelle at gå ind som en skjult mellemmand, når brugerne loggede på netbanken og få lokket en ekstra NemID-kode ud af brugerne med et popup-vindue.Læs også: Nyt hacker-trick snød NemID: Sådan gjorde deCSIS har udviklet et lille værktøj, der tester, om en given pc er inficeret med Banktexeasy. Du kan downloade værktøjet her.Sådan ser det falske popup-vindue til NemID ud. Skærmdump hentet fra Peter Kruses Facebook-profil..
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2012-02-20
+          &nbsp;·&nbsp; e31ba601
+          &nbsp;·&nbsp; #10
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.923</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.629</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kineserne bruger ansigtsgenkendelse til at betale med</h4>
+        <div>
+          Via en app kan kineserne betale med deres ansigt. 150 millioner kinesere er allerede i gang.Nu er teknologien til ansigtsgenkendelse så sikker, at kineserne kan overføre penge og betale med deres ansigt via Alibabas mobilbetalings-app Alipay.Det skriver Quartz.150 millioner kinesere har indtil videre benyttet sig af, at de kan bruge deres ansigt til at overføre penge.I Kina har regeringen gemt billeder af befolkningen i en database. Det gør, at ansigtsgenkendelse gennem AI kan og bliver brugt til mange ting.For eksempel kan man også benytte sig af at bruge sit ansigt som identifikation ved bycyklerne Didi, og den hos kinesiske Google, kaldet Baidu, kan man bruge sit ansigt som adgangskort og billet til for eksempel offentlig transport.Version2 har tidligere skrevet om, hvordan fastfood-kæden Kentucky Fried Chicken benytter sig af ansigtsgenkendelse til at tilbyde kunderne det, de plejer godt at kunne lide af mad.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-07-07
+          &nbsp;·&nbsp; e653b264
+          &nbsp;·&nbsp; #11
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.714</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.543</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.624</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Politiet opgiver jagten på TDC-sladrehank</h4>
+        <div>
+          Bagmandspolitiet har opgivet at finde ud af, hvem det var, der i februar stod bag det læk, der banede vejen for, at et konsortium bestående af tre danske pensionsselskaber og en australsk investeringsbank fik held med at opkøbe TDC for lidt over 40 mia. kr.En hemmelig kilde, der kaldte sig selv Incognito, lækkede i februar oplysninger til bl. a. Jyllands-Posten og Børsen om, at TDC's bestyrelse havde fået et opkøbstilbud, som den ignorerede.Kildens læk gjorde opkøbstilbuddet kendt i offentligheden og lagde et så stort pres på TDC's bestyrelse, at den måtte opgive sine egne planer om at fusionere med svenske MTG. Lækket kan derfor kædes direkte sammen med konsortiets succes med opkøbet.Det er strafbart at lække den slags oplysninger, og bagmandspolitiet har arbejdet på at identificere, hvem den hemmelige kilde er. Men efterforskningen har ikke båret frugt, og to kilder i bagmandspolitiet oplyser til Jyllands-Posten, at jagten på kilden nu opgives. Officielt vil bagmandspolitiet dog hverken be-eller afkræfte dette.»Det har vi ikke nogen bemærkninger til,« siger Mikkel Thastum, kommunikationschef i Rigsadvokaten.Fintfølende algoritmerEn ekspert finder det forståeligt, at sagen opgives, hvis vurderingen er, at det er svært at komme til bunds i den.»Der er ikke uendelige ressourcer og guderne må vide, at SØIK (i daglig tale bagmandspolitiet, red.) har mange andre opgaver,« siger Jesper Lau Hansen, børsretsekspert og professor på Københavns Universitet.I sig selv er den hemmelige kildes læk af fortrolige oplysninger strafbart. Hvis kilden derudover har udnyttet sin viden til at begå insiderhandel, er sagen endnu værre.Men det tvivler Jesper Lau Hansen på er sket.»Insiderhandel skaber aktietransaktioner og er derfor ikke lige så svært at opdage som videregivelse af intern viden. Den slags handler dukker ofte op i de meget fintfølende algoritmer, som bruges til at overvåge aktiehandlen på fondsbørsen. Det ville give noget at efterforske, og det har man tilsyneladende manglet i denne sag,« siger Jesper Lau Hansen.kristoffer.brahm@finans.dk claus.iversen@finans.dk 
+        </div>
+        <footer>
+          <em>Jyllands-Posten</em>
+          &nbsp;·&nbsp; 2018-12-25
+          &nbsp;·&nbsp; e705c171
+          &nbsp;·&nbsp; #12
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.544</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.653</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Om tro, etik og eksistens</h4>
+        <div>
+          PET-operationenDR P1 16.03 Den omstridte bog &quot; 7 år for PET&quot; har skabt voldsomt røre på et tidspunkt, hvor den endnu ikke er udkommet. I bogen fortæller tidligere PET chef Jacob Scharf om sin tid i PET, og der kommer også ting frem, som ikke har været fremme før.Kunstig intelligensDR 2 19.30 Kunstig intelligens stormer frem netop nu og kommer til at ændre hele verden, ligesom elektricitet ændrede hele verden. Det sker, fordi maskinerne har lært, hvordan de selv skal lære.Før søndagenDR K 19.45 Kim Sjøgren fortæller historien om, hvordan han som barn lærte at spille violin - fordi dagens tekst for ham handler om ikke at give op. Jysk Akademisk Kor synger salmen &quot; O Jesus, livsens Herre&quot; fra Gellerup Kirke i Aarhus.
+        </div>
+        <footer>
+          <em>Kristeligt Dagblad</em>
+          &nbsp;·&nbsp; 2016-10-15
+          &nbsp;·&nbsp; e5ed8742
+          &nbsp;·&nbsp; #13
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.975</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.731</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.568</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nye mobilbrugere i Kina vil få deres ansigt skannet</h4>
+        <div>
+          Kina vil sikre sig, at telefonbrugere er registreret under rigtige navne med krav om skanning af ansigt. Fra søndag kan nye telefonbrugere i Kina forvente at få deres ansigt skannet, så deres identitet kan verificeres. Ifølge landets myndighed for informationsteknologi kræver Kina fra søndag, at teleselskaber indsamler skanninger af ansigter, når nye telefonbrugere registreres i butikker. Tiltaget blev annonceret i september, hvor det kinesiske ministerium for informationsteknologi udsendte en meddelelse om de nye regler med ansigtsgenkendelse. Her fremgik det, at teleselskaber skal bruge &quot;kunstig intelligens og andre teknologier&quot; til at verificere folks identiteter, når de får et nyt telefonnummer. En repræsentant fra teleselskabet China Unicoms kundeservice oplyser til nyhedsbureauet AFP, at reglerne betyder, at kunder, som registrerer sig til et nyt telefonnummer måske skal optage dem selv dreje deres hoved og blinke. - I næste skridt vil vores ministerium fortsætte med at ... øge overvågningen og kontrollen ... og strengt fremme behandlingen af registreringen af rigtige navne for brugere af telefoner, lyder det i meddelelsen fra september. I forvejen har den kinesiske regering indført regler om, at id-kort kobles til telefonnumre. Og teknologien med ansigtsgenkendelse bruges i forvejen i landet ved alt fra indkøb i supermarkeder til overvågning. /ritzau/AFP
+        </div>
+        <footer>
+          <em>VejleAmtsFolkeblad.dk</em>
+          &nbsp;·&nbsp; 2019-12-01
+          &nbsp;·&nbsp; e7781b4d
+          &nbsp;·&nbsp; #14
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.968</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.626</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.582</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft stopper investeringer i ansigtsgenkendelses-firmaer efter kontrovers</h4>
+        <div>
+          Microsoft har stoppet investeringer i virksomheder, der udvikler ansigtsgenkendelse. Det sker efter kritik af virksomheden AnyVision og dennes forhold til den israelske regering. Microsoft vil ikke længere investere i tredjeparts virksomheder, der arbejder med ansigtsgenkendelse. Det sker på baggrund af kritik af den israelske startup AnyVision , som Microsoft har investeret i, der angiveligt har været med til at drive et overvågningsprogram på Vestbredden i Israel. Det skriver The Verge Kritikken opstod på baggrund af en rapport fra NBC News , der viser AnyVisions forhold til den israelske regering. Microsoft melder nu, at en afhængig undersøgelse af sagen viser, at startuppen ikke er med til masseovervågning, og at hvis man havde gjort det, havde man overtrådt den indgåede aftale om 'etisk brug af ansigtsgenkendelse'. Men uanset hvad, har man altså nu meldt ud, at man ikke længere vil investere i tredjepartsvirksomheder, der beskæftiger sig med ansigtsgenkendelse. Microsoft har stadig Azures FaceAPI Det betyder dog ikke, at Microsoft ikke har stadig beskæftiger sig med ansigtsgenkendelse. Man har nemlig stadig FaceAPI , der er en del af Azure cloudcomputing-programmet. AnyVision er ikke den eneste ansigtsgenkendelsesvirksomhed, der har været i stormvejr her på det sidste. Startuppen Clearview AI har også mødt bred kritik for sin brug af billeder fra sociale medier til at udvikle en ansigtgenkendelsessoftware.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-03-30
+          &nbsp;·&nbsp; e7a50700
+          &nbsp;·&nbsp; #15
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.872</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.686</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nye mobilbrugere i Kina vil få deres ansigt skannet</h4>
+        <div>
+          Udland Nye mobilbrugere i Kina vil få deres ansigt skannetKina vil sikre sig, at telefonbrugere er registreret under rigtige navne med krav om skanning af ansigt. 01 dec. 2019 kl. 07:55Del med andre: Fra søndag kan nye telefonbrugere i Kina forvente at få deres ansigt skannet, så deres identitet kan verificeres. Ifølge landets myndighed for informationsteknologi kræver Kina fra søndag, at teleselskaber indsamler skanninger af ansigter, når nye telefonbrugere registreres i butikker. Tiltaget blev annonceret i september, hvor det kinesiske ministerium for informationsteknologi udsendte en meddelelse om de nye regler med ansigtsgenkendelse. Her fremgik det, at teleselskaber skal bruge &quot;kunstig intelligens og andre teknologier&quot; til at verificere folks identiteter, når de får et nyt telefonnummer. En repræsentant fra teleselskabet China Unicoms kundeservice oplyser til nyhedsbureauet AFP, at reglerne betyder, at kunder, som registrerer sig til et nyt telefonnummer, måske skal optage sig selv dreje deres hoved og blinke. - I næste skridt vil vores ministerium fortsætte med at ... øge overvågningen og kontrollen ... og strengt fremme behandlingen af registreringen af rigtige navne for brugere af telefoner, lyder det i meddelelsen fra september. I forvejen har den kinesiske regering indført regler om, at id-kort kobles til telefonnumre. Og teknologien med ansigtsgenkendelse bruges i forvejen i landet ved alt fra indkøb i supermarkeder til overvågning. Kinesiske brugere på sociale medier har reageret med et miks af støtte og bekymring over det nye tiltag med ansigtsgenkendelse. Nogle lufter bekymring over, at deres data kan blive lækket eller solgt. - Det er en smule for meget, skriver en bruger på det Twitter-lignende Weibo i en kommentar til en artikel om de nye regler. - Kontrol og så mere kontrol, skriver en anden. Mens forskere har advaret om privatmæssige risici med indsamling af data fra ansigtsgenkendelse, så har forbrugerne i høj udstrækning omfavnet den nye teknologi. Dog har Kina fået et sine første søgsmål om ansigtsgenkendelse i sidste måned. I begyndelsen af november indgav en kinesisk professer en klage over en safaripark i Hangzhou i den østlige provins Zhejiang for at kræve ansigtsskanning for at komme ind i parken. /ritzau/AFP
+        </div>
+        <footer>
+          <em>DagbladetRingSkjern.dk (Dagbladet Ringkøbing-Skjern)</em>
+          &nbsp;·&nbsp; 2019-12-01
+          &nbsp;·&nbsp; e7781ba7
+          &nbsp;·&nbsp; #16
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.976</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sikkerhedsfirma ramt af SQL-injektionsangreb</h4>
+        <div>
+          Hackere har stjålet brugerdata fra sikkerhedsfirmaet Barracuda Networks. Det skete ved brug af SQL-injektion.Af Lasse Hedegaard PoulsenEMNER: HackingSikkerhedsfirmaet Barracuda Networks har fået stjålet data om firmaets partnere og deres egne ansattes logininformationer.De stjålne data tæller både de ansattes navne, som har adgang til virksomhedens CMS-system, deres mailadresser, telefonnumre samt hashed passwords, som var genereret ud fra den efterhånden udfasede MD5-algoritme. Det skriver The Register.Hackerne fik adgang til firmaets data ved brug af SQL-injektion, der efterhånden er en udbredt metode til at få adgang til normalt dårligt skrevne webapplikationer, der ikke er i stand til at filtrere indholdet af de brugerinputs, som typisk indtastes i hjemmesidens søgefelter.Det gør angriberen i stand til at sende kommandoer til hjemmesidens servere, som kan give vedkommende adgang til potentielt følsomme data.Barracuda Networks udvikler sikkerhedsløsninger, der blandt andet indbefatter firewalls, spam- og antivirussoftware.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2011-04-12
+          &nbsp;·&nbsp; e2a0d6ab
+          &nbsp;·&nbsp; #17
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.725</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.916</kbd>
+            <kbd data-tooltip="Data">L80_DATA&nbsp;0.633</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Estland: Vi har patched 330.000 id-kort</h4>
+        <div>
+          De estiske myndigheder oplyser, at man har lukket et sikkerheds i omkring 330.000 nationale id-kort.En sårbarhed er nu blevet lukket på omkring 330.000 nationale id-kort i Estland. Det fremgår af en pressemeddelelse, der har henholdsvis den estiske Police and Border Guard Board (PBGB) og den estiske Information System Authority (RIA) som afsender.De estiske myndigheder blev opmærksom på sårbarheden tilbage i august, hvor sikkerhedsfolk havde fundet frem til en svaghed i chips fra Infineon Technologies AG, som bliver anvendt i et hav af sammenhænge. Sårbarheden, der også kaldes Roca, gør det muligt ud fra en offentlig nøgle - som alle i sagens natur kender - at regne sig frem til den tilhørende privat nøgle.»For at omgå sikkerhedsrisikoen udviklede vi en softwareopdatering i samarbejde med SK ID Solutions og estiske it-selskaber,« siger leder af eID ved RIA Margus Arm ifølge pressemeddelelsen.Roca-angrebetForskere har fundet frem til en sårbarhed i en nøgle-genererings-algoritme, som bliver anvendt i chips fra Infineon Technologies AG. Sårbarheden kaldes Roca (The Return of Coppersmith's Attack), og den gør det reelt set muligt at regne sig frem til et offers private nøgle ud fra kendskabet til den offentlige nøgle.Roca-angrebet kan lade sig gøre i praksis for nøgler med en længde på op til 2048 bits. Der ligger flere værktøjer online, som gør det muligt at teste, om en nøgle er sårbar over for Roca-angrebet.Forskerne vurderer, at det vil koste op til 40.000 dollars i Amazons skytjeneste at knække en 2048-bits nøgle, mens prisen for en 1024-bits nøgle er op til 76 dollars.Systemet med offentlige og private nøgler gør det blandt andet muligt for at verificere, hvorvidt en person er i besiddelse af en privat nøgle, alene ud fra kendskabet til den offentlige nøgle.Kilde:https://crocs.fi.muni.cz/public/papers/rsa_ccs17 mfl.Sårbarheden fra august påvirker næsten 800.000 id-kort i Estland, som mere end halvdelen af befolkningen på samlet set 1,3 mio. er i besiddelse af. De estiske myndigheder har valgt at lukke ned for sårbare kort 3. november.Stadig masser af sårbare kortOg af disse næsten 800.000 kort er omkring 330.000 altså nu opdaterede. I den forbindelse har software til fornyelse af certifikater på de sårbare kort været involverede i processen.»Denne opdatering og softwaren til fornyelse af ID-kort gjorde os i stand til at omgå sikkerhedsrisikoen uden at udskifte alle sikkerheds-risiko-påvirkede kort. Med fornyelse-softwaren er kortholdere i stand til at forny deres ID-kort enten på afstand via deres egne personlige computere eller ved et af politi-service stederne,« lyder det videre fra Margus Arm ifølge meddelelsen.Processen med at opdatere kort gik i gang 31. oktober.»Vi begyndte med opdateringsprocessen 31. oktober og opdagede omgående adskillige tekniske problemer,« fortæller leder af Identity and Status Bureau ved Police and Border Guard Board (PBGB) ifølge meddelelsen og fortsætter:»Det lykkedes os at overkomme disse problemer og blot en måned senere er næsten halvdelen af de sikkerheds-risiko-påvirkede ID-kort blevet opdateret og folk kan fortsætte med at bruge de digitale tjenster med deres id-kort. Estere er vant til at bruge vores digitale tjenester og id-kort er hjørnestenen i vores digitale samfund.« De estiske myndigheder vurderede ifølge pressemeddelelsen, at risikoen for at nogen ville udnytte sårbarheden på id-kortene, ville blive større over tid. I det lys valgte PBGB at lukke ned for certifikater på sårbare kort tilbage i november.Det vil sige, at borgere først har skullet opdatere deres kort, før de kan bruges igen.Certifikater for ID-kort, der endnu ikke er blevet opdaterede, når kalenderen viser 1. april 2018, bliver endeligt tilbagekaldt (eng. revoked).Også sårbart ID i DanmarkI det digitale Danmark hedder hjørnestenen NemID. Dette system har også vist sig at være påvirket af Roca-sårbarheden i chips fra Infineon. Det drejer sig nærmere bestemt om NemID på hardware. Relativt få anvender denne løsning, som NemID-leverandøren Nets er kontraktligt forpligtet til at levere den.Nets valgte at lukke ned for NemID på hardware, da det stod klart, at også den danske løsning så ud til at være sårbar. Nets har tidligere fortalt, at man arbejder på at finde en anden løsning.I anledningen af den estiske udmelding om de opdaterede id-kort har vi spurgt Nets, hvordan det går med at finde en ny løsning, hvad NemID på hardware angår.»Vi analyserer forskellige muligheder, og har kig på enkelte løsninger, som vi er rimelig langt med. Sagen har høj prioritet for os, men vi kan ikke sige noget om, hvornår vi er klar med den rigtige løsning,« oplyser Jens Jacob Larsen, chef for NemID product and delivery hos Nets via mail.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-12-11
+          &nbsp;·&nbsp; e689f83f
+          &nbsp;·&nbsp; #18
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.522</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.575</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.661</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google-topchef bakker op om midlertidigt forbud mod ansigtsgenkendelse</h4>
+        <div>
+           Topchefen for Googles moderselskab, Alphabet, bakker op om et forslag fra EU om midlertidigt at forbyde teknologien bag ansigtsgenkendelse på grund af muligheden for at bruge det til kriminelle formål.Det skriver Reuters.- Jeg mener, det er vigtigt, at regeringer og lovgivere takler det her, og stiller rammer op for det. Jo før desto bedre, sagde Sundar Pichai mandag på en konference i Bruxelles arrangeret af tænketanken Bruegel, EU-Kommissionen snakker om en strammere linje over for kunstig intelligens end USA. Og der skulle ifølge Reuters ligge et forslag på 18 sider på det.- Der er ingen tvivl om, at kunstig intelligens bør reguleres, lød det fra Sundar Pichai.Myndigheder bør skræddersy reglerne efter forskellige sektorer, sagde Pichai og henviste til, at der bør være forskellige regler alt efter om det drejer sig om medicinsk udstyr eller selvkørende biler.Problematikken om kunstig intelligens og ansigtsgenkendelse er ikke ny. Sidste år afviste eksempelvis Microsoft ønsker fra regeringer, der ønskede at få software til ansigtsgenkendelse. It-selskabet frygtede, at det ville blive misbrugt.Microsoft har opfordret til stærkere regler for teknologien bag ansigtsgenkendelse./ritzau/FINANS
+        </div>
+        <footer>
+          <em>Børsen.dk (Abonnementsområde)</em>
+          &nbsp;·&nbsp; 2020-01-20
+          &nbsp;·&nbsp; e78bd4a5
+          &nbsp;·&nbsp; #19
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.655</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.567</kbd>
+            <kbd data-tooltip="EU regulation of big tech">L10_EUREGU&nbsp;0.558</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.513</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Google-topchef advarer mod AI-lovgivning</h4>
+        <div>
+           Sundar Pichais udtalelser skal ifølge Insider ses i lyset af Googles egen forretning, der i flere henseender hviler på brugen af AI. Opfordringen fra Google-topchefen bliver bakket op af eksperter indenfor området, som dog også påpeger nødvendighed af en bred lovgivning i forbindelse med eksempelvis ansigtsgenkendelse. Redaktionen
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2019-09-23
+          &nbsp;·&nbsp; e75b47af
+          &nbsp;·&nbsp; #20
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.782</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.66</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRIVACY ANSIGTSGENKENDELSE - ER DET GODT ELLER SKIDT?</h4>
+        <div>
+          Partner, Carve Consulting, bestyrelsesformand, DataEthics ANSIGTSGENKENDELSE skaber frygt hos mange for invasion af privatlivet. Eksempler fra Kina, hvor ansigtsgenkendelse anvendes på gader, skoler, stationer og i butikscentre som obligatorisk ID og flyder videre til myndighederne, bidrager til forestillinger om totalt overvågede borgere og øger frygten.MANGE VAR OGSÅ kritiske, da Brøndby IF indførte ansigtsgenkendelse ved indgangen til stadion sidste år med det specifikke formål at undgå, at karantæneramte uromagere kom ind.DE BANGE ANELSER om teknologiens muligheder fik et ekstra hak opad i sidste uge med afdækningen af virksomheden Clearview AI's scraping af mere end tre milliarder personfotos fra sociale medier som Facebook og Youtube samt millionvis af hjemmesider. Når man tager et billede af en person med Clearview AI-appen, sammenstilles fotoet med matchende billeder i databasen og med de links, som billederne er fundet på. Et redskab, som politimyndigheder på tværs af USA har taget i brug til efterforskning.FRYGTEN FOR den invasive teknologi har fået stater i USA til at indføre forbud mod at bruge ansigtsgenkendelse.San Fransisco indførte som den første et generelt forbud i foråret 2019, der omfatter alle myndigheders brug af ansigtsgenkendelse, herunder både politi og fængsler.MEN HVORFOR ER ansigtsgenkendelse så farlig? Det er der flere grunde til.GENEREL ANSIGTSGENKENDELSE af alle borgere griber ind i vores grundlæggende rettigheder. Staten eller private virksomheder får indsigt i vores privatliv, i vores relationer og foreningsliv, vores bevægemønstre og opholdssteder. Sammen med andre oplysninger kan det fortælle noget om vores alder, køn, etnicitet, handicap og seksuelle orientering, vores vaner, interesser og præferencer samt oplysninger om vores bopæl, uddannelse og arbejdsmarkedstilknytning.Dermed er det ikke kun de enkelte frihedsrettigheder, der kommer under pres, men menneskets basale ret til beskyttelse af sin værdighed.TEKNOLOGIEN til ansigtsgenkendelse giver mulighed for overvågning, som passer dårligt med frie, retfærdige og demokratiske samfund. I demokratiet skal vi netop ikke tåle statens overvågning.Den ses som en form for vilkårlig magtudøvelse, som retsstatens principper beskytter os imod. Det er f. eks. derfor, retsplejeloven indeholder skrappe krav til politiets indgreb i vores private sfære og kræver konkret begrundet mistanke om kriminalitet, før der må optages f. eks. fingeraftryk eller foretages observation og i nogle tilfælde også dommerkendelse.EN VÆSENTLIG SPILLEREGEL er derudover det enkelte menneskes kontrol over egne data og vores selvbestemmelsesret til at træffe beslutninger om vores liv og dagligdag.Den individuelle autonomi kommer derfor under pres, når ansigtsgenkendelse bruges til profi-lering eller scoring af os.RISIKOEN FOR ukorrekt genkendelse udgør endnu en grund til at reducere brugen af ansigtsgenkendelse.Flere undersøgelser viser nemlig temmelig alvorlig fejlidentifikation.Kvinder og sorte eller brune personer bliver f. eks. fejlidentificeret 5-10 gange hyppigere end hvide mænd.Det sker, fordi den underliggende algoritme er biased, dvs. bygger på fordomme om køn og race, eller er trænet på materiale, er ikke er repræsentativt for befolkningen.MEN ER DER slet ingen gode ting at sige om ansigtsgenkendelse? Jo, teknologien kan bruges til at effektivisere processer, afdække problemer og tilpasse produkter til vores specifikke behov.TEKNOLOGIEN GIVER politiet et effektivt redskab til efterforskning og til opretholdelse af ro og orden. Den kan også gøre grænsekontrollen effektiv ved at afsløre eftersøgte og personer med falske identitetspapirer.Eller bidrage til effektiv kontrol af socialt bedrageri.MANGE OFFENTLIGE services kan også forbedres. Tilpassede og rettidige ydelser til f. eks. hjemløse og andre udsatte borgere kan realiseres, fordi kameraer med ansigtsgenkendelse kan vise, hvor de befinder sig. Teknologien kan også bidrage til at realisere de smarte byer, som både økonomiske og bære dygtighedsbetragtninger peger på som et godt koncept for byudvikling og -drift.PÅ SUNDHEDSOMRÅDET er der allerede apps på markedet, der via ansigtsgenkendelse viser symptomer på sjældne genetiske sygdomme og depression, eller som indbygget i spejle afdækker hudproblemer, feber, blodtryk og stress.UDSTYRET MED ansigtsgenkendelse, der afdækker vores humør og følelser, kan tilpasningen af tilbud på sociale medier og platforme som Netflix og Amazon endnu mere præcist opfylde vores konkrete ønsker og behov.UANSET OM VI FRYGTER ansigtsgenkendelse eller ser det som en vej til mere effektive samfund og individuelt tilpassede ydelser, er der nogle kritiske spørgsmål, vi er nødt til at stille, inden vi indfører teknologien.HVAD ER FORMÅLET med at bruge ansigtsgenkendelse? Behøver vi ansigtet, eller kan vi nøjes med andre oplysninger for at opfylde formålet? Hvad sammenlignes billederne med? Er vi sikre på, at matchingen er korrekt? Og hvem kontrollerer, at den er korrekt? Hvem har adgang til at kigge på billederne og anvende dem? Hvem analyserer dem? Og hvordan kan vi gøre indsigelse mod brugen af oplysningerne? MED ANDRE ORD: Hvordan opfylder vi de krav til formålsbestemthed, nødvendighed og proportionalitet i anvendelsen af data, oplysningernes korrekthed og tilstrækkelig datasikkerhed, som er kernen i den ret til beskyttelse af persondata, vi har efter EU-traktaten og persondataforordningen (GDPR)? BRØNDBY IF'S BRUG af ansigtsgenkendelse ved adgang til stadion er et rigtig fint eksempel på, hvordan teknologien kan bruges fornuftigt og med respekt for disse krav. Det er således kun personer på karantænelisten, der bliver genkendt af kameraerne, og trukket til side, så vagtpersonalet kan verificere, at de faktisk er karantæneramt. Alle andre tilskuere går igennem uden registrering af deres ansigt.POLITIETS BRUG af ansigtsgenkendelse for at finde frem til personer, der er involveret i aktuel kriminalitet, kunne være et andet eksempel på god brug af ansigtsgenkendelse.Personer, der har været involveret i kriminalitet, er registreret i kriminalregisteret, som bl. a. indeholder fotos. Hvis registeret kobles sammen med kameraer i byrummet, vil det slå ud, når en registreret eller eftersøgt person viser sig, f. eks. i en afgrænset zone. Politiet kan herefter gribe ind i for at efterforske eller forebygge en kriminel handling.SOM KONTRAST hertil står brugen af ansigtsgenkendelse i Kina og hos Clearveiw AI. Her ser vi, hvordan ansigtsgenkendelse let kan føre til uproportionale indgreb i den enkeltes privatliv, hvis teknologien bruges ukritisk. Og så giver det os nogle pejlemærker ift., hvordan vores samfund vil kunne komme til at se ud, hvis vi tilsidesætter demokratiets spilleregler og hensynet til det enkelte menneskes værdighed til fordel for hensyn til effektivitet og kontrol.SAGEN KORT ANSIGTSGENKENDELSEHvis du bliver afvist ved en fodboldkamp, kan det skyldes, at du har købt billet til en forkert dato. Men årsagen kan også være, at et AI-system, kunstig intelligens, har forvekslet dit ansigt med en fodboldbølles og givet besked om, at du har karantæne.Birgitte Kofod Olsen er bestyrelsesformand i DataEthics, der kalder sig »en tænkehandletank, der arbejder for at fremme dataetiske produkter og tjenester«. Hun går i ugens debat i dybden med ansigtsgenkendelse, hvilke kritiske spørgsmål vi bør stille, før vi introducerer det, og gode eksempler på, hvordan ansigtsgenkendelse både kan bruges rigtigt og forkert.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2020-02-28
+          &nbsp;·&nbsp; e798ff97
+          &nbsp;·&nbsp; #21
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.529</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.573</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.601</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Australien indsamler alle borgeres ansigt i database</h4>
+        <div>
+          I Australien er statslige myndigheder i færd med at indsamle billeder af borgernes ansigter til en stor database, der har til formål at mindske risikoen for identitetstyveri. Det gælder billeder fra både kørekort og pas, skriver The Guardian.Samtidigt får det australske politi også adgang til ansigtsgenkendelse, og det får privacy-eksperter til at råbe op.»Vi er godt på vej med automatiseret overvågning af det offentlige rum i realtid,« siger en talsperson fra The Australian Privacy Foundation til The Guardian.En anden organisation, Australian Human Rights Commision, mener desuden, at ansigtsgenkendelse er for risikabelt at bruge til politiarbejde, da der er stor risiko for, at der findes falske positiver - især på tværs af forskellige etniciteter.Relateret jobannonce: Principal ConsultantEn talsmand fra det australske indenrigsministerium lover dog, at algoritmen vil blive vurderet af eksperter på området, så den slags ikke sker.Samtidigt understreger talsmanden, at der ikke er nogen grund til at bekymre sig om masseovervågning, da der slet ikke er afsat nok ressourcer til, at det overhovedet kunne lade sig gøre. Dette skyldes bl.a., at ansigtsgenkendelsesalgoritmen kun fungerer med stilbilleder, og derfor ikke kan bruges på video.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-10-02
+          &nbsp;·&nbsp; e75fc00d
+          &nbsp;·&nbsp; #22
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.591</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.661</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.672</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>BOARD TIL FLERE ANVENDELSER</h4>
+        <div>
+          Layerscape LS1046A Freeway (FRWYLS1046A) evalueringsboard fra NXP Semiconductors er tilgængeligt som et bare board eller i et kabinet med et dobbeltbånds wifi-modul og er en edge computing-platform, der er designet til at understøtte NXP's QorIQ LS1046A system-on-chip (SoC). Boardet understøtter en bred vifte af applikationer, fra trådløse gateways i industri og smarte bygninger over kunstig intelligens med ansigtsgenkendelse til bil-og rumfartsapplikationer.Andre målapplikationer inkluderer kantberegnede gateways, maskinlæring, robotik, Industrial Internet of Things og datakommunikation.Boardet er baseret på en quad-core Arm Cortex-A72 og tilbyder et robust sæt perifere enheder, inklusive 64 Mbytes QSPI-flash, 4 Gbytes DDR4 (med EØF ved 2,1 GT/ s) og 4 Gbits NAND-blitz.Tlf. + 31 40 27 29 999 nxp.com.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2019-11-08
+          &nbsp;·&nbsp; e76e2f1d
+          &nbsp;·&nbsp; #23
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.778</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.539</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny Microsoft sikkerhed kun i Windows 10</h4>
+        <div>
+          En opgradering af Windows Defender skal afsløre malware ved at overvåge og registrere unormal system aktivitet. Men kun i Windows 10.Ved at sammenkøre og analyse adfærden på mere end én milliard Windows-systemer, skal Windows Defender Advanced Threat Protection programmet (WDATP), der leveres med Windows 10, opdage unormal systemaktivitet hos brugeren, og på den måde afsløre malware, der er undsluppet de normale antivirus-programmer, skriver Ars Technica .Ifølge Microsoft var der tusinder af sådanne angreb i 2015. Angreb, der i gennemsnit var 200 dage om at blive opdaget og yderligere 80 dage om at blive indkapslet.Den nye tilføjelse til Windows Defender er en cloud-baseret model, der overvåger aktiviteten på alle netopkoblede Windows-maskiner. Registrerer programmet aktivitet på en maskine, som afviger fra aktiviteten på den gennemsnitlige Windows-maskine, sender programmet en advarsel til administratoren af maskinen.Ikke et antivirusprogramWDATP er på den måde ikke et antivirusprogram i klassisk forstand, der selv angriber malware, men et system, der advarer ejeren om, at en maskine kan være kompromitteret.Programmet retter sig således efter de angreb, der typisk ikke omhandler softwarefejl, men snarere sårbarheder omkring unpatched zero-day og brugeradfærd.Lokkes en bruger til at åbne en mail med et kompromitteret program eller udføre en inficeret PowerShell-kommando, vil den Advanced Persistent Threat (APT) software, der typisk bliver brugt i sådanne angreb, begynde at scanne porte, søge efter netværksforbindelser for at stjæle data, eller oprette forbindelse til eksterne systemer for at søge nye informationer og exfiltrate data.Windows Defender Advanced Threat Protection vil i disse tilfælde opfange denne adfærd og undersøge, om den afviger fra den normale og forventede system-adfærd blandt de øvrige en milliard Windows-systemer. Gør den det, vil WDATP således udsende en advarsel.Hjælp til selvhjælpSammen med advarslen fra WDATP om, at en maskine kan være kompromitteret, følger ikke bare informationer om maskinens aktuelle aktiviteter. Meddelelsen fra WDATP indeholder også historik om netværksaktiviteter, fil adgange, og hvilke processer maskinen har kørt.Information, der gør det nemmere at afgøre, hvornår en maskine er blevet angrebet, og hvor omfattende angrebet har været.Malware med viljeFor at træne Defender Advanced Threat Protection programmet har Microsoft etableret et lukket cloud-miljø, hvor de ved hjælp af machine learning-teknikker analyserer og afkoder mere end en million selvskabte mistænkelige filer. Målet er at opbygge modeller for normal og unormal system-aktivitet. På den måde håber Microsoft på at kunne få et bedre billede af de unormale aktiviteter, malware og hackere kan forårsage.Målet med WDATP er ikke kun, at kunne opfange usædvanlig PC adfærd, men på sigt også at kunne cross refererer mod særlige malware.Da Windows Defender Advanced Threat Protection er en ren cloud-baseret løsning kræves der en klient for hvert endpoint, hvilket kunne være en udvidet version af Windows Defender-klienten.Kun for Windows 10En beta version af WDATP bliver i øjeblikket testet på omkring en halv million systemer blandt private brugere, men senere på året vil Microsoft begynde at rulle en forsmag af programmet offentligt ud.Microsoft har endnu ikke besluttet, hvilken prismodel der skal følge WDATP, men oplyser, at programmet ikke vil blive tilgængeligt på ældre versioner af Windows.Microsoft har tidligere lanceret sikkerhedsprogrammerne Credential Guard og Device Guard eksklusivt til Windows 10, og pusher på den måde endnu engang til, at særligt modstridende erhvervskunder opdater deres ældre Windows Systemer til den omstridte tiende udgave.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-03-02
+          &nbsp;·&nbsp; e59874ef
+          &nbsp;·&nbsp; #24
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.809</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.834</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.653</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Hackere stjæler kontooplysninger på over 60 millioner Dropbox-brugere</h4>
+        <div>
+          Næsten 70 millioner brugere på Cloudservicen Dropbox kan have fået stjålet deres kontooplysninger. Årsagen er et hackerangreb fra 2012.I sidste uge tvang Dropbox deres brugere, som har oprettet en konto før 2012, til at nulstille deres kodeord.Baggrunden for initiativet er et gammelt hackerangreb fra samme år, hvor over 68,680,741 brugere har fået stjålet deres oplysninger. Tidligere har det været fuldstændig uvist, hvor mange brugere, som var ramt af angrebet, da Dropbox ikke har oplyst det.Det er det amerikanske medie Motherboard, der har fået fat i filer med e-mailadresser og kodeord fra Dropbox-brugere gennem forbindelser i -databasehandelssamfund-. Fundet er blevet verificeret af en Dropbox-repræsentant.Samlet set fylder de fire filer fem GB og indeholder oplysninger næsten om 70 millioner brugere.»Vores sikkerhedsafdeling er altid på udkig efter nye trusler mod vores brugere. Som en del af disse bestræbelser fandt vi en række Dropbox-brugerlegitimationsoplysninger (e-mail adresser og passwords), som, vi mener, blev stjålet i 2012. Vores analyse tyder på, at de legitimationsoplysninger vedrører en hændelse, som vi oplyste om på dette tidspunkt,«skrev virksomheden på sin hjemmeside.Hacker i besiddelse af oplysningerNæsten 32 millioner af brugerne er dog sikret med krypteringen bcrypt. Det betyder, at hackere ikke vil være i stand til at få fingrene i brugernes koder. De resterende adgangskoder er krypteret med SHA-1, som er en aldrende, mindre sikker algoritme.Dropbox har siden hackerangrebet i 2012 ændret deres praksis for kryptering flere gange for at beskytte brugernes oplysninger.På det mørke net, hvor data kan købes efter succesfulde hackerangreb, lader der ikke til at være efterspørgsel på eller udbud af Dropbox-brugernes kontodetaljer ifølge Motherboard.Typisk falder værdien markant, når passwords er tilstrækkeligt sikret. Dog fortalte en hacker til Motherboard, at han eller hun var i besiddelse af Dropbox-oplysningerne.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2016-08-31
+          &nbsp;·&nbsp; e5dca2a5
+          &nbsp;·&nbsp; #25
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.983</kbd>
+            <kbd data-tooltip="Facebook, fake news &amp; Trump">L05_FBTRUM&nbsp;0.619</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.628</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Netflix vil bruge computer til at afgøre, om film skal være forbudt for børn</h4>
+        <div>
+          Hos Netflix sætter man sin lid til teknologien.Også når det gælder spørgsmålet om, hvor gammel man bør være for at se en given film eller serie på den populære streamingtjeneste.I Storbritannien vil Netflix fremover ved hjælp af et algoritmebaseret computersystem selv sætte vejledende aldersgrænser på sine film og serier, skriver BBC.Systemet er udviklet i et samarbejde mellem Netflix og organisationen British Board of Film Classification, som i Storbritannien står for at vurdere, om en film frarådes bestemte aldersgrupper.For eksempel vurderede organisationen for nylig, at Susanne Biers Netflix-film 'Bird Box' ikke er egnet for børn under 15 år.British Board of Film Classification mener, at systemet er så godt, at organisationen automatisk vil blåstemple de anbefalinger, algoritmerne leverer.Systemet fungerer ved, at en ansat i Netflix gennemser en film og angiver, om filmen indeholder for eksempel voldelige scener eller sex. Den information bruger det algoritmiske system så til at fastslå, om filmen skal være tilladt for alle, eller om den bør frarådes børn under for eksempel 12 år. Systemet har på baggrund af data om, hvordan film tidligere er blevet vurderet, lært selv at sætte aldersgrænser.»Det er første gang, at British Board of Film Classification har samarbejdet med en indholdsudbyder og sammensat et system, som vil føre til, at indholdsudbyderen selv vurderer sit indhold« , udtaler en talsmand for organisationen til BBC.I første omgang er der tale om et etårigt pilotprojekt, men British Board of Film Classification forventer, at systemet vil levere gode resultater.Giv artiklen i gaveSom Politiken-abonnent kan du ubegrænset dele artikler med dine venner og familie.Giv artiklen som gave Som Politiken-abonnent kan du ubegrænset dele artikler med dine venner og familie. Du skal blot dele linket nedenfor. Kopier link Facebook Twitter Mail
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2019-03-14
+          &nbsp;·&nbsp; e71df76b
+          &nbsp;·&nbsp; #26
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.746</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Trailer til 'Transcendence'</h4>
+        <div>
+          Dr. Will Caster (Johnny Depp) er verdens fremmeste kapacitet inden for forskning af kunstig intelligens. Han har viet hele sin eksistens til at skabe historiens mest informationsmodtagelige computer, der er i stand til at indsamle og lagre menneskedens samlede viden, kombineret med et komplet register af menneskelige følelser.
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2014-06-16
+          &nbsp;·&nbsp; e472b9c6
+          &nbsp;·&nbsp; #27
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.924</kbd>
+            <kbd data-tooltip="Art, Sci-Fi and AI">L05_SCIFI&nbsp;0.738</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Lækkede dokumenter: Danske myndigheder på Clearview AI's kundeliste</h4>
+        <div>
+          Clearview AI har kunder i hele verden og samarbejder også med danske politimyndigheder og/eller andre offentlige myndigheder i landet, viser lækkede dokumenter. Rigspolitiet afviser at have brugt Clearview AI's applikation. Ansigtsgenkendelsesvirksomheden Clearview AI har ifølge nyhedsmediet BuzzFeed News de danske politimyndigheder og/eller andre offentlige myndigheder i Danmark som kunder. Rigspoliet afviser, at det danske politi er kunder hos Clearview AI. Det skriver BuzzFeed News efter at have fået fat i en interne dokumenter, der er lækket til nyhedsmediet af en unavngiven kilde. Det fremgår ikke, om det er samme person(er), der i går hackede sig ind i Clearview AI's system og stjal virksomhedens kundeliste. På kundelisten fremgår det, at Clearview AI's kunder inkluderer politi og andre offentlige myndigheder i mindst 26 lande uden for USA og Canada, hvoraf langt de fleste er europæiske lande - herunder Danmark. BuzzFeed News skriver ikke nærmere om, præcis hvilke myndigheder der er tale om. To ansatte i Rigspolitiet registrerede sig på Clearview AI's hjemmeside Pressechef i Rigspolitiet, Thomas Kristensen, afviser over for Version2, at det danske politi er kunder hos Clearview AI, og at det danske politi benytter sig af ansigtsgenkendelsessoftware. Rigspolitiets bedste bud på, hvorfor danske politi- og/eller andre offentlige myndigheder optræder på Clearview AI's kundeliste, hænger sammen med, at to ansatte i Rigspolitiets deltog i en konference i USA i efteråret, hvor bl.a. Clearview AI præsenterede deres produkt. Efterfølgende registrerede de ansatte sig med deres mailadresse på Clearview AI's hjemmeside for at kunne læse mere om ansigtsgenkendelsesapplikationen, og det er dermed bedste bud på, hvorfor Danmark optræder på listen, oplyser Rigspolitiets pressechef. »Vi bruger ikke ansigtsgenkendelse til efterforskningen i dansk politi, og vi har ikke kendskab til, at der nogen (ansatte, red.), der skulle have været inde og hente det her program,«  siger pressechef Thomas Kristensen. Kan identificere personer på få sekunder Tidligere har det været beskrevet, at en række af de amerikanske politimyndigheder allerede har taget Clearview AI's applikation i brug. Men de lækkede dokumenter, som BuzzFeed har fået fat i, at Clearview samarbejder med mere end 2.200 kunder fordelt på hele verden. Clearview AI's applikation er bygget op omkring en database med over tre milliarder billeder, der er indsamlet fra bl.a. Facebook, Instagram, YouTube, Twitter og andre steder på nettet. Applikationen kan bruges til at identificere personer ved at sammenligne et foto op mod den enorme database i samspil med AI og software til ansigtsgenkendelse. På den måde kan Clearview bruges til at identificere personer med både navn og eventuelt andre personoplysninger ud fra et enkelt billede på få sekunder. Opdateret klokken 11:12: Version2 har netop været i kontakt med Rigspolitiets pressechef, Thomas Kristensen, der afviser, at det danske politi er kunder hos Clearview AI. Tidligere stod der, at Rigspolitiet og PET, hverken kunne af- eller bekræfte, om dette var tilfældet.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-02-28
+          &nbsp;·&nbsp; e7996b9c
+          &nbsp;·&nbsp; #28
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.644</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.556</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>It-folk finder ubeskyttet database med følsomme oplysninger på 80 mio. husholdninger i USA</h4>
+        <div>
+          It-sikkerhedsfolk har fundet en ubeskyttet database med personoplysninger på mere end 80 millioner husholdninger.Det skriver Engadget.Databasen indeholder oplysninger om personernes fulde navne, adresser og lokation. Derudover er der kodede oplysninger om køn, indkomst, boligtype og civilstatus. Det er uklart, hvem ejeren af databasen er.»Jeg ville ikke bryde mig om, at mine data blev udstillet på den måde. Det er ikke meningen, at det skal være der,« siger Noam Rotem, der var med til at gøre opdagelsen, til Cnet.Omfanget på 80 millioner husholdninger svarer til mere end halvdelen af det samlede antal husholdninger i USA.Relateret jobannonce: Lead High Voltage Asset Integrity SpecialistIt-sikkerhedsmessen Infosecurity Denmark 2019 byder på mere end 110 seminarer og cases, 25 udvalgte keynotes og 80 udstillere. To dage med masser af faglig viden og netværk d. 1. og 2. maj i Øksnehallen i København.Konferenceprogrammet dækker compliance, cybercrime, IoT, nye teknologier som AI og blockchain samt data og cloud og giver et unikt indblik i de nyeste it-sikkerhedsmæssige udfordringer på et højt fagligt niveau.Du bliver også opdateret om både de nyeste tekniske landvindinger fra spydspidsforskere og får indblik i aktuelle trusselsbilleder fra nogle af verdens bedste rådgivere.Læs mere og tilmeld digLæs mere om Version2 Data &amp; Cloud Expo, der afholdes sammen med Infosecurity DenmarkForholdsvis nyIfølge sikkerhedseksperterne bag fundet er der kun ganske få oplysninger om, hvad oplysningerne skulle bruges til. De mange oplysninger om boligforhold tyder dog på, at databasen muligvis tilhører en virksomhed indenfor ejendomsbranchen.Til Cnet oplyser en af sikkerhedsfolkene bag fundet, at den Microsoft-server, der hoster databasen, blev bragt online i februar måned, og at databasen derved er forholdsvis ny. Microsoft, der har hostet serveren, har afvist at udtale sig om sagen.Databasen er nu blevet taget ned, oplyser Cnet.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-04-30
+          &nbsp;·&nbsp; e72dfcfb
+          &nbsp;·&nbsp; #29
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.809</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.544</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.565</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Pet Pet Thai topper anmelderliste</h4>
+        <div>
+           ASSENS: Pet Pet Thai, Café Banken og Restaurant Frederik IX. Sådan ser listen ud over de tre bedste restauranter og caféer i Assens.Det er i hvert fald konklusionen, efter den nye restaurantguide Eatie har analyseret næsten to millioner restaurantanmeldelser.Udregningerne er lavet på baggrund af indsamling af anmeldelser fra blandt andet Google, Tripadvisor og Facebook. På den måde har hver restaurant og café fået én samlet score ud fra en særlig algoritme.Scoren på mellem 1 og 10 er beregnet ud fra en algoritme, der vægter anmeldelserne ud fra deres kilde og korrigerer for falske anmeldelser.Resultatet af dette er en topliste over de bedste restauranter og caféer i Assens.Den thailandske restaurant Pet Pet Thai i Østergade i Assens har en score på 9,7 ud af 10 og indtager således førstepladsen i Top 3 over bedste caféer og restauranter i Assens.-Vi ønsker at have en demokratisk og ærlig tilgang til alle restauranter i Danmark.Derfor har vi skabt Eatie, der viser én samlet score for hver restaurant, café og spisested på baggrund af befolkningens anmeldelser af stederne på eksempelvis Google, Facebook, Tripadvisor og Yelp, forklarer Morten Lie Jørgensen, der er administrerende direktør hos Eatie.
+        </div>
+        <footer>
+          <em>LokalAvisen Assens</em>
+          &nbsp;·&nbsp; 2018-09-25
+          &nbsp;·&nbsp; e6e8c37f
+          &nbsp;·&nbsp; #30
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.774</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.597</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Fejl i Rigspolitiets software til konvertering af teledata kan have givet forkerte domme i syv år</h4>
+        <div>
+          En fejl i politiets it-systemer betyder, at Rigspolitiet og Rigsadvokaten nu skal gennemgå en lang række ellers afgjorte sager fra de sidste syv år, hvor teledata er indgået i bevisførelsen.Sådan lyder det fra Rigsadvokaten, der i en skriftlig orientering til Advokatrådet.Sagerne skal gennemgås igen, fordi Rigspolitiet tidligere i år har opdaget »beklagelig systemfejl« i politiets dataprogram, som bliver brugt i retssager, hvor der indgår data fra teleselskaberne.Programmet bliver brugt i straffesager til at konvertere rådata fra teleselskaberne i forbindelse med indhentning af historiske teleoplysninger og udvidede teleoplysninger.»Ifølge Rigspolitiet kan fejlen have medført, at der i nogle tilfælde mangler oplysninger fra rådata i konverteret data, som er indgået i en straffesag,« skriver Rigsadvokaten i orienteringen.Alle sager skal gennemgåsFejlen i politiets dataprogram kan i yderste konsekvens have haft betydning for domsafsigelsen i sager fra perioden 2012 til 2019, hvor teledata er indgået, men ifølge Rigsadvokaten er det dog ikke muligt at fastslå om dette er tilfældet på nuværende tidspunkt.Relateret jobannonce: Machine learning developerDerfor skal Rigspolitiet og Rigsadvokaten nu gennemgå alle sager, hvor fejlen potentielt kan være opstået. Denne gennemgang vil foregå i prioriteret rækkefølge, så sager, hvor sigtede eller domfældte aktuelt er frihedsberøvet, vil blive gennemgået først, meddeler Rigsadvokaten.Hvis gennemgangen viser, at der er blevet lavet fejl på grund af dataprogrammet, vil forsvarsadvokaten blive orienteret, og sagen kan blive taget op til genovervejelse.Chefpolitiinspektør ved Rigspolitiet Torben Mølgaard Jensen fortæller til TV 2, at det er i omegnen af 10.000 sager der nu skal gennemgås. Gennemgangen vil både omfatte afsluttede og ikke-afsluttede sager, og ifølge Rigsadvokaten er det ikke muligt at sætte en bagkant for, hvornår gennemgangen vil være bragt til ende.It-fejlen i politiets dataprogram blev ifølge Rigspolitiet rettet den 8. marts i år, og myndigheden har indført en manuel kontrolprocedure for at undgå, at der fremover sker lignende fejl.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-06-18
+          &nbsp;·&nbsp; e73d91dc
+          &nbsp;·&nbsp; #31
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.593</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.762</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.696</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nets: Vi fik en mistanke, testede nøgler og spærrede NemID på hardware</h4>
+        <div>
+          It-folk hos Nets fik en mistanke om, at NemID på hardware kunne være sårbar Roca-angrebet - mistanken viste sig at holde stik.Det var test af offentlige nøgler knyttet til NemID på hardware, der gav sikkerhedsfolkene hos Nets et praj om, at løsningen var sårbar i forhold et ny angrebsteknik.Som Version2 tidligere har fortalt, valgte Nets i denne uge at lukke ned for NemID på hardware som følge af sårbarheden.Angrebsteknikken, kaldet Roca, gør det kort fortalt muligt at regne sig frem til privat nøgle alene med kendskab til en offentlig nøgle i et PKI-setup, som blandt andet bruges i forbindelse med NemID.I forbindelse med offentliggørelsen af Roca, er der også offentliggjort et testværktø j, hvor det er muligt at afprøve, hvorvidt en offentlig nøgle er sårbar i forhold til Roca.»Vi har kørt samtlige nøgler (knyttet til NemID på hardware, red.) igennem,« siger Jens Jacob Larsen, chef for NemID product and delivery hos Nets.Roca-angrebetForskere har fundet frem til en sårbarhed i en nøgle-genererings-algoritme, som bliver anvendt i chips fra Infineon Technologies AG. Sårbarheden kaldes Roca (The Return of Coppersmith's Attack), og den gør det reelt set muligt at regne sig frem til et offers private nøgle ud fra kendskabet til den offentlige nøgle.Roca-angrebet kan lade sig gøre i praksis for nøgler med en længde på op til 2048 bits. Der ligger flere værktøjer online, som gør det muligt at teste, om en nøgle er sårbar over for Roca-angrebet.Forskerne vurderer, at det vil koste op til 40.000 dollars i Amazons skytjeneste at knække en 2048-bits nøgle, mens prisen for en 1024-bits nøgle er op til 76 dollars.Systemet med offentlige og private nøgler gør det blandt andet muligt for at verificere, hvorvidt en person er i besiddelse af en privat nøgle, alene ud fra kendskabet til den offentlige nøgle.Kilde:https://crocs.fi.muni.cz/public/papers/rsa_ccs17 mfl.Alle detaljer om Roca-angrebet er endnu ikke offentliggjorte. Det er planen, det skal ske 2. november i forbindelse med et indlæg på ACM Conference on Computer and Communications Security-konferencen, der finder sted i Dallas, Texas.Hvad de manglende detaljer angår, fortæller Jens Jacob Larsen, at testprogrammet, som Nets har anvendt, lige nu fungerer som en black box, hvor det er usikkert, hvordan sårbarheden bliver identificeret i de offentlige nøgler.Fik en mistankeFolkene hos Nets begyndte at teste nøglerne, da de fik en mistanke om, at løsningen kunne være sårbar i forhold til Roca.Mistanken opstår i kølvandet på, at Roca-angrebsteknikken bliver offentliggjort 16. oktober, fortæller Thomas Sølling, chef for NemID-medarbejdersignatur hos Nets.»Der sidder nogle sikkerhedseksperter i vores it-afdeling, som begynder at undersøge, om sårbarheden faktisk gælder for vores løsning,« siger han og fortsætter:»Det går op for os, at nogle private nøgler på NemID Hardware, som er sårbare. Og det sker i løbet af 19. oktober, at vi finder ud af, der er et problem.« På dette kontakter Nets fat i leverandøren af løsningen, Gemalto.»Om fredagen (20. oktober, red.) beder vi dem tage produktet væk fra deres webshop, så der ikke er flere, der kan købe hardwaren,« siger Thomas Sølling.Sidenhen har Gemalto bekræftet overfor Nets, at hardwaren anvender det sårbare Infineon-bibliotek.Ny løsningNemID på hardware har efter alt at dømme i været særlig udbredt. Nets har oplyst, at der var under 200 certifikater, der blev spærret i forbindelse med nedlukningen. Altså relativt få ud af den samlede NemID-brugerskare.Ikke desto mindre, så går en del af aftalen mellem Nets og Digitaliseringsstyrelsen i forhold til NemID ud på, at det skal være muligt for borgeren at opbevare sin egen private nøgle. Den mulighed er med nedlukningen af den hidtidige hardware-løsning nu forsvundet.Jens Jacob Larsen oplyser, at Nets er ved at kigge på flere alternative hardware-løsninger fra forskellige leverandører.»Vi kommer med en hardwareløsning, det skal vi. Men vi skal først sikre os, at den er sikker.« Nets ønsker på nuværende tidspunkt ikke at sige noget om, hvorvidt en fremtidig model for NemID på hardware kunne tænkes at involvere flere løsninger, modsat den tidligere Gemalto-løsning, hvor der kun har været en enkeltstående valgmulighed. Nets er heller ikke klar til at melde en konkret tidshorisont ud i forhold til, hvornår en ny hardware-løsning til NemID måtte være klar.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-10-26
+          &nbsp;·&nbsp; e679ab2e
+          &nbsp;·&nbsp; #32
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.645</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.645</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.689</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny foto-app bruges af politiet i USA: Tag et billede, og få data om personen på det</h4>
+        <div>
+          Amerikanske myndigheder er begyndt at bruge ansigtsgenkendelses-it fra en ny virksomhed ved navn Clearview AI. Virksomhedens applikation kan genkende personer på få sekunder ud fra et enkelt billede. Massevis af amerikanske myndigheder er begyndt at bruge et nyt system til ansigtsgenkendelse, der på få sekunder kan identificere en person. Det nye system er en applikation fra virksomheden Clearview AI. applikationen er bygget op af en database, der består af milliarder af billeder hentet fra Facebook, Youtube, Venmo og andre steder på internettet. Applikationen kan bruges til at identificere personer ved at sammenligne et foto op mod den store database af personbilleder. Hvis applikationen finder et match i foto-databasen, henviser den til den kilde, hvor det matchende billede er fundet. På den måde kan Clearview bruges til at identificere personer med både navn og eventuelt andre personoplysninger ud fra et enkelt billede. Flere medier beskriver , hvordan flere amerikanske myndigheder, herunder FBI, bruger databasen til at søge efter mistænkte i forbindelse med kriminalsager, og ifølge avisen har politiet allerede brugt applikationen flere gange til at opklare kriminalsager. Clearviews database er mindre end eksempelvis FBIs egen database, som både indeholder pas- og kørekortbilleder og rummer over 641 millioner fotos af amerikanske borgere. I øjeblikket er applikationen ikke tilgængelig for offentligheden, men ifølge The New York Times har flere politifolk og investorer i Clearview-projektet givet udtryk for, at den godt kan blive det i fremtiden. Kritikere af projektet adverer om, at applikationen kan risikere at give falske positive matches, og at den også kan udnyttes af blandt andet stalkere.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2020-01-21
+          &nbsp;·&nbsp; e78c0f96
+          &nbsp;·&nbsp; #33
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.605</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.675</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Machine learning fanger skattesvindlere</h4>
+        <div>
+          I jagten på moms- og skattesvindlere får Skattestyrrelsens medarbejdere hjælp af machine learning. Det skriver Finans.Ud af en liste med 500 selvstændige erhvervsdrivende er det lykkedes algoritmerne at udpege 101, hvor der var sandsynlighed for snyd med moms og skat. I 95 ud af de 101 tilfælde var der rent faktisk tale om snyd for et samlet beløb på 36 millioner krroner»I sidste ende drejer det sig om at give lovlydige håndværkere, advokater og andre selvstændige muligheden for en fair konkurrence mod snyderne, der ikke har en fast omkostning i form af skat og moms,« siger Preben Buchholtz, Underdirektør i Skattestyrelsen.
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2021-04-15
+          &nbsp;·&nbsp; e8387e16
+          &nbsp;·&nbsp; #34
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.518</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.656</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.679</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sådan fungerer Brøndby Stadions ansigtsgenkendelse</h4>
+        <div>
+          Danmarks hidtil eneste system til overvågning ved hjælp af automatiseret ansigtsgenkendelse har i de første seks måneder udelukket fem uønskede tilskuere fra fodboldkampe. Ansigtsgenkendelse er et varmt emne for tiden. Offentlige myndigheder og private aktører står på spring for at bruge den omdiskuterede teknologi, mens tænketanke og borgere bekymres over de principielle etiske problemer ved anvendelsen. Vil du have fuld adgang til DataTech? DataTech skriver til dig, der arbejder professionelt med data og analytics. Vi giver dig inspirerende cases, nyheder og debat om alt fra Machine Learning-modeller til dataetik. Har du allerede et abonnement? Log ind Er dit prøveabonnement udløbet? Køb
+        </div>
+        <footer>
+          <em>Pro.ing.dk/datatech</em>
+          &nbsp;·&nbsp; 2020-01-21
+          &nbsp;·&nbsp; e78bfc61
+          &nbsp;·&nbsp; #35
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.542</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.638</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>EU brygger på regler mod masseovervågning med ansigtsgenkendelse</h4>
+        <div>
+          Borgerne skal have ret til deres egne data fra ansigtskendelsessoftware, mener EU-Kommissionen, som er begyndt at undersøge, hvordan de med ny lovgivning kan sætte begrænsninger for brugen af teknologienDet skriver Financial Times, som har talt med en række højtstående embedsmænd i Kommissionen.Lovgivningens mål skal være at begrænse »den vilkårlige brug af ansigtsgenkendelses-teknologi« , har en embedsmand sagt til avisen. Pointen er, at EU-borgerne skal have retten til at vide, hvornår deres data fra ansigtsgenkendelse bliver brugt - som en slags udvidelse af GDPR.Det vil formentlig ramme både virksomheder, offentlige myndigheder og efterretningstjenester, som udfører masseovervågning i det offentlige rum, skriver Financial Times.Relateret jobannonce: ProjektkoordinatorEU-Kommissionens arbejde med at planlægge lovgivning for brugen af ansigtsgenkendelse er en del af opgaven med at udarbejde et sæt etisk baserede love for kunstig intelligens.Den kommende nye kommissionsformand, Ursula von der Leyen, har lovet at præsentere en handlingsplan for kunstig intelligens inden for sine første 100 dage i kommissionskontoret.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-08-22
+          &nbsp;·&nbsp; e74fd576
+          &nbsp;·&nbsp; #36
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.739</kbd>
+            <kbd data-tooltip="DK business &amp; innovation policies">L05_DKINNO&nbsp;0.563</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.607</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>San Francisco overvejer at forbyde offentlig brug af ansigtsgenkendelsesteknologi</h4>
+        <div>
+          San Francisco bliver måske den første by i USA til at forbyde brugen af ansigtsgenkendelsesteknologi i det offentlige. Det bliver resultatet hvis lovforslaget introduceret af byrådsmedlem Aaron Perskin tirsdag bliver vedtaget.Det skriver San Francisco Examiner.Lovforslaget kommer efter en debat sidste sommer, da embedsmænd hos den offentlige transportsystem BART (Bay Area Rapid Transit) undersøgte mulighederne for at installere et overvågningssystem, som gjorde brug af teknologien.Bekymring om fordomsfulde algoritmerDet er ikke første gang, ansigtsgenkendelse bliver et politisk emne i USA. I maj 2018 skrev en række medlemmer af Repræsentanternes Hus to åbne breve til Amazon, angående deres salg af ansigtskendelsesteknologi til amerikansk politi.Fordi ansigtsgenkendelsesalgoritmer generelt gør brug af maskinlæring, er der bekymringer om, at algoritmerne via træningsdataene kommer til at overtage menneskelige fordomme.Den bekymring udtrykkes også af Aaron Perskin.»Vi ved, at ansigtsgenkendelsesteknologi, som har samme bias som dem, der udvikler den, misidentificerer ikke-hvide og kvinder uforholdsmæssigt ofte,« siger han til San Francisco Examiner.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-01-30
+          &nbsp;·&nbsp; e70febfe
+          &nbsp;·&nbsp; #37
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.747</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.55</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Sikkerhedsfirma blokerer for IFPI's danske site</h4>
+        <div>
+          Af MADS ELKÆR, Computerworld Offentliggjort 05.01.12 kl. 10:57Pladebranchens danske hjemmeside er blevet blokeret af et sikkerhedsselskab, efter pladebranchen selv i årevis har himlet op om at få lukket piraternes hjemmesider.Musikindustriens branchesammenslutning, IFPI, har længe været kendt for at kræve adgangen til diverse pirat-hjemmesider spærret.Nu kan de danske musikfolk hos IFPI synge med om, hvordan en spærring føles, da adgangen til ifpi.dk har været spærret hos virksomheder med abonnementer til domænekontrol hos det danske sikkerhedsselskab CSIS Group.Spærringen har dog vist sig at være en fejl, da sikkerhedsselskabets automatiserede domænespærring har troet, at ifpi.dk indeholdt den berygtede Conficker-orm - eller det, der var værre.&quot;Ja, jeg kan godt se det komisk ironiske i spærring af IFPI, men det er en fejl, og vi skal beklage. Denne type af fejl sker overalt i sikkerhedsbranchen, og vi kan ikke undgå det, hvis vi også skal fange de rigtig farlige sites,&quot; forklarer sikkerhedsekspert Peter Kruse fra CSIS Group.Sikkerhedsselskabet har erkendt fejlen og genåbnet adgangen til ifpi.dk til sine erhvervskunder.Derfor blev domænet spærretÅrsagen til, at sikkerhedsselskabet fejlagtigt havde blokeret IFPI's danske hjemmeside fra internettet, ligger i, at selskabet arbejder med en algoritme til at blokere for Conficker-ormen og lignende trusler.Peter Kruse fra CSIS forklarer, at hvis en computer er inficeret med Conficker-ormen, spreder den ondsindede orm sig til andre maskiner ved blandt andet dagligt at udse sig omkring 500 nye domæner, som den kan sprede sig til.Den algoritme, som Conficker-ormen benytter til at finde domæner, bruger sikkerhedsselskaberne så også i deres filtrerings- og blokeringssoftware. Her er IFPI's danske hjemmeside ifølge Peter Kruse fejlagtigt kommet med på den sorte liste.&quot;Vi blacklister omkring 60.000 domæner om dagen, og en falsk positiv som ifpi.dk er én forkert ud af 100.000,&quot; siger Peter Kruse.Er sket førDen danske sikkerhedsekspert vurderer, at der på verdensplan er to millioner maskiner, der er inficeret med Conficker-ormen, mens tallet i den danske andeam ligger på &quot;et par tusinde&quot;.Tendensen med at spærre hjemmesider for kunderne går under betegnelsen security-as-a-service, og CSIS og andre sikkerhedsselskaber har tidligere lukket for adgangen til &quot;rene&quot; sites.Sidste gang var det hjemmesiden til det populære chatprogram ICQ, og det kan du læse mere om her.
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2012-01-05
+          &nbsp;·&nbsp; e30a26a1
+          &nbsp;·&nbsp; #38
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.543</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.645</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>PRM / Bitdefender offentliggør ny innovation inden for email-sikkerhed og automatiseret endpoint-beskyttelse</h4>
+        <div>
+          KøbenhavnPressemeddelelse fra BitdefenderBitdefender tilføjer en række nye funktioner til endpoint-beskyttelse på deres GravityZone-platform, der er designet til at hjælpe virksomheder med at stoppe eksterne trusler tidligere og reagere hurtigere. Med den nye udvidelse øger Bitdefender GravityZone sin føring inden for endpoint-beskyttelse med identificering og blokering af netværksbaserede- og filløse angreb og ondsindet adfærd, før de får fat i vigtige ressourcer. Nye EDR (endpoint detetection and respons) forbedringer gør visualiseringen af komplekse trusler mere simpel og bruger indlejret viden til at optimere administratorens reaktionstid. Samtidig offentliggør Bitdefender deres GravityZone Email Security, som tilbyder avanceret beskyttelse mod den hurtigt voksende forekomst af angreb på virksomheders emailkonti samt forsøg på at efterligne ledende personer i virksomheden. Som en af de globalt ledende virksomheder inden for endpoint-beskyttelse, har Bitdefender stor indsigt i cyberangreb på tværs af geografi og typer af brugere. Med GravityZone-platformens nye funktioner er det muligt at drage på Bitdefenders viden om trusselsbilledet og dermed opdage angreb tidligere i angrebsprocessen. For eksempel, i forbindelse med de nylige Bluekeep-lignende udbrud, gør den nye opdatering det muligt at blokere angreb før de får fodfæste i systemet. Så sent som i oktober 2019 påviste Bitdefenders telemetri, at der alene i den ene måned blev dekrypteret og stjålet over 113 millioner kodeord med henblik på at tvinge sig adgang til brugeres legitimationsoplysninger - dette er den hyppigste type angreb med 6.700 ramte virksomheder på verdensplan.&quot;Virksomhedsafdelinger med ansvar for endpoint-beskyttelse udfordres i stigende grad af en øget forekomst af angreb, der oven i købet hele tiden bliver mere sofistikerede. Angrebene spænder bredt fra brute force-angreb til kodeords-tyveri og phishing gennem imitering af direktører,&quot; udtaler Harish Agastya, Senior Vice President, Enterprise Solution hos Bitdefender. Nye funktioner, såsom Network Attack Defense, Anomaly Defense og Integrated Email Security, forbedrer GravityZones evne til automatisk at stoppe angreb tidligere i processen for dermed at undgå, at legitimationsoplysninger går tabt. Den strømlinede visualisering og en vejledende checkliste til hændelsesrespons gør det dertil muligt for brugeren at reagere på angreb hurtigt, præcist og effektivt.Analytikeren kan handle hurtigere og mere præcistPå Ponemon Instituttet i Michigan, USA, der foretager selvstændige undersøgelser i databeskyttelse og moderne informationsteknologi, har man set på erhvervslivets brug af automatiseret software til beskyttelse mod trusler. Her vurderer man, at kun 46% af de traditionelle EDR funktioner aktivt bruges, på grund af høj kompleksitet og mangel på mere end grundlæggende kendskab til IT-sikkerhedsområdet. I stedet for EDR teknologier, der er for komplekse for de fleste firmaer, har Bitdefender specialiseret sig i at være førende på markedet af &quot;Low Overhead EDR&quot;, der gør EDR lettere tilgængeligt ved at inkorporere både viden og kunnen fra GravityZones førende eksperter i IT-sikkerhed. Derfor kan IT-personale med mindre kendskab eller tid alligevel adressere trusler, forbedre deres system og reducere firmanetværkets angrebsflade. De nye funktioner tilbyder:Udvidet beskyttelse af personlige oplysninger og blokering af truslerBitdefender præsenterer flere nye teknologier, som kan blokere for tyveri af kodeord og brute force-angreb, og dermed er med til at forhindre tabet af personfølsom data.Beskyttelse af virksomhedens emailkontiBitdefender Email Security adresserer et stigende antal angreb mod virksomheders emailkonti  og de dertil associerede tab på grund af cyberkriminalitet. GravityZone Email Security anvender en trusselsforebyggende model i flere stadier, der blokerer trusler med flere end 10.000 algoritmer. For at tage forbehold for ethvert muligt scenarie, inkluderer teknologien en unik platform, der kategoriserer beskeder og beskytter virksomhedens enheder mod udefrakommende email-trusler.De nye Bitdefender funktioner er tilgængelige nu.Vil du lære mere om, hvad GravityZone kan tilbyde inden for endpoint og email beskyttelse, kan du læse mere på Bitdefenders hjemmeside:https://www.bitdefender.com/business/enterprise-products/endpoint-security.html.Kontakt:Daniel Mølgaard Jensen
+Konsulent
+Frontpage PR &amp; Kommunikation
++45 28 40 89 62
+daniel.molgaard@frontpage.comLæs hele pressemeddelelsen på Via Ritzau her: https://via.ritzau.dk/pressemeddelelse/bitdefender-offentliggor-ny-innovation-inden-for-email-sikkerhed-og-automatiseret-endpoint-beskyttelse?releaseId=13582900
+        </div>
+        <footer>
+          <em>Ritzaus Bureau</em>
+          &nbsp;·&nbsp; 2019-11-13
+          &nbsp;·&nbsp; e76fab39
+          &nbsp;·&nbsp; #39
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.608</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.586</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Ny Kali Linux tæmmer skyens GPU-kræfter - er dit kodeord stærkt nok?</h4>
+        <div>
+          Hvis dit kodeord ikke er langt og komplekst, så er det måske nu, du skal gøre noget ved det.I hvert fald er The Register faldet over, at det Debian-baserede pentester-system Kali Linux har fået en opdatering, der indebærer kodeordknækning med skykraft.Det skal mere specifikt forstås som, at nye image-filer af Kali nu er optimeret til at håndtere GPU-instanser i Microsofts Azure-skytjeneste og i Amazons Web Services.Som nogen vil vide, kan den parallelle regnekraft i grafikprocessorer bruges til meget andet end at sikre en høj framerate i FPS-spil.GPU-regnekraften gør det blandt andet muligt at gætte på mange kodeordsmuligheder hurtigt. Og hvis ellers regnekraften er tilstrækkelig stor, mens kodeordene er for korte, for simple eller lagret via en dårlig hash-algoritme, så er det altså muligt på relativ kort tid at finde frem til brugerens kodeord.Og jo større regnekraften bliver - eksempelvis i form af flere GPU'er - jo hurtigere går det i udgangspunktet med at finde det rigtige kodeord.Som The Register pointerer, så kan Kali Linux ikke bare bruges af pentestere, men også af blackhat-hackere. Og sidstnævnte gruppe får i forbindelse med de nye funktioner i styresystemet også adgang til at kunne udnytte alle de cloud-GPU-instanser, som hackerne ellers kan overkomme at betale for.Blandt andre nye funktioner i Kali nævner The Register understøttelse af det trådløse chipset RTL8812AU fra Realtek. Der er også kommet understøttelse til OpenVAS 9-sårbarhedscanneren. Værktøjet følger ikke med i selve distributionen, men skulle kunne installeres via 'apt-get update'og så'apt install openvas'.Hele changeloggen for den nye Kali Linux ligger her
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-04-28
+          &nbsp;·&nbsp; e63b8254
+          &nbsp;·&nbsp; #40
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.951</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.883</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.731</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Nyt amerikansk lovforslag skal forbyde politiet at købe persondata</h4>
+        <div>
+          Sidste år udnyttede amerikanske myndigheder et smuthul i lovgivningen til at købe borgeres lokationsoplysninger fra datamæglere i stedet for at søge en dommerkendelse. Nu har 20 amerikanske politikere fremsat en lovforslag, der skal gøre myndighedernes persondata-køb forbudt.En gruppe politikere fra det amerikanske senat har fremsat et lovforslag, der skal sætte en stopper for, at politiet uden videre kan købe oplysninger fra datamæglere og bruge tjenester som Clearview AI i efterforskninger.Det skriver The VergeLovforslaget hedder ''The Fourth Amendment Is Not For Sale Act'', som 20 amerikanske politikere har fremsat. Hensigten med lovforslaget er, at politiet skal have en dommerkendelse for at købe data fra tredjeparts-mæglere.Senator Ron Wyden annoncerede lovforslaget sidste år i et interview med The Verge, efter det kom frem, at amerikanske myndigheder havde købt borgeres lokationsdata gennem virksomheden Venntel i stedet for at søge en dommerkendelse.»Der er ingen grund til, at informationer, som er indsamlet af datamæglere, skal behandles anderledes end den samme data, som er i mobil- eller mailudbyderes varetægt,«  udtalte han i en meddelelse i går.»Dette lovforslag lukker det lovmæssige smuthul og sikrer, at myndigheder ikke bruger sine kreditkort til at køre The Fourth Amendment over.« Lovforslaget stopper også tjenester, der masseindsamler data fra sociale medier til tracking-formål. Det vil gøre brugen af eksempelvis Clearview AI forbudt, da teknologien benytter billeder fra sociale medier, som er indsamlet på ulovlig vis, til at drive ansigtsgenkendelses-tjenesten. Det slår politikerne fast i en pressemeddelelse
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2021-04-22
+          &nbsp;·&nbsp; e83b55cf
+          &nbsp;·&nbsp; #41
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.677</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.573</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Danske netbankbrugere frastjålet 2,1 millioner kroner på 6 måneder</h4>
+        <div>
+          I løbet af første halvår 2013 fik it-kriminelle et mindre udbytte af netbankindbrud end samme periode sidste år. I alt blev der stjålet 2,1 millioner kroner fra bankerne på seks måneder.Af Jesper Kildebogaard Tirsdag, 13. august 2013 - 14:51Mens 2012 var et rigtig godt år for netbank-tyvene i Danmark, tegner 2013 til at blive lidt mindre lukrativt for hackerne. Det viser den seneste opgørelse over netbankkriminalitet, skriver nyhedsbrevet Finans fra Finansforbundet.I løbet af første halvår af 2013 var der 87 indbrudsforsøg i danske netbanker. Det førte til tab for bankerne i 38 tilfælde, som tilsammen løb op i 2.081.422 kroner.Til sammenligning var der sidste år i samme periode 95 indbrudsforsøg og et tab på 2,7 millioner kroner. Antallet af netbank-indbrud med tab var i hele 2012 på 56, mens de samlede tab for hele året var 6,3 millioner kroner. Det tyder på, at hackerne i 2013 havde en højere succesrate pr. indbrudsforsøg, men gennemsnitligt måtte nøjes med et mindre udbytte pr. gang.Mængden af netbankindbrud i Danmark mener Finansrådet generelt ligger lavt, sammenlignet med resten af Europa. Men de første to år efter NemID blev udbredt var historisk gode for bankerne, med tab på kun 433.043 og 159.668 kroner i 2010 og 2011. Andre faktorer end NemID har dog også spillet ind, da NemID først rigtigt blev udbredt i løbet af efteråret 2010.Tidligere var tabene fra netbank-indbrud lidt højere end i dag, med 6,6 millioner kroner i 2008 og 6,8 millioner kroner i 2009. Udover login-beskyttelse med NemID, som it-kriminelle har lært at snyde sig uden om med et man-in-the-middle-angreb, arbejder bankerne meget med sikkerhed på de indre linjer.For eksempel ved at spore mistænksom adfærd og måske ringe til en kunde for at bekræfte, at man faktisk ønsker at overføre et stort beløb. Præcist hvordan disse algoritmer og procedurer fungerer, er dog en velbevaret hemmelighed.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2013-08-13
+          &nbsp;·&nbsp; e3ea8bbb
+          &nbsp;·&nbsp; #42
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.804</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.636</kbd>
+            <kbd data-tooltip="Finance &amp; algo trading">L10_FINANC&nbsp;0.712</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.641</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>TAG DIT KAMERA MED I BANKEN</h4>
+        <div>
+          Kinesiske banker er ved at indføre kunstig intelligens, som kan afsløre, om kunderne lyver, når de ansøger om lån, læser vi i Jydepotten. Videooptagelser af samtalerne kan for eksempel beskrive, hvorvidt deres øjne flakker, eller om munden er lukket i mere end et sekund eller spidses for at fugte læberne.Finanskoncernen Ping An oplyser, at den har reduceret tabet på udlån med 60 procent ved hjælp af teknologien.Her bør bankkunder og forbrugerorganisationer træde med helt frem i skoene.For kan teknologien ikke snildt vendes den anden vej? Vil det ikke være rart at kunne analysere, om din bankrådgiver fugter læberne, mens han rådgiver dig om dit nye lån og ikke mindst gebyrsatsen? Så husk dit kamera ved næste bankbesøg.
+        </div>
+        <footer>
+          <em>Ekstra Bladet</em>
+          &nbsp;·&nbsp; 2018-11-09
+          &nbsp;·&nbsp; e6f76ae3
+          &nbsp;·&nbsp; #43
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.631</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.574</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Udenlandske registranter skal bevise deres identitet for at få danske domæner</h4>
+        <div>
+          DK Hostmaster indfører i dag skærpet kontrol med udenlandske registranter af.dk domænerDanskere skal vænne sig til at logge ind med NemID, når de opretter et.dk domæne, og udlændinge skal have en kopi af pas og deres regninger klar. Begge kontrolmekanismer, der skal gøre.dk domænet transparent og svindel-frit, er nu sat i spil hos DK Hostmaster.»Vi skal være et af de domæneområder, der har lavest svindel-frekvens, og det er derfor, vi har valgt at gøre det her,« siger Jakob Bring Truelsen, administrerende direktør i DK Hostmaster, til Version2.Udenlandske registranter, der har uoverensstemmelser i deres registreringer, eller som forsøger at være anonyme, vil blive flaget af en algoritme og bedt om at fremsende et kopi af pas og i nogle tilfælde fakturaer, hvor virksomhedsnavn og adresse fremgår.30 dages fristBeviser registranten ikke sin identitet inden for 30 dage, så slettes registreringen og domænet frigivet.»Når man skal give sig til kende, er man mindre tilbøjelig til at svindle, og vi har et lovkrav om at det, der står i who-is databasen er rigtigt,« siger Truelsen.Den øgede kontrol med udenlandske registranter er andet skridt i DK Hostmasters kamp mod svindel. I november blev det indført, at domæneejere med bopæl i Danmark skulle registreres med NemID, og nu rammer den øgede kontrol registranter med bopæl uden for landets grænser.Til kamp mod anonyme registranterDet vil heller ikke længere være muligt at bruge anonymiseringsværktøjer som f.eks. Cloudflares who-is beskyttelse til at skjule sin identitet.»Vi ønsker ikke, at man kan anonymisere sin domæneregistrering med diverse værktøjer. Vi skal sikre os, at det vi videregiver til who-is databasen er sandt, fordi vi ønsker transparens,« siger direktøren i DK Hostmaster.Man kan dog forblive anonym, hvis man har navne- eller adressebeskyttelse i Danmark. DK-Hostmaster skal stadig kende identiteten, men navn og adresse vil blive beskyttet i who-is databasen.DK Hostmaster har påbegyndt verificeringen af alle nye registranter, og vil fra januar undersøge de eksisterende registranter med henblik på at verificere deres identitet.
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2017-12-19
+          &nbsp;·&nbsp; e68cc5ef
+          &nbsp;·&nbsp; #44
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.534</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.694</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft blokerer for links sendt via Messenger</h4>
+        <div>
+          Af KIM STENSDAL, Computerworld Offentliggjort 27.03.12 kl. 10:11Microsoft overvåger og blokerer for links til The Pirate Bay, som brugerne af chat-tjenesten Live Messenger forsøger at sende til hinanden.Microsoft oplyser over for The Register, at selskabet blokerer for links til The Pirate Bay, der sendes via Microsofts egen Live Messenger-chat.&quot;Vi blokerer for chat-beskeder, hvis de indeholder ondsindede eller spam-baserede URL'er baseret på intelligente algoritmer, tredjepartskilder og/eller bruger-klager. Pirate Bay URL'er er blevet markeret som en eller flere af disse og derfor konsekvent blokeret,&quot; skriver Microsoft i en mail til The Register.Tech-siden har forsøgt at få Microsoft til at svare på, hvorfor netop Pirate Bay er blokeret frem for så mange andre sider, der også kan indeholde en ondsindet kode, som Microsoft ønsker at blokere for.Microsoft har dog afvist at give yderligere detaljer.Kontroversiel pirat-sideMicrosoft har en pointe i, at malware kan være et problem på sider som the Pirate Bay, og at chat-programmer kan være vejen ind på brugerens maskiner for de it-kriminelle.Det er imidlertid også værd at bemærke, at Microsoft er et af de software-firmaer, der i en årrække har kæmpet mod pirateri, ikke mindst på sider som The Pirate Bay.Vi har forsøgt at teste, om det passer, at der er blokeret for links til The Pirate Bay via Messenger og kan faktisk ikke umiddelbart konstatere, at det skulle være tilfældet.Om det skyldes, at det kun er i bestemte lande, Microsoft spærrer, eller om det kun er bestemte links til The Pirate Bay, der blokeres for, har vi ikke umiddelbart kunne finde et svar på.The Pirate Bay blev i 2008 spærret i Danmark efter en fogedretssag, hvor en række rettighedshavere krævede, at teleselskaberne spærrede kundernes adgang til den svenske fildelingsside.Det førte til en længere sag, fordi teleselskaberne opfattede spærrings-kravet som principielt.I sidste ende vandt rettighedshaverne dog sagen i Højesteret.Læs også på Computerworld:
+        </div>
+        <footer>
+          <em>Epn.dk (Erhverv På Nettet)</em>
+          &nbsp;·&nbsp; 2012-03-27
+          &nbsp;·&nbsp; e3297ed1
+          &nbsp;·&nbsp; #45
+          <br>
+          <br>
+            <kbd data-tooltip="Tech industry &amp; regulation">L02_BIGTEC&nbsp;0.515</kbd>
+            <kbd data-tooltip="AI &amp; innovation">L05_INNOAI&nbsp;0.503</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.62</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Microsoft laver AI, der kan lave falske kommentarer på nyheder</h4>
+        <div>
+          Microsoft har sammen med det kinesiske Beihang University netop lanceret et nyt studie, der fokuserer på at bruge kunstig intelligens til at lave falske, men troværdige kommentarer på nyhedsartikler skriver The Register.Algoritmen har fået navnet DeepCom, og udviklerne mener, at det kan styrke læseoplevelsen ved nyhedsartikler, da kommentarsporet ofte tiltrækker opmærksomhed og kan blive platform for, at brugerne deler viden med hinanden.Det er dog ikke en service, som hverken The Register eller Version2 har savnet, da vi foretrækker, at vores kommentarspor huseres af faktiske læsere.Og det er i følge The Register svært at se denne type algoritme blive brugt til andet end at skabe falske optimistiske kommentarer f.eks. i forbindelse med frigivelse af propaganda, men det er ikke et område, forskningsartiklen overhovedet nævner.Relateret jobannonce: Digital Technology ArchitectSom det ses på billedet til højre er kommentarerne fra DeepCom ikke vildt sofistikerede, så det vil næppe starte store diskussioner mellem algoritmer og mennesker på nuværende tidspunkt, men man kan undre sig over, hvem der faktisk ønsker dette produkt.Arvind Narayanan, der er professor i datalogi ved Princeton University, er også kritisk overfor projektet på Twitter:
+        </div>
+        <footer>
+          <em>Version2.dk</em>
+          &nbsp;·&nbsp; 2019-10-03
+          &nbsp;·&nbsp; e760008a
+          &nbsp;·&nbsp; #46
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.566</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.617</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Techprofessor: Er dit ansigt virkelig dit eget? Eller er det et offentligt gode?</h4>
+        <div>
+          Automatisk ansigtsgenkendelse hos alt fra fodboldstadioner til politiet flytter nogle vigtige principielle grænser: Hvem ejer egentlig retten til dit ansigt? Dig selv eller 'det offentlige'?D it ansigt er som en stregkode, der kan skannes automatisk og fortælle, hvad du hedder, hvor du bor, hvem du er, og hvordan du har det. Men er dit ansigt en privat sag eller noget, som firmaer og myndigheder frit skal kunne skanne og bruge til at påvirke eller kontrollere dig? Eller sagt på en anden måde: Er dit ansigt privat ejendom eller et offentligt gode?I USA spreder brugen af ansigtsgenkendelse sig fra efterretningsarbejde til skoler og parker. Ansigtsgenkendelse er også del af en stigende fascination af overvågning, som når justitsminister Nick Hækkerup (S) fra Folketingets talerstol siger, at mere overvågning øger friheden i vores samfund. Når vores ansigter bliver høstet og samlet i gigantiske databaser, kommer vi endnu tættere på et samfund, hvor alt bliver eksponeret, og ingen kan gemme sig. Derfor sætter automatisk ansigtsgenkendelse spørgsmål om grænserne for den digitale udvikling helt på spidsen: Vil vi have frihed eller sikkerhed? Smarte løsninger eller privatliv?Teknisk set er automatisk ansigtsgenkendelse ukompliceret at stable på benene. Du skal bruge nogle kameraer i god kvalitet, og dem har vi allerede masser af på gaderne og i lommerne. Så har du brug for en stor database med billeder af ansigter og andre informationer. Ansigter er lige så unikke som fingeraftryk, nemme at opsnappe i gadebilledet og på sociale medier og kan kombineres med data fra datakøbmænd, der sælger følsomme oplysninger om folks sygdomshistorie, seksualitet og økonomi. Til sidst skal du bruge en kvik algoritme, der kan få øje på mønstre i materialet fra kameraerne og i databasen.App aldrig taget i brugDen slags er nemt at bygge, og Facebook lavede en testversion i 2015. En smartphoneapp, hvor brugeren kunne pege sit kamera mod en person og straks få vedkommendes navn og facebookprofil. Den app er smart, hvis du er på bar og ikke tør tage kontakt til en flot mand, eller hvis du gerne vil vide mere om hende den lækre, du stod ved siden af i metroen.Men også grænseoverskridende, hvis man gerne vil være anonym. Det var også Facebooks konklusion, at den app var lidt for klam, og den blev aldrig frigivet. Og Google annoncerede i 2011, at de ikke ville udvikle tjenester, der 'krydser den creepy linje' ved at lave ansigtsgenkendelse af enkeltpersoner. Men begge firmaer arbejder med ansigtsgenkendelsessystemer, for de kan levere finkornede indsigter om vores personlighed, humør og følelser - værdifuld viden, hvis man vil målrette reklamer meget præcist. F.eks. kan en restaurant målrette et tilbud til dig, når du går forbi, og hurtigt sætte prisen længere ned, hvis skanningen af dit ansigt viser, at du ikke reagerer positivt nok på det første tilbud.Mens de store techvirksomheder øver sig i at trække grænser og vise ansvarlighed, er andre firmaer ligeglade. Amerikanske Clearview AI har således udviklet den mest vidtgående version - en ansigtssøgemaskine - der kan sammenholde et billede af et ansigt med en database bestående af tre milliarder fotos. Den er primært tilgængelig for politi- og efterretningstjenester, men Clearview er også begyndt at lave aftaler med sikkerhedsfirmaer og kunne vælge at frigive den bredt.Kombinationen af grænseløse teknologiske muligheder og udbredt overvågningsbegejstring gør det nødvendigt at stille nogle basale spørgsmål, der kan hjælpe os med at sætte grænser for automatisk ansigtsgenkendelse. Her er fire, vi kan starte med:Upræcise og med fejlKan vi stole på ansigtsgenkendelse som fakta? De fleste systemer er stadig upræcise og fejlbehæftede. De er bedst til at identificere de hvide mandeansigter, de er blevet trænet på, og dårligere til kvinder, børn og mørkhudede. De bedste systemer gætter med 80-90 pct. sikkerhed rigtigt, men den fejlmargin kan have stygge konsekvenser for de 10-20 pct., som kommer i klemme. Automatisk ansigtsgenkendelse kræver endnu flere kompetente mennesker, der kan tage stilling til sandhedsværdien i automatiserede systemers analyser.Skal vi vægte sikkerhed over frihed? Ideen om, at mere overvågning skaber mere frihed, er problematisk og kortsigtet, fordi for meget kontrol ødelægger samfundets udviklingsmuligheder. Som Bruce Schneier påpeger i bogen 'Click Here to Kill Everybody. Security and Survival in a Hyper-Connected World', ødelægger overvågning nysgerrighed og innovation, for det bliver farligt at tage chancer og lave eksperimenter, når alt kan eksponeres og bruges imod dig.Hvad er forskellen på ansigtsgenkendelse i private og offentlige sammenhænge? At Brøndby Stadion bruger automatisk ansigtsgenkendelse til at undgå bøller og slåskampe på deres område, er noget andet, end at hele samfundet bliver overvåget. Hvis man ikke vil have sit ansigt skannet, kan man se fodboldkampen fra sofaen, men vi kan ikke fravælge gader og andre offentlige rum. Hvis vi omsættes til stregkoder og udsættes for sandsynlighedsberegninger alle steder, forsvinder retten til privatliv. Der kan være situationer, hvor ansigter kan være en værdifuld del af sagsmaterialet i politi- og efterretningsarbejde. Men de grænser skal drages præcist og kompetent.Bør vi tænke på privatliv som et individuelt eller et kollektivt anliggende? Nogle taler for at stoppe automatisk ansigtsgenkendelse via lovgivning. Men teknologierne er allerede sluppet løs, og andre former for overvågning har frie tøjler. Hvis staten ikke sætter grænser for ansigtsgenkendelse, må vi hver især udøve nye former for selvforsvar for at skabe plads til privatliv. Ligesom vi så demonstranterne i Hongkong gøre for nylig, kan vi bruge paraplyer til at skærme for overvågningskameraer og købe tøj med ansigtsprint, der forvirrer systemerne.Politiken PlusMånedens Rabataftale for abonnenter:Få 20% rabat på lækkert løbeudstyr hos LØBERENLæs mereMikkel Flyverbom er professor mso på Copenhagen Business School og medlem af Dataetisk Råd
+        </div>
+        <footer>
+          <em>Politiken.dk</em>
+          &nbsp;·&nbsp; 2020-02-28
+          &nbsp;·&nbsp; e79954c1
+          &nbsp;·&nbsp; #47
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.506</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.605</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>INTELLIGENT SOLSKÆRM HOLDER SOLEN VÆK FRA ØJNENE</h4>
+        <div>
+          TEKNOLOGITJEK / DEN ELEKTRONISKE SOLSKÆRMMODENHED Den nye intelligente solskærm er stadig kun en prototype, og det er uklart, hvornår den bliver sat i produktion, og hvad prisen for ekstraudstyret bliver.PERSPEKTIV At gøre køreturen mere sikker og behagelig, da førerens udsyn bliver større, og solens stråler opfanges og blokeres hurtigere.UDFORDRING Det koster strøm at have ansigtsgenkendelse kørende konstant.Det kan give udfordringer i elbiler, hvor strømforbruget afgør rækkevidden.1 ET KAMERA MONITORERER og fastlægger førerens position og kortlægger ved hjælp af ansigtsgenkendelse og AI, hvordan solen rammer førerens ansigt. 2 PÅ BAGGRUND af informationen fra systemet gøres et mindre område af LCD-skærmen uigennemsigtigt. 3 DET SKYGGELAGTE OMRÅDE ses omkring førerens øjene og beskytter imod blænding fra solen.Den resterende del af solvisiret er fortsat gennemsigtig, hvilket giver øget komfort og højere sikkerhed.
+        </div>
+        <footer>
+          <em>Ingeniøren</em>
+          &nbsp;·&nbsp; 2020-02-07
+          &nbsp;·&nbsp; e791ca24
+          &nbsp;·&nbsp; #48
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.94</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.758</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.635</kbd>
+        </footer>
+      </article>
+      <article>
+        <h4>Kriminelle hacker sig vej til millioner i hæveautomaterne</h4>
+        <div>
+          Helt uden brug af kreditkort bliver hæveautomater flået for kontanter. Cyberkriminelle står bag plyndringerne, som sker i store dele af verden, inklusiv Europa.Kaspersky Lab har netop udvidet sit samarbejde med både Interpol og Europol. Det nye tættere samarbejde skal gøre det lettere at nå det fælles mål om at bekæmpe cyberkriminalitet. Samarbejdet har allerede båret frugt, da Kaspersky Lab og Interpol lige nu arbejder på en ny sag, hvor cyberkriminelle tømmer hæveautomater for kontanter i store dele af verden.Kaspersky Labs sikkerhedseksperter har udført en kriminalteknisk undersøgelse af cyberkriminelle angreb rettet mod adskillige hæveautomater i store dele af verden. Via disse undersøgelser er der fundet malware, som gør, at bagmændene kan tømme hæveautomaterne for millioner af kroner. Interpol har advaret de berørte medlemslande og assisterer nu i den videre efterforskning.Sådan foregår detDe arbejder om natten - men kun om søndagen og mandagen. De indtaster en pinkode på hæveautomatens tastatur, ringer til en bagmand, hvor de får endnu en kode, som de indtaster, hvorefter automaten begynder at spytte penge ud - helt uden brug af kreditkort. Herefter forsvinder de.De kriminelle arbejder på to trin. Først skaffer de sig fysisk adgang til den udvalgte hæveautomat for at installere en malware via en cd. Malwaren har Kaspersky Lab døbt &quot;Tyupkin&quot;. Når systemet genstartes, har de kriminelle kontrol over den inficerede hæveautomat.Efter en succesfuld inficering kører malwaren i et uendeligt loop, indtil den modtager en kommando. For at gøre svindelnummeret endnu sværere at opdage, er Tyupkin programmeret til kun at modtage kommandoer på helt specifikke tidspunkter om aftenen på søndage og om mandage. Det er på præcis disse tidspunkter, at det er muligt at tømme de ramte maskiner for kontanter.Hele dette forløb er blevet fanget på video af sikkerhedskameraer. En unik talkombination, baseret på tilfældige tal, bliver genereret ved hver session, hvilket sikrer, at ingen udefrakommende har mulighed for at indtaste den rigtige kode. Den kriminelle ringer til et andet medlem af gruppen og oplyser den kode, som der står på hæveautomatens display. Personen i den anden ende af røret kender algoritmen bag malwaren, hvorfor han kan generere en ny kode, som personen ved hæveautomaten herefter indtaster. Telefonopkaldet sikrer, at personen ved hæveautomaten ikke kan udføre kuppet alene og stikke af med pengene.Når denne kode indtastes, viser maskinen, hvor mange penge, der findes i hver enkelt kassette. Herefter skal der blot træffes et valg om, hvilken kassette, der skal tømmes. Hæveautomaten spytter nu 40 pengesedler ud ad gangen fra den udvalgte kassette.Malwaren TyupkinKaspersky Labs globale forsknings- og analyseteam har på opfordring fra en finansiel institution udført en kriminalteknisk undersøgelse af dette cyberkriminelle angreb. Malwaren blev fundet af Kaspersky Lab og navngivet Backdoor.MSIL.Tyupkin. Den er indtil videre fundet i hæveautomater i Latinamerika, Europa og Asien.&quot;I løbet af de seneste år har vi set en større stigning af angreb rettet mod hæveautomater ved hjælp af skimming-enheder og malware. Vi ser nu den naturlige udvikling, hvor de cyberkriminelle bevæger sig op i fødekæden og angriber de finansielle institutioner direkte. Dette gøres ved, at selve hæveautomaterne inficeres eller ved hjælp af direkte APT-lignende angreb på bankerne. Tyupkin-malwaren er et eksempel på, hvordan hackere udnytter svaghederne i hæveautomaternes infrastruktur,&quot; siger Vicente Diaz, Principal Security Researcher i Kaspersky Labs globale forsknings- og analyseteam.&quot;Vi anbefaler på det kraftigste bankerne at gennemgå netværkssikkerheden og den fysiske sikkerhed omkring deres hæveautomater samt at overveje at investere i gode sikkerhedsløsninger,&quot; fortsætter Diaz.&quot;Gerningsmændene finder konstant nye tilgange for at udvikle deres kriminelle metoder, og det er essentielt, at vi holder myndighederne i vores medlemslande involveret og informeret om de nyeste tendenser og modus operandi,&quot; siger Sanjay Virmani, direktør i Interpol Digital Crime Centre.Kaspersky Lab og Interpol arbejder lige nu på en sag, hvor cyberkriminelle tømmer hæveautomater for kontanter i store dele af verden. Foto: Miklas Njor Nielsen.Kaspersky Lab og Interpol arbejder lige nu på en sag, hvor cyberkriminelle tømmer hæveautomater for kontanter i store dele af verden. Foto: Miklas Njor Nielsen.
+        </div>
+        <footer>
+          <em>Jp.dk (Jyllands-Posten)</em>
+          &nbsp;·&nbsp; 2014-10-15
+          &nbsp;·&nbsp; e4a028dc
+          &nbsp;·&nbsp; #49
+          <br>
+          <br>
+            <kbd data-tooltip="AI &amp; new algorithmic solutions">L02_AIALGO&nbsp;0.532</kbd>
+            <kbd data-tooltip="AI, progress &amp; cybersecurity concerns">L05_AISECUR&nbsp;0.632</kbd>
+            <kbd data-tooltip="hSBM 2_0">H_2_0&nbsp;0.637</kbd>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
